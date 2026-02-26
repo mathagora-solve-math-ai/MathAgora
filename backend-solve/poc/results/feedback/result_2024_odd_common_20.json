@@ -1,0 +1,435 @@
+{
+  "problem_id": "2024_odd_common_20",
+  "ground_truth": "25",
+  "answer_type": "short",
+  "baseline": {
+    "gpt-5.2": {
+      "answer": "25",
+      "correct": true
+    },
+    "claude-opus-4.5": {
+      "answer": "25",
+      "correct": true
+    },
+    "gemini-3-pro": {
+      "answer": null,
+      "correct": false
+    },
+    "gpt-5-codex": {
+      "answer": "25",
+      "correct": true
+    },
+    "gpt-5": {
+      "answer": "25",
+      "correct": true
+    },
+    "grok-4-fast": {
+      "answer": "25",
+      "correct": true
+    }
+  },
+  "self_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "접선과 교점 A 구하기",
+          "content": "f(x)=-x^3+ax^2+2x 이므로\nf'(x)=-3x^2+2ax+2.\n점 O(0,0)에서의 접선 기울기는 f'(0)=2, 접선은 y=2x.\n\n이 접선과 곡선의 교점은\nf(x)=2x ⇒ -x^3+ax^2+2x=2x ⇒ -x^3+ax^2=0\nx^2(-x+a)=0.\n따라서 x=0(점 O) 또는 x=a.\nO가 아닌 교점 A는 A=(a,2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "점 A에서의 접선과 x절편 B 구하기",
+          "content": "A에서의 접선 기울기:\nf'(a)=-3a^2+2a·a+2=-a^2+2.\n따라서 A(a,2a)에서의 접선은\n y-2a=(2-a^2)(x-a).\n이 직선이 x축(y=0)과 만나는 점 B의 x좌표는\n0-2a=(2-a^2)(x_B-a)\n⇒ x_B-a= -2a/(2-a^2)=2a/(a^2-2)\n⇒ x_B=a+2a/(a^2-2)=a^3/(a^2-2).\n따라서 B=(a^3/(a^2-2), 0)."
+        },
+        {
+          "step_idx": 2,
+          "title": "A가 지름 OB인 원 위에 있다는 조건 적용",
+          "content": "O(0,0), B(b,0) (b=a^3/(a^2-2))일 때 지름 OB인 원의 방정식은\n(x-b/2)^2+y^2=(b/2)^2 ⇔ x^2+y^2=bx.\nA=(a,2a)를 대입하면\na^2+(2a)^2=ba ⇒ 5a^2=ba ⇒ b=5a (a>0).\n\nb=a^3/(a^2-2)이므로\na^3/(a^2-2)=5a\n⇒ a^2/(a^2-2)=5\n⇒ a^2=5a^2-10 ⇒ 4a^2=10 ⇒ a^2=5/2.\n또 a>√2이므로 a=√(5/2)."
+        },
+        {
+          "step_idx": 3,
+          "title": "OA, AB 길이 계산 및 곱",
+          "content": "OA=√(a^2+(2a)^2)=√(5a^2)=a√5.\n\n또 b=5a이므로 B=(5a,0).\nAB=√((5a-a)^2+(0-2a)^2)=√((4a)^2+(2a)^2)=√(20a^2)=2a√5.\n\n따라서 OA·AB=(a√5)(2a√5)=10a^2.\na^2=5/2 대입 ⇒ 10·(5/2)=25."
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "각 단계의 미분, 접선 방정식, 교점 계산, 지름 OB인 원의 방정식(x^2+y^2=bx) 유도 및 대입, a 값 결정, 거리 OA·AB 계산을 모두 검산했다. a>√2 조건으로 양의 해만 선택한 것도 일치한다. 오류 없음.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 13.5534508228302
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "조건 정리 및 원점에서의 접선 구하기",
+          "content": "$f(x) = -x^3 + ax^2 + 2x$\n\n$f'(x) = -3x^2 + 2ax + 2$\n\n원점 O(0,0)에서의 접선의 기울기:\n$f'(0) = 2$\n\n원점에서의 접선: $y = 2x$"
+        },
+        {
+          "step_idx": 1,
+          "title": "점 A의 좌표 구하기",
+          "content": "접선 $y = 2x$와 곡선 $y = f(x)$의 교점:\n$$-x^3 + ax^2 + 2x = 2x$$\n$$-x^3 + ax^2 = 0$$\n$$x^2(-x + a) = 0$$\n\n$x = 0$ (점 O) 또는 $x = a$ (점 A)\n\n점 A의 좌표: $(a, 2a)$"
+        },
+        {
+          "step_idx": 2,
+          "title": "점 A에서의 접선과 점 B 구하기",
+          "content": "점 A에서의 접선의 기울기:\n$$f'(a) = -3a^2 + 2a \\cdot a + 2 = -3a^2 + 2a^2 + 2 = -a^2 + 2$$\n\n점 A$(a, 2a)$에서의 접선:\n$$y - 2a = (-a^2 + 2)(x - a)$$\n\n점 B는 이 접선이 x축과 만나는 점 ($y = 0$):\n$$-2a = (-a^2 + 2)(x - a)$$\n$$x - a = \\frac{-2a}{-a^2 + 2} = \\frac{2a}{a^2 - 2}$$\n$$x_B = a + \\frac{2a}{a^2 - 2} = \\frac{a(a^2 - 2) + 2a}{a^2 - 2} = \\frac{a^3}{a^2 - 2}$$\n\n점 B의 좌표: $\\left(\\frac{a^3}{a^2-2}, 0\\right)$"
+        },
+        {
+          "step_idx": 3,
+          "title": "점 A가 OB를 지름으로 하는 원 위의 점 조건",
+          "content": "O(0,0), B$\\left(\\frac{a^3}{a^2-2}, 0\\right)$를 지름의 양 끝점으로 하는 원 위에 A$(a, 2a)$가 있으면:\n\n**$\\angle OAB = 90°$** (지름에 대한 원주각)\n\n즉, $\\overrightarrow{AO} \\cdot \\overrightarrow{AB} = 0$\n\n$\\overrightarrow{AO} = (0-a, 0-2a) = (-a, -2a)$\n\n$\\overrightarrow{AB} = \\left(\\frac{a^3}{a^2-2} - a, 0 - 2a\\right) = \\left(\\frac{2a}{a^2-2}, -2a\\right)$\n\n내적 계산:\n$$(-a) \\cdot \\frac{2a}{a^2-2} + (-2a)(-2a) = 0$$\n$$\\frac{-2a^2}{a^2-2} + 4a^2 = 0$$\n$$4a^2 = \\frac{2a^2}{a^2-2}$$\n\n$a \\neq 0$이므로:\n$$4 = \\frac{2}{a^2-2}$$\n$$a^2 - 2 = \\frac{1}{2}$$\n$$a^2 = \\frac{5}{2}$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "OA × AB 계산",
+          "content": "$a^2 = \\frac{5}{2}$, $a^2 - 2 = \\frac{1}{2}$\n\n**$\\overline{OA}$ 계산:**\n$$\\overline{OA}^2 = a^2 + (2a)^2 = a^2 + 4a^2 = 5a^2 = 5 \\cdot \\frac{5}{2} = \\frac{25}{2}$$\n$$\\overline{OA} = \\frac{5}{\\sqrt{2}}$$\n\n**$\\overline{AB}$ 계산:**\n$$\\overline{AB}^2 = \\left(\\frac{2a}{a^2-2}\\right)^2 + (2a)^2 = \\frac{4a^2}{(a^2-2)^2} + 4a^2$$\n$$= \\frac{4 \\cdot \\frac{5}{2}}{\\frac{1}{4}} + 4 \\cdot \\frac{5}{2} = \\frac{10}{\\frac{1}{4}} + 10 = 40 + 10 = 50$$\n$$\\overline{AB} = 5\\sqrt{2}$$\n\n**$\\overline{OA} \\times \\overline{AB}$:**\n$$\\overline{OA} \\times \\overline{AB} = \\frac{5}{\\sqrt{2}} \\times 5\\sqrt{2} = 25$$"
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "I verified all steps carefully. Step 1: Correctly found f'(0) = 2 and tangent line y = 2x. Step 2: Correctly found intersection point A at (a, 2a). Step 3: Correctly computed f'(a) = -a² + 2 and found B at (a³/(a²-2), 0). Step 4: Applied the circle condition correctly using the dot product condition for perpendicularity, obtaining a² = 5/2. Step 5: Correctly computed OA² = 25/2 and AB² = 50, giving OA × AB = (5/√2)(5√2) = 25. All calculations are correct.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 14.920881509780884
+    },
+    "gemini-3-pro": {
+      "error": "Could not extract JSON from response:\n{\n  \"steps\": [\n    {\n      \"step_idx\": 0,\n      \"title\": \"점 A의 좌표 구하기\",\n      \"content\": \"함수 $f(x)=-x^3+ax^2+2x$를 미분하면 $f'(x)=-3x^2+2ax+2$입니다.\\n원점 $\\\\mathrm{O}(0,0)$에서의 접선의 기울기는 $f'(0)=2$이므로, 접선의 방정식은 $y=2x$입니다.\\n이 접선과 곡선 $y=f(x)$의 교점을 구하기 위해 방정식을 세우면,\\n$-x^3+ax^2+2x = 2x \\\\implies -x^3+ax^2 = 0 \\\\implies x^2(x-a) = 0$입니다.\\n점 $\\\\mathrm{A}$는 원점이 아니므로 $x=a$이고, $y=2a$입니다.\\n따라서 점 $\\\\mathrm{A}$의 좌표는 $(",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 38.84303402900696
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Locate point A",
+          "content": "f(x) = -x^3 + ax^2 + 2x has derivative f'(x) = -3x^2 + 2ax + 2. At O(0,0), f'(0) = 2, so the tangent is y = 2x. Solving f(x) = 2x gives -x^3 + ax^2 = 0, hence x^2(-x + a) = 0. The non-origin intersection is at x = a, yielding A = (a, f(a)) = (a, 2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Find point B",
+          "content": "Slope at A is f'(a) = -a^2 + 2. The tangent line at A: y - 2a = (-a^2 + 2)(x - a). Setting y = 0 for its x-axis intersection gives x_B - a = 2a/(a^2 - 2), so B = (a + 2a/(a^2 - 2), 0)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Apply circle condition",
+          "content": "For A to lie on the circle with diameter OB, angle OAB must be a right angle. Using vectors AO = (-a, -2a) and AB = (x_B - a, -2a), their dot product is zero: (-a)(x_B - a) + (-2a)(-2a) = 0 ⇒ -ax_B + 5a^2 = 0. Using x_B = a + 2a/(a^2 - 2), this becomes a + 2a/(a^2 - 2) = 5a, leading to 1 + 2/(a^2 - 2) = 5. Solving yields a^2 = 5/2, so a = √(5/2)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute product OA·AB",
+          "content": "OA = √(a^2 + (2a)^2) = a√5 = 5√2/2. B = (5a, 0), so AB = √((5a - a)^2 + (0 - 2a)^2) = √(16a^2 + 4a^2) = 2a√5 = 5√2. Hence OA × AB = (5√2/2) × (5√2) = 25."
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "Verified each step: tangents, intersection points, circle condition, and lengths were all computed correctly. No changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 15.522563457489014
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find point A",
+          "content": "f'(x) = -3x^2 + 2ax + 2, so the tangent at O has slope f'(0)=2 → y=2x. Intersections with y=f(x): -x^3 + ax^2 + 2x = 2x ⇒ -x^3 + ax^2 = 0 ⇒ x^2(-x+a)=0. Nonzero solution x=a gives A=(a, f(a))=(a, 2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Use right-angle condition to find a",
+          "content": "Slope of AO is 2 (since O and A lie on y=2x). Slope of tangent at A is f'(a)=2−a^2. A lies on the circle with diameter OB ⇔ ∠OAB = 90° ⇔ (slope AO)·(slope AB) = -1 ⇒ 2(2−a^2) = -1 ⇒ a^2 = 5/2."
+        },
+        {
+          "step_idx": 2,
+          "title": "Compute OA and AB",
+          "content": "With a^2=5/2, slope at A is m_A = 2−a^2 = −1/2. Tangent at A: y−2a = (−1/2)(x−a). For y=0, −2a = (−1/2)(x_B−a) ⇒ x_B−a = 4a ⇒ B=(5a, 0). Then OA = √(a^2 + (2a)^2) = a√5. AB = √((5a−a)^2 + (0−2a)^2) = √((4a)^2 + (2a)^2) = a√20 = 2a√5."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute product",
+          "content": "OA × AB = (a√5)(2a√5) = 10a^2 = 10·(5/2) = 25."
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "Verified derivative, tangent at O, intersection A=(a,2a); applied Thales' theorem to get OA ⟂ AB, leading to 2(2−a^2) = −1 → a^2=5/2; found B correctly at (5a,0); computed lengths OA and AB and their product. All steps are correct; no changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 42.465717792510986
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Find tangent at O and point A",
+          "content": "The function is \\(f(x) = -x^3 + a x^2 + 2x\\). Point O is (0,0). The derivative is \\(f'(x) = -3x^2 + 2a x + 2\\), so \\(f'(0) = 2\\). The tangent at O is \\(y = 2x\\). To find A, solve \\(f(x) = 2x\\) for \\(x \\neq 0\\): \\(-x^3 + a x^2 = 0\\) implies \\(x^2 (a - x) = 0\\), so \\(x = a\\). Thus, A is \\((a, f(a)) = (a, 2a)\\)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find tangent at A and point B",
+          "content": "At A, \\(f'(a) = -3a^2 + 2a^2 + 2 = 2 - a^2\\). The tangent line is \\(y - 2a = (2 - a^2)(x - a)\\). It intersects the x-axis at y=0: \\(-2a = (2 - a^2)(x - a)\\), so \\(x = a - 2a / (2 - a^2) = a^3 / (a^2 - 2)\\). Thus, B is \\((b, 0)\\) where \\(b = a^3 / (a^2 - 2)\\)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Impose circle condition to solve for a",
+          "content": "The circle with diameter OB has center \\((b/2, 0)\\) and radius \\(b/2\\) (since \\(b > 0\\)). A lies on it: \\((a - b/2)^2 + (2a)^2 = (b/2)^2\\). Simplifying: \\(20a^2 - 4ab = 0\\), so \\(b = 5a\\). Set \\(a^3 / (a^2 - 2) = 5a\\), yielding \\(a^2 = 5(a^2 - 2)\\), so \\(a^2 = 5/2\\)."
+        },
+        {
+          "step_idx": 4,
+          "title": "Compute OA × AB",
+          "content": "OA = \\(\\sqrt{a^2 + (2a)^2} = a\\sqrt{5}\\). With \\(b = 5a\\), AB = \\(\\sqrt{(a - 5a)^2 + (2a - 0)^2} = \\sqrt{16a^2 + 4a^2} = a \\cdot 2\\sqrt{5}\\). Product: \\(a\\sqrt{5} \\cdot 2a\\sqrt{5} = 10 a^2 = 10 \\cdot (5/2) = 25\\)."
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "Verified all steps: calculations for tangent lines, intersection points, circle condition, solving for a^2, and distances OA and AB are mathematically correct with no errors found.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 14.098809719085693
+    }
+  },
+  "cross_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "원점 O에서의 접선과 점 A",
+          "content": "f(x)=-x^3+ax^2+2x, f'(x)=-3x^2+2ax+2. O(0,0)에서 기울기 f'(0)=2이므로 접선은 y=2x. 교점은 f(x)=2x ⇒ -x^3+ax^2=0 ⇒ x^2(-x+a)=0. O가 아닌 해는 x=a이므로 A=(a,2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "점 A에서의 접선과 점 B",
+          "content": "A에서의 기울기 f'(a)=-3a^2+2a^2+2=2-a^2. 접선: y-2a=(2-a^2)(x-a). y=0에서 -2a=(2-a^2)(x_B-a) ⇒ x_B-a=2a/(a^2-2) ⇒ x_B=a+2a/(a^2-2)=a^3/(a^2-2). 따라서 B=(a^3/(a^2-2),0)."
+        },
+        {
+          "step_idx": 2,
+          "title": "A가 지름 OB인 원 위에 있다는 조건으로 a 결정",
+          "content": "O=(0,0), B=(b,0) (b=a^3/(a^2-2))일 때 지름 OB인 원의 방정식은 x^2+y^2=bx. A=(a,2a) 대입: a^2+4a^2=ba ⇒ 5a^2=ba ⇒ b=5a. 따라서 a^3/(a^2-2)=5a ⇒ a^2/(a^2-2)=5 ⇒ a^2=5a^2-10 ⇒ 4a^2=10 ⇒ a^2=5/2 (a>√2 만족)."
+        },
+        {
+          "step_idx": 3,
+          "title": "OA, AB 및 곱",
+          "content": "OA=√(a^2+(2a)^2)=a√5. 또한 b=5a이므로 B=(5a,0). AB=√((5a-a)^2+(0-2a)^2)=√(16a^2+4a^2)=2a√5. 따라서 OA·AB=(a√5)(2a√5)=10a^2=10·(5/2)=25."
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "내 풀이와 다른 모델들의 풀이(원 방정식 사용 또는 ∠OAB=90° 내적 조건 사용)는 본질적으로 동일한 구조이며 계산 결과도 일치한다. 접선, 교점 A, A에서의 접선의 x절편 B, 원(지름 OB) 조건으로 b=5a를 얻고 a^2=5/2를 도출하는 흐름에 오류가 없다. 따라서 수정할 부분 없이 유지한다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 9.442383527755737
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "조건 정리 및 원점에서의 접선 구하기",
+          "content": "f(x) = -x³ + ax² + 2x\nf'(x) = -3x² + 2ax + 2\n\n원점 O(0,0)에서의 접선의 기울기:\nf'(0) = 2\n\n원점에서의 접선: y = 2x"
+        },
+        {
+          "step_idx": 1,
+          "title": "점 A의 좌표 구하기",
+          "content": "접선 y = 2x와 곡선 y = f(x)의 교점:\n-x³ + ax² + 2x = 2x\n-x³ + ax² = 0\nx²(-x + a) = 0\n\nx = 0 (점 O) 또는 x = a (점 A)\n\n점 A의 좌표: (a, 2a)"
+        },
+        {
+          "step_idx": 2,
+          "title": "점 A에서의 접선과 점 B 구하기",
+          "content": "점 A에서의 접선의 기울기:\nf'(a) = -3a² + 2a·a + 2 = -3a² + 2a² + 2 = -a² + 2\n\n점 A(a, 2a)에서의 접선:\ny - 2a = (-a² + 2)(x - a)\n\n점 B는 이 접선이 x축과 만나는 점 (y = 0):\n-2a = (-a² + 2)(x - a)\nx - a = -2a/(-a² + 2) = 2a/(a² - 2)\nx_B = a + 2a/(a² - 2) = a³/(a² - 2)\n\n점 B의 좌표: (a³/(a²-2), 0)"
+        },
+        {
+          "step_idx": 3,
+          "title": "점 A가 OB를 지름으로 하는 원 위의 점 조건",
+          "content": "O(0,0), B(a³/(a²-2), 0)를 지름의 양 끝점으로 하는 원 위에 A(a, 2a)가 있으면:\n∠OAB = 90° (지름에 대한 원주각)\n\n즉, 벡터AO · 벡터AB = 0\n\n벡터AO = (-a, -2a)\n벡터AB = (a³/(a²-2) - a, -2a) = (2a/(a²-2), -2a)\n\n내적 계산:\n(-a)·(2a/(a²-2)) + (-2a)·(-2a) = 0\n-2a²/(a²-2) + 4a² = 0\n4a² = 2a²/(a²-2)\n\na ≠ 0이므로:\n4 = 2/(a²-2)\na² - 2 = 1/2\na² = 5/2"
+        },
+        {
+          "step_idx": 4,
+          "title": "OA × AB 계산",
+          "content": "a² = 5/2, a² - 2 = 1/2\n\nOA 계산:\nOA² = a² + (2a)² = 5a² = 5·(5/2) = 25/2\nOA = 5/√2\n\nAB 계산:\nAB² = (2a/(a²-2))² + (2a)²\n= 4a²/(a²-2)² + 4a²\n= 4·(5/2)/(1/4) + 4·(5/2)\n= 10/(1/4) + 10\n= 40 + 10 = 50\nAB = 5√2\n\nOA × AB:\nOA × AB = (5/√2) × 5√2 = 25"
+        },
+        {
+          "step_idx": 5,
+          "title": "최종 답",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "다른 모델들의 풀이와 비교해 본 결과, 모든 모델이 동일한 접근 방식을 사용했고 동일한 답 25를 얻었습니다. 핵심 단계들 (원점에서 접선 구하기 → 점 A 좌표 → 점 A에서 접선 → 점 B 좌표 → 원 조건으로 a² = 5/2 → 거리 계산)이 모두 일치합니다. 제 풀이에 오류가 없음을 확인했습니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 14.476179361343384
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "점 A의 좌표 구하기",
+          "content": "함수 $f(x)=-x^3+ax^2+2x$의 도함수는 $f'(x)=-3x^2+2ax+2$이다. 원점 $\\mathrm{O}(0,0)$에서의 접선의 기울기는 $f'(0)=2$이므로 접선의 방정식은 $y=2x$이다.\n곡선 $y=f(x)$와 직선 $y=2x$의 교점은 $-x^3+ax^2+2x=2x$에서 $x^2(a-x)=0$이므로 $x=0$ 또는 $x=a$이다.\n점 $\\mathrm{A}$는 원점이 아니므로 좌표는 $\\mathrm{A}(a, 2a)$이다."
+        },
+        {
+          "step_idx": 1,
+          "title": "수직 조건을 이용한 a의 값 구하기",
+          "content": "점 $\\mathrm{A}$가 선분 $\\mathrm{OB}$를 지름으로 하는 원 위의 점이라는 것은 $\\angle \\mathrm{OAB}=90^\\circ$임을 의미한다. 즉, 직선 $\\mathrm{OA}$와 직선 $\\mathrm{AB}$는 수직이다.\n직선 $\\mathrm{OA}$의 기울기는 $\\frac{2a-0}{a-0}=2$이다.\n직선 $\\mathrm{AB}$는 점 $\\mathrm{A}$에서의 접선이므로 그 기울기는 $f'(a)=-3a^2+2a^2+2=2-a^2$이다.\n두 기울기의 곱이 $-1$이어야 하므로:\n$$2 \\times (2-a^2) = -1$$\n$$4 - 2a^2 = -1$$\n$$2a^2 = 5 \\implies a^2 = \\frac{5}{2}$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "점 B의 좌표 및 OAxAB 계산",
+          "content": "점 $\\mathrm{A}$에서의 접선의 기울기는 $2-a^2 = 2-\\frac{5}{2} = -\\frac{1}{2}$이다.\n접선의 방정식은 $y-2a = -\\frac{1}{2}(x-a)$이다.\n$x$축과의 교점 $\\mathrm{B}$의 $x$좌표를 구하기 위해 $y=0$을 대입하면:\n$$-2a = -\\frac{1}{2}(x-a) \\implies 4a = x-a \\implies x = 5a$$\n따라서 $\\mathrm{B}(5a, 0)$이다.\n\n이제 두 선분의 길이를 구하면:\n$\\overline{\\mathrm{OA}} = \\sqrt{a^2 + (2a)^2} = \\sqrt{5a^2} = a\\sqrt{5}$\n$\\overline{\\mathrm{AB}} = \\sqrt{(5a-a)^2 + (0-2a)^2} = \\sqrt{(4a)^2 + (-2a)^2} = \\sqrt{20a^2} = 2a\\sqrt{5}$\n\n최종값:\n$\\overline{\\mathrm{OA}} \\times \\overline{\\mathrm{AB}} = (a\\sqrt{5}) \\times (2a\\sqrt{5}) = 10a^2$\n$a^2 = \\frac{5}{2}$를 대입하면,\n$10 \\times \\frac{5}{2} = 25$"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "Original solution was cut off. Comparison with other models confirmed the correct result is 25. Adopted the slope product method (slope OA * slope tangent = -1) used by other models as it is more efficient than the dot product or coordinate algebra approach.",
+      "revised": true,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 26.876668214797974
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find point A from tangent at O",
+          "content": "f(x) = -x^3 + ax^2 + 2x, f'(x) = -3x^2 + 2ax + 2. At O(0,0), slope is f'(0) = 2, so tangent is y = 2x. Intersecting with curve: -x^3 + ax^2 + 2x = 2x ⇒ x^2(a - x) = 0. Non-origin solution x = a gives A = (a, 2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Locate point B from tangent at A",
+          "content": "Slope at A: f'(a) = -a^2 + 2. Tangent at A: y - 2a = (2 - a^2)(x - a). Setting y = 0 for x-axis intersection yields x_B - a = 2a/(a^2 - 2), so B = (a + 2a/(a^2 - 2), 0)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Apply circle (right-angle) condition",
+          "content": "A lies on the circle with diameter OB ⇔ ∠OAB = 90°. Using vectors AO = (-a, -2a) and AB = (2a/(a^2 - 2), -2a), we require AO·AB = 0 ⇒ (-a)(2a/(a^2 - 2)) + (-2a)(-2a) = 0 ⇒ x_B = 5a ⇒ a^3/(a^2 - 2) = 5a ⇒ a^2 = 5/2 (a > √2)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute OA·AB",
+          "content": "OA = √(a^2 + (2a)^2) = a√5, AB = √((5a - a)^2 + (0 - 2a)^2) = 2a√5. Thus OA·AB = (a√5)(2a√5) = 10a^2 = 10*(5/2) = 25."
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "My reasoning matches that of the other solutions; no corrections were necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 6.859252691268921
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find A from tangent at O",
+          "content": "f'(x) = -3x^2 + 2ax + 2 ⇒ f'(0)=2, so tangent at O is y=2x. Intersecting with y=f(x): -x^3 + ax^2 + 2x = 2x ⇒ x^2(-x + a)=0. Nonzero solution x=a gives A=(a,2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Use right-angle condition at A to find a",
+          "content": "A on circle with diameter OB ⇒ ∠OAB=90°. Line AO has slope 2. Tangent slope at A is f'(a)=2−a^2. Thus 2(2−a^2) = −1 ⇒ a^2 = 5/2."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find B from tangent at A",
+          "content": "At a^2=5/2, slope at A is −1/2. Tangent: y−2a = (−1/2)(x−a). Setting y=0 gives x−a=4a ⇒ B=(5a,0)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute OA × AB",
+          "content": "OA = √(a^2 + (2a)^2) = a√5. AB = √((5a−a)^2 + (0−2a)^2) = a√20 = 2a√5. Product = (a√5)(2a√5) = 10a^2 = 25."
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "My approach matches the others: A=(a,2a) from the tangent at O, then using the right-angle condition at A (either via slopes, dot product, or the circle equation x^2+y^2=bx) yields a^2=5/2. From there, B=(5a,0) and OA×AB=25. No errors detected; the methods are equivalent.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 21.889628171920776
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Find tangent at O and point A",
+          "content": "The function is \\(f(x) = -x^3 + a x^2 + 2x\\). Point O is (0,0). The derivative is \\(f'(x) = -3x^2 + 2a x + 2\\), so \\(f'(0) = 2\\). The tangent at O is \\(y = 2x\\). To find A, solve \\(f(x) = 2x\\) for \\(x \\neq 0\\): \\(-x^3 + a x^2 = 0\\) implies \\(x^2 (a - x) = 0\\), so \\(x = a\\). Thus, A is \\((a, f(a)) = (a, 2a)\\)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find tangent at A and point B",
+          "content": "At A, \\(f'(a) = -3a^2 + 2a^2 + 2 = 2 - a^2\\). The tangent line is \\(y - 2a = (2 - a^2)(x - a)\\). It intersects the x-axis at y=0: \\(-2a = (2 - a^2)(x - a)\\), so \\(x = a - 2a / (2 - a^2) = a^3 / (a^2 - 2)\\). Thus, B is \\((b, 0)\\) where \\(b = a^3 / (a^2 - 2)\\)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Impose circle condition to solve for a",
+          "content": "The circle with diameter OB has center \\((b/2, 0)\\) and radius \\(b/2\\) (since \\(b > 0\\)). A lies on it: \\((a - b/2)^2 + (2a)^2 = (b/2)^2\\). Simplifying: \\(20a^2 - 4ab = 0\\), so \\(b = 5a\\). Set \\(a^3 / (a^2 - 2) = 5a\\), yielding \\(a^2 = 5(a^2 - 2)\\), so \\(a^2 = 5/2\\)."
+        },
+        {
+          "step_idx": 4,
+          "title": "Compute OA × AB",
+          "content": "OA = \\(\\sqrt{a^2 + (2a)^2} = a\\sqrt{5}\\). With \\(b = 5a\\), AB = \\(\\sqrt{(a - 5a)^2 + (2a - 0)^2} = \\sqrt{16a^2 + 4a^2} = a \\cdot 2\\sqrt{5}\\). Product: \\(a\\sqrt{5} \\cdot 2a\\sqrt{5} = 10 a^2 = 10 \\cdot (5/2) = 25\\)."
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "25"
+        }
+      ],
+      "final_answer": 25,
+      "feedback": "My approach matches the others closely, using the circle condition by substituting into the circle equation, leading to b=5a and a^2=5/2. Other models used equivalent methods like the full circle equation x^2 + y^2 = b x, dot product for right angle at A, or slope product for perpendicularity between AO and AB. All methods are correct and yield the same result of 25. No errors found in my solution; the algebraic steps are accurate, and the final product computation is consistent.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 13.264754056930542
+    }
+  },
+  "aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "함수 미분 및 원점에서의 접선 구하기",
+        "content": "주어진 함수 f(x) = -x³ + ax² + 2x를 미분하면 f'(x) = -3x² + 2ax + 2입니다.\n\n원점 O(0,0)에서의 접선의 기울기는 f'(0) = 2이고, 원점을 지나므로 접선의 방정식은 y = 2x입니다."
+      },
+      {
+        "step_idx": 1,
+        "title": "점 A의 좌표 구하기",
+        "content": "접선 y = 2x와 곡선 y = f(x)의 교점을 구합니다.\n\n-x³ + ax² + 2x = 2x\n-x³ + ax² = 0\nx²(-x + a) = 0\n\n따라서 x = 0 (점 O) 또는 x = a입니다.\n\n점 A는 O가 아닌 점이므로 x = a이고, y = 2a입니다.\n따라서 A = (a, 2a)입니다."
+      },
+      {
+        "step_idx": 2,
+        "title": "점 A에서의 접선과 점 B 구하기",
+        "content": "점 A에서의 접선의 기울기는:\nf'(a) = -3a² + 2a·a + 2 = -3a² + 2a² + 2 = -a² + 2 = 2 - a²\n\n점 A(a, 2a)에서의 접선 방정식:\ny - 2a = (2 - a²)(x - a)\n\n이 접선이 x축(y = 0)과 만나는 점 B를 구합니다:\n-2a = (2 - a²)(x_B - a)\n\na > √2이므로 2 - a² < 0이고, a² - 2 > 0입니다.\n\nx_B - a = -2a/(2 - a²) = 2a/(a² - 2)\nx_B = a + 2a/(a² - 2) = [a(a² - 2) + 2a]/(a² - 2) = [a³ - 2a + 2a]/(a² - 2) = a³/(a² - 2)\n\n따라서 B = (a³/(a² - 2), 0)입니다."
+      },
+      {
+        "step_idx": 3,
+        "title": "원 위의 점 조건 적용",
+        "content": "점 A가 선분 OB를 지름으로 하는 원 위의 점이면, 원주각의 성질에 의해 ∠OAB = 90°입니다.\n\n이는 벡터 AO와 AB가 수직임을 의미합니다.\n\n벡터 AO = (0 - a, 0 - 2a) = (-a, -2a)\n벡터 AB = (a³/(a² - 2) - a, 0 - 2a) = (2a/(a² - 2), -2a)\n\n내적이 0이어야 합니다:\nAO · AB = (-a)·(2a/(a² - 2)) + (-2a)·(-2a) = 0\n-2a²/(a² - 2) + 4a² = 0\n\na ≠ 0이므로 양변을 a²로 나누면:\n-2/(a² - 2) + 4 = 0\n4 = 2/(a² - 2)\na² - 2 = 1/2\na² = 5/2\n\na > √2 조건 확인: √(5/2) ≈ 1.58 > √2 ≈ 1.41 ✓"
+      },
+      {
+        "step_idx": 4,
+        "title": "OA와 AB의 길이 계산",
+        "content": "a² = 5/2를 이용하여 각 거리를 계산합니다.\n\nOA의 길이:\nOA² = a² + (2a)² = a² + 4a² = 5a² = 5 × (5/2) = 25/2\nOA = √(25/2) = 5/√2\n\n점 B의 x좌표:\nx_B = a³/(a² - 2) = a·a²/(a² - 2) = a·(5/2)/(1/2) = 5a\n\nAB의 길이:\nAB² = (5a - a)² + (0 - 2a)² = (4a)² + (2a)² = 16a² + 4a² = 20a² = 20 × (5/2) = 50\nAB = √50 = 5√2"
+      },
+      {
+        "step_idx": 5,
+        "title": "OA × AB 계산",
+        "content": "OA × AB = (5/√2) × (5√2) = 5 × 5 × (√2/√2) = 25\n\n또는 직접 계산:\nOA × AB = √(25/2) × √50 = √(25/2 × 50) = √(1250/2) = √625 = 25"
+      }
+    ],
+    "final_answer": 25,
+    "rationale": "모든 참조 모델들이 동일한 접근법과 최종 답 25에 도달했습니다. 원점에서의 접선 구하기, 점 A 찾기, 점 A에서의 접선으로 점 B 구하기, 원주각 조건(직각)을 통한 a² = 5/2 도출, 최종 거리 곱 계산의 과정이 모두 일치하며 수학적으로 정확합니다.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 18.700262308120728
+  }
+}

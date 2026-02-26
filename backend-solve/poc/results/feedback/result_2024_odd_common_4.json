@@ -1,0 +1,352 @@
+{
+  "problem_id": "2024_odd_common_4",
+  "ground_truth": "1",
+  "answer_type": "choice",
+  "baseline": {
+    "gpt-5.2": {
+      "answer": "1",
+      "correct": true
+    },
+    "claude-opus-4.5": {
+      "answer": "1",
+      "correct": true
+    },
+    "gemini-3-pro": {
+      "answer": "1",
+      "correct": true
+    },
+    "gpt-5-codex": {
+      "answer": "1",
+      "correct": true
+    },
+    "gpt-5": {
+      "answer": "1",
+      "correct": true
+    },
+    "grok-4-fast": {
+      "answer": "1",
+      "correct": true
+    }
+  },
+  "self_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "연속 조건 확인(경계점)",
+          "content": "조각함수는 각 구간에서는 다항식이므로 항상 연속입니다.\n따라서 전체에서 연속이 되려면 경계점 x=2에서만 연속이면 됩니다."
+        },
+        {
+          "step_idx": 1,
+          "title": "좌극한=함수값(우측값) 세우기",
+          "content": "- x<2에서 f(x)=3x-a 이므로\n  lim_{x→2^-} f(x)=3·2-a=6-a\n- x≥2에서 f(x)=x^2+a 이고, f(2)=2^2+a=4+a\n\n연속이려면 6-a = 4+a"
+        },
+        {
+          "step_idx": 2,
+          "title": "방정식 풀이",
+          "content": "6-a=4+a ⇒ 2=2a ⇒ a=1"
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "a=1 (①)"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "각 구간의 함수가 다항식이므로 구간 내 연속이며, 경계점 x=2에서만 연속 조건(좌극한=함수값)을 확인하면 됩니다. 좌극한 6-a, 함수값(우측) 4+a로 두어 6-a=4+a를 풀면 a=1이 맞습니다. 오류가 없어 수정하지 않았습니다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 5.249290943145752
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "연속 조건 파악",
+          "content": "함수 $f(x)$가 실수 전체에서 연속이려면, 조각이 나뉘는 점 $x = 2$에서 연속이어야 합니다.\n\n$x = 2$에서 연속 조건:\n$$\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x) = f(2)$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "좌극한, 우극한, 함숫값 계산",
+          "content": "**좌극한** ($x < 2$ 부분 사용):\n$$\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^-} (3x - a) = 3(2) - a = 6 - a$$\n\n**우극한 및 함숫값** ($x \\geq 2$ 부분 사용):\n$$\\lim_{x \\to 2^+} f(x) = f(2) = 2^2 + a = 4 + a$$"
+        },
+        {
+          "step_idx": 3,
+          "title": "연속 조건으로 방정식 수립 및 풀이",
+          "content": "연속 조건에서:\n$$6 - a = 4 + a$$\n\n$$6 - 4 = a + a$$\n\n$$2 = 2a$$\n\n$$a = 1$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "**① 1**"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "모든 단계를 검토했습니다. Step 1에서 연속 조건을 올바르게 파악했고, Step 2에서 좌극한 6-a와 우극한/함숫값 4+a를 정확히 계산했습니다. Step 3에서 6-a = 4+a 방정식을 풀어 a=1을 올바르게 도출했습니다. 검산: a=1일 때, 좌극한 = 6-1 = 5, 우극한 = 4+1 = 5로 일치합니다. 모든 계산이 정확합니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 6.510117530822754
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "연속 조건 확인",
+          "content": "함수 $f(x)$가 실수 전체의 집합에서 연속이려면, 함수의 식이 바뀌는 경계인 $x=2$에서 연속이어야 합니다.\n즉, $x=2$에서의 좌극한값과 우극한값(함숫값)이 서로 같아야 합니다.\n$$ \\lim_{x \\to 2-} f(x) = \\lim_{x \\to 2+} f(x) $$"
+        },
+        {
+          "step_idx": 1,
+          "title": "극한값 계산 및 방정식 수립",
+          "content": "주어진 함수식에 따라 각각의 극한값을 구합니다.\n\n1. **좌극한 ($x < 2$)**: $f(x) = 3x - a$\n   $$ \\lim_{x \\to 2-} (3x - a) = 3(2) - a = 6 - a $$\n\n2. **우극한 및 함숫값 ($x \\ge 2$)**: $f(x) = x^2 + a$\n   $$ \\lim_{x \\to 2+} (x^2 + a) = 2^2 + a = 4 + a $$\n\n연속 조건에 의해 두 값이 같아야 하므로 다음과 같은 등식을 세울 수 있습니다.\n$$ 6 - a = 4 + a $$"
+        },
+        {
+          "step_idx": 2,
+          "title": "상수 a 값 구하기",
+          "content": "위에서 세운 일차방정식을 풀어 $a$의 값을 구합니다.\n$$ 6 - 4 = a + a $$\n$$ 2 = 2a $$\n$$ \\therefore a = 1 $$"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Verified the continuity condition logic, the limit calculations for the piecewise function at x=2, and the algebraic solution. All steps are mathematically correct.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 18.149247646331787
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Continuity condition at x = 2",
+          "content": "For continuity at x = 2, equate the left and right expressions: 3(2) − a = 2^2 + a ⇒ 6 − a = 4 + a ⇒ 2 = 2a ⇒ a = 1."
+        },
+        {
+          "step_idx": 1,
+          "title": "Conclusion",
+          "content": "The value of a is 1."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Verified the continuity condition at x=2 and confirmed a=1; no changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 3.0917067527770996
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Continuity condition at x=2",
+          "content": "Continuity requires left limit equals value at 2: 3*2 - a = 2^2 + a."
+        },
+        {
+          "step_idx": 1,
+          "title": "Solve for a",
+          "content": "6 - a = 4 + a ⇒ 2 = 2a ⇒ a = 1. This corresponds to option ①."
+        },
+        {
+          "step_idx": 2,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Checked that both pieces are polynomials (continuous on their domains) and that continuity at x=2 requires 3*2 - a = 2^2 + a. Solving gives a=1, matching option ①. No changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 16.601657152175903
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Check continuity at x=2",
+          "content": "For the piecewise function to be continuous on all real numbers, it must be continuous at the junction point x=2. Compute the left-hand limit: lim_{x→2^-} f(x) = lim_{x→2^-} (3x - a) = 3(2) - a = 6 - a. The right-hand limit and function value at x=2: lim_{x→2^+} f(x) = f(2) = (2)^2 + a = 4 + a. Set them equal for continuity: 6 - a = 4 + a. Solve for a: 6 - 4 = a + a → 2 = 2a → a = 1. The function is continuous elsewhere as both pieces are polynomials."
+        },
+        {
+          "step_idx": 1,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Verified the calculation of limits and equation solving; the left limit is correctly 6 - a, right limit 4 + a, leading to a=1. No mathematical errors found. Continuity elsewhere is valid since polynomials are continuous.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 3.4994332790374756
+    }
+  },
+  "cross_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "연속 조건은 경계점 x=2에서만 확인",
+          "content": "각 구간의 식은 다항식이므로 구간 내부에서는 항상 연속. 따라서 전체 연속 ⇔ 식이 바뀌는 x=2에서 좌극한=함숫값(우측식 값)만 맞추면 됨."
+        },
+        {
+          "step_idx": 1,
+          "title": "좌극한과 f(2) 계산",
+          "content": "좌극한: lim_{x→2^-}(3x-a)=6-a. \n우측(및 함숫값): f(2)=2^2+a=4+a."
+        },
+        {
+          "step_idx": 2,
+          "title": "연속 방정식 풀이",
+          "content": "6-a=4+a ⇒ 2=2a ⇒ a=1."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "다른 모델들과 동일하게 경계점 x=2에서 좌극한과 f(2)를 같게 두어 a를 구했으며 계산도 일치합니다. 제 풀이에 오류는 없고, 다른 모델들이 명시한 우극한=함숫값 조건을 제 풀이도 사실상 동일하게 사용했습니다. 변경 사항 없습니다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 5.6829211711883545
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "연속 조건 파악",
+          "content": "함수 $f(x)$가 실수 전체에서 연속이려면, 조각이 나뉘는 점 $x = 2$에서 연속이어야 합니다.\n\n$x = 2$에서 연속 조건:\n$$\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x) = f(2)$$"
+        },
+        {
+          "step_idx": 1,
+          "title": "좌극한, 우극한, 함숫값 계산",
+          "content": "**좌극한** ($x < 2$ 부분 사용):\n$$\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^-} (3x - a) = 3(2) - a = 6 - a$$\n\n**우극한 및 함숫값** ($x \\geq 2$ 부분 사용):\n$$\\lim_{x \\to 2^+} f(x) = f(2) = 2^2 + a = 4 + a$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "연속 조건으로 방정식 수립 및 풀이",
+          "content": "연속 조건에서:\n$$6 - a = 4 + a$$\n\n$$6 - 4 = a + a$$\n\n$$2 = 2a$$\n\n$$a = 1$$"
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "**① 1**"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "모든 다른 모델들의 풀이와 제 풀이가 동일합니다. 경계점 x=2에서 좌극한(6-a)과 우극한 및 함숫값(4+a)을 같게 놓고 방정식을 풀어 a=1을 얻었습니다. 각 구간에서 다항함수이므로 그 외의 점에서는 자동으로 연속입니다. 풀이에 오류가 없으므로 수정하지 않았습니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 8.420461893081665
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "연속 조건 확인",
+          "content": "함수 $f(x)$가 실수 전체의 집합에서 연속이려면, 함수의 식이 바뀌는 경계인 $x=2$에서 연속이어야 합니다.\n즉, $x=2$에서의 좌극한값과 우극한값(함숫값)이 서로 같아야 합니다.\n$$ \\lim_{x \\to 2-} f(x) = \\lim_{x \\to 2+} f(x) $$"
+        },
+        {
+          "step_idx": 2,
+          "title": "극한값 계산 및 방정식 수립",
+          "content": "주어진 함수식에 따라 각각의 극한값을 구합니다.\n\n1. **좌극한 ($x < 2$)**: $f(x) = 3x - a$\n   $$ \\lim_{x \\to 2-} (3x - a) = 3(2) - a = 6 - a $$\n\n2. **우극한 및 함숫값 ($x \\ge 2$)**: $f(x) = x^2 + a$\n   $$ \\lim_{x \\to 2+} (x^2 + a) = 2^2 + a = 4 + a $$\n\n연속 조건에 의해 두 값이 같아야 하므로 다음과 같은 등식을 세울 수 있습니다.\n$$ 6 - a = 4 + a $$"
+        },
+        {
+          "step_idx": 3,
+          "title": "상수 a 값 구하기",
+          "content": "위에서 세운 일차방정식을 풀어 $a$의 값을 구합니다.\n$$ 6 - 4 = a + a $$\n$$ 2 = 2a $$\n$$ \\therefore a = 1 $$"
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "①"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My solution correctly identifies the condition for continuity at the specific point x=2, sets up the left-hand and right-hand limits, and solves the resulting linear equation. This approach perfectly matches all other models (gpt-5.2, claude-opus-4.5, etc.), which also set 3(2)-a equal to 2^2+a to find a=1. No errors were found, and the explanation is clear and complete.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 12.17225694656372
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Continuity at x=2",
+          "content": "Set left and right expressions equal: 3·2 − a = 2² + a ⇒ 6 − a = 4 + a."
+        },
+        {
+          "step_idx": 1,
+          "title": "Solve for a",
+          "content": "2 = 2a ⇒ a = 1."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My reasoning matches the other solutions; no corrections were needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 2.5637450218200684
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Set continuity at the junction",
+          "content": "Both pieces are polynomials, so only x=2 matters. Require 3*2 - a = 2^2 + a."
+        },
+        {
+          "step_idx": 1,
+          "title": "Solve for a",
+          "content": "6 - a = 4 + a ⇒ 2 = 2a ⇒ a = 1 ⇒ option ①."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My solution matches all other models: enforce continuity at x=2 and solve to get a=1. No errors found; unchanged.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 11.333446502685547
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Check continuity at x=2",
+          "content": "For the piecewise function to be continuous on all real numbers, it must be continuous at x=2. Left-hand limit: lim_{x→2^-} f(x) = 3(2) - a = 6 - a. Right-hand limit and f(2): lim_{x→2^+} f(x) = 2^2 + a = 4 + a. Set equal: 6 - a = 4 + a → 2 = 2a → a = 1. The function is continuous elsewhere as both pieces are polynomials."
+        },
+        {
+          "step_idx": 1,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "All other models follow the same approach: checking continuity at x=2 by equating left and right limits, solving for a=1, and noting polynomials are continuous elsewhere. No errors in my solution; approaches are identical in essence, with minor variations in detail or language. No changes needed.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 3.1831722259521484
+    }
+  },
+  "aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "연속성 조건 분석",
+        "content": "주어진 함수 f(x)는 x=2를 기준으로 두 개의 다항식으로 정의된 조각함수입니다. 다항식은 정의된 구간에서 항상 연속이므로, f(x)가 실수 전체에서 연속이 되려면 경계점 x=2에서 연속이어야 합니다. x=2에서 연속이 되려면 좌극한, 우극한, 그리고 함숫값이 모두 같아야 합니다."
+      },
+      {
+        "step_idx": 1,
+        "title": "좌극한 계산",
+        "content": "x < 2 구간에서 f(x) = 3x - a 이므로, x가 2에 왼쪽에서 접근할 때의 극한값을 구합니다.\n\nlim(x→2⁻) f(x) = lim(x→2⁻) (3x - a) = 3(2) - a = 6 - a"
+      },
+      {
+        "step_idx": 2,
+        "title": "우극한 및 함숫값 계산",
+        "content": "x ≥ 2 구간에서 f(x) = x² + a 이므로, x=2에서의 함숫값과 우극한을 구합니다.\n\nf(2) = 2² + a = 4 + a\n\nlim(x→2⁺) f(x) = lim(x→2⁺) (x² + a) = 4 + a\n\n따라서 우극한과 함숫값은 둘 다 4 + a입니다."
+      },
+      {
+        "step_idx": 3,
+        "title": "연속 조건을 이용한 방정식 수립",
+        "content": "x=2에서 연속이 되려면 좌극한 = 우극한 = 함숫값이어야 합니다.\n\n6 - a = 4 + a"
+      },
+      {
+        "step_idx": 4,
+        "title": "방정식 풀이",
+        "content": "6 - a = 4 + a\n\n양변을 정리하면:\n6 - 4 = a + a\n2 = 2a\na = 1"
+      }
+    ],
+    "final_answer": 1,
+    "rationale": "모든 참조 모델들이 동일한 접근법을 사용했고, x=2에서의 연속 조건(좌극한 = 우극한 = 함숫값)을 적용하여 a=1이라는 동일한 결과를 도출했습니다. 이 방법은 조각함수의 연속성을 판단하는 표준적이고 올바른 방법입니다.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 10.348716735839844
+  }
+}

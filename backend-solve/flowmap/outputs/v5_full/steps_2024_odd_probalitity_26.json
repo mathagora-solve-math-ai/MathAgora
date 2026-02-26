@@ -1,0 +1,105 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_probalitity_26",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "prob_desc": "26. 4개의 동전을 동시에 던져서 앞면이 나오는 동전의 개수를 확률변수 $X$라 하고, 이산확률변수 $Y$를 $$Y = \\begin{cases} X & (X\\text{가 0 또는 1의 값을 가지는 경우}) \\\\ 2 & (X\\text{가 2 이상의 값을 가지는 경우}) \\end{cases}$$라 하자. $\\mathrm{E}(Y)$의 값은? [3점]\n① $\\dfrac{25}{16}$ ② $\\dfrac{13}{8}$ ③ $\\dfrac{27}{16}$ ④ $\\dfrac{7}{4}$ ⑤ $\\dfrac{29}{16}$",
+    "answer": "2"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "X distribution from fair coins",
+        "body": "Four fair coins give a binomial distribution X ~ Binomial(n=4, p=1/2), so P(X=k) = C(4,k)/16 for k=0,...,4. Explicit values: P(0)=1/16, P(1)=4/16, P(2)=6/16, P(3)=4/16, P(4)=1/16."
+      },
+      {
+        "title": "Translate to Y probabilities",
+        "body": "By definition, Y equals X for X=0 or 1, and Y=2 otherwise. Hence P(Y=0)=P(X=0)=1/16, P(Y=1)=P(X=1)=4/16, and P(Y=2)=P(X≥2)=1−(1/16+4/16)=11/16."
+      },
+      {
+        "title": "Compute Y expectation",
+        "body": "E(Y) = 0·(1/16) + 1·(4/16) + 2·(11/16) = 0 + 4/16 + 22/16 = 26/16 = 13/8."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Express Y via X",
+        "body": "With X = number of heads in 4 fair coin tosses, Y equals X for X=0 or 1, and Y=2 for X≥2. Thus Y takes values {0,1,2} with Y=0 if X=0, Y=1 if X=1, and Y=2 if X∈{2,3,4}."
+      },
+      {
+        "title": "Find distribution of X",
+        "body": "X ~ Binomial(4, 1/2). Hence P(X=k) = C(4,k)/16. Values: P(X=0)=1/16, P(X=1)=4/16, P(X=2)=6/16, P(X=3)=4/16, P(X=4)=1/16."
+      },
+      {
+        "title": "Get distribution of Y",
+        "body": "P(Y=0)=P(X=0)=1/16. P(Y=1)=P(X=1)=4/16. P(Y=2)=P(X≥2)=1−(1/16+4/16)=11/16."
+      },
+      {
+        "title": "Compute expected value",
+        "body": "E[Y]=0·(1/16)+1·(4/16)+2·(11/16)=(4+22)/16=26/16=13/8."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Find probability distribution of X",
+        "body": "X is the number of heads when tossing 4 coins, so X follows Binomial(4, 1/2).\nP(X=0) = C(4,0)(1/2)^4 = 1/16\nP(X=1) = C(4,1)(1/2)^4 = 4/16\nP(X=2) = C(4,2)(1/2)^4 = 6/16\nP(X=3) = C(4,3)(1/2)^4 = 4/16\nP(X=4) = C(4,4)(1/2)^4 = 1/16"
+      },
+      {
+        "title": "Find probability distribution of Y",
+        "body": "Y = X when X = 0 or 1\nY = 2 when X ≥ 2\n\nP(Y=0) = P(X=0) = 1/16\nP(Y=1) = P(X=1) = 4/16\nP(Y=2) = P(X≥2) = P(X=2) + P(X=3) + P(X=4) = 6/16 + 4/16 + 1/16 = 11/16"
+      },
+      {
+        "title": "Calculate E(Y)",
+        "body": "E(Y) = 0·P(Y=0) + 1·P(Y=1) + 2·P(Y=2)\nE(Y) = 0·(1/16) + 1·(4/16) + 2·(11/16)\nE(Y) = 0 + 4/16 + 22/16\nE(Y) = 26/16 = 13/8"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Calculate relevant probabilities for X",
+        "body": "The random variable $X$ represents the number of heads obtained when tossing 4 coins. The total number of possible outcomes is $2^4 = 16$. We calculate the probabilities for the cases defined in $Y$:\n- $P(X=0) = \\frac{\\binom{4}{0}}{16} = \\frac{1}{16}$\n- $P(X=1) = \\frac{\\binom{4}{1}}{16} = \\frac{4}{16}$\n- $P(X \\ge 2) = 1 - \\left( P(X=0) + P(X=1) \\right) = 1 - \\left( \\frac{1}{16} + \\frac{4}{16} \\right) = \\frac{11}{16}$"
+      },
+      {
+        "title": "Calculate the expected value E(Y)",
+        "body": "Based on the definition of the random variable $Y$, the expected value $\\mathrm{E}(Y)$ is calculated as follows:\n$\\mathrm{E}(Y) = 0 \\cdot P(X=0) + 1 \\cdot P(X=1) + 2 \\cdot P(X \\ge 2)$\nSubstitute the probabilities calculated in the previous step:\n$\\mathrm{E}(Y) = 0 \\cdot \\frac{1}{16} + 1 \\cdot \\frac{4}{16} + 2 \\cdot \\frac{11}{16}$\n$\\mathrm{E}(Y) = 0 + \\frac{4}{16} + \\frac{22}{16} = \\frac{26}{16} = \\frac{13}{8}$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Define X and its distribution",
+        "body": "X is the binomial random variable for number of heads in 4 fair coin tosses, so X ~ Binomial(4, 0.5). Total outcomes: 2^4 = 16. P(X = k) = C(4,k) / 16, where C(4,k) is the binomial coefficient."
+      },
+      {
+        "title": "Define Y in terms of X",
+        "body": "Y = X if X = 0 or 1; Y = 2 if X ≥ 2. Possible values of Y: 0, 1, 2."
+      },
+      {
+        "title": "Compute probabilities for Y",
+        "body": "P(Y=0) = P(X=0) = C(4,0)/16 = 1/16. P(Y=1) = P(X=1) = C(4,1)/16 = 4/16. P(Y=2) = P(X≥2) = 1 - P(X=0) - P(X=1) = 1 - 1/16 - 4/16 = 11/16."
+      },
+      {
+        "title": "Calculate E(Y)",
+        "body": "E(Y) = 0·P(Y=0) + 1·P(Y=1) + 2·P(Y=2) = 0·(1/16) + 1·(4/16) + 2·(11/16) = 4/16 + 22/16 = 26/16 = 13/8."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ]
+  }
+}

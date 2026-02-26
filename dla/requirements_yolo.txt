@@ -1,0 +1,4 @@
+ultralytics
+torch
+pillow
+numpy

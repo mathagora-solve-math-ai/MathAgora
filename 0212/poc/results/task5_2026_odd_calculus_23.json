@@ -1,0 +1,2954 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T03:27:59Z",
+    "ended_at_utc": "2026-02-13T03:43:43Z",
+    "elapsed_seconds": 944.1,
+    "problem_tag": "2026_odd_calculus_23",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_calculus_23",
+    "label": "2026_odd_calculus_23 (미적분, 2점)",
+    "gold_answer": "3"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.187614917755127,
+              "step_count": 1,
+              "step_titles": [
+                "표준 극한 활용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.228724956512451,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "곱으로 분리해 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.80694842338562,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.187614917755127,
+              "step_count": 1,
+              "step_titles": [
+                "표준 극한 활용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.228724956512451,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "곱으로 분리해 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.80694842338562,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 1.6666666666666667,
+          "title_frequency": {
+            "표준 극한 활용": 3,
+            "곱으로 분리해 계산": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 1.6666666666666667,
+          "step_std": 0.5773502691896257,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "표준 극한 활용": 3,
+            "곱으로 분리해 계산": 1,
+            "극한 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.30504584312439,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 적용 준비",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.46799898147583,
+              "step_count": 2,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.128216743469238,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.30504584312439,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 적용 준비",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.46799898147583,
+              "step_count": 2,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.128216743469238,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "극한 공식 적용 준비": 1,
+            "식 변형": 1,
+            "극한값 계산": 1,
+            "기본 극한 공식 확인": 1,
+            "극한 계산": 1,
+            "극한 공식 적용": 1,
+            "계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "극한 공식 적용 준비": 1,
+            "식 변형": 1,
+            "극한값 계산": 1,
+            "기본 극한 공식 확인": 1,
+            "극한 계산": 1,
+            "극한 공식 적용": 1,
+            "계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.288943767547607,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.793999433517456,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.669865369796753,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.288943767547607,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.793999433517456,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.669865369796753,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "식의 변형": 2,
+            "극한값 계산": 3,
+            "극한 공식 확인": 1,
+            "식 변형": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "식의 변형": 2,
+            "극한값 계산": 3,
+            "극한 공식 확인": 1,
+            "식 변형": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.63750147819519,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "한계값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.54243040084839,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "기본 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.43481945991516,
+              "step_count": 3,
+              "step_titles": [
+                "극한 형태 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.63750147819519,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "한계값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.54243040084839,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "기본 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.43481945991516,
+              "step_count": 3,
+              "step_titles": [
+                "극한 형태 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "표현 변형": 1,
+            "한계값 계산": 1,
+            "표현 재구성": 1,
+            "기본 극한 적용": 1,
+            "극한 형태 확인": 1,
+            "식 변형": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "표현 변형": 1,
+            "한계값 계산": 1,
+            "표현 재구성": 1,
+            "기본 극한 적용": 1,
+            "극한 형태 확인": 1,
+            "식 변형": 1,
+            "극한 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.04288625717163,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형하기",
+                "기본 극한 공식 적용",
+                "최종 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.676316261291504,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.351135492324829,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.04288625717163,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형하기",
+                "기본 극한 공식 적용",
+                "최종 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.676316261291504,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.351135492324829,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "극한 변형하기": 1,
+            "기본 극한 공식 적용": 1,
+            "최종 계산": 1,
+            "극한 변형": 2,
+            "알려진 극한 공식 이용": 2,
+            "극한 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "극한 변형하기": 1,
+            "기본 극한 공식 적용": 1,
+            "최종 계산": 1,
+            "극한 변형": 2,
+            "알려진 극한 공식 이용": 2,
+            "극한 계산": 2
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.065968990325928,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.878163576126099,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "식 변형",
+                "기본 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.45881962776184,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.065968990325928,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.878163576126099,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "식 변형",
+                "기본 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.45881962776184,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기본 극한 공식 활용": 2,
+            "식 변형": 3,
+            "극한 계산": 2,
+            "기본 극한 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기본 극한 공식 활용": 2,
+            "식 변형": 3,
+            "극한 계산": 2,
+            "기본 극한 적용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "표준 극한 활용": 3,
+          "곱으로 분리해 계산": 1,
+          "극한 계산": 7,
+          "극한 공식 적용 준비": 1,
+          "식 변형": 6,
+          "극한값 계산": 4,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용": 1,
+          "계산": 1,
+          "식의 변형": 2,
+          "극한 공식 확인": 1,
+          "표현 변형": 1,
+          "한계값 계산": 1,
+          "표현 재구성": 1,
+          "기본 극한 적용": 2,
+          "극한 형태 확인": 1,
+          "극한 변형하기": 1,
+          "기본 극한 공식 적용": 1,
+          "최종 계산": 1,
+          "극한 변형": 2,
+          "알려진 극한 공식 이용": 2,
+          "조건 정리": 3,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.922606945037842,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "곱으로 분리 후 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.619533061981201,
+              "step_count": 3,
+              "step_titles": [
+                "표준 극한식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.210384368896484,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한식으로 변형",
+                "표준 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.922606945037842,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 활용",
+                "곱으로 분리 후 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.619533061981201,
+              "step_count": 3,
+              "step_titles": [
+                "표준 극한식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.210384368896484,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한식으로 변형",
+                "표준 극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "표준 극한 활용": 1,
+            "곱으로 분리 후 계산": 1,
+            "표준 극한식 활용": 1,
+            "식 변형": 1,
+            "극한 계산": 1,
+            "표준 극한식으로 변형": 1,
+            "표준 극한 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "표준 극한 활용": 1,
+            "곱으로 분리 후 계산": 1,
+            "표준 극한식 활용": 1,
+            "식 변형": 1,
+            "극한 계산": 1,
+            "표준 극한식으로 변형": 1,
+            "표준 극한 적용": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.37532639503479,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.203439474105835,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 적용 준비",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.985384702682495,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 활용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.37532639503479,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.203439474105835,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 적용 준비",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.985384702682495,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 활용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "기본 극한 공식 확인": 1,
+            "식 변형": 2,
+            "극한 계산": 1,
+            "극한 공식 적용 준비": 1,
+            "극한값 계산": 1,
+            "극한 공식 활용": 1,
+            "계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "기본 극한 공식 확인": 1,
+            "식 변형": 2,
+            "극한 계산": 1,
+            "극한 공식 적용 준비": 1,
+            "극한값 계산": 1,
+            "극한 공식 활용": 1,
+            "계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.11948275566101,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.975472927093506,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.993212699890137,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.11948275566101,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.975472927093506,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.993212699890137,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "식 변형": 2,
+            "극한값 계산": 3,
+            "식의 변형": 1,
+            "극한 공식 확인": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "식 변형": 2,
+            "극한값 계산": 3,
+            "식의 변형": 1,
+            "극한 공식 확인": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.124568700790405,
+              "step_count": 3,
+              "step_titles": [
+                "직접 대입",
+                "식 변형",
+                "표준 극한 이용"
+              ],
+              "final_answer": "3 (③)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.556330919265747,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.966168642044067,
+              "step_count": 3,
+              "step_titles": [
+                "부정형 확인",
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.124568700790405,
+              "step_count": 3,
+              "step_titles": [
+                "직접 대입",
+                "식 변형",
+                "표준 극한 이용"
+              ],
+              "final_answer": "3 (③)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.556330919265747,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.966168642044067,
+              "step_count": 3,
+              "step_titles": [
+                "부정형 확인",
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "직접 대입": 1,
+            "식 변형": 1,
+            "표준 극한 이용": 1,
+            "표현 재구성": 2,
+            "극한 적용": 2,
+            "부정형 확인": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "직접 대입": 1,
+            "식 변형": 1,
+            "표준 극한 이용": 1,
+            "표현 재구성": 2,
+            "극한 적용": 2,
+            "부정형 확인": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.18245553970337,
+              "step_count": 2,
+              "step_titles": [
+                "극한의 기본 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.465940713882446,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "삼각함수 극한 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 52.71273708343506,
+              "step_count": 3,
+              "step_titles": [
+                "식 변형",
+                "표준 극한 적용",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.18245553970337,
+              "step_count": 2,
+              "step_titles": [
+                "극한의 기본 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.465940713882446,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "삼각함수 극한 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 52.71273708343506,
+              "step_count": 3,
+              "step_titles": [
+                "식 변형",
+                "표준 극한 적용",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "극한의 기본 공식 적용": 1,
+            "극한 계산": 2,
+            "극한 변형": 1,
+            "삼각함수 극한 공식 적용": 1,
+            "식 변형": 1,
+            "표준 극한 적용": 1,
+            "극한값 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "극한의 기본 공식 적용": 1,
+            "극한 계산": 2,
+            "극한 변형": 1,
+            "삼각함수 극한 공식 적용": 1,
+            "식 변형": 1,
+            "표준 극한 적용": 1,
+            "극한값 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.317533254623413,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.394770860671997,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.2487354278564453,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.317533254623413,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.394770860671997,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.2487354278564453,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기본 극한 공식 활용": 3,
+            "식 변형": 3,
+            "극한 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기본 극한 공식 활용": 3,
+            "식 변형": 3,
+            "극한 계산": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "표준 극한 활용": 1,
+          "곱으로 분리 후 계산": 1,
+          "표준 극한식 활용": 1,
+          "식 변형": 10,
+          "극한 계산": 7,
+          "표준 극한식으로 변형": 1,
+          "표준 극한 적용": 2,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용 준비": 1,
+          "극한값 계산": 5,
+          "극한 공식 활용": 1,
+          "계산": 1,
+          "식의 변형": 1,
+          "극한 공식 확인": 1,
+          "직접 대입": 1,
+          "표준 극한 이용": 1,
+          "표현 재구성": 2,
+          "극한 적용": 2,
+          "부정형 확인": 1,
+          "극한의 기본 공식 적용": 1,
+          "극한 변형": 1,
+          "삼각함수 극한 공식 적용": 1,
+          "조건 정리": 3,
+          "기본 극한 공식 활용": 3
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4189021587371826,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.2699100971221924,
+              "step_count": 1,
+              "step_titles": [
+                "표준 극한 활용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.819523811340332,
+              "step_count": 3,
+              "step_titles": [
+                "표준 극한 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4189021587371826,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.2699100971221924,
+              "step_count": 1,
+              "step_titles": [
+                "표준 극한 활용"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.819523811340332,
+              "step_count": 3,
+              "step_titles": [
+                "표준 극한 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "기본 극한식 활용": 1,
+            "식 변형": 2,
+            "극한 계산": 2,
+            "표준 극한 활용": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 1.1547005383792515,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "기본 극한식 활용": 1,
+            "식 변형": 2,
+            "극한 계산": 2,
+            "표준 극한 활용": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.067424774169922,
+              "step_count": 2,
+              "step_titles": [
+                "핵심 공식 확인",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.29737114906311,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.621384382247925,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.067424774169922,
+              "step_count": 2,
+              "step_titles": [
+                "핵심 공식 확인",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.29737114906311,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.621384382247925,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "**③ 3**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "핵심 공식 확인": 1,
+            "극한 계산": 1,
+            "기본 극한 공식 확인": 1,
+            "식 변형": 1,
+            "극한값 계산": 1,
+            "극한 공식 적용": 1,
+            "계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "핵심 공식 확인": 1,
+            "극한 계산": 1,
+            "기본 극한 공식 확인": 1,
+            "식 변형": 1,
+            "극한값 계산": 1,
+            "극한 공식 적용": 1,
+            "계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.296243906021118,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형 및 계산",
+                "결과 도출"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.572447061538696,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.130494594573975,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.296243906021118,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식 변형 및 계산",
+                "결과 도출"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.572447061538696,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.130494594573975,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "극한 공식 확인": 1,
+            "식 변형 및 계산": 1,
+            "결과 도출": 1,
+            "식의 변형": 1,
+            "극한값 계산": 2,
+            "식 변형": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "극한 공식 확인": 1,
+            "식 변형 및 계산": 1,
+            "결과 도출": 1,
+            "식의 변형": 1,
+            "극한값 계산": 2,
+            "식 변형": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.500120878219604,
+              "step_count": 3,
+              "step_titles": [
+                "직접 대입 확인",
+                "식 변형",
+                "tan 극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.483923196792603,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.112188816070557,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.500120878219604,
+              "step_count": 3,
+              "step_titles": [
+                "직접 대입 확인",
+                "식 변형",
+                "tan 극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.483923196792603,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.112188816070557,
+              "step_count": 2,
+              "step_titles": [
+                "표현 재구성",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "직접 대입 확인": 1,
+            "식 변형": 1,
+            "tan 극한 적용": 1,
+            "표현 변형": 1,
+            "극한 적용": 2,
+            "표현 재구성": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "직접 대입 확인": 1,
+            "식 변형": 1,
+            "tan 극한 적용": 1,
+            "표현 변형": 1,
+            "극한 적용": 2,
+            "표현 재구성": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.674402952194214,
+              "step_count": 2,
+              "step_titles": [
+                "문제 파악 및 전략",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.760197877883911,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.052178382873535,
+              "step_count": 1,
+              "step_titles": [
+                "극한 공식 이용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.674402952194214,
+              "step_count": 2,
+              "step_titles": [
+                "문제 파악 및 전략",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.760197877883911,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변형",
+                "알려진 극한 공식 이용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.052178382873535,
+              "step_count": 1,
+              "step_titles": [
+                "극한 공식 이용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "문제 파악 및 전략": 1,
+            "극한 계산": 2,
+            "극한 변형": 1,
+            "알려진 극한 공식 이용": 1,
+            "극한 공식 이용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 파악 및 전략": 1,
+            "극한 계산": 2,
+            "극한 변형": 1,
+            "알려진 극한 공식 이용": 1,
+            "극한 공식 이용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.309980630874634,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 적용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.267006158828735,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.456368684768677,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.309980630874634,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 적용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.267006158828735,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.456368684768677,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기본 극한 공식 적용": 1,
+            "식 변형": 3,
+            "극한 계산": 3,
+            "기본 극한 공식 활용": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기본 극한 공식 적용": 1,
+            "식 변형": 3,
+            "극한 계산": 3,
+            "기본 극한 공식 활용": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "기본 극한식 활용": 1,
+          "식 변형": 8,
+          "극한 계산": 8,
+          "표준 극한 활용": 2,
+          "핵심 공식 확인": 1,
+          "기본 극한 공식 확인": 1,
+          "극한값 계산": 3,
+          "극한 공식 적용": 1,
+          "계산": 1,
+          "극한 공식 확인": 1,
+          "식 변형 및 계산": 1,
+          "결과 도출": 1,
+          "식의 변형": 1,
+          "직접 대입 확인": 1,
+          "tan 극한 적용": 1,
+          "표현 변형": 1,
+          "극한 적용": 2,
+          "표현 재구성": 1,
+          "문제 파악 및 전략": 1,
+          "극한 변형": 1,
+          "알려진 극한 공식 이용": 1,
+          "극한 공식 이용": 1,
+          "조건 정리": 3,
+          "기본 극한 공식 적용": 1,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.575356960296631,
+              "step_count": 2,
+              "step_titles": [
+                "기본 극한 활용",
+                "식 변형"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.161802768707275,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 정리 적용",
+                "각 항의 극한 계산",
+                "극한값 결론"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.522763967514038,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.575356960296631,
+              "step_count": 2,
+              "step_titles": [
+                "기본 극한 활용",
+                "식 변형"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.161802768707275,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 정리 적용",
+                "각 항의 극한 계산",
+                "극한값 결론"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.522763967514038,
+              "step_count": 2,
+              "step_titles": [
+                "표준 극한 이용",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "기본 극한 활용": 1,
+            "식 변형": 1,
+            "기본 극한 정리 적용": 1,
+            "각 항의 극한 계산": 1,
+            "극한값 결론": 1,
+            "표준 극한 이용": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "기본 극한 활용": 1,
+            "식 변형": 1,
+            "기본 극한 정리 적용": 1,
+            "각 항의 극한 계산": 1,
+            "극한값 결론": 1,
+            "표준 극한 이용": 1,
+            "극한 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.440234422683716,
+              "step_count": 2,
+              "step_titles": [
+                "삼각함수 극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.390007257461548,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.316502332687378,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.440234422683716,
+              "step_count": 2,
+              "step_titles": [
+                "삼각함수 극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.390007257461548,
+              "step_count": 3,
+              "step_titles": [
+                "기본 극한 공식 확인",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "**③ 3**",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.316502332687378,
+              "step_count": 2,
+              "step_titles": [
+                "극한 공식 적용",
+                "계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "삼각함수 극한 공식 적용": 1,
+            "계산": 2,
+            "기본 극한 공식 확인": 1,
+            "식 변형": 1,
+            "극한 계산": 1,
+            "극한 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "삼각함수 극한 공식 적용": 1,
+            "계산": 2,
+            "기본 극한 공식 확인": 1,
+            "식 변형": 1,
+            "극한 계산": 1,
+            "극한 공식 적용": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.91329264640808,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.575322389602661,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.475165605545044,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.91329264640808,
+              "step_count": 3,
+              "step_titles": [
+                "극한 공식 확인",
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.575322389602661,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.475165605545044,
+              "step_count": 2,
+              "step_titles": [
+                "식의 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "극한 공식 확인": 1,
+            "식의 변형": 3,
+            "극한값 계산": 3
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "극한 공식 확인": 1,
+            "식의 변형": 3,
+            "극한값 계산": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.135246753692627,
+              "step_count": 3,
+              "step_titles": [
+                "불정형 확인",
+                "식 변형",
+                "極限 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.270201921463013,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.089179515838623,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.135246753692627,
+              "step_count": 3,
+              "step_titles": [
+                "불정형 확인",
+                "식 변형",
+                "極限 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.270201921463013,
+              "step_count": 2,
+              "step_titles": [
+                "표현 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.089179515838623,
+              "step_count": 2,
+              "step_titles": [
+                "식 변형",
+                "극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "불정형 확인": 1,
+            "식 변형": 2,
+            "極限 계산": 1,
+            "표현 변형": 1,
+            "극한 계산": 1,
+            "극한 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "불정형 확인": 1,
+            "식 변형": 2,
+            "極限 계산": 1,
+            "표현 변형": 1,
+            "극한 계산": 1,
+            "극한 적용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.391793727874756,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 변환",
+                "극한 분리와 알려진 극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.6036224365234375,
+              "step_count": 2,
+              "step_titles": [
+                "극한의 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.61847472190857,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변환",
+                "삼각함수 극한 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "3 (③번)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.391793727874756,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 변환",
+                "극한 분리와 알려진 극한 적용"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.6036224365234375,
+              "step_count": 2,
+              "step_titles": [
+                "극한의 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.61847472190857,
+              "step_count": 3,
+              "step_titles": [
+                "극한 변환",
+                "삼각함수 극한 공식 적용",
+                "극한 계산"
+              ],
+              "final_answer": "3 (③번)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 1,
+            "삼각함수 변환": 1,
+            "극한 분리와 알려진 극한 적용": 1,
+            "극한의 변형": 1,
+            "극한 계산": 2,
+            "극한 변환": 1,
+            "삼각함수 극한 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "삼각함수 변환": 1,
+            "극한 분리와 알려진 극한 적용": 1,
+            "극한의 변형": 1,
+            "극한 계산": 2,
+            "극한 변환": 1,
+            "삼각함수 극한 공식 적용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.312692642211914,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.533184051513672,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.226758003234863,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.312692642211914,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 극한 공식 활용",
+                "식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.533184051513672,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.226758003234863,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "기본 극한 공식 활용",
+                "극한 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "삼각함수 극한 공식 활용": 1,
+            "식 변형": 1,
+            "극한 계산": 3,
+            "기본 극한 공식 활용": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "삼각함수 극한 공식 활용": 1,
+            "식 변형": 1,
+            "극한 계산": 3,
+            "기본 극한 공식 활용": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "기본 극한 활용": 1,
+          "식 변형": 5,
+          "기본 극한 정리 적용": 1,
+          "각 항의 극한 계산": 1,
+          "극한값 결론": 1,
+          "표준 극한 이용": 1,
+          "극한 계산": 8,
+          "삼각함수 극한 공식 적용": 2,
+          "계산": 2,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용": 1,
+          "극한 공식 확인": 1,
+          "식의 변형": 3,
+          "극한값 계산": 3,
+          "불정형 확인": 1,
+          "極限 계산": 1,
+          "표현 변형": 1,
+          "극한 적용": 1,
+          "조건 정리": 4,
+          "삼각함수 변환": 1,
+          "극한 분리와 알려진 극한 적용": 1,
+          "극한의 변형": 1,
+          "극한 변환": 1,
+          "삼각함수 극한 공식 활용": 1,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "표준 극한 활용": 3,
+          "곱으로 분리해 계산": 1,
+          "극한 계산": 7,
+          "극한 공식 적용 준비": 1,
+          "식 변형": 6,
+          "극한값 계산": 4,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용": 1,
+          "계산": 1,
+          "식의 변형": 2,
+          "극한 공식 확인": 1,
+          "표현 변형": 1,
+          "한계값 계산": 1,
+          "표현 재구성": 1,
+          "기본 극한 적용": 2,
+          "극한 형태 확인": 1,
+          "극한 변형하기": 1,
+          "기본 극한 공식 적용": 1,
+          "최종 계산": 1,
+          "극한 변형": 2,
+          "알려진 극한 공식 이용": 2,
+          "조건 정리": 3,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "표준 극한 활용": 1,
+          "곱으로 분리 후 계산": 1,
+          "표준 극한식 활용": 1,
+          "식 변형": 10,
+          "극한 계산": 7,
+          "표준 극한식으로 변형": 1,
+          "표준 극한 적용": 2,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용 준비": 1,
+          "극한값 계산": 5,
+          "극한 공식 활용": 1,
+          "계산": 1,
+          "식의 변형": 1,
+          "극한 공식 확인": 1,
+          "직접 대입": 1,
+          "표준 극한 이용": 1,
+          "표현 재구성": 2,
+          "극한 적용": 2,
+          "부정형 확인": 1,
+          "극한의 기본 공식 적용": 1,
+          "극한 변형": 1,
+          "삼각함수 극한 공식 적용": 1,
+          "조건 정리": 3,
+          "기본 극한 공식 활용": 3
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "기본 극한식 활용": 1,
+          "식 변형": 8,
+          "극한 계산": 8,
+          "표준 극한 활용": 2,
+          "핵심 공식 확인": 1,
+          "기본 극한 공식 확인": 1,
+          "극한값 계산": 3,
+          "극한 공식 적용": 1,
+          "계산": 1,
+          "극한 공식 확인": 1,
+          "식 변형 및 계산": 1,
+          "결과 도출": 1,
+          "식의 변형": 1,
+          "직접 대입 확인": 1,
+          "tan 극한 적용": 1,
+          "표현 변형": 1,
+          "극한 적용": 2,
+          "표현 재구성": 1,
+          "문제 파악 및 전략": 1,
+          "극한 변형": 1,
+          "알려진 극한 공식 이용": 1,
+          "극한 공식 이용": 1,
+          "조건 정리": 3,
+          "기본 극한 공식 적용": 1,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "기본 극한 활용": 1,
+          "식 변형": 5,
+          "기본 극한 정리 적용": 1,
+          "각 항의 극한 계산": 1,
+          "극한값 결론": 1,
+          "표준 극한 이용": 1,
+          "극한 계산": 8,
+          "삼각함수 극한 공식 적용": 2,
+          "계산": 2,
+          "기본 극한 공식 확인": 1,
+          "극한 공식 적용": 1,
+          "극한 공식 확인": 1,
+          "식의 변형": 3,
+          "극한값 계산": 3,
+          "불정형 확인": 1,
+          "極限 계산": 1,
+          "표현 변형": 1,
+          "극한 적용": 1,
+          "조건 정리": 4,
+          "삼각함수 변환": 1,
+          "극한 분리와 알려진 극한 적용": 1,
+          "극한의 변형": 1,
+          "극한 변환": 1,
+          "삼각함수 극한 공식 활용": 1,
+          "기본 극한 공식 활용": 2
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.611111111111111,
+      "title_frequency": {
+        "표준 극한 활용": 6,
+        "곱으로 분리해 계산": 1,
+        "극한 계산": 30,
+        "극한 공식 적용 준비": 2,
+        "식 변형": 29,
+        "극한값 계산": 15,
+        "기본 극한 공식 확인": 4,
+        "극한 공식 적용": 3,
+        "계산": 5,
+        "식의 변형": 7,
+        "극한 공식 확인": 4,
+        "표현 변형": 3,
+        "한계값 계산": 1,
+        "표현 재구성": 4,
+        "기본 극한 적용": 2,
+        "극한 형태 확인": 1,
+        "극한 변형하기": 1,
+        "기본 극한 공식 적용": 2,
+        "최종 계산": 1,
+        "극한 변형": 4,
+        "알려진 극한 공식 이용": 3,
+        "조건 정리": 13,
+        "기본 극한 공식 활용": 9,
+        "곱으로 분리 후 계산": 1,
+        "표준 극한식 활용": 1,
+        "표준 극한식으로 변형": 1,
+        "표준 극한 적용": 2,
+        "극한 공식 활용": 1,
+        "직접 대입": 1,
+        "표준 극한 이용": 2,
+        "극한 적용": 5,
+        "부정형 확인": 1,
+        "극한의 기본 공식 적용": 1,
+        "삼각함수 극한 공식 적용": 3,
+        "기본 극한식 활용": 1,
+        "핵심 공식 확인": 1,
+        "식 변형 및 계산": 1,
+        "결과 도출": 1,
+        "직접 대입 확인": 1,
+        "tan 극한 적용": 1,
+        "문제 파악 및 전략": 1,
+        "극한 공식 이용": 1,
+        "기본 극한 활용": 1,
+        "기본 극한 정리 적용": 1,
+        "각 항의 극한 계산": 1,
+        "극한값 결론": 1,
+        "불정형 확인": 1,
+        "極限 계산": 1,
+        "삼각함수 변환": 1,
+        "극한 분리와 알려진 극한 적용": 1,
+        "극한의 변형": 1,
+        "극한 변환": 1,
+        "삼각함수 극한 공식 활용": 1
+      },
+      "accuracy": 0.9166666666666666,
+      "n_samples": 72
+    }
+  }
+}

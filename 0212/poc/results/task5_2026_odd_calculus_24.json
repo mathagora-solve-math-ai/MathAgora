@@ -1,0 +1,2974 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T03:29:47Z",
+    "ended_at_utc": "2026-02-13T03:44:50Z",
+    "elapsed_seconds": 902.38,
+    "problem_tag": "2026_odd_calculus_24",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_calculus_24",
+    "label": "2026_odd_calculus_24 (미적분, 3점)",
+    "gold_answer": "4"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.667840003967285,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^{3}x}\\,dx=\\frac{2}{3}\n\\]\n정답: ④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.601545810699463,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.348790168762207,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(루트 안 단순화)",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^3 x}\\,dx=\\frac{2}{3}\n\\]\n따라서 정답은 ④ \\(\\dfrac{2}{3}\\) 입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.667840003967285,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^{3}x}\\,dx=\\frac{2}{3}\n\\]\n정답: ④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.601545810699463,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.348790168762207,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(루트 안 단순화)",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^3 x}\\,dx=\\frac{2}{3}\n\\]\n따라서 정답은 ④ \\(\\dfrac{2}{3}\\) 입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "식 정리(삼각함수 변형)": 2,
+            "치환적분": 3,
+            "적분 계산": 2,
+            "식 정리(루트 안 단순화)": 1,
+            "정적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "식 정리(삼각함수 변형)": 2,
+            "치환적분": 3,
+            "적분 계산": 2,
+            "식 정리(루트 안 단순화)": 1,
+            "정적분 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.877421140670776,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.066594362258911,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.117847919464111,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.877421140670776,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.066594362258911,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.117847919464111,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 정리": 3,
+            "치환적분": 1,
+            "적분 계산": 3,
+            "치환 적분": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 정리": 3,
+            "치환적분": 1,
+            "적분 계산": 3,
+            "치환 적분": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.586605310440063,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "정적분 계산 및 정답 도출"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.46499228477478,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.525065422058105,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.586605310440063,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "정적분 계산 및 정답 도출"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.46499228477478,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.525065422058105,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 식 정리": 3,
+            "치환적분 수행": 1,
+            "정적분 계산 및 정답 도출": 1,
+            "치환적분 적용": 2,
+            "정적분 계산": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 식 정리": 3,
+            "치환적분 수행": 1,
+            "정적분 계산 및 정답 도출": 1,
+            "치환적분 적용": 2,
+            "정적분 계산": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.417166471481323,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.771114826202393,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.057694673538208,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.417166471481323,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.771114826202393,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.057694673538208,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "적분식 간단화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "적분식 단순화": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "적분식 간단화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "적분식 단순화": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.003740787506104,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.813244342803955,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.442776679992676,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) → 보기 ④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.003740787506104,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.813244342803955,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.442776679992676,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) → 보기 ④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 단순화": 3,
+            "치환적분": 3,
+            "적분 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 단순화": 3,
+            "치환적분": 3,
+            "적분 계산": 3
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.443723440170288,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.8490986824035645,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.022936820983887,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.443723440170288,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.8490986824035645,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.022936820983887,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "식 정리": 3,
+            "치환적분": 3,
+            "적분 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "식 정리": 3,
+            "치환적분": 3,
+            "적분 계산": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 변형)": 2,
+          "치환적분": 10,
+          "적분 계산": 14,
+          "식 정리(루트 안 단순화)": 1,
+          "정적분 계산": 3,
+          "피적분함수 정리": 3,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 3,
+          "치환적분 수행": 1,
+          "정적분 계산 및 정답 도출": 1,
+          "치환적분 적용": 2,
+          "적분식 간단화": 2,
+          "치환법 적용": 3,
+          "적분식 단순화": 1,
+          "피적분함수 단순화": 3,
+          "조건 정리": 3,
+          "식 정리": 3
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.9237871170043945,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 항등식)",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.767717123031616,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.85421347618103,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(루트 안 간단화)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^{3}x}\\,dx=\\frac{2}{3}\n\\]\n따라서 정답은 **④ \\(\\dfrac{2}{3}\\)** 입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.9237871170043945,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 항등식)",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.767717123031616,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.85421347618103,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(루트 안 간단화)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\int_{0}^{\\frac{\\pi}{2}} \\sqrt{\\sin x-\\sin^{3}x}\\,dx=\\frac{2}{3}\n\\]\n따라서 정답은 **④ \\(\\dfrac{2}{3}\\)** 입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "식 정리(삼각함수 항등식)": 1,
+            "치환적분": 3,
+            "정적분 계산": 1,
+            "식 정리(삼각함수 변형)": 1,
+            "적분 계산": 2,
+            "식 정리(루트 안 간단화)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "식 정리(삼각함수 항등식)": 1,
+            "치환적분": 3,
+            "정적분 계산": 1,
+            "식 정리(삼각함수 변형)": 1,
+            "적분 계산": 2,
+            "식 정리(루트 안 간단화)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.028054714202881,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.280682563781738,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.646581649780273,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.028054714202881,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.280682563781738,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.646581649780273,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.25899338722229,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.7084743976593,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분법 적용",
+                "정적분 계산 및 답 도출"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.131521463394165,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.25899338722229,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.7084743976593,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분법 적용",
+                "정적분 계산 및 답 도출"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.131521463394165,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 식 정리": 1,
+            "치환적분 수행": 1,
+            "정적분 계산": 2,
+            "피적분함수 식 변형": 2,
+            "치환적분법 적용": 2,
+            "정적분 계산 및 답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 식 정리": 1,
+            "치환적분 수행": 1,
+            "정적분 계산": 2,
+            "피적분함수 식 변형": 2,
+            "치환적분법 적용": 2,
+            "정적분 계산 및 답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.764564990997314,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.547436237335205,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.088268280029297,
+              "step_count": 3,
+              "step_titles": [
+                "인수분해 및 단순화",
+                "치환법 적용",
+                "적분 계산 및 평가"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.764564990997314,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.547436237335205,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.088268280029297,
+              "step_count": 3,
+              "step_titles": [
+                "인수분해 및 단순화",
+                "치환법 적용",
+                "적분 계산 및 평가"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "적분식 단순화": 1,
+            "치환법 적용": 3,
+            "적분 계산": 2,
+            "적분식 간단화": 1,
+            "인수분해 및 단순화": 1,
+            "적분 계산 및 평가": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "적분식 단순화": 1,
+            "치환법 적용": 3,
+            "적분 계산": 2,
+            "적분식 간단화": 1,
+            "인수분해 및 단순화": 1,
+            "적분 계산 및 평가": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.974085330963135,
+              "step_count": 3,
+              "step_titles": [
+                "피적분 함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.80372452735901,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.139363765716553,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) → ④번",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.974085330963135,
+              "step_count": 3,
+              "step_titles": [
+                "피적분 함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.80372452735901,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.139363765716553,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) → ④번",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분 함수 단순화": 1,
+            "치환적분": 3,
+            "적분 계산": 3,
+            "피적분함수 단순화": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분 함수 단순화": 1,
+            "치환적분": 3,
+            "적분 계산": 3,
+            "피적분함수 단순화": 2
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.514991283416748,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "근호 안 정리",
+                "치환적분 준비",
+                "치환 후 적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.271280765533447,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.295828342437744,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.514991283416748,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "근호 안 정리",
+                "치환적분 준비",
+                "치환 후 적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.271280765533447,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.295828342437744,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "근호 안 정리": 1,
+            "치환적분 준비": 1,
+            "치환 후 적분 계산": 1,
+            "식 정리 및 인수분해": 1,
+            "치환적분 설정": 1,
+            "적분 계산": 2,
+            "식 정리": 1,
+            "치환적분": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "근호 안 정리": 1,
+            "치환적분 준비": 1,
+            "치환 후 적분 계산": 1,
+            "식 정리 및 인수분해": 1,
+            "치환적분 설정": 1,
+            "적분 계산": 2,
+            "식 정리": 1,
+            "치환적분": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 항등식)": 1,
+          "치환적분": 8,
+          "정적분 계산": 3,
+          "식 정리(삼각함수 변형)": 1,
+          "적분 계산": 12,
+          "식 정리(루트 안 간단화)": 1,
+          "피적분함수 정리": 3,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 1,
+          "치환적분 수행": 1,
+          "피적분함수 식 변형": 2,
+          "치환적분법 적용": 2,
+          "정적분 계산 및 답 도출": 1,
+          "적분식 단순화": 1,
+          "치환법 적용": 3,
+          "적분식 간단화": 1,
+          "인수분해 및 단순화": 1,
+          "적분 계산 및 평가": 1,
+          "피적분 함수 단순화": 1,
+          "피적분함수 단순화": 2,
+          "조건 정리": 3,
+          "근호 안 정리": 1,
+          "치환적분 준비": 1,
+          "치환 후 적분 계산": 1,
+          "식 정리 및 인수분해": 1,
+          "치환적분 설정": 1,
+          "식 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.521197557449341,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 항 정돈)",
+                "치환적분",
+                "거듭제곱 적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\n\\]\n④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.669630765914917,
+              "step_count": 2,
+              "step_titles": [
+                "식 정리(루트 안 단순화)",
+                "치환적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.315134286880493,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.521197557449341,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 항 정돈)",
+                "치환적분",
+                "거듭제곱 적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\n\\]\n④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.669630765914917,
+              "step_count": 2,
+              "step_titles": [
+                "식 정리(루트 안 단순화)",
+                "치환적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.315134286880493,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리(삼각함수 변형)",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "식 정리(삼각함수 항 정돈)": 1,
+            "치환적분": 3,
+            "거듭제곱 적분 계산": 1,
+            "식 정리(루트 안 단순화)": 1,
+            "식 정리(삼각함수 변형)": 1,
+            "적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "식 정리(삼각함수 항 정돈)": 1,
+            "치환적분": 3,
+            "거듭제곱 적분 계산": 1,
+            "식 정리(루트 안 단순화)": 1,
+            "식 정리(삼각함수 변형)": 1,
+            "적분 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.782260179519653,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.02059531211853,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.08464789390564,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.782260179519653,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.02059531211853,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.08464789390564,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.57194948196411,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.07054829597473,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "적분 계산 및 정답 도출"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.62647008895874,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.57194948196411,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.07054829597473,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분 수행",
+                "적분 계산 및 정답 도출"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.62647008895874,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 정리",
+                "치환적분법 적용",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 식 정리": 3,
+            "치환적분법 적용": 2,
+            "정적분 계산": 2,
+            "치환적분 수행": 1,
+            "적분 계산 및 정답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 식 정리": 3,
+            "치환적분법 적용": 2,
+            "정적분 계산": 2,
+            "치환적분 수행": 1,
+            "적분 계산 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.847499370574951,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.3539776802063,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.950682878494263,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.847499370574951,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.3539776802063,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.950682878494263,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\dfrac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "적분식 단순화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "피적분함수 단순화": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "적분식 단순화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "피적분함수 단순화": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.577367305755615,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.206987619400024,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.427714824676514,
+              "step_count": 4,
+              "step_titles": [
+                "피적분함수 단순화",
+                "절댓값 제거",
+                "치환적분",
+                "거듭제곱 적분"
+              ],
+              "final_answer": "\\(\\frac{2}{3}\\) → ④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.577367305755615,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.206987619400024,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.427714824676514,
+              "step_count": 4,
+              "step_titles": [
+                "피적분함수 단순화",
+                "절댓값 제거",
+                "치환적분",
+                "거듭제곱 적분"
+              ],
+              "final_answer": "\\(\\frac{2}{3}\\) → ④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "피적분함수 단순화": 3,
+            "치환적분": 3,
+            "적분 계산": 1,
+            "정적분 계산": 1,
+            "절댓값 제거": 1,
+            "거듭제곱 적분": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 단순화": 3,
+            "치환적분": 3,
+            "적분 계산": 1,
+            "정적분 계산": 1,
+            "절댓값 제거": 1,
+            "거듭제곱 적분": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.598579168319702,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 준비",
+                "치환적분 적용",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.734381198883057,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.708993911743164,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "제곱근 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.598579168319702,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 준비",
+                "치환적분 적용",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.734381198883057,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "피적분함수 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.708993911743164,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "제곱근 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "식 정리 및 인수분해": 1,
+            "치환적분 준비": 1,
+            "치환적분 적용": 1,
+            "적분 계산": 3,
+            "피적분함수 정리": 1,
+            "치환적분": 2,
+            "제곱근 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "식 정리 및 인수분해": 1,
+            "치환적분 준비": 1,
+            "치환적분 적용": 1,
+            "적분 계산": 3,
+            "피적분함수 정리": 1,
+            "치환적분": 2,
+            "제곱근 정리": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.2222222222222223,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 항 정돈)": 1,
+          "치환적분": 9,
+          "거듭제곱 적분 계산": 1,
+          "식 정리(루트 안 단순화)": 1,
+          "식 정리(삼각함수 변형)": 1,
+          "적분 계산": 11,
+          "피적분함수 정리": 4,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 3,
+          "치환적분법 적용": 2,
+          "정적분 계산": 3,
+          "치환적분 수행": 1,
+          "적분 계산 및 정답 도출": 1,
+          "적분식 단순화": 2,
+          "치환법 적용": 3,
+          "피적분함수 단순화": 4,
+          "절댓값 제거": 1,
+          "거듭제곱 적분": 1,
+          "조건 정리": 3,
+          "식 정리 및 인수분해": 1,
+          "치환적분 준비": 1,
+          "치환적분 적용": 1,
+          "제곱근 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.798608303070068,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad (\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.29812479019165,
+              "step_count": 3,
+              "step_titles": [
+                "식 단순화",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.1057538986206055,
+              "step_count": 2,
+              "step_titles": [
+                "식 단순화(삼각함수 변형)",
+                "치환적분"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.798608303070068,
+              "step_count": 3,
+              "step_titles": [
+                "식 정리",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad (\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.29812479019165,
+              "step_count": 3,
+              "step_titles": [
+                "식 단순화",
+                "치환적분",
+                "정적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{2}{3}}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.1057538986206055,
+              "step_count": 2,
+              "step_titles": [
+                "식 단순화(삼각함수 변형)",
+                "치환적분"
+              ],
+              "final_answer": "\\[\n\\frac{2}{3}\\quad(\\text{④})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "식 정리": 1,
+            "치환적분": 3,
+            "적분 계산": 1,
+            "식 단순화": 1,
+            "정적분 계산": 1,
+            "식 단순화(삼각함수 변형)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "식 정리": 1,
+            "치환적분": 3,
+            "적분 계산": 1,
+            "식 단순화": 1,
+            "정적분 계산": 1,
+            "식 단순화(삼각함수 변형)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.291360855102539,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.234843969345093,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.675594091415405,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "$$\\frac{2}{3}$$ (정답: ④)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.291360855102539,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.234843969345093,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환 적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.675594091415405,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "$$\\frac{2}{3}$$ (정답: ④)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분 설정": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 정리": 3,
+            "치환 적분": 2,
+            "적분 계산": 3,
+            "치환적분 설정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.180680513381958,
+              "step_count": 2,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분 및 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.085896730422974,
+              "step_count": 2,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분 및 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.715418815612793,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분 적용",
+                "최종 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.180680513381958,
+              "step_count": 2,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분 및 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.085896730422974,
+              "step_count": 2,
+              "step_titles": [
+                "피적분함수 정리",
+                "치환적분 및 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.715418815612793,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 식 변형",
+                "치환적분 적용",
+                "최종 계산"
+              ],
+              "final_answer": "④",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "피적분함수 식 변형": 2,
+            "치환적분 및 계산": 2,
+            "피적분함수 정리": 1,
+            "치환적분 적용": 1,
+            "최종 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 식 변형": 2,
+            "치환적분 및 계산": 2,
+            "피적분함수 정리": 1,
+            "치환적분 적용": 1,
+            "최종 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.83321213722229,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.623366832733154,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.534639835357666,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.83321213722229,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.623366832733154,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 간단화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.534639835357666,
+              "step_count": 3,
+              "step_titles": [
+                "적분식 단순화",
+                "치환법 적용",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "적분식 단순화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "적분식 간단화": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "적분식 단순화": 2,
+            "치환법 적용": 3,
+            "적분 계산": 3,
+            "적분식 간단화": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.237548589706421,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) (④번)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.99726152420044,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.0228750705719,
+              "step_count": 3,
+              "step_titles": [
+                "피적분 함수 간단히 하기",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.237548589706421,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\) (④번)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.99726152420044,
+              "step_count": 3,
+              "step_titles": [
+                "피적분함수 단순화",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{2}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.0228750705719,
+              "step_count": 3,
+              "step_titles": [
+                "피적분 함수 간단히 하기",
+                "치환적분",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "피적분함수 단순화": 2,
+            "치환적분": 3,
+            "적분 계산": 3,
+            "피적분 함수 간단히 하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "피적분함수 단순화": 2,
+            "치환적분": 3,
+            "적분 계산": 3,
+            "피적분 함수 간단히 하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.337278842926025,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "피적분함수 정리",
+                "치환적분 설정",
+                "치환 후 적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.401427984237671,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.75538182258606,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.337278842926025,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "피적분함수 정리",
+                "치환적분 설정",
+                "치환 후 적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.401427984237671,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "④ $\\dfrac{2}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.75538182258606,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 인수분해",
+                "치환적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\frac{2}{3}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "피적분함수 정리": 1,
+            "치환적분 설정": 3,
+            "치환 후 적분 계산": 1,
+            "적분 계산": 2,
+            "식 정리 및 인수분해": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "피적분함수 정리": 1,
+            "치환적분 설정": 3,
+            "치환 후 적분 계산": 1,
+            "적분 계산": 2,
+            "식 정리 및 인수분해": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "식 정리": 1,
+          "치환적분": 6,
+          "적분 계산": 12,
+          "식 단순화": 1,
+          "정적분 계산": 1,
+          "식 단순화(삼각함수 변형)": 1,
+          "피적분함수 정리": 5,
+          "치환 적분": 2,
+          "치환적분 설정": 4,
+          "피적분함수 식 변형": 2,
+          "치환적분 및 계산": 2,
+          "치환적분 적용": 1,
+          "최종 계산": 1,
+          "적분식 단순화": 2,
+          "치환법 적용": 3,
+          "적분식 간단화": 1,
+          "피적분함수 단순화": 2,
+          "피적분 함수 간단히 하기": 1,
+          "조건 정리": 3,
+          "치환 후 적분 계산": 1,
+          "식 정리 및 인수분해": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 변형)": 2,
+          "치환적분": 10,
+          "적분 계산": 14,
+          "식 정리(루트 안 단순화)": 1,
+          "정적분 계산": 3,
+          "피적분함수 정리": 3,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 3,
+          "치환적분 수행": 1,
+          "정적분 계산 및 정답 도출": 1,
+          "치환적분 적용": 2,
+          "적분식 간단화": 2,
+          "치환법 적용": 3,
+          "적분식 단순화": 1,
+          "피적분함수 단순화": 3,
+          "조건 정리": 3,
+          "식 정리": 3
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 항등식)": 1,
+          "치환적분": 8,
+          "정적분 계산": 3,
+          "식 정리(삼각함수 변형)": 1,
+          "적분 계산": 12,
+          "식 정리(루트 안 간단화)": 1,
+          "피적분함수 정리": 3,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 1,
+          "치환적분 수행": 1,
+          "피적분함수 식 변형": 2,
+          "치환적분법 적용": 2,
+          "정적분 계산 및 답 도출": 1,
+          "적분식 단순화": 1,
+          "치환법 적용": 3,
+          "적분식 간단화": 1,
+          "인수분해 및 단순화": 1,
+          "적분 계산 및 평가": 1,
+          "피적분 함수 단순화": 1,
+          "피적분함수 단순화": 2,
+          "조건 정리": 3,
+          "근호 안 정리": 1,
+          "치환적분 준비": 1,
+          "치환 후 적분 계산": 1,
+          "식 정리 및 인수분해": 1,
+          "치환적분 설정": 1,
+          "식 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.2222222222222223,
+        "title_frequency_all_models": {
+          "식 정리(삼각함수 항 정돈)": 1,
+          "치환적분": 9,
+          "거듭제곱 적분 계산": 1,
+          "식 정리(루트 안 단순화)": 1,
+          "식 정리(삼각함수 변형)": 1,
+          "적분 계산": 11,
+          "피적분함수 정리": 4,
+          "치환 적분": 2,
+          "피적분함수 식 정리": 3,
+          "치환적분법 적용": 2,
+          "정적분 계산": 3,
+          "치환적분 수행": 1,
+          "적분 계산 및 정답 도출": 1,
+          "적분식 단순화": 2,
+          "치환법 적용": 3,
+          "피적분함수 단순화": 4,
+          "절댓값 제거": 1,
+          "거듭제곱 적분": 1,
+          "조건 정리": 3,
+          "식 정리 및 인수분해": 1,
+          "치환적분 준비": 1,
+          "치환적분 적용": 1,
+          "제곱근 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "식 정리": 1,
+          "치환적분": 6,
+          "적분 계산": 12,
+          "식 단순화": 1,
+          "정적분 계산": 1,
+          "식 단순화(삼각함수 변형)": 1,
+          "피적분함수 정리": 5,
+          "치환 적분": 2,
+          "치환적분 설정": 4,
+          "피적분함수 식 변형": 2,
+          "치환적분 및 계산": 2,
+          "치환적분 적용": 1,
+          "최종 계산": 1,
+          "적분식 단순화": 2,
+          "치환법 적용": 3,
+          "적분식 간단화": 1,
+          "피적분함수 단순화": 2,
+          "피적분 함수 간단히 하기": 1,
+          "조건 정리": 3,
+          "치환 후 적분 계산": 1,
+          "식 정리 및 인수분해": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.125,
+      "title_frequency": {
+        "식 정리(삼각함수 변형)": 4,
+        "치환적분": 33,
+        "적분 계산": 49,
+        "식 정리(루트 안 단순화)": 2,
+        "정적분 계산": 10,
+        "피적분함수 정리": 15,
+        "치환 적분": 8,
+        "피적분함수 식 정리": 7,
+        "치환적분 수행": 3,
+        "정적분 계산 및 정답 도출": 1,
+        "치환적분 적용": 4,
+        "적분식 간단화": 4,
+        "치환법 적용": 12,
+        "적분식 단순화": 6,
+        "피적분함수 단순화": 11,
+        "조건 정리": 12,
+        "식 정리": 5,
+        "식 정리(삼각함수 항등식)": 1,
+        "식 정리(루트 안 간단화)": 1,
+        "피적분함수 식 변형": 4,
+        "치환적분법 적용": 4,
+        "정적분 계산 및 답 도출": 1,
+        "인수분해 및 단순화": 1,
+        "적분 계산 및 평가": 1,
+        "피적분 함수 단순화": 1,
+        "근호 안 정리": 1,
+        "치환적분 준비": 2,
+        "치환 후 적분 계산": 2,
+        "식 정리 및 인수분해": 3,
+        "치환적분 설정": 5,
+        "식 정리(삼각함수 항 정돈)": 1,
+        "거듭제곱 적분 계산": 1,
+        "적분 계산 및 정답 도출": 1,
+        "절댓값 제거": 1,
+        "거듭제곱 적분": 1,
+        "제곱근 정리": 1,
+        "식 단순화": 1,
+        "식 단순화(삼각함수 변형)": 1,
+        "치환적분 및 계산": 2,
+        "최종 계산": 1,
+        "피적분 함수 간단히 하기": 1
+      },
+      "accuracy": 0.0,
+      "n_samples": 72
+    }
+  }
+}

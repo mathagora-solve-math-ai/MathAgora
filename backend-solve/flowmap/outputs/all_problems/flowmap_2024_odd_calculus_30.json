@@ -1,0 +1,243 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "조건 정리 및 h'(x) 유도",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "주어진 조건:\n- $f'(x) = |\\sin x|\\cos x$\n- 점 $(a, f(a))$에서의 접선: $y = g(x) = f'(a)(x-a) + f(a)$\n- $h(x) = \\int_{0}^{x} \\{f(t) - g(t)\\} dt$\n\n$h(x)$가 $x=a$에서 극값을 가지려면 $h'(a) = 0$이고 $h'(x)$가 $x=a$에서 부호가 바뀌어야 합니다.\n\n[/STEP]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "h'(x) 계산",
+          "content": "$h'(x) = f(x) - g(x) = f(x) - f'(a)(x-a) - f(a)$\n\n$x = a$에서:\n$h'(a) = f(a) - f'(a) \\cdot 0 - f(a) = 0$ ✓\n\n따라서 모든 $a$에서 $h'(a) = 0$입니다.\n\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "조건 정리 및 극대·극소 조건 분석",
+          "content": "주어진 함수 $h(x)$는 다음과 같이 정의됩니다.\n$$h(x) = \\int_{0}^{x} \\{ f(t) - g(t) \\}\\, dt$$\n함수 $h(x)$의 도함수는 미적분의 기본 정리에 의해 다음과 같습니다.\n$$h'(x) = f(x) - g(x)$$\n여기서 $g(x)$는 곡선 $y=f(x)$ 위의 점 $(a, f(a))$에서의 접선의 방정식이므로, $g(x) = f'(a)(x-a) + f(a)$입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "f(x) 구하기 (도함수 적분)",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "도함수 적분으로 f(x) 구하기",
+          "content": "\\(f'(x)=|\\sin x|\\cos x\\) 이므로\n\\[\nf(x)=\\int |\\sin x|\\cos x\\,dx + C.\n\\]\n치환 \\(u=\\sin x,\\ du=\\cos x\\,dx\\) 하면\n\\[\n\\int |\\sin x|\\cos x\\,dx=\\int |u|\\,du=\\frac12 u|u|=\\frac12\\sin x\\,|\\sin x|.\n\\]\n따라서\n\\[\nf(x)=\\frac12\\sin x\\,|\\sin x|+C.\n\\]"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "접선 g(x)와 h'(x) 조건 분석",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "접선 g(x)와 h'(x) 조건",
+          "content": "점 \\((a,f(a))\\)에서의 접선 \\(y=g(x)\\)는\n\\[\ng(x)=f(a)+f'(a)(x-a).\n\\]\n또\n\\[\nh(x)=\\int_0^x (f(t)-g(t))\\,dt \\quad\\Rightarrow\\quad h'(x)=f(x)-g(x).\n\\]\n따라서 \\(x=a\\)에서 극대/극소가 되려면 (내부 극값 조건)\n\\[\nh'(a)=0 \\iff f(a)=g(a).\n\\]\n그런데 접선은 항상 \\(g(a)=f(a)\\)이므로 \\(h'(a)=0\\)는 항상 성립.\n\n따라서 극대/극소 여부는\n\\[\nh''(a)\\neq 0\n\\]\n로 판정한다."
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "h''(a) 계산 및 고차 미분 판정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "h''(a) 계산 및 조건 정리",
+          "content": "\\[\nh''(x)=\\frac{d}{dx}(f(x)-g(x))=f'(x)-g'(x).\n\\]\n접선 \\(g(x)\\)는 기울기 \\(f'(a)\\)인 직선이므로 \\(g'(x)=f'(a)\\) (상수).\n따라서\n\\[\nh''(a)=f'(a)-f'(a)=0.\n\\]\n즉 2차 미분으로는 판정 불가이므로 더 고차를 본다.\n\n\\[\nh'''(x)=f''(x),\\quad \\text{(왜냐하면 }g''(x)=0\\text{)}\n\\]\n이므로\n\\[\nh'''(a)=f''(a).\n\\]\n일반적으로 \\(h'(a)=h''(a)=0\\)이고 \\(h'''(a)\\neq 0\\)이면 \\(a\\)는 극값이 아니라 변곡(접점) 형태가 된다.  \n극대/극소가 되려면 최소한 \\(h'''(a)=0\\)이 필요하고, 실제로는 \\(h\\)의 첫 비영(非零) 도함수가 짝수차여야 한다.\n\n따라서 필요한 조건:\n\\[\nf''(a)=0.\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "h''(a) 계산으로 극값 조건 분석",
+          "content": "$h''(x) = f'(x) - f'(a)$\n\n$h''(a) = f'(a) - f'(a) = 0$\n\n$h''(a) = 0$이므로 2차 미분 판정법으로는 부족합니다. $h'(x)$의 부호 변화를 직접 분석해야 합니다.\n\n[/STEP]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "h'(x)의 부호 변화 조건",
+          "content": "$h'(x) = f(x) - f(a) - f'(a)(x-a)$\n\n$x = a$ 근처에서 $h'(x)$의 부호가 바뀌려면, 접선 $y = g(x)$와 곡선 $y = f(x)$가 $x = a$에서 교차해야 합니다 (단순 접촉이 아닌 변곡점적 접촉).\n\n이는 $f''(a) = 0$이고 $f''(x)$가 $x = a$에서 부호가 바뀔 때 발생합니다.\n\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "f''(x) 구간별 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "f''(x) 구하기 (구간별)",
+          "content": "\\[\nf'(x)=|\\sin x|\\cos x.\n\\]\n\\(\\sin x\\ge 0\\) (즉 \\(x\\in[2k\\pi,(2k+1)\\pi]\\))에서는 \\(|\\sin x|=\\sin x\\) 이므로\n\\[\nf'(x)=\\sin x\\cos x=\\frac12\\sin 2x,\n\\]\n\\[\nf''(x)=\\cos 2x.\n\\]\n\\(\\sin x<0\\) (즉 \\(x\\in((2k+1)\\pi,(2k+2)\\pi)\\))에서는 \\(|\\sin x|=-\\sin x\\) 이므로\n\\[\nf'(x)=-\\sin x\\cos x=-\\frac12\\sin 2x,\n\\]\n\\[\nf''(x)=-\\cos 2x.\n\\]\n따라서 \\(\\sin x\\neq 0\\)인 곳에서는 공통적으로\n\\[\nf''(x)=0 \\iff \\cos 2x=0.\n\\]\n또한 \\(\\sin x=0\\)인 점 \\(x=k\\pi\\)에서는 \\(|\\sin x|\\) 때문에 \\(f'(x)\\)는 미분가능하지만 \\(f''(x)\\)는 좌우가 달라져 일반적으로 0이 되지 않으므로(좌우에서 \\(\\pm 1\\)) 극값 조건 후보에서 제외된다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "f''(x) 계산",
+          "content": "$f'(x) = |\\sin x| \\cos x$\n\n**$\\sin x > 0$ (즉 $x \\in (2k\\pi, (2k+1)\\pi)$)일 때:**\n$f'(x) = \\sin x \\cos x = \\frac{1}{2}\\sin 2x$\n$f''(x) = \\cos 2x$\n\n**$\\sin x < 0$ (즉 $x \\in ((2k-1)\\pi, 2k\\pi)$)일 때:**\n$f'(x) = -\\sin x \\cos x = -\\frac{1}{2}\\sin 2x$\n$f''(x) = -\\cos 2x$\n\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "f''(x)=0인 점 찾기 (cos 2x = 0)",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "후보 a의 나열: cos(2a)=0",
+          "content": "\\[\n\\cos 2a=0 \\iff 2a=\\frac{\\pi}{2}+n\\pi \\iff a=\\frac{\\pi}{4}+\\frac{n\\pi}{2}\\quad(n\\in\\mathbb Z).\n\\]\n양수만 취하면\n\\[\na_1=\\frac{\\pi}{4},\\ a_2=\\frac{3\\pi}{4},\\ a_3=\\frac{5\\pi}{4},\\ a_4=\\frac{7\\pi}{4},\\ a_5=\\frac{9\\pi}{4},\\ a_6=\\frac{11\\pi}{4},\\ \\dots\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "f''(x) = 0이고 부호가 바뀌는 점 찾기",
+          "content": "**구간 $(0, \\pi)$에서:** $f''(x) = \\cos 2x = 0$\n$2x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}$ → $x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}$\n\n**구간 $(\\pi, 2\\pi)$에서:** $f''(x) = -\\cos 2x = 0$\n$2x = \\frac{5\\pi}{2}, \\frac{7\\pi}{2}$ → $x = \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$\n\n**구간 $(2\\pi, 3\\pi)$에서:** $f''(x) = \\cos 2x = 0$\n$x = \\frac{9\\pi}{4}, \\frac{11\\pi}{4}$\n\n**구간 $(3\\pi, 4\\pi)$에서:** $f''(x) = -\\cos 2x = 0$\n$x = \\frac{13\\pi}{4}, \\frac{15\\pi}{4}$\n\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 6,
+      "group_name": "양수 a 순서대로 나열",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 6,
+          "title": "양수 a를 순서대로 나열",
+          "content": "$$a_1 = \\frac{\\pi}{4}, \\quad a_2 = \\frac{3\\pi}{4}, \\quad a_3 = \\frac{5\\pi}{4}, \\quad a_4 = \\frac{7\\pi}{4}$$\n$$a_5 = \\frac{9\\pi}{4}, \\quad a_6 = \\frac{11\\pi}{4}, \\quad \\ldots$$\n\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 7,
+      "group_name": "a₆ - a₂ 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 5,
+          "title": "요구값 계산",
+          "content": "\\[\na_6-a_2=\\frac{11\\pi}{4}-\\frac{3\\pi}{4}=2\\pi.\n\\]\n따라서\n\\[\n\\frac{100}{\\pi}(a_6-a_2)=\\frac{100}{\\pi}\\cdot 2\\pi=200.\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 7,
+          "title": "a₆ - a₂ 계산",
+          "content": "$$a_6 - a_2 = \\frac{11\\pi}{4} - \\frac{3\\pi}{4} = \\frac{8\\pi}{4} = 2\\pi$$\n\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 8,
+      "group_name": "최종 답 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 6,
+          "title": "Final Answer",
+          "content": "200"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 8,
+          "title": "최종 계산",
+          "content": "$$\\frac{100}{\\pi} \\times (a_6 - a_2) = \\frac{100}{\\pi} \\times 2\\pi = 200$$\n\n[/STEP]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 9,
+          "title": "Final Answer",
+          "content": "**200**\n[/FINAL_ANSWER]"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 6,
+      "to_step": 7
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 7,
+      "to_step": 8
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 8,
+      "to_step": 9
+    }
+  ]
+}

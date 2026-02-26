@@ -1,0 +1,610 @@
+[2026-02-12 10:59:31] ======================================================================
+[2026-02-12 10:59:31] v4 PIPELINE - All 46 Problems
+[2026-02-12 10:59:31] ======================================================================
+[2026-02-12 10:59:31] Loading problems from CSV...
+[2026-02-12 10:59:31] Loaded 46 problems from 2024_math_odd.csv
+[2026-02-12 10:59:31] 
+[2026-02-12 10:59:31] ======================================================================
+[2026-02-12 10:59:31] [1/46] 2024_odd_common_1 (수학1, 2점)
+[2026-02-12 10:59:31] ======================================================================
+[2026-02-12 10:59:31] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (3.2s)
+  Calling claude-opus-4.5... 4 steps (5.5s)
+  Calling gemini-3-pro... 3 steps (18.0s)
+[2026-02-12 10:59:57] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_1.json
+[2026-02-12 10:59:57] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:00:02] Flow Map: 4 groups, 7 flows
+[2026-02-12 11:00:02] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_1.json
+[2026-02-12 11:00:02] 
+[2026-02-12 11:00:02] ======================================================================
+[2026-02-12 11:00:02] [2/46] 2024_odd_common_2 (수학2, 2점)
+[2026-02-12 11:00:02] ======================================================================
+[2026-02-12 11:00:02] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (2.6s)
+  Calling claude-opus-4.5... 4 steps (5.4s)
+  Calling gemini-3-pro... 4 steps (12.2s)
+[2026-02-12 11:00:23] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_2.json
+[2026-02-12 11:00:23] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:00:27] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:00:27] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_2.json
+[2026-02-12 11:00:27] 
+[2026-02-12 11:00:27] ======================================================================
+[2026-02-12 11:00:27] [3/46] 2024_odd_common_3 (수학1, 3점)
+[2026-02-12 11:00:27] ======================================================================
+[2026-02-12 11:00:27] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (5.2s)
+  Calling claude-opus-4.5... 4 steps (7.9s)
+  Calling gemini-3-pro... 4 steps (29.2s)
+[2026-02-12 11:01:10] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_3.json
+[2026-02-12 11:01:10] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:01:16] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:01:16] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_3.json
+[2026-02-12 11:01:16] 
+[2026-02-12 11:01:16] ======================================================================
+[2026-02-12 11:01:16] [4/46] 2024_odd_common_4 (수학2, 3점)
+[2026-02-12 11:01:16] ======================================================================
+[2026-02-12 11:01:16] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (3.7s)
+  Calling claude-opus-4.5... 4 steps (6.9s)
+  Calling gemini-3-pro... 4 steps (18.4s)
+[2026-02-12 11:01:45] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_4.json
+[2026-02-12 11:01:45] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:01:50] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:01:50] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_4.json
+[2026-02-12 11:01:50] 
+[2026-02-12 11:01:50] ======================================================================
+[2026-02-12 11:01:50] [5/46] 2024_odd_common_5 (수학2, 3점)
+[2026-02-12 11:01:50] ======================================================================
+[2026-02-12 11:01:50] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (3.7s)
+  Calling claude-opus-4.5... 5 steps (6.1s)
+  Calling gemini-3-pro... 4 steps (14.6s)
+[2026-02-12 11:02:15] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_5.json
+[2026-02-12 11:02:15] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:02:21] Flow Map: 4 groups, 10 flows
+[2026-02-12 11:02:21] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_5.json
+[2026-02-12 11:02:21] 
+[2026-02-12 11:02:21] ======================================================================
+[2026-02-12 11:02:21] [6/46] 2024_odd_common_6 (수학1, 3점)
+[2026-02-12 11:02:21] ======================================================================
+[2026-02-12 11:02:21] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (5.7s)
+  Calling claude-opus-4.5... 5 steps (7.7s)
+  Calling gemini-3-pro... 4 steps (31.9s)
+[2026-02-12 11:03:07] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_6.json
+[2026-02-12 11:03:07] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:03:14] Flow Map: 5 groups, 11 flows
+[2026-02-12 11:03:14] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_6.json
+[2026-02-12 11:03:14] 
+[2026-02-12 11:03:14] ======================================================================
+[2026-02-12 11:03:14] [7/46] 2024_odd_common_7 (수학2, 3점)
+[2026-02-12 11:03:14] ======================================================================
+[2026-02-12 11:03:14] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (5.8s)
+  Calling claude-opus-4.5... 5 steps (7.1s)
+  Calling gemini-3-pro... 4 steps (16.2s)
+[2026-02-12 11:03:43] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_7.json
+[2026-02-12 11:03:43] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:03:48] Flow Map: 5 groups, 11 flows
+[2026-02-12 11:03:48] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_7.json
+[2026-02-12 11:03:48] 
+[2026-02-12 11:03:48] ======================================================================
+[2026-02-12 11:03:48] [8/46] 2024_odd_common_8 (수학2, 3점)
+[2026-02-12 11:03:48] ======================================================================
+[2026-02-12 11:03:48] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (5.6s)
+  Calling claude-opus-4.5... 5 steps (8.7s)
+  Calling gemini-3-pro... 4 steps (18.5s)
+[2026-02-12 11:04:21] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_8.json
+[2026-02-12 11:04:21] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:04:27] Flow Map: 4 groups, 10 flows
+[2026-02-12 11:04:27] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_8.json
+[2026-02-12 11:04:27] 
+[2026-02-12 11:04:27] ======================================================================
+[2026-02-12 11:04:27] [9/46] 2024_odd_common_9 (수학1, 4점)
+[2026-02-12 11:04:27] ======================================================================
+[2026-02-12 11:04:27] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (7.2s)
+  Calling claude-opus-4.5... 5 steps (10.1s)
+  Calling gemini-3-pro... 4 steps (25.4s)
+[2026-02-12 11:05:10] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_9.json
+[2026-02-12 11:05:10] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:05:16] Flow Map: 5 groups, 11 flows
+[2026-02-12 11:05:16] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_9.json
+[2026-02-12 11:05:16] 
+[2026-02-12 11:05:16] ======================================================================
+[2026-02-12 11:05:16] [10/46] 2024_odd_common_10 (수학2, 4점)
+[2026-02-12 11:05:16] ======================================================================
+[2026-02-12 11:05:16] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (18.1s)
+  Calling claude-opus-4.5... 6 steps (17.3s)
+  Calling gemini-3-pro... 0 steps (38.7s)
+[2026-02-12 11:06:30] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_10.json
+[2026-02-12 11:06:30] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:06:36] Flow Map: 5 groups, 8 flows
+[2026-02-12 11:06:36] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_10.json
+[2026-02-12 11:06:36] 
+[2026-02-12 11:06:36] ======================================================================
+[2026-02-12 11:06:36] [11/46] 2024_odd_common_11 (수학1, 4점)
+[2026-02-12 11:06:36] ======================================================================
+[2026-02-12 11:06:36] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (12.5s)
+  Calling claude-opus-4.5... 7 steps (14.0s)
+  Calling gemini-3-pro... 4 steps (32.7s)
+[2026-02-12 11:07:35] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_11.json
+[2026-02-12 11:07:35] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:07:43] Flow Map: 6 groups, 13 flows
+[2026-02-12 11:07:43] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_11.json
+[2026-02-12 11:07:43] 
+[2026-02-12 11:07:43] ======================================================================
+[2026-02-12 11:07:43] [12/46] 2024_odd_common_12 (수학2, 4점)
+[2026-02-12 11:07:43] ======================================================================
+[2026-02-12 11:07:43] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (16.2s)
+  Calling claude-opus-4.5... 6 steps (17.2s)
+  Calling gemini-3-pro... 5 steps (34.8s)
+[2026-02-12 11:08:51] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_12.json
+[2026-02-12 11:08:51] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:08:58] Flow Map: 6 groups, 13 flows
+[2026-02-12 11:08:58] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_12.json
+[2026-02-12 11:08:58] 
+[2026-02-12 11:08:58] ======================================================================
+[2026-02-12 11:08:58] [13/46] 2024_odd_common_13 (수학1, 4점)
+[2026-02-12 11:08:58] ======================================================================
+[2026-02-12 11:08:58] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (13.7s)
+  Calling claude-opus-4.5... 7 steps (11.1s)
+  Calling gemini-3-pro... 4 steps (35.5s)
+[2026-02-12 11:09:59] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_13.json
+[2026-02-12 11:09:59] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:10:06] Flow Map: 6 groups, 13 flows
+[2026-02-12 11:10:06] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_13.json
+[2026-02-12 11:10:06] 
+[2026-02-12 11:10:06] ======================================================================
+[2026-02-12 11:10:06] [14/46] 2024_odd_common_14 (수학2, 4점)
+[2026-02-12 11:10:06] ======================================================================
+[2026-02-12 11:10:06] Generating solutions from LLMs...
+  Calling gpt-5.2... 0 steps (55.5s)
+  Calling claude-opus-4.5... 7 steps (28.9s)
+  Calling gemini-3-pro... 1 steps (40.2s)
+[2026-02-12 11:12:11] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_14.json
+[2026-02-12 11:12:11] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:12:17] Flow Map: 7 groups, 6 flows
+[2026-02-12 11:12:17] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_14.json
+[2026-02-12 11:12:17] 
+[2026-02-12 11:12:17] ======================================================================
+[2026-02-12 11:12:17] [15/46] 2024_odd_common_15 (수학1, 4점)
+[2026-02-12 11:12:17] ======================================================================
+[2026-02-12 11:12:17] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (24.9s)
+  Calling claude-opus-4.5... 6 steps (21.3s)
+  Calling gemini-3-pro... 1 steps (37.5s)
+[2026-02-12 11:13:41] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_15.json
+[2026-02-12 11:13:41] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:13:47] Flow Map: 5 groups, 9 flows
+[2026-02-12 11:13:47] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_15.json
+[2026-02-12 11:13:47] 
+[2026-02-12 11:13:47] ======================================================================
+[2026-02-12 11:13:47] [16/46] 2024_odd_common_16 (수학1, 3점)
+[2026-02-12 11:13:47] ======================================================================
+[2026-02-12 11:13:47] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (3.0s)
+  Calling claude-opus-4.5... 4 steps (7.0s)
+  Calling gemini-3-pro... 4 steps (13.1s)
+[2026-02-12 11:14:10] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_16.json
+[2026-02-12 11:14:10] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:14:16] Flow Map: 4 groups, 8 flows
+[2026-02-12 11:14:16] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_16.json
+[2026-02-12 11:14:16] 
+[2026-02-12 11:14:16] ======================================================================
+[2026-02-12 11:14:16] [17/46] 2024_odd_common_17 (수학2, 3점)
+[2026-02-12 11:14:16] ======================================================================
+[2026-02-12 11:14:16] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (2.9s)
+  Calling claude-opus-4.5... 5 steps (6.1s)
+  Calling gemini-3-pro... 3 steps (21.7s)
+[2026-02-12 11:14:47] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_17.json
+[2026-02-12 11:14:47] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:14:52] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:14:52] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_17.json
+[2026-02-12 11:14:52] 
+[2026-02-12 11:14:52] ======================================================================
+[2026-02-12 11:14:52] [18/46] 2024_odd_common_18 (수학1, 3점)
+[2026-02-12 11:14:52] ======================================================================
+[2026-02-12 11:14:52] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (4.2s)
+  Calling claude-opus-4.5... 5 steps (7.0s)
+  Calling gemini-3-pro... 3 steps (16.2s)
+[2026-02-12 11:15:20] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_18.json
+[2026-02-12 11:15:20] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:15:25] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:15:25] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_18.json
+[2026-02-12 11:15:25] 
+[2026-02-12 11:15:25] ======================================================================
+[2026-02-12 11:15:25] [19/46] 2024_odd_common_19 (수학1, 3점)
+[2026-02-12 11:15:25] ======================================================================
+[2026-02-12 11:15:25] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (7.9s)
+  Calling claude-opus-4.5... 6 steps (14.2s)
+  Calling gemini-3-pro... 4 steps (30.9s)
+[2026-02-12 11:16:18] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_19.json
+[2026-02-12 11:16:18] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:16:25] Flow Map: 6 groups, 12 flows
+[2026-02-12 11:16:25] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_19.json
+[2026-02-12 11:16:25] 
+[2026-02-12 11:16:25] ======================================================================
+[2026-02-12 11:16:25] [20/46] 2024_odd_common_20 (수학2, 4점)
+[2026-02-12 11:16:25] ======================================================================
+[2026-02-12 11:16:25] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (11.9s)
+  Calling claude-opus-4.5... 6 steps (15.6s)
+  Calling gemini-3-pro... 2 steps (63.5s)
+[2026-02-12 11:17:56] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_20.json
+[2026-02-12 11:17:56] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:18:03] Flow Map: 5 groups, 10 flows
+[2026-02-12 11:18:03] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_20.json
+[2026-02-12 11:18:03] 
+[2026-02-12 11:18:03] ======================================================================
+[2026-02-12 11:18:03] [21/46] 2024_odd_common_21 (수학1, 4점)
+[2026-02-12 11:18:03] ======================================================================
+[2026-02-12 11:18:03] Generating solutions from LLMs...
+  Calling gpt-5.2... 6 steps (24.3s)
+  Calling claude-opus-4.5... 5 steps (21.2s)
+  Calling gemini-3-pro... 0 steps (64.6s)
+[2026-02-12 11:19:53] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_21.json
+[2026-02-12 11:19:53] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:20:02] Flow Map: 6 groups, 9 flows
+[2026-02-12 11:20:02] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_21.json
+[2026-02-12 11:20:02] 
+[2026-02-12 11:20:02] ======================================================================
+[2026-02-12 11:20:02] [22/46] 2024_odd_common_22 (수학2, 4점)
+[2026-02-12 11:20:02] ======================================================================
+[2026-02-12 11:20:02] Generating solutions from LLMs...
+  Calling gpt-5.2... 0 steps (51.7s)
+  Calling claude-opus-4.5... 6 steps (25.0s)
+  Calling gemini-3-pro... 0 steps (42.8s)
+[2026-02-12 11:22:01] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_common_22.json
+[2026-02-12 11:22:01] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:22:08] Flow Map: 6 groups, 5 flows
+[2026-02-12 11:22:08] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_common_22.json
+[2026-02-12 11:22:08] 
+[2026-02-12 11:22:08] ======================================================================
+[2026-02-12 11:22:08] [23/46] 2024_odd_probalitity_23 (확률과통계, 2점)
+[2026-02-12 11:22:08] ======================================================================
+[2026-02-12 11:22:08] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (3.5s)
+  Calling claude-opus-4.5... 4 steps (5.7s)
+  Calling gemini-3-pro... 3 steps (15.2s)
+[2026-02-12 11:22:32] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_23.json
+[2026-02-12 11:22:32] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:22:37] Flow Map: 3 groups, 7 flows
+[2026-02-12 11:22:37] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_23.json
+[2026-02-12 11:22:37] 
+[2026-02-12 11:22:37] ======================================================================
+[2026-02-12 11:22:37] [24/46] 2024_odd_probalitity_24 (확률과통계, 3점)
+[2026-02-12 11:22:37] ======================================================================
+[2026-02-12 11:22:37] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (3.6s)
+  Calling claude-opus-4.5... 4 steps (6.8s)
+  Calling gemini-3-pro... 3 steps (28.8s)
+[2026-02-12 11:23:16] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_24.json
+[2026-02-12 11:23:16] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:23:21] Flow Map: 4 groups, 8 flows
+[2026-02-12 11:23:21] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_24.json
+[2026-02-12 11:23:21] 
+[2026-02-12 11:23:21] ======================================================================
+[2026-02-12 11:23:21] [25/46] 2024_odd_probalitity_25 (확률과통계, 3점)
+[2026-02-12 11:23:21] ======================================================================
+[2026-02-12 11:23:21] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (8.7s)
+  Calling claude-opus-4.5... 5 steps (9.3s)
+  Calling gemini-3-pro... 4 steps (18.4s)
+[2026-02-12 11:23:58] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_25.json
+[2026-02-12 11:23:58] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:24:04] Flow Map: 5 groups, 11 flows
+[2026-02-12 11:24:04] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_25.json
+[2026-02-12 11:24:04] 
+[2026-02-12 11:24:04] ======================================================================
+[2026-02-12 11:24:04] [26/46] 2024_odd_probalitity_26 (확률과통계, 3점)
+[2026-02-12 11:24:04] ======================================================================
+[2026-02-12 11:24:04] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (5.1s)
+  Calling claude-opus-4.5... 4 steps (8.1s)
+  Calling gemini-3-pro... 4 steps (19.6s)
+[2026-02-12 11:24:37] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_26.json
+[2026-02-12 11:24:37] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:24:42] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:24:42] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_26.json
+[2026-02-12 11:24:42] 
+[2026-02-12 11:24:42] ======================================================================
+[2026-02-12 11:24:42] [27/46] 2024_odd_probalitity_27 (확률과통계, 3점)
+[2026-02-12 11:24:42] ======================================================================
+[2026-02-12 11:24:42] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (7.3s)
+  Calling claude-opus-4.5... 5 steps (9.8s)
+  Calling gemini-3-pro... 4 steps (19.5s)
+[2026-02-12 11:25:19] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_27.json
+[2026-02-12 11:25:19] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:25:25] Flow Map: 5 groups, 10 flows
+[2026-02-12 11:25:25] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_27.json
+[2026-02-12 11:25:25] 
+[2026-02-12 11:25:25] ======================================================================
+[2026-02-12 11:25:25] [28/46] 2024_odd_probalitity_28 (확률과통계, 4점)
+[2026-02-12 11:25:25] ======================================================================
+[2026-02-12 11:25:25] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (15.0s)
+  Calling claude-opus-4.5... 6 steps (16.2s)
+  Calling gemini-3-pro... 5 steps (40.6s)
+[2026-02-12 11:26:37] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_28.json
+[2026-02-12 11:26:37] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:26:44] Flow Map: 6 groups, 13 flows
+[2026-02-12 11:26:44] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_28.json
+[2026-02-12 11:26:44] 
+[2026-02-12 11:26:44] ======================================================================
+[2026-02-12 11:26:44] [29/46] 2024_odd_probalitity_29 (확률과통계, 4점)
+[2026-02-12 11:26:44] ======================================================================
+[2026-02-12 11:26:44] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (11.6s)
+  Calling claude-opus-4.5... 4 steps (9.5s)
+  Calling gemini-3-pro... 4 steps (31.0s)
+[2026-02-12 11:27:36] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_29.json
+[2026-02-12 11:27:36] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:27:42] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:27:42] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_29.json
+[2026-02-12 11:27:42] 
+[2026-02-12 11:27:42] ======================================================================
+[2026-02-12 11:27:42] [30/46] 2024_odd_probalitity_30 (확률과통계, 4점)
+[2026-02-12 11:27:42] ======================================================================
+[2026-02-12 11:27:42] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (10.6s)
+  Calling claude-opus-4.5... 7 steps (18.7s)
+  Calling gemini-3-pro... 5 steps (28.9s)
+[2026-02-12 11:28:40] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_probalitity_30.json
+[2026-02-12 11:28:40] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:28:48] Flow Map: 5 groups, 14 flows
+[2026-02-12 11:28:48] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_probalitity_30.json
+[2026-02-12 11:28:48] 
+[2026-02-12 11:28:48] ======================================================================
+[2026-02-12 11:28:48] [31/46] 2024_odd_calculus_23 (미적분, 2점)
+[2026-02-12 11:28:48] ======================================================================
+[2026-02-12 11:28:48] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (4.0s)
+  Calling claude-opus-4.5... 5 steps (8.8s)
+  Calling gemini-3-pro... 3 steps (17.0s)
+[2026-02-12 11:29:17] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_23.json
+[2026-02-12 11:29:17] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:29:23] Flow Map: 4 groups, 8 flows
+[2026-02-12 11:29:23] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_23.json
+[2026-02-12 11:29:23] 
+[2026-02-12 11:29:23] ======================================================================
+[2026-02-12 11:29:23] [32/46] 2024_odd_calculus_24 (미적분, 3점)
+[2026-02-12 11:29:23] ======================================================================
+[2026-02-12 11:29:23] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (4.2s)
+  Calling claude-opus-4.5... 5 steps (6.5s)
+  Calling gemini-3-pro... 3 steps (18.4s)
+[2026-02-12 11:29:53] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_24.json
+[2026-02-12 11:29:53] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:29:58] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:29:58] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_24.json
+[2026-02-12 11:29:58] 
+[2026-02-12 11:29:58] ======================================================================
+[2026-02-12 11:29:58] [33/46] 2024_odd_calculus_25 (미적분, 3점)
+[2026-02-12 11:29:58] ======================================================================
+[2026-02-12 11:29:58] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (6.3s)
+  Calling claude-opus-4.5... 5 steps (8.1s)
+  Calling gemini-3-pro... 4 steps (23.6s)
+[2026-02-12 11:30:36] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_25.json
+[2026-02-12 11:30:36] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:30:42] Flow Map: 5 groups, 10 flows
+[2026-02-12 11:30:42] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_25.json
+[2026-02-12 11:30:42] 
+[2026-02-12 11:30:42] ======================================================================
+[2026-02-12 11:30:42] [34/46] 2024_odd_calculus_26 (미적분, 3점)
+[2026-02-12 11:30:42] ======================================================================
+[2026-02-12 11:30:42] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (13.1s)
+  Calling claude-opus-4.5... 6 steps (12.7s)
+  Calling gemini-3-pro... 4 steps (31.7s)
+[2026-02-12 11:31:40] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_26.json
+[2026-02-12 11:31:40] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:31:46] Flow Map: 4 groups, 10 flows
+[2026-02-12 11:31:46] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_26.json
+[2026-02-12 11:31:46] 
+[2026-02-12 11:31:46] ======================================================================
+[2026-02-12 11:31:46] [35/46] 2024_odd_calculus_27 (미적분, 3점)
+[2026-02-12 11:31:46] ======================================================================
+[2026-02-12 11:31:46] Generating solutions from LLMs...
+  Calling gpt-5.2... 6 steps (17.5s)
+  Calling claude-opus-4.5... 6 steps (19.2s)
+  Calling gemini-3-pro... 3 steps (38.0s)
+[2026-02-12 11:33:01] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_27.json
+[2026-02-12 11:33:01] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:33:08] Flow Map: 6 groups, 12 flows
+[2026-02-12 11:33:08] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_27.json
+[2026-02-12 11:33:08] 
+[2026-02-12 11:33:08] ======================================================================
+[2026-02-12 11:33:08] [36/46] 2024_odd_calculus_28 (미적분, 4점)
+[2026-02-12 11:33:08] ======================================================================
+[2026-02-12 11:33:08] Generating solutions from LLMs...
+  Calling gpt-5.2... 7 steps (16.2s)
+  Calling claude-opus-4.5... 7 steps (30.8s)
+  Calling gemini-3-pro... 1 steps (39.5s)
+[2026-02-12 11:34:35] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_28.json
+[2026-02-12 11:34:35] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:34:42] Flow Map: 7 groups, 12 flows
+[2026-02-12 11:34:42] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_28.json
+[2026-02-12 11:34:42] 
+[2026-02-12 11:34:42] ======================================================================
+[2026-02-12 11:34:42] [37/46] 2024_odd_calculus_29 (미적분, 4점)
+[2026-02-12 11:34:42] ======================================================================
+[2026-02-12 11:34:42] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (18.8s)
+  Calling claude-opus-4.5... 7 steps (20.4s)
+  Calling gemini-3-pro... 2 steps (42.1s)
+[2026-02-12 11:36:03] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_29.json
+[2026-02-12 11:36:03] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:36:11] Flow Map: 6 groups, 11 flows
+[2026-02-12 11:36:11] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_29.json
+[2026-02-12 11:36:11] 
+[2026-02-12 11:36:11] ======================================================================
+[2026-02-12 11:36:11] [38/46] 2024_odd_calculus_30 (미적분, 4점)
+[2026-02-12 11:36:11] ======================================================================
+[2026-02-12 11:36:11] Generating solutions from LLMs...
+  Calling gpt-5.2... 9 steps (20.8s)
+  Calling claude-opus-4.5... 7 steps (18.9s)
+  Calling gemini-3-pro... 1 steps (39.2s)
+[2026-02-12 11:37:30] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_calculus_30.json
+[2026-02-12 11:37:30] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:37:39] Flow Map: 8 groups, 14 flows
+[2026-02-12 11:37:39] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_calculus_30.json
+[2026-02-12 11:37:39] 
+[2026-02-12 11:37:39] ======================================================================
+[2026-02-12 11:37:39] [39/46] 2024_odd_geometry_23 (기하, 2점)
+[2026-02-12 11:37:39] ======================================================================
+[2026-02-12 11:37:39] Generating solutions from LLMs...
+  Calling gpt-5.2... 5 steps (3.4s)
+  Calling claude-opus-4.5... 4 steps (5.6s)
+  Calling gemini-3-pro... 4 steps (28.6s)
+[2026-02-12 11:38:16] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_23.json
+[2026-02-12 11:38:16] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:38:22] Flow Map: 5 groups, 10 flows
+[2026-02-12 11:38:22] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_23.json
+[2026-02-12 11:38:22] 
+[2026-02-12 11:38:22] ======================================================================
+[2026-02-12 11:38:22] [40/46] 2024_odd_geometry_24 (기하, 3점)
+[2026-02-12 11:38:22] ======================================================================
+[2026-02-12 11:38:22] Generating solutions from LLMs...
+  Calling gpt-5.2... 3 steps (7.9s)
+  Calling claude-opus-4.5... 4 steps (7.3s)
+  Calling gemini-3-pro... 1 steps (36.2s)
+[2026-02-12 11:39:13] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_24.json
+[2026-02-12 11:39:13] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:39:18] Flow Map: 4 groups, 5 flows
+[2026-02-12 11:39:18] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_24.json
+[2026-02-12 11:39:18] 
+[2026-02-12 11:39:18] ======================================================================
+[2026-02-12 11:39:18] [41/46] 2024_odd_geometry_25 (기하, 3점)
+[2026-02-12 11:39:18] ======================================================================
+[2026-02-12 11:39:18] Generating solutions from LLMs...
+  Calling gpt-5.2... 4 steps (4.8s)
+  Calling claude-opus-4.5... 4 steps (7.4s)
+  Calling gemini-3-pro... 4 steps (21.4s)
+[2026-02-12 11:39:52] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_25.json
+[2026-02-12 11:39:52] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:39:57] Flow Map: 4 groups, 9 flows
+[2026-02-12 11:39:57] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_25.json
+[2026-02-12 11:39:57] 
+[2026-02-12 11:39:57] ======================================================================
+[2026-02-12 11:39:57] [42/46] 2024_odd_geometry_26 (기하, 3점)
+[2026-02-12 11:39:57] ======================================================================
+[2026-02-12 11:39:57] Generating solutions from LLMs...
+  Calling gpt-5.2... 6 steps (13.9s)
+  Calling claude-opus-4.5... 7 steps (17.0s)
+  Calling gemini-3-pro... 4 steps (42.3s)
+[2026-02-12 11:41:10] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_26.json
+[2026-02-12 11:41:10] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:41:18] Flow Map: 6 groups, 14 flows
+[2026-02-12 11:41:18] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_26.json
+[2026-02-12 11:41:18] 
+[2026-02-12 11:41:18] ======================================================================
+[2026-02-12 11:41:18] [43/46] 2024_odd_geometry_27 (기하, 3점)
+[2026-02-12 11:41:18] ======================================================================
+[2026-02-12 11:41:18] Generating solutions from LLMs...
+  Calling gpt-5.2... 6 steps (20.4s)
+  Calling claude-opus-4.5... 8 steps (23.7s)
+  Calling gemini-3-pro... 1 steps (39.7s)
+[2026-02-12 11:42:42] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_27.json
+[2026-02-12 11:42:42] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:42:50] Flow Map: 6 groups, 12 flows
+[2026-02-12 11:42:50] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_27.json
+[2026-02-12 11:42:50] 
+[2026-02-12 11:42:50] ======================================================================
+[2026-02-12 11:42:50] [44/46] 2024_odd_geometry_28 (기하, 4점)
+[2026-02-12 11:42:50] ======================================================================
+[2026-02-12 11:42:50] Generating solutions from LLMs...
+  Calling gpt-5.2... 8 steps (31.5s)
+  Calling claude-opus-4.5... 6 steps (22.4s)
+  Calling gemini-3-pro... 1 steps (39.6s)
+[2026-02-12 11:44:23] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_28.json
+[2026-02-12 11:44:23] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:44:32] Flow Map: 8 groups, 12 flows
+[2026-02-12 11:44:32] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_28.json
+[2026-02-12 11:44:32] 
+[2026-02-12 11:44:32] ======================================================================
+[2026-02-12 11:44:32] [45/46] 2024_odd_geometry_29 (기하, 4점)
+[2026-02-12 11:44:32] ======================================================================
+[2026-02-12 11:44:32] Generating solutions from LLMs...
+  Calling gpt-5.2... 9 steps (58.5s)
+  Calling claude-opus-4.5... 7 steps (24.8s)
+  Calling gemini-3-pro... 1 steps (39.0s)
+[2026-02-12 11:46:34] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_29.json
+[2026-02-12 11:46:34] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:46:44] Flow Map: 9 groups, 14 flows
+[2026-02-12 11:46:44] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_29.json
+[2026-02-12 11:46:44] 
+[2026-02-12 11:46:44] ======================================================================
+[2026-02-12 11:46:44] [46/46] 2024_odd_geometry_30 (기하, 4점)
+[2026-02-12 11:46:44] ======================================================================
+[2026-02-12 11:46:44] Generating solutions from LLMs...
+  Calling gpt-5.2... 7 steps (19.1s)
+  Calling claude-opus-4.5... 8 steps (20.6s)
+  Calling gemini-3-pro... 1 steps (37.8s)
+[2026-02-12 11:48:01] Saved steps to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/steps_2024_odd_geometry_30.json
+[2026-02-12 11:48:01] Generating Flow Map...
+Calling LLM to generate Flow Map...
+[2026-02-12 11:48:10] Flow Map: 8 groups, 13 flows
+[2026-02-12 11:48:10] Saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/flowmap_2024_odd_geometry_30.json
+[2026-02-12 11:48:10] 
+[2026-02-12 11:48:10] ======================================================================
+[2026-02-12 11:48:10] v4 PIPELINE COMPLETE
+[2026-02-12 11:48:10] Processed 46 problems
+[2026-02-12 11:48:10] Success: 46/46
+[2026-02-12 11:48:10] Summary saved to /Users/vusrhdns/acl2026demo/flowmap/outputs/v4_all/summary.json
+[2026-02-12 11:48:10] ======================================================================

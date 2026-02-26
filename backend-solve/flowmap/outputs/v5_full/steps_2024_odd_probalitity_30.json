@@ -1,0 +1,129 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_probalitity_30",
+    "prob_area": "확률과통계",
+    "prob_point": "4",
+    "prob_desc": "30. 양수 t에 대하여 확률변수 $X$가 정규분포 $\\mathrm{N}(1, t^2)$을 따른다. $$\\mathrm{P}(X \\le 5t) \\ge \\frac{1}{2}$$이 되도록 하는 모든 양수 $t$에 대하여 $\\mathrm{P}(t^{2} - t + 1 \\le X \\le t^{2} + t + 1)$의 최댓값을 오른쪽 표준정규분포표를 이용하여 구한 값을 $k$라 하자. $1000 \\times k$의 값을 구하시오. [4점]\n| $z$ | $\\mathrm{P}(0 \\le Z \\le z)$ |\n| --- | --------------------------- |\n| 0.6 | 0.226                       |\n| 0.8 | 0.288                       |\n| 1.0 | 0.341                       |\n| 1.2 | 0.385                       |\n| 1.4 | 0.419                       |",
+    "answer": "673"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Identify allowed t",
+        "body": "Since X ~ N(1, t^2), the mean equals 1. The condition P(X ≤ 5t) ≥ 1/2 holds iff 5t ≥ 1 (otherwise the cutoff is below the mean, giving probability < 1/2). Therefore, valid t satisfy t ≥ 0.2."
+      },
+      {
+        "title": "Maximize target probability",
+        "body": "For Z = (X - 1)/t ~ N(0,1), P(t^2 - t + 1 ≤ X ≤ t^2 + t + 1) = P(t - 1 ≤ Z ≤ t + 1) = Φ(t + 1) - Φ(t - 1). Its derivative is φ(t + 1) - φ(t - 1), which is negative for all t > 0 because φ(t + 1) < φ(t - 1). Hence the probability decreases with t, so the maximum over t ≥ 0.2 occurs at t = 0.2."
+      },
+      {
+        "title": "Compute maximal probability",
+        "body": "At t = 0.2, the bounds become Z ∈ [−0.8, 1.2]. Using the table: Φ(1.2) = 0.5 + 0.385 = 0.885, Φ(−0.8) = 0.5 − 0.288 = 0.212. Therefore k = Φ(1.2) − Φ(−0.8) = 0.885 − 0.212 = 0.673, and 1000 × k = 673."
+      },
+      {
+        "title": "Final Answer",
+        "body": "673"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Standardize and restate",
+        "body": "Let Z = (X - 1)/t ~ N(0,1). Constraint: P(X ≤ 5t) ≥ 1/2 ⇔ P(Z ≤ (5t - 1)/t) ≥ 1/2. Objective: maximize P(t^2 - t + 1 ≤ X ≤ t^2 + t + 1) = P(t - 1 ≤ Z ≤ t + 1)."
+      },
+      {
+        "title": "Solve the constraint",
+        "body": "For standard normal, P(Z ≤ a) ≥ 1/2 ⇔ a ≥ 0. Thus (5t - 1)/t ≥ 0 with t > 0 ⇒ 5t - 1 ≥ 0 ⇒ t ≥ 0.2."
+      },
+      {
+        "title": "Express objective via Φ",
+        "body": "Define f(t) = P(t - 1 ≤ Z ≤ t + 1) = Φ(t + 1) - Φ(t - 1). Domain: t ≥ 0.2."
+      },
+      {
+        "title": "Maximize over t ≥ 0.2",
+        "body": "Differentiate: f′(t) = φ(t + 1) - φ(t - 1). Since for t > 0, (t + 1)^2 > (t - 1)^2 ⇒ φ(t + 1) < φ(t - 1) ⇒ f′(t) < 0. Hence f is decreasing for t > 0, so maximum on [0.2, ∞) occurs at t = 0.2."
+      },
+      {
+        "title": "Evaluate with table",
+        "body": "At t = 0.2: f(0.2) = Φ(1.2) − Φ(−0.8). From table: P(0 ≤ Z ≤ 1.2) = 0.385 ⇒ Φ(1.2) = 0.5 + 0.385 = 0.885. And P(0 ≤ Z ≤ 0.8) = 0.288 ⇒ Φ(−0.8) = 0.5 − 0.288 = 0.212. Thus k = 0.885 − 0.212 = 0.673, so 1000k = 673."
+      },
+      {
+        "title": "Final Answer",
+        "body": "673"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Find condition for P(X ≤ 5t) ≥ 1/2",
+        "body": "X follows N(1, t²), so we standardize:\nP(X ≤ 5t) = P(Z ≤ (5t-1)/t) = P(Z ≤ 5 - 1/t)\n\nFor P(X ≤ 5t) ≥ 1/2, we need:\nP(Z ≤ 5 - 1/t) ≥ 1/2\n\nSince P(Z ≤ 0) = 1/2, we need:\n5 - 1/t ≥ 0\n5t - 1 ≥ 0\nt ≥ 1/5\n\nSo t ≥ 1/5 (combined with t > 0, we get t ≥ 1/5)"
+      },
+      {
+        "title": "Set up P(t²-t+1 ≤ X ≤ t²+t+1)",
+        "body": "We need to find P(t²-t+1 ≤ X ≤ t²+t+1) for t ≥ 1/5.\n\nStandardize the bounds:\nLower: (t²-t+1-1)/t = (t²-t)/t = t-1\nUpper: (t²+t+1-1)/t = (t²+t)/t = t+1\n\nSo P(t²-t+1 ≤ X ≤ t²+t+1) = P(t-1 ≤ Z ≤ t+1)"
+      },
+      {
+        "title": "Express probability using standard normal",
+        "body": "P(t-1 ≤ Z ≤ t+1) needs to be analyzed for t ≥ 1/5.\n\nCase 1: When t-1 < 0 (i.e., t < 1):\nP(t-1 ≤ Z ≤ t+1) = P(0 ≤ Z ≤ t+1) + P(t-1 ≤ Z ≤ 0)\n= P(0 ≤ Z ≤ t+1) + P(0 ≤ Z ≤ 1-t)\n\nCase 2: When t-1 ≥ 0 (i.e., t ≥ 1):\nP(t-1 ≤ Z ≤ t+1) = P(0 ≤ Z ≤ t+1) - P(0 ≤ Z ≤ t-1)"
+      },
+      {
+        "title": "Find maximum probability",
+        "body": "For Case 1 (1/5 ≤ t < 1):\nf(t) = P(0 ≤ Z ≤ t+1) + P(0 ≤ Z ≤ 1-t)\n\nAs t increases from 1/5 to 1:\n- P(0 ≤ Z ≤ t+1) increases\n- P(0 ≤ Z ≤ 1-t) decreases\n\nAt t = 1: P(-0 ≤ Z ≤ 2) = 2×P(0 ≤ Z ≤ 1) + 0 (approximately)\n\nFor Case 2 (t ≥ 1):\nf(t) = P(0 ≤ Z ≤ t+1) - P(0 ≤ Z ≤ t-1)\n\nAs t → ∞, both terms approach 0.5, so difference → 0.\nAt t = 1: f(1) = P(0 ≤ Z ≤ 2) - P(0 ≤ Z ≤ 0) = P(0 ≤ Z ≤ 2)\n\nThe maximum occurs around t = 1."
+      },
+      {
+        "title": "Calculate maximum at t = 1",
+        "body": "At t = 1:\nP(t-1 ≤ Z ≤ t+1) = P(0 ≤ Z ≤ 2) + P(0 ≤ Z ≤ 0)\n= P(0 ≤ Z ≤ 2) + 0\n\nBut we need to use the given table. Let's check t = 0.6:\nP(-0.4 ≤ Z ≤ 1.6) = P(0 ≤ Z ≤ 1.6) + P(0 ≤ Z ≤ 0.4)\n\nAt t = 1: P(0 ≤ Z ≤ 2) ≈ 0.477 (not in table)\n\nLet's try t = 0.4 (where t ≥ 1/5):\nP(-0.6 ≤ Z ≤ 1.4) = P(0 ≤ Z ≤ 0.6) + P(0 ≤ Z ≤ 1.4)\n= 0.226 + 0.419 = 0.645\n\nAt t = 0.2:\nP(-0.8 ≤ Z ≤ 1.2) = P(0 ≤ Z ≤ 0.8) + P(0 ≤ Z ≤ 1.2)\n= 0.288 + 0.385 = 0.673\n\nAt t = 1:\nP(0 ≤ Z ≤ 2) = 2 × P(0 ≤ Z ≤ 1) = 2 × 0.341 = 0.682"
+      },
+      {
+        "title": "Verify maximum value",
+        "body": "At t = 1:\nP(0 ≤ Z ≤ 2) = 2 × 0.341 = 0.682\n\nThis equals P(1-1+1 ≤ X ≤ 1+1+1) = P(1 ≤ X ≤ 3)\n\nThe maximum value k = 0.682\n\n1000 × k = 1000 × 0.682 = 682"
+      },
+      {
+        "title": "Final Answer",
+        "body": "682"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Determine the valid range for t",
+        "body": "Given $X \\sim \\mathrm{N}(1, t^2)$, the distribution is symmetric about the mean $\\mu = 1$. The condition $\\mathrm{P}(X \\le 5t) \\ge \\frac{1}{2}$ implies that the boundary $5t$ must be greater than or equal to the mean, since $\\mathrm{P}(X \\le \\mu) = 0.5$. Therefore, $5t \\ge 1$, which simplifies to $t \\ge 0.2$."
+      },
+      {
+        "title": "Standardize the probability expression",
+        "body": "Let $Z = \\frac{X - 1}{t}$ be the standard normal random variable. We transform the inequality $t^2 - t + 1 \\le X \\le t^2 + t + 1$ into terms of $Z$. \nLower bound: $\\frac{(t^2 - t + 1) - 1}{t} = t - 1$. \nUpper bound: $\\frac{(t^2 + t + 1) - 1}{t} = t + 1$. \nThus, we want to maximize $P(t - 1 \\le Z \\le t + 1)$ subject to $t \\ge 0.2$."
+      },
+      {
+        "title": "Find the optimal t to maximize probability",
+        "body": "The expression $P(t - 1 \\le Z \\le t + 1)$ represents the area under the standard normal curve over an interval of fixed length 2 centered at $t$. Since the standard normal PDF peaks at $z=0$ and decreases symmetrically, the probability is maximized when the interval center $t$ is closest to 0. Given the constraint $t \\ge 0.2$, the optimal value is the smallest possible $t$, which is $t = 0.2$."
+      },
+      {
+        "title": "Calculate k and final answer",
+        "body": "Substitute $t = 0.2$ into the standardized probability expression to find $k$:\n$k = P(0.2 - 1 \\le Z \\le 0.2 + 1) = P(-0.8 \\le Z \\le 1.2)$.\nUsing the symmetry of the normal distribution ($P(-a \\le Z \\le b) = P(0 \\le Z \\le a) + P(0 \\le Z \\le b)$):\n$k = P(0 \\le Z \\le 0.8) + P(0 \\le Z \\le 1.2)$.\nFrom the table, $0.288 + 0.385 = 0.673$.\nFinally, calculate $1000 \\times k = 1000 \\times 0.673 = 673$."
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Identify distribution and condition",
+        "body": "The random variable X follows a normal distribution N(1, t²) for positive t. The condition is P(X ≤ 5t) ≥ 1/2. Standardize to Z ~ N(0,1): P(Z ≤ 5 - 1/t) ≥ 1/2, so Φ(5 - 1/t) ≥ 1/2. Since Φ(0) = 1/2 and Φ is increasing, this holds when 5 - 1/t ≥ 0, or t ≥ 1/5 = 0.2."
+      },
+      {
+        "title": "Express target probability",
+        "body": "The target probability is P(t² - t + 1 ≤ X ≤ t² + t + 1). Standardize: lower limit (t² - t + 1 - 1)/t = t - 1, upper limit (t² + t + 1 - 1)/t = t + 1. Thus, P(t - 1 ≤ Z ≤ t + 1) = Φ(t + 1) - Φ(t - 1), for t ≥ 0.2."
+      },
+      {
+        "title": "Determine t maximizing probability",
+        "body": "The function f(t) = Φ(t + 1) - Φ(t - 1) represents the probability over an interval of length 2 centered at t. For t ≥ 0.2 > 0, the normal density is maximized at 0, so f(t) decreases as t increases, since the interval shifts away from the mean. The maximum occurs at the boundary t = 0.2."
+      },
+      {
+        "title": "Compute maximum value using table",
+        "body": "At t = 0.2, f(0.2) = Φ(1.2) - Φ(-0.8). From table: P(0 ≤ Z ≤ 0.8) = 0.288, so Φ(0.8) = 0.5 + 0.288 = 0.788, Φ(-0.8) = 1 - 0.788 = 0.212. P(0 ≤ Z ≤ 1.2) = 0.385, so Φ(1.2) = 0.5 + 0.385 = 0.885. Thus, f(0.2) = 0.885 - 0.212 = 0.673 = k."
+      },
+      {
+        "title": "Find 1000k",
+        "body": "1000 × k = 1000 × 0.673 = 673."
+      },
+      {
+        "title": "Final Answer",
+        "body": "673"
+      }
+    ]
+  }
+}

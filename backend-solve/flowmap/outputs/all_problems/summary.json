@@ -1,0 +1,597 @@
+[
+  {
+    "prob_id": "2024_odd_common_1",
+    "prob_area": "수학1",
+    "prob_point": "2",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_2",
+    "prob_area": "수학2",
+    "prob_point": "2",
+    "n_groups": 4,
+    "n_flows": 9,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_3",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "n_groups": 6,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_4",
+    "prob_area": "수학2",
+    "prob_point": "3",
+    "n_groups": 8,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_5",
+    "prob_area": "수학2",
+    "prob_point": "3",
+    "n_groups": 6,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_6",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "n_groups": 6,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_7",
+    "prob_area": "수학2",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_8",
+    "prob_area": "수학2",
+    "prob_point": "3",
+    "n_groups": 4,
+    "n_flows": 10,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_9",
+    "prob_area": "수학1",
+    "prob_point": "4",
+    "n_groups": 6,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_10",
+    "prob_area": "수학2",
+    "prob_point": "4",
+    "n_groups": 7,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_11",
+    "prob_area": "수학1",
+    "prob_point": "4",
+    "n_groups": 8,
+    "n_flows": 17,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_12",
+    "prob_area": "수학2",
+    "prob_point": "4",
+    "n_groups": 8,
+    "n_flows": 17,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_13",
+    "prob_area": "수학1",
+    "prob_point": "4",
+    "n_groups": 9,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_14",
+    "prob_area": "수학2",
+    "prob_point": "4",
+    "n_groups": 10,
+    "n_flows": 18,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_15",
+    "prob_area": "수학1",
+    "prob_point": "4",
+    "n_groups": 5,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_16",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_17",
+    "prob_area": "수학2",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_18",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_19",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "n_groups": 6,
+    "n_flows": 15,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_20",
+    "prob_area": "수학2",
+    "prob_point": "4",
+    "n_groups": 6,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_21",
+    "prob_area": "수학1",
+    "prob_point": "4",
+    "n_groups": 10,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_common_22",
+    "prob_area": "수학2",
+    "prob_point": "4",
+    "n_groups": 8,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_23",
+    "prob_area": "확률과통계",
+    "prob_point": "2",
+    "n_groups": 4,
+    "n_flows": 9,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_24",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_25",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_26",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "n_groups": 4,
+    "n_flows": 9,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_27",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "n_groups": 7,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_28",
+    "prob_area": "확률과통계",
+    "prob_point": "4",
+    "n_groups": 9,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_29",
+    "prob_area": "확률과통계",
+    "prob_point": "4",
+    "n_groups": 5,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_probalitity_30",
+    "prob_area": "확률과통계",
+    "prob_point": "4",
+    "n_groups": 7,
+    "n_flows": 15,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_23",
+    "prob_area": "미적분",
+    "prob_point": "2",
+    "n_groups": 5,
+    "n_flows": 10,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_24",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_25",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "n_groups": 6,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_26",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_27",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "n_groups": 7,
+    "n_flows": 16,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_28",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "n_groups": 7,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_29",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "n_groups": 8,
+    "n_flows": 13,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_calculus_30",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "n_groups": 9,
+    "n_flows": 15,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_23",
+    "prob_area": "기하",
+    "prob_point": "2",
+    "n_groups": 5,
+    "n_flows": 12,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_24",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "n_groups": 5,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_25",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "n_groups": 4,
+    "n_flows": 11,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_26",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "n_groups": 9,
+    "n_flows": 14,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_27",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "n_groups": 9,
+    "n_flows": 16,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_28",
+    "prob_area": "기하",
+    "prob_point": "4",
+    "n_groups": 9,
+    "n_flows": 16,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_29",
+    "prob_area": "기하",
+    "prob_point": "4",
+    "n_groups": 9,
+    "n_flows": 16,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2",
+      "gemini-3-pro"
+    ],
+    "success": true
+  },
+  {
+    "prob_id": "2024_odd_geometry_30",
+    "prob_area": "기하",
+    "prob_point": "4",
+    "n_groups": 10,
+    "n_flows": 17,
+    "models_participated": [
+      "claude-opus-4.5",
+      "gpt-5.2"
+    ],
+    "success": true
+  }
+]

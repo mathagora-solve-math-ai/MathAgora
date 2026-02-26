@@ -1,0 +1,259 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "등차수열 일반항 설정 및 조건 정리",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "등차수열 일반항 설정",
+          "content": "공차가 0이 아닌 등차수열이므로  \n\\[\na_n=a_1+(n-1)d \\quad (d\\neq 0)\n\\]\n라고 두자. 편의를 위해\n\\[\nx=a_1,\\quad d=d\n\\]\n로 놓으면\n\\[\na_k=x+(k-1)d\n\\]\n이다.\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "등차수열 $\\{a_n\\}$의 첫째항을 $a$, 공차를 $d$ ($d \\neq 0$)라 하면:\n- $a_n = a + (n-1)d$\n- 조건 1: $|a_6| = a_8$\n- 조건 2: $\\displaystyle\\sum_{k=1}^{5} \\frac{1}{a_k a_{k+1}} = \\frac{5}{96}$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "조건 정리 및 첫째항과 공차의 관계 유도",
+          "content": "등차수열 $\\{a_n\\}$의 첫째항을 $a$, 공차를 $d$라고 합시다. ($d \\neq 0$)\n조건 $|a_6| = a_8$을 분석합니다.\n$a_6 = a + 5d$, $a_8 = a + 7d$입니다.\n절댓값의 성질에 따라 두 가지 경우가 가능합니다.\n\n1) $a_6 = a_8$인 경우:\n$a + 5d = a + 7d \\implies 2d = 0 \\implies d = 0$.\n하지만 문제 조건에서 공차가 0이 아니라고 했으므로 성립하지 않습니다.\n\n2) $a_6 = -a_8$인 경우:\n$a + 5d = -(a + 7d)$\n$a + 5d = -a - 7d$\n$2a = -12d \\implies a = -6d$\n\n따라서 첫째항과 공차의 관계는 **$a = -6d$**입니다.\n또한, $|a_6| = a_8$이므로 $a_8 \\ge 0$이어야 합니다.\n$a_8 = a + 7d = -6d + 7d = d$이므로, **$d > 0$**이어야 합니다."
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "절댓값 조건 분석 및 첫째항-공차 관계 유도",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "절댓값 조건 해석",
+          "content": "조건 \\(|a_6|=a_8\\)에서 \\(a_8\\ge 0\\) 이고, \\(a_8=a_6+2d\\).\n\n- 만약 \\(a_6\\ge 0\\)이면 \\(|a_6|=a_6\\)이므로 \\(a_6=a_6+2d \\Rightarrow d=0\\) (모순).\n- 따라서 \\(a_6<0\\). 그러면 \\(|a_6|=-a_6\\)이므로\n\\[\n-a_6=a_8=a_6+2d \\Rightarrow 2d=-2a_6 \\Rightarrow d=-a_6.\n\\]\n즉\n\\[\na_6=-d.\n\\]\n\n또한\n\\[\na_6=a_1+5d \\Rightarrow a_1+5d=-d \\Rightarrow a_1=-6d.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "조건 1 분석",
+          "content": "$a_6 = a + 5d$, $a_8 = a + 7d$\n\n**경우 1**: $a_6 \\geq 0$이면 $a + 5d = a + 7d$ → $d = 0$ (불가)\n\n**경우 2**: $a_6 < 0$이면 $-(a + 5d) = a + 7d$\n$$-a - 5d = a + 7d$$\n$$-2a = 12d$$\n$$a = -6d$$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "부분분수 분해를 이용한 급수 변형",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "분수합을 망원합(텔레스코핑)으로 변형",
+          "content": "등차수열에서는\n\\[\n\\frac{1}{a_k a_{k+1}}=\\frac{1}{(x+(k-1)d)(x+kd)}\n\\]\n이고, 다음 항등식이 성립한다:\n\\[\n\\frac{1}{(x+(k-1)d)(x+kd)}=\\frac{1}{d}\\left(\\frac{1}{x+(k-1)d}-\\frac{1}{x+kd}\\right)\n\\]\n(우변 통분하면 분자가 \\(d\\)가 되어 좌변이 된다.)\n\n따라서\n\\[\n\\sum_{k=1}^{5}\\frac{1}{a_k a_{k+1}}\n=\\frac{1}{d}\\left(\\frac{1}{a_1}-\\frac{1}{a_6}\\right)\n\\]\n문제 조건에 의해\n\\[\n\\frac{1}{d}\\left(\\frac{1}{a_1}-\\frac{1}{a_6}\\right)=\\frac{5}{96}\n\\]\n즉\n\\[\n\\frac{1}{a_1}-\\frac{1}{a_6}=\\frac{5d}{96}.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "부분분수 분해",
+          "content": "등차수열의 성질을 이용한 부분분수 분해:\n$$\\frac{1}{a_k a_{k+1}} = \\frac{1}{d}\\left(\\frac{1}{a_k} - \\frac{1}{a_{k+1}}\\right)$$\n\n따라서:\n$$\\sum_{k=1}^{5} \\frac{1}{a_k a_{k+1}} = \\frac{1}{d}\\left(\\frac{1}{a_1} - \\frac{1}{a_6}\\right) = \\frac{5}{96}$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "부분분수 합 계산 및 식 정리",
+          "content": "주어진 수열의 합 조건을 부분분수 분해를 이용하여 정리합니다.\n등차수열의 성질에 의해 $a_{k+1} - a_k = d$이므로,\n$$ \\frac{1}{a_k a_{k+1}} = \\frac{1}{a_{k+1} - a_k} \\left( \\frac{1}{a_k} - \\frac{1}{a_{k+1}} \\right) = \\frac{1}{d} \\left( \\frac{1}{a_k} - \\frac{1}{a_{k+1}} \\right) $$\n이를 시그마 식에 대입하면,\n$$ \\sum_{k=1}^{5} \\frac{1}{a_k a_{k+1}} = \\frac{1}{d} \\sum_{k=1}^{5} \\left( \\frac{1}{a_k} - \\frac{1}{a_{k+1}} \\right) $$\n$$ = \\frac{1}{d} \\left\\{ \\left(\\frac{1}{a_1} - \\frac{1}{a_2}\\right) + \\left(\\frac{1}{a_2} - \\frac{1}{a_3}\\right) + \\cdots + \\left(\\frac{1}{a_5} - \\frac{1}{a_6}\\right) \\right\\} $$\n$$ = \\frac{1}{d} \\left( \\frac{1}{a_1} - \\frac{1}{a_6} \\right) = \\frac{1}{d} \\left( \\frac{a_6 - a_1}{a_1 a_6} \\right) $$\n여기서 $a_6 - a_1 = (a+5d) - a = 5d$이므로,\n$$ \\frac{1}{d} \\cdot \\frac{5d}{a_1 a_6} = \\frac{5}{a_1 a_6} $$\n문제에서 이 값이 $\\frac{5}{96}$이라 하였으므로,\n$$ \\frac{5}{a_1 a_6} = \\frac{5}{96} \\implies a_1 a_6 = 96 $$"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "조건 대입하여 공차 d 구하기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "분수합 조건에 대입하여 d 구하기",
+          "content": "앞에서 얻은\n\\[\n\\frac{1}{a_1}-\\frac{1}{a_6}=\\frac{5d}{96}\n\\]\n에 \\(a_1=-6d,\\ a_6=-d\\)를 대입하면\n\\[\n\\frac{1}{-6d}-\\frac{1}{-d}=\\frac{5d}{96}.\n\\]\n좌변은\n\\[\n-\\frac{1}{6d}+\\frac{1}{d}=\\frac{5}{6d}.\n\\]\n따라서\n\\[\n\\frac{5}{6d}=\\frac{5d}{96}.\n\\]\n양변에서 5를 약분하면\n\\[\n\\frac{1}{6d}=\\frac{d}{96}.\n\\]\n양변에 \\(96\\cdot 6d\\)를 곱하면\n\\[\n96=6d^2 \\Rightarrow d^2=16 \\Rightarrow d=\\pm 4.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "조건 2에 대입",
+          "content": "$a = -6d$를 대입:\n- $a_1 = a = -6d$\n- $a_6 = a + 5d = -6d + 5d = -d$\n\n$$\\frac{1}{d}\\left(\\frac{1}{-6d} - \\frac{1}{-d}\\right) = \\frac{5}{96}$$\n\n$$\\frac{1}{d}\\left(-\\frac{1}{6d} + \\frac{1}{d}\\right) = \\frac{5}{96}$$\n\n$$\\frac{1}{d} \\cdot \\frac{-1 + 6}{6d} = \\frac{5}{96}$$\n\n$$\\frac{1}{d} \\cdot \\frac{5}{6d} = \\frac{5}{96}$$\n\n$$\\frac{5}{6d^2} = \\frac{5}{96}$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "첫째항과 공차 구하기",
+          "content": "앞서 구한 관계식 $a = -6d$를 $a_1 a_6 = 96$에 대입합니다.\n$a_1 = a = -6d$\n$a_6 = a + 5d = -6d + 5d = -d$\n\n$$ a_1 a_6 = (-6d) \\cdot (-d) = 6d^2 = 96 $$\n$$ d^2 = 16 $$\n$d > 0$이어야 하므로 **$d = 4$**입니다.\n따라서 첫째항은 **$a = -6(4) = -24$**입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "d 부호 결정 및 첫째항 확정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "가능한 d 선택",
+          "content": "\\(a_8=a_6+2d=-d+2d=d\\).  \n또한 \\(|a_6|=a_8\\)이므로 \\(a_8\\ge 0\\)여야 하니 \\(d\\ge 0\\).  \n따라서\n\\[\nd=4.\n\\]\n그러면\n\\[\na_1=-6d=-24.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "d값 결정",
+          "content": "$$6d^2 = 96$$\n$$d^2 = 16$$\n$$d = \\pm 4$$\n\n$a_6 = -d < 0$이어야 하므로 $d > 0$\n따라서 $d = 4$, $a = -6d = -24$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "검증",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "검증",
+          "content": "- $a_1 = -24$, $d = 4$\n- $a_6 = -24 + 20 = -4$ → $|a_6| = 4$\n- $a_8 = -24 + 28 = 4$ ✓\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 6,
+      "group_name": "등차수열의 합 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 5,
+          "title": "첫 15개 합 계산",
+          "content": "등차수열 합:\n\\[\n\\sum_{k=1}^{15} a_k = \\frac{15}{2}\\left(2a_1+(15-1)d\\right)\n\\]\n\\[\n= \\frac{15}{2}\\left(2(-24)+14\\cdot 4\\right)\n= \\frac{15}{2}\\left(-48+56\\right)\n= \\frac{15}{2}\\cdot 8\n=60.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 6,
+          "title": "합 계산",
+          "content": "$$\\sum_{k=1}^{15} a_k = \\frac{15(a_1 + a_{15})}{2}$$\n\n$a_{15} = a + 14d = -24 + 56 = 32$\n\n$$\\sum_{k=1}^{15} a_k = \\frac{15(-24 + 32)}{2} = \\frac{15 \\times 8}{2} = \\frac{120}{2} = 60$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "등차수열의 합 계산",
+          "content": "이제 $\\sum_{k=1}^{15}a_k$, 즉 $S_{15}$를 구합니다.\n등차수열의 합 공식 $S_n = \\frac{n\\{2a + (n-1)d\\}}{2}$를 이용합니다.\n$n=15, a=-24, d=4$를 대입하면,\n\n$$ S_{15} = \\frac{15 \\{ 2(-24) + (15-1)4 \\}}{2} $$\n$$ = \\frac{15 (-48 + 14 \\cdot 4)}{2} $$\n$$ = \\frac{15 (-48 + 56)}{2} $$\n$$ = \\frac{15 \\cdot 8}{2} $$\n$$ = 15 \\cdot 4 = 60 $$"
+        }
+      ]
+    },
+    {
+      "group_id": 7,
+      "group_name": "최종 답안",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 6,
+          "title": "Final Answer",
+          "content": "60 (①)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 7,
+          "title": "Final Answer",
+          "content": "**① 60**\n[/FINAL_ANSWER]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "60"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 6,
+      "to_step": 7
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 3,
+      "to_step": 4
+    }
+  ]
+}

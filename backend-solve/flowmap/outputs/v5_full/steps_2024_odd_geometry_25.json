@@ -1,0 +1,85 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_geometry_25",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "prob_desc": "25. 두 벡터 $\\vec{a},\\ \\vec{b}$에 대하여 $$\\left|\\vec{a}\\right| = \\sqrt{11}, \\quad \\left|\\vec{b}\\right| = 3, \\quad \\left|2\\vec{a} - \\vec{b}\\right| = \\sqrt{17}$$일 때, $\\left|\\vec{a}-\\vec{b}\\right|$의 값은? [3점]\n① $\\dfrac{\\sqrt{2}}{2}$ ② $\\sqrt{2}$ ③ $\\dfrac{3\\sqrt{2}}{2}$ ④ $2\\sqrt{2}$ ⑤ $\\dfrac{5\\sqrt{2}}{2}$",
+    "answer": "2"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Find dot product a·b",
+        "body": "Use |2a − b|² = 4|a|² + |b|² − 4(a·b). Substituting |2a − b|² = 17, |a|² = 11, |b|² = 9 gives 17 = 53 − 4(a·b), so a·b = 9."
+      },
+      {
+        "title": "Compute |a − b|",
+        "body": "Now |a − b|² = |a|² + |b|² − 2(a·b) = 11 + 9 − 18 = 2, hence |a − b| = √2."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Relate norms via dot product",
+        "body": "Use |2a − b|^2 = 4|a|^2 + |b|^2 − 4(a·b). Substitute |2a − b|^2 = 17, |a|^2 = 11, |b|^2 = 9 to get 17 = 44 + 9 − 4(a·b)."
+      },
+      {
+        "title": "Solve for a·b",
+        "body": "From 17 = 53 − 4(a·b), get −4(a·b) = −36, so a·b = 9."
+      },
+      {
+        "title": "Compute |a − b|",
+        "body": "Use |a − b|^2 = |a|^2 + |b|^2 − 2(a·b) = 11 + 9 − 18 = 2, hence |a − b| = √2."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Find dot product using given magnitude",
+        "body": "Given: |a| = √11, |b| = 3, |2a - b| = √17\n\nUsing |2a - b|² = 17:\n|2a - b|² = (2a - b)·(2a - b) = 4|a|² - 4a·b + |b|²\n\n17 = 4(11) - 4a·b + 9\n17 = 44 - 4a·b + 9\n17 = 53 - 4a·b\n4a·b = 36\na·b = 9"
+      },
+      {
+        "title": "Calculate |a - b|",
+        "body": "Now find |a - b|²:\n|a - b|² = |a|² - 2a·b + |b|²\n|a - b|² = 11 - 2(9) + 9\n|a - b|² = 11 - 18 + 9\n|a - b|² = 2\n\nTherefore: |a - b| = √2"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Calculate the dot product of vectors a and b",
+        "body": "First, square the given equation $\\left|2\\vec{a} - \\vec{b}\\right| = \\sqrt{17}$ to relate the magnitudes to the dot product using the property $|\\vec{x}|^2 = \\vec{x} \\cdot \\vec{x}$:\n$$\\left|2\\vec{a} - \\vec{b}\\right|^2 = 4|\\vec{a}|^2 - 4(\\vec{a} \\cdot \\vec{b}) + |\\vec{b}|^2 = 17$$\n\nSubstitute the known values $|\\vec{a}| = \\sqrt{11}$ (so $|\\vec{a}|^2 = 11$) and $|\\vec{b}| = 3$ (so $|\\vec{b}|^2 = 9$):\n$$4(11) - 4(\\vec{a} \\cdot \\vec{b}) + 9 = 17$$\n$$44 + 9 - 4(\\vec{a} \\cdot \\vec{b}) = 17$$\n$$53 - 4(\\vec{a} \\cdot \\vec{b}) = 17$$\n$$4(\\vec{a} \\cdot \\vec{b}) = 36$$\n$$\\vec{a} \\cdot \\vec{b} = 9$$"
+      },
+      {
+        "title": "Calculate the magnitude of vector a - b",
+        "body": "Now, evaluate $|\\vec{a} - \\vec{b}|^2$ by expanding it:\n$$|\\vec{a} - \\vec{b}|^2 = |\\vec{a}|^2 - 2(\\vec{a} \\cdot \\vec{b}) + |\\vec{b}|^2$$\n\nSubstitute the known values ($|\\vec{a}|^2 = 11$, $|\\vec{b}|^2 = 9$) and the dot product calculated in the previous step ($\\vec{a} \\cdot \\vec{b} = 9$):\n$$|\\vec{a} - \\vec{b}|^2 = 11 - 2(9) + 9$$\n$$|\\vec{a} - \\vec{b}|^2 = 11 - 18 + 9$$\n$$|\\vec{a} - \\vec{b}|^2 = 2$$\n\nFinally, take the square root to find $|\\vec{a} - \\vec{b}|$:\n$$|\\vec{a} - \\vec{b}| = \\sqrt{2}$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Compute dot product using given magnitudes",
+        "body": "Given \\(|\\vec{a}| = \\sqrt{11}\\), so \\(|\\vec{a}|^2 = 11\\); \\(|\\vec{b}| = 3\\), so \\(|\\vec{b}|^2 = 9\\); and \\(|2\\vec{a} - \\vec{b}|^2 = 17\\).\n\nExpand: \\(|2\\vec{a} - \\vec{b}|^2 = 4|\\vec{a}|^2 + |\\vec{b}|^2 - 4 \\vec{a} \\cdot \\vec{b} = 17\\).\n\nSubstitute: \\(4(11) + 9 - 4(\\vec{a} \\cdot \\vec{b}) = 17\\).\n\n\\(44 + 9 - 4(\\vec{a} \\cdot \\vec{b}) = 17\\).\n\n\\(53 - 4(\\vec{a} \\cdot \\vec{b}) = 17\\).\n\n\\(-4(\\vec{a} \\cdot \\vec{b}) = 17 - 53 = -36\\).\n\n\\(4(\\vec{a} \\cdot \\vec{b}) = 36\\).\n\n\\( \\vec{a} \\cdot \\vec{b} = 9 \\)."
+      },
+      {
+        "title": "Compute |a - b| using dot product",
+        "body": "Now, \\(|\\vec{a} - \\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 - 2 \\vec{a} \\cdot \\vec{b}\\).\n\nSubstitute: \\(11 + 9 - 2(9) = 20 - 18 = 2\\).\n\nThus, \\(|\\vec{a} - \\vec{b}| = \\sqrt{2}\\), which corresponds to option ②."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4409 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:49:00Z",
+    "ended_at_utc": "2026-02-14T03:50:09Z",
+    "elapsed_seconds": 69.049,
+    "problem_tag": "2026_odd_common_15",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 2,
+    "n_resumed_runs_from_flat_csv": 70
+  },
+  "problem": {
+    "id": "2026_odd_common_15",
+    "label": "2026_odd_common_15 (수학2, 4점)",
+    "gold_answer": "4"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.176608,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(극값 후보) 개수 분석",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.900158,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(교점) 개수 분석",
+                "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4\\), \\(h(3)=\\dfrac{7}{2}\\) 이므로\n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}\n\\]\n정답: \\(\\boxed{\\dfrac{15}{2}}\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.216507,
+              "step_count": 4,
+              "step_titles": [
+                "극값 조건을 h'(x)로 변환",
+                "각 구간에서 h'(x)=0 해와 부호 변화 분석",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.176608,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(극값 후보) 개수 분석",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.900158,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(교점) 개수 분석",
+                "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4\\), \\(h(3)=\\dfrac{7}{2}\\) 이므로\n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}\n\\]\n정답: \\(\\boxed{\\dfrac{15}{2}}\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.216507,
+              "step_count": 4,
+              "step_titles": [
+                "극값 조건을 h'(x)로 변환",
+                "각 구간에서 h'(x)=0 해와 부호 변화 분석",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "극값 조건을 h'(x)로 바꾸기": 2,
+            "구간별로 h'(x)=g(x)-f(x) 정리": 2,
+            "x<-1에서의 영점(극값 후보) 개수 분석": 1,
+            "a=4일 때 h(3) 계산": 3,
+            "k+h(3)": 2,
+            "x<-1에서의 영점(교점) 개수 분석": 1,
+            "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기": 1,
+            "극값 조건을 h'(x)로 변환": 1,
+            "각 구간에서 h'(x)=0 해와 부호 변화 분석": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "극값 조건을 h'(x)로 바꾸기": 2,
+            "구간별로 h'(x)=g(x)-f(x) 정리": 2,
+            "x<-1에서의 영점(극값 후보) 개수 분석": 1,
+            "a=4일 때 h(3) 계산": 3,
+            "k+h(3)": 2,
+            "x<-1에서의 영점(교점) 개수 분석": 1,
+            "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기": 1,
+            "극값 조건을 h'(x)로 변환": 1,
+            "각 구간에서 h'(x)=0 해와 부호 변화 분석": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.222929,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "극값 조건 분석",
+                "h(3) 계산",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.535639,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "x ≥ 1 구간 분석",
+                "x < -1 구간 분석",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.231223,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "극값 조건 분석",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.222929,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "극값 조건 분석",
+                "h(3) 계산",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.535639,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "x ≥ 1 구간 분석",
+                "x < -1 구간 분석",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.231223,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "극값 조건 분석",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "h'(x) = g(x) - f(x) 분석": 3,
+            "구간별 부호 분석": 2,
+            "극값 조건 분석": 2,
+            "h(3) 계산": 1,
+            "최종 계산": 2,
+            "x ≥ 1 구간 분석": 1,
+            "x < -1 구간 분석": 1,
+            "최댓값 k 결정": 1,
+            "h(3) 계산 (a = 4)": 1,
+            "최댓값 k 결정 및 h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "h'(x) = g(x) - f(x) 분석": 3,
+            "구간별 부호 분석": 2,
+            "극값 조건 분석": 2,
+            "h(3) 계산": 1,
+            "최종 계산": 2,
+            "x ≥ 1 구간 분석": 1,
+            "x < -1 구간 분석": 1,
+            "최댓값 k 결정": 1,
+            "h(3) 계산 (a = 4)": 1,
+            "최댓값 k 결정 및 h(3) 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.989285,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.926958084106445,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.360099,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.989285,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.926958084106445,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.360099,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제의 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)$가 오직 하나의 극값을 갖기 위해서는 도함수 $h'(x)$의 부호가 $x$의 전 구간에서 단 한 번만 바뀌어야 한다.\n미적분학의 기본 정리에 의해 $h'(x) = g(x) - f(x)$이므로, 두 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 단 한 곳이어야 한다.\n\n주어진 함수들을 구간별로 정리하면 다음과 같다.\n1.  **$f(x)$**\n    *   $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.0,
+          "title_frequency": {
+            "조건 정리 및 함수 분석": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 1.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 함수 분석": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 191.642714,
+              "step_count": 4,
+              "step_titles": [
+                "함수 h(x)의 극값 분석을 위한 h'(x) 정의",
+                "h'(x) = 0인 점 찾기와 부호 변화 분석",
+                "정확히 하나의 극값을 갖는 a의 범위 결정",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 212.962219,
+              "step_count": 2,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 210.838563,
+              "step_count": 3,
+              "step_titles": [
+                "함수 분석 및 h'(x)=0 찾기",
+                "h' 부호 분석 및 극값 개수",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 191.642714,
+              "step_count": 4,
+              "step_titles": [
+                "함수 h(x)의 극값 분석을 위한 h'(x) 정의",
+                "h'(x) = 0인 점 찾기와 부호 변화 분석",
+                "정확히 하나의 극값을 갖는 a의 범위 결정",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 212.962219,
+              "step_count": 2,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 210.838563,
+              "step_count": 3,
+              "step_titles": [
+                "함수 분석 및 h'(x)=0 찾기",
+                "h' 부호 분석 및 극값 개수",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 h(x)의 극값 분석을 위한 h'(x) 정의": 1,
+            "h'(x) = 0인 점 찾기와 부호 변화 분석": 1,
+            "정확히 하나의 극값을 갖는 a의 범위 결정": 1,
+            "a = 4일 때 h(3) 계산": 2,
+            "함수 h(x)의 극값 조건 분석": 1,
+            "함수 분석 및 h'(x)=0 찾기": 1,
+            "h' 부호 분석 및 극값 개수": 1,
+            "a=4일 때 h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 h(x)의 극값 분석을 위한 h'(x) 정의": 1,
+            "h'(x) = 0인 점 찾기와 부호 변화 분석": 1,
+            "정확히 하나의 극값을 갖는 a의 범위 결정": 1,
+            "a = 4일 때 h(3) 계산": 2,
+            "함수 h(x)의 극값 조건 분석": 1,
+            "함수 분석 및 h'(x)=0 찾기": 1,
+            "h' 부호 분석 및 극값 개수": 1,
+            "a=4일 때 h(3) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 77.109828,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 함수 정의 정리",
+                "h'(x) 구간별 표현",
+                "h'(x) 부호 변화 분석 (극값 개수 조건)",
+                "전체 극값 개수 시나리오",
+                "a=k=4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 219.944696,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정리 및 h'(x) 표현",
+                "h'(x)=0인 점 찾기",
+                "극값 개수에 따른 a의 범위 분석",
+                "k 결정 및 h(3) 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "$\\dfrac{15}{2}$ (④번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 86.575806,
+              "step_count": 10,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)와 극값 조건 분석",
+                "g(x)-f(x)의 식 정리",
+                "h'(x)=0의 실근 개수 조건",
+                "근의 분포와 극값 개수",
+                "h'(x)의 부호 변화 검토",
+                "극값 개수 정리",
+                "a의 범위 결정",
+                "a=k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 77.109828,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 함수 정의 정리",
+                "h'(x) 구간별 표현",
+                "h'(x) 부호 변화 분석 (극값 개수 조건)",
+                "전체 극값 개수 시나리오",
+                "a=k=4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 219.944696,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정리 및 h'(x) 표현",
+                "h'(x)=0인 점 찾기",
+                "극값 개수에 따른 a의 범위 분석",
+                "k 결정 및 h(3) 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "$\\dfrac{15}{2}$ (④번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 86.575806,
+              "step_count": 10,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)와 극값 조건 분석",
+                "g(x)-f(x)의 식 정리",
+                "h'(x)=0의 실근 개수 조건",
+                "근의 분포와 극값 개수",
+                "h'(x)의 부호 변화 검토",
+                "극값 개수 정리",
+                "a의 범위 결정",
+                "a=k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "문제 이해 및 함수 정의 정리": 1,
+            "h'(x) 구간별 표현": 1,
+            "h'(x) 부호 변화 분석 (극값 개수 조건)": 1,
+            "전체 극값 개수 시나리오": 1,
+            "a=k=4일 때 h(3) 계산": 2,
+            "k + h(3) 계산": 1,
+            "함수 정리 및 h'(x) 표현": 1,
+            "h'(x)=0인 점 찾기": 1,
+            "극값 개수에 따른 a의 범위 분석": 1,
+            "k 결정 및 h(3) 계산": 1,
+            "최종 답 계산": 1,
+            "조건 정리": 1,
+            "h'(x)와 극값 조건 분석": 1,
+            "g(x)-f(x)의 식 정리": 1,
+            "h'(x)=0의 실근 개수 조건": 1,
+            "근의 분포와 극값 개수": 1,
+            "h'(x)의 부호 변화 검토": 1,
+            "극값 개수 정리": 1,
+            "a의 범위 결정": 1,
+            "k+h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.0,
+          "step_std": 2.6457513110645907,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 함수 정의 정리": 1,
+            "h'(x) 구간별 표현": 1,
+            "h'(x) 부호 변화 분석 (극값 개수 조건)": 1,
+            "전체 극값 개수 시나리오": 1,
+            "a=k=4일 때 h(3) 계산": 2,
+            "k + h(3) 계산": 1,
+            "함수 정리 및 h'(x) 표현": 1,
+            "h'(x)=0인 점 찾기": 1,
+            "극값 개수에 따른 a의 범위 분석": 1,
+            "k 결정 및 h(3) 계산": 1,
+            "최종 답 계산": 1,
+            "조건 정리": 1,
+            "h'(x)와 극값 조건 분석": 1,
+            "g(x)-f(x)의 식 정리": 1,
+            "h'(x)=0의 실근 개수 조건": 1,
+            "근의 분포와 극값 개수": 1,
+            "h'(x)의 부호 변화 검토": 1,
+            "극값 개수 정리": 1,
+            "a의 범위 결정": 1,
+            "k+h(3) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 215.320477,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "도함수 분석: \\( h'(x) = g(x) - f(x) \\)",
+                "구간별 \\( g(x) - f(x) \\) 정의",
+                "각 구간에서 \\( h'(x) = 0 \\) 해 분석",
+                "전체에서 \\( h'(x) = 0 \\) 해 개수 분석",
+                "부호 변화 분석 및 극값 조건"
+              ],
+              "final_answer": "\\)  \n  두 근 모두 음수 (왜냐하면 계수 양수, 합 \\( -a < 0 \\), 곱 \\( a > 0 \\))  \n  작은 근 \\( x_1 < -1 \\)인지 확인 필요.\n\n  예: \\( a = 5 \\), \\( x^2 + 5x + 5 = 0 \\), 근 \\( \\frac{-5 \\pm \\sqrt{25-20}}{2} = \\frac{-5 \\pm \\sqrt{5}}{2} \\approx \\frac{-5 \\pm 2.24}{2} \\)  \n  → \\( x_1 \\approx -3.62 < -1 \\), \\( x_2 \\approx -1.38 < -1 \\) →",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.286669,
+              "step_count": 6,
+              "step_titles": [
+                "함수 정의 및 h(x)의 의미 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화 분석",
+                "구간별 h'(x) 부호 및 제로점 조사",
+                "전체 h'(x)의 부호 흐름 분석"
+              ],
+              "final_answer": "-1 \\)에서 0이 되지 않도록, 특히 **실근이 \\( x \\ge -1 \\)** 에 있거나 없어야 함\n\n**목표**: \\( x < -1 \\)에서 \\( h'(x) > 0 \\) → 부호 변화 없음 → 유일한 극값은 \\( x \\ge 1 \\)에서 발생\n\n→ \\( x^2 + ax + a = 0 \\)의 실근이 존재하더라도, **모두 \\( x \\ge -1 \\)** 에 있어야 \\( x < -1 \\)에서 양수 유지\n\n또는 실근이 없으면 항상 양수\n\n판별식 \\( D = a^2 - 4a \\)\n\n- \\( D < 0 \\): \\( 0 < a < 4 \\) →",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 107.264547,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정의 및 h(x)의 도함수 분석",
+                "구간별 함수 정의 정리",
+                "h'(x)의 부호 변화 분석 및 극값 조건",
+                "구간별 h'(x) 분석",
+                "다른 구간에서의 극값 가능성 검토"
+              ],
+              "final_answer": ": \\( a=4 \\)일 때 정말 오직 하나의 극값인가?\n\n  - \\( x < -1 \\): \\( h'(x) = (x+2)^2 \\ge 0 \\), \\( x=-2 \\)에서 0 → 부호 변화 없음 → 극값 없음  \n  - \\( -1 \\le x < 1 \\): \\( h'(x) \\ge 0 \\) → 증가  \n  - \\( x \\ge 1 \\): \\( h'(x) = -x^2 + 5x - 4 = -(x-1)(x-4) \\)  \n    → \\( h'(x) > 0 \\) on \\( (1,4) \\), \\( h'(x) < 0 \\) on \\( x>4 \\) → \\( x",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 215.320477,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "도함수 분석: \\( h'(x) = g(x) - f(x) \\)",
+                "구간별 \\( g(x) - f(x) \\) 정의",
+                "각 구간에서 \\( h'(x) = 0 \\) 해 분석",
+                "전체에서 \\( h'(x) = 0 \\) 해 개수 분석",
+                "부호 변화 분석 및 극값 조건"
+              ],
+              "final_answer": "\\)  \n  두 근 모두 음수 (왜냐하면 계수 양수, 합 \\( -a < 0 \\), 곱 \\( a > 0 \\))  \n  작은 근 \\( x_1 < -1 \\)인지 확인 필요.\n\n  예: \\( a = 5 \\), \\( x^2 + 5x + 5 = 0 \\), 근 \\( \\frac{-5 \\pm \\sqrt{25-20}}{2} = \\frac{-5 \\pm \\sqrt{5}}{2} \\approx \\frac{-5 \\pm 2.24}{2} \\)  \n  → \\( x_1 \\approx -3.62 < -1 \\), \\( x_2 \\approx -1.38 < -1 \\) →",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.286669,
+              "step_count": 6,
+              "step_titles": [
+                "함수 정의 및 h(x)의 의미 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화 분석",
+                "구간별 h'(x) 부호 및 제로점 조사",
+                "전체 h'(x)의 부호 흐름 분석"
+              ],
+              "final_answer": "-1 \\)에서 0이 되지 않도록, 특히 **실근이 \\( x \\ge -1 \\)** 에 있거나 없어야 함\n\n**목표**: \\( x < -1 \\)에서 \\( h'(x) > 0 \\) → 부호 변화 없음 → 유일한 극값은 \\( x \\ge 1 \\)에서 발생\n\n→ \\( x^2 + ax + a = 0 \\)의 실근이 존재하더라도, **모두 \\( x \\ge -1 \\)** 에 있어야 \\( x < -1 \\)에서 양수 유지\n\n또는 실근이 없으면 항상 양수\n\n판별식 \\( D = a^2 - 4a \\)\n\n- \\( D < 0 \\): \\( 0 < a < 4 \\) →",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 107.264547,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정의 및 h(x)의 도함수 분석",
+                "구간별 함수 정의 정리",
+                "h'(x)의 부호 변화 분석 및 극값 조건",
+                "구간별 h'(x) 분석",
+                "다른 구간에서의 극값 가능성 검토"
+              ],
+              "final_answer": ": \\( a=4 \\)일 때 정말 오직 하나의 극값인가?\n\n  - \\( x < -1 \\): \\( h'(x) = (x+2)^2 \\ge 0 \\), \\( x=-2 \\)에서 0 → 부호 변화 없음 → 극값 없음  \n  - \\( -1 \\le x < 1 \\): \\( h'(x) \\ge 0 \\) → 증가  \n  - \\( x \\ge 1 \\): \\( h'(x) = -x^2 + 5x - 4 = -(x-1)(x-4) \\)  \n    → \\( h'(x) > 0 \\) on \\( (1,4) \\), \\( h'(x) < 0 \\) on \\( x>4 \\) → \\( x",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 1,
+            "도함수 분석: \\( h'(x) = g(x) - f(x) \\)": 1,
+            "구간별 \\( g(x) - f(x) \\) 정의": 1,
+            "각 구간에서 \\( h'(x) = 0 \\) 해 분석": 1,
+            "전체에서 \\( h'(x) = 0 \\) 해 개수 분석": 1,
+            "부호 변화 분석 및 극값 조건": 1,
+            "함수 정의 및 h(x)의 의미 파악": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 h'(x) 계산": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "구간별 h'(x) 부호 및 제로점 조사": 1,
+            "전체 h'(x)의 부호 흐름 분석": 1,
+            "함수 정의 및 h(x)의 도함수 분석": 1,
+            "구간별 함수 정의 정리": 1,
+            "h'(x)의 부호 변화 분석 및 극값 조건": 1,
+            "구간별 h'(x) 분석": 1,
+            "다른 구간에서의 극값 가능성 검토": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "도함수 분석: \\( h'(x) = g(x) - f(x) \\)": 1,
+            "구간별 \\( g(x) - f(x) \\) 정의": 1,
+            "각 구간에서 \\( h'(x) = 0 \\) 해 분석": 1,
+            "전체에서 \\( h'(x) = 0 \\) 해 개수 분석": 1,
+            "부호 변화 분석 및 극값 조건": 1,
+            "함수 정의 및 h(x)의 의미 파악": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 h'(x) 계산": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "구간별 h'(x) 부호 및 제로점 조사": 1,
+            "전체 h'(x)의 부호 흐름 분석": 1,
+            "함수 정의 및 h(x)의 도함수 분석": 1,
+            "구간별 함수 정의 정리": 1,
+            "h'(x)의 부호 변화 분석 및 극값 조건": 1,
+            "구간별 h'(x) 분석": 1,
+            "다른 구간에서의 극값 가능성 검토": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 바꾸기": 2,
+          "구간별로 h'(x)=g(x)-f(x) 정리": 2,
+          "x<-1에서의 영점(극값 후보) 개수 분석": 1,
+          "a=4일 때 h(3) 계산": 4,
+          "k+h(3)": 2,
+          "x<-1에서의 영점(교점) 개수 분석": 1,
+          "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기": 1,
+          "극값 조건을 h'(x)로 변환": 1,
+          "각 구간에서 h'(x)=0 해와 부호 변화 분석": 1,
+          "조건 정리": 5,
+          "h'(x) = g(x) - f(x) 분석": 4,
+          "구간별 부호 분석": 2,
+          "극값 조건 분석": 2,
+          "h(3) 계산": 1,
+          "최종 계산": 2,
+          "x ≥ 1 구간 분석": 1,
+          "x < -1 구간 분석": 1,
+          "최댓값 k 결정": 1,
+          "h(3) 계산 (a = 4)": 1,
+          "최댓값 k 결정 및 h(3) 계산": 1,
+          "조건 정리 및 함수 분석": 3,
+          "함수 h(x)의 극값 분석을 위한 h'(x) 정의": 1,
+          "h'(x) = 0인 점 찾기와 부호 변화 분석": 1,
+          "정확히 하나의 극값을 갖는 a의 범위 결정": 1,
+          "a = 4일 때 h(3) 계산": 2,
+          "함수 h(x)의 극값 조건 분석": 1,
+          "함수 분석 및 h'(x)=0 찾기": 1,
+          "h' 부호 분석 및 극값 개수": 1,
+          "문제 이해 및 함수 정의 정리": 1,
+          "h'(x) 구간별 표현": 1,
+          "h'(x) 부호 변화 분석 (극값 개수 조건)": 1,
+          "전체 극값 개수 시나리오": 1,
+          "a=k=4일 때 h(3) 계산": 2,
+          "k + h(3) 계산": 1,
+          "함수 정리 및 h'(x) 표현": 1,
+          "h'(x)=0인 점 찾기": 1,
+          "극값 개수에 따른 a의 범위 분석": 1,
+          "k 결정 및 h(3) 계산": 1,
+          "최종 답 계산": 1,
+          "h'(x)와 극값 조건 분석": 1,
+          "g(x)-f(x)의 식 정리": 1,
+          "h'(x)=0의 실근 개수 조건": 1,
+          "근의 분포와 극값 개수": 1,
+          "h'(x)의 부호 변화 검토": 1,
+          "극값 개수 정리": 1,
+          "a의 범위 결정": 1,
+          "k+h(3) 계산": 1,
+          "도함수 분석: \\( h'(x) = g(x) - f(x) \\)": 1,
+          "구간별 \\( g(x) - f(x) \\) 정의": 1,
+          "각 구간에서 \\( h'(x) = 0 \\) 해 분석": 1,
+          "전체에서 \\( h'(x) = 0 \\) 해 개수 분석": 1,
+          "부호 변화 분석 및 극값 조건": 1,
+          "함수 정의 및 h(x)의 의미 파악": 1,
+          "구간별 h'(x) 계산": 1,
+          "h'(x)의 부호 변화 분석": 1,
+          "구간별 h'(x) 부호 및 제로점 조사": 1,
+          "전체 h'(x)의 부호 흐름 분석": 1,
+          "함수 정의 및 h(x)의 도함수 분석": 1,
+          "구간별 함수 정의 정리": 1,
+          "h'(x)의 부호 변화 분석 및 극값 조건": 1,
+          "구간별 h'(x) 분석": 1,
+          "다른 구간에서의 극값 가능성 검토": 1
+        },
+        "accuracy_all_models": 0.2222222222222222,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.375386,
+              "step_count": 6,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "극값이 하나만 되려면: 부호변화 개수 세기",
+                "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.951997,
+              "step_count": 5,
+              "step_titles": [
+                "핵심 관찰(극값 ↔ 도함수의 부호변화)",
+                "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리",
+                "극값이 생길 수 있는 지점 후보 분석",
+                "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정",
+                " \\(a=k=4\\)일 때 \\(h(3)\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.852543,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "항상 생기는 극값(0에서) 확인",
+                "x<-1 구간에서 극값이 생기지 않게 하기",
+                "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기",
+                "a=k=1일 때 h(3) 계산"
+              ],
+              "final_answer": "\\[\nk=1,\\quad h(3)=-\\frac52,\\quad k+h(3)=-\\frac32\n\\]\n(따라서 제시된 선택지에는 해당 값이 없습니다.)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.375386,
+              "step_count": 6,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "극값이 하나만 되려면: 부호변화 개수 세기",
+                "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음",
+                "a=4일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.951997,
+              "step_count": 5,
+              "step_titles": [
+                "핵심 관찰(극값 ↔ 도함수의 부호변화)",
+                "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리",
+                "극값이 생길 수 있는 지점 후보 분석",
+                "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정",
+                " \\(a=k=4\\)일 때 \\(h(3)\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.852543,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)로 바꾸기",
+                "항상 생기는 극값(0에서) 확인",
+                "x<-1 구간에서 극값이 생기지 않게 하기",
+                "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기",
+                "a=k=1일 때 h(3) 계산"
+              ],
+              "final_answer": "\\[\nk=1,\\quad h(3)=-\\frac52,\\quad k+h(3)=-\\frac32\n\\]\n(따라서 제시된 선택지에는 해당 값이 없습니다.)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "극값 조건을 h'(x)로 바꾸기": 2,
+            "구간별로 h'(x)=g(x)-f(x) 계산": 1,
+            "극값이 하나만 되려면: 부호변화 개수 세기": 1,
+            "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "k+h(3)": 1,
+            "핵심 관찰(극값 ↔ 도함수의 부호변화)": 1,
+            "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리": 1,
+            "극값이 생길 수 있는 지점 후보 분석": 1,
+            "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정": 1,
+            " \\(a=k=4\\)일 때 \\(h(3)\\) 계산": 1,
+            "항상 생기는 극값(0에서) 확인": 1,
+            "x<-1 구간에서 극값이 생기지 않게 하기": 1,
+            "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기": 1,
+            "a=k=1일 때 h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "극값 조건을 h'(x)로 바꾸기": 2,
+            "구간별로 h'(x)=g(x)-f(x) 계산": 1,
+            "극값이 하나만 되려면: 부호변화 개수 세기": 1,
+            "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "k+h(3)": 1,
+            "핵심 관찰(극값 ↔ 도함수의 부호변화)": 1,
+            "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리": 1,
+            "극값이 생길 수 있는 지점 후보 분석": 1,
+            "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정": 1,
+            " \\(a=k=4\\)일 때 \\(h(3)\\) 계산": 1,
+            "항상 생기는 극값(0에서) 확인": 1,
+            "x<-1 구간에서 극값이 생기지 않게 하기": 1,
+            "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기": 1,
+            "a=k=1일 때 h(3) 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.974411,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "x < -1에서 근이 없을 조건",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{13}{2}}$$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.804192,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리 및 h'(x) 분석",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "구간별 부호 분석",
+                "x < -1 구간 분석 및 조건 도출",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.03575,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) 분석",
+                "각 구간에서 부호 분석",
+                "x < -1 구간 분석",
+                "극값 조건 종합",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.974411,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "x < -1에서 근이 없을 조건",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{13}{2}}$$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.804192,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리 및 h'(x) 분석",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "구간별 부호 분석",
+                "x < -1 구간 분석 및 조건 도출",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.03575,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) 분석",
+                "각 구간에서 부호 분석",
+                "x < -1 구간 분석",
+                "극값 조건 종합",
+                "최댓값 k 결정 및 h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 2,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 부호 분석": 2,
+            "x < -1에서 근이 없을 조건": 1,
+            "최댓값 k 결정 및 h(3) 계산": 3,
+            "조건 정리 및 h'(x) 분석": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "x < -1 구간 분석 및 조건 도출": 1,
+            "h'(x) 분석": 1,
+            "각 구간에서 부호 분석": 1,
+            "x < -1 구간 분석": 1,
+            "극값 조건 종합": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 부호 분석": 2,
+            "x < -1에서 근이 없을 조건": 1,
+            "최댓값 k 결정 및 h(3) 계산": 3,
+            "조건 정리 및 h'(x) 분석": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "x < -1 구간 분석 및 조건 도출": 1,
+            "h'(x) 분석": 1,
+            "각 구간에서 부호 분석": 1,
+            "x < -1 구간 분석": 1,
+            "극값 조건 종합": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.19619,
+              "step_count": 1,
+              "step_titles": [
+                "함수 $h(x)$의 도함수와 극값 조건 분석"
+              ],
+              "final_answer": "[STEP title=\"함수 $h(x)$의 도함수와 극값 조건 분석\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$의 도함수는 $h'(x) = g(x) - f(x)$입니다.\n함수 $h(x)$가 극값을 갖는다는 것은 $h'(x)$의 부호가 바뀌는 지점이 존재한다는 뜻입니다.\n문제의 조건에서 $h(x)$가 **오직 하나의 극값**을 갖도록 하려면, 전체 실수 구간에서 $g(x) - f(x)$의 부호 변화가 단 한 번만 일어나야 합니다.\n\n주어진 함수 $f(",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.43503,
+              "step_count": 1,
+              "step_titles": [
+                "함수 정의 및 도함수 분석"
+              ],
+              "final_answer": "이 문제는 함수 $h(x)$의 도함수 $h'(x) = g(x) - f(x)$의 부호 변화를 분석하여 극값을 갖는 지점의 개수를 파악하는 문제입니다.\n\n[STEP title=\"함수 정의 및 도함수 분석\"]\n함수 $h(x)$가 극값을 갖는다는 것은 도함수 $h'(x)$의 부호가 바뀐다는 것을 의미합니다.\n주어진 정의에 따라 $h'(x) = g(x) - f(x)$입니다.\n각 구간별로 $h'(x)$를 구해보겠습니다.\n\n1.  **$x < -1$ 인 구간:**\n    $f(x) = -x^2$, $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.421909,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제 해결을 위한 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 도함수 $h'(x) = g(x) - f(x)$의 부호가 실수 전체 구간에서 **단 한 번만** 바뀌어야 합니다.\n\n먼저 $f(x)$와 $g(x)$를 구간별로 정리하여 차이 함수 $D(x) = h'(x)$를 구합니다.\n1.  **$x < -1$ 인 경우:**\n    $f(x) = -x^2$,",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.19619,
+              "step_count": 1,
+              "step_titles": [
+                "함수 $h(x)$의 도함수와 극값 조건 분석"
+              ],
+              "final_answer": "[STEP title=\"함수 $h(x)$의 도함수와 극값 조건 분석\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$의 도함수는 $h'(x) = g(x) - f(x)$입니다.\n함수 $h(x)$가 극값을 갖는다는 것은 $h'(x)$의 부호가 바뀌는 지점이 존재한다는 뜻입니다.\n문제의 조건에서 $h(x)$가 **오직 하나의 극값**을 갖도록 하려면, 전체 실수 구간에서 $g(x) - f(x)$의 부호 변화가 단 한 번만 일어나야 합니다.\n\n주어진 함수 $f(",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.43503,
+              "step_count": 1,
+              "step_titles": [
+                "함수 정의 및 도함수 분석"
+              ],
+              "final_answer": "이 문제는 함수 $h(x)$의 도함수 $h'(x) = g(x) - f(x)$의 부호 변화를 분석하여 극값을 갖는 지점의 개수를 파악하는 문제입니다.\n\n[STEP title=\"함수 정의 및 도함수 분석\"]\n함수 $h(x)$가 극값을 갖는다는 것은 도함수 $h'(x)$의 부호가 바뀐다는 것을 의미합니다.\n주어진 정의에 따라 $h'(x) = g(x) - f(x)$입니다.\n각 구간별로 $h'(x)$를 구해보겠습니다.\n\n1.  **$x < -1$ 인 구간:**\n    $f(x) = -x^2$, $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.421909,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "다음은 문제 해결을 위한 단계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 도함수 $h'(x) = g(x) - f(x)$의 부호가 실수 전체 구간에서 **단 한 번만** 바뀌어야 합니다.\n\n먼저 $f(x)$와 $g(x)$를 구간별로 정리하여 차이 함수 $D(x) = h'(x)$를 구합니다.\n1.  **$x < -1$ 인 경우:**\n    $f(x) = -x^2$,",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.0,
+          "title_frequency": {
+            "함수 $h(x)$의 도함수와 극값 조건 분석": 1,
+            "함수 정의 및 도함수 분석": 1,
+            "조건 정리 및 함수 분석": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 1.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 $h(x)$의 도함수와 극값 조건 분석": 1,
+            "함수 정의 및 도함수 분석": 1,
+            "조건 정리 및 함수 분석": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 256.068577,
+              "step_count": 2,
+              "step_titles": [
+                "함수 p(t) 정의 및 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 226.226639,
+              "step_count": 3,
+              "step_titles": [
+                "함수 h(x)의 극값 분석",
+                "a = 4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 228.158778,
+              "step_count": 2,
+              "step_titles": [
+                "h(x)의 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 256.068577,
+              "step_count": 2,
+              "step_titles": [
+                "함수 p(t) 정의 및 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 226.226639,
+              "step_count": 3,
+              "step_titles": [
+                "함수 h(x)의 극값 분석",
+                "a = 4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 228.158778,
+              "step_count": 2,
+              "step_titles": [
+                "h(x)의 극값 조건 분석",
+                "a = 4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "함수 p(t) 정의 및 극값 조건 분석": 1,
+            "a = 4일 때 h(3) 계산": 3,
+            "함수 h(x)의 극값 분석": 1,
+            "k + h(3) 계산": 1,
+            "h(x)의 극값 조건 분석": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 p(t) 정의 및 극값 조건 분석": 1,
+            "a = 4일 때 h(3) 계산": 3,
+            "함수 h(x)의 극값 분석": 1,
+            "k + h(3) 계산": 1,
+            "h(x)의 극값 조건 분석": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 219.814771,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정리 및 h'(x) 표현",
+                "h'(x)=0인 점 및 부호 변화 분석",
+                "극값이 하나가 되는 조건과 k의 값",
+                "a=k일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 58.896461,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) 식 정리",
+                "h'(x)의 부호 변화 분석",
+                "h'(x)=0의 해 찾기",
+                "극값 조건 해석",
+                "오직 하나의 극값 조건",
+                "a=k=4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 301.018627,
+              "step_count": 11,
+              "step_titles": [
+                "함수 f(x)와 g(x) 정리",
+                "h'(x) = g(x) - f(x)의 구간별 표현",
+                "h'(x) = 0인 점 찾기",
+                "h(x)가 오직 하나의 극값을 갖는 조건",
+                "x=0과 x=1에서의 h'(x) 부호 변화 확인",
+                "x< -1에서 근이 극값이 되려면",
+                "극값의 개수 정리",
+                "오직 하나의 극값을 갖는 a의 범위",
+                "a=4일 때 h(3) 계산",
+                "적분 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\dfrac{15}{2}}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 219.814771,
+              "step_count": 5,
+              "step_titles": [
+                "함수 정리 및 h'(x) 표현",
+                "h'(x)=0인 점 및 부호 변화 분석",
+                "극값이 하나가 되는 조건과 k의 값",
+                "a=k일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 58.896461,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) 식 정리",
+                "h'(x)의 부호 변화 분석",
+                "h'(x)=0의 해 찾기",
+                "극값 조건 해석",
+                "오직 하나의 극값 조건",
+                "a=k=4일 때 h(3) 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 301.018627,
+              "step_count": 11,
+              "step_titles": [
+                "함수 f(x)와 g(x) 정리",
+                "h'(x) = g(x) - f(x)의 구간별 표현",
+                "h'(x) = 0인 점 찾기",
+                "h(x)가 오직 하나의 극값을 갖는 조건",
+                "x=0과 x=1에서의 h'(x) 부호 변화 확인",
+                "x< -1에서 근이 극값이 되려면",
+                "극값의 개수 정리",
+                "오직 하나의 극값을 갖는 a의 범위",
+                "a=4일 때 h(3) 계산",
+                "적분 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\dfrac{15}{2}}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 8.0,
+          "title_frequency": {
+            "함수 정리 및 h'(x) 표현": 1,
+            "h'(x)=0인 점 및 부호 변화 분석": 1,
+            "극값이 하나가 되는 조건과 k의 값": 1,
+            "a=k일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1,
+            "조건 정리": 1,
+            "h'(x) 식 정리": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "h'(x)=0의 해 찾기": 1,
+            "극값 조건 해석": 1,
+            "오직 하나의 극값 조건": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "k + h(3) 계산": 2,
+            "함수 f(x)와 g(x) 정리": 1,
+            "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+            "h'(x) = 0인 점 찾기": 1,
+            "h(x)가 오직 하나의 극값을 갖는 조건": 1,
+            "x=0과 x=1에서의 h'(x) 부호 변화 확인": 1,
+            "x< -1에서 근이 극값이 되려면": 1,
+            "극값의 개수 정리": 1,
+            "오직 하나의 극값을 갖는 a의 범위": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 8.0,
+          "step_std": 3.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 정리 및 h'(x) 표현": 1,
+            "h'(x)=0인 점 및 부호 변화 분석": 1,
+            "극값이 하나가 되는 조건과 k의 값": 1,
+            "a=k일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1,
+            "조건 정리": 1,
+            "h'(x) 식 정리": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "h'(x)=0의 해 찾기": 1,
+            "극값 조건 해석": 1,
+            "오직 하나의 극값 조건": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "k + h(3) 계산": 2,
+            "함수 f(x)와 g(x) 정리": 1,
+            "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+            "h'(x) = 0인 점 찾기": 1,
+            "h(x)가 오직 하나의 극값을 갖는 조건": 1,
+            "x=0과 x=1에서의 h'(x) 부호 변화 확인": 1,
+            "x< -1에서 근이 극값이 되려면": 1,
+            "극값의 개수 정리": 1,
+            "오직 하나의 극값을 갖는 a의 범위": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "적분 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 87.073442,
+              "step_count": 4,
+              "step_titles": [
+                "함수 정의와 h(x)의 구성 이해",
+                "h'(x) = g(x) - f(x) 분석",
+                "h(x)의 극값 조건 분석",
+                "각 구간에서 h'(x) = 0 해 분석"
+              ],
+              "final_answer": "가 생김.\n\n  그리고 \\( x \\ge 1 \\) 구간에는 \\( a > 1 \\)이면 \\( x=a \\)에서 극대, \\( a \\le 1 \\)이면 \\( x=1 \\)에서 극대 → 항상 하나의 극대\n\n  따라서:\n\n- \\( a < 4 \\): \\( x < -1 \\) 구간에서 \\( h'(x) > 0 \\) (항상 양수) → 극값 없음  \n  \\( x \\ge 1 \\)에서 하나의 극대 → 총 **하나의 극값**\n\n- \\( a = 4 \\): \\( x < -1 \\)에서 극대 하나, \\( x \\ge 1 \\)에서 극대 하나 → **두 개**\n\n- \\( a >",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 88.769187,
+              "step_count": 7,
+              "step_titles": [
+                "함수 정의와 조건 정리",
+                "h(x)의 극값 조건 분석",
+                "g(x) - f(x)의 분할 정의",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화와 극값 개수 분석",
+                "각 구간에서 h'(x)의 부호 분석",
+                "극값 개수를 하나로 만들기 위한 조건"
+              ],
+              "final_answer": "1^- $에서 $ h'(x) = -x^2 + x $ → $ -1 + 1 = 0 $, 그리고 $ x<1 $에서 양수 (예: $ x=0.9 $ → $ -0.81 + 0.9 = 0.09 > 0 $)\n\n→ 따라서 $ x=1 $에서 $ h'(x) $는 좌극한: $ 0^+ $, 우극한: $ 0 $, 함수값: $ 0 $\n\n그리고 $ x>1 $에서 $ h'(x) < 0 $ (충분히 빨리 감소)\n\n→ $ h'(x) $가 $ x=1 $에서 양에서 음으로 바뀜 → **부호 변화 있음** → $ h(x) $는 $ x=1 $에서 **극대값**\n\n이건 $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.930569,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h(x)의 극값 조건 분석",
+                "구간별 h'(x) = g(x) - f(x) 정리",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화 분석",
+                "x < -1에서 h'(x)의 부호 분석",
+                "x ≥ 1에서 h'(x) 분석",
+                "h'(x)의 부호 변화 조건"
+              ],
+              "final_answer": "→ 극대점  \n- \\( a < 1 \\): \\( x>1 \\)에서 \\( h'(x) < 0 \\), \\( x<1 \\)에서 \\( h'(x) \\ge 0 \\) → \\( x=1 \\)에서 양 → 음 → 극대점\n\n따라서 모든 \\( a > 0 \\)에 대해 **하나의 극대점 존재**  \n그러나 \\( a \\ge 4 \\)면 \\( x < -1 \\)에서 \\( h'(x) \\)가 음영역 → \\( h'(x) \\)가 음에서 양으로 바뀌는 지점 존재 → 극소점 하나 더 생김 → 극값 2개\n\n→ **유일한 극값을 가지려면 \\( a < 4 \\)**\n\n문제: \"오직 하나의",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 87.073442,
+              "step_count": 4,
+              "step_titles": [
+                "함수 정의와 h(x)의 구성 이해",
+                "h'(x) = g(x) - f(x) 분석",
+                "h(x)의 극값 조건 분석",
+                "각 구간에서 h'(x) = 0 해 분석"
+              ],
+              "final_answer": "가 생김.\n\n  그리고 \\( x \\ge 1 \\) 구간에는 \\( a > 1 \\)이면 \\( x=a \\)에서 극대, \\( a \\le 1 \\)이면 \\( x=1 \\)에서 극대 → 항상 하나의 극대\n\n  따라서:\n\n- \\( a < 4 \\): \\( x < -1 \\) 구간에서 \\( h'(x) > 0 \\) (항상 양수) → 극값 없음  \n  \\( x \\ge 1 \\)에서 하나의 극대 → 총 **하나의 극값**\n\n- \\( a = 4 \\): \\( x < -1 \\)에서 극대 하나, \\( x \\ge 1 \\)에서 극대 하나 → **두 개**\n\n- \\( a >",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 88.769187,
+              "step_count": 7,
+              "step_titles": [
+                "함수 정의와 조건 정리",
+                "h(x)의 극값 조건 분석",
+                "g(x) - f(x)의 분할 정의",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화와 극값 개수 분석",
+                "각 구간에서 h'(x)의 부호 분석",
+                "극값 개수를 하나로 만들기 위한 조건"
+              ],
+              "final_answer": "1^- $에서 $ h'(x) = -x^2 + x $ → $ -1 + 1 = 0 $, 그리고 $ x<1 $에서 양수 (예: $ x=0.9 $ → $ -0.81 + 0.9 = 0.09 > 0 $)\n\n→ 따라서 $ x=1 $에서 $ h'(x) $는 좌극한: $ 0^+ $, 우극한: $ 0 $, 함수값: $ 0 $\n\n그리고 $ x>1 $에서 $ h'(x) < 0 $ (충분히 빨리 감소)\n\n→ $ h'(x) $가 $ x=1 $에서 양에서 음으로 바뀜 → **부호 변화 있음** → $ h(x) $는 $ x=1 $에서 **극대값**\n\n이건 $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.930569,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h(x)의 극값 조건 분석",
+                "구간별 h'(x) = g(x) - f(x) 정리",
+                "구간별 h'(x) 계산",
+                "h'(x)의 부호 변화 분석",
+                "x < -1에서 h'(x)의 부호 분석",
+                "x ≥ 1에서 h'(x) 분석",
+                "h'(x)의 부호 변화 조건"
+              ],
+              "final_answer": "→ 극대점  \n- \\( a < 1 \\): \\( x>1 \\)에서 \\( h'(x) < 0 \\), \\( x<1 \\)에서 \\( h'(x) \\ge 0 \\) → \\( x=1 \\)에서 양 → 음 → 극대점\n\n따라서 모든 \\( a > 0 \\)에 대해 **하나의 극대점 존재**  \n그러나 \\( a \\ge 4 \\)면 \\( x < -1 \\)에서 \\( h'(x) \\)가 음영역 → \\( h'(x) \\)가 음에서 양으로 바뀌는 지점 존재 → 극소점 하나 더 생김 → 극값 2개\n\n→ **유일한 극값을 가지려면 \\( a < 4 \\)**\n\n문제: \"오직 하나의",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "함수 정의와 h(x)의 구성 이해": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "h(x)의 극값 조건 분석": 3,
+            "각 구간에서 h'(x) = 0 해 분석": 1,
+            "함수 정의와 조건 정리": 1,
+            "g(x) - f(x)의 분할 정의": 1,
+            "구간별 h'(x) 계산": 2,
+            "h'(x)의 부호 변화와 극값 개수 분석": 1,
+            "각 구간에서 h'(x)의 부호 분석": 1,
+            "극값 개수를 하나로 만들기 위한 조건": 1,
+            "조건 정리": 1,
+            "구간별 h'(x) = g(x) - f(x) 정리": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "x < -1에서 h'(x)의 부호 분석": 1,
+            "x ≥ 1에서 h'(x) 분석": 1,
+            "h'(x)의 부호 변화 조건": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 6.333333333333333,
+          "step_std": 2.0816659994661326,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "함수 정의와 h(x)의 구성 이해": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "h(x)의 극값 조건 분석": 3,
+            "각 구간에서 h'(x) = 0 해 분석": 1,
+            "함수 정의와 조건 정리": 1,
+            "g(x) - f(x)의 분할 정의": 1,
+            "구간별 h'(x) 계산": 2,
+            "h'(x)의 부호 변화와 극값 개수 분석": 1,
+            "각 구간에서 h'(x)의 부호 분석": 1,
+            "극값 개수를 하나로 만들기 위한 조건": 1,
+            "조건 정리": 1,
+            "구간별 h'(x) = g(x) - f(x) 정리": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "x < -1에서 h'(x)의 부호 분석": 1,
+            "x ≥ 1에서 h'(x) 분석": 1,
+            "h'(x)의 부호 변화 조건": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.722222222222222,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 바꾸기": 2,
+          "구간별로 h'(x)=g(x)-f(x) 계산": 1,
+          "극값이 하나만 되려면: 부호변화 개수 세기": 1,
+          "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음": 1,
+          "a=4일 때 h(3) 계산": 2,
+          "k+h(3)": 1,
+          "핵심 관찰(극값 ↔ 도함수의 부호변화)": 1,
+          "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리": 1,
+          "극값이 생길 수 있는 지점 후보 분석": 1,
+          "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정": 1,
+          " \\(a=k=4\\)일 때 \\(h(3)\\) 계산": 1,
+          "항상 생기는 극값(0에서) 확인": 1,
+          "x<-1 구간에서 극값이 생기지 않게 하기": 1,
+          "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기": 1,
+          "a=k=1일 때 h(3) 계산": 1,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 2,
+          "구간별 부호 분석": 2,
+          "x < -1에서 근이 없을 조건": 1,
+          "최댓값 k 결정 및 h(3) 계산": 3,
+          "조건 정리 및 h'(x) 분석": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "x < -1 구간 분석 및 조건 도출": 1,
+          "h'(x) 분석": 1,
+          "각 구간에서 부호 분석": 1,
+          "x < -1 구간 분석": 1,
+          "극값 조건 종합": 1,
+          "함수 $h(x)$의 도함수와 극값 조건 분석": 1,
+          "함수 정의 및 도함수 분석": 1,
+          "조건 정리 및 함수 분석": 1,
+          "함수 p(t) 정의 및 극값 조건 분석": 1,
+          "a = 4일 때 h(3) 계산": 3,
+          "함수 h(x)의 극값 분석": 1,
+          "k + h(3) 계산": 3,
+          "h(x)의 극값 조건 분석": 4,
+          "함수 정리 및 h'(x) 표현": 1,
+          "h'(x)=0인 점 및 부호 변화 분석": 1,
+          "극값이 하나가 되는 조건과 k의 값": 1,
+          "a=k일 때 h(3) 계산": 1,
+          "k+h(3) 계산": 1,
+          "h'(x) 식 정리": 1,
+          "h'(x)의 부호 변화 분석": 2,
+          "h'(x)=0의 해 찾기": 1,
+          "극값 조건 해석": 1,
+          "오직 하나의 극값 조건": 1,
+          "a=k=4일 때 h(3) 계산": 1,
+          "함수 f(x)와 g(x) 정리": 1,
+          "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+          "h'(x) = 0인 점 찾기": 1,
+          "h(x)가 오직 하나의 극값을 갖는 조건": 1,
+          "x=0과 x=1에서의 h'(x) 부호 변화 확인": 1,
+          "x< -1에서 근이 극값이 되려면": 1,
+          "극값의 개수 정리": 1,
+          "오직 하나의 극값을 갖는 a의 범위": 1,
+          "적분 계산": 1,
+          "함수 정의와 h(x)의 구성 이해": 1,
+          "각 구간에서 h'(x) = 0 해 분석": 1,
+          "함수 정의와 조건 정리": 1,
+          "g(x) - f(x)의 분할 정의": 1,
+          "구간별 h'(x) 계산": 2,
+          "h'(x)의 부호 변화와 극값 개수 분석": 1,
+          "각 구간에서 h'(x)의 부호 분석": 1,
+          "극값 개수를 하나로 만들기 위한 조건": 1,
+          "구간별 h'(x) = g(x) - f(x) 정리": 1,
+          "x < -1에서 h'(x)의 부호 분석": 1,
+          "x ≥ 1에서 h'(x) 분석": 1,
+          "h'(x)의 부호 변화 조건": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.221301,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(부호변화) 분석",
+                "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건",
+                "a=1일 때 h(3) 계산"
+              ],
+              "final_answer": "\\[\nk=1,\\quad h(3)=-\\frac52,\\quad k+h(3)=-\\frac32\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.542445,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0으로 변환",
+                "각 구간에서 h'의 부호와 0의 개수 분석",
+                "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기",
+                "a=k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.703697,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 도함수로 변환",
+                "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산",
+                "각 구간에서 ‘극값이 생기는 조건’ 분석",
+                "\\(a=1\\)에서 \\(h(3)\\) 계산",
+                "요구값 \\(k+h(3)\\)"
+              ],
+              "final_answer": "\\(-\\dfrac{3}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.221301,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 정리",
+                "x<-1에서의 영점(부호변화) 분석",
+                "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건",
+                "a=1일 때 h(3) 계산"
+              ],
+              "final_answer": "\\[\nk=1,\\quad h(3)=-\\frac52,\\quad k+h(3)=-\\frac32\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.542445,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0으로 변환",
+                "각 구간에서 h'의 부호와 0의 개수 분석",
+                "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기",
+                "a=k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{15}{2}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.703697,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 도함수로 변환",
+                "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산",
+                "각 구간에서 ‘극값이 생기는 조건’ 분석",
+                "\\(a=1\\)에서 \\(h(3)\\) 계산",
+                "요구값 \\(k+h(3)\\)"
+              ],
+              "final_answer": "\\(-\\dfrac{3}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "극값 조건을 h'(x)=0로 변환": 1,
+            "구간별로 h'(x)=g(x)-f(x) 정리": 1,
+            "x<-1에서의 영점(부호변화) 분석": 1,
+            "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건": 1,
+            "a=1일 때 h(3) 계산": 1,
+            "극값 조건을 h'(x)=0으로 변환": 1,
+            "각 구간에서 h'의 부호와 0의 개수 분석": 1,
+            "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1,
+            "극값 조건을 도함수로 변환": 1,
+            "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산": 1,
+            "각 구간에서 ‘극값이 생기는 조건’ 분석": 1,
+            "\\(a=1\\)에서 \\(h(3)\\) 계산": 1,
+            "요구값 \\(k+h(3)\\)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "극값 조건을 h'(x)=0로 변환": 1,
+            "구간별로 h'(x)=g(x)-f(x) 정리": 1,
+            "x<-1에서의 영점(부호변화) 분석": 1,
+            "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건": 1,
+            "a=1일 때 h(3) 계산": 1,
+            "극값 조건을 h'(x)=0으로 변환": 1,
+            "각 구간에서 h'의 부호와 0의 개수 분석": 1,
+            "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1,
+            "극값 조건을 도함수로 변환": 1,
+            "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산": 1,
+            "각 구간에서 ‘극값이 생기는 조건’ 분석": 1,
+            "\\(a=1\\)에서 \\(h(3)\\) 계산": 1,
+            "요구값 \\(k+h(3)\\)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.182875,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "오직 하나의 극값 조건",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.554468,
+              "step_count": 6,
+              "step_titles": [
+                "함수 분석 및 h'(x) 구하기",
+                "h'(x) = g(x) - f(x) 계산",
+                "각 구간에서 h'(x)의 부호 분석",
+                "극값 조건 분석",
+                "h(3) 계산 (a = k = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{15}{2}}$$ (④번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.741168,
+              "step_count": 7,
+              "step_titles": [
+                "h'(x) 분석",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "x ≥ 1 구간에서 극값 분석",
+                "x < -1 구간에서 극값 분석",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.182875,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 부호 분석",
+                "오직 하나의 극값 조건",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.554468,
+              "step_count": 6,
+              "step_titles": [
+                "함수 분석 및 h'(x) 구하기",
+                "h'(x) = g(x) - f(x) 계산",
+                "각 구간에서 h'(x)의 부호 분석",
+                "극값 조건 분석",
+                "h(3) 계산 (a = k = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{15}{2}}$$ (④번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.741168,
+              "step_count": 7,
+              "step_titles": [
+                "h'(x) 분석",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "x ≥ 1 구간에서 극값 분석",
+                "x < -1 구간에서 극값 분석",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 부호 분석": 1,
+            "오직 하나의 극값 조건": 1,
+            "h(3) 계산 (a = 4)": 2,
+            "최종 계산": 3,
+            "함수 분석 및 h'(x) 구하기": 1,
+            "h'(x) = g(x) - f(x) 계산": 1,
+            "각 구간에서 h'(x)의 부호 분석": 1,
+            "극값 조건 분석": 1,
+            "h(3) 계산 (a = k = 4)": 1,
+            "h'(x) 분석": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "x ≥ 1 구간에서 극값 분석": 1,
+            "x < -1 구간에서 극값 분석": 1,
+            "최댓값 k 결정": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 부호 분석": 1,
+            "오직 하나의 극값 조건": 1,
+            "h(3) 계산 (a = 4)": 2,
+            "최종 계산": 3,
+            "함수 분석 및 h'(x) 구하기": 1,
+            "h'(x) = g(x) - f(x) 계산": 1,
+            "각 구간에서 h'(x)의 부호 분석": 1,
+            "극값 조건 분석": 1,
+            "h(3) 계산 (a = k = 4)": 1,
+            "h'(x) 분석": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "x ≥ 1 구간에서 극값 분석": 1,
+            "x < -1 구간에서 극값 분석": 1,
+            "최댓값 k 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.10929346084595,
+              "step_count": 1,
+              "step_titles": [
+                "1. 함수 $h(x)$의 미분 및 극값 조건 분석"
+              ],
+              "final_answer": "다음은 주어진 문제를 단계별로 풀이한 내용입니다.\n\n[STEP title=\"1. 함수 $h(x)$의 미분 및 극값 조건 분석\"]\n함수 $h(x) = \\displaystyle \\int_0^x (g(t)-f(t)) dt$의 극값을 찾기 위해 미분합니다.\n$$h'(x) = g(x) - f(x)$$\n$h(x)$가 오직 하나의 극값을 갖는다는 것은 도함수 $h'(x)$의 부호가 실수 전체 구간에서 **단 한 번만 바뀐다**는 뜻입니다.\n\n각 구간별로 $h'(x)$를 구해보겠습니다.\n1) $x < -1$:\n$$h'(x)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.637813,
+              "step_count": 1,
+              "step_titles": [
+                "1. 함수 $h(x)$의 극값 조건 분석"
+              ],
+              "final_answer": "이 문제는 정적분으로 정의된 함수의 극값 조건을 이용하여 미지수 $a$의 최댓값을 구하고, 그에 따른 함숫값을 계산하는 문제입니다. 단계별로 풀어보겠습니다.\n\n[STEP title=\"1. 함수 $h(x)$의 극값 조건 분석\"]\n함수 $h(x)$는 다음과 같이 정의됩니다.\n$$h(x)=\\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$$\n이 함수의 도함수는 $h'(x) = g(x) - f(x)$입니다.\n함수 $h(x)$가 극값을 갖기 위해서는 $h'(x)$의 부호가 바뀌어야 합니다. 즉, $g(x)$와 $f",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.032506,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "TEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 도함수 $h'(x) = g(x) - f(x)$의 부호가 $x$의 전체 구간에서 단 한 번만 바뀌어야 합니다.\n이를 위해 $y=f(x)$와 $y=g(x)$의 그래프의 위치 관계를 각 구간별로 분석하여 $a$의 조건을 구해야 합니다.\n\n**함수 정의:**\n*   $f(x)= \\begin{cases} -x^2 & (x < 0) \\\\ x^2-x &",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.10929346084595,
+              "step_count": 1,
+              "step_titles": [
+                "1. 함수 $h(x)$의 미분 및 극값 조건 분석"
+              ],
+              "final_answer": "다음은 주어진 문제를 단계별로 풀이한 내용입니다.\n\n[STEP title=\"1. 함수 $h(x)$의 미분 및 극값 조건 분석\"]\n함수 $h(x) = \\displaystyle \\int_0^x (g(t)-f(t)) dt$의 극값을 찾기 위해 미분합니다.\n$$h'(x) = g(x) - f(x)$$\n$h(x)$가 오직 하나의 극값을 갖는다는 것은 도함수 $h'(x)$의 부호가 실수 전체 구간에서 **단 한 번만 바뀐다**는 뜻입니다.\n\n각 구간별로 $h'(x)$를 구해보겠습니다.\n1) $x < -1$:\n$$h'(x)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.637813,
+              "step_count": 1,
+              "step_titles": [
+                "1. 함수 $h(x)$의 극값 조건 분석"
+              ],
+              "final_answer": "이 문제는 정적분으로 정의된 함수의 극값 조건을 이용하여 미지수 $a$의 최댓값을 구하고, 그에 따른 함숫값을 계산하는 문제입니다. 단계별로 풀어보겠습니다.\n\n[STEP title=\"1. 함수 $h(x)$의 극값 조건 분석\"]\n함수 $h(x)$는 다음과 같이 정의됩니다.\n$$h(x)=\\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$$\n이 함수의 도함수는 $h'(x) = g(x) - f(x)$입니다.\n함수 $h(x)$가 극값을 갖기 위해서는 $h'(x)$의 부호가 바뀌어야 합니다. 즉, $g(x)$와 $f",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.032506,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 함수 분석"
+              ],
+              "final_answer": "TEP title=\"조건 정리 및 함수 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 도함수 $h'(x) = g(x) - f(x)$의 부호가 $x$의 전체 구간에서 단 한 번만 바뀌어야 합니다.\n이를 위해 $y=f(x)$와 $y=g(x)$의 그래프의 위치 관계를 각 구간별로 분석하여 $a$의 조건을 구해야 합니다.\n\n**함수 정의:**\n*   $f(x)= \\begin{cases} -x^2 & (x < 0) \\\\ x^2-x &",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.0,
+          "title_frequency": {
+            "1. 함수 $h(x)$의 미분 및 극값 조건 분석": 1,
+            "1. 함수 $h(x)$의 극값 조건 분석": 1,
+            "조건 정리 및 함수 분석": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 1.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "1. 함수 $h(x)$의 미분 및 극값 조건 분석": 1,
+            "1. 함수 $h(x)$의 극값 조건 분석": 1,
+            "조건 정리 및 함수 분석": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 259.651057,
+              "step_count": 3,
+              "step_titles": [
+                "h(x)의 극값 조건 분석",
+                "g(x) = f(x)의 해 및 부호 변화 확인",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 233.354792,
+              "step_count": 2,
+              "step_titles": [
+                "문제 분석 및 h(x) 극값 조건",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 200.558391,
+              "step_count": 2,
+              "step_titles": [
+                "함수 분석 및 극값 조건",
+                "h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 259.651057,
+              "step_count": 3,
+              "step_titles": [
+                "h(x)의 극값 조건 분석",
+                "g(x) = f(x)의 해 및 부호 변화 확인",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 233.354792,
+              "step_count": 2,
+              "step_titles": [
+                "문제 분석 및 h(x) 극값 조건",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 200.558391,
+              "step_count": 2,
+              "step_titles": [
+                "함수 분석 및 극값 조건",
+                "h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "h(x)의 극값 조건 분석": 1,
+            "g(x) = f(x)의 해 및 부호 변화 확인": 1,
+            "a=4일 때 h(3) 계산": 2,
+            "문제 분석 및 h(x) 극값 조건": 1,
+            "함수 분석 및 극값 조건": 1,
+            "h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "h(x)의 극값 조건 분석": 1,
+            "g(x) = f(x)의 해 및 부호 변화 확인": 1,
+            "a=4일 때 h(3) 계산": 2,
+            "문제 분석 및 h(x) 극값 조건": 1,
+            "함수 분석 및 극값 조건": 1,
+            "h(3) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.454163,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)의 식 작성",
+                "각 구간에서 h'(x) 표현",
+                "극값 후보 위치 분석",
+                "극값 개수 조건",
+                "정리: 극값 위치",
+                "k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 186.888859,
+              "step_count": 9,
+              "step_titles": [
+                "함수 f(x)와 g(x)의 정의 정리",
+                "구간별 h'(x) 식 작성",
+                "h'(x) 부호 변화 분석",
+                "x ≥ 1 구간의 부호 변화",
+                "x < -1 구간의 극점 가능성",
+                "오직 하나의 극값 조건",
+                "a의 최댓값 k",
+                "a=k=4일 때 h(3) 구하기",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.768503,
+              "step_count": 11,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)와 h''(x) 구하기",
+                "극값 조건 분석",
+                "각 구간에서 h'(x)=0 가능성",
+                "h'(x) 부호 변화 검토",
+                "x=a에서 부호 변화",
+                "가능한 극점 위치 정리",
+                "하나의 극값 조건 결정",
+                "a=k=4일 때 h(3) 계산",
+                "적분 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\frac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.454163,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)의 식 작성",
+                "각 구간에서 h'(x) 표현",
+                "극값 후보 위치 분석",
+                "극값 개수 조건",
+                "정리: 극값 위치",
+                "k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{15}{2}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 186.888859,
+              "step_count": 9,
+              "step_titles": [
+                "함수 f(x)와 g(x)의 정의 정리",
+                "구간별 h'(x) 식 작성",
+                "h'(x) 부호 변화 분석",
+                "x ≥ 1 구간의 부호 변화",
+                "x < -1 구간의 극점 가능성",
+                "오직 하나의 극값 조건",
+                "a의 최댓값 k",
+                "a=k=4일 때 h(3) 구하기",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "④ \\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.768503,
+              "step_count": 11,
+              "step_titles": [
+                "조건 정리",
+                "h'(x)와 h''(x) 구하기",
+                "극값 조건 분석",
+                "각 구간에서 h'(x)=0 가능성",
+                "h'(x) 부호 변화 검토",
+                "x=a에서 부호 변화",
+                "가능한 극점 위치 정리",
+                "하나의 극값 조건 결정",
+                "a=k=4일 때 h(3) 계산",
+                "적분 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\frac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 9.333333333333334,
+          "title_frequency": {
+            "조건 정리": 2,
+            "h'(x)의 식 작성": 1,
+            "각 구간에서 h'(x) 표현": 1,
+            "극값 후보 위치 분석": 1,
+            "극값 개수 조건": 1,
+            "정리: 극값 위치": 1,
+            "k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 2,
+            "함수 f(x)와 g(x)의 정의 정리": 1,
+            "구간별 h'(x) 식 작성": 1,
+            "h'(x) 부호 변화 분석": 1,
+            "x ≥ 1 구간의 부호 변화": 1,
+            "x < -1 구간의 극점 가능성": 1,
+            "오직 하나의 극값 조건": 1,
+            "a의 최댓값 k": 1,
+            "a=k=4일 때 h(3) 구하기": 1,
+            "k + h(3) 계산": 1,
+            "h'(x)와 h''(x) 구하기": 1,
+            "극값 조건 분석": 1,
+            "각 구간에서 h'(x)=0 가능성": 1,
+            "h'(x) 부호 변화 검토": 1,
+            "x=a에서 부호 변화": 1,
+            "가능한 극점 위치 정리": 1,
+            "하나의 극값 조건 결정": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 9.333333333333334,
+          "step_std": 1.5275252316519468,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "h'(x)의 식 작성": 1,
+            "각 구간에서 h'(x) 표현": 1,
+            "극값 후보 위치 분석": 1,
+            "극값 개수 조건": 1,
+            "정리: 극값 위치": 1,
+            "k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 2,
+            "함수 f(x)와 g(x)의 정의 정리": 1,
+            "구간별 h'(x) 식 작성": 1,
+            "h'(x) 부호 변화 분석": 1,
+            "x ≥ 1 구간의 부호 변화": 1,
+            "x < -1 구간의 극점 가능성": 1,
+            "오직 하나의 극값 조건": 1,
+            "a의 최댓값 k": 1,
+            "a=k=4일 때 h(3) 구하기": 1,
+            "k + h(3) 계산": 1,
+            "h'(x)와 h''(x) 구하기": 1,
+            "극값 조건 분석": 1,
+            "각 구간에서 h'(x)=0 가능성": 1,
+            "h'(x) 부호 변화 검토": 1,
+            "x=a에서 부호 변화": 1,
+            "가능한 극점 위치 정리": 1,
+            "하나의 극값 조건 결정": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "적분 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 61.319138,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "극값 조건 분석",
+                "f(x)와 g(x)의 구간별 정의 확인",
+                "h'(x) = g(x) - f(x)의 구간별 표현",
+                "h'(x) = 0 해 분석 및 극값 후보 점 검토",
+                "기타 구간에서 극값 생기는지 확인"
+              ],
+              "final_answer": "h(x) \\)의 극값.\n\n- \\( h'(x) \\)가 \\( x = x_- \\approx -3.618 \\)에서 양수 → 음수 → 감소 → \\( h(x) \\)는 여기서 **극대**\n\n- \\( x = x_+ \\approx -1.382 \\)에서 음수 → 양수 → 증가 → \\( h(x) \\)는 여기서 **극소**\n\n→ 따라서 \\( a=5 \\)일 때, \\( x \\approx -3.6 \\)에서 극대, \\( x \\approx -1.4 \\)에서 극소 → 이미 두 개 이상의 극값.\n\n또 \\( x=a=5 \\)에서 \\( h'(x)=0 \\)이고, \\( h",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 112.235107,
+              "step_count": 4,
+              "step_titles": [
+                "함수 정의 및 h(x)의 의미 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별로 h'(x) = g(x) - f(x) 계산",
+                "h'(x)의 부호 변화 분석"
+              ],
+              "final_answer": "\\pm \\sqrt{5} }{2} \\approx -3.6, -1.4\n\\]\n→ \\( -3.6 < x < -1.4 \\)에서 \\( h'(x) < 0 \\), 특히 \\( x < -1 \\)에서 일부 음수 → 따라서 \\( x < -1 \\)에서 음 → \\( x \\ge -1 \\)에서 양 → 음 → 양 → 음 → 두 번의 부호 변화 → 극소, 극대 → 두 개의 극값 → 조건 불만족\n\n따라서 \\( a > 4 \\)는 불가능\n\n**결론: \\( a \\le 4 \\)일 때 조건 만족, 따라서 \\( a \\)의 최댓값 \\( k = 4 \\)**\n\n---\n\n[STEP",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.930216,
+              "step_count": 7,
+              "step_titles": [
+                "함수 정의와 h(x)의 도함수 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "h'(x)의 부호 변화와 극값 개수 분석",
+                "구간별 h'(x) 분석",
+                "h'(x)의 극값 개수 제어 조건",
+                "x ≥ 1 구간에서의 h'(x) 분석",
+                "x ≥ 1에서의 부호 변화"
+              ],
+              "final_answer": "$ → 일치.\n\n  → $ h'(x) = - (x - 1)(x - a) $ for $ x \\ge 1 $\n\n---\n\n[STEP title=\"x ≥ 1에서의 부호 변화\"]  \n$ h'(x) = - (x - 1)(x - a) $ for $ x \\ge 1 $\n\n- $ x = 1 $에서 $ h'(1) = 0 $\n- $ x > 1 $에서 부호는 $ - (x-1)(x-a) $\n\n  $ x-1 > 0 $이므로 부호는 $ - (양수) \\times \\text{sign}(x-a) $\n\n  경우 나누기:\n\n1. $ a \\le 1 $: $ x > 1 \\",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 61.319138,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "극값 조건 분석",
+                "f(x)와 g(x)의 구간별 정의 확인",
+                "h'(x) = g(x) - f(x)의 구간별 표현",
+                "h'(x) = 0 해 분석 및 극값 후보 점 검토",
+                "기타 구간에서 극값 생기는지 확인"
+              ],
+              "final_answer": "h(x) \\)의 극값.\n\n- \\( h'(x) \\)가 \\( x = x_- \\approx -3.618 \\)에서 양수 → 음수 → 감소 → \\( h(x) \\)는 여기서 **극대**\n\n- \\( x = x_+ \\approx -1.382 \\)에서 음수 → 양수 → 증가 → \\( h(x) \\)는 여기서 **극소**\n\n→ 따라서 \\( a=5 \\)일 때, \\( x \\approx -3.6 \\)에서 극대, \\( x \\approx -1.4 \\)에서 극소 → 이미 두 개 이상의 극값.\n\n또 \\( x=a=5 \\)에서 \\( h'(x)=0 \\)이고, \\( h",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 112.235107,
+              "step_count": 4,
+              "step_titles": [
+                "함수 정의 및 h(x)의 의미 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별로 h'(x) = g(x) - f(x) 계산",
+                "h'(x)의 부호 변화 분석"
+              ],
+              "final_answer": "\\pm \\sqrt{5} }{2} \\approx -3.6, -1.4\n\\]\n→ \\( -3.6 < x < -1.4 \\)에서 \\( h'(x) < 0 \\), 특히 \\( x < -1 \\)에서 일부 음수 → 따라서 \\( x < -1 \\)에서 음 → \\( x \\ge -1 \\)에서 양 → 음 → 양 → 음 → 두 번의 부호 변화 → 극소, 극대 → 두 개의 극값 → 조건 불만족\n\n따라서 \\( a > 4 \\)는 불가능\n\n**결론: \\( a \\le 4 \\)일 때 조건 만족, 따라서 \\( a \\)의 최댓값 \\( k = 4 \\)**\n\n---\n\n[STEP",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.930216,
+              "step_count": 7,
+              "step_titles": [
+                "함수 정의와 h(x)의 도함수 파악",
+                "h'(x) = g(x) - f(x) 분석",
+                "h'(x)의 부호 변화와 극값 개수 분석",
+                "구간별 h'(x) 분석",
+                "h'(x)의 극값 개수 제어 조건",
+                "x ≥ 1 구간에서의 h'(x) 분석",
+                "x ≥ 1에서의 부호 변화"
+              ],
+              "final_answer": "$ → 일치.\n\n  → $ h'(x) = - (x - 1)(x - a) $ for $ x \\ge 1 $\n\n---\n\n[STEP title=\"x ≥ 1에서의 부호 변화\"]  \n$ h'(x) = - (x - 1)(x - a) $ for $ x \\ge 1 $\n\n- $ x = 1 $에서 $ h'(1) = 0 $\n- $ x > 1 $에서 부호는 $ - (x-1)(x-a) $\n\n  $ x-1 > 0 $이므로 부호는 $ - (양수) \\times \\text{sign}(x-a) $\n\n  경우 나누기:\n\n1. $ a \\le 1 $: $ x > 1 \\",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 1,
+            "극값 조건 분석": 1,
+            "f(x)와 g(x)의 구간별 정의 확인": 1,
+            "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+            "h'(x) = 0 해 분석 및 극값 후보 점 검토": 1,
+            "기타 구간에서 극값 생기는지 확인": 1,
+            "함수 정의 및 h(x)의 의미 파악": 1,
+            "h'(x) = g(x) - f(x) 분석": 2,
+            "구간별로 h'(x) = g(x) - f(x) 계산": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "함수 정의와 h(x)의 도함수 파악": 1,
+            "h'(x)의 부호 변화와 극값 개수 분석": 1,
+            "구간별 h'(x) 분석": 1,
+            "h'(x)의 극값 개수 제어 조건": 1,
+            "x ≥ 1 구간에서의 h'(x) 분석": 1,
+            "x ≥ 1에서의 부호 변화": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "극값 조건 분석": 1,
+            "f(x)와 g(x)의 구간별 정의 확인": 1,
+            "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+            "h'(x) = 0 해 분석 및 극값 후보 점 검토": 1,
+            "기타 구간에서 극값 생기는지 확인": 1,
+            "함수 정의 및 h(x)의 의미 파악": 1,
+            "h'(x) = g(x) - f(x) 분석": 2,
+            "구간별로 h'(x) = g(x) - f(x) 계산": 1,
+            "h'(x)의 부호 변화 분석": 1,
+            "함수 정의와 h(x)의 도함수 파악": 1,
+            "h'(x)의 부호 변화와 극값 개수 분석": 1,
+            "구간별 h'(x) 분석": 1,
+            "h'(x)의 극값 개수 제어 조건": 1,
+            "x ≥ 1 구간에서의 h'(x) 분석": 1,
+            "x ≥ 1에서의 부호 변화": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)=0로 변환": 1,
+          "구간별로 h'(x)=g(x)-f(x) 정리": 1,
+          "x<-1에서의 영점(부호변화) 분석": 1,
+          "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건": 1,
+          "a=1일 때 h(3) 계산": 1,
+          "극값 조건을 h'(x)=0으로 변환": 1,
+          "각 구간에서 h'의 부호와 0의 개수 분석": 1,
+          "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기": 1,
+          "a=k=4일 때 h(3) 계산": 2,
+          "k+h(3) 계산": 3,
+          "극값 조건을 도함수로 변환": 1,
+          "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산": 1,
+          "각 구간에서 ‘극값이 생기는 조건’ 분석": 1,
+          "\\(a=1\\)에서 \\(h(3)\\) 계산": 1,
+          "요구값 \\(k+h(3)\\)": 1,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 3,
+          "구간별 부호 분석": 1,
+          "오직 하나의 극값 조건": 2,
+          "h(3) 계산 (a = 4)": 2,
+          "최종 계산": 3,
+          "함수 분석 및 h'(x) 구하기": 1,
+          "h'(x) = g(x) - f(x) 계산": 1,
+          "각 구간에서 h'(x)의 부호 분석": 1,
+          "극값 조건 분석": 3,
+          "h(3) 계산 (a = k = 4)": 1,
+          "h'(x) 분석": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "x ≥ 1 구간에서 극값 분석": 1,
+          "x < -1 구간에서 극값 분석": 1,
+          "최댓값 k 결정": 1,
+          "1. 함수 $h(x)$의 미분 및 극값 조건 분석": 1,
+          "1. 함수 $h(x)$의 극값 조건 분석": 1,
+          "조건 정리 및 함수 분석": 1,
+          "h(x)의 극값 조건 분석": 1,
+          "g(x) = f(x)의 해 및 부호 변화 확인": 1,
+          "a=4일 때 h(3) 계산": 2,
+          "문제 분석 및 h(x) 극값 조건": 1,
+          "함수 분석 및 극값 조건": 1,
+          "h(3) 계산": 1,
+          "h'(x)의 식 작성": 1,
+          "각 구간에서 h'(x) 표현": 1,
+          "극값 후보 위치 분석": 1,
+          "극값 개수 조건": 1,
+          "정리: 극값 위치": 1,
+          "k=4일 때 h(3) 계산": 1,
+          "함수 f(x)와 g(x)의 정의 정리": 1,
+          "구간별 h'(x) 식 작성": 1,
+          "h'(x) 부호 변화 분석": 1,
+          "x ≥ 1 구간의 부호 변화": 1,
+          "x < -1 구간의 극점 가능성": 1,
+          "a의 최댓값 k": 1,
+          "a=k=4일 때 h(3) 구하기": 1,
+          "k + h(3) 계산": 1,
+          "h'(x)와 h''(x) 구하기": 1,
+          "각 구간에서 h'(x)=0 가능성": 1,
+          "h'(x) 부호 변화 검토": 1,
+          "x=a에서 부호 변화": 1,
+          "가능한 극점 위치 정리": 1,
+          "하나의 극값 조건 결정": 1,
+          "적분 계산": 1,
+          "f(x)와 g(x)의 구간별 정의 확인": 1,
+          "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+          "h'(x) = 0 해 분석 및 극값 후보 점 검토": 1,
+          "기타 구간에서 극값 생기는지 확인": 1,
+          "함수 정의 및 h(x)의 의미 파악": 1,
+          "구간별로 h'(x) = g(x) - f(x) 계산": 1,
+          "h'(x)의 부호 변화 분석": 1,
+          "함수 정의와 h(x)의 도함수 파악": 1,
+          "h'(x)의 부호 변화와 극값 개수 분석": 1,
+          "구간별 h'(x) 분석": 1,
+          "h'(x)의 극값 개수 제어 조건": 1,
+          "x ≥ 1 구간에서의 h'(x) 분석": 1,
+          "x ≥ 1에서의 부호 변화": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.962775,
+              "step_count": 6,
+              "step_titles": [
+                "극값 조건을 h'(x)로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x<-1에서 극값이 생기지 않게 하는 조건",
+                "x≥1에서 극값 개수 분석 및 k 결정",
+                "a=1일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(-\\dfrac{3}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.295988,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0으로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검",
+                "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4\\), \\(h(3)=\\dfrac{7}{2}\\) 이므로\n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}.\n\\]\n정답: \\(\\boxed{\\frac{15}{2}}\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.043126,
+              "step_count": 5,
+              "step_titles": [
+                "핵심 관찰(극값 조건)",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x<-1에서의 영점 조건(극값이 생기지 않게)",
+                "x≥1에서 극값이 정확히 1개 생기도록 확인",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4,\\ h(3)=\\dfrac{7}{2}\\) 이므로  \n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}.\n\\]\n정답: ④ \\(\\dfrac{15}{2}\\).",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.962775,
+              "step_count": 6,
+              "step_titles": [
+                "극값 조건을 h'(x)로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x<-1에서 극값이 생기지 않게 하는 조건",
+                "x≥1에서 극값 개수 분석 및 k 결정",
+                "a=1일 때 h(3) 계산",
+                "k+h(3)"
+              ],
+              "final_answer": "\\(-\\dfrac{3}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.295988,
+              "step_count": 5,
+              "step_titles": [
+                "극값 조건을 h'(x)=0으로 변환",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검",
+                "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4\\), \\(h(3)=\\dfrac{7}{2}\\) 이므로\n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}.\n\\]\n정답: \\(\\boxed{\\frac{15}{2}}\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.043126,
+              "step_count": 5,
+              "step_titles": [
+                "핵심 관찰(극값 조건)",
+                "구간별로 h'(x)=g(x)-f(x) 계산",
+                "x<-1에서의 영점 조건(극값이 생기지 않게)",
+                "x≥1에서 극값이 정확히 1개 생기도록 확인",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\(k=4,\\ h(3)=\\dfrac{7}{2}\\) 이므로  \n\\[\nk+h(3)=4+\\frac{7}{2}=\\frac{15}{2}.\n\\]\n정답: ④ \\(\\dfrac{15}{2}\\).",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "극값 조건을 h'(x)로 변환": 1,
+            "구간별로 h'(x)=g(x)-f(x) 계산": 3,
+            "x<-1에서 극값이 생기지 않게 하는 조건": 1,
+            "x≥1에서 극값 개수 분석 및 k 결정": 1,
+            "a=1일 때 h(3) 계산": 1,
+            "k+h(3)": 1,
+            "극값 조건을 h'(x)=0으로 변환": 1,
+            "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검": 1,
+            "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정": 1,
+            "a=4일 때 h(3) 계산": 2,
+            "핵심 관찰(극값 조건)": 1,
+            "x<-1에서의 영점 조건(극값이 생기지 않게)": 1,
+            "x≥1에서 극값이 정확히 1개 생기도록 확인": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "극값 조건을 h'(x)로 변환": 1,
+            "구간별로 h'(x)=g(x)-f(x) 계산": 3,
+            "x<-1에서 극값이 생기지 않게 하는 조건": 1,
+            "x≥1에서 극값 개수 분석 및 k 결정": 1,
+            "a=1일 때 h(3) 계산": 1,
+            "k+h(3)": 1,
+            "극값 조건을 h'(x)=0으로 변환": 1,
+            "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검": 1,
+            "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정": 1,
+            "a=4일 때 h(3) 계산": 2,
+            "핵심 관찰(극값 조건)": 1,
+            "x<-1에서의 영점 조건(극값이 생기지 않게)": 1,
+            "x≥1에서 극값이 정확히 1개 생기도록 확인": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.963754,
+              "step_count": 6,
+              "step_titles": [
+                "함수 분석 및 도함수 설정",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "구간별 부호 분석",
+                "오직 하나의 극값 조건",
+                "h(3) 계산",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.601628,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 극값 가능성 분석",
+                "x < -1 구간에서 근의 조건",
+                "오직 하나의 극값 조건",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.244959,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "구간별 h'(x) = g(x) - f(x) 분석",
+                "x ≥ 1 구간에서 극값 분석",
+                "x < -1 구간에서 극값 조건",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.963754,
+              "step_count": 6,
+              "step_titles": [
+                "함수 분석 및 도함수 설정",
+                "구간별 h'(x) = g(x) - f(x) 계산",
+                "구간별 부호 분석",
+                "오직 하나의 극값 조건",
+                "h(3) 계산",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.601628,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h'(x) = g(x) - f(x) 분석",
+                "구간별 극값 가능성 분석",
+                "x < -1 구간에서 근의 조건",
+                "오직 하나의 극값 조건",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.244959,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "구간별 h'(x) = g(x) - f(x) 분석",
+                "x ≥ 1 구간에서 극값 분석",
+                "x < -1 구간에서 극값 조건",
+                "최댓값 k 결정",
+                "h(3) 계산 (a = 4)",
+                "최종 계산"
+              ],
+              "final_answer": "④ $\\dfrac{15}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 6.666666666666667,
+          "title_frequency": {
+            "함수 분석 및 도함수 설정": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "구간별 부호 분석": 1,
+            "오직 하나의 극값 조건": 2,
+            "h(3) 계산": 1,
+            "최종 계산": 3,
+            "조건 정리": 2,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 극값 가능성 분석": 1,
+            "x < -1 구간에서 근의 조건": 1,
+            "h(3) 계산 (a = 4)": 2,
+            "구간별 h'(x) = g(x) - f(x) 분석": 1,
+            "x ≥ 1 구간에서 극값 분석": 1,
+            "x < -1 구간에서 극값 조건": 1,
+            "최댓값 k 결정": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 분석 및 도함수 설정": 1,
+            "구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "구간별 부호 분석": 1,
+            "오직 하나의 극값 조건": 2,
+            "h(3) 계산": 1,
+            "최종 계산": 3,
+            "조건 정리": 2,
+            "h'(x) = g(x) - f(x) 분석": 1,
+            "구간별 극값 가능성 분석": 1,
+            "x < -1 구간에서 근의 조건": 1,
+            "h(3) 계산 (a = 4)": 2,
+            "구간별 h'(x) = g(x) - f(x) 분석": 1,
+            "x ≥ 1 구간에서 극값 분석": 1,
+            "x < -1 구간에서 극값 조건": 1,
+            "최댓값 k 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.900569,
+              "step_count": 1,
+              "step_titles": [
+                "함수 분석 및 미분가능성 확인"
+              ],
+              "final_answer": "다음은 함수 $f(x)$와 $g(x)$의 관계를 분석하여 주어진 조건을 만족하는 $a$의 최댓값을 구하고, 정적분을 계산하는 단계별 풀이입니다.\n\n[STEP title=\"함수 분석 및 미분가능성 확인\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 그 도함수인 $h'(x) = g(x) - f(x)$의 부호가 변하는 지점(즉, $g(x)$와 $f(x)$의 교차점)이 전체 실수 구간에서 단 한 번만 존재해야 한다.\n우선",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.656508,
+              "step_count": 1,
+              "step_titles": [
+                "함수 및 도함수의 분석"
+              ],
+              "final_answer": "다음은 문제 풀이의 단계별 과정입니다.\n\n[STEP title=\"함수 및 도함수의 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, $h'(x)$의 부호가 전 구간 $(-\\infty, \\infty)$에서 단 한 번만 바뀌어야 합니다. \n도함수는 $h'(x) = g(x) - f(x)$입니다.\n구간별로 $h'(x)$를 구하면 다음과 같습니다.\n\n1.  $x < -1$:\n    $g(x) = ax+a$, $f(x) = -x^2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.545473,
+              "step_count": 1,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석"
+              ],
+              "final_answer": "다음은 주어진 문제의 단계별 풀이입니다.\n\n[STEP title=\"함수 h(x)의 극값 조건 분석\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$의 극값은 도함수 $h'(x)=g(x)-f(x)$의 부호가 바뀌는 지점에서 발생합니다.\n주어진 문제에서 $h(x)$가 **오직 하나의 극값**을 갖는다고 하였으므로, 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 전 구간을 통틀어 단 한 곳이어야 합니다.\n\n$f",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.900569,
+              "step_count": 1,
+              "step_titles": [
+                "함수 분석 및 미분가능성 확인"
+              ],
+              "final_answer": "다음은 함수 $f(x)$와 $g(x)$의 관계를 분석하여 주어진 조건을 만족하는 $a$의 최댓값을 구하고, 정적분을 계산하는 단계별 풀이입니다.\n\n[STEP title=\"함수 분석 및 미분가능성 확인\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, 그 도함수인 $h'(x) = g(x) - f(x)$의 부호가 변하는 지점(즉, $g(x)$와 $f(x)$의 교차점)이 전체 실수 구간에서 단 한 번만 존재해야 한다.\n우선",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.656508,
+              "step_count": 1,
+              "step_titles": [
+                "함수 및 도함수의 분석"
+              ],
+              "final_answer": "다음은 문제 풀이의 단계별 과정입니다.\n\n[STEP title=\"함수 및 도함수의 분석\"]\n주어진 함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$가 오직 하나의 극값을 갖기 위해서는, $h'(x)$의 부호가 전 구간 $(-\\infty, \\infty)$에서 단 한 번만 바뀌어야 합니다. \n도함수는 $h'(x) = g(x) - f(x)$입니다.\n구간별로 $h'(x)$를 구하면 다음과 같습니다.\n\n1.  $x < -1$:\n    $g(x) = ax+a$, $f(x) = -x^2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.545473,
+              "step_count": 1,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석"
+              ],
+              "final_answer": "다음은 주어진 문제의 단계별 풀이입니다.\n\n[STEP title=\"함수 h(x)의 극값 조건 분석\"]\n함수 $h(x)=\\displaystyle \\int_0^x \\bigl(g(t)-f(t)\\bigr)dt$의 극값은 도함수 $h'(x)=g(x)-f(x)$의 부호가 바뀌는 지점에서 발생합니다.\n주어진 문제에서 $h(x)$가 **오직 하나의 극값**을 갖는다고 하였으므로, 함수 $y=g(x)$와 $y=f(x)$의 그래프가 교차하며 대소 관계가 바뀌는 지점이 전 구간을 통틀어 단 한 곳이어야 합니다.\n\n$f",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.0,
+          "title_frequency": {
+            "함수 분석 및 미분가능성 확인": 1,
+            "함수 및 도함수의 분석": 1,
+            "함수 h(x)의 극값 조건 분석": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 1.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 분석 및 미분가능성 확인": 1,
+            "함수 및 도함수의 분석": 1,
+            "함수 h(x)의 극값 조건 분석": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 234.70827,
+              "step_count": 2,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 229.957164,
+              "step_count": 3,
+              "step_titles": [
+                "극값 조건 분석",
+                "h(3) 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 188.969814,
+              "step_count": 2,
+              "step_titles": [
+                "함수 분석 및 극값 조건",
+                "h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 234.70827,
+              "step_count": 2,
+              "step_titles": [
+                "함수 h(x)의 극값 조건 분석",
+                "a=4일 때 h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 229.957164,
+              "step_count": 3,
+              "step_titles": [
+                "극값 조건 분석",
+                "h(3) 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 188.969814,
+              "step_count": 2,
+              "step_titles": [
+                "함수 분석 및 극값 조건",
+                "h(3) 계산"
+              ],
+              "final_answer": "\\dfrac{15}{2}",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "함수 h(x)의 극값 조건 분석": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "극값 조건 분석": 1,
+            "h(3) 계산": 2,
+            "최종 값 계산": 1,
+            "함수 분석 및 극값 조건": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 h(x)의 극값 조건 분석": 1,
+            "a=4일 때 h(3) 계산": 1,
+            "극값 조건 분석": 1,
+            "h(3) 계산": 2,
+            "최종 값 계산": 1,
+            "함수 분석 및 극값 조건": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 140.701107,
+              "step_count": 0,
+              "step_titles": [],
+              "final_answer": "**\n\\[\n\\boxed{\\frac{15}{2}}\n\\]\n④번.",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 170.79485,
+              "step_count": 15,
+              "step_titles": [
+                "조건 정리",
+                "f와 g의 식 나열",
+                "h'(x)의 구간별 표현",
+                "h'(x)의 부호와 극값 개수 조건 분석",
+                "구간①에서 h'(x)=0 가능성",
+                "구간④에서 h'(x)=0 가능성",
+                "두 근의 위치 분석",
+                "h'(x)의 부호와 극값",
+                "오직 하나의 극값 조건",
+                "구간①의 h'(x)와 구간② 연결",
+                "a의 범위에 따른 극값 개수",
+                "a=k=4일 때 h(3) 계산",
+                "구간별 g-f 계산 (a=4)",
+                "적분 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\(\\frac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.377382,
+              "step_count": 8,
+              "step_titles": [
+                "함수와 적분식 정리",
+                "h'(x)와 극값의 조건",
+                "각 구간에서 h'(x)=0 가능성 판단",
+                "다른 구간에서 h'(x)=0",
+                "h'(x)=0인 점들과 부호변화(극점 판정)",
+                "오직 하나의 극값 조건 정리",
+                "k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 140.701107,
+              "step_count": 0,
+              "step_titles": [],
+              "final_answer": "**\n\\[\n\\boxed{\\frac{15}{2}}\n\\]\n④번.",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 170.79485,
+              "step_count": 15,
+              "step_titles": [
+                "조건 정리",
+                "f와 g의 식 나열",
+                "h'(x)의 구간별 표현",
+                "h'(x)의 부호와 극값 개수 조건 분석",
+                "구간①에서 h'(x)=0 가능성",
+                "구간④에서 h'(x)=0 가능성",
+                "두 근의 위치 분석",
+                "h'(x)의 부호와 극값",
+                "오직 하나의 극값 조건",
+                "구간①의 h'(x)와 구간② 연결",
+                "a의 범위에 따른 극값 개수",
+                "a=k=4일 때 h(3) 계산",
+                "구간별 g-f 계산 (a=4)",
+                "적분 계산",
+                "k + h(3) 계산"
+              ],
+              "final_answer": "\\(\\frac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.377382,
+              "step_count": 8,
+              "step_titles": [
+                "함수와 적분식 정리",
+                "h'(x)와 극값의 조건",
+                "각 구간에서 h'(x)=0 가능성 판단",
+                "다른 구간에서 h'(x)=0",
+                "h'(x)=0인 점들과 부호변화(극점 판정)",
+                "오직 하나의 극값 조건 정리",
+                "k=4일 때 h(3) 계산",
+                "k+h(3) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{15}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.666666666666667,
+          "title_frequency": {
+            "조건 정리": 1,
+            "f와 g의 식 나열": 1,
+            "h'(x)의 구간별 표현": 1,
+            "h'(x)의 부호와 극값 개수 조건 분석": 1,
+            "구간①에서 h'(x)=0 가능성": 1,
+            "구간④에서 h'(x)=0 가능성": 1,
+            "두 근의 위치 분석": 1,
+            "h'(x)의 부호와 극값": 1,
+            "오직 하나의 극값 조건": 1,
+            "구간①의 h'(x)와 구간② 연결": 1,
+            "a의 범위에 따른 극값 개수": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "구간별 g-f 계산 (a=4)": 1,
+            "적분 계산": 1,
+            "k + h(3) 계산": 1,
+            "함수와 적분식 정리": 1,
+            "h'(x)와 극값의 조건": 1,
+            "각 구간에서 h'(x)=0 가능성 판단": 1,
+            "다른 구간에서 h'(x)=0": 1,
+            "h'(x)=0인 점들과 부호변화(극점 판정)": 1,
+            "오직 하나의 극값 조건 정리": 1,
+            "k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.666666666666667,
+          "step_std": 7.505553499465135,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "f와 g의 식 나열": 1,
+            "h'(x)의 구간별 표현": 1,
+            "h'(x)의 부호와 극값 개수 조건 분석": 1,
+            "구간①에서 h'(x)=0 가능성": 1,
+            "구간④에서 h'(x)=0 가능성": 1,
+            "두 근의 위치 분석": 1,
+            "h'(x)의 부호와 극값": 1,
+            "오직 하나의 극값 조건": 1,
+            "구간①의 h'(x)와 구간② 연결": 1,
+            "a의 범위에 따른 극값 개수": 1,
+            "a=k=4일 때 h(3) 계산": 1,
+            "구간별 g-f 계산 (a=4)": 1,
+            "적분 계산": 1,
+            "k + h(3) 계산": 1,
+            "함수와 적분식 정리": 1,
+            "h'(x)와 극값의 조건": 1,
+            "각 구간에서 h'(x)=0 가능성 판단": 1,
+            "다른 구간에서 h'(x)=0": 1,
+            "h'(x)=0인 점들과 부호변화(극점 판정)": 1,
+            "오직 하나의 극값 조건 정리": 1,
+            "k=4일 때 h(3) 계산": 1,
+            "k+h(3) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.310757,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h(x)의 극값 조건 분석",
+                "f(x)와 g(x)의 구간 분할",
+                "각 구간별 h'(x) = g(x) - f(x) 계산",
+                "부호 변화 가능성 있는 지점 분석",
+                "x < -1에서의 해 분석",
+                "x ≥ 1에서의 해 분석"
+              ],
+              "final_answer": "$ x=4 $\n\n- $ x=4 $에서 양→음 → 부호 변화 → 하나의 극값\n\n또한 다른 구간에서 부호 변화 있는가?\n\n- $ -1 \\le x < 0 $: $ h'(x)=x^2 \\ge 0 $\n- $ 0 \\le x < 1 $: $ -x^2 + x = x(1-x) \\ge 0 $ (0≤x<1)\n- $ x \\to 1^- $: $ h'(x) \\to 0^+ $\n- $ x>1 $, $ a=4 $: $ h'(x) = -x^2 + 5x -4 $\n\n$ x=1 $: $ -1 +5 -4 = 0 $\n\n$ x>1 $: 즈음 양수 (e.g. $ x=1.1 $:",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 154.093998,
+              "step_count": 6,
+              "step_titles": [
+                "함수 정의 및 h(x)의 미분 분석",
+                "구간별 f(x)와 g(x) 정리",
+                "h'(x) = g(x) - f(x)의 구간별 정의",
+                "h'(x)의 부호 변화 분석 및 극값 개수 조건",
+                "각 구간에서 h'(x)의 조사",
+                "h'(x)의 전체 부호 변화 분석"
+              ],
+              "final_answer": "h'(x) $는 $ x < -1 $ 에서 양 → 음 → 양 (아래로 볼록)이므로, 최소 한 번 부호 변화 (양→음, 음→양).  \n즉 **최소 두 번 부호 변하거나**, 혹은 한 번만 (경계 포함 시)\n\n근의 위치를 보자.\n\n$ h'(x) = x^2 + ax + a = 0 $  \n근: $ x = \\frac{ -a \\pm \\sqrt{a^2 - 4a} }{2} $\n\n실근 존재 조건: $ a \\ge 4 $\n\n이때 두 실근 존재. 더 작은 근:\n$$\nx_1 = \\frac{ -a - \\sqrt{a^2 - 4a} }{2} < \\frac{ -a",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.26075,
+              "step_count": 8,
+              "step_titles": [
+                "함수 정의와 조건 파악",
+                "h(x)의 도함수 분석",
+                "h'(x) = g(x) - f(x)의 구간별 정의",
+                "h'(x)의 부호 변화와 극값 개수",
+                "구간별 h'(x) 분석",
+                "x ≥ 1에서 h'(x)의 부호 변화",
+                "기타 구간의 극값 가능성 조사",
+                "기존 극값 외 추가 극값 없는지 확인"
+              ],
+              "final_answer": "\\ge 0 \\) → 부호 변화 없음 → \\( h(x) \\) 단조증가 → 극값 없음 (이 구간)\n\n   - \\( a < 4 \\): \\( h'(x) > 0 \\) → 증가 → 극값 없음\n\n   → 결론: \\( x < -1 \\) 구간에서 극값 존재 여부는 \\( a \\le 4 \\) 때 없음, \\( a > 4 \\) 때 2개 생김\n\n   따라서, **h(x)가 오직 하나의 극값 가지려면 \\( a \\le 4 \\)**\n\n---\n\n[STEP title=\"기존 극값 외 추가 극값 없는지 확인\"]  \n지금까지:\n\n- \\( x \\ge 1 \\) 구간: 항상",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.310757,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "h(x)의 극값 조건 분석",
+                "f(x)와 g(x)의 구간 분할",
+                "각 구간별 h'(x) = g(x) - f(x) 계산",
+                "부호 변화 가능성 있는 지점 분석",
+                "x < -1에서의 해 분석",
+                "x ≥ 1에서의 해 분석"
+              ],
+              "final_answer": "$ x=4 $\n\n- $ x=4 $에서 양→음 → 부호 변화 → 하나의 극값\n\n또한 다른 구간에서 부호 변화 있는가?\n\n- $ -1 \\le x < 0 $: $ h'(x)=x^2 \\ge 0 $\n- $ 0 \\le x < 1 $: $ -x^2 + x = x(1-x) \\ge 0 $ (0≤x<1)\n- $ x \\to 1^- $: $ h'(x) \\to 0^+ $\n- $ x>1 $, $ a=4 $: $ h'(x) = -x^2 + 5x -4 $\n\n$ x=1 $: $ -1 +5 -4 = 0 $\n\n$ x>1 $: 즈음 양수 (e.g. $ x=1.1 $:",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 154.093998,
+              "step_count": 6,
+              "step_titles": [
+                "함수 정의 및 h(x)의 미분 분석",
+                "구간별 f(x)와 g(x) 정리",
+                "h'(x) = g(x) - f(x)의 구간별 정의",
+                "h'(x)의 부호 변화 분석 및 극값 개수 조건",
+                "각 구간에서 h'(x)의 조사",
+                "h'(x)의 전체 부호 변화 분석"
+              ],
+              "final_answer": "h'(x) $는 $ x < -1 $ 에서 양 → 음 → 양 (아래로 볼록)이므로, 최소 한 번 부호 변화 (양→음, 음→양).  \n즉 **최소 두 번 부호 변하거나**, 혹은 한 번만 (경계 포함 시)\n\n근의 위치를 보자.\n\n$ h'(x) = x^2 + ax + a = 0 $  \n근: $ x = \\frac{ -a \\pm \\sqrt{a^2 - 4a} }{2} $\n\n실근 존재 조건: $ a \\ge 4 $\n\n이때 두 실근 존재. 더 작은 근:\n$$\nx_1 = \\frac{ -a - \\sqrt{a^2 - 4a} }{2} < \\frac{ -a",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.26075,
+              "step_count": 8,
+              "step_titles": [
+                "함수 정의와 조건 파악",
+                "h(x)의 도함수 분석",
+                "h'(x) = g(x) - f(x)의 구간별 정의",
+                "h'(x)의 부호 변화와 극값 개수",
+                "구간별 h'(x) 분석",
+                "x ≥ 1에서 h'(x)의 부호 변화",
+                "기타 구간의 극값 가능성 조사",
+                "기존 극값 외 추가 극값 없는지 확인"
+              ],
+              "final_answer": "\\ge 0 \\) → 부호 변화 없음 → \\( h(x) \\) 단조증가 → 극값 없음 (이 구간)\n\n   - \\( a < 4 \\): \\( h'(x) > 0 \\) → 증가 → 극값 없음\n\n   → 결론: \\( x < -1 \\) 구간에서 극값 존재 여부는 \\( a \\le 4 \\) 때 없음, \\( a > 4 \\) 때 2개 생김\n\n   따라서, **h(x)가 오직 하나의 극값 가지려면 \\( a \\le 4 \\)**\n\n---\n\n[STEP title=\"기존 극값 외 추가 극값 없는지 확인\"]  \n지금까지:\n\n- \\( x \\ge 1 \\) 구간: 항상",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "h(x)의 극값 조건 분석": 1,
+            "f(x)와 g(x)의 구간 분할": 1,
+            "각 구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "부호 변화 가능성 있는 지점 분석": 1,
+            "x < -1에서의 해 분석": 1,
+            "x ≥ 1에서의 해 분석": 1,
+            "함수 정의 및 h(x)의 미분 분석": 1,
+            "구간별 f(x)와 g(x) 정리": 1,
+            "h'(x) = g(x) - f(x)의 구간별 정의": 2,
+            "h'(x)의 부호 변화 분석 및 극값 개수 조건": 1,
+            "각 구간에서 h'(x)의 조사": 1,
+            "h'(x)의 전체 부호 변화 분석": 1,
+            "함수 정의와 조건 파악": 1,
+            "h(x)의 도함수 분석": 1,
+            "h'(x)의 부호 변화와 극값 개수": 1,
+            "구간별 h'(x) 분석": 1,
+            "x ≥ 1에서 h'(x)의 부호 변화": 1,
+            "기타 구간의 극값 가능성 조사": 1,
+            "기존 극값 외 추가 극값 없는지 확인": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 7.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "h(x)의 극값 조건 분석": 1,
+            "f(x)와 g(x)의 구간 분할": 1,
+            "각 구간별 h'(x) = g(x) - f(x) 계산": 1,
+            "부호 변화 가능성 있는 지점 분석": 1,
+            "x < -1에서의 해 분석": 1,
+            "x ≥ 1에서의 해 분석": 1,
+            "함수 정의 및 h(x)의 미분 분석": 1,
+            "구간별 f(x)와 g(x) 정리": 1,
+            "h'(x) = g(x) - f(x)의 구간별 정의": 2,
+            "h'(x)의 부호 변화 분석 및 극값 개수 조건": 1,
+            "각 구간에서 h'(x)의 조사": 1,
+            "h'(x)의 전체 부호 변화 분석": 1,
+            "함수 정의와 조건 파악": 1,
+            "h(x)의 도함수 분석": 1,
+            "h'(x)의 부호 변화와 극값 개수": 1,
+            "구간별 h'(x) 분석": 1,
+            "x ≥ 1에서 h'(x)의 부호 변화": 1,
+            "기타 구간의 극값 가능성 조사": 1,
+            "기존 극값 외 추가 극값 없는지 확인": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.0,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 변환": 1,
+          "구간별로 h'(x)=g(x)-f(x) 계산": 3,
+          "x<-1에서 극값이 생기지 않게 하는 조건": 1,
+          "x≥1에서 극값 개수 분석 및 k 결정": 1,
+          "a=1일 때 h(3) 계산": 1,
+          "k+h(3)": 1,
+          "극값 조건을 h'(x)=0으로 변환": 1,
+          "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검": 1,
+          "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정": 1,
+          "a=4일 때 h(3) 계산": 3,
+          "핵심 관찰(극값 조건)": 1,
+          "x<-1에서의 영점 조건(극값이 생기지 않게)": 1,
+          "x≥1에서 극값이 정확히 1개 생기도록 확인": 1,
+          "함수 분석 및 도함수 설정": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "구간별 부호 분석": 1,
+          "오직 하나의 극값 조건": 3,
+          "h(3) 계산": 3,
+          "최종 계산": 3,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 1,
+          "구간별 극값 가능성 분석": 1,
+          "x < -1 구간에서 근의 조건": 1,
+          "h(3) 계산 (a = 4)": 2,
+          "구간별 h'(x) = g(x) - f(x) 분석": 1,
+          "x ≥ 1 구간에서 극값 분석": 1,
+          "x < -1 구간에서 극값 조건": 1,
+          "최댓값 k 결정": 1,
+          "함수 분석 및 미분가능성 확인": 1,
+          "함수 및 도함수의 분석": 1,
+          "함수 h(x)의 극값 조건 분석": 2,
+          "극값 조건 분석": 1,
+          "최종 값 계산": 1,
+          "함수 분석 및 극값 조건": 1,
+          "f와 g의 식 나열": 1,
+          "h'(x)의 구간별 표현": 1,
+          "h'(x)의 부호와 극값 개수 조건 분석": 1,
+          "구간①에서 h'(x)=0 가능성": 1,
+          "구간④에서 h'(x)=0 가능성": 1,
+          "두 근의 위치 분석": 1,
+          "h'(x)의 부호와 극값": 1,
+          "구간①의 h'(x)와 구간② 연결": 1,
+          "a의 범위에 따른 극값 개수": 1,
+          "a=k=4일 때 h(3) 계산": 1,
+          "구간별 g-f 계산 (a=4)": 1,
+          "적분 계산": 1,
+          "k + h(3) 계산": 1,
+          "함수와 적분식 정리": 1,
+          "h'(x)와 극값의 조건": 1,
+          "각 구간에서 h'(x)=0 가능성 판단": 1,
+          "다른 구간에서 h'(x)=0": 1,
+          "h'(x)=0인 점들과 부호변화(극점 판정)": 1,
+          "오직 하나의 극값 조건 정리": 1,
+          "k=4일 때 h(3) 계산": 1,
+          "k+h(3) 계산": 1,
+          "h(x)의 극값 조건 분석": 1,
+          "f(x)와 g(x)의 구간 분할": 1,
+          "각 구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "부호 변화 가능성 있는 지점 분석": 1,
+          "x < -1에서의 해 분석": 1,
+          "x ≥ 1에서의 해 분석": 1,
+          "함수 정의 및 h(x)의 미분 분석": 1,
+          "구간별 f(x)와 g(x) 정리": 1,
+          "h'(x) = g(x) - f(x)의 구간별 정의": 2,
+          "h'(x)의 부호 변화 분석 및 극값 개수 조건": 1,
+          "각 구간에서 h'(x)의 조사": 1,
+          "h'(x)의 전체 부호 변화 분석": 1,
+          "함수 정의와 조건 파악": 1,
+          "h(x)의 도함수 분석": 1,
+          "h'(x)의 부호 변화와 극값 개수": 1,
+          "구간별 h'(x) 분석": 1,
+          "x ≥ 1에서 h'(x)의 부호 변화": 1,
+          "기타 구간의 극값 가능성 조사": 1,
+          "기존 극값 외 추가 극값 없는지 확인": 1
+        },
+        "accuracy_all_models": 0.2777777777777778,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 바꾸기": 2,
+          "구간별로 h'(x)=g(x)-f(x) 정리": 2,
+          "x<-1에서의 영점(극값 후보) 개수 분석": 1,
+          "a=4일 때 h(3) 계산": 4,
+          "k+h(3)": 2,
+          "x<-1에서의 영점(교점) 개수 분석": 1,
+          "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기": 1,
+          "극값 조건을 h'(x)로 변환": 1,
+          "각 구간에서 h'(x)=0 해와 부호 변화 분석": 1,
+          "조건 정리": 5,
+          "h'(x) = g(x) - f(x) 분석": 4,
+          "구간별 부호 분석": 2,
+          "극값 조건 분석": 2,
+          "h(3) 계산": 1,
+          "최종 계산": 2,
+          "x ≥ 1 구간 분석": 1,
+          "x < -1 구간 분석": 1,
+          "최댓값 k 결정": 1,
+          "h(3) 계산 (a = 4)": 1,
+          "최댓값 k 결정 및 h(3) 계산": 1,
+          "조건 정리 및 함수 분석": 3,
+          "함수 h(x)의 극값 분석을 위한 h'(x) 정의": 1,
+          "h'(x) = 0인 점 찾기와 부호 변화 분석": 1,
+          "정확히 하나의 극값을 갖는 a의 범위 결정": 1,
+          "a = 4일 때 h(3) 계산": 2,
+          "함수 h(x)의 극값 조건 분석": 1,
+          "함수 분석 및 h'(x)=0 찾기": 1,
+          "h' 부호 분석 및 극값 개수": 1,
+          "문제 이해 및 함수 정의 정리": 1,
+          "h'(x) 구간별 표현": 1,
+          "h'(x) 부호 변화 분석 (극값 개수 조건)": 1,
+          "전체 극값 개수 시나리오": 1,
+          "a=k=4일 때 h(3) 계산": 2,
+          "k + h(3) 계산": 1,
+          "함수 정리 및 h'(x) 표현": 1,
+          "h'(x)=0인 점 찾기": 1,
+          "극값 개수에 따른 a의 범위 분석": 1,
+          "k 결정 및 h(3) 계산": 1,
+          "최종 답 계산": 1,
+          "h'(x)와 극값 조건 분석": 1,
+          "g(x)-f(x)의 식 정리": 1,
+          "h'(x)=0의 실근 개수 조건": 1,
+          "근의 분포와 극값 개수": 1,
+          "h'(x)의 부호 변화 검토": 1,
+          "극값 개수 정리": 1,
+          "a의 범위 결정": 1,
+          "k+h(3) 계산": 1,
+          "도함수 분석: \\( h'(x) = g(x) - f(x) \\)": 1,
+          "구간별 \\( g(x) - f(x) \\) 정의": 1,
+          "각 구간에서 \\( h'(x) = 0 \\) 해 분석": 1,
+          "전체에서 \\( h'(x) = 0 \\) 해 개수 분석": 1,
+          "부호 변화 분석 및 극값 조건": 1,
+          "함수 정의 및 h(x)의 의미 파악": 1,
+          "구간별 h'(x) 계산": 1,
+          "h'(x)의 부호 변화 분석": 1,
+          "구간별 h'(x) 부호 및 제로점 조사": 1,
+          "전체 h'(x)의 부호 흐름 분석": 1,
+          "함수 정의 및 h(x)의 도함수 분석": 1,
+          "구간별 함수 정의 정리": 1,
+          "h'(x)의 부호 변화 분석 및 극값 조건": 1,
+          "구간별 h'(x) 분석": 1,
+          "다른 구간에서의 극값 가능성 검토": 1
+        },
+        "accuracy_all_models": 0.2222222222222222,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.722222222222222,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 바꾸기": 2,
+          "구간별로 h'(x)=g(x)-f(x) 계산": 1,
+          "극값이 하나만 되려면: 부호변화 개수 세기": 1,
+          "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음": 1,
+          "a=4일 때 h(3) 계산": 2,
+          "k+h(3)": 1,
+          "핵심 관찰(극값 ↔ 도함수의 부호변화)": 1,
+          "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리": 1,
+          "극값이 생길 수 있는 지점 후보 분석": 1,
+          "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정": 1,
+          " \\(a=k=4\\)일 때 \\(h(3)\\) 계산": 1,
+          "항상 생기는 극값(0에서) 확인": 1,
+          "x<-1 구간에서 극값이 생기지 않게 하기": 1,
+          "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기": 1,
+          "a=k=1일 때 h(3) 계산": 1,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 2,
+          "구간별 부호 분석": 2,
+          "x < -1에서 근이 없을 조건": 1,
+          "최댓값 k 결정 및 h(3) 계산": 3,
+          "조건 정리 및 h'(x) 분석": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "x < -1 구간 분석 및 조건 도출": 1,
+          "h'(x) 분석": 1,
+          "각 구간에서 부호 분석": 1,
+          "x < -1 구간 분석": 1,
+          "극값 조건 종합": 1,
+          "함수 $h(x)$의 도함수와 극값 조건 분석": 1,
+          "함수 정의 및 도함수 분석": 1,
+          "조건 정리 및 함수 분석": 1,
+          "함수 p(t) 정의 및 극값 조건 분석": 1,
+          "a = 4일 때 h(3) 계산": 3,
+          "함수 h(x)의 극값 분석": 1,
+          "k + h(3) 계산": 3,
+          "h(x)의 극값 조건 분석": 4,
+          "함수 정리 및 h'(x) 표현": 1,
+          "h'(x)=0인 점 및 부호 변화 분석": 1,
+          "극값이 하나가 되는 조건과 k의 값": 1,
+          "a=k일 때 h(3) 계산": 1,
+          "k+h(3) 계산": 1,
+          "h'(x) 식 정리": 1,
+          "h'(x)의 부호 변화 분석": 2,
+          "h'(x)=0의 해 찾기": 1,
+          "극값 조건 해석": 1,
+          "오직 하나의 극값 조건": 1,
+          "a=k=4일 때 h(3) 계산": 1,
+          "함수 f(x)와 g(x) 정리": 1,
+          "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+          "h'(x) = 0인 점 찾기": 1,
+          "h(x)가 오직 하나의 극값을 갖는 조건": 1,
+          "x=0과 x=1에서의 h'(x) 부호 변화 확인": 1,
+          "x< -1에서 근이 극값이 되려면": 1,
+          "극값의 개수 정리": 1,
+          "오직 하나의 극값을 갖는 a의 범위": 1,
+          "적분 계산": 1,
+          "함수 정의와 h(x)의 구성 이해": 1,
+          "각 구간에서 h'(x) = 0 해 분석": 1,
+          "함수 정의와 조건 정리": 1,
+          "g(x) - f(x)의 분할 정의": 1,
+          "구간별 h'(x) 계산": 2,
+          "h'(x)의 부호 변화와 극값 개수 분석": 1,
+          "각 구간에서 h'(x)의 부호 분석": 1,
+          "극값 개수를 하나로 만들기 위한 조건": 1,
+          "구간별 h'(x) = g(x) - f(x) 정리": 1,
+          "x < -1에서 h'(x)의 부호 분석": 1,
+          "x ≥ 1에서 h'(x) 분석": 1,
+          "h'(x)의 부호 변화 조건": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)=0로 변환": 1,
+          "구간별로 h'(x)=g(x)-f(x) 정리": 1,
+          "x<-1에서의 영점(부호변화) 분석": 1,
+          "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건": 1,
+          "a=1일 때 h(3) 계산": 1,
+          "극값 조건을 h'(x)=0으로 변환": 1,
+          "각 구간에서 h'의 부호와 0의 개수 분석": 1,
+          "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기": 1,
+          "a=k=4일 때 h(3) 계산": 2,
+          "k+h(3) 계산": 3,
+          "극값 조건을 도함수로 변환": 1,
+          "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산": 1,
+          "각 구간에서 ‘극값이 생기는 조건’ 분석": 1,
+          "\\(a=1\\)에서 \\(h(3)\\) 계산": 1,
+          "요구값 \\(k+h(3)\\)": 1,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 3,
+          "구간별 부호 분석": 1,
+          "오직 하나의 극값 조건": 2,
+          "h(3) 계산 (a = 4)": 2,
+          "최종 계산": 3,
+          "함수 분석 및 h'(x) 구하기": 1,
+          "h'(x) = g(x) - f(x) 계산": 1,
+          "각 구간에서 h'(x)의 부호 분석": 1,
+          "극값 조건 분석": 3,
+          "h(3) 계산 (a = k = 4)": 1,
+          "h'(x) 분석": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "x ≥ 1 구간에서 극값 분석": 1,
+          "x < -1 구간에서 극값 분석": 1,
+          "최댓값 k 결정": 1,
+          "1. 함수 $h(x)$의 미분 및 극값 조건 분석": 1,
+          "1. 함수 $h(x)$의 극값 조건 분석": 1,
+          "조건 정리 및 함수 분석": 1,
+          "h(x)의 극값 조건 분석": 1,
+          "g(x) = f(x)의 해 및 부호 변화 확인": 1,
+          "a=4일 때 h(3) 계산": 2,
+          "문제 분석 및 h(x) 극값 조건": 1,
+          "함수 분석 및 극값 조건": 1,
+          "h(3) 계산": 1,
+          "h'(x)의 식 작성": 1,
+          "각 구간에서 h'(x) 표현": 1,
+          "극값 후보 위치 분석": 1,
+          "극값 개수 조건": 1,
+          "정리: 극값 위치": 1,
+          "k=4일 때 h(3) 계산": 1,
+          "함수 f(x)와 g(x)의 정의 정리": 1,
+          "구간별 h'(x) 식 작성": 1,
+          "h'(x) 부호 변화 분석": 1,
+          "x ≥ 1 구간의 부호 변화": 1,
+          "x < -1 구간의 극점 가능성": 1,
+          "a의 최댓값 k": 1,
+          "a=k=4일 때 h(3) 구하기": 1,
+          "k + h(3) 계산": 1,
+          "h'(x)와 h''(x) 구하기": 1,
+          "각 구간에서 h'(x)=0 가능성": 1,
+          "h'(x) 부호 변화 검토": 1,
+          "x=a에서 부호 변화": 1,
+          "가능한 극점 위치 정리": 1,
+          "하나의 극값 조건 결정": 1,
+          "적분 계산": 1,
+          "f(x)와 g(x)의 구간별 정의 확인": 1,
+          "h'(x) = g(x) - f(x)의 구간별 표현": 1,
+          "h'(x) = 0 해 분석 및 극값 후보 점 검토": 1,
+          "기타 구간에서 극값 생기는지 확인": 1,
+          "함수 정의 및 h(x)의 의미 파악": 1,
+          "구간별로 h'(x) = g(x) - f(x) 계산": 1,
+          "h'(x)의 부호 변화 분석": 1,
+          "함수 정의와 h(x)의 도함수 파악": 1,
+          "h'(x)의 부호 변화와 극값 개수 분석": 1,
+          "구간별 h'(x) 분석": 1,
+          "h'(x)의 극값 개수 제어 조건": 1,
+          "x ≥ 1 구간에서의 h'(x) 분석": 1,
+          "x ≥ 1에서의 부호 변화": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 5.0,
+        "title_frequency_all_models": {
+          "극값 조건을 h'(x)로 변환": 1,
+          "구간별로 h'(x)=g(x)-f(x) 계산": 3,
+          "x<-1에서 극값이 생기지 않게 하는 조건": 1,
+          "x≥1에서 극값 개수 분석 및 k 결정": 1,
+          "a=1일 때 h(3) 계산": 1,
+          "k+h(3)": 1,
+          "극값 조건을 h'(x)=0으로 변환": 1,
+          "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검": 1,
+          "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정": 1,
+          "a=4일 때 h(3) 계산": 3,
+          "핵심 관찰(극값 조건)": 1,
+          "x<-1에서의 영점 조건(극값이 생기지 않게)": 1,
+          "x≥1에서 극값이 정확히 1개 생기도록 확인": 1,
+          "함수 분석 및 도함수 설정": 1,
+          "구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "구간별 부호 분석": 1,
+          "오직 하나의 극값 조건": 3,
+          "h(3) 계산": 3,
+          "최종 계산": 3,
+          "조건 정리": 4,
+          "h'(x) = g(x) - f(x) 분석": 1,
+          "구간별 극값 가능성 분석": 1,
+          "x < -1 구간에서 근의 조건": 1,
+          "h(3) 계산 (a = 4)": 2,
+          "구간별 h'(x) = g(x) - f(x) 분석": 1,
+          "x ≥ 1 구간에서 극값 분석": 1,
+          "x < -1 구간에서 극값 조건": 1,
+          "최댓값 k 결정": 1,
+          "함수 분석 및 미분가능성 확인": 1,
+          "함수 및 도함수의 분석": 1,
+          "함수 h(x)의 극값 조건 분석": 2,
+          "극값 조건 분석": 1,
+          "최종 값 계산": 1,
+          "함수 분석 및 극값 조건": 1,
+          "f와 g의 식 나열": 1,
+          "h'(x)의 구간별 표현": 1,
+          "h'(x)의 부호와 극값 개수 조건 분석": 1,
+          "구간①에서 h'(x)=0 가능성": 1,
+          "구간④에서 h'(x)=0 가능성": 1,
+          "두 근의 위치 분석": 1,
+          "h'(x)의 부호와 극값": 1,
+          "구간①의 h'(x)와 구간② 연결": 1,
+          "a의 범위에 따른 극값 개수": 1,
+          "a=k=4일 때 h(3) 계산": 1,
+          "구간별 g-f 계산 (a=4)": 1,
+          "적분 계산": 1,
+          "k + h(3) 계산": 1,
+          "함수와 적분식 정리": 1,
+          "h'(x)와 극값의 조건": 1,
+          "각 구간에서 h'(x)=0 가능성 판단": 1,
+          "다른 구간에서 h'(x)=0": 1,
+          "h'(x)=0인 점들과 부호변화(극점 판정)": 1,
+          "오직 하나의 극값 조건 정리": 1,
+          "k=4일 때 h(3) 계산": 1,
+          "k+h(3) 계산": 1,
+          "h(x)의 극값 조건 분석": 1,
+          "f(x)와 g(x)의 구간 분할": 1,
+          "각 구간별 h'(x) = g(x) - f(x) 계산": 1,
+          "부호 변화 가능성 있는 지점 분석": 1,
+          "x < -1에서의 해 분석": 1,
+          "x ≥ 1에서의 해 분석": 1,
+          "함수 정의 및 h(x)의 미분 분석": 1,
+          "구간별 f(x)와 g(x) 정리": 1,
+          "h'(x) = g(x) - f(x)의 구간별 정의": 2,
+          "h'(x)의 부호 변화 분석 및 극값 개수 조건": 1,
+          "각 구간에서 h'(x)의 조사": 1,
+          "h'(x)의 전체 부호 변화 분석": 1,
+          "함수 정의와 조건 파악": 1,
+          "h(x)의 도함수 분석": 1,
+          "h'(x)의 부호 변화와 극값 개수": 1,
+          "구간별 h'(x) 분석": 1,
+          "x ≥ 1에서 h'(x)의 부호 변화": 1,
+          "기타 구간의 극값 가능성 조사": 1,
+          "기존 극값 외 추가 극값 없는지 확인": 1
+        },
+        "accuracy_all_models": 0.2777777777777778,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.805555555555555,
+      "title_frequency": {
+        "극값 조건을 h'(x)로 바꾸기": 4,
+        "구간별로 h'(x)=g(x)-f(x) 정리": 3,
+        "x<-1에서의 영점(극값 후보) 개수 분석": 1,
+        "a=4일 때 h(3) 계산": 11,
+        "k+h(3)": 4,
+        "x<-1에서의 영점(교점) 개수 분석": 1,
+        "x≥1에서 극값이 1개가 되도록 하는 a의 최댓값 찾기": 1,
+        "극값 조건을 h'(x)로 변환": 2,
+        "각 구간에서 h'(x)=0 해와 부호 변화 분석": 1,
+        "조건 정리": 17,
+        "h'(x) = g(x) - f(x) 분석": 10,
+        "구간별 부호 분석": 6,
+        "극값 조건 분석": 6,
+        "h(3) 계산": 5,
+        "최종 계산": 8,
+        "x ≥ 1 구간 분석": 1,
+        "x < -1 구간 분석": 2,
+        "최댓값 k 결정": 3,
+        "h(3) 계산 (a = 4)": 5,
+        "최댓값 k 결정 및 h(3) 계산": 4,
+        "조건 정리 및 함수 분석": 5,
+        "함수 h(x)의 극값 분석을 위한 h'(x) 정의": 1,
+        "h'(x) = 0인 점 찾기와 부호 변화 분석": 1,
+        "정확히 하나의 극값을 갖는 a의 범위 결정": 1,
+        "a = 4일 때 h(3) 계산": 5,
+        "함수 h(x)의 극값 조건 분석": 3,
+        "함수 분석 및 h'(x)=0 찾기": 1,
+        "h' 부호 분석 및 극값 개수": 1,
+        "문제 이해 및 함수 정의 정리": 1,
+        "h'(x) 구간별 표현": 1,
+        "h'(x) 부호 변화 분석 (극값 개수 조건)": 1,
+        "전체 극값 개수 시나리오": 1,
+        "a=k=4일 때 h(3) 계산": 6,
+        "k + h(3) 계산": 6,
+        "함수 정리 및 h'(x) 표현": 2,
+        "h'(x)=0인 점 찾기": 1,
+        "극값 개수에 따른 a의 범위 분석": 1,
+        "k 결정 및 h(3) 계산": 1,
+        "최종 답 계산": 1,
+        "h'(x)와 극값 조건 분석": 1,
+        "g(x)-f(x)의 식 정리": 1,
+        "h'(x)=0의 실근 개수 조건": 1,
+        "근의 분포와 극값 개수": 1,
+        "h'(x)의 부호 변화 검토": 1,
+        "극값 개수 정리": 1,
+        "a의 범위 결정": 1,
+        "k+h(3) 계산": 6,
+        "도함수 분석: \\( h'(x) = g(x) - f(x) \\)": 1,
+        "구간별 \\( g(x) - f(x) \\) 정의": 1,
+        "각 구간에서 \\( h'(x) = 0 \\) 해 분석": 1,
+        "전체에서 \\( h'(x) = 0 \\) 해 개수 분석": 1,
+        "부호 변화 분석 및 극값 조건": 1,
+        "함수 정의 및 h(x)의 의미 파악": 2,
+        "구간별 h'(x) 계산": 3,
+        "h'(x)의 부호 변화 분석": 4,
+        "구간별 h'(x) 부호 및 제로점 조사": 1,
+        "전체 h'(x)의 부호 흐름 분석": 1,
+        "함수 정의 및 h(x)의 도함수 분석": 1,
+        "구간별 함수 정의 정리": 1,
+        "h'(x)의 부호 변화 분석 및 극값 조건": 1,
+        "구간별 h'(x) 분석": 3,
+        "다른 구간에서의 극값 가능성 검토": 1,
+        "구간별로 h'(x)=g(x)-f(x) 계산": 4,
+        "극값이 하나만 되려면: 부호변화 개수 세기": 1,
+        "x<-1 구간 재검토: 실제로는 근이 x<-1에 2개 생길 수 있음": 1,
+        "핵심 관찰(극값 ↔ 도함수의 부호변화)": 1,
+        "구간별로 \\(h'(x)=g(x)-f(x)\\) 정리": 1,
+        "극값이 생길 수 있는 지점 후보 분석": 1,
+        "‘오직 하나의 극값’ 조건으로 \\(a\\) 범위 결정": 1,
+        " \\(a=k=4\\)일 때 \\(h(3)\\) 계산": 1,
+        "항상 생기는 극값(0에서) 확인": 1,
+        "x<-1 구간에서 극값이 생기지 않게 하기": 1,
+        "x≥1 구간에서 ‘딱 한 번’만 부호가 바뀌게 하기": 1,
+        "a=k=1일 때 h(3) 계산": 1,
+        "x < -1에서 근이 없을 조건": 1,
+        "조건 정리 및 h'(x) 분석": 1,
+        "구간별 h'(x) = g(x) - f(x) 계산": 3,
+        "x < -1 구간 분석 및 조건 도출": 1,
+        "h'(x) 분석": 2,
+        "각 구간에서 부호 분석": 1,
+        "극값 조건 종합": 1,
+        "함수 $h(x)$의 도함수와 극값 조건 분석": 1,
+        "함수 정의 및 도함수 분석": 1,
+        "함수 p(t) 정의 및 극값 조건 분석": 1,
+        "함수 h(x)의 극값 분석": 1,
+        "h(x)의 극값 조건 분석": 6,
+        "h'(x)=0인 점 및 부호 변화 분석": 1,
+        "극값이 하나가 되는 조건과 k의 값": 1,
+        "a=k일 때 h(3) 계산": 1,
+        "h'(x) 식 정리": 1,
+        "h'(x)=0의 해 찾기": 1,
+        "극값 조건 해석": 1,
+        "오직 하나의 극값 조건": 6,
+        "함수 f(x)와 g(x) 정리": 1,
+        "h'(x) = g(x) - f(x)의 구간별 표현": 2,
+        "h'(x) = 0인 점 찾기": 1,
+        "h(x)가 오직 하나의 극값을 갖는 조건": 1,
+        "x=0과 x=1에서의 h'(x) 부호 변화 확인": 1,
+        "x< -1에서 근이 극값이 되려면": 1,
+        "극값의 개수 정리": 1,
+        "오직 하나의 극값을 갖는 a의 범위": 1,
+        "적분 계산": 3,
+        "함수 정의와 h(x)의 구성 이해": 1,
+        "각 구간에서 h'(x) = 0 해 분석": 1,
+        "함수 정의와 조건 정리": 1,
+        "g(x) - f(x)의 분할 정의": 1,
+        "h'(x)의 부호 변화와 극값 개수 분석": 2,
+        "각 구간에서 h'(x)의 부호 분석": 2,
+        "극값 개수를 하나로 만들기 위한 조건": 1,
+        "구간별 h'(x) = g(x) - f(x) 정리": 1,
+        "x < -1에서 h'(x)의 부호 분석": 1,
+        "x ≥ 1에서 h'(x) 분석": 1,
+        "h'(x)의 부호 변화 조건": 1,
+        "극값 조건을 h'(x)=0로 변환": 1,
+        "x<-1에서의 영점(부호변화) 분석": 1,
+        "x\\ge 1에서의 영점(부호변화) 분석 및 ‘오직 하나’ 조건": 1,
+        "a=1일 때 h(3) 계산": 2,
+        "극값 조건을 h'(x)=0으로 변환": 2,
+        "각 구간에서 h'의 부호와 0의 개수 분석": 1,
+        "극값이 ‘오직 하나’가 되게 하는 a의 최댓값 k 찾기": 1,
+        "극값 조건을 도함수로 변환": 1,
+        "구간별로 \\(h'(x)=g(x)-f(x)\\) 계산": 1,
+        "각 구간에서 ‘극값이 생기는 조건’ 분석": 1,
+        "\\(a=1\\)에서 \\(h(3)\\) 계산": 1,
+        "요구값 \\(k+h(3)\\)": 1,
+        "함수 분석 및 h'(x) 구하기": 1,
+        "h'(x) = g(x) - f(x) 계산": 1,
+        "h(3) 계산 (a = k = 4)": 1,
+        "x ≥ 1 구간에서 극값 분석": 2,
+        "x < -1 구간에서 극값 분석": 1,
+        "1. 함수 $h(x)$의 미분 및 극값 조건 분석": 1,
+        "1. 함수 $h(x)$의 극값 조건 분석": 1,
+        "g(x) = f(x)의 해 및 부호 변화 확인": 1,
+        "문제 분석 및 h(x) 극값 조건": 1,
+        "함수 분석 및 극값 조건": 2,
+        "h'(x)의 식 작성": 1,
+        "각 구간에서 h'(x) 표현": 1,
+        "극값 후보 위치 분석": 1,
+        "극값 개수 조건": 1,
+        "정리: 극값 위치": 1,
+        "k=4일 때 h(3) 계산": 2,
+        "함수 f(x)와 g(x)의 정의 정리": 1,
+        "구간별 h'(x) 식 작성": 1,
+        "h'(x) 부호 변화 분석": 1,
+        "x ≥ 1 구간의 부호 변화": 1,
+        "x < -1 구간의 극점 가능성": 1,
+        "a의 최댓값 k": 1,
+        "a=k=4일 때 h(3) 구하기": 1,
+        "h'(x)와 h''(x) 구하기": 1,
+        "각 구간에서 h'(x)=0 가능성": 1,
+        "h'(x) 부호 변화 검토": 1,
+        "x=a에서 부호 변화": 1,
+        "가능한 극점 위치 정리": 1,
+        "하나의 극값 조건 결정": 1,
+        "f(x)와 g(x)의 구간별 정의 확인": 1,
+        "h'(x) = 0 해 분석 및 극값 후보 점 검토": 1,
+        "기타 구간에서 극값 생기는지 확인": 1,
+        "구간별로 h'(x) = g(x) - f(x) 계산": 1,
+        "함수 정의와 h(x)의 도함수 파악": 1,
+        "h'(x)의 극값 개수 제어 조건": 1,
+        "x ≥ 1 구간에서의 h'(x) 분석": 1,
+        "x ≥ 1에서의 부호 변화": 1,
+        "x<-1에서 극값이 생기지 않게 하는 조건": 1,
+        "x≥1에서 극값 개수 분석 및 k 결정": 1,
+        "x=-1, 1에서의 부호 변화(불연속에 의한 극값) 점검": 1,
+        "x≥1에서 추가 극값 개수 조건으로 a의 최댓값 결정": 1,
+        "핵심 관찰(극값 조건)": 1,
+        "x<-1에서의 영점 조건(극값이 생기지 않게)": 1,
+        "x≥1에서 극값이 정확히 1개 생기도록 확인": 1,
+        "함수 분석 및 도함수 설정": 1,
+        "구간별 극값 가능성 분석": 1,
+        "x < -1 구간에서 근의 조건": 1,
+        "구간별 h'(x) = g(x) - f(x) 분석": 1,
+        "x < -1 구간에서 극값 조건": 1,
+        "함수 분석 및 미분가능성 확인": 1,
+        "함수 및 도함수의 분석": 1,
+        "최종 값 계산": 1,
+        "f와 g의 식 나열": 1,
+        "h'(x)의 구간별 표현": 1,
+        "h'(x)의 부호와 극값 개수 조건 분석": 1,
+        "구간①에서 h'(x)=0 가능성": 1,
+        "구간④에서 h'(x)=0 가능성": 1,
+        "두 근의 위치 분석": 1,
+        "h'(x)의 부호와 극값": 1,
+        "구간①의 h'(x)와 구간② 연결": 1,
+        "a의 범위에 따른 극값 개수": 1,
+        "구간별 g-f 계산 (a=4)": 1,
+        "함수와 적분식 정리": 1,
+        "h'(x)와 극값의 조건": 1,
+        "각 구간에서 h'(x)=0 가능성 판단": 1,
+        "다른 구간에서 h'(x)=0": 1,
+        "h'(x)=0인 점들과 부호변화(극점 판정)": 1,
+        "오직 하나의 극값 조건 정리": 1,
+        "f(x)와 g(x)의 구간 분할": 1,
+        "각 구간별 h'(x) = g(x) - f(x) 계산": 1,
+        "부호 변화 가능성 있는 지점 분석": 1,
+        "x < -1에서의 해 분석": 1,
+        "x ≥ 1에서의 해 분석": 1,
+        "함수 정의 및 h(x)의 미분 분석": 1,
+        "구간별 f(x)와 g(x) 정리": 1,
+        "h'(x) = g(x) - f(x)의 구간별 정의": 2,
+        "h'(x)의 부호 변화 분석 및 극값 개수 조건": 1,
+        "각 구간에서 h'(x)의 조사": 1,
+        "h'(x)의 전체 부호 변화 분석": 1,
+        "함수 정의와 조건 파악": 1,
+        "h(x)의 도함수 분석": 1,
+        "h'(x)의 부호 변화와 극값 개수": 1,
+        "x ≥ 1에서 h'(x)의 부호 변화": 1,
+        "기타 구간의 극값 가능성 조사": 1,
+        "기존 극값 외 추가 극값 없는지 확인": 1
+      },
+      "accuracy": 0.18055555555555555,
+      "n_samples": 72
+    }
+  }
+}

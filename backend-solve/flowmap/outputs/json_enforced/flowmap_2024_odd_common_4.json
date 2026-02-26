@@ -1,0 +1,114 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "연속 조건 확인 및 경계점 설정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "연속 조건 확인 지점 설정",
+          "content": "주어진 함수는 x<2와 x≥2에서 식이 다르므로, 연속성이 문제 되는 지점은 경계인 x=2이다. 따라서 x=2에서 좌극한값과 함수값(우측식 대입값)이 같아야 한다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "연속 조건 파악",
+          "content": "함수 f(x)가 실수 전체에서 연속이려면, 조각함수의 경계점 x=2에서 연속이어야 합니다.\n\n연속 조건: lim(x→2⁻) f(x) = lim(x→2⁺) f(x) = f(2)"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "함수의 연속 조건 확인",
+          "content": "함수 $f(x)$가 실수 전체의 집합에서 연속이려면, 다항함수의 성질에 의해 식이 바뀌는 경계점인 $x=2$에서 연속이어야 합니다. 즉, $x=2$에서의 좌극한값과 우극한값(함숫값)이 서로 같아야 합니다."
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "좌극한과 우극한 계산",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "좌극한, 우극한, 함숫값 계산",
+          "content": "• 좌극한: lim(x→2⁻) f(x) = lim(x→2⁻) (3x - a) = 3(2) - a = 6 - a\n\n• 우극한 및 함숫값: lim(x→2⁺) f(x) = f(2) = 2² + a = 4 + a"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "좌극한과 우극한 계산",
+          "content": "$x=2$에서의 좌극한은 $x < 2$일 때의 함수인 $3x - a$를 이용하고, 우극한은 $x \\ge 2$일 때의 함수인 $x^2 + a$를 이용합니다.\n\n$$ \\lim_{x \\to 2-} (3x - a) = 3(2) - a = 6 - a $$\n$$ \\lim_{x \\to 2+} (x^2 + a) = 2^2 + a = 4 + a $$"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "연속 조건으로 a 값 결정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "x=2에서 좌우값 같게 두기",
+          "content": "좌측( x<2 )에서의 값: \\(\\lim_{x\\to 2^-} f(x)=3\\cdot 2-a=6-a\\).\n우측( x≥2 )에서의 함수값: \\(f(2)=2^2+a=4+a\\).\n연속 조건 \\(6-a=4+a\\) 를 풀면 \\(2=2a\\) 이므로 \\(a=1\\). 따라서 정답은 ① 1."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "연속 조건으로 a 값 결정",
+          "content": "연속 조건에서 좌극한 = 우극한이므로:\n\n6 - a = 4 + a\n\n6 - 4 = a + a\n\n2 = 2a\n\na = 1"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "방정식 풀이 및 정답 도출",
+          "content": "연속 조건에 의해 좌극한과 우극한이 같아야 하므로 식을 세우고 $a$를 구합니다.\n$$ 6 - a = 4 + a $$\n$$ 2a = 2 $$\n$$ \\therefore a = 1 $$\n\n따라서 정답은 ①번입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "정답 확인",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "정답 확인",
+          "content": "a = 1\n\n정답: ① 1"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    }
+  ]
+}

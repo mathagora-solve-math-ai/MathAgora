@@ -1,0 +1,2918 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-12T23:35:48Z",
+    "ended_at_utc": "2026-02-12T23:48:20Z",
+    "elapsed_seconds": 752.045,
+    "problem_tag": "2026_odd_common_16",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_common_16",
+    "label": "2026_odd_common_16 (수학1, 3점)",
+    "gold_answer": "9"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.0098226070404053,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.7397758960723877,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.5820472240448,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.0098226070404053,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.7397758960723877,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.5820472240448,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "점화식에 n=1 대입해 a₂ 구하기": 3,
+            "점화식에 n=2 대입해 a₃ 구하기": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식에 n=1 대입해 a₂ 구하기": 3,
+            "점화식에 n=2 대입해 a₃ 구하기": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.9469780921936035,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.111182928085327,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.449037551879883,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.9469780921936035,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.111182928085327,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.449037551879883,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점화식 확인": 3,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식 확인": 3,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.7167911529541,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "$a_2$의 값 구하기",
+                "$a_3$의 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.521342039108276,
+              "step_count": 2,
+              "step_titles": [
+                "n=1일 때 a₂ 계산",
+                "n=2일 때 a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.21238112449646,
+              "step_count": 2,
+              "step_titles": [
+                "$a_2$ 값 구하기",
+                "$a_3$ 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.7167911529541,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "$a_2$의 값 구하기",
+                "$a_3$의 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.521342039108276,
+              "step_count": 2,
+              "step_titles": [
+                "n=1일 때 a₂ 계산",
+                "n=2일 때 a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.21238112449646,
+              "step_count": 2,
+              "step_titles": [
+                "$a_2$ 값 구하기",
+                "$a_3$ 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 1,
+            "$a_2$의 값 구하기": 1,
+            "$a_3$의 값 구하기": 1,
+            "n=1일 때 a₂ 계산": 1,
+            "n=2일 때 a₃ 계산": 1,
+            "$a_2$ 값 구하기": 1,
+            "$a_3$ 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "$a_2$의 값 구하기": 1,
+            "$a_3$의 값 구하기": 1,
+            "n=1일 때 a₂ 계산": 1,
+            "n=2일 때 a₃ 계산": 1,
+            "$a_2$ 값 구하기": 1,
+            "$a_3$ 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.81792378425598,
+              "step_count": 3,
+              "step_titles": [
+                "초기값 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.24713444709778,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.732118606567383,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.81792378425598,
+              "step_count": 3,
+              "step_titles": [
+                "초기값 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.24713444709778,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.732118606567383,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "초기값 확인": 1,
+            "a_2 계산": 3,
+            "a_3 계산": 3,
+            "초기 조건 확인": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "초기값 확인": 1,
+            "a_2 계산": 3,
+            "a_3 계산": 3,
+            "초기 조건 확인": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.503279447555542,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.214020013809204,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.41451096534729,
+              "step_count": 2,
+              "step_titles": [
+                "초항과 점화식 이용",
+                "n=2 대입하여 a_3 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.503279447555542,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.214020013809204,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.41451096534729,
+              "step_count": 2,
+              "step_titles": [
+                "초항과 점화식 이용",
+                "n=2 대입하여 a_3 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1,
+            "초항과 점화식 이용": 1,
+            "n=2 대입하여 a_3 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1,
+            "초항과 점화식 이용": 1,
+            "n=2 대입하여 a_3 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.321433544158936,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.1417016983032227,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식 적용하여 $a_2$ 계산",
+                "점화식 적용하여 $a_3$ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.5220425128936768,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.321433544158936,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.1417016983032227,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식 적용하여 $a_2$ 계산",
+                "점화식 적용하여 $a_3$ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.5220425128936768,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "점화식 적용하여 $a_2$ 계산": 1,
+            "점화식 적용하여 $a_3$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "점화식 적용하여 $a_2$ 계산": 1,
+            "점화식 적용하여 $a_3$ 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 3,
+          "점화식에 n=2 대입해 a₃ 구하기": 3,
+          "점화식 확인": 3,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "조건 정리": 4,
+          "$a_2$의 값 구하기": 1,
+          "$a_3$의 값 구하기": 1,
+          "n=1일 때 a₂ 계산": 1,
+          "n=2일 때 a₃ 계산": 1,
+          "$a_2$ 값 구하기": 1,
+          "$a_3$ 값 구하기": 1,
+          "초기값 확인": 1,
+          "a_2 계산": 4,
+          "a_3 계산": 4,
+          "초기 조건 확인": 2,
+          "초항과 점화식 이용": 1,
+          "n=2 대입하여 a_3 계산": 1,
+          "점화식 적용하여 $a_2$ 계산": 1,
+          "점화식 적용하여 $a_3$ 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.3108983039855957,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.044828176498413,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.060650587081909,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.3108983039855957,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.044828176498413,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.060650587081909,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1,
+            "점화식에 n=1 대입하여 a₂ 구하기": 2,
+            "점화식에 n=2 대입하여 a₃ 구하기": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1,
+            "점화식에 n=1 대입하여 a₂ 구하기": 2,
+            "점화식에 n=2 대입하여 a₃ 구하기": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.0607829093933105,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.265676498413086,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.5409018993377686,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.0607829093933105,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.265676498413086,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.5409018993377686,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점화식 확인": 1,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3,
+            "점화식 이해": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식 확인": 1,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3,
+            "점화식 이해": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.834916591644287,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인",
+                "$a_2$ 구하기",
+                "$a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.402907371520996,
+              "step_count": 2,
+              "step_titles": [
+                "$a_2$ 구하기",
+                "$a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.077566146850586,
+              "step_count": 2,
+              "step_titles": [
+                "n=1을 대입하여 a₂ 구하기",
+                "n=2를 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.834916591644287,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인",
+                "$a_2$ 구하기",
+                "$a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.402907371520996,
+              "step_count": 2,
+              "step_titles": [
+                "$a_2$ 구하기",
+                "$a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.077566146850586,
+              "step_count": 2,
+              "step_titles": [
+                "n=1을 대입하여 a₂ 구하기",
+                "n=2를 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 확인": 1,
+            "$a_2$ 구하기": 2,
+            "$a_3$ 구하기": 2,
+            "n=1을 대입하여 a₂ 구하기": 1,
+            "n=2를 대입하여 a₃ 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 확인": 1,
+            "$a_2$ 구하기": 2,
+            "$a_3$ 구하기": 2,
+            "n=1을 대입하여 a₂ 구하기": 1,
+            "n=2를 대입하여 a₃ 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.514874935150146,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.402909517288208,
+              "step_count": 2,
+              "step_titles": [
+                "초기 조건 및 a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.217058181762695,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.514874935150146,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.402909517288208,
+              "step_count": 2,
+              "step_titles": [
+                "초기 조건 및 a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.217058181762695,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "초기 조건 확인": 2,
+            "a_2 계산": 2,
+            "a_3 계산": 3,
+            "초기 조건 및 a_2 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "초기 조건 확인": 2,
+            "a_2 계산": 2,
+            "a_3 계산": 3,
+            "초기 조건 및 a_2 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.533317804336548,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "n=1 대입하여 a₂ 구하기",
+                "n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.886841297149658,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.015544176101685,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "\\(a_2\\) 계산",
+                "\\(a_3\\) 계산"
+              ],
+              "final_answer": "\\[\na_3 = 9\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.533317804336548,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "n=1 대입하여 a₂ 구하기",
+                "n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.886841297149658,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.015544176101685,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "\\(a_2\\) 계산",
+                "\\(a_3\\) 계산"
+              ],
+              "final_answer": "\\[\na_3 = 9\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 2,
+            "n=1 대입하여 a₂ 구하기": 1,
+            "n=2 대입하여 a₃ 구하기": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1,
+            "\\(a_2\\) 계산": 1,
+            "\\(a_3\\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "n=1 대입하여 a₂ 구하기": 1,
+            "n=2 대입하여 a₃ 구하기": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1,
+            "\\(a_2\\) 계산": 1,
+            "\\(a_3\\) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.591038942337036,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식 적용 (n=1)",
+                "점화식 적용 (n=2)"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.457316875457764,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.077894926071167,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.591038942337036,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식 적용 (n=1)",
+                "점화식 적용 (n=2)"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.457316875457764,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.077894926071167,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "점화식 적용 (n=1)": 1,
+            "점화식 적용 (n=2)": 1,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "점화식 적용 (n=1)": 1,
+            "점화식 적용 (n=2)": 1,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.611111111111111,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식에 n=1 대입하여 a₂ 구하기": 2,
+          "점화식에 n=2 대입하여 a₃ 구하기": 2,
+          "점화식 확인": 1,
+          "a₂ 계산": 5,
+          "a₃ 계산": 5,
+          "점화식 이해": 2,
+          "조건 확인": 1,
+          "$a_2$ 구하기": 2,
+          "$a_3$ 구하기": 2,
+          "n=1을 대입하여 a₂ 구하기": 1,
+          "n=2를 대입하여 a₃ 구하기": 1,
+          "초기 조건 확인": 2,
+          "a_2 계산": 3,
+          "a_3 계산": 4,
+          "초기 조건 및 a_2 계산": 1,
+          "조건 정리": 5,
+          "n=1 대입하여 a₂ 구하기": 1,
+          "n=2 대입하여 a₃ 구하기": 1,
+          "\\(a_2\\) 계산": 1,
+          "\\(a_3\\) 계산": 1,
+          "점화식 적용 (n=1)": 1,
+          "점화식 적용 (n=2)": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.7071828842163086,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.660177230834961,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.3933746814727783,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.7071828842163086,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.660177230834961,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.3933746814727783,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "점화식에 n=1 대입하여 a₂ 구하기": 2,
+            "점화식에 n=2 대입하여 a₃ 구하기": 2,
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식에 n=1 대입하여 a₂ 구하기": 2,
+            "점화식에 n=2 대입하여 a₃ 구하기": 2,
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.04267144203186,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.4024817943573,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "$a_2$ 계산",
+                "$a_3$ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.327625274658203,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.04267144203186,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.4024817943573,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "$a_2$ 계산",
+                "$a_3$ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.327625274658203,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 이해",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점화식 확인": 2,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "$a_2$ 계산": 1,
+            "$a_3$ 계산": 1,
+            "점화식 이해": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식 확인": 2,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "$a_2$ 계산": 1,
+            "$a_3$ 계산": 1,
+            "점화식 이해": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.640889406204224,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 구하기",
+                "a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.099371433258057,
+              "step_count": 2,
+              "step_titles": [
+                "n=1일 때 a₂ 구하기",
+                "n=2일 때 a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.289335012435913,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.640889406204224,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 구하기",
+                "a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.099371433258057,
+              "step_count": 2,
+              "step_titles": [
+                "n=1일 때 a₂ 구하기",
+                "n=2일 때 a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.289335012435913,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "a₂ 구하기": 1,
+            "a₃ 구하기": 1,
+            "n=1일 때 a₂ 구하기": 1,
+            "n=2일 때 a₃ 구하기": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "a₂ 구하기": 1,
+            "a₃ 구하기": 1,
+            "n=1일 때 a₂ 구하기": 1,
+            "n=2일 때 a₃ 구하기": 1,
+            "a_2 계산": 1,
+            "a_3 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.2452335357666,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 및 점화식 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.74560809135437,
+              "step_count": 3,
+              "step_titles": [
+                "초기값 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.946359872817993,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.2452335357666,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 및 점화식 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.74560809135437,
+              "step_count": 3,
+              "step_titles": [
+                "초기값 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.946359872817993,
+              "step_count": 2,
+              "step_titles": [
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "초기 조건 및 점화식 확인": 1,
+            "a_2 계산": 3,
+            "a_3 계산": 3,
+            "초기값 확인": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "초기 조건 및 점화식 확인": 1,
+            "a_2 계산": 3,
+            "a_3 계산": 3,
+            "초기값 확인": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.291200399398804,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "\\[\na_3 = 9\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.239898204803467,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 구하기",
+                "a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.56498384475708,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "n=1 대입",
+                "n=2 대입"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.291200399398804,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "\\[\na_3 = 9\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.239898204803467,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 구하기",
+                "a₃ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.56498384475708,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "n=1 대입",
+                "n=2 대입"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 2,
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "a₂ 구하기": 1,
+            "a₃ 구하기": 1,
+            "n=1 대입": 1,
+            "n=2 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "a₂ 구하기": 1,
+            "a₃ 구하기": 1,
+            "n=1 대입": 1,
+            "n=2 대입": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.687838077545166,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.014967918395996,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.9538915157318115,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.687838077545166,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.014967918395996,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.9538915157318115,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입하여 a₂ 구하기": 2,
+          "점화식에 n=2 대입하여 a₃ 구하기": 2,
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식 확인": 2,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "$a_2$ 계산": 1,
+          "$a_3$ 계산": 1,
+          "점화식 이해": 1,
+          "a₂ 구하기": 2,
+          "a₃ 구하기": 2,
+          "n=1일 때 a₂ 구하기": 1,
+          "n=2일 때 a₃ 구하기": 1,
+          "a_2 계산": 4,
+          "a_3 계산": 4,
+          "초기 조건 및 점화식 확인": 1,
+          "초기값 확인": 1,
+          "조건 정리": 5,
+          "n=1 대입": 1,
+          "n=2 대입": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.751272439956665,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.7433371543884277,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.468964099884033,
+              "step_count": 3,
+              "step_titles": [
+                "초기값과 점화식 정리",
+                "a2 계산 (n=1 대입)",
+                "a3 계산 (n=2 대입)"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.751272439956665,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입해 a₂ 구하기",
+                "점화식에 n=2 대입해 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.7433371543884277,
+              "step_count": 2,
+              "step_titles": [
+                "점화식에 n=1 대입하여 a₂ 구하기",
+                "점화식에 n=2 대입하여 a₃ 구하기"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.468964099884033,
+              "step_count": 3,
+              "step_titles": [
+                "초기값과 점화식 정리",
+                "a2 계산 (n=1 대입)",
+                "a3 계산 (n=2 대입)"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1,
+            "점화식에 n=1 대입하여 a₂ 구하기": 1,
+            "점화식에 n=2 대입하여 a₃ 구하기": 1,
+            "초기값과 점화식 정리": 1,
+            "a2 계산 (n=1 대입)": 1,
+            "a3 계산 (n=2 대입)": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식에 n=1 대입해 a₂ 구하기": 1,
+            "점화식에 n=2 대입해 a₃ 구하기": 1,
+            "점화식에 n=1 대입하여 a₂ 구하기": 1,
+            "점화식에 n=2 대입하여 a₃ 구하기": 1,
+            "초기값과 점화식 정리": 1,
+            "a2 계산 (n=1 대입)": 1,
+            "a3 계산 (n=2 대입)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.285228490829468,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.989587306976318,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "$a_2$ 계산",
+                "$a_3$ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.823416471481323,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.285228490829468,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$$a_3 = 9$$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.989587306976318,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "$a_2$ 계산",
+                "$a_3$ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.823416471481323,
+              "step_count": 3,
+              "step_titles": [
+                "점화식 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "$9$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점화식 확인": 3,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "$a_2$ 계산": 1,
+            "$a_3$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점화식 확인": 3,
+            "a₂ 계산": 2,
+            "a₃ 계산": 2,
+            "$a_2$ 계산": 1,
+            "$a_3$ 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.646228075027466,
+              "step_count": 2,
+              "step_titles": [
+                "$n=1$ 대입하여 $a_2$ 구하기",
+                "$n=2$ 대입하여 $a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.736255168914795,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인",
+                "n=1 대입하여 a₂ 계산",
+                "n=2 대입하여 a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.721607685089111,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 값 구하기",
+                "a₃ 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.646228075027466,
+              "step_count": 2,
+              "step_titles": [
+                "$n=1$ 대입하여 $a_2$ 구하기",
+                "$n=2$ 대입하여 $a_3$ 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.736255168914795,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인",
+                "n=1 대입하여 a₂ 계산",
+                "n=2 대입하여 a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.721607685089111,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 값 구하기",
+                "a₃ 값 구하기"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "$n=1$ 대입하여 $a_2$ 구하기": 1,
+            "$n=2$ 대입하여 $a_3$ 구하기": 1,
+            "조건 확인": 1,
+            "n=1 대입하여 a₂ 계산": 1,
+            "n=2 대입하여 a₃ 계산": 1,
+            "a₂ 값 구하기": 1,
+            "a₃ 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "$n=1$ 대입하여 $a_2$ 구하기": 1,
+            "$n=2$ 대입하여 $a_3$ 구하기": 1,
+            "조건 확인": 1,
+            "n=1 대입하여 a₂ 계산": 1,
+            "n=2 대입하여 a₃ 계산": 1,
+            "a₂ 값 구하기": 1,
+            "a₃ 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.390678882598877,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.100530624389648,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.543900489807129,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.390678882598877,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.100530624389648,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.543900489807129,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a_2 계산",
+                "a_3 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "초기 조건 확인": 3,
+            "a_2 계산": 3,
+            "a_3 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "초기 조건 확인": 3,
+            "a_2 계산": 3,
+            "a_3 계산": 3
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.090129852294922,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식의 적용",
+                "a_3 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.103037118911743,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.913261413574219,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "\\(a_2\\) 계산",
+                "\\(a_3\\) 계산"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.090129852294922,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점화식의 적용",
+                "a_3 계산"
+              ],
+              "final_answer": "\\( a_3 = 9 \\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.103037118911743,
+              "step_count": 2,
+              "step_titles": [
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.913261413574219,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "\\(a_2\\) 계산",
+                "\\(a_3\\) 계산"
+              ],
+              "final_answer": "\\(a_3 = 9\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 1,
+            "점화식의 적용": 1,
+            "a_3 계산": 1,
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "주어진 조건 정리": 1,
+            "\\(a_2\\) 계산": 1,
+            "\\(a_3\\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "점화식의 적용": 1,
+            "a_3 계산": 1,
+            "a₂ 계산": 1,
+            "a₃ 계산": 1,
+            "주어진 조건 정리": 1,
+            "\\(a_2\\) 계산": 1,
+            "\\(a_3\\) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4654412269592285,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.685916900634766,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.730430126190186,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4654412269592285,
+              "step_count": 3,
+              "step_titles": [
+                "초기 조건 확인",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.685916900634766,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.730430126190186,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a₂ 계산",
+                "a₃ 계산"
+              ],
+              "final_answer": "9",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "초기 조건 확인": 1,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3,
+            "조건 정리": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "초기 조건 확인": 1,
+            "a₂ 계산": 3,
+            "a₃ 계산": 3,
+            "조건 정리": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식에 n=1 대입하여 a₂ 구하기": 1,
+          "점화식에 n=2 대입하여 a₃ 구하기": 1,
+          "초기값과 점화식 정리": 1,
+          "a2 계산 (n=1 대입)": 1,
+          "a3 계산 (n=2 대입)": 1,
+          "점화식 확인": 3,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "$a_2$ 계산": 1,
+          "$a_3$ 계산": 1,
+          "$n=1$ 대입하여 $a_2$ 구하기": 1,
+          "$n=2$ 대입하여 $a_3$ 구하기": 1,
+          "조건 확인": 1,
+          "n=1 대입하여 a₂ 계산": 1,
+          "n=2 대입하여 a₃ 계산": 1,
+          "a₂ 값 구하기": 1,
+          "a₃ 값 구하기": 1,
+          "초기 조건 확인": 4,
+          "a_2 계산": 3,
+          "a_3 계산": 4,
+          "조건 정리": 3,
+          "점화식의 적용": 1,
+          "주어진 조건 정리": 1,
+          "\\(a_2\\) 계산": 1,
+          "\\(a_3\\) 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 3,
+          "점화식에 n=2 대입해 a₃ 구하기": 3,
+          "점화식 확인": 3,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "조건 정리": 4,
+          "$a_2$의 값 구하기": 1,
+          "$a_3$의 값 구하기": 1,
+          "n=1일 때 a₂ 계산": 1,
+          "n=2일 때 a₃ 계산": 1,
+          "$a_2$ 값 구하기": 1,
+          "$a_3$ 값 구하기": 1,
+          "초기값 확인": 1,
+          "a_2 계산": 4,
+          "a_3 계산": 4,
+          "초기 조건 확인": 2,
+          "초항과 점화식 이용": 1,
+          "n=2 대입하여 a_3 계산": 1,
+          "점화식 적용하여 $a_2$ 계산": 1,
+          "점화식 적용하여 $a_3$ 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.611111111111111,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식에 n=1 대입하여 a₂ 구하기": 2,
+          "점화식에 n=2 대입하여 a₃ 구하기": 2,
+          "점화식 확인": 1,
+          "a₂ 계산": 5,
+          "a₃ 계산": 5,
+          "점화식 이해": 2,
+          "조건 확인": 1,
+          "$a_2$ 구하기": 2,
+          "$a_3$ 구하기": 2,
+          "n=1을 대입하여 a₂ 구하기": 1,
+          "n=2를 대입하여 a₃ 구하기": 1,
+          "초기 조건 확인": 2,
+          "a_2 계산": 3,
+          "a_3 계산": 4,
+          "초기 조건 및 a_2 계산": 1,
+          "조건 정리": 5,
+          "n=1 대입하여 a₂ 구하기": 1,
+          "n=2 대입하여 a₃ 구하기": 1,
+          "\\(a_2\\) 계산": 1,
+          "\\(a_3\\) 계산": 1,
+          "점화식 적용 (n=1)": 1,
+          "점화식 적용 (n=2)": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.5555555555555554,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입하여 a₂ 구하기": 2,
+          "점화식에 n=2 대입하여 a₃ 구하기": 2,
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식 확인": 2,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "$a_2$ 계산": 1,
+          "$a_3$ 계산": 1,
+          "점화식 이해": 1,
+          "a₂ 구하기": 2,
+          "a₃ 구하기": 2,
+          "n=1일 때 a₂ 구하기": 1,
+          "n=2일 때 a₃ 구하기": 1,
+          "a_2 계산": 4,
+          "a_3 계산": 4,
+          "초기 조건 및 점화식 확인": 1,
+          "초기값 확인": 1,
+          "조건 정리": 5,
+          "n=1 대입": 1,
+          "n=2 대입": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "점화식에 n=1 대입해 a₂ 구하기": 1,
+          "점화식에 n=2 대입해 a₃ 구하기": 1,
+          "점화식에 n=1 대입하여 a₂ 구하기": 1,
+          "점화식에 n=2 대입하여 a₃ 구하기": 1,
+          "초기값과 점화식 정리": 1,
+          "a2 계산 (n=1 대입)": 1,
+          "a3 계산 (n=2 대입)": 1,
+          "점화식 확인": 3,
+          "a₂ 계산": 6,
+          "a₃ 계산": 6,
+          "$a_2$ 계산": 1,
+          "$a_3$ 계산": 1,
+          "$n=1$ 대입하여 $a_2$ 구하기": 1,
+          "$n=2$ 대입하여 $a_3$ 구하기": 1,
+          "조건 확인": 1,
+          "n=1 대입하여 a₂ 계산": 1,
+          "n=2 대입하여 a₃ 계산": 1,
+          "a₂ 값 구하기": 1,
+          "a₃ 값 구하기": 1,
+          "초기 조건 확인": 4,
+          "a_2 계산": 3,
+          "a_3 계산": 4,
+          "조건 정리": 3,
+          "점화식의 적용": 1,
+          "주어진 조건 정리": 1,
+          "\\(a_2\\) 계산": 1,
+          "\\(a_3\\) 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.611111111111111,
+      "title_frequency": {
+        "점화식에 n=1 대입해 a₂ 구하기": 6,
+        "점화식에 n=2 대입해 a₃ 구하기": 6,
+        "점화식 확인": 9,
+        "a₂ 계산": 23,
+        "a₃ 계산": 23,
+        "조건 정리": 17,
+        "$a_2$의 값 구하기": 1,
+        "$a_3$의 값 구하기": 1,
+        "n=1일 때 a₂ 계산": 1,
+        "n=2일 때 a₃ 계산": 1,
+        "$a_2$ 값 구하기": 1,
+        "$a_3$ 값 구하기": 1,
+        "초기값 확인": 2,
+        "a_2 계산": 14,
+        "a_3 계산": 16,
+        "초기 조건 확인": 8,
+        "초항과 점화식 이용": 1,
+        "n=2 대입하여 a_3 계산": 1,
+        "점화식 적용하여 $a_2$ 계산": 1,
+        "점화식 적용하여 $a_3$ 계산": 1,
+        "점화식에 n=1 대입하여 a₂ 구하기": 5,
+        "점화식에 n=2 대입하여 a₃ 구하기": 5,
+        "점화식 이해": 3,
+        "조건 확인": 2,
+        "$a_2$ 구하기": 2,
+        "$a_3$ 구하기": 2,
+        "n=1을 대입하여 a₂ 구하기": 1,
+        "n=2를 대입하여 a₃ 구하기": 1,
+        "초기 조건 및 a_2 계산": 1,
+        "n=1 대입하여 a₂ 구하기": 1,
+        "n=2 대입하여 a₃ 구하기": 1,
+        "\\(a_2\\) 계산": 2,
+        "\\(a_3\\) 계산": 2,
+        "점화식 적용 (n=1)": 1,
+        "점화식 적용 (n=2)": 1,
+        "$a_2$ 계산": 2,
+        "$a_3$ 계산": 2,
+        "a₂ 구하기": 2,
+        "a₃ 구하기": 2,
+        "n=1일 때 a₂ 구하기": 1,
+        "n=2일 때 a₃ 구하기": 1,
+        "초기 조건 및 점화식 확인": 1,
+        "n=1 대입": 1,
+        "n=2 대입": 1,
+        "초기값과 점화식 정리": 1,
+        "a2 계산 (n=1 대입)": 1,
+        "a3 계산 (n=2 대입)": 1,
+        "$n=1$ 대입하여 $a_2$ 구하기": 1,
+        "$n=2$ 대입하여 $a_3$ 구하기": 1,
+        "n=1 대입하여 a₂ 계산": 1,
+        "n=2 대입하여 a₃ 계산": 1,
+        "a₂ 값 구하기": 1,
+        "a₃ 값 구하기": 1,
+        "점화식의 적용": 1,
+        "주어진 조건 정리": 1
+      },
+      "accuracy": 1.0,
+      "n_samples": 72
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "시행별 조건 정리",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "시행별 (총공, 검은공) 변화 정리",
+          "content": "카드에 적힌 수에 따라 상자 B로 들어가는 공의 (총개수, 검은공개수)를 정리하면\n- 1: (1, 0)\n- 2 또는 3: (2, 1)\n- 4: (3, 1)\n\n각 시행에서 카드 1,2,3,4는 동일확률 \\(1/4\\)로 나온다(뽑고 다시 넣음)."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "각 카드를 뽑았을 때 상자 B에 넣는 공의 개수를 정리합니다.\n\n| 카드 | 확률 | 흰 공 | 검은 공 | 총 공 |\n|------|------|-------|---------|-------|\n| 1 | 1/4 | 1 | 0 | 1 |\n| 2, 3 | 2/4 = 1/2 | 1 | 1 | 2 |\n| 4 | 1/4 | 2 | 1 | 3 |\n\n4번 시행 후 총 공의 개수가 8개, 검은 공이 2개인 경우를 찾습니다.\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "조건 및 시행 분석",
+          "content": "주머니에서 카드를 꺼낼 때의 확률과 상자 B에 들어가는 공의 개수를 정리합니다.\n*   **카드 1** ($P=\\frac{1}{4}$): 흰 공 1개 추가 (총 1개, 검은 공 0개)\n*   **카드 2 또는 3** ($P=\\frac{2}{4}=\\frac{1}{2}$): 흰 공 1개, 검은 공 1개 추가 (총 2개, 검은 공 1개)\n*   **카드 4** ($P=\\frac{1}{4}$): 흰 공 2개"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "변수 설정 및 조건식 수립",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "변수 설정",
+          "content": "4번 시행에서\n- 카드 1이 나온 횟수를 \\(a\\)\n- 카드 2 또는 3이 나온 횟수를 \\(b\\)\n- 카드 4가 나온 횟수를 \\(c\\)\n\n라고 하면\n\\[\na+b+c=4\n\\]\n총 공 개수 \\(T\\), 검은 공 개수 \\(K\\)는\n\\[\nT=1\\cdot a+2\\cdot b+3\\cdot c,\\qquad K=0\\cdot a+1\\cdot b+1\\cdot c=b+c\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "변수 설정",
+          "content": "4번의 시행에서:\n- 카드 1을 뽑은 횟수: $a$\n- 카드 2 또는 3을 뽑은 횟수: $b$\n- 카드 4를 뽑은 횟수: $c$\n\n조건:\n- $a + b + c = 4$ (총 시행 횟수)\n- $1 \\cdot a + 2 \\cdot b + 3 \\cdot c = 8$ (총 공의 개수)\n- $0 \\cdot a + 1 \\cdot b + 1 \\cdot c = 2$ (검은 공의 개수)\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "총 공 8개 조건으로 가능한 경우 찾기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "조건(총공 8개)으로 가능한 (a,b,c) 찾기",
+          "content": "조건 \\(T=8\\)이므로\n\\[\na+2b+3c=8\n\\]\n또한 \\(a=4-b-c\\)를 대입하면\n\\[\n(4-b-c)+2b+3c=8\n\\Rightarrow 4+b+2c=8\n\\Rightarrow b+2c=4\n\\]\n여기서 \\(b,c\\ge 0\\) 정수이므로 가능한 해는\n- \\(c=0 \\Rightarrow b=4 \\Rightarrow a=0\\)\n- \\(c=1 \\Rightarrow b=2 \\Rightarrow a=1\\)\n- \\(c=2 \\Rightarrow b=0 \\Rightarrow a=2\\)\n\n즉, 총공이 8개가 되려면 위 3가지 경우뿐이다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "연립방정식 풀기",
+          "content": "세 번째 조건에서: $b + c = 2$\n\n첫 번째 조건에 대입: $a + 2 = 4 \\Rightarrow a = 2$\n\n두 번째 조건에 대입: $2 + 2b + 3c = 8 \\Rightarrow 2b + 3c = 6$\n\n$b + c = 2$와 $2b + 3c = 6$을 연립:\n- $b + c = 2$에서 $b = 2 - c$\n- $2(2-c) + 3c = 6$\n- $4 - 2c + 3c = 6$\n- $c = 2$, $b = 0$\n\n따라서: $a = 2$, $b = 0$, $c = 2$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "검은 공 2개 조건 적용",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "검은공 2개 조건 적용",
+          "content": "검은공 개수 \\(K=b+c\\)이므로 각 경우에서\n- (a,b,c)=(0,4,0) → \\(K=4\\)\n- (a,b,c)=(1,2,1) → \\(K=3\\)\n- (a,b,c)=(2,0,2) → \\(K=2\\)  ✅\n\n따라서 “총공 8개”이면서 “검은공 2개”가 되려면 반드시 \\((a,b,c)=(2,0,2)\\)여야 한다."
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "조건부확률 공식 설정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "확률 계산: 조건부확률",
+          "content": "이제\n\\[\nP(K=2\\mid T=8)=\\frac{P(T=8,\\ K=2)}{P(T=8)}\n\\]\n인데, 위에서\n- \\(T=8,\\ K=2\\) ↔ \\((a,b,c)=(2,0,2)\\)\n- \\(T=8\\) ↔ \\((a,b,c)\\in\\{(0,4,0),(1,2,1),(2,0,2)\\}\\)\n\n각 경우의 확률을 구한다."
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "각 경우의 확률 계산 (분자)",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 5,
+          "title": "각 경우의 확률(다항분포)",
+          "content": "한 번 시행에서\n- 1이 나올 확률: \\(1/4\\)\n- 2 또는 3이 나올 확률: \\(2/4=1/2\\)\n- 4가 나올 확률: \\(1/4\\)\n\n따라서 \\((a,b,c)\\)의 확률은\n\\[\nP(a,b,c)=\\frac{4!}{a!\\,b!\\,c!}\\left(\\frac14\\right)^a\\left(\\frac12\\right)^b\\left(\\frac14\\right)^c\n\\]\n\n1) \\((0,4,0)\\):\n\\[\nP=\\frac{4!}{0!4!0!}\\left(\\frac12\\right)^4=\\frac{1}{16}\n\\]\n\n2) \\((1,2,1)\\):\n\\[\nP=\\frac{4!}{1!2!1!}\\left(\\frac14\\right)^2\\left(\\frac12\\right)^2\n=12\\cdot\\frac{1}{16}\\cdot\\frac{1}{4}=\\frac{3}{16}\n\\]\n\n3) \\((2,0,2)\\):\n\\[\nP=\\frac{4!}{2!0!2!}\\left(\\frac14\\right)^4\n=6\\cdot\\frac{1}{256}=\\frac{3}{128}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "조건부 확률 계산 - 분자",
+          "content": "카드 1을 2번, 카드 4를 2번 뽑는 경우의 확률을 구합니다.\n\n4번 중 이 조합이 나올 경우의 수: $\\dfrac{4!}{2! \\cdot 0! \\cdot 2!} = 6$\n\n각 경우의 확률: $\\left(\\dfrac{1}{4}\\right)^2 \\times \\left(\\dfrac{1}{2}\\right)^0 \\times \\left(\\dfrac{1}{4}\\right)^2 = \\dfrac{1}{256}$\n\nP(검은 공 2개 ∩ 총 8개) = $6 \\times \\dfrac{1}{256} = \\dfrac{6}{256} = \\dfrac{3}{128}$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 6,
+      "group_name": "총 공 8개인 모든 경우의 확률 계산 (분모)",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "조건부 확률 계산 - 분모",
+          "content": "총 공이 8개인 모든 경우: $a + 2b + 3c = 8$, $a + b + c = 4$\n\n두 식을 빼면: $b + 2c = 4$\n\n가능한 $(a, b, c)$ 조합:\n- $c = 0$: $b = 4$, $a = 0$ → $(0, 4, 0)$\n- $c = 1$: $b = 2$, $a = 1$ → $(1, 2, 1)$\n- $c = 2$: $b = 0$, $a = 2$ → $(2, 0, 2)$\n\n각 경우의 확률:\n- $(0,4,0)$: $\\dfrac{4!}{0!4!0!} \\times \\left(\\dfrac{1}{2}\\right)^4 = 1 \\times \\dfrac{1}{16} = \\dfrac{1}{16}$\n- $(1,2,1)$: $\\dfrac{4!}{1!2!1!} \\times \\dfrac{1}{4} \\times \\dfrac{1}{4} \\times \\dfrac{1}{4} = 12 \\times \\dfrac{1}{64} = \\dfrac{12}{64} = \\dfrac{3}{16}$\n- $(2,0,2)$: $\\dfrac{4!}{2!0!2!} \\times \\dfrac{1}{16} \\times 1 \\times \\dfrac{1}{16} = 6 \\times \\dfrac{1}{256} = \\dfrac{6}{256} = \\dfrac{3}{128}$\n\nP(총 8개) = $\\dfrac{1}{16} + \\dfrac{3}{16} + \\dfrac{3}{128} = \\dfrac{8}{128} + \\dfrac{24}{128} + \\dfrac{3}{128} = \\dfrac{35}{128}$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 7,
+      "group_name": "조건부확률 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 6,
+          "title": "조건부확률 값 구하기",
+          "content": "\\[\nP(T=8)=\\frac{1}{16}+\\frac{3}{16}+\\frac{3}{128}\n=\\frac{4}{16}+\\frac{3}{128}\n=\\frac{1}{4}+\\frac{3}{128}\n=\\frac{32}{128}+\\frac{3}{128}\n=\\frac{35}{128}\n\\]\n\\[\nP(T=8,\\ K=2)=\\frac{3}{128}\n\\]\n따라서\n\\[\nP(K=2\\mid T=8)=\\frac{\\frac{3}{128}}{\\frac{35}{128}}=\\frac{3}{35}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "최종 확률 계산",
+          "content": "$$P(\\text{검은 공 2개} | \\text{총 8개}) = \\dfrac{3/128}{35/128} = \\dfrac{3}{35}$$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 8,
+      "group_name": "최종 답 도출",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 7,
+          "title": "Final Answer",
+          "content": "\\(\\displaystyle \\frac{3}{35}\\) (④)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 6,
+          "title": "Final Answer",
+          "content": "④ $\\dfrac{3}{35}$"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 6,
+      "to_step": 7
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 5,
+      "to_step": 6
+    }
+  ]
+}

@@ -1,0 +1,3480 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T04:22:46Z",
+    "ended_at_utc": "2026-02-13T05:09:42Z",
+    "elapsed_seconds": 2815.887,
+    "problem_tag": "2026_odd_calculus_27",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_calculus_27",
+    "label": "2026_odd_calculus_27 (미적분, 3점)",
+    "gold_answer": "2"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.960522413253784,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.605548858642578,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.285604476928711,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.960522413253784,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.605548858642578,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.285604476928711,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 조건 세우기": 3,
+            "접선 기울기 dy/dx 구하기": 2,
+            "t=1/4 대입하여 기울기 계산": 2,
+            "접선 기울기 dy/dx 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 세우기": 3,
+            "접선 기울기 dy/dx 구하기": 2,
+            "t=1/4 대입하여 기울기 계산": 2,
+            "접선 기울기 dy/dx 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.337153911590576,
+              "step_count": 5,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선 기울기 공식 적용",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.921607732772827,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.955509424209595,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.337153911590576,
+              "step_count": 5,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선 기울기 공식 적용",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.921607732772827,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.955509424209595,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "교점 조건 설정": 3,
+            "접선 기울기 공식 적용": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "접선 기울기 계산": 1,
+            "점 P의 좌표 확인": 2,
+            "도함수 계산": 2,
+            "t = 1/4에서 기울기 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 설정": 3,
+            "접선 기울기 공식 적용": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "접선 기울기 계산": 1,
+            "점 P의 좌표 확인": 2,
+            "도함수 계산": 2,
+            "t = 1/4에서 기울기 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.14934206008911,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 $t$ 구하기",
+                "매개변수 미분법 적용",
+                "미분계수 계산 및 답 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.379093647003174,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에서의 매개변수 t 값 구하기",
+                "dx/dt 및 dy/dt 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.379517555236816,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P의 매개변수 $t$ 값 구하기",
+                "매개변수 미분법을 이용한 도함수 구하기",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "{dx}$를 계산합니다.\n이때 $\\pi t = \\frac{\\pi}{4}$이므로 $\\sin \\frac{\\pi}{4} = \\cos \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$ ($\\Rightarrow$ 제곱하면 $\\frac{1}{2}$), $2\\pi t = \\frac{\\pi}{2}$이므로 $\\sin \\frac{\\pi}{2} = 1$입니다.\n\n$$ \\left. \\frac{dx}{dt} \\right|_{t=\\frac{1}{4}} = e^1 \\left\\{ 4\\left(1 + \\frac{1}{2}\\right) + \\pi(1",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.14934206008911,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 $t$ 구하기",
+                "매개변수 미분법 적용",
+                "미분계수 계산 및 답 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.379093647003174,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에서의 매개변수 t 값 구하기",
+                "dx/dt 및 dy/dt 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.379517555236816,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P의 매개변수 $t$ 값 구하기",
+                "매개변수 미분법을 이용한 도함수 구하기",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "{dx}$를 계산합니다.\n이때 $\\pi t = \\frac{\\pi}{4}$이므로 $\\sin \\frac{\\pi}{4} = \\cos \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$ ($\\Rightarrow$ 제곱하면 $\\frac{1}{2}$), $2\\pi t = \\frac{\\pi}{2}$이므로 $\\sin \\frac{\\pi}{2} = 1$입니다.\n\n$$ \\left. \\frac{dx}{dt} \\right|_{t=\\frac{1}{4}} = e^1 \\left\\{ 4\\left(1 + \\frac{1}{2}\\right) + \\pi(1",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점의 매개변수 $t$ 구하기": 1,
+            "매개변수 미분법 적용": 1,
+            "미분계수 계산 및 답 구하기": 1,
+            "교점 P에서의 매개변수 t 값 구하기": 1,
+            "dx/dt 및 dy/dt 계산": 1,
+            "접선의 기울기 계산": 2,
+            "교점 P의 매개변수 $t$ 값 구하기": 1,
+            "매개변수 미분법을 이용한 도함수 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "교점의 매개변수 $t$ 구하기": 1,
+            "매개변수 미분법 적용": 1,
+            "미분계수 계산 및 답 구하기": 1,
+            "교점 P에서의 매개변수 t 값 구하기": 1,
+            "dx/dt 및 dy/dt 계산": 1,
+            "접선의 기울기 계산": 2,
+            "교점 P의 매개변수 $t$ 값 구하기": 1,
+            "매개변수 미분법을 이용한 도함수 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.682926654815674,
+              "step_count": 4,
+              "step_titles": [
+                "교점 방정식 설정",
+                "방정식 간단화 및 t 구하기",
+                "접선 기울기 공식 도출",
+                "t=1/4 대입 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 49.451237201690674,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "방정식 간단화",
+                "미분 계산",
+                "t=1/4 대입 및 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.422897815704346,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식",
+                "t=1/4 대입"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.682926654815674,
+              "step_count": 4,
+              "step_titles": [
+                "교점 방정식 설정",
+                "방정식 간단화 및 t 구하기",
+                "접선 기울기 공식 도출",
+                "t=1/4 대입 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 49.451237201690674,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "방정식 간단화",
+                "미분 계산",
+                "t=1/4 대입 및 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.422897815704346,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식",
+                "t=1/4 대입"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "교점 방정식 설정": 1,
+            "방정식 간단화 및 t 구하기": 1,
+            "접선 기울기 공식 도출": 1,
+            "t=1/4 대입 및 계산": 1,
+            "교점 조건 설정": 1,
+            "방정식 간단화": 1,
+            "미분 계산": 1,
+            "t=1/4 대입 및 기울기 계산": 1,
+            "교점 찾기": 1,
+            "접선 기울기 공식": 1,
+            "t=1/4 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 방정식 설정": 1,
+            "방정식 간단화 및 t 구하기": 1,
+            "접선 기울기 공식 도출": 1,
+            "t=1/4 대입 및 계산": 1,
+            "교점 조건 설정": 1,
+            "방정식 간단화": 1,
+            "미분 계산": 1,
+            "t=1/4 대입 및 기울기 계산": 1,
+            "교점 찾기": 1,
+            "접선 기울기 공식": 1,
+            "t=1/4 대입": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 57.86237716674805,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건",
+                "접선의 기울기 계산",
+                "t=1/4에서 값 계산",
+                "기울기 dy/dx"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 60.301470041275024,
+              "step_count": 3,
+              "step_titles": [
+                "만나는 점의 매개변수 값 구하기",
+                "접선의 기울기 표현식",
+                "t=1/4에서의 값 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.452314376831055,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건",
+                "접선 기울기 계산",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\) → ②번",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 57.86237716674805,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건",
+                "접선의 기울기 계산",
+                "t=1/4에서 값 계산",
+                "기울기 dy/dx"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 60.301470041275024,
+              "step_count": 3,
+              "step_titles": [
+                "만나는 점의 매개변수 값 구하기",
+                "접선의 기울기 표현식",
+                "t=1/4에서의 값 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.452314376831055,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건",
+                "접선 기울기 계산",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\) → ②번",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "직선과의 교점 조건": 2,
+            "접선의 기울기 계산": 1,
+            "t=1/4에서 값 계산": 2,
+            "기울기 dy/dx": 1,
+            "만나는 점의 매개변수 값 구하기": 1,
+            "접선의 기울기 표현식": 1,
+            "t=1/4에서의 값 계산": 1,
+            "접선 기울기 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "직선과의 교점 조건": 2,
+            "접선의 기울기 계산": 1,
+            "t=1/4에서 값 계산": 2,
+            "기울기 dy/dx": 1,
+            "만나는 점의 매개변수 값 구하기": 1,
+            "접선의 기울기 표현식": 1,
+            "t=1/4에서의 값 계산": 1,
+            "접선 기울기 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.295151233673096,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.564440965652466,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접점 $ t = \\frac{1}{4} $ 결정",
+                "도함수 계산 준비",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 62.727044343948364,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 대입",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.295151233673096,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.564440965652466,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접점 $ t = \\frac{1}{4} $ 결정",
+                "도함수 계산 준비",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 62.727044343948364,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 대입",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접선 기울기 계산 준비": 2,
+            "dy/dt 계산": 2,
+            "t = 1/4에서 값 대입": 3,
+            "기울기 계산": 3,
+            "접점 $ t = \\frac{1}{4} $ 결정": 1,
+            "도함수 계산 준비": 1,
+            "교점 조건 대입": 1,
+            "dx/dt 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접선 기울기 계산 준비": 2,
+            "dy/dt 계산": 2,
+            "t = 1/4에서 값 대입": 3,
+            "기울기 계산": 3,
+            "접점 $ t = \\frac{1}{4} $ 결정": 1,
+            "도함수 계산 준비": 1,
+            "교점 조건 대입": 1,
+            "dx/dt 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.0,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 3,
+          "접선 기울기 dy/dx 구하기": 2,
+          "t=1/4 대입하여 기울기 계산": 2,
+          "접선 기울기 dy/dx 계산": 1,
+          "교점 조건 설정": 6,
+          "접선 기울기 공식 적용": 1,
+          "dx/dt 계산": 2,
+          "dy/dt 계산": 3,
+          "접선 기울기 계산": 2,
+          "점 P의 좌표 확인": 2,
+          "도함수 계산": 2,
+          "t = 1/4에서 기울기 계산": 2,
+          "교점의 매개변수 $t$ 구하기": 1,
+          "매개변수 미분법 적용": 1,
+          "미분계수 계산 및 답 구하기": 1,
+          "교점 P에서의 매개변수 t 값 구하기": 1,
+          "dx/dt 및 dy/dt 계산": 1,
+          "접선의 기울기 계산": 3,
+          "교점 P의 매개변수 $t$ 값 구하기": 1,
+          "매개변수 미분법을 이용한 도함수 구하기": 1,
+          "교점 방정식 설정": 1,
+          "방정식 간단화 및 t 구하기": 1,
+          "접선 기울기 공식 도출": 1,
+          "t=1/4 대입 및 계산": 1,
+          "방정식 간단화": 1,
+          "미분 계산": 1,
+          "t=1/4 대입 및 기울기 계산": 1,
+          "교점 찾기": 1,
+          "접선 기울기 공식": 1,
+          "t=1/4 대입": 1,
+          "조건 정리": 5,
+          "직선과의 교점 조건": 2,
+          "t=1/4에서 값 계산": 2,
+          "기울기 dy/dx": 1,
+          "만나는 점의 매개변수 값 구하기": 1,
+          "접선의 기울기 표현식": 1,
+          "t=1/4에서의 값 계산": 1,
+          "접선 기울기 계산 준비": 2,
+          "t = 1/4에서 값 대입": 3,
+          "기울기 계산": 3,
+          "접점 $ t = \\frac{1}{4} $ 결정": 1,
+          "도함수 계산 준비": 1,
+          "교점 조건 대입": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.344199657440186,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 공식(매개변수 미분)",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.413419961929321,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 계산(매개변수 미분)"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.31731367111206,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입하여 기울기 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.344199657440186,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 공식(매개변수 미분)",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.413419961929321,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 계산(매개변수 미분)"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.31731367111206,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입하여 기울기 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 조건 세우기": 1,
+            "접선 기울기 공식(매개변수 미분)": 1,
+            "t=1/4 대입하여 기울기 계산": 1,
+            "교점 조건 정리": 2,
+            "접선 기울기 계산(매개변수 미분)": 1,
+            "접선 기울기 dy/dx 계산": 1,
+            "t=1/4 대입하여 기울기 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 세우기": 1,
+            "접선 기울기 공식(매개변수 미분)": 1,
+            "t=1/4 대입하여 기울기 계산": 1,
+            "교점 조건 정리": 2,
+            "접선 기울기 계산(매개변수 미분)": 1,
+            "접선 기울기 dy/dx 계산": 1,
+            "t=1/4 대입하여 기울기 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.073087930679321,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "미분 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.629523515701294,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.220561742782593,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선 기울기 공식 적용",
+                "t = 1/4 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.073087930679321,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "미분 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.629523515701294,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.220561742782593,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선 기울기 공식 적용",
+                "t = 1/4 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "교점 조건 설정": 3,
+            "점 P의 좌표 확인": 2,
+            "미분 계산": 1,
+            "t = 1/4에서 기울기 계산": 2,
+            "도함수 계산": 1,
+            "접선 기울기 공식 적용": 1,
+            "t = 1/4 대입": 1,
+            "기울기 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 설정": 3,
+            "점 P의 좌표 확인": 2,
+            "미분 계산": 1,
+            "t = 1/4에서 기울기 계산": 2,
+            "도함수 계산": 1,
+            "접선 기울기 공식 적용": 1,
+            "t = 1/4 대입": 1,
+            "기울기 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.900275468826294,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에 대응하는 매개변수 t의 값 구하기",
+                "t = 1/4에서의 dx/dt, dy/dt 계산",
+                "접선의 기울기 구하기"
+              ],
+              "final_answer": "{3}{2}\\right) + 3\\pi(1) \\right\\} = e(-2 + 3\\pi)$$\n\n[STEP title=\"접선의 기울기 구하기\"]\n곡선 $C$ 위의 점 $\\mathrm{P}$에서의 접선의 기울기 $\\frac{dy}{dx}$는 다음과 같습니다.\n\n$$\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{e(3\\pi - 2)}{e(\\pi + 6)}$$\n\n$e$를 약분하면,\n$$\\frac{dy}{dx} = \\frac{3\\pi - 2}{\\pi + 6}$$\n\n따라서 구하는 접선의",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 32.964776277542114,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에 대응하는 매개변수 t 구하기",
+                "매개변수 미분법을 이용한 도함수 계산",
+                "t = 1/4 대입 및 접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.015458822250366,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 $t$ 구하기",
+                "매개변수 미분",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.900275468826294,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에 대응하는 매개변수 t의 값 구하기",
+                "t = 1/4에서의 dx/dt, dy/dt 계산",
+                "접선의 기울기 구하기"
+              ],
+              "final_answer": "{3}{2}\\right) + 3\\pi(1) \\right\\} = e(-2 + 3\\pi)$$\n\n[STEP title=\"접선의 기울기 구하기\"]\n곡선 $C$ 위의 점 $\\mathrm{P}$에서의 접선의 기울기 $\\frac{dy}{dx}$는 다음과 같습니다.\n\n$$\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{e(3\\pi - 2)}{e(\\pi + 6)}$$\n\n$e$를 약분하면,\n$$\\frac{dy}{dx} = \\frac{3\\pi - 2}{\\pi + 6}$$\n\n따라서 구하는 접선의",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 32.964776277542114,
+              "step_count": 3,
+              "step_titles": [
+                "교점 P에 대응하는 매개변수 t 구하기",
+                "매개변수 미분법을 이용한 도함수 계산",
+                "t = 1/4 대입 및 접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.015458822250366,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 $t$ 구하기",
+                "매개변수 미분",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점 P에 대응하는 매개변수 t의 값 구하기": 1,
+            "t = 1/4에서의 dx/dt, dy/dt 계산": 1,
+            "접선의 기울기 구하기": 1,
+            "교점 P에 대응하는 매개변수 t 구하기": 1,
+            "매개변수 미분법을 이용한 도함수 계산": 1,
+            "t = 1/4 대입 및 접선의 기울기 계산": 1,
+            "교점의 매개변수 $t$ 구하기": 1,
+            "매개변수 미분": 1,
+            "접선의 기울기 계산": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "교점 P에 대응하는 매개변수 t의 값 구하기": 1,
+            "t = 1/4에서의 dx/dt, dy/dt 계산": 1,
+            "접선의 기울기 구하기": 1,
+            "교점 P에 대응하는 매개변수 t 구하기": 1,
+            "매개변수 미분법을 이용한 도함수 계산": 1,
+            "t = 1/4 대입 및 접선의 기울기 계산": 1,
+            "교점의 매개변수 $t$ 구하기": 1,
+            "매개변수 미분": 1,
+            "접선의 기울기 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.82270073890686,
+              "step_count": 2,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 64.55596876144409,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 42.99726629257202,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산",
+                "\\(t = \\frac{1}{4}\\) 대입"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.82270073890686,
+              "step_count": 2,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 64.55596876144409,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 42.99726629257202,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산",
+                "\\(t = \\frac{1}{4}\\) 대입"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 찾기": 3,
+            "접선 기울기 계산": 2,
+            "접선 기울기 공식": 1,
+            "t=1/4 대입": 1,
+            "\\(t = \\frac{1}{4}\\) 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 찾기": 3,
+            "접선 기울기 계산": 2,
+            "접선 기울기 공식": 1,
+            "t=1/4 대입": 1,
+            "\\(t = \\frac{1}{4}\\) 대입": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 82.09597969055176,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "만나는 점의 조건 식",
+                "접선의 기울기 공식",
+                "미분 계산",
+                "t=1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 53.56599426269531,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 값 구하기",
+                "미분계수 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.302790880203247,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건 이용",
+                "t=1/4에서의 x, y 확인",
+                "접선 기울기 계산",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{3\\pi - 2}{\\pi + 6}\\) → 보기 ②",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 82.09597969055176,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "만나는 점의 조건 식",
+                "접선의 기울기 공식",
+                "미분 계산",
+                "t=1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 53.56599426269531,
+              "step_count": 3,
+              "step_titles": [
+                "교점의 매개변수 값 구하기",
+                "미분계수 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.302790880203247,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "직선과의 교점 조건 이용",
+                "t=1/4에서의 x, y 확인",
+                "접선 기울기 계산",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{3\\pi - 2}{\\pi + 6}\\) → 보기 ②",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 2,
+            "만나는 점의 조건 식": 1,
+            "접선의 기울기 공식": 1,
+            "미분 계산": 1,
+            "t=1/4에서 값 대입": 1,
+            "기울기 계산": 1,
+            "교점의 매개변수 값 구하기": 1,
+            "미분계수 계산": 1,
+            "접선의 기울기 계산": 1,
+            "직선과의 교점 조건 이용": 1,
+            "t=1/4에서의 x, y 확인": 1,
+            "접선 기울기 계산": 1,
+            "t=1/4에서 값 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "만나는 점의 조건 식": 1,
+            "접선의 기울기 공식": 1,
+            "미분 계산": 1,
+            "t=1/4에서 값 대입": 1,
+            "기울기 계산": 1,
+            "교점의 매개변수 값 구하기": 1,
+            "미분계수 계산": 1,
+            "접선의 기울기 계산": 1,
+            "직선과의 교점 조건 이용": 1,
+            "t=1/4에서의 x, y 확인": 1,
+            "접선 기울기 계산": 1,
+            "t=1/4에서 값 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.087258100509644,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접점에서의 t 값 결정",
+                "도함수 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.626292705535889,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 전 준비",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.411099910736084,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 간단히 하기",
+                "x와 y의 표현 단순화",
+                "후보 t 값 시도: t = 1/4",
+                "접선 기울기 계산 준비: dx/dt, dy/dt 구하기",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.087258100509644,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접점에서의 t 값 결정",
+                "도함수 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.626292705535889,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 전 준비",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.411099910736084,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "삼각함수 간단히 하기",
+                "x와 y의 표현 단순화",
+                "후보 t 값 시도: t = 1/4",
+                "접선 기울기 계산 준비: dx/dt, dy/dt 구하기",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접점에서의 t 값 결정": 1,
+            "도함수 계산 준비": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "t = 1/4에서 값 대입": 2,
+            "기울기 계산": 3,
+            "접선 기울기 계산 전 준비": 1,
+            "t = 1/4에서 값 계산": 1,
+            "삼각함수 간단히 하기": 1,
+            "x와 y의 표현 단순화": 1,
+            "후보 t 값 시도: t = 1/4": 1,
+            "접선 기울기 계산 준비: dx/dt, dy/dt 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접점에서의 t 값 결정": 1,
+            "도함수 계산 준비": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "t = 1/4에서 값 대입": 2,
+            "기울기 계산": 3,
+            "접선 기울기 계산 전 준비": 1,
+            "t = 1/4에서 값 계산": 1,
+            "삼각함수 간단히 하기": 1,
+            "x와 y의 표현 단순화": 1,
+            "후보 t 값 시도: t = 1/4": 1,
+            "접선 기울기 계산 준비: dx/dt, dy/dt 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.9444444444444446,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 1,
+          "접선 기울기 공식(매개변수 미분)": 1,
+          "t=1/4 대입하여 기울기 계산": 1,
+          "교점 조건 정리": 2,
+          "접선 기울기 계산(매개변수 미분)": 1,
+          "접선 기울기 dy/dx 계산": 1,
+          "t=1/4 대입하여 기울기 구하기": 1,
+          "교점 조건 설정": 5,
+          "점 P의 좌표 확인": 2,
+          "미분 계산": 2,
+          "t = 1/4에서 기울기 계산": 2,
+          "도함수 계산": 1,
+          "접선 기울기 공식 적용": 1,
+          "t = 1/4 대입": 1,
+          "기울기 계산": 5,
+          "교점 P에 대응하는 매개변수 t의 값 구하기": 1,
+          "t = 1/4에서의 dx/dt, dy/dt 계산": 1,
+          "접선의 기울기 구하기": 1,
+          "교점 P에 대응하는 매개변수 t 구하기": 1,
+          "매개변수 미분법을 이용한 도함수 계산": 1,
+          "t = 1/4 대입 및 접선의 기울기 계산": 1,
+          "교점의 매개변수 $t$ 구하기": 1,
+          "매개변수 미분": 1,
+          "접선의 기울기 계산": 2,
+          "교점 찾기": 3,
+          "접선 기울기 계산": 3,
+          "접선 기울기 공식": 1,
+          "t=1/4 대입": 1,
+          "\\(t = \\frac{1}{4}\\) 대입": 1,
+          "조건 정리": 5,
+          "만나는 점의 조건 식": 1,
+          "접선의 기울기 공식": 1,
+          "t=1/4에서 값 대입": 1,
+          "교점의 매개변수 값 구하기": 1,
+          "미분계수 계산": 1,
+          "직선과의 교점 조건 이용": 1,
+          "t=1/4에서의 x, y 확인": 1,
+          "t=1/4에서 값 계산": 1,
+          "접점에서의 t 값 결정": 1,
+          "도함수 계산 준비": 1,
+          "dx/dt 계산": 1,
+          "dy/dt 계산": 1,
+          "t = 1/4에서 값 대입": 2,
+          "접선 기울기 계산 전 준비": 1,
+          "t = 1/4에서 값 계산": 1,
+          "삼각함수 간단히 하기": 1,
+          "x와 y의 표현 단순화": 1,
+          "후보 t 값 시도: t = 1/4": 1,
+          "접선 기울기 계산 준비: dx/dt, dy/dt 구하기": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.068830490112305,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.51821756362915,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건으로 t 찾기",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입하여 값 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad(\\text{②})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.434508800506592,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 구하기",
+                "교점에서의 삼각함수 값 결정"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.068830490112305,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기 dy/dx 구하기",
+                "t=1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.51821756362915,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건으로 t 찾기",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입하여 값 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad(\\text{②})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.434508800506592,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 구하기",
+                "교점에서의 삼각함수 값 결정"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점 조건 세우기": 1,
+            "접선 기울기 dy/dx 구하기": 2,
+            "t=1/4 대입하여 기울기 계산": 1,
+            "교점 조건으로 t 찾기": 1,
+            "접선 기울기 dy/dx 계산": 1,
+            "t=1/4 대입하여 값 계산": 1,
+            "교점 조건 정리": 1,
+            "교점에서의 삼각함수 값 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 세우기": 1,
+            "접선 기울기 dy/dx 구하기": 2,
+            "t=1/4 대입하여 기울기 계산": 1,
+            "교점 조건으로 t 찾기": 1,
+            "접선 기울기 dy/dx 계산": 1,
+            "t=1/4 대입하여 값 계산": 1,
+            "교점 조건 정리": 1,
+            "교점에서의 삼각함수 값 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.557124853134155,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 유도",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.512997150421143,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "**② $\\dfrac{3\\pi - 2}{\\pi + 6}$**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.49198842048645,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 준비",
+                "t = 1/4에서 값 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.557124853134155,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 유도",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.512997150421143,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "**② $\\dfrac{3\\pi - 2}{\\pi + 6}$**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.49198842048645,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 준비",
+                "t = 1/4에서 값 계산",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "교점 조건 설정": 3,
+            "접선의 기울기 공식 유도": 1,
+            "t = 1/4에서 값 계산": 2,
+            "기울기 계산": 1,
+            "점 P의 좌표 확인": 1,
+            "접선의 기울기 계산": 2,
+            "접선의 기울기 공식 준비": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 설정": 3,
+            "접선의 기울기 공식 유도": 1,
+            "t = 1/4에서 값 계산": 2,
+            "기울기 계산": 1,
+            "점 P의 좌표 확인": 1,
+            "접선의 기울기 계산": 2,
+            "접선의 기울기 공식 준비": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.572407007217407,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 교점의 $t$값 구하기",
+                "접선의 기울기 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.853938817977905,
+              "step_count": 2,
+              "step_titles": [
+                "교점 P의 매개변수 t 값 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "^{4t} \\quad \\Rightarrow \\quad 4t = 1 \\quad \\Rightarrow \\quad t = \\frac{1}{4} $$\n\n[STEP title=\"미분계수 계산\"]\n매개변수 미분법 $\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}$를 이용하기 위해 $x$와 $y$를 각각 $t$에 대해 미분합니다. (곱의 미분법 이용)\n\n1. $\\frac{dx}{dt}$ 계산:\n$$ x = e^{4t}(1 + \\sin^2 \\pi t) $$\n$$ \\frac{dx}{dt} = 4e^{4t}(1 + \\sin^2 \\pi",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 161.98648405075073,
+              "step_count": 1,
+              "step_titles": [
+                "교점에서의 매개변수 $t$ 값 구하기"
+              ],
+              "final_answer": "[STEP title=\"교점에서의 매개변수 $t$ 값 구하기\"]\n곡선 $C$와 직선 $y = 3x - 5e$가 만나는 점 $\\mathrm{P}$의 매개변수 $t$를 구하기 위해, 주어진 $x, y$ 식을 직선의 방정식에 대입합니다.\n\n$$ \\begin{aligned} e^{4t}(1 - 3\\cos^2 \\pi t) &= 3 \\left\\{ e^{4t}(1 + \\sin^2 \\pi t) \\right\\} - 5e \\\\ e^{4t}(1 - 3\\cos^2 \\pi t) &= e^{4t}(3 + 3\\sin^2",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.572407007217407,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 교점의 $t$값 구하기",
+                "접선의 기울기 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.853938817977905,
+              "step_count": 2,
+              "step_titles": [
+                "교점 P의 매개변수 t 값 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "^{4t} \\quad \\Rightarrow \\quad 4t = 1 \\quad \\Rightarrow \\quad t = \\frac{1}{4} $$\n\n[STEP title=\"미분계수 계산\"]\n매개변수 미분법 $\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}$를 이용하기 위해 $x$와 $y$를 각각 $t$에 대해 미분합니다. (곱의 미분법 이용)\n\n1. $\\frac{dx}{dt}$ 계산:\n$$ x = e^{4t}(1 + \\sin^2 \\pi t) $$\n$$ \\frac{dx}{dt} = 4e^{4t}(1 + \\sin^2 \\pi",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 161.98648405075073,
+              "step_count": 1,
+              "step_titles": [
+                "교점에서의 매개변수 $t$ 값 구하기"
+              ],
+              "final_answer": "[STEP title=\"교점에서의 매개변수 $t$ 값 구하기\"]\n곡선 $C$와 직선 $y = 3x - 5e$가 만나는 점 $\\mathrm{P}$의 매개변수 $t$를 구하기 위해, 주어진 $x, y$ 식을 직선의 방정식에 대입합니다.\n\n$$ \\begin{aligned} e^{4t}(1 - 3\\cos^2 \\pi t) &= 3 \\left\\{ e^{4t}(1 + \\sin^2 \\pi t) \\right\\} - 5e \\\\ e^{4t}(1 - 3\\cos^2 \\pi t) &= e^{4t}(3 + 3\\sin^2",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 1.6666666666666667,
+          "title_frequency": {
+            "조건 정리 및 교점의 $t$값 구하기": 1,
+            "접선의 기울기 구하기": 1,
+            "교점 P의 매개변수 t 값 구하기": 1,
+            "미분계수 계산": 1,
+            "교점에서의 매개변수 $t$ 값 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 1.6666666666666667,
+          "step_std": 0.5773502691896257,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 교점의 $t$값 구하기": 1,
+            "접선의 기울기 구하기": 1,
+            "교점 P의 매개변수 t 값 구하기": 1,
+            "미분계수 계산": 1,
+            "교점에서의 매개변수 $t$ 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 46.51151990890503,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 68.79598617553711,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.62271070480347,
+              "step_count": 2,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 46.51151990890503,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 68.79598617553711,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.62271070480347,
+              "step_count": 2,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 찾기": 3,
+            "미분 계산": 2,
+            "t=1/4 대입": 2,
+            "접선 기울기 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 찾기": 3,
+            "미분 계산": 2,
+            "t=1/4 대입": 2,
+            "접선 기울기 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 136.52227115631104,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "만나는 점의 조건 식 세우기",
+                "점 P의 매개변수 값과 좌표 확인",
+                "접선의 기울기 구하기",
+                "t=1/4에서의 도함수 값"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 63.905173778533936,
+              "step_count": 3,
+              "step_titles": [
+                "직선과 곡선의 교점 조건",
+                "접선의 기울기 계산",
+                "기울기 식 정리"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.615429162979126,
+              "step_count": 4,
+              "step_titles": [
+                "만나는 점 P의 조건",
+                "t=1/4에서 만나는지 확인",
+                "접선의 기울기 구하기",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{3\\pi - 2}{\\pi + 6}\\) → 보기 ②",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 136.52227115631104,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "만나는 점의 조건 식 세우기",
+                "점 P의 매개변수 값과 좌표 확인",
+                "접선의 기울기 구하기",
+                "t=1/4에서의 도함수 값"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 63.905173778533936,
+              "step_count": 3,
+              "step_titles": [
+                "직선과 곡선의 교점 조건",
+                "접선의 기울기 계산",
+                "기울기 식 정리"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.615429162979126,
+              "step_count": 4,
+              "step_titles": [
+                "만나는 점 P의 조건",
+                "t=1/4에서 만나는지 확인",
+                "접선의 기울기 구하기",
+                "t=1/4에서 값 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{3\\pi - 2}{\\pi + 6}\\) → 보기 ②",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "만나는 점의 조건 식 세우기": 1,
+            "점 P의 매개변수 값과 좌표 확인": 1,
+            "접선의 기울기 구하기": 2,
+            "t=1/4에서의 도함수 값": 1,
+            "직선과 곡선의 교점 조건": 1,
+            "접선의 기울기 계산": 1,
+            "기울기 식 정리": 1,
+            "만나는 점 P의 조건": 1,
+            "t=1/4에서 만나는지 확인": 1,
+            "t=1/4에서 값 계산": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "만나는 점의 조건 식 세우기": 1,
+            "점 P의 매개변수 값과 좌표 확인": 1,
+            "접선의 기울기 구하기": 2,
+            "t=1/4에서의 도함수 값": 1,
+            "직선과 곡선의 교점 조건": 1,
+            "접선의 기울기 계산": 1,
+            "기울기 식 정리": 1,
+            "만나는 점 P의 조건": 1,
+            "t=1/4에서 만나는지 확인": 1,
+            "t=1/4에서 값 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.20975399017334,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 40.90904402732849,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.811933279037476,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.20975399017334,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 40.90904402732849,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.811933279037476,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 대입",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 조건 세우기": 2,
+            "접선 기울기 계산 준비": 3,
+            "t = 1/4에서 값 계산": 1,
+            "기울기 계산": 3,
+            "교점 조건 설정": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "t = 1/4에서 값 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 조건 세우기": 2,
+            "접선 기울기 계산 준비": 3,
+            "t = 1/4에서 값 계산": 1,
+            "기울기 계산": 3,
+            "교점 조건 설정": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "t = 1/4에서 값 대입": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 3,
+          "접선 기울기 dy/dx 구하기": 2,
+          "t=1/4 대입하여 기울기 계산": 1,
+          "교점 조건으로 t 찾기": 1,
+          "접선 기울기 dy/dx 계산": 1,
+          "t=1/4 대입하여 값 계산": 1,
+          "교점 조건 정리": 1,
+          "교점에서의 삼각함수 값 결정": 1,
+          "교점 조건 설정": 4,
+          "접선의 기울기 공식 유도": 1,
+          "t = 1/4에서 값 계산": 3,
+          "기울기 계산": 4,
+          "점 P의 좌표 확인": 1,
+          "접선의 기울기 계산": 3,
+          "접선의 기울기 공식 준비": 1,
+          "조건 정리 및 교점의 $t$값 구하기": 1,
+          "접선의 기울기 구하기": 3,
+          "교점 P의 매개변수 t 값 구하기": 1,
+          "미분계수 계산": 1,
+          "교점에서의 매개변수 $t$ 값 구하기": 1,
+          "교점 찾기": 3,
+          "미분 계산": 2,
+          "t=1/4 대입": 2,
+          "접선 기울기 계산": 1,
+          "조건 정리": 4,
+          "만나는 점의 조건 식 세우기": 1,
+          "점 P의 매개변수 값과 좌표 확인": 1,
+          "t=1/4에서의 도함수 값": 1,
+          "직선과 곡선의 교점 조건": 1,
+          "기울기 식 정리": 1,
+          "만나는 점 P의 조건": 1,
+          "t=1/4에서 만나는지 확인": 1,
+          "t=1/4에서 값 계산": 1,
+          "접선 기울기 계산 준비": 3,
+          "dx/dt 계산": 1,
+          "dy/dt 계산": 1,
+          "t = 1/4에서 값 대입": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.813164949417114,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기(dy/dx) 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.43875002861023,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입 및 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.428231000900269,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4에서 값 대입"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.813164949417114,
+              "step_count": 2,
+              "step_titles": [
+                "교점 조건 세우기",
+                "접선 기울기(dy/dx) 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.43875002861023,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4 대입 및 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\text{(②)}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.428231000900269,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 정리",
+                "접선 기울기 dy/dx 계산",
+                "t=1/4에서 값 대입"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi-2}{\\pi+6}}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 조건 세우기": 1,
+            "접선 기울기(dy/dx) 구하기": 1,
+            "교점 조건 정리": 2,
+            "접선 기울기 dy/dx 계산": 2,
+            "t=1/4 대입 및 정리": 1,
+            "t=1/4에서 값 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 세우기": 1,
+            "접선 기울기(dy/dx) 구하기": 1,
+            "교점 조건 정리": 2,
+            "접선 기울기 dy/dx 계산": 2,
+            "t=1/4 대입 및 정리": 1,
+            "t=1/4에서 값 대입": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.906786441802979,
+              "step_count": 4,
+              "step_titles": [
+                "교점 P의 매개변수 t 찾기",
+                "t = 1/4에서 삼각함수 값 계산",
+                "dx/dt와 dy/dt 계산",
+                "t = 1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.01651644706726,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "**② $\\dfrac{3\\pi - 2}{\\pi + 6}$**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.819299697875977,
+              "step_count": 5,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 적용",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.906786441802979,
+              "step_count": 4,
+              "step_titles": [
+                "교점 P의 매개변수 t 찾기",
+                "t = 1/4에서 삼각함수 값 계산",
+                "dx/dt와 dy/dt 계산",
+                "t = 1/4 대입하여 기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.01651644706726,
+              "step_count": 4,
+              "step_titles": [
+                "교점 조건 설정",
+                "점 P의 좌표 확인",
+                "도함수 계산",
+                "t = 1/4에서 기울기 계산"
+              ],
+              "final_answer": "**② $\\dfrac{3\\pi - 2}{\\pi + 6}$**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.819299697875977,
+              "step_count": 5,
+              "step_titles": [
+                "교점 조건 설정",
+                "접선의 기울기 공식 적용",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "교점 P의 매개변수 t 찾기": 1,
+            "t = 1/4에서 삼각함수 값 계산": 1,
+            "dx/dt와 dy/dt 계산": 1,
+            "t = 1/4 대입하여 기울기 계산": 1,
+            "교점 조건 설정": 2,
+            "점 P의 좌표 확인": 1,
+            "도함수 계산": 1,
+            "t = 1/4에서 기울기 계산": 1,
+            "접선의 기울기 공식 적용": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "기울기 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 P의 매개변수 t 찾기": 1,
+            "t = 1/4에서 삼각함수 값 계산": 1,
+            "dx/dt와 dy/dt 계산": 1,
+            "t = 1/4 대입하여 기울기 계산": 1,
+            "교점 조건 설정": 2,
+            "점 P의 좌표 확인": 1,
+            "도함수 계산": 1,
+            "t = 1/4에서 기울기 계산": 1,
+            "접선의 기울기 공식 적용": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1,
+            "기울기 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.5519757270813,
+              "step_count": 1,
+              "step_titles": [
+                "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기"
+              ],
+              "final_answer": "STEP title=\"교점 $\\mathrm{P}$의 매개변수 $t$ 구하기\"]\n곡선 $C$와 직선 $y = 3x - 5e$가 만나는 점 $\\mathrm{P}$의 $x, y$ 좌표는 두 식을 동시에 만족해야 합니다. 직선의 방정식에 곡선의 매개변수 식을 대입하여 $t$를 구합니다.\n\n$$ \\begin{aligned} y &= 3x - 5e \\\\ e^{4t}(1 - 3\\cos^2 \\pi t) &= 3 \\left\\{ e^{4t}(1 + \\sin^2 \\pi t) \\right\\} - 5e \\end{aligned} $$\n\n좌변의 $\\cos^2",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 38.994304895401,
+              "step_count": 2,
+              "step_titles": [
+                "교점 P의 매개변수 $t$ 값 구하기",
+                "매개변수 미분 및 $t$ 값 대입"
+              ],
+              "final_answer": "frac{dy}{dt} = e^{4t} \\{ 4(1 - 3\\cos^2 \\pi t) + 3\\pi \\sin 2\\pi t \\} $$\n   $t = \\frac{1}{4}$일 때, $\\cos \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$, $\\sin \\frac{\\pi}{2} = 1$이므로,\n   $$ \\left. \\frac{dy}{dt} \\right|_{t=1/4} = e^{1} \\left\\{ 4\\left(1 - \\frac{3}{2}\\right) + 3\\pi(1) \\right\\} = e(-2 + 3\\pi) $$\n\n[STEP",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.702048540115356,
+              "step_count": 3,
+              "step_titles": [
+                "교점에서의 매개변수 $t$의 값 구하기",
+                "$t$에 대한 $x, y$의 미분계수 계산",
+                "접선의 기울기 계산 및 답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.5519757270813,
+              "step_count": 1,
+              "step_titles": [
+                "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기"
+              ],
+              "final_answer": "STEP title=\"교점 $\\mathrm{P}$의 매개변수 $t$ 구하기\"]\n곡선 $C$와 직선 $y = 3x - 5e$가 만나는 점 $\\mathrm{P}$의 $x, y$ 좌표는 두 식을 동시에 만족해야 합니다. 직선의 방정식에 곡선의 매개변수 식을 대입하여 $t$를 구합니다.\n\n$$ \\begin{aligned} y &= 3x - 5e \\\\ e^{4t}(1 - 3\\cos^2 \\pi t) &= 3 \\left\\{ e^{4t}(1 + \\sin^2 \\pi t) \\right\\} - 5e \\end{aligned} $$\n\n좌변의 $\\cos^2",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 38.994304895401,
+              "step_count": 2,
+              "step_titles": [
+                "교점 P의 매개변수 $t$ 값 구하기",
+                "매개변수 미분 및 $t$ 값 대입"
+              ],
+              "final_answer": "frac{dy}{dt} = e^{4t} \\{ 4(1 - 3\\cos^2 \\pi t) + 3\\pi \\sin 2\\pi t \\} $$\n   $t = \\frac{1}{4}$일 때, $\\cos \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$, $\\sin \\frac{\\pi}{2} = 1$이므로,\n   $$ \\left. \\frac{dy}{dt} \\right|_{t=1/4} = e^{1} \\left\\{ 4\\left(1 - \\frac{3}{2}\\right) + 3\\pi(1) \\right\\} = e(-2 + 3\\pi) $$\n\n[STEP",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.702048540115356,
+              "step_count": 3,
+              "step_titles": [
+                "교점에서의 매개변수 $t$의 값 구하기",
+                "$t$에 대한 $x, y$의 미분계수 계산",
+                "접선의 기울기 계산 및 답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기": 1,
+            "교점 P의 매개변수 $t$ 값 구하기": 1,
+            "매개변수 미분 및 $t$ 값 대입": 1,
+            "교점에서의 매개변수 $t$의 값 구하기": 1,
+            "$t$에 대한 $x, y$의 미분계수 계산": 1,
+            "접선의 기울기 계산 및 답 도출": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기": 1,
+            "교점 P의 매개변수 $t$ 값 구하기": 1,
+            "매개변수 미분 및 $t$ 값 대입": 1,
+            "교점에서의 매개변수 $t$의 값 구하기": 1,
+            "$t$에 대한 $x, y$의 미분계수 계산": 1,
+            "접선의 기울기 계산 및 답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 73.11827969551086,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 도출",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "\\dfrac{3\\pi - 2}{\\pi + 6}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 54.38144326210022,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식 유도",
+                "t=1/4 대입 및 기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.29402256011963,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기: 대입과 간소화",
+                "접선 기울기 계산: 미분",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 73.11827969551086,
+              "step_count": 3,
+              "step_titles": [
+                "교점 조건 도출",
+                "미분 계산",
+                "t=1/4 대입"
+              ],
+              "final_answer": "\\dfrac{3\\pi - 2}{\\pi + 6}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 54.38144326210022,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기",
+                "접선 기울기 공식 유도",
+                "t=1/4 대입 및 기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.29402256011963,
+              "step_count": 3,
+              "step_titles": [
+                "교점 찾기: 대입과 간소화",
+                "접선 기울기 계산: 미분",
+                "t=1/4 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점 조건 도출": 1,
+            "미분 계산": 1,
+            "t=1/4 대입": 2,
+            "교점 찾기": 1,
+            "접선 기울기 공식 유도": 1,
+            "t=1/4 대입 및 기울기 계산": 1,
+            "교점 찾기: 대입과 간소화": 1,
+            "접선 기울기 계산: 미분": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 조건 도출": 1,
+            "미분 계산": 1,
+            "t=1/4 대입": 2,
+            "교점 찾기": 1,
+            "접선 기울기 공식 유도": 1,
+            "t=1/4 대입 및 기울기 계산": 1,
+            "교점 찾기: 대입과 간소화": 1,
+            "접선 기울기 계산: 미분": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.50513792037964,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "매개변수 t에 대한 방정식",
+                "t의 값 결정",
+                "접선의 기울기 공식",
+                "미분 계산",
+                "t=1/4에서 계산",
+                "기울기 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi - 2}{\\pi + 6}}\n\\]\n정답은 ②번이다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.18995952606201,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "방정식 정리 및 삼각함수 변환",
+                "t 값 결정",
+                "접선의 기울기 계산",
+                "t=1/4에서 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\) 이므로 정답은 ②번입니다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 54.67801332473755,
+              "step_count": 3,
+              "step_titles": [
+                "만나는 점 P 조건 설정",
+                "점 P의 좌표 확인",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.50513792037964,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "매개변수 t에 대한 방정식",
+                "t의 값 결정",
+                "접선의 기울기 공식",
+                "미분 계산",
+                "t=1/4에서 계산",
+                "기울기 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{3\\pi - 2}{\\pi + 6}}\n\\]\n정답은 ②번이다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.18995952606201,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "방정식 정리 및 삼각함수 변환",
+                "t 값 결정",
+                "접선의 기울기 계산",
+                "t=1/4에서 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\) 이므로 정답은 ②번입니다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 54.67801332473755,
+              "step_count": 3,
+              "step_titles": [
+                "만나는 점 P 조건 설정",
+                "점 P의 좌표 확인",
+                "접선의 기울기 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "매개변수 t에 대한 방정식": 1,
+            "t의 값 결정": 1,
+            "접선의 기울기 공식": 1,
+            "미분 계산": 1,
+            "t=1/4에서 계산": 2,
+            "기울기 구하기": 1,
+            "방정식 정리 및 삼각함수 변환": 1,
+            "t 값 결정": 1,
+            "접선의 기울기 계산": 2,
+            "만나는 점 P 조건 설정": 1,
+            "점 P의 좌표 확인": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 2.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "매개변수 t에 대한 방정식": 1,
+            "t의 값 결정": 1,
+            "접선의 기울기 공식": 1,
+            "미분 계산": 1,
+            "t=1/4에서 계산": 2,
+            "기울기 구하기": 1,
+            "방정식 정리 및 삼각함수 변환": 1,
+            "t 값 결정": 1,
+            "접선의 기울기 계산": 2,
+            "만나는 점 P 조건 설정": 1,
+            "점 P의 좌표 확인": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.77198505401611,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 공식 준비",
+                "도함수 계산",
+                "t = 1/4에서의 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 52.548583984375,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 식 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 198.6389787197113,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서의 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.77198505401611,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 공식 준비",
+                "도함수 계산",
+                "t = 1/4에서의 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 52.548583984375,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 식 세우기",
+                "접선 기울기 계산 준비",
+                "t = 1/4에서 값 대입"
+              ],
+              "final_answer": "② $\\dfrac{3\\pi - 2}{\\pi + 6}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 198.6389787197113,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 조건 설정",
+                "접선 기울기 계산 준비",
+                "dx/dt 계산",
+                "dy/dt 계산",
+                "t = 1/4에서의 값 계산",
+                "기울기 계산"
+              ],
+              "final_answer": "\\(\\dfrac{3\\pi - 2}{\\pi + 6}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접선 기울기 공식 준비": 1,
+            "도함수 계산": 1,
+            "t = 1/4에서의 값 계산": 2,
+            "기울기 계산": 2,
+            "교점 조건 식 세우기": 1,
+            "접선 기울기 계산 준비": 2,
+            "t = 1/4에서 값 대입": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 조건 설정": 2,
+            "접선 기울기 공식 준비": 1,
+            "도함수 계산": 1,
+            "t = 1/4에서의 값 계산": 2,
+            "기울기 계산": 2,
+            "교점 조건 식 세우기": 1,
+            "접선 기울기 계산 준비": 2,
+            "t = 1/4에서 값 대입": 1,
+            "dx/dt 계산": 1,
+            "dy/dt 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.7777777777777777,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 1,
+          "접선 기울기(dy/dx) 구하기": 1,
+          "교점 조건 정리": 2,
+          "접선 기울기 dy/dx 계산": 2,
+          "t=1/4 대입 및 정리": 1,
+          "t=1/4에서 값 대입": 1,
+          "교점 P의 매개변수 t 찾기": 1,
+          "t = 1/4에서 삼각함수 값 계산": 1,
+          "dx/dt와 dy/dt 계산": 1,
+          "t = 1/4 대입하여 기울기 계산": 1,
+          "교점 조건 설정": 4,
+          "점 P의 좌표 확인": 2,
+          "도함수 계산": 2,
+          "t = 1/4에서 기울기 계산": 1,
+          "접선의 기울기 공식 적용": 1,
+          "dx/dt 계산": 2,
+          "dy/dt 계산": 2,
+          "기울기 계산": 3,
+          "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기": 1,
+          "교점 P의 매개변수 $t$ 값 구하기": 1,
+          "매개변수 미분 및 $t$ 값 대입": 1,
+          "교점에서의 매개변수 $t$의 값 구하기": 1,
+          "$t$에 대한 $x, y$의 미분계수 계산": 1,
+          "접선의 기울기 계산 및 답 도출": 1,
+          "교점 조건 도출": 1,
+          "미분 계산": 2,
+          "t=1/4 대입": 2,
+          "교점 찾기": 1,
+          "접선 기울기 공식 유도": 1,
+          "t=1/4 대입 및 기울기 계산": 1,
+          "교점 찾기: 대입과 간소화": 1,
+          "접선 기울기 계산: 미분": 1,
+          "조건 정리": 5,
+          "매개변수 t에 대한 방정식": 1,
+          "t의 값 결정": 1,
+          "접선의 기울기 공식": 1,
+          "t=1/4에서 계산": 2,
+          "기울기 구하기": 1,
+          "방정식 정리 및 삼각함수 변환": 1,
+          "t 값 결정": 1,
+          "접선의 기울기 계산": 2,
+          "만나는 점 P 조건 설정": 1,
+          "접선 기울기 공식 준비": 1,
+          "t = 1/4에서의 값 계산": 2,
+          "교점 조건 식 세우기": 1,
+          "접선 기울기 계산 준비": 2,
+          "t = 1/4에서 값 대입": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.0,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 3,
+          "접선 기울기 dy/dx 구하기": 2,
+          "t=1/4 대입하여 기울기 계산": 2,
+          "접선 기울기 dy/dx 계산": 1,
+          "교점 조건 설정": 6,
+          "접선 기울기 공식 적용": 1,
+          "dx/dt 계산": 2,
+          "dy/dt 계산": 3,
+          "접선 기울기 계산": 2,
+          "점 P의 좌표 확인": 2,
+          "도함수 계산": 2,
+          "t = 1/4에서 기울기 계산": 2,
+          "교점의 매개변수 $t$ 구하기": 1,
+          "매개변수 미분법 적용": 1,
+          "미분계수 계산 및 답 구하기": 1,
+          "교점 P에서의 매개변수 t 값 구하기": 1,
+          "dx/dt 및 dy/dt 계산": 1,
+          "접선의 기울기 계산": 3,
+          "교점 P의 매개변수 $t$ 값 구하기": 1,
+          "매개변수 미분법을 이용한 도함수 구하기": 1,
+          "교점 방정식 설정": 1,
+          "방정식 간단화 및 t 구하기": 1,
+          "접선 기울기 공식 도출": 1,
+          "t=1/4 대입 및 계산": 1,
+          "방정식 간단화": 1,
+          "미분 계산": 1,
+          "t=1/4 대입 및 기울기 계산": 1,
+          "교점 찾기": 1,
+          "접선 기울기 공식": 1,
+          "t=1/4 대입": 1,
+          "조건 정리": 5,
+          "직선과의 교점 조건": 2,
+          "t=1/4에서 값 계산": 2,
+          "기울기 dy/dx": 1,
+          "만나는 점의 매개변수 값 구하기": 1,
+          "접선의 기울기 표현식": 1,
+          "t=1/4에서의 값 계산": 1,
+          "접선 기울기 계산 준비": 2,
+          "t = 1/4에서 값 대입": 3,
+          "기울기 계산": 3,
+          "접점 $ t = \\frac{1}{4} $ 결정": 1,
+          "도함수 계산 준비": 1,
+          "교점 조건 대입": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.9444444444444446,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 1,
+          "접선 기울기 공식(매개변수 미분)": 1,
+          "t=1/4 대입하여 기울기 계산": 1,
+          "교점 조건 정리": 2,
+          "접선 기울기 계산(매개변수 미분)": 1,
+          "접선 기울기 dy/dx 계산": 1,
+          "t=1/4 대입하여 기울기 구하기": 1,
+          "교점 조건 설정": 5,
+          "점 P의 좌표 확인": 2,
+          "미분 계산": 2,
+          "t = 1/4에서 기울기 계산": 2,
+          "도함수 계산": 1,
+          "접선 기울기 공식 적용": 1,
+          "t = 1/4 대입": 1,
+          "기울기 계산": 5,
+          "교점 P에 대응하는 매개변수 t의 값 구하기": 1,
+          "t = 1/4에서의 dx/dt, dy/dt 계산": 1,
+          "접선의 기울기 구하기": 1,
+          "교점 P에 대응하는 매개변수 t 구하기": 1,
+          "매개변수 미분법을 이용한 도함수 계산": 1,
+          "t = 1/4 대입 및 접선의 기울기 계산": 1,
+          "교점의 매개변수 $t$ 구하기": 1,
+          "매개변수 미분": 1,
+          "접선의 기울기 계산": 2,
+          "교점 찾기": 3,
+          "접선 기울기 계산": 3,
+          "접선 기울기 공식": 1,
+          "t=1/4 대입": 1,
+          "\\(t = \\frac{1}{4}\\) 대입": 1,
+          "조건 정리": 5,
+          "만나는 점의 조건 식": 1,
+          "접선의 기울기 공식": 1,
+          "t=1/4에서 값 대입": 1,
+          "교점의 매개변수 값 구하기": 1,
+          "미분계수 계산": 1,
+          "직선과의 교점 조건 이용": 1,
+          "t=1/4에서의 x, y 확인": 1,
+          "t=1/4에서 값 계산": 1,
+          "접점에서의 t 값 결정": 1,
+          "도함수 계산 준비": 1,
+          "dx/dt 계산": 1,
+          "dy/dt 계산": 1,
+          "t = 1/4에서 값 대입": 2,
+          "접선 기울기 계산 전 준비": 1,
+          "t = 1/4에서 값 계산": 1,
+          "삼각함수 간단히 하기": 1,
+          "x와 y의 표현 단순화": 1,
+          "후보 t 값 시도: t = 1/4": 1,
+          "접선 기울기 계산 준비: dx/dt, dy/dt 구하기": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 3,
+          "접선 기울기 dy/dx 구하기": 2,
+          "t=1/4 대입하여 기울기 계산": 1,
+          "교점 조건으로 t 찾기": 1,
+          "접선 기울기 dy/dx 계산": 1,
+          "t=1/4 대입하여 값 계산": 1,
+          "교점 조건 정리": 1,
+          "교점에서의 삼각함수 값 결정": 1,
+          "교점 조건 설정": 4,
+          "접선의 기울기 공식 유도": 1,
+          "t = 1/4에서 값 계산": 3,
+          "기울기 계산": 4,
+          "점 P의 좌표 확인": 1,
+          "접선의 기울기 계산": 3,
+          "접선의 기울기 공식 준비": 1,
+          "조건 정리 및 교점의 $t$값 구하기": 1,
+          "접선의 기울기 구하기": 3,
+          "교점 P의 매개변수 t 값 구하기": 1,
+          "미분계수 계산": 1,
+          "교점에서의 매개변수 $t$ 값 구하기": 1,
+          "교점 찾기": 3,
+          "미분 계산": 2,
+          "t=1/4 대입": 2,
+          "접선 기울기 계산": 1,
+          "조건 정리": 4,
+          "만나는 점의 조건 식 세우기": 1,
+          "점 P의 매개변수 값과 좌표 확인": 1,
+          "t=1/4에서의 도함수 값": 1,
+          "직선과 곡선의 교점 조건": 1,
+          "기울기 식 정리": 1,
+          "만나는 점 P의 조건": 1,
+          "t=1/4에서 만나는지 확인": 1,
+          "t=1/4에서 값 계산": 1,
+          "접선 기울기 계산 준비": 3,
+          "dx/dt 계산": 1,
+          "dy/dt 계산": 1,
+          "t = 1/4에서 값 대입": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.7777777777777777,
+        "title_frequency_all_models": {
+          "교점 조건 세우기": 1,
+          "접선 기울기(dy/dx) 구하기": 1,
+          "교점 조건 정리": 2,
+          "접선 기울기 dy/dx 계산": 2,
+          "t=1/4 대입 및 정리": 1,
+          "t=1/4에서 값 대입": 1,
+          "교점 P의 매개변수 t 찾기": 1,
+          "t = 1/4에서 삼각함수 값 계산": 1,
+          "dx/dt와 dy/dt 계산": 1,
+          "t = 1/4 대입하여 기울기 계산": 1,
+          "교점 조건 설정": 4,
+          "점 P의 좌표 확인": 2,
+          "도함수 계산": 2,
+          "t = 1/4에서 기울기 계산": 1,
+          "접선의 기울기 공식 적용": 1,
+          "dx/dt 계산": 2,
+          "dy/dt 계산": 2,
+          "기울기 계산": 3,
+          "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기": 1,
+          "교점 P의 매개변수 $t$ 값 구하기": 1,
+          "매개변수 미분 및 $t$ 값 대입": 1,
+          "교점에서의 매개변수 $t$의 값 구하기": 1,
+          "$t$에 대한 $x, y$의 미분계수 계산": 1,
+          "접선의 기울기 계산 및 답 도출": 1,
+          "교점 조건 도출": 1,
+          "미분 계산": 2,
+          "t=1/4 대입": 2,
+          "교점 찾기": 1,
+          "접선 기울기 공식 유도": 1,
+          "t=1/4 대입 및 기울기 계산": 1,
+          "교점 찾기: 대입과 간소화": 1,
+          "접선 기울기 계산: 미분": 1,
+          "조건 정리": 5,
+          "매개변수 t에 대한 방정식": 1,
+          "t의 값 결정": 1,
+          "접선의 기울기 공식": 1,
+          "t=1/4에서 계산": 2,
+          "기울기 구하기": 1,
+          "방정식 정리 및 삼각함수 변환": 1,
+          "t 값 결정": 1,
+          "접선의 기울기 계산": 2,
+          "만나는 점 P 조건 설정": 1,
+          "접선 기울기 공식 준비": 1,
+          "t = 1/4에서의 값 계산": 2,
+          "교점 조건 식 세우기": 1,
+          "접선 기울기 계산 준비": 2,
+          "t = 1/4에서 값 대입": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.7777777777777777,
+      "title_frequency": {
+        "교점 조건 세우기": 8,
+        "접선 기울기 dy/dx 구하기": 4,
+        "t=1/4 대입하여 기울기 계산": 4,
+        "접선 기울기 dy/dx 계산": 5,
+        "교점 조건 설정": 19,
+        "접선 기울기 공식 적용": 2,
+        "dx/dt 계산": 6,
+        "dy/dt 계산": 7,
+        "접선 기울기 계산": 6,
+        "점 P의 좌표 확인": 7,
+        "도함수 계산": 5,
+        "t = 1/4에서 기울기 계산": 5,
+        "교점의 매개변수 $t$ 구하기": 2,
+        "매개변수 미분법 적용": 1,
+        "미분계수 계산 및 답 구하기": 1,
+        "교점 P에서의 매개변수 t 값 구하기": 1,
+        "dx/dt 및 dy/dt 계산": 1,
+        "접선의 기울기 계산": 10,
+        "교점 P의 매개변수 $t$ 값 구하기": 2,
+        "매개변수 미분법을 이용한 도함수 구하기": 1,
+        "교점 방정식 설정": 1,
+        "방정식 간단화 및 t 구하기": 1,
+        "접선 기울기 공식 도출": 1,
+        "t=1/4 대입 및 계산": 1,
+        "방정식 간단화": 1,
+        "미분 계산": 7,
+        "t=1/4 대입 및 기울기 계산": 2,
+        "교점 찾기": 8,
+        "접선 기울기 공식": 2,
+        "t=1/4 대입": 6,
+        "조건 정리": 19,
+        "직선과의 교점 조건": 2,
+        "t=1/4에서 값 계산": 4,
+        "기울기 dy/dx": 1,
+        "만나는 점의 매개변수 값 구하기": 1,
+        "접선의 기울기 표현식": 1,
+        "t=1/4에서의 값 계산": 1,
+        "접선 기울기 계산 준비": 7,
+        "t = 1/4에서 값 대입": 7,
+        "기울기 계산": 15,
+        "접점 $ t = \\frac{1}{4} $ 결정": 1,
+        "도함수 계산 준비": 2,
+        "교점 조건 대입": 1,
+        "접선 기울기 공식(매개변수 미분)": 1,
+        "교점 조건 정리": 5,
+        "접선 기울기 계산(매개변수 미분)": 1,
+        "t=1/4 대입하여 기울기 구하기": 1,
+        "t = 1/4 대입": 1,
+        "교점 P에 대응하는 매개변수 t의 값 구하기": 1,
+        "t = 1/4에서의 dx/dt, dy/dt 계산": 1,
+        "접선의 기울기 구하기": 4,
+        "교점 P에 대응하는 매개변수 t 구하기": 1,
+        "매개변수 미분법을 이용한 도함수 계산": 1,
+        "t = 1/4 대입 및 접선의 기울기 계산": 1,
+        "매개변수 미분": 1,
+        "\\(t = \\frac{1}{4}\\) 대입": 1,
+        "만나는 점의 조건 식": 1,
+        "접선의 기울기 공식": 2,
+        "t=1/4에서 값 대입": 2,
+        "교점의 매개변수 값 구하기": 1,
+        "미분계수 계산": 2,
+        "직선과의 교점 조건 이용": 1,
+        "t=1/4에서의 x, y 확인": 1,
+        "접점에서의 t 값 결정": 1,
+        "접선 기울기 계산 전 준비": 1,
+        "t = 1/4에서 값 계산": 4,
+        "삼각함수 간단히 하기": 1,
+        "x와 y의 표현 단순화": 1,
+        "후보 t 값 시도: t = 1/4": 1,
+        "접선 기울기 계산 준비: dx/dt, dy/dt 구하기": 1,
+        "교점 조건으로 t 찾기": 1,
+        "t=1/4 대입하여 값 계산": 1,
+        "교점에서의 삼각함수 값 결정": 1,
+        "접선의 기울기 공식 유도": 1,
+        "접선의 기울기 공식 준비": 1,
+        "조건 정리 및 교점의 $t$값 구하기": 1,
+        "교점 P의 매개변수 t 값 구하기": 1,
+        "교점에서의 매개변수 $t$ 값 구하기": 1,
+        "만나는 점의 조건 식 세우기": 1,
+        "점 P의 매개변수 값과 좌표 확인": 1,
+        "t=1/4에서의 도함수 값": 1,
+        "직선과 곡선의 교점 조건": 1,
+        "기울기 식 정리": 1,
+        "만나는 점 P의 조건": 1,
+        "t=1/4에서 만나는지 확인": 1,
+        "접선 기울기(dy/dx) 구하기": 1,
+        "t=1/4 대입 및 정리": 1,
+        "교점 P의 매개변수 t 찾기": 1,
+        "t = 1/4에서 삼각함수 값 계산": 1,
+        "dx/dt와 dy/dt 계산": 1,
+        "t = 1/4 대입하여 기울기 계산": 1,
+        "접선의 기울기 공식 적용": 1,
+        "교점 $\\mathrm{P}$의 매개변수 $t$ 구하기": 1,
+        "매개변수 미분 및 $t$ 값 대입": 1,
+        "교점에서의 매개변수 $t$의 값 구하기": 1,
+        "$t$에 대한 $x, y$의 미분계수 계산": 1,
+        "접선의 기울기 계산 및 답 도출": 1,
+        "교점 조건 도출": 1,
+        "접선 기울기 공식 유도": 1,
+        "교점 찾기: 대입과 간소화": 1,
+        "접선 기울기 계산: 미분": 1,
+        "매개변수 t에 대한 방정식": 1,
+        "t의 값 결정": 1,
+        "t=1/4에서 계산": 2,
+        "기울기 구하기": 1,
+        "방정식 정리 및 삼각함수 변환": 1,
+        "t 값 결정": 1,
+        "만나는 점 P 조건 설정": 1,
+        "접선 기울기 공식 준비": 1,
+        "t = 1/4에서의 값 계산": 2,
+        "교점 조건 식 세우기": 1
+      },
+      "accuracy": 0.9027777777777778,
+      "n_samples": 72
+    }
+  }
+}

@@ -1,0 +1,370 @@
+[
+  {
+    "prob_id": "2024_odd_common_1",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 5,
+    "prob_area": "수학1",
+    "prob_point": "2"
+  },
+  {
+    "prob_id": "2024_odd_common_2",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 5,
+    "prob_area": "수학2",
+    "prob_point": "2"
+  },
+  {
+    "prob_id": "2024_odd_common_3",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 8,
+    "prob_area": "수학1",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_4",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 6,
+    "prob_area": "수학2",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_5",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 6,
+    "prob_area": "수학2",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_6",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 7,
+    "prob_area": "수학1",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_7",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "수학2",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_8",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 6,
+    "prob_area": "수학2",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_9",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "수학1",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_10",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 9,
+    "prob_area": "수학2",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_11",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 6,
+    "prob_area": "수학1",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_12",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 10,
+    "prob_area": "수학2",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_13",
+    "success": true,
+    "n_groups": 6,
+    "n_flows": 10,
+    "prob_area": "수학1",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_14",
+    "success": true,
+    "n_groups": 8,
+    "n_flows": 13,
+    "prob_area": "수학2",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_15",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 12,
+    "prob_area": "수학1",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_16",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 4,
+    "prob_area": "수학1",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_17",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 6,
+    "prob_area": "수학2",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_18",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 6,
+    "prob_area": "수학1",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_19",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 8,
+    "prob_area": "수학1",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_common_20",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 10,
+    "prob_area": "수학2",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_21",
+    "success": true,
+    "n_groups": 7,
+    "n_flows": 9,
+    "prob_area": "수학1",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_common_22",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 10,
+    "prob_area": "수학2",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_23",
+    "success": true,
+    "n_groups": 2,
+    "n_flows": 3,
+    "prob_area": "확률과통계",
+    "prob_point": "2"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_24",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 5,
+    "prob_area": "확률과통계",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_25",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 8,
+    "prob_area": "확률과통계",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_26",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 6,
+    "prob_area": "확률과통계",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_27",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 6,
+    "prob_area": "확률과통계",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_28",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 9,
+    "prob_area": "확률과통계",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_29",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "확률과통계",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_probalitity_30",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 11,
+    "prob_area": "확률과통계",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_calculus_23",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 6,
+    "prob_area": "미적분",
+    "prob_point": "2"
+  },
+  {
+    "prob_id": "2024_odd_calculus_24",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "미적분",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_calculus_25",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 8,
+    "prob_area": "미적분",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_calculus_26",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "미적분",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_calculus_27",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 10,
+    "prob_area": "미적분",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_calculus_28",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 14,
+    "prob_area": "미적분",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_calculus_29",
+    "success": true,
+    "n_groups": 6,
+    "n_flows": 8,
+    "prob_area": "미적분",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_calculus_30",
+    "success": true,
+    "n_groups": 7,
+    "n_flows": 13,
+    "prob_area": "미적분",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_geometry_23",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 6,
+    "prob_area": "기하",
+    "prob_point": "2"
+  },
+  {
+    "prob_id": "2024_odd_geometry_24",
+    "success": true,
+    "n_groups": 2,
+    "n_flows": 4,
+    "prob_area": "기하",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_geometry_25",
+    "success": true,
+    "n_groups": 4,
+    "n_flows": 7,
+    "prob_area": "기하",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_geometry_26",
+    "success": true,
+    "n_groups": 3,
+    "n_flows": 9,
+    "prob_area": "기하",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_geometry_27",
+    "success": true,
+    "n_groups": 5,
+    "n_flows": 13,
+    "prob_area": "기하",
+    "prob_point": "3"
+  },
+  {
+    "prob_id": "2024_odd_geometry_28",
+    "success": true,
+    "n_groups": 7,
+    "n_flows": 14,
+    "prob_area": "기하",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_geometry_29",
+    "success": true,
+    "n_groups": 7,
+    "n_flows": 12,
+    "prob_area": "기하",
+    "prob_point": "4"
+  },
+  {
+    "prob_id": "2024_odd_geometry_30",
+    "success": true,
+    "n_groups": 6,
+    "n_flows": 13,
+    "prob_area": "기하",
+    "prob_point": "4"
+  }
+]

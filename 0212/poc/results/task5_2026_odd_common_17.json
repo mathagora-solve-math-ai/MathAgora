@@ -1,0 +1,3155 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:50:09Z",
+    "ended_at_utc": "2026-02-14T03:50:40Z",
+    "elapsed_seconds": 31.685,
+    "problem_tag": "2026_odd_common_17",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 1,
+    "n_resumed_runs_from_flat_csv": 71
+  },
+  "problem": {
+    "id": "2026_odd_common_17",
+    "label": "2026_odd_common_17 (수학2, 3점)",
+    "gold_answer": "16"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.223494,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.3011,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.243638,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.223494,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.3011,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.243638,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 C 결정": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 C 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 C 결정": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 C 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.130939,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.95767,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.368111,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.130939,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.95767,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.368111,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.835526,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.870476,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.132746,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.835526,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.870476,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.132746,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 2,
+            "적분상수 결정": 3,
+            "함숫값 계산": 3,
+            "부정적분 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 2,
+            "적분상수 결정": 3,
+            "함숫값 계산": 3,
+            "부정적분 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.030328,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.344795,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.788058,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.030328,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.344795,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.788058,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 2,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3,
+            "부정적분 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 2,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3,
+            "부정적분 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.556546,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "\\( F(2) \\) 계산"
+              ],
+              "final_answer": "\\( 16 \\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.023974,
+              "step_count": 3,
+              "step_titles": [
+                "함수 f(x)의 부정적분 구하기",
+                "적분상수 C 결정하기",
+                "F(2) 계산하기"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.172274,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2) = 16\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.556546,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "\\( F(2) \\) 계산"
+              ],
+              "final_answer": "\\( 16 \\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.023974,
+              "step_count": 3,
+              "step_titles": [
+                "함수 f(x)의 부정적분 구하기",
+                "적분상수 C 결정하기",
+                "F(2) 계산하기"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.172274,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2) = 16\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 1,
+            "부정적분 구하기": 2,
+            "적분상수 결정": 2,
+            "\\( F(2) \\) 계산": 1,
+            "함수 f(x)의 부정적분 구하기": 1,
+            "적분상수 C 결정하기": 1,
+            "F(2) 계산하기": 1,
+            "F(2) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "부정적분 구하기": 2,
+            "적분상수 결정": 2,
+            "\\( F(2) \\) 계산": 1,
+            "함수 f(x)의 부정적분 구하기": 1,
+            "적분상수 C 결정하기": 1,
+            "F(2) 계산하기": 1,
+            "F(2) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.12873,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.568711,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.774342,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.12873,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.568711,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.774342,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 2,
+            "F(2) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 2,
+            "F(2) 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 7,
+          "초기조건으로 상수 C 결정": 2,
+          "F(2) 계산": 11,
+          "초기조건으로 상수 C 구하기": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 8,
+          "함숫값 계산": 3,
+          "상수 C 결정": 3,
+          "조건 정리": 1,
+          "\\( F(2) \\) 계산": 1,
+          "함수 f(x)의 부정적분 구하기": 1,
+          "적분상수 C 결정하기": 1,
+          "F(2) 계산하기": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.084784,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.990103,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.946613,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.084784,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.990103,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.946613,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 C 결정": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 C 결정": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.367363,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.22537,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.922286,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.367363,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.22537,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.922286,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.968501,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.464274,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.032394,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.968501,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.464274,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.032394,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 2,
+            "적분상수 결정": 3,
+            "함숫값 계산": 2,
+            "최종 함숫값 계산": 1,
+            "부정적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 2,
+            "적분상수 결정": 3,
+            "함숫값 계산": 2,
+            "최종 함숫값 계산": 1,
+            "부정적분 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.361145,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.852174,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.187906,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.361145,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.852174,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.187906,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 2,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3,
+            "부정적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 2,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3,
+            "부정적분 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.181781,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.025742,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분 상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.399598,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.181781,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.025742,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분 상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.399598,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "적분상수 결정": 2,
+            "F(2) 계산": 3,
+            "적분 상수 결정": 1,
+            "조건 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "적분상수 결정": 2,
+            "F(2) 계산": 3,
+            "적분 상수 결정": 1,
+            "조건 정리": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.736856,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.024946,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.284444,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.736856,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.024946,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.284444,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 10,
+          "초기조건으로 상수 C 결정": 2,
+          "F(2) 계산": 12,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "부정적분 계산": 8,
+          "적분상수 결정": 8,
+          "함숫값 계산": 2,
+          "최종 함숫값 계산": 1,
+          "상수 C 결정": 3,
+          "적분 상수 결정": 1,
+          "조건 정리": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 3
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.159371,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.926188,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.950416,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.159371,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.926188,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.950416,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 구하기",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 \\(C\\) 구하기": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 \\(C\\) 구하기": 2,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.639033,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.778544,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.913038,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.639033,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.778544,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.913038,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.476413,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.628222,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.329992,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.476413,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.628222,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.329992,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 1,
+            "적분상수 결정": 3,
+            "최종 함숫값 계산": 1,
+            "부정적분 구하기": 2,
+            "함숫값 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 1,
+            "적분상수 결정": 3,
+            "최종 함숫값 계산": 1,
+            "부정적분 구하기": 2,
+            "함숫값 계산": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.664788,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.753175,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.173867,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.664788,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.753175,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.173867,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "상수 C 결정": 3,
+            "F(2) 계산": 3
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.097081,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.373753,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분 상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.67609214782715,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.097081,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\( F(2) = 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.373753,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분 상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.67609214782715,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "적분상수 결정": 2,
+            "F(2) 계산": 3,
+            "적분 상수 결정": 1,
+            "조건 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "적분상수 결정": 2,
+            "F(2) 계산": 3,
+            "적분 상수 결정": 1,
+            "조건 정리": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.239347,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.066057,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 72.275547,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수에 값 대입"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.239347,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.066057,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 72.275547,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수에 값 대입"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 1,
+            "F(2) 계산": 1,
+            "함수에 값 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 3,
+            "함수 값 계산": 1,
+            "F(2) 계산": 1,
+            "함수에 값 대입": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 8,
+          "초기조건으로 상수 \\(C\\) 구하기": 2,
+          "F(2) 계산": 13,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 8,
+          "최종 함숫값 계산": 1,
+          "함숫값 계산": 2,
+          "상수 C 결정": 3,
+          "적분 상수 결정": 1,
+          "조건 정리": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 1,
+          "함수에 값 대입": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.397685,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.344217,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.163505,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.397685,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 \\(C\\) 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.344217,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.163505,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "초기조건으로 적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\(F(2)=16\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 C 결정": 1,
+            "초기조건으로 적분상수 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "초기조건으로 상수 \\(C\\) 결정": 1,
+            "F(2) 계산": 3,
+            "초기조건으로 상수 C 결정": 1,
+            "초기조건으로 적분상수 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.513869,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.263585,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.513231,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.513869,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.263585,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.513231,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "적분상수 결정": 3,
+            "F(2) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.155252,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.153718,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.367957,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.155252,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.153718,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.367957,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "최종 함숫값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 1,
+            "적분상수 결정": 3,
+            "함숫값 계산": 2,
+            "부정적분 구하기": 2,
+            "최종 함숫값 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 1,
+            "적분상수 결정": 3,
+            "함숫값 계산": 2,
+            "부정적분 구하기": 2,
+            "최종 함숫값 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.623391,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.444832,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.551562,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.623391,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "F(2) 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.444832,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.551562,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 1,
+            "F(2) 값 계산": 1,
+            "상수 C 결정": 1,
+            "F(2) 계산": 2,
+            "상수 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 1,
+            "F(2) 값 계산": 1,
+            "상수 C 결정": 1,
+            "F(2) 계산": 2,
+            "상수 결정": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.498178,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정하기",
+                "F(2) 계산하기"
+              ],
+              "final_answer": "\\( 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.687666,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "F(0)=4를 이용해 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{16}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.861647,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.498178,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정하기",
+                "F(2) 계산하기"
+              ],
+              "final_answer": "\\( 16 \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.687666,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "F(0)=4를 이용해 C 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{16}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.861647,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 구하기",
+                "적분상수 결정",
+                "F(2) 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 구하기": 3,
+            "적분상수 결정하기": 1,
+            "F(2) 계산하기": 1,
+            "F(0)=4를 이용해 C 결정": 1,
+            "F(2) 계산": 2,
+            "적분상수 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 구하기": 3,
+            "적분상수 결정하기": 1,
+            "F(2) 계산하기": 1,
+            "F(0)=4를 이용해 C 결정": 1,
+            "F(2) 계산": 2,
+            "적분상수 결정": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.155478,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.176792,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.757811,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "구하려는 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.155478,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "함수값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.176792,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "조건 적용",
+                "함수 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.757811,
+              "step_count": 3,
+              "step_titles": [
+                "부정적분 계산",
+                "초기 조건 적용",
+                "구하려는 값 계산"
+              ],
+              "final_answer": "16",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 2,
+            "함수값 계산": 1,
+            "조건 적용": 1,
+            "함수 값 계산": 1,
+            "구하려는 값 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부정적분 계산": 3,
+            "초기 조건 적용": 2,
+            "함수값 계산": 1,
+            "조건 적용": 1,
+            "함수 값 계산": 1,
+            "구하려는 값 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.0,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 8,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "F(2) 계산": 10,
+          "초기조건으로 상수 C 결정": 1,
+          "초기조건으로 적분상수 결정": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 7,
+          "함숫값 계산": 2,
+          "최종 함숫값 계산": 1,
+          "초기 조건 적용": 3,
+          "F(2) 값 계산": 1,
+          "상수 C 결정": 1,
+          "상수 결정": 1,
+          "적분상수 결정하기": 1,
+          "F(2) 계산하기": 1,
+          "F(0)=4를 이용해 C 결정": 1,
+          "함수값 계산": 1,
+          "조건 적용": 1,
+          "함수 값 계산": 1,
+          "구하려는 값 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 7,
+          "초기조건으로 상수 C 결정": 2,
+          "F(2) 계산": 11,
+          "초기조건으로 상수 C 구하기": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 8,
+          "함숫값 계산": 3,
+          "상수 C 결정": 3,
+          "조건 정리": 1,
+          "\\( F(2) \\) 계산": 1,
+          "함수 f(x)의 부정적분 구하기": 1,
+          "적분상수 C 결정하기": 1,
+          "F(2) 계산하기": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 10,
+          "초기조건으로 상수 C 결정": 2,
+          "F(2) 계산": 12,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "부정적분 계산": 8,
+          "적분상수 결정": 8,
+          "함숫값 계산": 2,
+          "최종 함숫값 계산": 1,
+          "상수 C 결정": 3,
+          "적분 상수 결정": 1,
+          "조건 정리": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 3
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 8,
+          "초기조건으로 상수 \\(C\\) 구하기": 2,
+          "F(2) 계산": 13,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 8,
+          "최종 함숫값 계산": 1,
+          "함숫값 계산": 2,
+          "상수 C 결정": 3,
+          "적분 상수 결정": 1,
+          "조건 정리": 1,
+          "초기 조건 적용": 3,
+          "함수 값 계산": 1,
+          "함수에 값 대입": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.0,
+        "title_frequency_all_models": {
+          "부정적분 구하기": 8,
+          "초기조건으로 상수 \\(C\\) 결정": 1,
+          "F(2) 계산": 10,
+          "초기조건으로 상수 C 결정": 1,
+          "초기조건으로 적분상수 결정": 1,
+          "부정적분 계산": 10,
+          "적분상수 결정": 7,
+          "함숫값 계산": 2,
+          "최종 함숫값 계산": 1,
+          "초기 조건 적용": 3,
+          "F(2) 값 계산": 1,
+          "상수 C 결정": 1,
+          "상수 결정": 1,
+          "적분상수 결정하기": 1,
+          "F(2) 계산하기": 1,
+          "F(0)=4를 이용해 C 결정": 1,
+          "함수값 계산": 1,
+          "조건 적용": 1,
+          "함수 값 계산": 1,
+          "구하려는 값 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.0416666666666665,
+      "title_frequency": {
+        "부정적분 구하기": 33,
+        "초기조건으로 상수 C 결정": 5,
+        "F(2) 계산": 46,
+        "초기조건으로 상수 C 구하기": 1,
+        "부정적분 계산": 38,
+        "적분상수 결정": 31,
+        "함숫값 계산": 9,
+        "상수 C 결정": 10,
+        "조건 정리": 3,
+        "\\( F(2) \\) 계산": 1,
+        "함수 f(x)의 부정적분 구하기": 1,
+        "적분상수 C 결정하기": 1,
+        "F(2) 계산하기": 2,
+        "초기 조건 적용": 12,
+        "함수 값 계산": 7,
+        "초기조건으로 상수 \\(C\\) 결정": 3,
+        "최종 함숫값 계산": 3,
+        "적분 상수 결정": 2,
+        "초기조건으로 상수 \\(C\\) 구하기": 2,
+        "함수에 값 대입": 1,
+        "초기조건으로 적분상수 결정": 1,
+        "F(2) 값 계산": 1,
+        "상수 결정": 1,
+        "적분상수 결정하기": 1,
+        "F(0)=4를 이용해 C 결정": 1,
+        "함수값 계산": 1,
+        "조건 적용": 1,
+        "구하려는 값 계산": 1
+      },
+      "accuracy": 1.0,
+      "n_samples": 72
+    }
+  }
+}

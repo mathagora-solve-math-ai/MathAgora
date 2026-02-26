@@ -1,0 +1,3215 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-12T20:13:35Z",
+    "ended_at_utc": "2026-02-12T20:33:53Z",
+    "elapsed_seconds": 1217.302,
+    "problem_tag": "2026_odd_common_6",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72
+  },
+  "problem": {
+    "id": "2026_odd_common_6",
+    "label": "2026_odd_common_6 (수학1, 3점)",
+    "gold_answer": "2"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.283960342407227,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad(\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.61963677406311,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.147663593292236,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.283960342407227,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad(\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.61963677406311,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.147663593292236,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 지수식으로 변환": 3,
+            "a, b 값 구하기": 2,
+            "ab와 \\(\\log_9(ab)\\) 계산": 3,
+            "a, b 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수식으로 변환": 3,
+            "a, b 값 구하기": 2,
+            "ab와 \\(\\log_9(ab)\\) 계산": 3,
+            "a, b 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.103034496307373,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.378701686859131,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.282917022705078,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.103034496307373,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.378701686859131,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.282917022705078,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 지수 형태로 변환": 3,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수 형태로 변환": 3,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.137396812438965,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a, b$ 값 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.37337064743042,
+              "step_count": 3,
+              "step_titles": [
+                "$a$와 $b$의 관계식 도출",
+                "$\\log_3 a$의 값 구하기",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.2045841217041,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a, b$ 값 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.137396812438965,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a, b$ 값 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.37337064743042,
+              "step_count": 3,
+              "step_titles": [
+                "$a$와 $b$의 관계식 도출",
+                "$\\log_3 a$의 값 구하기",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.2045841217041,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a, b$ 값 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리 및 관계식 유도": 2,
+            "$a, b$ 값 구하기": 2,
+            "최종 식의 값 계산": 2,
+            "$a$와 $b$의 관계식 도출": 1,
+            "$\\log_3 a$의 값 구하기": 1,
+            "최종 식 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 관계식 유도": 2,
+            "$a, b$ 값 구하기": 2,
+            "최종 식의 값 계산": 2,
+            "$a$와 $b$의 관계식 도출": 1,
+            "$\\log_3 a$의 값 구하기": 1,
+            "최종 식 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 43.869051694869995,
+              "step_count": 4,
+              "step_titles": [
+                "변수 도입",
+                "방정식 변환 및 풀이",
+                "ab 계산",
+                "\\log_9 (ab) 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 40.11849546432495,
+              "step_count": 4,
+              "step_titles": [
+                "변수 설정",
+                "첫 번째 조건 적용",
+                "두 번째 조건 적용",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.734638929367065,
+              "step_count": 4,
+              "step_titles": [
+                "첫 번째 방정식 활용",
+                "두 번째 방정식 대입",
+                "ab 계산",
+                "로그 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 43.869051694869995,
+              "step_count": 4,
+              "step_titles": [
+                "변수 도입",
+                "방정식 변환 및 풀이",
+                "ab 계산",
+                "\\log_9 (ab) 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 40.11849546432495,
+              "step_count": 4,
+              "step_titles": [
+                "변수 설정",
+                "첫 번째 조건 적용",
+                "두 번째 조건 적용",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.734638929367065,
+              "step_count": 4,
+              "step_titles": [
+                "첫 번째 방정식 활용",
+                "두 번째 방정식 대입",
+                "ab 계산",
+                "로그 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "변수 도입": 1,
+            "방정식 변환 및 풀이": 1,
+            "ab 계산": 2,
+            "\\log_9 (ab) 계산": 1,
+            "변수 설정": 1,
+            "첫 번째 조건 적용": 1,
+            "두 번째 조건 적용": 1,
+            "로그 계산": 2,
+            "첫 번째 방정식 활용": 1,
+            "두 번째 방정식 대입": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "변수 도입": 1,
+            "방정식 변환 및 풀이": 1,
+            "ab 계산": 2,
+            "\\log_9 (ab) 계산": 1,
+            "변수 설정": 1,
+            "첫 번째 조건 적용": 1,
+            "두 번째 조건 적용": 1,
+            "로그 계산": 2,
+            "첫 번째 방정식 활용": 1,
+            "두 번째 방정식 대입": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.738105535507202,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a와 b 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 57.509767055511475,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.617226123809814,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 방정식으로 변환",
+                "a와 b의 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.738105535507202,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a와 b 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 57.509767055511475,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.617226123809814,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 방정식으로 변환",
+                "a와 b의 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "a와 b 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 1,
+            "a 값 구하기": 1,
+            "log_9 ab 계산": 2,
+            "조건을 방정식으로 변환": 1,
+            "a와 b의 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "a와 b 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 1,
+            "a 값 구하기": 1,
+            "log_9 ab 계산": 2,
+            "조건을 방정식으로 변환": 1,
+            "a와 b의 값 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.291492223739624,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.100831031799316,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "ab의 로그 계산",
+                "밑 변환 (9로 변환)"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.883002758026123,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.291492223739624,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.100831031799316,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "ab의 로그 계산",
+                "밑 변환 (9로 변환)"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.883002758026123,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 로그 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "로그 변환": 1,
+            "두 번째 조건 대입": 3,
+            "a와 b의 로그 값 구하기": 3,
+            "ab 계산": 1,
+            "목표 로그 계산": 1,
+            "첫 번째 조건 변환": 2,
+            "ab의 로그 계산": 1,
+            "밑 변환 (9로 변환)": 1,
+            "log₉(ab) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "로그 변환": 1,
+            "두 번째 조건 대입": 3,
+            "a와 b의 로그 값 구하기": 3,
+            "ab 계산": 1,
+            "목표 로그 계산": 1,
+            "첫 번째 조건 변환": 2,
+            "ab의 로그 계산": 1,
+            "밑 변환 (9로 변환)": 1,
+            "log₉(ab) 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.611111111111111,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 3,
+          "a, b 값 구하기": 5,
+          "ab와 \\(\\log_9(ab)\\) 계산": 3,
+          "a, b 구하기": 1,
+          "조건을 지수 형태로 변환": 3,
+          "log₉(ab) 계산": 4,
+          "조건 정리 및 관계식 유도": 2,
+          "$a, b$ 값 구하기": 2,
+          "최종 식의 값 계산": 2,
+          "$a$와 $b$의 관계식 도출": 1,
+          "$\\log_3 a$의 값 구하기": 1,
+          "최종 식 계산": 1,
+          "변수 도입": 1,
+          "방정식 변환 및 풀이": 1,
+          "ab 계산": 3,
+          "\\log_9 (ab) 계산": 1,
+          "변수 설정": 1,
+          "첫 번째 조건 적용": 1,
+          "두 번째 조건 적용": 1,
+          "로그 계산": 2,
+          "첫 번째 방정식 활용": 1,
+          "두 번째 방정식 대입": 1,
+          "조건 정리": 5,
+          "a와 b 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 1,
+          "a 값 구하기": 1,
+          "log_9 ab 계산": 2,
+          "조건을 방정식으로 변환": 1,
+          "a와 b의 값 구하기": 1,
+          "로그 변환": 1,
+          "두 번째 조건 대입": 3,
+          "a와 b의 로그 값 구하기": 3,
+          "목표 로그 계산": 1,
+          "첫 번째 조건 변환": 2,
+          "ab의 로그 계산": 1,
+          "밑 변환 (9로 변환)": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.038514852523804,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "연립하여 a, b 관계 정리",
+                "ab와 밑 9 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad(\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.550556898117065,
+              "step_count": 3,
+              "step_titles": [
+                "로그 조건을 지수식으로 변환",
+                "a, b를 3의 거듭제곱으로 표현",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.586284160614014,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.038514852523804,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "연립하여 a, b 관계 정리",
+                "ab와 밑 9 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad(\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.550556898117065,
+              "step_count": 3,
+              "step_titles": [
+                "로그 조건을 지수식으로 변환",
+                "a, b를 3의 거듭제곱으로 표현",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.586284160614014,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 지수식으로 변환": 2,
+            "연립하여 a, b 관계 정리": 1,
+            "ab와 밑 9 로그 계산": 1,
+            "로그 조건을 지수식으로 변환": 1,
+            "a, b를 3의 거듭제곱으로 표현": 1,
+            "ab와 \\(\\log_9(ab)\\) 계산": 2,
+            "a, b 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수식으로 변환": 2,
+            "연립하여 a, b 관계 정리": 1,
+            "ab와 밑 9 로그 계산": 1,
+            "로그 조건을 지수식으로 변환": 1,
+            "a, b를 3의 거듭제곱으로 표현": 1,
+            "ab와 \\(\\log_9(ab)\\) 계산": 2,
+            "a, b 값 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.437994003295898,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.800703287124634,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.881894111633301,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "②  $\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.437994003295898,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.800703287124634,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.881894111633301,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "②  $\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 지수 형태로 변환": 2,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3,
+            "조건 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수 형태로 변환": 2,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3,
+            "조건 정리": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.652120351791382,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a, b 관계식 유도",
+                "ab의 값 계산",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.97702717781067,
+              "step_count": 3,
+              "step_titles": [
+                "$a$와 $b$의 관계식 유도",
+                "$\\log_3 a$의 값 구하기",
+                "목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.01065230369568,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a$의 값 구하기",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.652120351791382,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a, b 관계식 유도",
+                "ab의 값 계산",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.97702717781067,
+              "step_count": 3,
+              "step_titles": [
+                "$a$와 $b$의 관계식 유도",
+                "$\\log_3 a$의 값 구하기",
+                "목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.01065230369568,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 관계식 유도",
+                "$a$의 값 구하기",
+                "최종 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리 및 a, b 관계식 유도": 1,
+            "ab의 값 계산": 1,
+            "최종 식 계산": 2,
+            "$a$와 $b$의 관계식 유도": 1,
+            "$\\log_3 a$의 값 구하기": 1,
+            "목표 식 계산": 1,
+            "조건 정리 및 관계식 유도": 1,
+            "$a$의 값 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 a, b 관계식 유도": 1,
+            "ab의 값 계산": 1,
+            "최종 식 계산": 2,
+            "$a$와 $b$의 관계식 유도": 1,
+            "$\\log_3 a$의 값 구하기": 1,
+            "목표 식 계산": 1,
+            "조건 정리 및 관계식 유도": 1,
+            "$a$의 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.360684871673584,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 방정식 정리",
+                "대입 및 a, b 구하기",
+                "ab 계산 및 로그 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.497947931289673,
+              "step_count": 3,
+              "step_titles": [
+                "변수 도입",
+                "두 번째 방정식 적용",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.98749303817749,
+              "step_count": 2,
+              "step_titles": [
+                "변수 도입",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.360684871673584,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 방정식 정리",
+                "대입 및 a, b 구하기",
+                "ab 계산 및 로그 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.497947931289673,
+              "step_count": 3,
+              "step_titles": [
+                "변수 도입",
+                "두 번째 방정식 적용",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.98749303817749,
+              "step_count": 2,
+              "step_titles": [
+                "변수 도입",
+                "로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "주어진 방정식 정리": 1,
+            "대입 및 a, b 구하기": 1,
+            "ab 계산 및 로그 구하기": 1,
+            "변수 도입": 2,
+            "두 번째 방정식 적용": 1,
+            "로그 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 방정식 정리": 1,
+            "대입 및 a, b 구하기": 1,
+            "ab 계산 및 로그 구하기": 1,
+            "변수 도입": 2,
+            "두 번째 방정식 적용": 1,
+            "로그 계산": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.492990255355835,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\) → ②",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.800801515579224,
+              "step_count": 3,
+              "step_titles": [
+                "조건 로그식 변환",
+                "a와 b의 관계식 풀기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.436182737350464,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a에 대한 방정식",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.492990255355835,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\) → ②",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.800801515579224,
+              "step_count": 3,
+              "step_titles": [
+                "조건 로그식 변환",
+                "a와 b의 관계식 풀기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.436182737350464,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a에 대한 방정식",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "a 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 1,
+            "조건 로그식 변환": 1,
+            "a와 b의 관계식 풀기": 1,
+            "log_9 ab 계산": 2,
+            "a에 대한 방정식": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "a 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 1,
+            "조건 로그식 변환": 1,
+            "a와 b의 관계식 풀기": 1,
+            "log_9 ab 계산": 2,
+            "a에 대한 방정식": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.455364227294922,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "조건 1 변형",
+                "조건 2에 대입",
+                "a와 b 값 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.486629247665405,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "a와 b의 로그 값 구하기",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.094600200653076,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.455364227294922,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "조건 1 변형",
+                "조건 2에 대입",
+                "a와 b 값 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.486629247665405,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "a와 b의 로그 값 구하기",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.094600200653076,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 조건 변환",
+                "두 번째 조건 대입",
+                "a와 b의 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "조건 1 변형": 1,
+            "조건 2에 대입": 1,
+            "a와 b 값 표현": 1,
+            "ab 계산": 3,
+            "목표 로그 계산": 3,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "a와 b의 로그 값 구하기": 1,
+            "로그 조건 변환": 1,
+            "두 번째 조건 대입": 1,
+            "a와 b의 표현": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "조건 1 변형": 1,
+            "조건 2에 대입": 1,
+            "a와 b 값 표현": 1,
+            "ab 계산": 3,
+            "목표 로그 계산": 3,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "a와 b의 로그 값 구하기": 1,
+            "로그 조건 변환": 1,
+            "두 번째 조건 대입": 1,
+            "a와 b의 표현": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.4444444444444446,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 2,
+          "연립하여 a, b 관계 정리": 1,
+          "ab와 밑 9 로그 계산": 1,
+          "로그 조건을 지수식으로 변환": 1,
+          "a, b를 3의 거듭제곱으로 표현": 1,
+          "ab와 \\(\\log_9(ab)\\) 계산": 2,
+          "a, b 값 구하기": 4,
+          "조건을 지수 형태로 변환": 2,
+          "log₉(ab) 계산": 3,
+          "조건 정리": 6,
+          "조건 정리 및 a, b 관계식 유도": 1,
+          "ab의 값 계산": 1,
+          "최종 식 계산": 2,
+          "$a$와 $b$의 관계식 유도": 1,
+          "$\\log_3 a$의 값 구하기": 1,
+          "목표 식 계산": 1,
+          "조건 정리 및 관계식 유도": 1,
+          "$a$의 값 구하기": 1,
+          "주어진 방정식 정리": 1,
+          "대입 및 a, b 구하기": 1,
+          "ab 계산 및 로그 구하기": 1,
+          "변수 도입": 2,
+          "두 번째 방정식 적용": 1,
+          "로그 계산": 2,
+          "a 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 1,
+          "조건 로그식 변환": 1,
+          "a와 b의 관계식 풀기": 1,
+          "log_9 ab 계산": 2,
+          "a에 대한 방정식": 1,
+          "조건 1 변형": 1,
+          "조건 2에 대입": 1,
+          "a와 b 값 표현": 1,
+          "ab 계산": 3,
+          "목표 로그 계산": 3,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "a와 b의 로그 값 구하기": 1,
+          "로그 조건 변환": 1,
+          "두 번째 조건 대입": 1,
+          "a와 b의 표현": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.959172010421753,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "연립하여 a, b 관계 구하기",
+                "ab와 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_9 ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.067242383956909,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 구하기",
+                "ab와 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.2016425132751465,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 구하기",
+                "ab와 밑 9로의 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.959172010421753,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "연립하여 a, b 관계 구하기",
+                "ab와 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_9 ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.067242383956909,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 구하기",
+                "ab와 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.2016425132751465,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 구하기",
+                "ab와 밑 9로의 로그 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "연립하여 a, b 관계 구하기": 1,
+            "ab와 로그 계산": 2,
+            "a, b 구하기": 2,
+            "ab와 밑 9로의 로그 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "연립하여 a, b 관계 구하기": 1,
+            "ab와 로그 계산": 2,
+            "a, b 구하기": 2,
+            "ab와 밑 9로의 로그 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.377060413360596,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.19436502456665,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**② $\\dfrac{1}{2}$**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.523847341537476,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "②  $\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.377060413360596,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.19436502456665,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**② $\\dfrac{1}{2}$**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.523847341537476,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "②  $\\dfrac{1}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.036978483200073,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 이용한 a와 b의 관계식 도출",
+                "a와 b의 값을 지수꼴로 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.966411352157593,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 $a, b$의 관계식 도출",
+                "$a$와 $b$의 값 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.7445867061615,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 변수 관계식 유도",
+                "상수 a의 값 구하기",
+                "목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.036978483200073,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 이용한 a와 b의 관계식 도출",
+                "a와 b의 값을 지수꼴로 구하기",
+                "최종 식의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.966411352157593,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 $a, b$의 관계식 도출",
+                "$a$와 $b$의 값 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.7445867061615,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 변수 관계식 유도",
+                "상수 a의 값 구하기",
+                "목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 이용한 a와 b의 관계식 도출": 1,
+            "a와 b의 값을 지수꼴로 구하기": 1,
+            "최종 식의 값 계산": 1,
+            "조건 정리 및 $a, b$의 관계식 도출": 1,
+            "$a$와 $b$의 값 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리 및 변수 관계식 유도": 1,
+            "상수 a의 값 구하기": 1,
+            "목표 식 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건을 이용한 a와 b의 관계식 도출": 1,
+            "a와 b의 값을 지수꼴로 구하기": 1,
+            "최종 식의 값 계산": 1,
+            "조건 정리 및 $a, b$의 관계식 도출": 1,
+            "$a$와 $b$의 값 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리 및 변수 관계식 유도": 1,
+            "상수 a의 값 구하기": 1,
+            "목표 식 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.67518949508667,
+              "step_count": 4,
+              "step_titles": [
+                "변수 치환",
+                "방정식 변환",
+                "연립 방정식 풀이",
+                "목표 값 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.86462426185608,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "a와 b 구하기",
+                "ab 계산",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.313011407852173,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "a와 b 구하기",
+                "ab 계산",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.67518949508667,
+              "step_count": 4,
+              "step_titles": [
+                "변수 치환",
+                "방정식 변환",
+                "연립 방정식 풀이",
+                "목표 값 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.86462426185608,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "a와 b 구하기",
+                "ab 계산",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.313011407852173,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "a와 b 구하기",
+                "ab 계산",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "변수 치환": 1,
+            "방정식 변환": 1,
+            "연립 방정식 풀이": 1,
+            "목표 값 계산": 1,
+            "주어진 조건 정리": 2,
+            "a와 b 구하기": 2,
+            "ab 계산": 2,
+            "\\(\\log_9 ab\\) 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "변수 치환": 1,
+            "방정식 변환": 1,
+            "연립 방정식 풀이": 1,
+            "목표 값 계산": 1,
+            "주어진 조건 정리": 2,
+            "a와 b 구하기": 2,
+            "ab 계산": 2,
+            "\\(\\log_9 ab\\) 계산": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.697073459625244,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 연립",
+                "a, b 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "\\( \\frac{1}{2} \\)\n보기에서 ②번.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.463966846466064,
+              "step_count": 3,
+              "step_titles": [
+                "로그 조건을 지수 형태로 변환",
+                "a와 b의 관계식 대입",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\frac12\\) → ②번",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.892738342285156,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "a, b 관계식 도출",
+                "a와 b의 값 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.697073459625244,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "식 연립",
+                "a, b 값 구하기",
+                "log_9 ab 계산"
+              ],
+              "final_answer": "\\( \\frac{1}{2} \\)\n보기에서 ②번.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.463966846466064,
+              "step_count": 3,
+              "step_titles": [
+                "로그 조건을 지수 형태로 변환",
+                "a와 b의 관계식 대입",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\frac12\\) → ②번",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.892738342285156,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "a, b 관계식 도출",
+                "a와 b의 값 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 2,
+            "식 연립": 1,
+            "a, b 값 구하기": 1,
+            "log_9 ab 계산": 1,
+            "로그 조건을 지수 형태로 변환": 1,
+            "a와 b의 관계식 대입": 1,
+            "\\(\\log_9 ab\\) 계산": 2,
+            "a, b 관계식 도출": 1,
+            "a와 b의 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "식 연립": 1,
+            "a, b 값 구하기": 1,
+            "log_9 ab 계산": 1,
+            "로그 조건을 지수 형태로 변환": 1,
+            "a와 b의 관계식 대입": 1,
+            "\\(\\log_9 ab\\) 계산": 2,
+            "a, b 관계식 도출": 1,
+            "a와 b의 값 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.743208408355713,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "a와 b의 로그 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 47.94498109817505,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "두 번째 조건 대입",
+                "a와 b를 밑 3으로 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.430591821670532,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환 및 관계식 도출",
+                "a와 b 값 표현",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.743208408355713,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "a와 b의 로그 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 47.94498109817505,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "두 번째 조건 대입",
+                "a와 b를 밑 3으로 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.430591821670532,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환 및 관계식 도출",
+                "a와 b 값 표현",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "a와 b의 로그 값 구하기": 1,
+            "log₉(ab) 계산": 1,
+            "로그 변환": 1,
+            "두 번째 조건 대입": 1,
+            "a와 b를 밑 3으로 표현": 1,
+            "ab 계산": 1,
+            "목표 로그 계산": 2,
+            "로그 변환 및 관계식 도출": 1,
+            "a와 b 값 표현": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "a와 b의 로그 값 구하기": 1,
+            "log₉(ab) 계산": 1,
+            "로그 변환": 1,
+            "두 번째 조건 대입": 1,
+            "a와 b를 밑 3으로 표현": 1,
+            "ab 계산": 1,
+            "목표 로그 계산": 2,
+            "로그 변환 및 관계식 도출": 1,
+            "a와 b 값 표현": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.611111111111111,
+        "title_frequency_all_models": {
+          "조건 정리": 11,
+          "연립하여 a, b 관계 구하기": 1,
+          "ab와 로그 계산": 2,
+          "a, b 구하기": 2,
+          "ab와 밑 9로의 로그 계산": 1,
+          "a, b 값 구하기": 4,
+          "log₉(ab) 계산": 4,
+          "조건을 이용한 a와 b의 관계식 도출": 1,
+          "a와 b의 값을 지수꼴로 구하기": 1,
+          "최종 식의 값 계산": 1,
+          "조건 정리 및 $a, b$의 관계식 도출": 1,
+          "$a$와 $b$의 값 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리 및 변수 관계식 유도": 1,
+          "상수 a의 값 구하기": 1,
+          "목표 식 계산": 1,
+          "변수 치환": 1,
+          "방정식 변환": 1,
+          "연립 방정식 풀이": 1,
+          "목표 값 계산": 1,
+          "주어진 조건 정리": 2,
+          "a와 b 구하기": 2,
+          "ab 계산": 3,
+          "\\(\\log_9 ab\\) 계산": 4,
+          "식 연립": 1,
+          "log_9 ab 계산": 1,
+          "로그 조건을 지수 형태로 변환": 1,
+          "a와 b의 관계식 대입": 1,
+          "a, b 관계식 도출": 1,
+          "a와 b의 값 구하기": 1,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "a와 b의 로그 값 구하기": 1,
+          "로그 변환": 1,
+          "두 번째 조건 대입": 1,
+          "a와 b를 밑 3으로 표현": 1,
+          "목표 로그 계산": 2,
+          "로그 변환 및 관계식 도출": 1,
+          "a와 b 값 표현": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.185719013214111,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "구하려는 로그값 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.67004656791687,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 관계 정리",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.038579940795898,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.185719013214111,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "구하려는 로그값 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac{1}{2}\\quad\\Rightarrow\\quad \\text{②}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.67004656791687,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 값 관계 정리",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_{9}ab=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.038579940795898,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수식으로 변환",
+                "a, b 구하기",
+                "ab와 \\(\\log_9(ab)\\) 계산"
+              ],
+              "final_answer": "\\[\n\\log_9(ab)=\\frac12 \\quad (\\text{②})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건을 지수식으로 변환": 3,
+            "a, b 구하기": 2,
+            "구하려는 로그값 계산": 1,
+            "a, b 값 관계 정리": 1,
+            "ab와 \\(\\log_9(ab)\\) 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수식으로 변환": 3,
+            "a, b 구하기": 2,
+            "구하려는 로그값 계산": 1,
+            "a, b 값 관계 정리": 1,
+            "ab와 \\(\\log_9(ab)\\) 계산": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.110098838806152,
+              "step_count": 3,
+              "step_titles": [
+                "조건식을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.932119846343994,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$ (② 번)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.3181211948394775,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$ (② 번)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.110098838806152,
+              "step_count": 3,
+              "step_titles": [
+                "조건식을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$\n\n**정답: ②**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.932119846343994,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$ (② 번)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.3181211948394775,
+              "step_count": 3,
+              "step_titles": [
+                "조건을 지수 형태로 변환",
+                "a, b 값 구하기",
+                "log₉(ab) 계산"
+              ],
+              "final_answer": "$$\\frac{1}{2}$$ (② 번)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건식을 지수 형태로 변환": 1,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3,
+            "조건을 지수 형태로 변환": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건식을 지수 형태로 변환": 1,
+            "a, b 값 구하기": 3,
+            "log₉(ab) 계산": 3,
+            "조건을 지수 형태로 변환": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.539707899093628,
+              "step_count": 3,
+              "step_titles": [
+                "a와 b의 관계식 유도",
+                "변수 a의 값 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.318230628967285,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "$a, b$ 값 구하기",
+                "최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.73447871208191,
+              "step_count": 3,
+              "step_titles": [
+                "a와 b의 관계식 유도",
+                "방정식을 풀어 a와 b의 값 구하기",
+                "최종 목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.539707899093628,
+              "step_count": 3,
+              "step_titles": [
+                "a와 b의 관계식 유도",
+                "변수 a의 값 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.318230628967285,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "$a, b$ 값 구하기",
+                "최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.73447871208191,
+              "step_count": 3,
+              "step_titles": [
+                "a와 b의 관계식 유도",
+                "방정식을 풀어 a와 b의 값 구하기",
+                "최종 목표 식 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "a와 b의 관계식 유도": 2,
+            "변수 a의 값 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리": 1,
+            "$a, b$ 값 구하기": 1,
+            "최종 계산": 1,
+            "방정식을 풀어 a와 b의 값 구하기": 1,
+            "최종 목표 식 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a와 b의 관계식 유도": 2,
+            "변수 a의 값 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리": 1,
+            "$a, b$ 값 구하기": 1,
+            "최종 계산": 1,
+            "방정식을 풀어 a와 b의 값 구하기": 1,
+            "최종 목표 식 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.32224702835083,
+              "step_count": 4,
+              "step_titles": [
+                "첫 번째 방정식 활용",
+                "두 번째 방정식에 대입",
+                "a와 b 계산",
+                "ab 계산 및 로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.51281428337097,
+              "step_count": 4,
+              "step_titles": [
+                "변수 도입",
+                "조건 변환",
+                "연립방정식 풀이",
+                "log_9 (ab) 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.226542711257935,
+              "step_count": 5,
+              "step_titles": [
+                "변수 설정",
+                "첫 번째 방정식 변환",
+                "두 번째 방정식 변환",
+                "연립 방정식 풀이",
+                "목표 로그 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.32224702835083,
+              "step_count": 4,
+              "step_titles": [
+                "첫 번째 방정식 활용",
+                "두 번째 방정식에 대입",
+                "a와 b 계산",
+                "ab 계산 및 로그 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.51281428337097,
+              "step_count": 4,
+              "step_titles": [
+                "변수 도입",
+                "조건 변환",
+                "연립방정식 풀이",
+                "log_9 (ab) 계산"
+              ],
+              "final_answer": "\\dfrac{1}{2}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.226542711257935,
+              "step_count": 5,
+              "step_titles": [
+                "변수 설정",
+                "첫 번째 방정식 변환",
+                "두 번째 방정식 변환",
+                "연립 방정식 풀이",
+                "목표 로그 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "첫 번째 방정식 활용": 1,
+            "두 번째 방정식에 대입": 1,
+            "a와 b 계산": 1,
+            "ab 계산 및 로그 계산": 1,
+            "변수 도입": 1,
+            "조건 변환": 1,
+            "연립방정식 풀이": 1,
+            "log_9 (ab) 계산": 1,
+            "변수 설정": 1,
+            "첫 번째 방정식 변환": 1,
+            "두 번째 방정식 변환": 1,
+            "연립 방정식 풀이": 1,
+            "목표 로그 값 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "첫 번째 방정식 활용": 1,
+            "두 번째 방정식에 대입": 1,
+            "a와 b 계산": 1,
+            "ab 계산 및 로그 계산": 1,
+            "변수 도입": 1,
+            "조건 변환": 1,
+            "연립방정식 풀이": 1,
+            "log_9 (ab) 계산": 1,
+            "변수 설정": 1,
+            "첫 번째 방정식 변환": 1,
+            "두 번째 방정식 변환": 1,
+            "연립 방정식 풀이": 1,
+            "목표 로그 값 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.93510675430298,
+              "step_count": 2,
+              "step_titles": [
+                "조건을 지수식으로 변환하고 a, b 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.982998371124268,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "\\(\\log_9 ab\\) 계산",
+                "정답 선택"
+              ],
+              "final_answer": "② \\(\\dfrac12\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.31630849838257,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 대입",
+                "\\(\\log_{9} ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.93510675430298,
+              "step_count": 2,
+              "step_titles": [
+                "조건을 지수식으로 변환하고 a, b 구하기",
+                "\\(\\log_9 ab\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.982998371124268,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "\\(\\log_9 ab\\) 계산",
+                "정답 선택"
+              ],
+              "final_answer": "② \\(\\dfrac12\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.31630849838257,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "식 정리 및 대입",
+                "\\(\\log_{9} ab\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{1}{2}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건을 지수식으로 변환하고 a, b 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 2,
+            "조건 정리": 2,
+            "정답 선택": 1,
+            "식 정리 및 대입": 1,
+            "\\(\\log_{9} ab\\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건을 지수식으로 변환하고 a, b 구하기": 1,
+            "\\(\\log_9 ab\\) 계산": 2,
+            "조건 정리": 2,
+            "정답 선택": 1,
+            "식 정리 및 대입": 1,
+            "\\(\\log_{9} ab\\) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.330658912658691,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "조건 대입",
+                "a와 b 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.392737865447998,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "b 값 구하기",
+                "ab 계산",
+                "$\\log_9 ab$ 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.29708456993103,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "로그 조건 변환",
+                "a와 b 표현하기",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.330658912658691,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "로그 변환",
+                "조건 대입",
+                "a와 b 표현",
+                "ab 계산",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.392737865447998,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 조건 변환",
+                "두 번째 조건에 대입",
+                "b 값 구하기",
+                "ab 계산",
+                "$\\log_9 ab$ 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.29708456993103,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "로그 조건 변환",
+                "a와 b 표현하기",
+                "목표 로그 계산"
+              ],
+              "final_answer": "$\\dfrac{1}{2}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "로그 변환": 1,
+            "조건 대입": 1,
+            "a와 b 표현": 1,
+            "ab 계산": 2,
+            "목표 로그 계산": 2,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "b 값 구하기": 1,
+            "$\\log_9 ab$ 계산": 1,
+            "로그 조건 변환": 1,
+            "a와 b 표현하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "로그 변환": 1,
+            "조건 대입": 1,
+            "a와 b 표현": 1,
+            "ab 계산": 2,
+            "목표 로그 계산": 2,
+            "첫 번째 조건 변환": 1,
+            "두 번째 조건에 대입": 1,
+            "b 값 구하기": 1,
+            "$\\log_9 ab$ 계산": 1,
+            "로그 조건 변환": 1,
+            "a와 b 표현하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.5555555555555554,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 3,
+          "a, b 구하기": 2,
+          "구하려는 로그값 계산": 1,
+          "a, b 값 관계 정리": 1,
+          "ab와 \\(\\log_9(ab)\\) 계산": 2,
+          "조건식을 지수 형태로 변환": 1,
+          "a, b 값 구하기": 3,
+          "log₉(ab) 계산": 3,
+          "조건을 지수 형태로 변환": 2,
+          "a와 b의 관계식 유도": 2,
+          "변수 a의 값 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리": 6,
+          "$a, b$ 값 구하기": 1,
+          "최종 계산": 1,
+          "방정식을 풀어 a와 b의 값 구하기": 1,
+          "최종 목표 식 계산": 1,
+          "첫 번째 방정식 활용": 1,
+          "두 번째 방정식에 대입": 1,
+          "a와 b 계산": 1,
+          "ab 계산 및 로그 계산": 1,
+          "변수 도입": 1,
+          "조건 변환": 1,
+          "연립방정식 풀이": 1,
+          "log_9 (ab) 계산": 1,
+          "변수 설정": 1,
+          "첫 번째 방정식 변환": 1,
+          "두 번째 방정식 변환": 1,
+          "연립 방정식 풀이": 1,
+          "목표 로그 값 계산": 1,
+          "조건을 지수식으로 변환하고 a, b 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 2,
+          "정답 선택": 1,
+          "식 정리 및 대입": 1,
+          "\\(\\log_{9} ab\\) 계산": 1,
+          "로그 변환": 1,
+          "조건 대입": 1,
+          "a와 b 표현": 1,
+          "ab 계산": 2,
+          "목표 로그 계산": 2,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "b 값 구하기": 1,
+          "$\\log_9 ab$ 계산": 1,
+          "로그 조건 변환": 1,
+          "a와 b 표현하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.611111111111111,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 3,
+          "a, b 값 구하기": 5,
+          "ab와 \\(\\log_9(ab)\\) 계산": 3,
+          "a, b 구하기": 1,
+          "조건을 지수 형태로 변환": 3,
+          "log₉(ab) 계산": 4,
+          "조건 정리 및 관계식 유도": 2,
+          "$a, b$ 값 구하기": 2,
+          "최종 식의 값 계산": 2,
+          "$a$와 $b$의 관계식 도출": 1,
+          "$\\log_3 a$의 값 구하기": 1,
+          "최종 식 계산": 1,
+          "변수 도입": 1,
+          "방정식 변환 및 풀이": 1,
+          "ab 계산": 3,
+          "\\log_9 (ab) 계산": 1,
+          "변수 설정": 1,
+          "첫 번째 조건 적용": 1,
+          "두 번째 조건 적용": 1,
+          "로그 계산": 2,
+          "첫 번째 방정식 활용": 1,
+          "두 번째 방정식 대입": 1,
+          "조건 정리": 5,
+          "a와 b 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 1,
+          "a 값 구하기": 1,
+          "log_9 ab 계산": 2,
+          "조건을 방정식으로 변환": 1,
+          "a와 b의 값 구하기": 1,
+          "로그 변환": 1,
+          "두 번째 조건 대입": 3,
+          "a와 b의 로그 값 구하기": 3,
+          "목표 로그 계산": 1,
+          "첫 번째 조건 변환": 2,
+          "ab의 로그 계산": 1,
+          "밑 변환 (9로 변환)": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.4444444444444446,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 2,
+          "연립하여 a, b 관계 정리": 1,
+          "ab와 밑 9 로그 계산": 1,
+          "로그 조건을 지수식으로 변환": 1,
+          "a, b를 3의 거듭제곱으로 표현": 1,
+          "ab와 \\(\\log_9(ab)\\) 계산": 2,
+          "a, b 값 구하기": 4,
+          "조건을 지수 형태로 변환": 2,
+          "log₉(ab) 계산": 3,
+          "조건 정리": 6,
+          "조건 정리 및 a, b 관계식 유도": 1,
+          "ab의 값 계산": 1,
+          "최종 식 계산": 2,
+          "$a$와 $b$의 관계식 유도": 1,
+          "$\\log_3 a$의 값 구하기": 1,
+          "목표 식 계산": 1,
+          "조건 정리 및 관계식 유도": 1,
+          "$a$의 값 구하기": 1,
+          "주어진 방정식 정리": 1,
+          "대입 및 a, b 구하기": 1,
+          "ab 계산 및 로그 구하기": 1,
+          "변수 도입": 2,
+          "두 번째 방정식 적용": 1,
+          "로그 계산": 2,
+          "a 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 1,
+          "조건 로그식 변환": 1,
+          "a와 b의 관계식 풀기": 1,
+          "log_9 ab 계산": 2,
+          "a에 대한 방정식": 1,
+          "조건 1 변형": 1,
+          "조건 2에 대입": 1,
+          "a와 b 값 표현": 1,
+          "ab 계산": 3,
+          "목표 로그 계산": 3,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "a와 b의 로그 값 구하기": 1,
+          "로그 조건 변환": 1,
+          "두 번째 조건 대입": 1,
+          "a와 b의 표현": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.611111111111111,
+        "title_frequency_all_models": {
+          "조건 정리": 11,
+          "연립하여 a, b 관계 구하기": 1,
+          "ab와 로그 계산": 2,
+          "a, b 구하기": 2,
+          "ab와 밑 9로의 로그 계산": 1,
+          "a, b 값 구하기": 4,
+          "log₉(ab) 계산": 4,
+          "조건을 이용한 a와 b의 관계식 도출": 1,
+          "a와 b의 값을 지수꼴로 구하기": 1,
+          "최종 식의 값 계산": 1,
+          "조건 정리 및 $a, b$의 관계식 도출": 1,
+          "$a$와 $b$의 값 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리 및 변수 관계식 유도": 1,
+          "상수 a의 값 구하기": 1,
+          "목표 식 계산": 1,
+          "변수 치환": 1,
+          "방정식 변환": 1,
+          "연립 방정식 풀이": 1,
+          "목표 값 계산": 1,
+          "주어진 조건 정리": 2,
+          "a와 b 구하기": 2,
+          "ab 계산": 3,
+          "\\(\\log_9 ab\\) 계산": 4,
+          "식 연립": 1,
+          "log_9 ab 계산": 1,
+          "로그 조건을 지수 형태로 변환": 1,
+          "a와 b의 관계식 대입": 1,
+          "a, b 관계식 도출": 1,
+          "a와 b의 값 구하기": 1,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "a와 b의 로그 값 구하기": 1,
+          "로그 변환": 1,
+          "두 번째 조건 대입": 1,
+          "a와 b를 밑 3으로 표현": 1,
+          "목표 로그 계산": 2,
+          "로그 변환 및 관계식 도출": 1,
+          "a와 b 값 표현": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.5555555555555554,
+        "title_frequency_all_models": {
+          "조건을 지수식으로 변환": 3,
+          "a, b 구하기": 2,
+          "구하려는 로그값 계산": 1,
+          "a, b 값 관계 정리": 1,
+          "ab와 \\(\\log_9(ab)\\) 계산": 2,
+          "조건식을 지수 형태로 변환": 1,
+          "a, b 값 구하기": 3,
+          "log₉(ab) 계산": 3,
+          "조건을 지수 형태로 변환": 2,
+          "a와 b의 관계식 유도": 2,
+          "변수 a의 값 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리": 6,
+          "$a, b$ 값 구하기": 1,
+          "최종 계산": 1,
+          "방정식을 풀어 a와 b의 값 구하기": 1,
+          "최종 목표 식 계산": 1,
+          "첫 번째 방정식 활용": 1,
+          "두 번째 방정식에 대입": 1,
+          "a와 b 계산": 1,
+          "ab 계산 및 로그 계산": 1,
+          "변수 도입": 1,
+          "조건 변환": 1,
+          "연립방정식 풀이": 1,
+          "log_9 (ab) 계산": 1,
+          "변수 설정": 1,
+          "첫 번째 방정식 변환": 1,
+          "두 번째 방정식 변환": 1,
+          "연립 방정식 풀이": 1,
+          "목표 로그 값 계산": 1,
+          "조건을 지수식으로 변환하고 a, b 구하기": 1,
+          "\\(\\log_9 ab\\) 계산": 2,
+          "정답 선택": 1,
+          "식 정리 및 대입": 1,
+          "\\(\\log_{9} ab\\) 계산": 1,
+          "로그 변환": 1,
+          "조건 대입": 1,
+          "a와 b 표현": 1,
+          "ab 계산": 2,
+          "목표 로그 계산": 2,
+          "첫 번째 조건 변환": 1,
+          "두 번째 조건에 대입": 1,
+          "b 값 구하기": 1,
+          "$\\log_9 ab$ 계산": 1,
+          "로그 조건 변환": 1,
+          "a와 b 표현하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.5555555555555554,
+      "title_frequency": {
+        "조건을 지수식으로 변환": 8,
+        "a, b 값 구하기": 16,
+        "ab와 \\(\\log_9(ab)\\) 계산": 7,
+        "a, b 구하기": 5,
+        "조건을 지수 형태로 변환": 7,
+        "log₉(ab) 계산": 14,
+        "조건 정리 및 관계식 유도": 3,
+        "$a, b$ 값 구하기": 3,
+        "최종 식의 값 계산": 3,
+        "$a$와 $b$의 관계식 도출": 1,
+        "$\\log_3 a$의 값 구하기": 2,
+        "최종 식 계산": 3,
+        "변수 도입": 4,
+        "방정식 변환 및 풀이": 1,
+        "ab 계산": 11,
+        "\\log_9 (ab) 계산": 1,
+        "변수 설정": 2,
+        "첫 번째 조건 적용": 1,
+        "두 번째 조건 적용": 1,
+        "로그 계산": 4,
+        "첫 번째 방정식 활용": 2,
+        "두 번째 방정식 대입": 1,
+        "조건 정리": 28,
+        "a와 b 구하기": 3,
+        "\\(\\log_9 ab\\) 계산": 8,
+        "a 값 구하기": 1,
+        "log_9 ab 계산": 5,
+        "조건을 방정식으로 변환": 1,
+        "a와 b의 값 구하기": 2,
+        "로그 변환": 3,
+        "두 번째 조건 대입": 5,
+        "a와 b의 로그 값 구하기": 5,
+        "목표 로그 계산": 8,
+        "첫 번째 조건 변환": 5,
+        "ab의 로그 계산": 1,
+        "밑 변환 (9로 변환)": 1,
+        "연립하여 a, b 관계 정리": 1,
+        "ab와 밑 9 로그 계산": 1,
+        "로그 조건을 지수식으로 변환": 1,
+        "a, b를 3의 거듭제곱으로 표현": 1,
+        "조건 정리 및 a, b 관계식 유도": 1,
+        "ab의 값 계산": 1,
+        "$a$와 $b$의 관계식 유도": 1,
+        "목표 식 계산": 2,
+        "$a$의 값 구하기": 1,
+        "주어진 방정식 정리": 1,
+        "대입 및 a, b 구하기": 1,
+        "ab 계산 및 로그 구하기": 1,
+        "두 번째 방정식 적용": 1,
+        "a 구하기": 1,
+        "조건 로그식 변환": 1,
+        "a와 b의 관계식 풀기": 1,
+        "a에 대한 방정식": 1,
+        "조건 1 변형": 1,
+        "조건 2에 대입": 1,
+        "a와 b 값 표현": 2,
+        "두 번째 조건에 대입": 3,
+        "로그 조건 변환": 2,
+        "a와 b의 표현": 1,
+        "연립하여 a, b 관계 구하기": 1,
+        "ab와 로그 계산": 2,
+        "ab와 밑 9로의 로그 계산": 1,
+        "조건을 이용한 a와 b의 관계식 도출": 1,
+        "a와 b의 값을 지수꼴로 구하기": 1,
+        "조건 정리 및 $a, b$의 관계식 도출": 1,
+        "$a$와 $b$의 값 구하기": 1,
+        "최종 값 계산": 2,
+        "조건 정리 및 변수 관계식 유도": 1,
+        "상수 a의 값 구하기": 1,
+        "변수 치환": 1,
+        "방정식 변환": 1,
+        "연립 방정식 풀이": 2,
+        "목표 값 계산": 1,
+        "주어진 조건 정리": 2,
+        "식 연립": 1,
+        "로그 조건을 지수 형태로 변환": 1,
+        "a와 b의 관계식 대입": 1,
+        "a, b 관계식 도출": 1,
+        "a와 b를 밑 3으로 표현": 1,
+        "로그 변환 및 관계식 도출": 1,
+        "구하려는 로그값 계산": 1,
+        "a, b 값 관계 정리": 1,
+        "조건식을 지수 형태로 변환": 1,
+        "a와 b의 관계식 유도": 2,
+        "변수 a의 값 구하기": 1,
+        "최종 계산": 1,
+        "방정식을 풀어 a와 b의 값 구하기": 1,
+        "최종 목표 식 계산": 1,
+        "두 번째 방정식에 대입": 1,
+        "a와 b 계산": 1,
+        "ab 계산 및 로그 계산": 1,
+        "조건 변환": 1,
+        "연립방정식 풀이": 1,
+        "log_9 (ab) 계산": 1,
+        "첫 번째 방정식 변환": 1,
+        "두 번째 방정식 변환": 1,
+        "목표 로그 값 계산": 1,
+        "조건을 지수식으로 변환하고 a, b 구하기": 1,
+        "정답 선택": 1,
+        "식 정리 및 대입": 1,
+        "\\(\\log_{9} ab\\) 계산": 1,
+        "조건 대입": 1,
+        "a와 b 표현": 1,
+        "b 값 구하기": 1,
+        "$\\log_9 ab$ 계산": 1,
+        "a와 b 표현하기": 1
+      },
+      "accuracy": 0.8333333333333334,
+      "n_samples": 72
+    }
+  }
+}

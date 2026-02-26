@@ -1,0 +1,402 @@
+{
+  "problem_id": "2024_odd_common_18",
+  "ground_truth": "9",
+  "answer_type": "short",
+  "baseline": {
+    "gpt-5.2": {
+      "answer": "9",
+      "correct": true
+    },
+    "claude-opus-4.5": {
+      "answer": "9",
+      "correct": true
+    },
+    "gemini-3-pro": {
+      "answer": "9",
+      "correct": true
+    },
+    "gpt-5-codex": {
+      "answer": "9",
+      "correct": true
+    },
+    "gpt-5": {
+      "answer": "9",
+      "correct": true
+    },
+    "grok-4-fast": {
+      "answer": "9",
+      "correct": true
+    }
+  },
+  "self_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "식 정리(합을 변수로 치환)",
+          "content": "A=\\sum_{k=1}^{10} a_k,\\; B=\\sum_{k=1}^{10} b_k라고 두면  \n첫 번째 조건\n\\[\n\\sum_{k=1}^{10} a_k=\\sum_{k=1}^{10}(2b_k-1)\n\\]\n은\n\\[\nA=\\sum_{k=1}^{10}2b_k-\\sum_{k=1}^{10}1=2B-10\n\\]\n이 된다."
+        },
+        {
+          "step_idx": 1,
+          "title": "두 번째 조건을 합으로 변환",
+          "content": "두 번째 조건\n\\[\n\\sum_{k=1}^{10}(3a_k+b_k)=33\n\\]\n에서 합의 선형성을 이용하면\n\\[\n3\\sum_{k=1}^{10}a_k+\\sum_{k=1}^{10}b_k=33\n\\]\n즉\n\\[\n3A+B=33\n\\]\n이다."
+        },
+        {
+          "step_idx": 2,
+          "title": "연립방정식 풀이",
+          "content": "앞에서 A=2B-10 이므로 이를 3A+B=33에 대입하면\n\\[\n3(2B-10)+B=33\n\\]\n\\[\n6B-30+B=33\n\\]\n\\[\n7B=63\n\\]\n\\[\nB=9\n\\]"
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "\\(\\displaystyle \\sum_{k=1}^{10} b_k = 9\\)"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "각 단계에서 합의 선형성 적용과 상수항(\\n=10개) 처리(\\sum 1 = 10), 연립방정식 대입 및 계산(7B=63 -> B=9)을 확인했으며 모두 오류가 없습니다. 따라서 풀이와 최종 답은 그대로 유지합니다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 7.373413801193237
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "조건 정리",
+          "content": "주어진 두 조건을 정리합니다.\n\n**조건 1:** $\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$\n\n**조건 2:** $\\sum_{k=1}^{10} (3a_k + b_k) = 33$\n\n편의상 다음과 같이 놓겠습니다:\n- $A = \\sum_{k=1}^{10} a_k$\n- $B = \\sum_{k=1}^{10} b_k$"
+        },
+        {
+          "step_idx": 2,
+          "title": "조건 1을 A, B로 표현",
+          "content": "조건 1을 전개합니다:\n$$A = \\sum_{k=1}^{10} (2b_k - 1) = 2\\sum_{k=1}^{10} b_k - \\sum_{k=1}^{10} 1 = 2B - 10$$\n\n따라서:\n$$A = 2B - 10 \\quad \\cdots (1)$$"
+        },
+        {
+          "step_idx": 3,
+          "title": "조건 2를 A, B로 표현",
+          "content": "조건 2를 전개합니다:\n$$\\sum_{k=1}^{10} (3a_k + b_k) = 3\\sum_{k=1}^{10} a_k + \\sum_{k=1}^{10} b_k = 3A + B = 33$$\n\n따라서:\n$$3A + B = 33 \\quad \\cdots (2)$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "연립방정식 풀이",
+          "content": "식 (1)을 식 (2)에 대입합니다:\n$$3(2B - 10) + B = 33$$\n$$6B - 30 + B = 33$$\n$$7B = 63$$\n$$B = 9$$"
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "모든 단계를 검증했습니다. Step 2에서 조건 1의 전개가 정확합니다: $\\sum_{k=1}^{10} 1 = 10$이므로 $A = 2B - 10$. Step 3에서 조건 2의 전개도 정확합니다: $3A + B = 33$. Step 4에서 대입 계산: $3(2B-10) + B = 6B - 30 + B = 7B - 30 = 33$, 따라서 $7B = 63$, $B = 9$. 모든 계산이 정확합니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 7.754181623458862
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "시그마의 성질을 이용한 식 정리",
+          "content": "계산의 편의를 위해 $\\sum_{k=1}^{10} a_k = A$, $\\sum_{k=1}^{10} b_k = B$라고 둡니다.\n시그마의 선형성($\\sum (pa_k + q) = p\\sum a_k + \\sum q$)을 이용하여 주어진 두 조건을 $A$와 $B$에 대한 식으로 정리합니다.\n\n1. 첫 번째 조건:\n   $$\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$$\n   $$A = 2\\sum_{k=1}^{10} b_k - \\sum_{k=1}^{10} 1$$\n   $$A = 2B - 10 \\quad \\cdots \\text{①}$$\n   (여기서 $\\sum_{k=1}^{10} 1 = 10 \\times 1 = 10$임에 유의합니다.)\n\n2. 두 번째 조건:\n   $$\\sum_{k=1}^{10} (3a_k + b_k) = 33$$\n   $$3\\sum_{k=1}^{10} a_k + \\sum_{k=1}^{10} b_k = 33$$\n   $$3A + B = 33 \\quad \\cdots \\text{②}$$"
+        },
+        {
+          "step_idx": 1,
+          "title": "연립방정식을 통한 값 계산",
+          "content": "구해진 두 식 ①과 ②를 연립하여 $B$의 값을 구합니다.\n\n식 ①($A = 2B - 10$)을 식 ②에 대입합니다.\n$$3(2B - 10) + B = 33$$\n$$6B - 30 + B = 33$$\n$$7B = 63$$\n$$B = 9$$\n\n문제에서 구하고자 하는 값은 $\\sum_{k=1}^{10} b_k$, 즉 $B$이므로 정답은 9입니다."
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "Calculations and logical steps verified. The definitions of A and B were correctly engaged with the sigma notation properties. Determining the system of equations (A = 2B - 10 and 3A + B = 33) and solving for B led to the correct result of 9.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 17.840291261672974
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Represent sums",
+          "content": "Let A = sum_{k=1}^{10} a_k and B = sum_{k=1}^{10} b_k. From the given relation sum a_k = sum (2b_k - 1), obtain A = 2B - 10."
+        },
+        {
+          "step_idx": 1,
+          "title": "Use second relation",
+          "content": "Use the second given relation sum (3a_k + b_k) = 33 to form 3A + B = 33. Substitute A = 2B - 10 to get 3(2B - 10) + B = 33."
+        },
+        {
+          "step_idx": 2,
+          "title": "Solve for B",
+          "content": "Simplify 3(2B - 10) + B = 33 to obtain 6B - 30 + B = 33. Hence 7B = 63, giving B = 9."
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "Verified each step; all calculations are correct and consistent.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 3.3298532962799072
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Translate to sum variables",
+          "content": "Let S_a = ∑_{k=1}^{10} a_k and S_b = ∑_{k=1}^{10} b_k. From ∑ a_k = ∑ (2b_k - 1), we get S_a = 2S_b - 10. From ∑ (3a_k + b_k) = 33, we get 3S_a + S_b = 33."
+        },
+        {
+          "step_idx": 1,
+          "title": "Solve for S_b",
+          "content": "Substitute S_a = 2S_b - 10 into 3S_a + S_b = 33: 3(2S_b - 10) + S_b = 33 ⇒ 6S_b - 30 + S_b = 33 ⇒ 7S_b = 63 ⇒ S_b = 9."
+        },
+        {
+          "step_idx": 2,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "Checked the conversion to sum variables and the linear equations: S_a = 2S_b - 10 and 3S_a + S_b = 33 are correct. Substitution and algebra are correct, yielding S_b = 9. No changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 9.812347412109375
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Define sum notations",
+          "content": "Let \\( S_a = \\sum_{k=1}^{10} a_k \\) and \\( S_b = \\sum_{k=1}^{10} b_k \\). The first equation simplifies to \\( S_a = \\sum_{k=1}^{10} (2b_k - 1) = 2S_b - 10 \\)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Simplify second equation",
+          "content": "The second equation is \\( \\sum_{k=1}^{10} (3a_k + b_k) = 3S_a + S_b = 33 \\)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Substitute and solve",
+          "content": "Substitute \\( S_a = 2S_b - 10 \\) into the second equation: \\( 3(2S_b - 10) + S_b = 33 \\), which simplifies to \\( 6S_b - 30 + S_b = 33 \\), so \\( 7S_b = 63 \\), and thus \\( S_b = 9 \\)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "Verified all steps: definitions and substitutions are correct, arithmetic in solving the system of equations is accurate. No errors found, no changes made.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 2.730382204055786
+    }
+  },
+  "cross_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "합을 A, B로 치환",
+          "content": "A=∑_{k=1}^{10} a_k, B=∑_{k=1}^{10} b_k로 둔다."
+        },
+        {
+          "step_idx": 1,
+          "title": "첫 번째 조건 정리",
+          "content": "∑ a_k = ∑(2b_k-1) 이므로 A = 2∑ b_k - ∑ 1 = 2B - 10."
+        },
+        {
+          "step_idx": 2,
+          "title": "두 번째 조건 정리",
+          "content": "∑(3a_k+b_k)=33 이므로 3∑ a_k + ∑ b_k = 33, 즉 3A + B = 33."
+        },
+        {
+          "step_idx": 3,
+          "title": "연립방정식 풀이",
+          "content": "A=2B-10을 3A+B=33에 대입하면 3(2B-10)+B=33 → 7B=63 → B=9."
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "다른 모델들과 동일하게 시그마의 선형성을 이용해 A, B로 치환한 뒤 연립하여 푸는 방식이며 계산 과정도 일치한다. 내 풀이에서 오류는 발견되지 않아 변경하지 않았다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 4.505587339401245
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "조건 정리 및 변수 설정",
+          "content": "주어진 두 조건을 정리합니다.\n\n**조건 1:** $\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$\n\n**조건 2:** $\\sum_{k=1}^{10} (3a_k + b_k) = 33$\n\n편의상 다음과 같이 놓겠습니다:\n- $A = \\sum_{k=1}^{10} a_k$\n- $B = \\sum_{k=1}^{10} b_k$"
+        },
+        {
+          "step_idx": 1,
+          "title": "조건 1을 A, B로 표현",
+          "content": "조건 1을 전개합니다:\n$$A = \\sum_{k=1}^{10} (2b_k - 1) = 2\\sum_{k=1}^{10} b_k - \\sum_{k=1}^{10} 1 = 2B - 10$$\n\n따라서:\n$$A = 2B - 10 \\quad \\cdots (1)$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "조건 2를 A, B로 표현",
+          "content": "조건 2를 전개합니다:\n$$\\sum_{k=1}^{10} (3a_k + b_k) = 3\\sum_{k=1}^{10} a_k + \\sum_{k=1}^{10} b_k = 3A + B = 33$$\n\n따라서:\n$$3A + B = 33 \\quad \\cdots (2)$$"
+        },
+        {
+          "step_idx": 3,
+          "title": "연립방정식 풀이",
+          "content": "식 (1)을 식 (2)에 대입합니다:\n$$3(2B - 10) + B = 33$$\n$$6B - 30 + B = 33$$\n$$7B = 63$$\n$$B = 9$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "최종 답",
+          "content": "$\\sum_{k=1}^{10} b_k = B = 9$"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "모든 다른 모델들의 풀이와 비교한 결과, 동일한 접근 방식을 사용했습니다. A = 2B - 10으로 첫 번째 조건을 정리하고, 3A + B = 33으로 두 번째 조건을 정리한 후 대입하여 B = 9를 얻는 과정이 모든 모델에서 일치합니다. 제 풀이에 오류가 없으며 답도 동일합니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 7.834853410720825
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "시그마의 성질을 이용한 식 정리",
+          "content": "계산의 편의를 위해 $\\sum_{k=1}^{10} a_k = A$, $\\sum_{k=1}^{10} b_k = B$라고 둡니다.\n시그마의 성질을 이용하여 주어진 두 조건을 $A$와 $B$에 대한 식으로 정리합니다.\n\n1. 첫 번째 조건:\n   $$\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$$\n   $$A = 2\\sum_{k=1}^{10} b_k - \\sum_{k=1}^{10} 1$$\n   $$A = 2B - 10 \\quad \\cdots \\text{①}$$\n   (여기서 $\\sum_{k=1}^{10} 1 = 10 \\times 1 = 10$임에 유의합니다.)\n\n2. 두 번째 조건:\n   $$\\sum_{k=1}^{10} (3a_k + b_k) = 33$$\n   $$3\\sum_{k=1}^{10} a_k + \\sum_{k=1}^{10} b_k = 33$$\n   $$3A + B = 33 \\quad \\cdots \\text{②}$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "연립방정식을 통한 값 계산",
+          "content": "구해진 두 식 ①과 ②를 연립하여 $B$의 값을 구합니다.\n\n식 ①($A = 2B - 10$)을 식 ②에 대입합니다.\n$$3(2B - 10) + B = 33$$\n$$6B - 30 + B = 33$$\n$$7B = 63$$\n$$B = 9$$\n\n문제에서 구하고자 하는 값은 $\\sum_{k=1}^{10} b_k$, 즉 $B$이므로 정답은 9입니다."
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "다른 모델들의 풀이 과정을 모두 검토한 결과, 합의 기호 $\\sum$를 변수(A, B)로 치환하여 연립방정식으로 해결하는 접근 방식이 모두 일치합니다. 상수항 처리($\\sum 1 = 10$)와 연산 과정에서도 차이가 없으며, 도출된 정답 또한 동일합니다. 따라서 기존 풀이가 정확하다고 판단하여 수정하지 않았습니다.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 16.985908269882202
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Define aggregate sums",
+          "content": "Let A = sum_{k=1}^{10} a_k and B = sum_{k=1}^{10} b_k. From the first condition, A = sum_{k=1}^{10} (2b_k - 1) = 2B - 10."
+        },
+        {
+          "step_idx": 1,
+          "title": "Apply second condition",
+          "content": "Using the second condition, sum_{k=1}^{10} (3a_k + b_k) = 33 gives 3A + B = 33."
+        },
+        {
+          "step_idx": 2,
+          "title": "Solve for B",
+          "content": "Substitute A = 2B - 10 into 3A + B = 33 to obtain 3(2B - 10) + B = 33, which simplifies to 7B = 63, giving B = 9."
+        },
+        {
+          "step_idx": 3,
+          "title": "Conclude",
+          "content": "Therefore, sum_{k=1}^{10} b_k = 9."
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "My approach matches the other models’ solutions; no adjustments were necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 3.2901360988616943
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Set sum variables",
+          "content": "Let S_a = ∑ a_k, S_b = ∑ b_k (k=1..10). From ∑ a_k = ∑ (2b_k - 1), get S_a = 2S_b - 10."
+        },
+        {
+          "step_idx": 1,
+          "title": "Use second condition",
+          "content": "From ∑ (3a_k + b_k) = 33, get 3S_a + S_b = 33."
+        },
+        {
+          "step_idx": 2,
+          "title": "Solve for S_b",
+          "content": "Substitute: 3(2S_b - 10) + S_b = 33 → 7S_b = 63 → S_b = 9."
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "My approach matches the others: define total sums, use linearity of summation to form two linear equations, then solve. No discrepancies or errors found, result consistent across solutions.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 7.720742464065552
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Define sum notations",
+          "content": "Let \\( S_a = \\sum_{k=1}^{10} a_k \\) and \\( S_b = \\sum_{k=1}^{10} b_k \\). The first equation simplifies to \\( S_a = \\sum_{k=1}^{10} (2b_k - 1) = 2S_b - 10 \\)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Simplify second equation",
+          "content": "The second equation is \\( \\sum_{k=1}^{10} (3a_k + b_k) = 3S_a + S_b = 33 \\)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Substitute and solve",
+          "content": "Substitute \\( S_a = 2S_b - 10 \\) into the second equation: \\( 3(2S_b - 10) + S_b = 33 \\), which simplifies to \\( 6S_b - 30 + S_b = 33 \\), so \\( 7S_b = 63 \\), and thus \\( S_b = 9 \\)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "9"
+        }
+      ],
+      "final_answer": 9,
+      "feedback": "My solution matches the approaches of all other models, which use similar variable substitutions for the sums and solve the system of equations identically to arrive at 9. No errors spotted, so no changes made.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 3.3676068782806396
+    }
+  },
+  "aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "변수 정의",
+        "content": "두 수열의 합을 간단히 나타내기 위해 새로운 변수를 정의합니다.\n$A = \\sum_{k=1}^{10} a_k$ (수열 $\\{a_n\\}$의 처음 10개 항의 합)\n$B = \\sum_{k=1}^{10} b_k$ (수열 $\\{b_n\\}$의 처음 10개 항의 합)"
+      },
+      {
+        "step_idx": 1,
+        "title": "첫 번째 조건식 변환",
+        "content": "첫 번째 조건 $\\sum_{k=1}^{10} a_k = \\sum_{k=1}^{10} (2b_k - 1)$을 A, B로 표현합니다.\n\n우변을 전개하면:\n$\\sum_{k=1}^{10} (2b_k - 1) = 2\\sum_{k=1}^{10} b_k - \\sum_{k=1}^{10} 1 = 2B - 10$\n\n(상수 1을 10번 더하면 10이 됩니다)\n\n따라서 첫 번째 조건은:\n$A = 2B - 10$ ... (식 1)"
+      },
+      {
+        "step_idx": 2,
+        "title": "두 번째 조건식 변환",
+        "content": "두 번째 조건 $\\sum_{k=1}^{10} (3a_k + b_k) = 33$을 A, B로 표현합니다.\n\n좌변을 분배하면:\n$\\sum_{k=1}^{10} (3a_k + b_k) = 3\\sum_{k=1}^{10} a_k + \\sum_{k=1}^{10} b_k = 3A + B$\n\n따라서 두 번째 조건은:\n$3A + B = 33$ ... (식 2)"
+      },
+      {
+        "step_idx": 3,
+        "title": "연립방정식 풀이",
+        "content": "식 1과 식 2를 연립하여 B를 구합니다.\n\n식 1: $A = 2B - 10$\n식 2: $3A + B = 33$\n\n식 1을 식 2에 대입합니다:\n$3(2B - 10) + B = 33$\n$6B - 30 + B = 33$\n$7B = 63$\n$B = 9$"
+      },
+      {
+        "step_idx": 4,
+        "title": "검산",
+        "content": "$B = 9$일 때 $A = 2(9) - 10 = 8$\n\n검산: $3A + B = 3(8) + 9 = 24 + 9 = 33$ ✓\n\n따라서 $\\sum_{k=1}^{10} b_k = B = 9$"
+      }
+    ],
+    "final_answer": 9,
+    "rationale": "모든 참조 모델이 동일한 접근 방식을 사용했고 동일한 답에 도달했습니다. 합의 선형성을 이용하여 두 조건을 A, B에 대한 연립방정식으로 변환하고 대입법으로 푸는 방법이 표준적이고 정확합니다. 특히 $\\sum_{k=1}^{10} 1 = 10$임을 정확히 계산한 점이 핵심입니다.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 12.05556321144104
+  }
+}

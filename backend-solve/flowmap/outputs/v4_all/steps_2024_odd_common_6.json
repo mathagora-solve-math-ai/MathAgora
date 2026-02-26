@@ -1,0 +1,73 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_common_6",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "prob_desc": "6. 등비수열 $\\{a_n\\}$의 첫째항부터 제$n$항까지의 합을 $S_n$이라 하자. $$S_4 - S_2 = 3a_4, \\quad a_5 = \\dfrac{3}{4}$$일 때, $a_1 + a_2$의 값은? [3점]\n① 27 ② 24 ③ 21 ④ 18 ⑤ 15",
+    "answer": "4"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "등비수열 식 세우기",
+        "body": "등비수열에서 첫째항을 \\(a_1\\), 공비를 \\(r\\)이라 하면  \n\\[\na_2=a_1r,\\quad a_3=a_1r^2,\\quad a_4=a_1r^3,\\quad a_5=a_1r^4\n\\]\n또한\n\\[\nS_4-S_2=(a_1+a_2+a_3+a_4)-(a_1+a_2)=a_3+a_4\n\\]\n이므로 조건 \\(S_4-S_2=3a_4\\)는\n\\[\na_3+a_4=3a_4 \\;\\Rightarrow\\; a_3=2a_4\n\\]\n가 된다."
+      },
+      {
+        "title": "공비 구하기",
+        "body": "\\[\na_3=a_1r^2,\\quad a_4=a_1r^3\n\\]\n이므로 \\(a_3=2a_4\\)를 대입하면\n\\[\na_1r^2=2a_1r^3\n\\]\n\\(a_1\\neq 0\\)이므로 약분하여\n\\[\nr^2=2r^3 \\;\\Rightarrow\\; 1=2r \\;\\Rightarrow\\; r=\\frac12\n\\]"
+      },
+      {
+        "title": "첫째항 구하기",
+        "body": "조건 \\(a_5=\\frac34\\)에서\n\\[\na_5=a_1r^4=a_1\\left(\\frac12\\right)^4=a_1\\cdot\\frac1{16}=\\frac34\n\\]\n따라서\n\\[\na_1=\\frac34\\cdot 16=12\n\\]"
+      },
+      {
+        "title": "a1+a2 계산",
+        "body": "\\[\na_2=a_1r=12\\cdot\\frac12=6\n\\]\n따라서\n\\[\na_1+a_2=12+6=18\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "\\(18\\) (④)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "조건 정리",
+        "body": "등비수열 $\\{a_n\\}$에서 첫째항을 $a_1 = a$, 공비를 $r$이라 하자.\n\n주어진 조건:\n- $S_4 - S_2 = 3a_4$\n- $a_5 = \\frac{3}{4}$\n\n등비수열의 일반항: $a_n = ar^{n-1}$\n[/STEP]"
+      },
+      {
+        "title": "첫 번째 조건 전개",
+        "body": "$S_4 - S_2 = a_3 + a_4$이므로:\n$$a_3 + a_4 = 3a_4$$\n\n정리하면:\n$$a_3 = 2a_4$$\n\n등비수열 성질 적용:\n$$ar^2 = 2ar^3$$\n\n$a \\neq 0$이고 $r \\neq 0$이므로 양변을 $ar^2$로 나누면:\n$$1 = 2r$$\n$$r = \\frac{1}{2}$$\n[/STEP]"
+      },
+      {
+        "title": "첫째항 계산",
+        "body": "두 번째 조건 $a_5 = \\frac{3}{4}$ 활용:\n$$a_5 = ar^4 = a \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{a}{16} = \\frac{3}{4}$$\n\n따라서:\n$$a = \\frac{3}{4} \\times 16 = 12$$\n[/STEP]"
+      },
+      {
+        "title": "답 계산",
+        "body": "$$a_1 + a_2 = a + ar = a(1 + r) = 12 \\times \\left(1 + \\frac{1}{2}\\right) = 12 \\times \\frac{3}{2} = 18$$\n[/STEP]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "**④ 18**\n[/FINAL_ANSWER]"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "조건 식 정리 및 공비 계산",
+        "body": "등비수열의 합의 정의에 따라 $S_4 - S_2$는 제3항과 제4항의 합과 같습니다.\n$$S_4 - S_2 = (a_1 + a_2 + a_3 + a_4) - (a_1 + a_2) = a_3 + a_4$$\n\n주어진 조건 $S_4 - S_2 = 3a_4$에 이를 대입하여 정리합니다.\n$$a_3 + a_4 = 3a_4 \\quad \\Rightarrow \\quad a_3 = 2a_4$$\n\n등비수열의 공비를 $r$이라 할 때, $a_4 = a_3 r$이므로 이를 대입하여 공비를 구합니다.\n$$a_3 = 2(a_3 r)$$\n$a_5 \\neq 0$이므로 $a_3 \\neq 0$입니다. 양변을 $a_3$로 나누면,\n$$1 = 2r \\quad \\therefore r = \\frac{1}{2}$$"
+      },
+      {
+        "title": "첫째항 계산",
+        "body": "첫째항을 $a$라고 할 때, 일반항은 $a_n = a r^{n-1}$입니다.\n조건 $a_5 = \\frac{3}{4}$와 앞서 구한 공비 $r = \\frac{1}{2}$을 대입합니다.\n$$a_5 = a \\times \\left(\\frac{1}{2}\\right)^{5-1} = a \\times \\left(\\frac{1}{2}\\right)^4 = \\frac{3}{4}$$\n$$a \\times \\frac{1}{16} = \\frac{3}{4}$$\n$$a = \\frac{3}{4} \\times 16 = 12$$\n따라서 첫째항 $a_1 = 12$입니다."
+      },
+      {
+        "title": "최종 답 구하기",
+        "body": "문제에서 요구하는 $a_1 + a_2$의 값을 계산합니다.\n$$a_1 = 12$$\n$$a_2 = a_1 \\times r = 12 \\times \\frac{1}{2} = 6$$\n$$\\therefore a_1 + a_2 = 12 + 6 = 18$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "④"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_probalitity_26",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "prob_desc": "26. 4개의 동전을 동시에 던져서 앞면이 나오는 동전의 개수를 확률변수 $X$라 하고, 이산확률변수 $Y$를 $$Y = \\begin{cases} X & (X\\text{가 0 또는 1의 값을 가지는 경우}) \\\\ 2 & (X\\text{가 2 이상의 값을 가지는 경우}) \\end{cases}$$라 하자. $\\mathrm{E}(Y)$의 값은? [3점]\n① $\\dfrac{25}{16}$ ② $\\dfrac{13}{8}$ ③ $\\dfrac{27}{16}$ ④ $\\dfrac{7}{4}$ ⑤ $\\dfrac{29}{16}$",
+    "answer": "2"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "확률변수 정의 정리",
+        "body": "동전 4개를 동시에 던질 때 앞면 개수를 \\(X\\)라 하면  \n\\(X \\sim \\text{Binomial}(n=4, p=\\tfrac12)\\) 이다.\n\n또 \\(Y\\)는\n- \\(X=0\\) 또는 \\(1\\)이면 \\(Y=X\\)\n- \\(X\\ge 2\\)이면 \\(Y=2\\)\n\n즉,\n\\[\nY=\\begin{cases}\n0 & (X=0)\\\\\n1 & (X=1)\\\\\n2 & (X=2,3,4)\n\\end{cases}\n\\]"
+      },
+      {
+        "title": "필요한 확률 계산",
+        "body": "이항분포에서\n\\[\nP(X=k)=\\binom{4}{k}\\left(\\frac12\\right)^4=\\frac{\\binom{4}{k}}{16}\n\\]\n따라서\n\\[\nP(X=0)=\\frac{1}{16},\\quad P(X=1)=\\frac{4}{16},\\quad P(X\\ge2)=1-\\frac{1+4}{16}=\\frac{11}{16}\n\\]"
+      },
+      {
+        "title": "기댓값 \\(E(Y)\\) 계산",
+        "body": "\\[\nE(Y)=0\\cdot P(X=0)+1\\cdot P(X=1)+2\\cdot P(X\\ge2)\n\\]\n\\[\nE(Y)=0\\cdot \\frac{1}{16}+1\\cdot \\frac{4}{16}+2\\cdot \\frac{11}{16}\n=\\frac{4}{16}+\\frac{22}{16}=\\frac{26}{16}=\\frac{13}{8}\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "\\(\\displaystyle \\frac{13}{8}\\) (②)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "확률변수 X의 분포 확인",
+        "body": "4개의 동전을 던질 때 앞면이 나오는 개수 $X$는 이항분포 $B(4, \\frac{1}{2})$를 따릅니다.\n\n$P(X=k) = \\binom{4}{k} \\left(\\frac{1}{2}\\right)^4 = \\frac{\\binom{4}{k}}{16}$\n\n- $P(X=0) = \\frac{1}{16}$\n- $P(X=1) = \\frac{4}{16}$\n- $P(X=2) = \\frac{6}{16}$\n- $P(X=3) = \\frac{4}{16}$\n- $P(X=4) = \\frac{1}{16}$\n[/STEP]"
+      },
+      {
+        "title": "확률변수 Y의 분포 결정",
+        "body": "$Y$의 정의에 따라:\n- $X=0$일 때: $Y=0$\n- $X=1$일 때: $Y=1$\n- $X \\geq 2$일 때: $Y=2$\n\n따라서 $Y$의 확률분포:\n- $P(Y=0) = P(X=0) = \\frac{1}{16}$\n- $P(Y=1) = P(X=1) = \\frac{4}{16}$\n- $P(Y=2) = P(X \\geq 2) = \\frac{6+4+1}{16} = \\frac{11}{16}$\n[/STEP]"
+      },
+      {
+        "title": "E(Y) 계산",
+        "body": "$$E(Y) = 0 \\cdot P(Y=0) + 1 \\cdot P(Y=1) + 2 \\cdot P(Y=2)$$\n\n$$E(Y) = 0 \\cdot \\frac{1}{16} + 1 \\cdot \\frac{4}{16} + 2 \\cdot \\frac{11}{16}$$\n\n$$E(Y) = 0 + \\frac{4}{16} + \\frac{22}{16} = \\frac{26}{16} = \\frac{13}{8}$$\n[/STEP]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "② $\\dfrac{13}{8}$\n[/FINAL_ANSWER]"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "확률변수 X의 확률분포 구하기",
+        "body": "동전 4개를 동시에 던질 때 나오는 앞면의 개수 $X$는 이항분포 $B(4, \\frac{1}{2})$을 따릅니다. 전체 경우의 수는 $2^4 = 16$가지이며, 각 경우의 확률은 다음과 같습니다.\n\n$$P(X=k) = {}_{4}\\mathrm{C}_{k} \\left(\\frac{1}{2}\\right)^4 = \\frac{{}_{4}\\mathrm{C}_{k}}{16}$$\n\n각 $k$값에 따른 확률을 구하면 다음과 같습니다.\n*   $P(X=0) = \\frac{{}_{4}\\mathrm{C}_{0}}{16} = \\frac{1}{16}$\n*   $P(X=1) = \\frac{{}_{4}\\mathrm{C}_{1}}{16} = \\frac{4}{16}$\n*   $P(X \\ge 2) = 1 - \\{P(X=0) + P(X=1)\\} = 1 - \\left(\\frac{1}{16} + \\frac{4}{16}\\right) = \\frac{11}{16}$"
+      },
+      {
+        "title": "확률변수 Y의 확률분포 유도",
+        "body": "문제에서 정의된 확률변수 $Y$의 값에 따른 확률분포를 구합니다.\n\n1.  **$Y=0$인 경우**: $X=0$일 때이므로,\n    $$P(Y=0) = P(X=0) = \\frac{1}{16}$$\n2.  **$Y=1$인 경우**: $X=1$일 때이므로,\n    $$P(Y=1) = P(X=1) = \\frac{4}{16}$$\n3.  **$Y=2$인 경우**: $X \\ge 2$일 때이므로,\n    $$P(Y=2) = P(X \\ge 2) = \\frac{11}{16}$$"
+      },
+      {
+        "title": "기댓값 E(Y) 계산",
+        "body": "확률변수 $Y$의 기댓값 $\\mathrm{E}(Y)$는 각 변수 값과 그 확률의 곱의 합으로 계산합니다.\n\n$$\\begin{aligned} \\mathrm{E}(Y) &= 0 \\times P(Y=0) + 1 \\times P(Y=1) + 2 \\times P(Y=2) \\\\ &= 0 \\times \\frac{1}{16} + 1 \\times \\frac{4}{16} + 2 \\times \\frac{11}{16} \\\\ &= 0 + \\frac{4}{16} + \\frac{22}{16} \\\\ &= \\frac{26}{16} \\\\ &= \\frac{13}{8} \\end{aligned}$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "②"
+      }
+    ]
+  }
+}

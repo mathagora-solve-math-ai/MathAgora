@@ -1,0 +1,9 @@
+# Railway frontend service — Node/Vite static build
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[staticDir]
+value = "dist"

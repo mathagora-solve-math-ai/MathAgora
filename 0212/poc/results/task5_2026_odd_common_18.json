@@ -1,0 +1,2961 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T00:01:32Z",
+    "ended_at_utc": "2026-02-13T00:19:40Z",
+    "elapsed_seconds": 1088.247,
+    "problem_tag": "2026_odd_common_18",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_common_18",
+    "label": "2026_odd_common_18 (수학1, 3점)",
+    "gold_answer": "12"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.866012096405029,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.2047271728515625,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.150873422622681,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.866012096405029,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.2047271728515625,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.150873422622681,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "사인값 구하기": 1,
+            "넓이 계산": 3,
+            "sin 값 구하기": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "사인값 구하기": 1,
+            "넓이 계산": 3,
+            "sin 값 구하기": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.815581798553467,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.0246899127960205,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.787197828292847,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.815581798553467,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.0246899127960205,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.787197828292847,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.124125719070435,
+              "step_count": 2,
+              "step_titles": [
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.975176572799683,
+              "step_count": 2,
+              "step_titles": [
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.261759281158447,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.124125719070435,
+              "step_count": 2,
+              "step_titles": [
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.975176572799683,
+              "step_count": 2,
+              "step_titles": [
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.261759281158447,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 1,
+            "삼각형의 넓이 공식 적용 및 계산": 1,
+            "사인(sin) 값 구하기": 1,
+            "삼각형의 넓이 계산": 2,
+            "sin(∠BAC) 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 1,
+            "삼각형의 넓이 공식 적용 및 계산": 1,
+            "사인(sin) 값 구하기": 1,
+            "삼각형의 넓이 계산": 2,
+            "sin(∠BAC) 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.376469135284424,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.04736566543579,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.478298902511597,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.376469135284424,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.04736566543579,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.478298902511597,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 정보 정리": 1,
+            "sin∠BAC 계산": 3,
+            "넓이 공식 적용": 1,
+            "주어진 조건 정리": 2,
+            "넓이 공식 적용 및 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 정보 정리": 1,
+            "sin∠BAC 계산": 3,
+            "넓이 공식 적용": 1,
+            "주어진 조건 정리": 2,
+            "넓이 공식 적용 및 계산": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.707656621932983,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.764106750488281,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin(∠BAC) 구하기",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.090324401855469,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.707656621932983,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.764106750488281,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin(∠BAC) 구하기",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.090324401855469,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "sin 값 구하기": 2,
+            "넓이 계산": 2,
+            "주어진 조건 정리": 1,
+            "sin(∠BAC) 구하기": 1,
+            "삼각형 넓이 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "sin 값 구하기": 2,
+            "넓이 계산": 2,
+            "주어진 조건 정리": 1,
+            "sin(∠BAC) 구하기": 1,
+            "삼각형 넓이 공식 적용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.68831706047058,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.224223136901855,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.054189920425415,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.68831706047058,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.224223136901855,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.054189920425415,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "사인 값 계산": 1,
+            "넓이 계산": 3,
+            "사인 값 구하기": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "사인 값 계산": 1,
+            "넓이 계산": 3,
+            "사인 값 구하기": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 6,
+          "사인값 구하기": 1,
+          "넓이 계산": 8,
+          "sin 값 구하기": 4,
+          "조건 정리": 8,
+          "sin 값 계산": 3,
+          "삼각형 넓이 계산": 3,
+          "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 1,
+          "삼각형의 넓이 공식 적용 및 계산": 1,
+          "사인(sin) 값 구하기": 1,
+          "삼각형의 넓이 계산": 2,
+          "sin(∠BAC) 값 구하기": 1,
+          "주어진 정보 정리": 1,
+          "sin∠BAC 계산": 3,
+          "넓이 공식 적용": 1,
+          "넓이 공식 적용 및 계산": 2,
+          "sin(∠BAC) 구하기": 1,
+          "삼각형 넓이 공식 적용": 1,
+          "사인 값 계산": 1,
+          "사인 값 구하기": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.3965020179748535,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.505021095275879,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.549238920211792,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.3965020179748535,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.505021095275879,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.549238920211792,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "sin 값 구하기": 2,
+            "넓이 계산": 3,
+            "사인값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "sin 값 구하기": 2,
+            "넓이 계산": 3,
+            "사인값 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.353067398071289,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.507681131362915,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.114521026611328,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.353067398071289,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.507681131362915,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.114521026611328,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.251887321472168,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.309714078903198,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인 및 넓이 공식 설정",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.69861674308777,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인 및 넓이 공식 설정",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.251887321472168,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.309714078903198,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인 및 넓이 공식 설정",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.69861674308777,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확인 및 넓이 공식 설정",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "sin(∠BAC) 값 구하기": 1,
+            "삼각형의 넓이 계산": 3,
+            "조건 확인 및 넓이 공식 설정": 2,
+            "사인(sin) 값 구하기": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "sin(∠BAC) 값 구하기": 1,
+            "삼각형의 넓이 계산": 3,
+            "조건 확인 및 넓이 공식 설정": 2,
+            "사인(sin) 값 구하기": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.671284198760986,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin A 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.76362633705139,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "넓이 공식 선택",
+                "sin∠BAC 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.8801486492157,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin A 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.671284198760986,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin A 계산",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.76362633705139,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "넓이 공식 선택",
+                "sin∠BAC 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.8801486492157,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin A 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 1,
+            "sin A 계산": 2,
+            "넓이 공식 적용 및 계산": 1,
+            "주어진 조건 정리": 1,
+            "넓이 공식 선택": 1,
+            "sin∠BAC 계산": 1,
+            "넓이 계산": 1,
+            "주어진 정보 정리": 1,
+            "넓이 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "sin A 계산": 2,
+            "넓이 공식 적용 및 계산": 1,
+            "주어진 조건 정리": 1,
+            "넓이 공식 선택": 1,
+            "sin∠BAC 계산": 1,
+            "넓이 계산": 1,
+            "주어진 정보 정리": 1,
+            "넓이 공식 적용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.85172367095947,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 넓이 공식 설정",
+                "sin(∠BAC) 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.64526867866516,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.865920782089233,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "sinθ 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.85172367095947,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 넓이 공식 설정",
+                "sin(∠BAC) 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.64526867866516,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.865920782089233,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "sinθ 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리 및 넓이 공식 설정": 1,
+            "sin(∠BAC) 계산": 1,
+            "넓이 계산": 3,
+            "조건 정리": 2,
+            "sin값 구하기": 1,
+            "삼각형 넓이 공식 선택": 1,
+            "sinθ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 넓이 공식 설정": 1,
+            "sin(∠BAC) 계산": 1,
+            "넓이 계산": 3,
+            "조건 정리": 2,
+            "sin값 구하기": 1,
+            "삼각형 넓이 공식 선택": 1,
+            "sinθ 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.47740411758423,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "사인 값 계산",
+                "최종 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.101828575134277,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.74205470085144,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.47740411758423,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "사인 값 계산",
+                "최종 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.101828575134277,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.74205470085144,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "넓이 공식 적용": 1,
+            "사인 값 계산": 3,
+            "최종 넓이 계산": 1,
+            "삼각형 넓이 공식 선택": 1,
+            "넓이 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "넓이 공식 적용": 1,
+            "사인 값 계산": 3,
+            "최종 넓이 계산": 1,
+            "삼각형 넓이 공식 선택": 1,
+            "넓이 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 4,
+          "sin 값 구하기": 2,
+          "넓이 계산": 9,
+          "사인값 구하기": 1,
+          "조건 정리": 9,
+          "sin 값 계산": 3,
+          "삼각형 넓이 계산": 3,
+          "sin(∠BAC) 값 구하기": 1,
+          "삼각형의 넓이 계산": 3,
+          "조건 확인 및 넓이 공식 설정": 2,
+          "사인(sin) 값 구하기": 2,
+          "sin A 계산": 2,
+          "넓이 공식 적용 및 계산": 1,
+          "넓이 공식 선택": 1,
+          "sin∠BAC 계산": 1,
+          "주어진 정보 정리": 1,
+          "넓이 공식 적용": 2,
+          "조건 정리 및 넓이 공식 설정": 1,
+          "sin(∠BAC) 계산": 1,
+          "sin값 구하기": 1,
+          "삼각형 넓이 공식 선택": 2,
+          "sinθ 계산": 1,
+          "사인 값 계산": 3,
+          "최종 넓이 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.092148065567017,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.110804080963135,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.185128688812256,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.092148065567017,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.110804080963135,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.185128688812256,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "사인값 구하기": 1,
+            "넓이 공식 적용": 2,
+            "sin 값 구하기": 2,
+            "넓이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "사인값 구하기": 1,
+            "넓이 공식 적용": 2,
+            "sin 값 구하기": 2,
+            "넓이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.015328645706177,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.393163681030273,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.263909101486206,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.015328645706177,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.393163681030273,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.263909101486206,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 2,
+            "넓이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 2,
+            "넓이 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.15911293029785,
+              "step_count": 3,
+              "step_titles": [
+                "넓이 공식 확인",
+                "사인($\\sin$) 값 계산",
+                "최종 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.75305962562561,
+              "step_count": 3,
+              "step_titles": [
+                "넓이 공식 확인",
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.60680103302002,
+              "step_count": 2,
+              "step_titles": [
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.15911293029785,
+              "step_count": 3,
+              "step_titles": [
+                "넓이 공식 확인",
+                "사인($\\sin$) 값 계산",
+                "최종 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.75305962562561,
+              "step_count": 3,
+              "step_titles": [
+                "넓이 공식 확인",
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.60680103302002,
+              "step_count": 2,
+              "step_titles": [
+                "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기",
+                "삼각형의 넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "넓이 공식 확인": 2,
+            "사인($\\sin$) 값 계산": 1,
+            "최종 넓이 계산": 1,
+            "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 2,
+            "삼각형의 넓이 계산": 1,
+            "삼각형의 넓이 공식 적용 및 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "넓이 공식 확인": 2,
+            "사인($\\sin$) 값 계산": 1,
+            "최종 넓이 계산": 1,
+            "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 2,
+            "삼각형의 넓이 계산": 1,
+            "삼각형의 넓이 공식 적용 및 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.539454221725464,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin A 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.43906021118164,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.823550701141357,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.539454221725464,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin A 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.43906021118164,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.823550701141357,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "sin A 계산": 1,
+            "넓이 계산": 1,
+            "sin∠BAC 계산": 2,
+            "넓이 공식 적용": 2,
+            "주어진 정보 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "sin A 계산": 1,
+            "넓이 계산": 1,
+            "sin∠BAC 계산": 2,
+            "넓이 공식 적용": 2,
+            "주어진 정보 정리": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.575331211090088,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.872955083847046,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.12600541114807,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sinθ 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.575331211090088,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.872955083847046,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.12600541114807,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sinθ 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "sin값 구하기": 2,
+            "넓이 계산": 3,
+            "sinθ 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "sin값 구하기": 2,
+            "넓이 계산": 3,
+            "sinθ 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.676368713378906,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.630181550979614,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.965723276138306,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "sin 값 계산",
+                "최종 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.676368713378906,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.630181550979614,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "삼각형 넓이 공식 선택",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.965723276138306,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "sin 값 계산",
+                "최종 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "사인 값 구하기": 1,
+            "넓이 계산": 2,
+            "삼각형 넓이 공식 선택": 1,
+            "사인 값 계산": 1,
+            "넓이 공식 적용": 1,
+            "sin 값 계산": 1,
+            "최종 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "사인 값 구하기": 1,
+            "넓이 계산": 2,
+            "삼각형 넓이 공식 선택": 1,
+            "사인 값 계산": 1,
+            "넓이 공식 적용": 1,
+            "sin 값 계산": 1,
+            "최종 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 3,
+          "사인값 구하기": 1,
+          "넓이 공식 적용": 5,
+          "sin 값 구하기": 2,
+          "넓이 계산": 8,
+          "조건 정리": 11,
+          "sin 값 계산": 4,
+          "삼각형 넓이 계산": 2,
+          "넓이 공식 확인": 2,
+          "사인($\\sin$) 값 계산": 1,
+          "최종 넓이 계산": 1,
+          "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 2,
+          "삼각형의 넓이 계산": 1,
+          "삼각형의 넓이 공식 적용 및 계산": 1,
+          "sin A 계산": 1,
+          "sin∠BAC 계산": 2,
+          "주어진 정보 정리": 1,
+          "sin값 구하기": 2,
+          "sinθ 구하기": 1,
+          "사인 값 구하기": 1,
+          "삼각형 넓이 공식 선택": 1,
+          "사인 값 계산": 1,
+          "최종 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.151715040206909,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.506875276565552,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.996259689331055,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.151715040206909,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "sin 값 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.506875276565552,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.996259689331055,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "사인값 구하기",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "\\(12\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "sin 값 구하기": 1,
+            "삼각형 넓이 계산": 1,
+            "사인값 구하기": 2,
+            "삼각형 넓이 공식 적용": 1,
+            "넓이 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "sin 값 구하기": 1,
+            "삼각형 넓이 계산": 1,
+            "사인값 구하기": 2,
+            "삼각형 넓이 공식 적용": 1,
+            "넓이 공식 적용": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.671162128448486,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.1789329051971436,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.603628635406494,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.671162128448486,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "$12$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.1789329051971436,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.603628635406494,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 2,
+            "넓이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "sin 값 계산": 3,
+            "삼각형 넓이 계산": 2,
+            "넓이 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.563526391983032,
+              "step_count": 2,
+              "step_titles": [
+                "사인(sin) 값 구하기",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.46928381919861,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.233881950378418,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC)의 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.563526391983032,
+              "step_count": 2,
+              "step_titles": [
+                "사인(sin) 값 구하기",
+                "넓이 공식 적용 및 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.46928381919861,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인(sin) 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.233881950378418,
+              "step_count": 2,
+              "step_titles": [
+                "sin(∠BAC)의 값 구하기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "사인(sin) 값 구하기": 2,
+            "넓이 공식 적용 및 계산": 1,
+            "조건 정리": 1,
+            "삼각형의 넓이 계산": 2,
+            "sin(∠BAC)의 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "사인(sin) 값 구하기": 2,
+            "넓이 공식 적용 및 계산": 1,
+            "조건 정리": 1,
+            "삼각형의 넓이 계산": 2,
+            "sin(∠BAC)의 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.55314588546753,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠A 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.652952671051025,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.707489728927612,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "넓이 공식 및 sin∠BAC 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.55314588546753,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 정보 정리",
+                "sin∠A 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.652952671051025,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin∠BAC 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.707489728927612,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "넓이 공식 및 sin∠BAC 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 정보 정리": 1,
+            "sin∠A 계산": 1,
+            "넓이 계산": 2,
+            "조건 정리": 1,
+            "sin∠BAC 계산": 1,
+            "넓이 공식 적용": 1,
+            "주어진 조건 정리": 1,
+            "넓이 공식 및 sin∠BAC 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 정보 정리": 1,
+            "sin∠A 계산": 1,
+            "넓이 계산": 2,
+            "조건 정리": 1,
+            "sin∠BAC 계산": 1,
+            "넓이 공식 적용": 1,
+            "주어진 조건 정리": 1,
+            "넓이 공식 및 sin∠BAC 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.65815544128418,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 넓이 공식 선정",
+                "sin값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.787742137908936,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.63871955871582,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.65815544128418,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 넓이 공식 선정",
+                "sin값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.787742137908936,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "sin 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{12}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.63871955871582,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "삼각형 넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리 및 넓이 공식 선정": 1,
+            "sin값 계산": 1,
+            "넓이 계산": 2,
+            "조건 정리": 2,
+            "sin 값 계산": 1,
+            "사인 값 계산": 1,
+            "삼각형 넓이 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 넓이 공식 선정": 1,
+            "sin값 계산": 1,
+            "넓이 계산": 2,
+            "조건 정리": 2,
+            "sin 값 계산": 1,
+            "사인 값 계산": 1,
+            "삼각형 넓이 공식 적용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.486203908920288,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.18116807937622,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.550875663757324,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.486203908920288,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.18116807937622,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "사인 값 계산",
+                "넓이 공식 적용"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.550875663757324,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "넓이 공식 적용",
+                "사인 값 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "12",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "넓이 공식 적용": 3,
+            "넓이 계산": 2,
+            "사인 값 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "넓이 공식 적용": 3,
+            "넓이 계산": 2,
+            "사인 값 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 4,
+          "sin 값 구하기": 1,
+          "삼각형 넓이 계산": 3,
+          "사인값 구하기": 2,
+          "삼각형 넓이 공식 적용": 2,
+          "넓이 공식 적용": 5,
+          "조건 정리": 10,
+          "sin 값 계산": 4,
+          "넓이 계산": 7,
+          "사인(sin) 값 구하기": 2,
+          "넓이 공식 적용 및 계산": 1,
+          "삼각형의 넓이 계산": 2,
+          "sin(∠BAC)의 값 구하기": 1,
+          "주어진 정보 정리": 1,
+          "sin∠A 계산": 1,
+          "sin∠BAC 계산": 1,
+          "넓이 공식 및 sin∠BAC 계산": 1,
+          "조건 정리 및 넓이 공식 선정": 1,
+          "sin값 계산": 1,
+          "사인 값 계산": 3
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 6,
+          "사인값 구하기": 1,
+          "넓이 계산": 8,
+          "sin 값 구하기": 4,
+          "조건 정리": 8,
+          "sin 값 계산": 3,
+          "삼각형 넓이 계산": 3,
+          "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 1,
+          "삼각형의 넓이 공식 적용 및 계산": 1,
+          "사인(sin) 값 구하기": 1,
+          "삼각형의 넓이 계산": 2,
+          "sin(∠BAC) 값 구하기": 1,
+          "주어진 정보 정리": 1,
+          "sin∠BAC 계산": 3,
+          "넓이 공식 적용": 1,
+          "넓이 공식 적용 및 계산": 2,
+          "sin(∠BAC) 구하기": 1,
+          "삼각형 넓이 공식 적용": 1,
+          "사인 값 계산": 1,
+          "사인 값 구하기": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 4,
+          "sin 값 구하기": 2,
+          "넓이 계산": 9,
+          "사인값 구하기": 1,
+          "조건 정리": 9,
+          "sin 값 계산": 3,
+          "삼각형 넓이 계산": 3,
+          "sin(∠BAC) 값 구하기": 1,
+          "삼각형의 넓이 계산": 3,
+          "조건 확인 및 넓이 공식 설정": 2,
+          "사인(sin) 값 구하기": 2,
+          "sin A 계산": 2,
+          "넓이 공식 적용 및 계산": 1,
+          "넓이 공식 선택": 1,
+          "sin∠BAC 계산": 1,
+          "주어진 정보 정리": 1,
+          "넓이 공식 적용": 2,
+          "조건 정리 및 넓이 공식 설정": 1,
+          "sin(∠BAC) 계산": 1,
+          "sin값 구하기": 1,
+          "삼각형 넓이 공식 선택": 2,
+          "sinθ 계산": 1,
+          "사인 값 계산": 3,
+          "최종 넓이 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.0555555555555554,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 3,
+          "사인값 구하기": 1,
+          "넓이 공식 적용": 5,
+          "sin 값 구하기": 2,
+          "넓이 계산": 8,
+          "조건 정리": 11,
+          "sin 값 계산": 4,
+          "삼각형 넓이 계산": 2,
+          "넓이 공식 확인": 2,
+          "사인($\\sin$) 값 계산": 1,
+          "최종 넓이 계산": 1,
+          "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 2,
+          "삼각형의 넓이 계산": 1,
+          "삼각형의 넓이 공식 적용 및 계산": 1,
+          "sin A 계산": 1,
+          "sin∠BAC 계산": 2,
+          "주어진 정보 정리": 1,
+          "sin값 구하기": 2,
+          "sinθ 구하기": 1,
+          "사인 값 구하기": 1,
+          "삼각형 넓이 공식 선택": 1,
+          "사인 값 계산": 1,
+          "최종 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "주어진 조건 정리": 4,
+          "sin 값 구하기": 1,
+          "삼각형 넓이 계산": 3,
+          "사인값 구하기": 2,
+          "삼각형 넓이 공식 적용": 2,
+          "넓이 공식 적용": 5,
+          "조건 정리": 10,
+          "sin 값 계산": 4,
+          "넓이 계산": 7,
+          "사인(sin) 값 구하기": 2,
+          "넓이 공식 적용 및 계산": 1,
+          "삼각형의 넓이 계산": 2,
+          "sin(∠BAC)의 값 구하기": 1,
+          "주어진 정보 정리": 1,
+          "sin∠A 계산": 1,
+          "sin∠BAC 계산": 1,
+          "넓이 공식 및 sin∠BAC 계산": 1,
+          "조건 정리 및 넓이 공식 선정": 1,
+          "sin값 계산": 1,
+          "사인 값 계산": 3
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.0,
+      "title_frequency": {
+        "주어진 조건 정리": 17,
+        "사인값 구하기": 5,
+        "넓이 계산": 32,
+        "sin 값 구하기": 9,
+        "조건 정리": 38,
+        "sin 값 계산": 14,
+        "삼각형 넓이 계산": 11,
+        "$\\sin(\\angle \\mathrm{BAC})$ 값 구하기": 3,
+        "삼각형의 넓이 공식 적용 및 계산": 2,
+        "사인(sin) 값 구하기": 5,
+        "삼각형의 넓이 계산": 8,
+        "sin(∠BAC) 값 구하기": 2,
+        "주어진 정보 정리": 4,
+        "sin∠BAC 계산": 7,
+        "넓이 공식 적용": 13,
+        "넓이 공식 적용 및 계산": 4,
+        "sin(∠BAC) 구하기": 1,
+        "삼각형 넓이 공식 적용": 3,
+        "사인 값 계산": 8,
+        "사인 값 구하기": 3,
+        "조건 확인 및 넓이 공식 설정": 2,
+        "sin A 계산": 3,
+        "넓이 공식 선택": 1,
+        "조건 정리 및 넓이 공식 설정": 1,
+        "sin(∠BAC) 계산": 1,
+        "sin값 구하기": 3,
+        "삼각형 넓이 공식 선택": 3,
+        "sinθ 계산": 1,
+        "최종 넓이 계산": 2,
+        "넓이 공식 확인": 2,
+        "사인($\\sin$) 값 계산": 1,
+        "sinθ 구하기": 1,
+        "최종 계산": 1,
+        "sin(∠BAC)의 값 구하기": 1,
+        "sin∠A 계산": 1,
+        "넓이 공식 및 sin∠BAC 계산": 1,
+        "조건 정리 및 넓이 공식 선정": 1,
+        "sin값 계산": 1
+      },
+      "accuracy": 1.0,
+      "n_samples": 72
+    }
+  }
+}

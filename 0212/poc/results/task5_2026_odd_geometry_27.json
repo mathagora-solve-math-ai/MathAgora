@@ -1,0 +1,4379 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T04:09:49Z",
+    "ended_at_utc": "2026-02-14T04:15:13Z",
+    "elapsed_seconds": 323.738,
+    "problem_tag": "2026_odd_geometry_27",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 5,
+    "n_resumed_runs_from_flat_csv": 67
+  },
+  "problem": {
+    "id": "2026_odd_geometry_27",
+    "label": "2026_odd_geometry_27 (기하, 3점)",
+    "gold_answer": "4"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.188824892044067,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리(원 위의 현 길이로 각도 구하기)",
+                "좌표 설정(원기둥의 높이를 변수로)",
+                "면적 계산(ABCD와 ABH)",
+                "넓이 조건 적용(4배 관계로 h 구하기)"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\displaystyle \\frac{3\\sqrt{3}}{2}\\).",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.990755,
+              "step_count": 7,
+              "step_titles": [
+                "기하 설정(좌표/기본값)",
+                "점 D의 수선발 H와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터로 계산)",
+                "조건 AD = BC로부터 C와 D의 관계 정리",
+                "CD = 3으로 x, y 결정",
+                "사각형 ABCD 넓이 계산(대칭 활용)",
+                "넓이 조건으로 h 구하기"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.671139,
+              "step_count": 6,
+              "step_titles": [
+                "기본 설정(좌표/반지름)",
+                "현의 길이로 중심각 구하기",
+                "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석",
+                "대칭 배치로 단순화(AD=BC 조건 활용)",
+                "면적 계산: [ABH]와 [ABCD]",
+                "면적비 조건으로 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.188824892044067,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리(원 위의 현 길이로 각도 구하기)",
+                "좌표 설정(원기둥의 높이를 변수로)",
+                "면적 계산(ABCD와 ABH)",
+                "넓이 조건 적용(4배 관계로 h 구하기)"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\displaystyle \\frac{3\\sqrt{3}}{2}\\).",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.990755,
+              "step_count": 7,
+              "step_titles": [
+                "기하 설정(좌표/기본값)",
+                "점 D의 수선발 H와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터로 계산)",
+                "조건 AD = BC로부터 C와 D의 관계 정리",
+                "CD = 3으로 x, y 결정",
+                "사각형 ABCD 넓이 계산(대칭 활용)",
+                "넓이 조건으로 h 구하기"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.671139,
+              "step_count": 6,
+              "step_titles": [
+                "기본 설정(좌표/반지름)",
+                "현의 길이로 중심각 구하기",
+                "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석",
+                "대칭 배치로 단순화(AD=BC 조건 활용)",
+                "면적 계산: [ABH]와 [ABCD]",
+                "면적비 조건으로 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리(원 위의 현 길이로 각도 구하기)": 1,
+            "좌표 설정(원기둥의 높이를 변수로)": 1,
+            "면적 계산(ABCD와 ABH)": 1,
+            "넓이 조건 적용(4배 관계로 h 구하기)": 1,
+            "기하 설정(좌표/기본값)": 1,
+            "점 D의 수선발 H와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터로 계산)": 1,
+            "조건 AD = BC로부터 C와 D의 관계 정리": 1,
+            "CD = 3으로 x, y 결정": 1,
+            "사각형 ABCD 넓이 계산(대칭 활용)": 1,
+            "넓이 조건으로 h 구하기": 1,
+            "기본 설정(좌표/반지름)": 1,
+            "현의 길이로 중심각 구하기": 1,
+            "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석": 1,
+            "대칭 배치로 단순화(AD=BC 조건 활용)": 1,
+            "면적 계산: [ABH]와 [ABCD]": 1,
+            "면적비 조건으로 h 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리(원 위의 현 길이로 각도 구하기)": 1,
+            "좌표 설정(원기둥의 높이를 변수로)": 1,
+            "면적 계산(ABCD와 ABH)": 1,
+            "넓이 조건 적용(4배 관계로 h 구하기)": 1,
+            "기하 설정(좌표/기본값)": 1,
+            "점 D의 수선발 H와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터로 계산)": 1,
+            "조건 AD = BC로부터 C와 D의 관계 정리": 1,
+            "CD = 3으로 x, y 결정": 1,
+            "사각형 ABCD 넓이 계산(대칭 활용)": 1,
+            "넓이 조건으로 h 구하기": 1,
+            "기본 설정(좌표/반지름)": 1,
+            "현의 길이로 중심각 구하기": 1,
+            "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석": 1,
+            "대칭 배치로 단순화(AD=BC 조건 활용)": 1,
+            "면적 계산: [ABH]와 [ABCD]": 1,
+            "면적비 조건으로 h 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.867024,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.663518,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.005105,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.867024,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.663518,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.005105,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "원 위의 점 조건": 2,
+            "넓이 계산": 2,
+            "조건을 이용한 높이 계산": 2,
+            "점 H의 좌표와 삼각형 ABH": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "조건을 이용한 방정식": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "원 위의 점 조건": 2,
+            "넓이 계산": 2,
+            "조건을 이용한 높이 계산": 2,
+            "점 H의 좌표와 삼각형 ABH": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "조건을 이용한 방정식": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.61460518836975,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 밑면에서의 위치 관계 파악",
+                "넓이 관계를 통한 사각형 ABCD의 높이 도출",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "B}$, $\\mathrm{CD}$의 중점을 연결한 선분의 길이)는 5입니다.\n\n[STEP title=\"피타고라스 정리를 이용한 원기둥의 높이 계산\"]\n원기둥의 높이를 $h$라고 합시다.\n공간상에서 직각삼각형을 구성하여 $h$를 구합니다.\n1.  **빗변**: 사각형 $\\mathrm{ABCD}$의 높이인 $L = 5$\n2.  **밑변**: 밑면 $C_1$에서 두 현 $\\mathrm{AB}$와 $\\mathrm{HH'}$ 사이의 거리인 $d = 2$\n3.  **높이**: 원기둥의 높이 $h$\n\n이 세 변은 직각삼각형을 이루므로 피타고라스",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.997633,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 밑면에서의 위치 관계 파악",
+                "넓이 관계를 통한 사각형 ABCD의 높이 도출",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "B}$, $\\mathrm{CD}$의 중점을 연결한 선분의 길이)는 5입니다.\n\n[STEP title=\"피타고라스 정리를 이용한 원기둥의 높이 계산\"]\n원기둥의 높이를 $h$라고 합시다.\n공간상에서 직각삼각형을 구성하여 $h$를 구합니다.\n1.  **빗변**: 사각형 $\\mathrm{ABCD}$의 높이인 $L = 5$\n2.  **밑변**: 밑면 $C_1$에서 두 현 $\\mathrm{AB}$와 $\\mathrm{HH'}$ 사이의 거리인 $d = 2$\n3.  **높이**: 원기둥의 높이 $h$\n\n이 세 변은 직각삼각형을 이루므로 피타고라스",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.386741,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 도형의 성질 파악",
+                "삼각형 ABH의 넓이 구하기"
+              ],
+              "final_answer": "ABCD}$는 **등변사다리꼴**이 됩니다.\n4.  **점 H의 위치**: 점 $\\mathrm{D}$가 원 $C_2$ 위의 점이므로, 이를 수직으로 내린 수선의 발 $\\mathrm{H}$는 원 $C_1$ 위의 점이 됩니다.\n\n[STEP title=\"삼각형 ABH의 넓이 구하기\"]\n삼각형 $\\mathrm{ABH}$는 밑면인 원 $C_1$ 평면에 존재합니다.\n1.  **밑변의 길이**: $\\overline{\\mathrm{AB}} = 5$입니다.\n2.  **높이 계산**:\n    *   점 $\\mathrm{H}$는 점 $\\mathrm{D",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.61460518836975,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 밑면에서의 위치 관계 파악",
+                "넓이 관계를 통한 사각형 ABCD의 높이 도출",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "B}$, $\\mathrm{CD}$의 중점을 연결한 선분의 길이)는 5입니다.\n\n[STEP title=\"피타고라스 정리를 이용한 원기둥의 높이 계산\"]\n원기둥의 높이를 $h$라고 합시다.\n공간상에서 직각삼각형을 구성하여 $h$를 구합니다.\n1.  **빗변**: 사각형 $\\mathrm{ABCD}$의 높이인 $L = 5$\n2.  **밑변**: 밑면 $C_1$에서 두 현 $\\mathrm{AB}$와 $\\mathrm{HH'}$ 사이의 거리인 $d = 2$\n3.  **높이**: 원기둥의 높이 $h$\n\n이 세 변은 직각삼각형을 이루므로 피타고라스",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.997633,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 밑면에서의 위치 관계 파악",
+                "넓이 관계를 통한 사각형 ABCD의 높이 도출",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "B}$, $\\mathrm{CD}$의 중점을 연결한 선분의 길이)는 5입니다.\n\n[STEP title=\"피타고라스 정리를 이용한 원기둥의 높이 계산\"]\n원기둥의 높이를 $h$라고 합시다.\n공간상에서 직각삼각형을 구성하여 $h$를 구합니다.\n1.  **빗변**: 사각형 $\\mathrm{ABCD}$의 높이인 $L = 5$\n2.  **밑변**: 밑면 $C_1$에서 두 현 $\\mathrm{AB}$와 $\\mathrm{HH'}$ 사이의 거리인 $d = 2$\n3.  **높이**: 원기둥의 높이 $h$\n\n이 세 변은 직각삼각형을 이루므로 피타고라스",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.386741,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 도형의 성질 파악",
+                "삼각형 ABH의 넓이 구하기"
+              ],
+              "final_answer": "ABCD}$는 **등변사다리꼴**이 됩니다.\n4.  **점 H의 위치**: 점 $\\mathrm{D}$가 원 $C_2$ 위의 점이므로, 이를 수직으로 내린 수선의 발 $\\mathrm{H}$는 원 $C_1$ 위의 점이 됩니다.\n\n[STEP title=\"삼각형 ABH의 넓이 구하기\"]\n삼각형 $\\mathrm{ABH}$는 밑면인 원 $C_1$ 평면에 존재합니다.\n1.  **밑변의 길이**: $\\overline{\\mathrm{AB}} = 5$입니다.\n2.  **높이 계산**:\n    *   점 $\\mathrm{H}$는 점 $\\mathrm{D",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리 및 밑면에서의 위치 관계 파악": 2,
+            "넓이 관계를 통한 사각형 ABCD의 높이 도출": 2,
+            "피타고라스 정리를 이용한 원기둥의 높이 계산": 2,
+            "조건 분석 및 도형의 성질 파악": 1,
+            "삼각형 ABH의 넓이 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "조건 정리 및 밑면에서의 위치 관계 파악": 2,
+            "넓이 관계를 통한 사각형 ABCD의 높이 도출": 2,
+            "피타고라스 정리를 이용한 원기둥의 높이 계산": 2,
+            "조건 분석 및 도형의 성질 파악": 1,
+            "삼각형 ABH의 넓이 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 115.481429,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 가정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 115.407155,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 설정 및 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 129.750844,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 115.481429,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 가정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 115.407155,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 설정 및 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 129.750844,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "좌표 설정 및 가정": 1,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용": 1,
+            "좌표 설정": 1,
+            "방정식 설정 및 풀이": 1,
+            "좌표 설정 및 조건 정리": 1,
+            "방정식 풀이": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정 및 가정": 1,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용": 1,
+            "좌표 설정": 1,
+            "방정식 설정 및 풀이": 1,
+            "좌표 설정 및 조건 정리": 1,
+            "방정식 풀이": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 94.939683,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리와 도형 설정",
+                "C, D의 위치 조건",
+                "CD 길이 조건과 AD=BC 결합",
+                "D와 C의 좌표 결정",
+                "넓이 조건 이용",
+                "방정식 풀기",
+                "A, B의 일반적인 설정과 조건 재검토"
+              ],
+              "final_answer": "/2)·? 잠시: 1+cos(φ+α) = 2cos²((φ+α)/2)니까  \n= 25·[2cos²((φ+α)/2)]? 아니다: 2.5²[2+2cos(φ+α)]= 25[1+cos(φ+α)] = 25·2cos²((φ+α)/2) 맞다.  \nBC² = 50 cos²((φ+α)/2) + h²? → 실수: 2.5²=6.25. 6.25×[2+2cos(φ+α)]= 6.25×2[1+cos(φ+α)]=12.5×2cos²((φ+α)/2)= 25cos²((φ+α)/2). 맞음.\n\nAD²=25sin²((θ-α)/2)+h², BC²=25cos²((φ+α)/2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.894956,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD = BC 조건",
+                "CD 조건 이용",
+                "y_d = y_c 또는 y_d = -y_c 검토",
+                "넓이 조건",
+                "사다리꼴 ABCD의 넓이",
+                "넓이 공식 적용",
+                "높이 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 81.953228,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 설정",
+                "C, D의 좌표 설정",
+                "AD = BC 조건 사용",
+                "일반적인 C,D 설정 및 AD=BC 조건",
+                "넓이 조건",
+                "공간 사변형의 넓이 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 94.939683,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리와 도형 설정",
+                "C, D의 위치 조건",
+                "CD 길이 조건과 AD=BC 결합",
+                "D와 C의 좌표 결정",
+                "넓이 조건 이용",
+                "방정식 풀기",
+                "A, B의 일반적인 설정과 조건 재검토"
+              ],
+              "final_answer": "/2)·? 잠시: 1+cos(φ+α) = 2cos²((φ+α)/2)니까  \n= 25·[2cos²((φ+α)/2)]? 아니다: 2.5²[2+2cos(φ+α)]= 25[1+cos(φ+α)] = 25·2cos²((φ+α)/2) 맞다.  \nBC² = 50 cos²((φ+α)/2) + h²? → 실수: 2.5²=6.25. 6.25×[2+2cos(φ+α)]= 6.25×2[1+cos(φ+α)]=12.5×2cos²((φ+α)/2)= 25cos²((φ+α)/2). 맞음.\n\nAD²=25sin²((θ-α)/2)+h², BC²=25cos²((φ+α)/2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.894956,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD = BC 조건",
+                "CD 조건 이용",
+                "y_d = y_c 또는 y_d = -y_c 검토",
+                "넓이 조건",
+                "사다리꼴 ABCD의 넓이",
+                "넓이 공식 적용",
+                "높이 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 81.953228,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 설정",
+                "C, D의 좌표 설정",
+                "AD = BC 조건 사용",
+                "일반적인 C,D 설정 및 AD=BC 조건",
+                "넓이 조건",
+                "공간 사변형의 넓이 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.333333333333333,
+          "title_frequency": {
+            "조건 정리와 도형 설정": 1,
+            "C, D의 위치 조건": 1,
+            "CD 길이 조건과 AD=BC 결합": 1,
+            "D와 C의 좌표 결정": 1,
+            "넓이 조건 이용": 1,
+            "방정식 풀기": 1,
+            "A, B의 일반적인 설정과 조건 재검토": 1,
+            "조건 정리": 1,
+            "좌표 설정": 1,
+            "AD = BC 조건": 1,
+            "CD 조건 이용": 1,
+            "y_d = y_c 또는 y_d = -y_c 검토": 1,
+            "넓이 조건": 2,
+            "사다리꼴 ABCD의 넓이": 1,
+            "넓이 공식 적용": 1,
+            "높이 h 계산": 1,
+            "문제 이해 및 설정": 1,
+            "C, D의 좌표 설정": 1,
+            "AD = BC 조건 사용": 1,
+            "일반적인 C,D 설정 및 AD=BC 조건": 1,
+            "공간 사변형의 넓이 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리와 도형 설정": 1,
+            "C, D의 위치 조건": 1,
+            "CD 길이 조건과 AD=BC 결합": 1,
+            "D와 C의 좌표 결정": 1,
+            "넓이 조건 이용": 1,
+            "방정식 풀기": 1,
+            "A, B의 일반적인 설정과 조건 재검토": 1,
+            "조건 정리": 1,
+            "좌표 설정": 1,
+            "AD = BC 조건": 1,
+            "CD 조건 이용": 1,
+            "y_d = y_c 또는 y_d = -y_c 검토": 1,
+            "넓이 조건": 2,
+            "사다리꼴 ABCD의 넓이": 1,
+            "넓이 공식 적용": 1,
+            "높이 h 계산": 1,
+            "문제 이해 및 설정": 1,
+            "C, D의 좌표 설정": 1,
+            "AD = BC 조건 사용": 1,
+            "일반적인 C,D 설정 및 AD=BC 조건": 1,
+            "공간 사변형의 넓이 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 52.186807,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "점 D, C 위치 설정",
+                "벡터와 넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "& \\mathbf{j} & \\mathbf{k} \\\\\n5 & 0 & 0 \\\\\n4 & 2 & h \\\\\n\\end{vmatrix}\n= \\mathbf{i}(0 \\cdot h - 0 \\cdot 2) - \\mathbf{j}(5h - 0) + \\mathbf{k}(10 - 0) = (0, -5h, 10)\n$$\n\n점 $ C $가 이 평면 위에 있는지 확인: 벡터 $ \\vec{AC} = (1,2,h) $가 평면 벡터 $ \\vec{AB} $, $ \\vec{AD} $로 이루어진 평면 위에 있으면 $ \\vec{AC} \\cdot \\text{노말} = 0 $",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.185056,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 조건 활용",
+                "대칭성 가정 및 단순화",
+                "등변사다리꼴 가정 및 좌표 재설정",
+                "넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "일반적 좌표 설정 및 대칭성 유지",
+                "H와 삼각형 ABH 넓이 계산"
+              ],
+              "final_answer": "vec{AB} \\times \\vec{AH} $가 아니라, $ \\vec{AB} $와 $ \\vec{AH} $가 같은 시작점이어야.  \n\n더 정확:  \n- $ \\vec{AB} = (5, 0) $, $ \\vec{AH} = (-1.5 + 2.5, 2 - 0) = (1, 2) $  \n삼각형 $ ABH $ 넓이 = $ \\frac{1}{2} | \\vec{AB} \\times \\vec{AH} | $? 아님.  \n\n정석:  \n삼각형 $ ABH $의 넓이 = $ \\frac{1}{2} | (B - A) \\times (H - A) | $  \n\n- $ B -",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.193663,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 길이 계산 준비",
+                "사각형 ABCD 넓이 계산",
+                "좌표 가정 및 대칭성 활용",
+                "넓이 계산"
+              ],
+              "final_answer": "ABD $와 $ \\triangle CBD $가 아니라,  \n**$ \\triangle ABD $와 $ \\triangle BCD $**.\n\n포기하고 다른 방식: **사각형 $ ABCD $의 넓이는 벡터 $ \\vec{AB} $와 $ \\vec{AD} $, $ \\vec{BC} $, $ \\vec{CD} $로 정의할 수 없으므로,  \n대신 조건 $ AD = BC $와 대칭성으로 인해, **사각형 $ ABCD $는 평면 도형일 가능성**을 고려해보자.\n\n하지만 $ A, B $는 $ z=0 $, $ C, D $는 $ z=h $, 일반적으로 평면에",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 52.186807,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "점 D, C 위치 설정",
+                "벡터와 넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "& \\mathbf{j} & \\mathbf{k} \\\\\n5 & 0 & 0 \\\\\n4 & 2 & h \\\\\n\\end{vmatrix}\n= \\mathbf{i}(0 \\cdot h - 0 \\cdot 2) - \\mathbf{j}(5h - 0) + \\mathbf{k}(10 - 0) = (0, -5h, 10)\n$$\n\n점 $ C $가 이 평면 위에 있는지 확인: 벡터 $ \\vec{AC} = (1,2,h) $가 평면 벡터 $ \\vec{AB} $, $ \\vec{AD} $로 이루어진 평면 위에 있으면 $ \\vec{AC} \\cdot \\text{노말} = 0 $",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.185056,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 조건 활용",
+                "대칭성 가정 및 단순화",
+                "등변사다리꼴 가정 및 좌표 재설정",
+                "넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "일반적 좌표 설정 및 대칭성 유지",
+                "H와 삼각형 ABH 넓이 계산"
+              ],
+              "final_answer": "vec{AB} \\times \\vec{AH} $가 아니라, $ \\vec{AB} $와 $ \\vec{AH} $가 같은 시작점이어야.  \n\n더 정확:  \n- $ \\vec{AB} = (5, 0) $, $ \\vec{AH} = (-1.5 + 2.5, 2 - 0) = (1, 2) $  \n삼각형 $ ABH $ 넓이 = $ \\frac{1}{2} | \\vec{AB} \\times \\vec{AH} | $? 아님.  \n\n정석:  \n삼각형 $ ABH $의 넓이 = $ \\frac{1}{2} | (B - A) \\times (H - A) | $  \n\n- $ B -",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.193663,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 길이 계산 준비",
+                "사각형 ABCD 넓이 계산",
+                "좌표 가정 및 대칭성 활용",
+                "넓이 계산"
+              ],
+              "final_answer": "ABD $와 $ \\triangle CBD $가 아니라,  \n**$ \\triangle ABD $와 $ \\triangle BCD $**.\n\n포기하고 다른 방식: **사각형 $ ABCD $의 넓이는 벡터 $ \\vec{AB} $와 $ \\vec{AD} $, $ \\vec{BC} $, $ \\vec{CD} $로 정의할 수 없으므로,  \n대신 조건 $ AD = BC $와 대칭성으로 인해, **사각형 $ ABCD $는 평면 도형일 가능성**을 고려해보자.\n\n하지만 $ A, B $는 $ z=0 $, $ C, D $는 $ z=h $, 일반적으로 평면에",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "점 D, C 위치 설정": 1,
+            "벡터와 넓이 계산 준비": 1,
+            "삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 2,
+            "벡터와 거리 조건 활용": 1,
+            "대칭성 가정 및 단순화": 1,
+            "등변사다리꼴 가정 및 좌표 재설정": 1,
+            "넓이 계산 준비": 1,
+            "일반적 좌표 설정 및 대칭성 유지": 1,
+            "H와 삼각형 ABH 넓이 계산": 1,
+            "벡터와 길이 계산 준비": 1,
+            "좌표 가정 및 대칭성 활용": 1,
+            "넓이 계산": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 7.0,
+          "step_std": 1.7320508075688772,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "점 D, C 위치 설정": 1,
+            "벡터와 넓이 계산 준비": 1,
+            "삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 2,
+            "벡터와 거리 조건 활용": 1,
+            "대칭성 가정 및 단순화": 1,
+            "등변사다리꼴 가정 및 좌표 재설정": 1,
+            "넓이 계산 준비": 1,
+            "일반적 좌표 설정 및 대칭성 유지": 1,
+            "H와 삼각형 ABH 넓이 계산": 1,
+            "벡터와 길이 계산 준비": 1,
+            "좌표 가정 및 대칭성 활용": 1,
+            "넓이 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.277777777777778,
+        "title_frequency_all_models": {
+          "조건 정리(원 위의 현 길이로 각도 구하기)": 1,
+          "좌표 설정(원기둥의 높이를 변수로)": 1,
+          "면적 계산(ABCD와 ABH)": 1,
+          "넓이 조건 적용(4배 관계로 h 구하기)": 1,
+          "기하 설정(좌표/기본값)": 1,
+          "점 D의 수선발 H와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터로 계산)": 1,
+          "조건 AD = BC로부터 C와 D의 관계 정리": 1,
+          "CD = 3으로 x, y 결정": 1,
+          "사각형 ABCD 넓이 계산(대칭 활용)": 1,
+          "넓이 조건으로 h 구하기": 1,
+          "기본 설정(좌표/반지름)": 1,
+          "현의 길이로 중심각 구하기": 1,
+          "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석": 1,
+          "대칭 배치로 단순화(AD=BC 조건 활용)": 1,
+          "면적 계산: [ABH]와 [ABCD]": 1,
+          "면적비 조건으로 h 구하기": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "원 위의 점 조건": 2,
+          "넓이 계산": 3,
+          "조건을 이용한 높이 계산": 2,
+          "점 H의 좌표와 삼각형 ABH": 1,
+          "사각형 ABCD의 넓이 계산": 1,
+          "조건을 이용한 방정식": 1,
+          "조건 정리 및 밑면에서의 위치 관계 파악": 2,
+          "넓이 관계를 통한 사각형 ABCD의 높이 도출": 2,
+          "피타고라스 정리를 이용한 원기둥의 높이 계산": 2,
+          "조건 분석 및 도형의 성질 파악": 1,
+          "삼각형 ABH의 넓이 구하기": 1,
+          "좌표 설정 및 가정": 1,
+          "삼각형 ABH 넓이 계산": 5,
+          "사각형 ABCD 넓이 계산": 5,
+          "조건 적용": 1,
+          "좌표 설정": 5,
+          "방정식 설정 및 풀이": 1,
+          "좌표 설정 및 조건 정리": 1,
+          "방정식 풀이": 1,
+          "조건 정리와 도형 설정": 1,
+          "C, D의 위치 조건": 1,
+          "CD 길이 조건과 AD=BC 결합": 1,
+          "D와 C의 좌표 결정": 1,
+          "넓이 조건 이용": 1,
+          "방정식 풀기": 1,
+          "A, B의 일반적인 설정과 조건 재검토": 1,
+          "AD = BC 조건": 1,
+          "CD 조건 이용": 1,
+          "y_d = y_c 또는 y_d = -y_c 검토": 1,
+          "넓이 조건": 2,
+          "사다리꼴 ABCD의 넓이": 1,
+          "넓이 공식 적용": 1,
+          "높이 h 계산": 1,
+          "문제 이해 및 설정": 1,
+          "C, D의 좌표 설정": 1,
+          "AD = BC 조건 사용": 1,
+          "일반적인 C,D 설정 및 AD=BC 조건": 1,
+          "공간 사변형의 넓이 구하기": 1,
+          "점 D, C 위치 설정": 1,
+          "벡터와 넓이 계산 준비": 1,
+          "벡터와 거리 조건 활용": 1,
+          "대칭성 가정 및 단순화": 1,
+          "등변사다리꼴 가정 및 좌표 재설정": 1,
+          "넓이 계산 준비": 1,
+          "일반적 좌표 설정 및 대칭성 유지": 1,
+          "H와 삼각형 ABH 넓이 계산": 1,
+          "벡터와 길이 계산 준비": 1,
+          "좌표 가정 및 대칭성 활용": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.737709,
+              "step_count": 4,
+              "step_titles": [
+                "기본 길이 정리(원 위의 현)",
+                "좌표 설정(원기둥)",
+                "조건 AD = BC 해석(대칭 조건)",
+                "넓이 조건을 h로 연결"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.909133,
+              "step_count": 6,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "점 C, D의 표현(현 길이 3)",
+                "조건 AD = BC로부터 얻는 결론",
+                "삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이(벡터/분할)",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.907168,
+              "step_count": 7,
+              "step_titles": [
+                "밑면 원의 정보 정리",
+                "좌표 설정 및 D의 수선의 발 H",
+                "삼각형 ABH 넓이",
+                "조건 AD=BC로부터 C, D의 x좌표 관계",
+                "CD=3으로부터 C, D의 좌표 구체화",
+                "사각형 ABCD 넓이 계산(벡터/좌표)",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.737709,
+              "step_count": 4,
+              "step_titles": [
+                "기본 길이 정리(원 위의 현)",
+                "좌표 설정(원기둥)",
+                "조건 AD = BC 해석(대칭 조건)",
+                "넓이 조건을 h로 연결"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.909133,
+              "step_count": 6,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "점 C, D의 표현(현 길이 3)",
+                "조건 AD = BC로부터 얻는 결론",
+                "삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이(벡터/분할)",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.907168,
+              "step_count": 7,
+              "step_titles": [
+                "밑면 원의 정보 정리",
+                "좌표 설정 및 D의 수선의 발 H",
+                "삼각형 ABH 넓이",
+                "조건 AD=BC로부터 C, D의 x좌표 관계",
+                "CD=3으로부터 C, D의 좌표 구체화",
+                "사각형 ABCD 넓이 계산(벡터/좌표)",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "기본 길이 정리(원 위의 현)": 1,
+            "좌표 설정(원기둥)": 1,
+            "조건 AD = BC 해석(대칭 조건)": 1,
+            "넓이 조건을 h로 연결": 1,
+            "원기둥·좌표 설정": 1,
+            "점 C, D의 표현(현 길이 3)": 1,
+            "조건 AD = BC로부터 얻는 결론": 1,
+            "삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이(벡터/분할)": 1,
+            "넓이 조건으로 높이 h 구하기": 2,
+            "밑면 원의 정보 정리": 1,
+            "좌표 설정 및 D의 수선의 발 H": 1,
+            "삼각형 ABH 넓이": 1,
+            "조건 AD=BC로부터 C, D의 x좌표 관계": 1,
+            "CD=3으로부터 C, D의 좌표 구체화": 1,
+            "사각형 ABCD 넓이 계산(벡터/좌표)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "기본 길이 정리(원 위의 현)": 1,
+            "좌표 설정(원기둥)": 1,
+            "조건 AD = BC 해석(대칭 조건)": 1,
+            "넓이 조건을 h로 연결": 1,
+            "원기둥·좌표 설정": 1,
+            "점 C, D의 표현(현 길이 3)": 1,
+            "조건 AD = BC로부터 얻는 결론": 1,
+            "삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이(벡터/분할)": 1,
+            "넓이 조건으로 높이 h 구하기": 2,
+            "밑면 원의 정보 정리": 1,
+            "좌표 설정 및 D의 수선의 발 H": 1,
+            "삼각형 ABH 넓이": 1,
+            "조건 AD=BC로부터 C, D의 x좌표 관계": 1,
+            "CD=3으로부터 C, D의 좌표 구체화": 1,
+            "사각형 ABCD 넓이 계산(벡터/좌표)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.362772,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.765012,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 C, D의 좌표 결정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.110482,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.362772,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.765012,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 C, D의 좌표 결정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.110482,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "넓이 계산": 1,
+            "조건을 이용한 높이 계산": 2,
+            "점 C, D의 좌표 결정": 1,
+            "점 H의 좌표와 삼각형 ABH": 2,
+            "사각형 ABCD의 넓이 계산": 1,
+            "사각형 ABCD의 넓이": 1,
+            "조건을 이용한 방정식": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "넓이 계산": 1,
+            "조건을 이용한 높이 계산": 2,
+            "점 C, D의 좌표 결정": 1,
+            "점 H의 좌표와 삼각형 ABH": 2,
+            "사각형 ABCD의 넓이 계산": 1,
+            "사각형 ABCD의 넓이": 1,
+            "조건을 이용한 방정식": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.202836,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 기하학적 위치 분석"
+              ],
+              "final_answer": "계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 기하학적 위치 분석\"]\n두 원의 지름이 5이므로 반지름은 $R = \\frac{5}{2}$입니다.\n밑면인 원 $C_1$의 중심을 원점 $O(0,0,0)$으로 하고, 선분 $\\mathrm{AB}$가 $x$축 위에 놓이도록 좌표공간을 설정합니다.\n1. **점 $\\mathrm{A}, \\mathrm{B}$의 좌표**: $\\overline{\\mathrm{AB}}=5$는 지름이므로,\n   $\\mathrm{A}(-\\frac{5}{2}, 0, 0)$, $\\mathrm{B}(\\frac{5}{2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.528374,
+              "step_count": 4,
+              "step_titles": [
+                "도형의 위치 관계 파악",
+                "삼각형 ABH의 넓이 구하기",
+                "사각형 ABCD의 넓이와 사선 길이",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.654995,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 기하학적 위치 파악"
+              ],
+              "final_answer": "erline{\\mathrm{BC}}$이므로 사각형 $\\mathrm{ABCD}$는 등변사다리꼴 형태가 되어 선분 $\\mathrm{AB}$와 선분 $\\mathrm{CD}$는 서로 평행합니다.\n\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발 $\\mathrm{H}$는 원 $C_1$의 둘레 위에 위치합니다.\n원 $C_1$의 중심을 $\\mathrm{O}$라 할 때, 원의 중심에서 현 $\\mathrm{CD}$의 정사영(현 $\\mathrm{H}$와 대응되는 현)까지의 거리를 $d$라고 하면, 피타고라스 정리에 의해",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.202836,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 기하학적 위치 분석"
+              ],
+              "final_answer": "계별 풀이입니다.\n\n[STEP title=\"조건 정리 및 기하학적 위치 분석\"]\n두 원의 지름이 5이므로 반지름은 $R = \\frac{5}{2}$입니다.\n밑면인 원 $C_1$의 중심을 원점 $O(0,0,0)$으로 하고, 선분 $\\mathrm{AB}$가 $x$축 위에 놓이도록 좌표공간을 설정합니다.\n1. **점 $\\mathrm{A}, \\mathrm{B}$의 좌표**: $\\overline{\\mathrm{AB}}=5$는 지름이므로,\n   $\\mathrm{A}(-\\frac{5}{2}, 0, 0)$, $\\mathrm{B}(\\frac{5}{2",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.528374,
+              "step_count": 4,
+              "step_titles": [
+                "도형의 위치 관계 파악",
+                "삼각형 ABH의 넓이 구하기",
+                "사각형 ABCD의 넓이와 사선 길이",
+                "피타고라스 정리를 이용한 원기둥의 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.654995,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 기하학적 위치 파악"
+              ],
+              "final_answer": "erline{\\mathrm{BC}}$이므로 사각형 $\\mathrm{ABCD}$는 등변사다리꼴 형태가 되어 선분 $\\mathrm{AB}$와 선분 $\\mathrm{CD}$는 서로 평행합니다.\n\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발 $\\mathrm{H}$는 원 $C_1$의 둘레 위에 위치합니다.\n원 $C_1$의 중심을 $\\mathrm{O}$라 할 때, 원의 중심에서 현 $\\mathrm{CD}$의 정사영(현 $\\mathrm{H}$와 대응되는 현)까지의 거리를 $d$라고 하면, 피타고라스 정리에 의해",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "조건 정리 및 기하학적 위치 분석": 1,
+            "도형의 위치 관계 파악": 1,
+            "삼각형 ABH의 넓이 구하기": 1,
+            "사각형 ABCD의 넓이와 사선 길이": 1,
+            "피타고라스 정리를 이용한 원기둥의 높이 계산": 1,
+            "조건 정리 및 기하학적 위치 파악": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 1.7320508075688772,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 기하학적 위치 분석": 1,
+            "도형의 위치 관계 파악": 1,
+            "삼각형 ABH의 넓이 구하기": 1,
+            "사각형 ABCD의 넓이와 사선 길이": 1,
+            "피타고라스 정리를 이용한 원기둥의 높이 계산": 1,
+            "조건 정리 및 기하학적 위치 파악": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 136.742424,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 170.000504,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 365.290176,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 136.742424,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 170.000504,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 365.290176,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "좌표 설정": 3,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용": 2,
+            "방정식 풀이": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정": 3,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용": 2,
+            "방정식 풀이": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 156.419402,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD = BC 조건 이용",
+                "CD 길이 조건 이용",
+                "y2 = y1 또는 y2 = -y1 구분",
+                "점의 배치 결정",
+                "사각형 ABCD 넓이 구하기",
+                "삼각형 ABH 넓이 구하기",
+                "넓이 조건 적용"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\) (보기 ④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 136.353594,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 도형 설정",
+                "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계",
+                "점 C, D의 좌표 관계",
+                "사각형 ABCD의 넓이 계산",
+                "삼각형 ABH의 넓이와 조건식",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) → ④",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 132.575705,
+              "step_count": 6,
+              "step_titles": [
+                "좌표 설정",
+                "AD=BC 조건에서 관계식 도출",
+                "CD 길이 조건과 원 위의 점 조건 결합",
+                "점 H와 삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이 계산",
+                "높이 h 구하기"
+              ],
+              "final_answer": "√21\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 156.419402,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD = BC 조건 이용",
+                "CD 길이 조건 이용",
+                "y2 = y1 또는 y2 = -y1 구분",
+                "점의 배치 결정",
+                "사각형 ABCD 넓이 구하기",
+                "삼각형 ABH 넓이 구하기",
+                "넓이 조건 적용"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\) (보기 ④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 136.353594,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 도형 설정",
+                "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계",
+                "점 C, D의 좌표 관계",
+                "사각형 ABCD의 넓이 계산",
+                "삼각형 ABH의 넓이와 조건식",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) → ④",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 132.575705,
+              "step_count": 6,
+              "step_titles": [
+                "좌표 설정",
+                "AD=BC 조건에서 관계식 도출",
+                "CD 길이 조건과 원 위의 점 조건 결합",
+                "점 H와 삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이 계산",
+                "높이 h 구하기"
+              ],
+              "final_answer": "√21\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "좌표 설정": 2,
+            "AD = BC 조건 이용": 1,
+            "CD 길이 조건 이용": 1,
+            "y2 = y1 또는 y2 = -y1 구분": 1,
+            "점의 배치 결정": 1,
+            "사각형 ABCD 넓이 구하기": 1,
+            "삼각형 ABH 넓이 구하기": 1,
+            "넓이 조건 적용": 1,
+            "조건 정리 및 도형 설정": 1,
+            "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계": 1,
+            "점 C, D의 좌표 관계": 1,
+            "사각형 ABCD의 넓이 계산": 2,
+            "삼각형 ABH의 넓이와 조건식": 1,
+            "방정식 풀이": 1,
+            "AD=BC 조건에서 관계식 도출": 1,
+            "CD 길이 조건과 원 위의 점 조건 결합": 1,
+            "점 H와 삼각형 ABH의 넓이": 1,
+            "높이 h 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.0,
+          "step_std": 1.7320508075688772,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "좌표 설정": 2,
+            "AD = BC 조건 이용": 1,
+            "CD 길이 조건 이용": 1,
+            "y2 = y1 또는 y2 = -y1 구분": 1,
+            "점의 배치 결정": 1,
+            "사각형 ABCD 넓이 구하기": 1,
+            "삼각형 ABH 넓이 구하기": 1,
+            "넓이 조건 적용": 1,
+            "조건 정리 및 도형 설정": 1,
+            "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계": 1,
+            "점 C, D의 좌표 관계": 1,
+            "사각형 ABCD의 넓이 계산": 2,
+            "삼각형 ABH의 넓이와 조건식": 1,
+            "방정식 풀이": 1,
+            "AD=BC 조건에서 관계식 도출": 1,
+            "CD 길이 조건과 원 위의 점 조건 결합": 1,
+            "점 H와 삼각형 ABH의 넓이": 1,
+            "높이 h 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 120.404653,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터 및 거리 조건 적용",
+                "대칭성 가정 및 단순화",
+                "넓이 계산 준비",
+                "사각형 ABCD의 넓이 계산",
+                "삼각형 ABH의 넓이 계산"
+              ],
+              "final_answer": "0) $\n\n모두 $ z = 0 $ 평면 위 → 2차원 도형.\n\n벡터 $ \\vec{AB} = (5, 0) $, $ \\vec{AH} = (1.5 - (-2.5), y - 0) = (4, y) $\n\n삼각형 $ ABH $의 넓이:\n$$\n\\frac{1}{2} \\| \\vec{AB} \\times \\vec{AH} \\| = \\frac{1}{2} |5 \\cdot y - 0 \\cdot 4| = \\frac{1}{2} |5y| = \\frac{5}{2} |y|\n$$\n\n이전에 $ y^2 = 4 \\Rightarrow |y| = 2 $이므로,\n$$\n\\text{",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 120.564492,
+              "step_count": 10,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 관계 설정",
+                "대칭성 가정과 단순화",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산 전략",
+                "사각형 ABCD의 넓이: 사영 활용",
+                "대칭성 가정: C와 D의 위치 결정",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산"
+              ],
+              "final_answer": "D $가 인접.\n\n사실, 경로 $ A \\to B \\to C \\to D $이므로,  \n사각형을 $ \\triangle ABC $와 $ \\triangle ACD $로 나누는 것은 대각선 $ AC $,  \n또는 $ \\triangle ABD $와 $ \\triangle CBD $는 $ BD $.\n\n하지만 $ \\triangle ABC $와 $ \\triangle ADC $는 $ AC $로 나눔.\n\n여기서는 $ \\triangle ABD $와 $ \\triangle CBD $가 아니라,  \n$ \\triangle ABD $와 $ \\triangle BCD",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 52.612257,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "거리 조건 정리: AD = BC",
+                "넓이 조건: 사각형 ABCD vs 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "대칭성 가정 및 단순화",
+                "값 대입: x₁ = 1.5, y₁ = 2",
+                "넓이 계산: 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산"
+              ],
+              "final_answer": "삼각형 \\( ABD \\)와 삼각형 \\( BCD \\)** 로 나누는 것.\n\n→ 아니면 **삼각형 \\( ABC \\)와 삼각형 \\( ACD \\)** 는 경로가 꼬임.\n\n**삼각형 \\( ABD \\)와 삼각형 \\( CBD \\)** 는 \\( B \\)와 \\( D \\)를 공유.\n\n가장 자연스러운 분할: **삼각형 \\( ABC \\)와 삼각형 \\( ACD \\)** 는 비효율적.\n\n→ **삼각형 \\( ABD \\)와 삼각형 \\( BCD \\)** 도 아님.\n\n**삼각형 \\( ABC \\)와 삼각형 \\( CDA \\)** 는 순서상 \\( A-B-C \\)와 \\(",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 120.404653,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터 및 거리 조건 적용",
+                "대칭성 가정 및 단순화",
+                "넓이 계산 준비",
+                "사각형 ABCD의 넓이 계산",
+                "삼각형 ABH의 넓이 계산"
+              ],
+              "final_answer": "0) $\n\n모두 $ z = 0 $ 평면 위 → 2차원 도형.\n\n벡터 $ \\vec{AB} = (5, 0) $, $ \\vec{AH} = (1.5 - (-2.5), y - 0) = (4, y) $\n\n삼각형 $ ABH $의 넓이:\n$$\n\\frac{1}{2} \\| \\vec{AB} \\times \\vec{AH} \\| = \\frac{1}{2} |5 \\cdot y - 0 \\cdot 4| = \\frac{1}{2} |5y| = \\frac{5}{2} |y|\n$$\n\n이전에 $ y^2 = 4 \\Rightarrow |y| = 2 $이므로,\n$$\n\\text{",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 120.564492,
+              "step_count": 10,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 관계 설정",
+                "대칭성 가정과 단순화",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산 전략",
+                "사각형 ABCD의 넓이: 사영 활용",
+                "대칭성 가정: C와 D의 위치 결정",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산"
+              ],
+              "final_answer": "D $가 인접.\n\n사실, 경로 $ A \\to B \\to C \\to D $이므로,  \n사각형을 $ \\triangle ABC $와 $ \\triangle ACD $로 나누는 것은 대각선 $ AC $,  \n또는 $ \\triangle ABD $와 $ \\triangle CBD $는 $ BD $.\n\n하지만 $ \\triangle ABC $와 $ \\triangle ADC $는 $ AC $로 나눔.\n\n여기서는 $ \\triangle ABD $와 $ \\triangle CBD $가 아니라,  \n$ \\triangle ABD $와 $ \\triangle BCD",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 52.612257,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "거리 조건 정리: AD = BC",
+                "넓이 조건: 사각형 ABCD vs 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "대칭성 가정 및 단순화",
+                "값 대입: x₁ = 1.5, y₁ = 2",
+                "넓이 계산: 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산"
+              ],
+              "final_answer": "삼각형 \\( ABD \\)와 삼각형 \\( BCD \\)** 로 나누는 것.\n\n→ 아니면 **삼각형 \\( ABC \\)와 삼각형 \\( ACD \\)** 는 경로가 꼬임.\n\n**삼각형 \\( ABD \\)와 삼각형 \\( CBD \\)** 는 \\( B \\)와 \\( D \\)를 공유.\n\n가장 자연스러운 분할: **삼각형 \\( ABC \\)와 삼각형 \\( ACD \\)** 는 비효율적.\n\n→ **삼각형 \\( ABD \\)와 삼각형 \\( BCD \\)** 도 아님.\n\n**삼각형 \\( ABC \\)와 삼각형 \\( CDA \\)** 는 순서상 \\( A-B-C \\)와 \\(",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 8.666666666666666,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "벡터 및 거리 조건 적용": 1,
+            "대칭성 가정 및 단순화": 2,
+            "넓이 계산 준비": 1,
+            "사각형 ABCD의 넓이 계산": 4,
+            "삼각형 ABH의 넓이 계산": 3,
+            "벡터와 거리 관계 설정": 1,
+            "대칭성 가정과 단순화": 1,
+            "사각형 ABCD의 넓이 계산 전략": 1,
+            "사각형 ABCD의 넓이: 사영 활용": 1,
+            "대칭성 가정: C와 D의 위치 결정": 1,
+            "거리 조건 정리: AD = BC": 1,
+            "넓이 조건: 사각형 ABCD vs 삼각형 ABH": 1,
+            "값 대입: x₁ = 1.5, y₁ = 2": 1,
+            "넓이 계산: 삼각형 ABH": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 8.666666666666666,
+          "step_std": 1.5275252316519468,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "벡터 및 거리 조건 적용": 1,
+            "대칭성 가정 및 단순화": 2,
+            "넓이 계산 준비": 1,
+            "사각형 ABCD의 넓이 계산": 4,
+            "삼각형 ABH의 넓이 계산": 3,
+            "벡터와 거리 관계 설정": 1,
+            "대칭성 가정과 단순화": 1,
+            "사각형 ABCD의 넓이 계산 전략": 1,
+            "사각형 ABCD의 넓이: 사영 활용": 1,
+            "대칭성 가정: C와 D의 위치 결정": 1,
+            "거리 조건 정리: AD = BC": 1,
+            "넓이 조건: 사각형 ABCD vs 삼각형 ABH": 1,
+            "값 대입: x₁ = 1.5, y₁ = 2": 1,
+            "넓이 계산: 삼각형 ABH": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.388888888888889,
+        "title_frequency_all_models": {
+          "기본 길이 정리(원 위의 현)": 1,
+          "좌표 설정(원기둥)": 1,
+          "조건 AD = BC 해석(대칭 조건)": 1,
+          "넓이 조건을 h로 연결": 1,
+          "원기둥·좌표 설정": 1,
+          "점 C, D의 표현(현 길이 3)": 1,
+          "조건 AD = BC로부터 얻는 결론": 1,
+          "삼각형 ABH의 넓이": 1,
+          "사각형 ABCD의 넓이(벡터/분할)": 1,
+          "넓이 조건으로 높이 h 구하기": 2,
+          "밑면 원의 정보 정리": 1,
+          "좌표 설정 및 D의 수선의 발 H": 1,
+          "삼각형 ABH 넓이": 1,
+          "조건 AD=BC로부터 C, D의 x좌표 관계": 1,
+          "CD=3으로부터 C, D의 좌표 구체화": 1,
+          "사각형 ABCD 넓이 계산(벡터/좌표)": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "넓이 계산": 1,
+          "조건을 이용한 높이 계산": 2,
+          "점 C, D의 좌표 결정": 1,
+          "점 H의 좌표와 삼각형 ABH": 2,
+          "사각형 ABCD의 넓이 계산": 7,
+          "사각형 ABCD의 넓이": 1,
+          "조건을 이용한 방정식": 1,
+          "조건 정리 및 기하학적 위치 분석": 1,
+          "도형의 위치 관계 파악": 1,
+          "삼각형 ABH의 넓이 구하기": 1,
+          "사각형 ABCD의 넓이와 사선 길이": 1,
+          "피타고라스 정리를 이용한 원기둥의 높이 계산": 1,
+          "조건 정리 및 기하학적 위치 파악": 1,
+          "좌표 설정": 8,
+          "삼각형 ABH 넓이 계산": 3,
+          "사각형 ABCD 넓이 계산": 3,
+          "조건 적용": 2,
+          "방정식 풀이": 2,
+          "AD = BC 조건 이용": 1,
+          "CD 길이 조건 이용": 1,
+          "y2 = y1 또는 y2 = -y1 구분": 1,
+          "점의 배치 결정": 1,
+          "사각형 ABCD 넓이 구하기": 1,
+          "삼각형 ABH 넓이 구하기": 1,
+          "넓이 조건 적용": 1,
+          "조건 정리 및 도형 설정": 1,
+          "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계": 1,
+          "점 C, D의 좌표 관계": 1,
+          "삼각형 ABH의 넓이와 조건식": 1,
+          "AD=BC 조건에서 관계식 도출": 1,
+          "CD 길이 조건과 원 위의 점 조건 결합": 1,
+          "점 H와 삼각형 ABH의 넓이": 1,
+          "높이 h 구하기": 1,
+          "벡터 및 거리 조건 적용": 1,
+          "대칭성 가정 및 단순화": 2,
+          "넓이 계산 준비": 1,
+          "삼각형 ABH의 넓이 계산": 3,
+          "벡터와 거리 관계 설정": 1,
+          "대칭성 가정과 단순화": 1,
+          "사각형 ABCD의 넓이 계산 전략": 1,
+          "사각형 ABCD의 넓이: 사영 활용": 1,
+          "대칭성 가정: C와 D의 위치 결정": 1,
+          "거리 조건 정리: AD = BC": 1,
+          "넓이 조건: 사각형 ABCD vs 삼각형 ABH": 1,
+          "값 대입: x₁ = 1.5, y₁ = 2": 1,
+          "넓이 계산: 삼각형 ABH": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.85692310333252,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리(원 위의 현 길이로 중심각 구하기)",
+                "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))",
+                "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)",
+                "점 H와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터 외적 이용)",
+                "넓이 조건으로 높이 \\(h\\) 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.654009,
+              "step_count": 4,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "C2의 점 C,D를 각도로 표현",
+                "조건 AD=BC로부터 각도 관계 얻기",
+                "넓이 조건: S(ABCD)=4·S(ABH) 정리"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=2\\sqrt{3}\\).",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.614702,
+              "step_count": 4,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "면적 조건을 벡터로 정리",
+                "조건 AD = BC로 단순화",
+                "면적비로 높이 h 결정"
+              ],
+              "final_answer": "② \\(\\sqrt{19}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.85692310333252,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리(원 위의 현 길이로 중심각 구하기)",
+                "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))",
+                "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)",
+                "점 H와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터 외적 이용)",
+                "넓이 조건으로 높이 \\(h\\) 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.654009,
+              "step_count": 4,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "C2의 점 C,D를 각도로 표현",
+                "조건 AD=BC로부터 각도 관계 얻기",
+                "넓이 조건: S(ABCD)=4·S(ABH) 정리"
+              ],
+              "final_answer": "원기둥의 높이 \\(h=2\\sqrt{3}\\).",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.614702,
+              "step_count": 4,
+              "step_titles": [
+                "원기둥·좌표 설정",
+                "면적 조건을 벡터로 정리",
+                "조건 AD = BC로 단순화",
+                "면적비로 높이 h 결정"
+              ],
+              "final_answer": "② \\(\\sqrt{19}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리(원 위의 현 길이로 중심각 구하기)": 1,
+            "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))": 1,
+            "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)": 1,
+            "점 H와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터 외적 이용)": 1,
+            "넓이 조건으로 높이 \\(h\\) 구하기": 1,
+            "원기둥·좌표 설정": 2,
+            "C2의 점 C,D를 각도로 표현": 1,
+            "조건 AD=BC로부터 각도 관계 얻기": 1,
+            "넓이 조건: S(ABCD)=4·S(ABH) 정리": 1,
+            "면적 조건을 벡터로 정리": 1,
+            "조건 AD = BC로 단순화": 1,
+            "면적비로 높이 h 결정": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리(원 위의 현 길이로 중심각 구하기)": 1,
+            "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))": 1,
+            "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)": 1,
+            "점 H와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터 외적 이용)": 1,
+            "넓이 조건으로 높이 \\(h\\) 구하기": 1,
+            "원기둥·좌표 설정": 2,
+            "C2의 점 C,D를 각도로 표현": 1,
+            "조건 AD=BC로부터 각도 관계 얻기": 1,
+            "넓이 조건: S(ABCD)=4·S(ABH) 정리": 1,
+            "면적 조건을 벡터로 정리": 1,
+            "조건 AD = BC로 단순화": 1,
+            "면적비로 높이 h 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.627666,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.574314,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.595767,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "$\\sqrt{21}$ (④번)\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.627666,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH 넓이",
+                "사각형 ABCD 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.574314,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.595767,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이 계산",
+                "조건을 이용한 높이 계산"
+              ],
+              "final_answer": "$\\sqrt{21}$ (④번)\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "점 H의 좌표와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이 계산": 1,
+            "조건을 이용한 높이 계산": 3,
+            "점 H의 좌표와 삼각형 ABH": 2,
+            "사각형 ABCD의 넓이 계산": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표계 설정": 3,
+            "점 H의 좌표와 삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이 계산": 1,
+            "조건을 이용한 높이 계산": 3,
+            "점 H의 좌표와 삼각형 ABH": 2,
+            "사각형 ABCD의 넓이 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.871357,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 도형의 성질 파악"
+              ],
+              "final_answer": ".\n\n[STEP title=\"조건 정리 및 도형의 성질 파악\"]\n1.  **원기둥의 제원**: 두 밑면의 지름이 $5$이므로 반지름 $R = \\frac{5}{2}$입니다.\n2.  **선분 AB와 CD**:\n    *   원 $C_1$ 위의 두 점 $\\mathrm{A, B}$에 대해 $\\overline{\\mathrm{AB}}=5$이므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 **지름**입니다.\n    *   원 $C_2$ 위의 두 점 $\\mathrm{C, D}$에 대해 $\\overline{\\mathrm{CD}}=3$입니다.",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.207053,
+              "step_count": 1,
+              "step_titles": [
+                "도형의 기하학적 특징 파악 및 좌표 설정"
+              ],
+              "final_answer": "areas, and solve for the height.\n\n[STEP title=\"도형의 기하학적 특징 파악 및 좌표 설정\"]\n두 원 $C_1$, $C_2$의 지름이 5이므로 반지름은 $R = \\frac{5}{2}$입니다.\n원 $C_1$ 위의 현 $\\overline{\\mathrm{AB}}=5$는 지름과 길이가 같으므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 지름입니다.\n원 $C_2$ 위의 현 $\\overline{\\mathrm{CD}}=3$이고 $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 37.94848012924194,
+              "step_count": 1,
+              "step_titles": [
+                "조건 분석 및 도형의 성질 파악"
+              ],
+              "final_answer": " $C_2$ 위의 선분 $\\overline{\\mathrm{CD}}=3$이고 $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{BC}}$이므로, 사각형 $\\mathrm{ABCD}$는 등변사다리꼴 형태의 평면도형이 되며 $\\overline{\\mathrm{AB}} \\parallel \\overline{\\mathrm{CD}}$이다.\n\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발을 $\\mathrm{H}$라 하면, $\\mathrm{H}$는 점 $\\mathrm{D}$의 정사영이므로 원 $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.871357,
+              "step_count": 1,
+              "step_titles": [
+                "조건 정리 및 도형의 성질 파악"
+              ],
+              "final_answer": ".\n\n[STEP title=\"조건 정리 및 도형의 성질 파악\"]\n1.  **원기둥의 제원**: 두 밑면의 지름이 $5$이므로 반지름 $R = \\frac{5}{2}$입니다.\n2.  **선분 AB와 CD**:\n    *   원 $C_1$ 위의 두 점 $\\mathrm{A, B}$에 대해 $\\overline{\\mathrm{AB}}=5$이므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 **지름**입니다.\n    *   원 $C_2$ 위의 두 점 $\\mathrm{C, D}$에 대해 $\\overline{\\mathrm{CD}}=3$입니다.",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.207053,
+              "step_count": 1,
+              "step_titles": [
+                "도형의 기하학적 특징 파악 및 좌표 설정"
+              ],
+              "final_answer": "areas, and solve for the height.\n\n[STEP title=\"도형의 기하학적 특징 파악 및 좌표 설정\"]\n두 원 $C_1$, $C_2$의 지름이 5이므로 반지름은 $R = \\frac{5}{2}$입니다.\n원 $C_1$ 위의 현 $\\overline{\\mathrm{AB}}=5$는 지름과 길이가 같으므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 지름입니다.\n원 $C_2$ 위의 현 $\\overline{\\mathrm{CD}}=3$이고 $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 37.94848012924194,
+              "step_count": 1,
+              "step_titles": [
+                "조건 분석 및 도형의 성질 파악"
+              ],
+              "final_answer": " $C_2$ 위의 선분 $\\overline{\\mathrm{CD}}=3$이고 $\\overline{\\mathrm{AD}}=\\overline{\\mathrm{BC}}$이므로, 사각형 $\\mathrm{ABCD}$는 등변사다리꼴 형태의 평면도형이 되며 $\\overline{\\mathrm{AB}} \\parallel \\overline{\\mathrm{CD}}$이다.\n\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발을 $\\mathrm{H}$라 하면, $\\mathrm{H}$는 점 $\\mathrm{D}$의 정사영이므로 원 $",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.0,
+          "title_frequency": {
+            "조건 정리 및 도형의 성질 파악": 1,
+            "도형의 기하학적 특징 파악 및 좌표 설정": 1,
+            "조건 분석 및 도형의 성질 파악": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 1.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 도형의 성질 파악": 1,
+            "도형의 기하학적 특징 파악 및 좌표 설정": 1,
+            "조건 분석 및 도형의 성질 파악": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 238.550467,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "H 좌표 및 삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "넓이 조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 113.850326,
+              "step_count": 5,
+              "step_titles": [
+                "좌표 설정",
+                "H 좌표 및 삼각형 ABH 넓이 계산",
+                "사각형 ABCD가 평면상임을 확인",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 h 계산"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 164.778239,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 238.550467,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "H 좌표 및 삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "넓이 조건 적용"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 113.850326,
+              "step_count": 5,
+              "step_titles": [
+                "좌표 설정",
+                "H 좌표 및 삼각형 ABH 넓이 계산",
+                "사각형 ABCD가 평면상임을 확인",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 h 계산"
+              ],
+              "final_answer": "√21",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 164.778239,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "좌표 설정": 3,
+            "H 좌표 및 삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 3,
+            "넓이 조건 적용": 1,
+            "사각형 ABCD가 평면상임을 확인": 1,
+            "조건 적용 및 h 계산": 2,
+            "삼각형 ABH 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정": 3,
+            "H 좌표 및 삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 3,
+            "넓이 조건 적용": 1,
+            "사각형 ABCD가 평면상임을 확인": 1,
+            "조건 적용 및 h 계산": 2,
+            "삼각형 ABH 넓이 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 143.553081,
+              "step_count": 5,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "좌표 관계 도출 (AD=BC, CD=3)",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산",
+                "높이 h 구하기"
+              ],
+              "final_answer": "√21\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 498.149853,
+              "step_count": 13,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD=BC 조건 이용",
+                "CD=3 조건 이용",
+                "y_C와 y_D의 관계",
+                "C, D 좌표 정리",
+                "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계",
+                "등변사다리꼴의 넓이 구하기",
+                "삼각형 ABH 넓이 구하기",
+                "사각형 ABCD 넓이 구하기",
+                "넓이 조건 적용",
+                "방정식 풀이",
+                "h^2에 관한 이차방정식"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 108.024292,
+              "step_count": 8,
+              "step_titles": [
+                "문제 조건 정리",
+                "좌표 설정",
+                "AD = BC 조건",
+                "CD=3 조건 활용",
+                "C와 D의 y좌표 관계 결정",
+                "사각형 ABCD의 넓이",
+                "삼각형 ABH의 넓이",
+                "넓이 조건과 높이 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) → ④",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 143.553081,
+              "step_count": 5,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "좌표 관계 도출 (AD=BC, CD=3)",
+                "삼각형 ABH의 넓이 계산",
+                "사각형 ABCD의 넓이 계산",
+                "높이 h 구하기"
+              ],
+              "final_answer": "√21\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 498.149853,
+              "step_count": 13,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "AD=BC 조건 이용",
+                "CD=3 조건 이용",
+                "y_C와 y_D의 관계",
+                "C, D 좌표 정리",
+                "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계",
+                "등변사다리꼴의 넓이 구하기",
+                "삼각형 ABH 넓이 구하기",
+                "사각형 ABCD 넓이 구하기",
+                "넓이 조건 적용",
+                "방정식 풀이",
+                "h^2에 관한 이차방정식"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 108.024292,
+              "step_count": 8,
+              "step_titles": [
+                "문제 조건 정리",
+                "좌표 설정",
+                "AD = BC 조건",
+                "CD=3 조건 활용",
+                "C와 D의 y좌표 관계 결정",
+                "사각형 ABCD의 넓이",
+                "삼각형 ABH의 넓이",
+                "넓이 조건과 높이 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) → ④",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 8.666666666666666,
+          "title_frequency": {
+            "좌표 설정 및 조건 정리": 1,
+            "좌표 관계 도출 (AD=BC, CD=3)": 1,
+            "삼각형 ABH의 넓이 계산": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "높이 h 구하기": 1,
+            "조건 정리": 1,
+            "좌표 설정": 2,
+            "AD=BC 조건 이용": 1,
+            "CD=3 조건 이용": 1,
+            "y_C와 y_D의 관계": 1,
+            "C, D 좌표 정리": 1,
+            "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계": 1,
+            "등변사다리꼴의 넓이 구하기": 1,
+            "삼각형 ABH 넓이 구하기": 1,
+            "사각형 ABCD 넓이 구하기": 1,
+            "넓이 조건 적용": 1,
+            "방정식 풀이": 1,
+            "h^2에 관한 이차방정식": 1,
+            "문제 조건 정리": 1,
+            "AD = BC 조건": 1,
+            "CD=3 조건 활용": 1,
+            "C와 D의 y좌표 관계 결정": 1,
+            "사각형 ABCD의 넓이": 1,
+            "삼각형 ABH의 넓이": 1,
+            "넓이 조건과 높이 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 8.666666666666666,
+          "step_std": 4.041451884327381,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정 및 조건 정리": 1,
+            "좌표 관계 도출 (AD=BC, CD=3)": 1,
+            "삼각형 ABH의 넓이 계산": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "높이 h 구하기": 1,
+            "조건 정리": 1,
+            "좌표 설정": 2,
+            "AD=BC 조건 이용": 1,
+            "CD=3 조건 이용": 1,
+            "y_C와 y_D의 관계": 1,
+            "C, D 좌표 정리": 1,
+            "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계": 1,
+            "등변사다리꼴의 넓이 구하기": 1,
+            "삼각형 ABH 넓이 구하기": 1,
+            "사각형 ABCD 넓이 구하기": 1,
+            "넓이 조건 적용": 1,
+            "방정식 풀이": 1,
+            "h^2에 관한 이차방정식": 1,
+            "문제 조건 정리": 1,
+            "AD = BC 조건": 1,
+            "CD=3 조건 활용": 1,
+            "C와 D의 y좌표 관계 결정": 1,
+            "사각형 ABCD의 넓이": 1,
+            "삼각형 ABH의 넓이": 1,
+            "넓이 조건과 높이 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 144.690337,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터로 넓이 계산",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "AD = BC 조건 적용",
+                "대칭성 가정",
+                "넓이 계산 준비",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "}{2} (AB + CD) \\times \\text{높이}\n$$\n단, 이는 평면사다리꼴에서만 성립.  \n여기서는 $ ABCD $가 평면도형인지 확인해야 합니다.\n\n벡터를 이용해 평면성 확인:  \n점 $ A, B, C, D $가 같은 평면에 있는가?\n\n벡터 $ \\vec{AB} = (5,0,0) $, $ \\vec{AD} = (4,2,h) $, $ \\vec{AC} = (1,2,h) $  \n스칼라 삼중곱 $ \\vec{AB} \\cdot (\\vec{AD} \\times \\vec{AC}) $가 0이면 평면.\n\n계산:  \n$ \\vec{AD} = (4",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 186.06693,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터 및 거리 관계 설정",
+                "대칭성 가정을 통한 단순화",
+                "넓이 조건 분석",
+                "삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이",
+                "대칭성 적용: y축 대칭 가정",
+                "넓이 계산"
+              ],
+              "final_answer": "0\\cdot 1) = (0, -5h, 10) $\n\n이제 $ \\vec{AC} \\cdot (\\vec{AB} \\times \\vec{AD}) = (4,2,h) \\cdot (0, -5h, 10) = 0 + (-10h^2) + 10h = -10h^2 + 10h $\n\n이 값이 0이 아니면 사각형이 평면 도형 아님 → 복잡.\n\n대신, **사각형 ABCD를 두 삼각형 $ ABD $와 $ CBD $?**  \n더 자연스럽게: $ ABC $와 $ ADC $?  \n또는 $ ABD $와 $ CBD $?  \n\n가장 자연스러운 분할: 대각선 $ AC $ 또는",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.303388,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "대칭성 가정 및 변수 단순화",
+                "AD와 BC 길이 비교",
+                "다른 대칭성 고려: AB를 축으로 대칭",
+                "좌표 확정 및 H 구하기",
+                "넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "\\triangle ADC $로 나누기보다,  \n**삼각형 $ ABD $와 $ CBD $가 아님**.\n\n대신, 사각형 $ ABCD $를 $ \\triangle ABC $와 $ \\triangle ADC $로 나누는 것은 비효율.\n\n**벡터법**: 사각형이 평면도형이 아닐 수 있으나, 여기서는 넓이를 두 삼각형의 합으로 정의.\n\n가장 직관적인 분할: $ \\triangle ABC $와 $ \\triangle ACD $? 아니면 $ \\triangle ABD $와 $ \\triangle CBD $?\n\n보다 자연스럽게: $ \\triangle ABC",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 144.690337,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터로 넓이 계산",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "AD = BC 조건 적용",
+                "대칭성 가정",
+                "넓이 계산 준비",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "}{2} (AB + CD) \\times \\text{높이}\n$$\n단, 이는 평면사다리꼴에서만 성립.  \n여기서는 $ ABCD $가 평면도형인지 확인해야 합니다.\n\n벡터를 이용해 평면성 확인:  \n점 $ A, B, C, D $가 같은 평면에 있는가?\n\n벡터 $ \\vec{AB} = (5,0,0) $, $ \\vec{AD} = (4,2,h) $, $ \\vec{AC} = (1,2,h) $  \n스칼라 삼중곱 $ \\vec{AB} \\cdot (\\vec{AD} \\times \\vec{AC}) $가 0이면 평면.\n\n계산:  \n$ \\vec{AD} = (4",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 186.06693,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터 및 거리 관계 설정",
+                "대칭성 가정을 통한 단순화",
+                "넓이 조건 분석",
+                "삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이",
+                "대칭성 적용: y축 대칭 가정",
+                "넓이 계산"
+              ],
+              "final_answer": "0\\cdot 1) = (0, -5h, 10) $\n\n이제 $ \\vec{AC} \\cdot (\\vec{AB} \\times \\vec{AD}) = (4,2,h) \\cdot (0, -5h, 10) = 0 + (-10h^2) + 10h = -10h^2 + 10h $\n\n이 값이 0이 아니면 사각형이 평면 도형 아님 → 복잡.\n\n대신, **사각형 ABCD를 두 삼각형 $ ABD $와 $ CBD $?**  \n더 자연스럽게: $ ABC $와 $ ADC $?  \n또는 $ ABD $와 $ CBD $?  \n\n가장 자연스러운 분할: 대각선 $ AC $ 또는",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.303388,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "대칭성 가정 및 변수 단순화",
+                "AD와 BC 길이 비교",
+                "다른 대칭성 고려: AB를 축으로 대칭",
+                "좌표 확정 및 H 구하기",
+                "넓이 계산 준비",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "\\triangle ADC $로 나누기보다,  \n**삼각형 $ ABD $와 $ CBD $가 아님**.\n\n대신, 사각형 $ ABCD $를 $ \\triangle ABC $와 $ \\triangle ADC $로 나누는 것은 비효율.\n\n**벡터법**: 사각형이 평면도형이 아닐 수 있으나, 여기서는 넓이를 두 삼각형의 합으로 정의.\n\n가장 직관적인 분할: $ \\triangle ABC $와 $ \\triangle ACD $? 아니면 $ \\triangle ABD $와 $ \\triangle CBD $?\n\n보다 자연스럽게: $ \\triangle ABC",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 9.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "벡터로 넓이 계산": 1,
+            "삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 3,
+            "AD = BC 조건 적용": 1,
+            "대칭성 가정": 1,
+            "넓이 계산 준비": 2,
+            "벡터 및 거리 관계 설정": 1,
+            "대칭성 가정을 통한 단순화": 1,
+            "넓이 조건 분석": 1,
+            "삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이": 1,
+            "대칭성 적용: y축 대칭 가정": 1,
+            "넓이 계산": 1,
+            "대칭성 가정 및 변수 단순화": 1,
+            "AD와 BC 길이 비교": 1,
+            "다른 대칭성 고려: AB를 축으로 대칭": 1,
+            "좌표 확정 및 H 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 9.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "벡터로 넓이 계산": 1,
+            "삼각형 ABH 넓이 계산": 2,
+            "사각형 ABCD 넓이 계산": 3,
+            "AD = BC 조건 적용": 1,
+            "대칭성 가정": 1,
+            "넓이 계산 준비": 2,
+            "벡터 및 거리 관계 설정": 1,
+            "대칭성 가정을 통한 단순화": 1,
+            "넓이 조건 분석": 1,
+            "삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이": 1,
+            "대칭성 적용: y축 대칭 가정": 1,
+            "넓이 계산": 1,
+            "대칭성 가정 및 변수 단순화": 1,
+            "AD와 BC 길이 비교": 1,
+            "다른 대칭성 고려: AB를 축으로 대칭": 1,
+            "좌표 확정 및 H 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.444444444444445,
+        "title_frequency_all_models": {
+          "조건 정리(원 위의 현 길이로 중심각 구하기)": 1,
+          "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))": 1,
+          "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)": 1,
+          "점 H와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터 외적 이용)": 1,
+          "넓이 조건으로 높이 \\(h\\) 구하기": 1,
+          "원기둥·좌표 설정": 2,
+          "C2의 점 C,D를 각도로 표현": 1,
+          "조건 AD=BC로부터 각도 관계 얻기": 1,
+          "넓이 조건: S(ABCD)=4·S(ABH) 정리": 1,
+          "면적 조건을 벡터로 정리": 1,
+          "조건 AD = BC로 단순화": 1,
+          "면적비로 높이 h 결정": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "점 H의 좌표와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이 계산": 7,
+          "조건을 이용한 높이 계산": 3,
+          "점 H의 좌표와 삼각형 ABH": 2,
+          "사각형 ABCD의 넓이 계산": 3,
+          "조건 정리 및 도형의 성질 파악": 1,
+          "도형의 기하학적 특징 파악 및 좌표 설정": 1,
+          "조건 분석 및 도형의 성질 파악": 1,
+          "좌표 설정": 8,
+          "H 좌표 및 삼각형 ABH 넓이 계산": 2,
+          "넓이 조건 적용": 2,
+          "사각형 ABCD가 평면상임을 확인": 1,
+          "조건 적용 및 h 계산": 2,
+          "삼각형 ABH 넓이 계산": 3,
+          "좌표 설정 및 조건 정리": 1,
+          "좌표 관계 도출 (AD=BC, CD=3)": 1,
+          "삼각형 ABH의 넓이 계산": 1,
+          "높이 h 구하기": 1,
+          "AD=BC 조건 이용": 1,
+          "CD=3 조건 이용": 1,
+          "y_C와 y_D의 관계": 1,
+          "C, D 좌표 정리": 1,
+          "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계": 1,
+          "등변사다리꼴의 넓이 구하기": 1,
+          "삼각형 ABH 넓이 구하기": 1,
+          "사각형 ABCD 넓이 구하기": 1,
+          "방정식 풀이": 1,
+          "h^2에 관한 이차방정식": 1,
+          "문제 조건 정리": 1,
+          "AD = BC 조건": 1,
+          "CD=3 조건 활용": 1,
+          "C와 D의 y좌표 관계 결정": 1,
+          "사각형 ABCD의 넓이": 2,
+          "삼각형 ABH의 넓이": 2,
+          "넓이 조건과 높이 구하기": 1,
+          "벡터로 넓이 계산": 1,
+          "AD = BC 조건 적용": 1,
+          "대칭성 가정": 1,
+          "넓이 계산 준비": 2,
+          "벡터 및 거리 관계 설정": 1,
+          "대칭성 가정을 통한 단순화": 1,
+          "넓이 조건 분석": 1,
+          "대칭성 적용: y축 대칭 가정": 1,
+          "넓이 계산": 1,
+          "대칭성 가정 및 변수 단순화": 1,
+          "AD와 BC 길이 비교": 1,
+          "다른 대칭성 고려: AB를 축으로 대칭": 1,
+          "좌표 확정 및 H 구하기": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 60.489891,
+              "step_count": 5,
+              "step_titles": [
+                "밑면 원의 성질 정리",
+                "조건 AD=BC로부터 투영 관계 도출",
+                "좌표 설정 및 넓이식을 직접 세우기",
+                "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "\\[\nh=2\\sqrt{3}.\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.413118,
+              "step_count": 7,
+              "step_titles": [
+                "도형 설정(좌표/기본값)",
+                "AB=5로부터 A,B 위치 고정",
+                "CD=3을 평면좌표로 표현",
+                "조건 AD=BC를 (x,y)로 단순화",
+                "삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터/외적)",
+                "넓이 조건으로 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.540986,
+              "step_count": 5,
+              "step_titles": [
+                "원기둥의 기본 설정",
+                "밑면 위의 좌표 배치",
+                "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리",
+                "조건 \\(AD=BC\\)를 평면거리로 환산",
+                "넓이 조건을 이용해 높이 \\(h\\) 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\sqrt{21}}\\ (\\text{④})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 60.489891,
+              "step_count": 5,
+              "step_titles": [
+                "밑면 원의 성질 정리",
+                "조건 AD=BC로부터 투영 관계 도출",
+                "좌표 설정 및 넓이식을 직접 세우기",
+                "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기",
+                "넓이 조건으로 높이 h 구하기"
+              ],
+              "final_answer": "\\[\nh=2\\sqrt{3}.\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.413118,
+              "step_count": 7,
+              "step_titles": [
+                "도형 설정(좌표/기본값)",
+                "AB=5로부터 A,B 위치 고정",
+                "CD=3을 평면좌표로 표현",
+                "조건 AD=BC를 (x,y)로 단순화",
+                "삼각형 ABH 넓이",
+                "사각형 ABCD 넓이(벡터/외적)",
+                "넓이 조건으로 h 계산"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\) (④)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.540986,
+              "step_count": 5,
+              "step_titles": [
+                "원기둥의 기본 설정",
+                "밑면 위의 좌표 배치",
+                "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리",
+                "조건 \\(AD=BC\\)를 평면거리로 환산",
+                "넓이 조건을 이용해 높이 \\(h\\) 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\sqrt{21}}\\ (\\text{④})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "밑면 원의 성질 정리": 1,
+            "조건 AD=BC로부터 투영 관계 도출": 1,
+            "좌표 설정 및 넓이식을 직접 세우기": 1,
+            "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기": 1,
+            "넓이 조건으로 높이 h 구하기": 1,
+            "도형 설정(좌표/기본값)": 1,
+            "AB=5로부터 A,B 위치 고정": 1,
+            "CD=3을 평면좌표로 표현": 1,
+            "조건 AD=BC를 (x,y)로 단순화": 1,
+            "삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터/외적)": 1,
+            "넓이 조건으로 h 계산": 1,
+            "원기둥의 기본 설정": 1,
+            "밑면 위의 좌표 배치": 1,
+            "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리": 1,
+            "조건 \\(AD=BC\\)를 평면거리로 환산": 1,
+            "넓이 조건을 이용해 높이 \\(h\\) 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "밑면 원의 성질 정리": 1,
+            "조건 AD=BC로부터 투영 관계 도출": 1,
+            "좌표 설정 및 넓이식을 직접 세우기": 1,
+            "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기": 1,
+            "넓이 조건으로 높이 h 구하기": 1,
+            "도형 설정(좌표/기본값)": 1,
+            "AB=5로부터 A,B 위치 고정": 1,
+            "CD=3을 평면좌표로 표현": 1,
+            "조건 AD=BC를 (x,y)로 단순화": 1,
+            "삼각형 ABH 넓이": 1,
+            "사각형 ABCD 넓이(벡터/외적)": 1,
+            "넓이 조건으로 h 계산": 1,
+            "원기둥의 기본 설정": 1,
+            "밑면 위의 좌표 배치": 1,
+            "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리": 1,
+            "조건 \\(AD=BC\\)를 평면거리로 환산": 1,
+            "넓이 조건을 이용해 높이 \\(h\\) 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.001405,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "넓이 계산",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "$\\sqrt{21}$ (④번)\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.243301,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.819387,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건으로 h 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.001405,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "넓이 계산",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "$\\sqrt{21}$ (④번)\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.243301,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "점 H의 좌표와 삼각형 ABH",
+                "사각형 ABCD의 넓이",
+                "조건을 이용한 방정식"
+              ],
+              "final_answer": "④ $\\sqrt{21}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.819387,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표계 설정",
+                "원 위의 점 조건",
+                "넓이 계산",
+                "조건으로 h 계산"
+              ],
+              "final_answer": "④ $\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표 설정": 1,
+            "넓이 계산": 2,
+            "조건을 이용한 방정식": 2,
+            "좌표계 설정": 2,
+            "점 H의 좌표와 삼각형 ABH": 1,
+            "사각형 ABCD의 넓이": 1,
+            "원 위의 점 조건": 1,
+            "조건으로 h 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표 설정": 1,
+            "넓이 계산": 2,
+            "조건을 이용한 방정식": 2,
+            "좌표계 설정": 2,
+            "점 H의 좌표와 삼각형 ABH": 1,
+            "사각형 ABCD의 넓이": 1,
+            "원 위의 점 조건": 1,
+            "조건으로 h 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 51.353291,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 삼각형 ABH의 넓이 구하기",
+                "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산"
+              ],
+              "final_answer": "AB}$까지의 수직 거리는 2입니다.\n이를 이용해 삼각형 $\\mathrm{ABH}$의 넓이를 구합니다.\n$$\\triangle \\mathrm{ABH} = \\frac{1}{2} \\times \\overline{\\mathrm{AB}} \\times (\\text{점 H에서 AB까지의 거리}) = \\frac{1}{2} \\times 5 \\times 2 = 5$$\n\n[STEP title=\"사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산\"]\n문제의 조건에서 사각형 $\\mathrm{ABCD}$의 넓이는 삼각형 $\\mathrm{ABH}$ 넓이의 4",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 52.049405,
+              "step_count": 1,
+              "step_titles": [
+                "조건 분석 및 밑면에서의 위치 관계 파악"
+              ],
+              "final_answer": "니다.\n\n[STEP title=\"조건 분석 및 밑면에서의 위치 관계 파악\"]\n두 원의 지름이 $5$이므로 반지름은 $R = \\frac{5}{2}$입니다.\n원 $C_1$ 위의 현 $\\overline{\\mathrm{AB}}=5$는 지름과 길이가 같으므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 지름이며 원의 중심을 지납니다.\n점 $\\mathrm{D}$에서 밑면($C_1$을 포함하는 평면)에 내린 수선의 발이 $\\mathrm{H}$이므로, $\\mathrm{H}$는 원 $C_1$ 위의 점입니다.\n$\\overline{\\mathrm{",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.509361,
+              "step_count": 1,
+              "step_titles": [
+                "점 H의 위치 파악 및 평면상의 거리 계산"
+              ],
+              "final_answer": "학적 조건들을 분석하여 단계별로 원기둥의 높이를 구하겠습니다.\n\n[STEP title=\"점 H의 위치 파악 및 평면상의 거리 계산\"]\n원기둥 밑면인 원 $C_1$의 지름이 5이므로 반지름은 $r = \\frac{5}{2}$입니다.\n$\\overline{\\mathrm{AB}} = 5$이므로 선분 $\\mathrm{AB}$는 원 $C_1$의 지름입니다.\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발이 $\\mathrm{H}$이므로, $\\mathrm{H}$는 원 $C_1$ 위의 점입니다.\n\n점 $\\mathrm{C",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 51.353291,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 삼각형 ABH의 넓이 구하기",
+                "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산"
+              ],
+              "final_answer": "AB}$까지의 수직 거리는 2입니다.\n이를 이용해 삼각형 $\\mathrm{ABH}$의 넓이를 구합니다.\n$$\\triangle \\mathrm{ABH} = \\frac{1}{2} \\times \\overline{\\mathrm{AB}} \\times (\\text{점 H에서 AB까지의 거리}) = \\frac{1}{2} \\times 5 \\times 2 = 5$$\n\n[STEP title=\"사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산\"]\n문제의 조건에서 사각형 $\\mathrm{ABCD}$의 넓이는 삼각형 $\\mathrm{ABH}$ 넓이의 4",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 52.049405,
+              "step_count": 1,
+              "step_titles": [
+                "조건 분석 및 밑면에서의 위치 관계 파악"
+              ],
+              "final_answer": "니다.\n\n[STEP title=\"조건 분석 및 밑면에서의 위치 관계 파악\"]\n두 원의 지름이 $5$이므로 반지름은 $R = \\frac{5}{2}$입니다.\n원 $C_1$ 위의 현 $\\overline{\\mathrm{AB}}=5$는 지름과 길이가 같으므로, 선분 $\\mathrm{AB}$는 원 $C_1$의 지름이며 원의 중심을 지납니다.\n점 $\\mathrm{D}$에서 밑면($C_1$을 포함하는 평면)에 내린 수선의 발이 $\\mathrm{H}$이므로, $\\mathrm{H}$는 원 $C_1$ 위의 점입니다.\n$\\overline{\\mathrm{",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.509361,
+              "step_count": 1,
+              "step_titles": [
+                "점 H의 위치 파악 및 평면상의 거리 계산"
+              ],
+              "final_answer": "학적 조건들을 분석하여 단계별로 원기둥의 높이를 구하겠습니다.\n\n[STEP title=\"점 H의 위치 파악 및 평면상의 거리 계산\"]\n원기둥 밑면인 원 $C_1$의 지름이 5이므로 반지름은 $r = \\frac{5}{2}$입니다.\n$\\overline{\\mathrm{AB}} = 5$이므로 선분 $\\mathrm{AB}$는 원 $C_1$의 지름입니다.\n점 $\\mathrm{D}$에서 원 $C_1$을 포함하는 평면에 내린 수선의 발이 $\\mathrm{H}$이므로, $\\mathrm{H}$는 원 $C_1$ 위의 점입니다.\n\n점 $\\mathrm{C",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 1.3333333333333333,
+          "title_frequency": {
+            "조건 분석 및 삼각형 ABH의 넓이 구하기": 1,
+            "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산": 1,
+            "조건 분석 및 밑면에서의 위치 관계 파악": 1,
+            "점 H의 위치 파악 및 평면상의 거리 계산": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 1.3333333333333333,
+          "step_std": 0.5773502691896257,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "조건 분석 및 삼각형 ABH의 넓이 구하기": 1,
+            "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산": 1,
+            "조건 분석 및 밑면에서의 위치 관계 파악": 1,
+            "점 H의 위치 파악 및 평면상의 거리 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 139.901128,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 높이 계산"
+              ],
+              "final_answer": "④ \\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 278.05769,
+              "step_count": 4,
+              "step_titles": [
+                "좌표계 설정",
+                "사각형 ABCD 넓이 계산",
+                "삼각형 ABH 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 159.755154,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 적용",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 높이 계산"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 139.901128,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 높이 계산"
+              ],
+              "final_answer": "④ \\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 278.05769,
+              "step_count": 4,
+              "step_titles": [
+                "좌표계 설정",
+                "사각형 ABCD 넓이 계산",
+                "삼각형 ABH 넓이 계산",
+                "조건 적용"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 159.755154,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 적용",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD 넓이 계산",
+                "조건 적용 및 높이 계산"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "좌표 설정": 1,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용 및 높이 계산": 2,
+            "좌표계 설정": 1,
+            "조건 적용": 1,
+            "좌표 설정 및 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정": 1,
+            "삼각형 ABH 넓이 계산": 3,
+            "사각형 ABCD 넓이 계산": 3,
+            "조건 적용 및 높이 계산": 2,
+            "좌표계 설정": 1,
+            "조건 적용": 1,
+            "좌표 설정 및 조건 적용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 202.11125898361206,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "AD=BC 조건을 이용한 관계식 유도",
+                "CD 길이와 원의 방정식을 이용한 좌표 결정",
+                "사각형 ABCD의 넓이 계산 및 높이 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 67.846094,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리 및 기호 설정",
+                "H점과 삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이",
+                "사각형 ABCD 넓이 공식 선택",
+                "AD=BC 조건을 이용한 대칭성 가정",
+                "넓이 조건 적용",
+                "h 구하기"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 358.793144,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "좌표 설정",
+                "C, D의 좌표 결정",
+                "넓이 조건 활용"
+              ],
+              "final_answer": "④ \\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 202.11125898361206,
+              "step_count": 4,
+              "step_titles": [
+                "좌표 설정 및 조건 정리",
+                "AD=BC 조건을 이용한 관계식 유도",
+                "CD 길이와 원의 방정식을 이용한 좌표 결정",
+                "사각형 ABCD의 넓이 계산 및 높이 h 구하기"
+              ],
+              "final_answer": "\\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 67.846094,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리 및 기호 설정",
+                "H점과 삼각형 ABH의 넓이",
+                "사각형 ABCD의 넓이",
+                "사각형 ABCD 넓이 공식 선택",
+                "AD=BC 조건을 이용한 대칭성 가정",
+                "넓이 조건 적용",
+                "h 구하기"
+              ],
+              "final_answer": "\\( \\sqrt{21} \\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 358.793144,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "좌표 설정",
+                "C, D의 좌표 결정",
+                "넓이 조건 활용"
+              ],
+              "final_answer": "④ \\(\\sqrt{21}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "좌표 설정 및 조건 정리": 1,
+            "AD=BC 조건을 이용한 관계식 유도": 1,
+            "CD 길이와 원의 방정식을 이용한 좌표 결정": 1,
+            "사각형 ABCD의 넓이 계산 및 높이 h 구하기": 1,
+            "조건 정리 및 기호 설정": 1,
+            "H점과 삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이": 1,
+            "사각형 ABCD 넓이 공식 선택": 1,
+            "AD=BC 조건을 이용한 대칭성 가정": 1,
+            "넓이 조건 적용": 1,
+            "h 구하기": 1,
+            "문제 이해 및 조건 정리": 1,
+            "좌표 설정": 1,
+            "C, D의 좌표 결정": 1,
+            "넓이 조건 활용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 1.7320508075688772,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "좌표 설정 및 조건 정리": 1,
+            "AD=BC 조건을 이용한 관계식 유도": 1,
+            "CD 길이와 원의 방정식을 이용한 좌표 결정": 1,
+            "사각형 ABCD의 넓이 계산 및 높이 h 구하기": 1,
+            "조건 정리 및 기호 설정": 1,
+            "H점과 삼각형 ABH의 넓이": 1,
+            "사각형 ABCD의 넓이": 1,
+            "사각형 ABCD 넓이 공식 선택": 1,
+            "AD=BC 조건을 이용한 대칭성 가정": 1,
+            "넓이 조건 적용": 1,
+            "h 구하기": 1,
+            "문제 이해 및 조건 정리": 1,
+            "좌표 설정": 1,
+            "C, D의 좌표 결정": 1,
+            "넓이 조건 활용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 200.611523,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "대칭성 활용 및 가정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD의 넓이 계산",
+                "대칭성 가정: D와 C의 위치",
+                "사각형 ABCD의 넓이: 두 삼각형으로 분할"
+              ],
+              "final_answer": "좋은 분할: **삼각형 ABC와 삼각형 ACD** → 안 됨.  \n→ **삼각형 AB C와 삼각형 AC D**보다는 **삼각형 AB D와 삼각형 BC D**.\n\n→ **삼각형 ABD와 삼각형 BCD**\n\n정리: A-B-C-D 순이면, **삼각형 ABC와 삼각형 ACD**면 안 됨 (공유변 AC지만, 분할이 불완전).  \n→ **삼각형 ABC와 삼각형 ACD**는 사각형 ABCD를 덮지 않음.\n\n→ **삼각형 ABC와 삼각형 ACD** → 점 A,B,C와 A,C,D → 그러면 전체 ABCD가 아니라 삼각형 ABC와 삼각형 ACD의 합",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 45.797003,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 계산",
+                "대칭성 고려",
+                "좌표 확정",
+                "넓이 계산 준비",
+                "사각형 ABCD의 넓이",
+                "삼각형 ABH의 넓이",
+                "조건 적용: 넓이 비"
+              ],
+              "final_answer": "$\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 202.222924,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 대칭성 활용",
+                "삼각형 ABH 넓이 계산 준비",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "아니면 \\( ΔABD \\)와 \\( ΔADC \\)? 복잡.\n\n더 간단한 방법: 사각형 \\( ABCD \\)의 점들을 보면, \\( AB \\)와 \\( DC \\)가 평행하지 않지만,  \n벡터 \\( \\vec{AD} \\)와 \\( \\vec{BC} \\)의 \\( y, z \\) 성분을 보면, \\( \\vec{AD} = (1,2,h) \\), \\( \\vec{BC} = (-1,2,h) \\) → 다르다.\n\n그러나 중요한 관찰:  \n- \\( D = (-1.5, 2, h) \\), \\( C = (1.5, 2, h) \\)  \n- \\( A = (-2.5, 0, 0) \\",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 200.611523,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "대칭성 활용 및 가정",
+                "삼각형 ABH 넓이 계산",
+                "사각형 ABCD의 넓이 계산",
+                "대칭성 가정: D와 C의 위치",
+                "사각형 ABCD의 넓이: 두 삼각형으로 분할"
+              ],
+              "final_answer": "좋은 분할: **삼각형 ABC와 삼각형 ACD** → 안 됨.  \n→ **삼각형 AB C와 삼각형 AC D**보다는 **삼각형 AB D와 삼각형 BC D**.\n\n→ **삼각형 ABD와 삼각형 BCD**\n\n정리: A-B-C-D 순이면, **삼각형 ABC와 삼각형 ACD**면 안 됨 (공유변 AC지만, 분할이 불완전).  \n→ **삼각형 ABC와 삼각형 ACD**는 사각형 ABCD를 덮지 않음.\n\n→ **삼각형 ABC와 삼각형 ACD** → 점 A,B,C와 A,C,D → 그러면 전체 ABCD가 아니라 삼각형 ABC와 삼각형 ACD의 합",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 45.797003,
+              "step_count": 9,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 거리 계산",
+                "대칭성 고려",
+                "좌표 확정",
+                "넓이 계산 준비",
+                "사각형 ABCD의 넓이",
+                "삼각형 ABH의 넓이",
+                "조건 적용: 넓이 비"
+              ],
+              "final_answer": "$\\sqrt{21}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 202.222924,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌표 설정",
+                "벡터와 대칭성 활용",
+                "삼각형 ABH 넓이 계산 준비",
+                "사각형 ABCD 넓이 계산"
+              ],
+              "final_answer": "아니면 \\( ΔABD \\)와 \\( ΔADC \\)? 복잡.\n\n더 간단한 방법: 사각형 \\( ABCD \\)의 점들을 보면, \\( AB \\)와 \\( DC \\)가 평행하지 않지만,  \n벡터 \\( \\vec{AD} \\)와 \\( \\vec{BC} \\)의 \\( y, z \\) 성분을 보면, \\( \\vec{AD} = (1,2,h) \\), \\( \\vec{BC} = (-1,2,h) \\) → 다르다.\n\n그러나 중요한 관찰:  \n- \\( D = (-1.5, 2, h) \\), \\( C = (1.5, 2, h) \\)  \n- \\( A = (-2.5, 0, 0) \\",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "대칭성 활용 및 가정": 1,
+            "삼각형 ABH 넓이 계산": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "대칭성 가정: D와 C의 위치": 1,
+            "사각형 ABCD의 넓이: 두 삼각형으로 분할": 1,
+            "벡터와 거리 계산": 1,
+            "대칭성 고려": 1,
+            "좌표 확정": 1,
+            "넓이 계산 준비": 1,
+            "사각형 ABCD의 넓이": 1,
+            "삼각형 ABH의 넓이": 1,
+            "조건 적용: 넓이 비": 1,
+            "벡터와 대칭성 활용": 1,
+            "삼각형 ABH 넓이 계산 준비": 1,
+            "사각형 ABCD 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.0,
+          "step_std": 2.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌표 설정": 3,
+            "대칭성 활용 및 가정": 1,
+            "삼각형 ABH 넓이 계산": 1,
+            "사각형 ABCD의 넓이 계산": 1,
+            "대칭성 가정: D와 C의 위치": 1,
+            "사각형 ABCD의 넓이: 두 삼각형으로 분할": 1,
+            "벡터와 거리 계산": 1,
+            "대칭성 고려": 1,
+            "좌표 확정": 1,
+            "넓이 계산 준비": 1,
+            "사각형 ABCD의 넓이": 1,
+            "삼각형 ABH의 넓이": 1,
+            "조건 적용: 넓이 비": 1,
+            "벡터와 대칭성 활용": 1,
+            "삼각형 ABH 넓이 계산 준비": 1,
+            "사각형 ABCD 넓이 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.611111111111111,
+        "title_frequency_all_models": {
+          "밑면 원의 성질 정리": 1,
+          "조건 AD=BC로부터 투영 관계 도출": 1,
+          "좌표 설정 및 넓이식을 직접 세우기": 1,
+          "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기": 1,
+          "넓이 조건으로 높이 h 구하기": 1,
+          "도형 설정(좌표/기본값)": 1,
+          "AB=5로부터 A,B 위치 고정": 1,
+          "CD=3을 평면좌표로 표현": 1,
+          "조건 AD=BC를 (x,y)로 단순화": 1,
+          "삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터/외적)": 1,
+          "넓이 조건으로 h 계산": 1,
+          "원기둥의 기본 설정": 1,
+          "밑면 위의 좌표 배치": 1,
+          "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리": 1,
+          "조건 \\(AD=BC\\)를 평면거리로 환산": 1,
+          "넓이 조건을 이용해 높이 \\(h\\) 구하기": 1,
+          "조건 정리": 6,
+          "좌표 설정": 6,
+          "넓이 계산": 2,
+          "조건을 이용한 방정식": 2,
+          "좌표계 설정": 3,
+          "점 H의 좌표와 삼각형 ABH": 1,
+          "사각형 ABCD의 넓이": 3,
+          "원 위의 점 조건": 1,
+          "조건으로 h 계산": 1,
+          "조건 분석 및 삼각형 ABH의 넓이 구하기": 1,
+          "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산": 1,
+          "조건 분석 및 밑면에서의 위치 관계 파악": 1,
+          "점 H의 위치 파악 및 평면상의 거리 계산": 1,
+          "삼각형 ABH 넓이 계산": 4,
+          "사각형 ABCD 넓이 계산": 4,
+          "조건 적용 및 높이 계산": 2,
+          "조건 적용": 1,
+          "좌표 설정 및 조건 적용": 1,
+          "좌표 설정 및 조건 정리": 1,
+          "AD=BC 조건을 이용한 관계식 유도": 1,
+          "CD 길이와 원의 방정식을 이용한 좌표 결정": 1,
+          "사각형 ABCD의 넓이 계산 및 높이 h 구하기": 1,
+          "조건 정리 및 기호 설정": 1,
+          "H점과 삼각형 ABH의 넓이": 1,
+          "사각형 ABCD 넓이 공식 선택": 1,
+          "AD=BC 조건을 이용한 대칭성 가정": 1,
+          "넓이 조건 적용": 1,
+          "h 구하기": 1,
+          "문제 이해 및 조건 정리": 1,
+          "C, D의 좌표 결정": 1,
+          "넓이 조건 활용": 1,
+          "대칭성 활용 및 가정": 1,
+          "사각형 ABCD의 넓이 계산": 1,
+          "대칭성 가정: D와 C의 위치": 1,
+          "사각형 ABCD의 넓이: 두 삼각형으로 분할": 1,
+          "벡터와 거리 계산": 1,
+          "대칭성 고려": 1,
+          "좌표 확정": 1,
+          "넓이 계산 준비": 1,
+          "삼각형 ABH의 넓이": 1,
+          "조건 적용: 넓이 비": 1,
+          "벡터와 대칭성 활용": 1,
+          "삼각형 ABH 넓이 계산 준비": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 5.277777777777778,
+        "title_frequency_all_models": {
+          "조건 정리(원 위의 현 길이로 각도 구하기)": 1,
+          "좌표 설정(원기둥의 높이를 변수로)": 1,
+          "면적 계산(ABCD와 ABH)": 1,
+          "넓이 조건 적용(4배 관계로 h 구하기)": 1,
+          "기하 설정(좌표/기본값)": 1,
+          "점 D의 수선발 H와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터로 계산)": 1,
+          "조건 AD = BC로부터 C와 D의 관계 정리": 1,
+          "CD = 3으로 x, y 결정": 1,
+          "사각형 ABCD 넓이 계산(대칭 활용)": 1,
+          "넓이 조건으로 h 구하기": 1,
+          "기본 설정(좌표/반지름)": 1,
+          "현의 길이로 중심각 구하기": 1,
+          "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석": 1,
+          "대칭 배치로 단순화(AD=BC 조건 활용)": 1,
+          "면적 계산: [ABH]와 [ABCD]": 1,
+          "면적비 조건으로 h 구하기": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "원 위의 점 조건": 2,
+          "넓이 계산": 3,
+          "조건을 이용한 높이 계산": 2,
+          "점 H의 좌표와 삼각형 ABH": 1,
+          "사각형 ABCD의 넓이 계산": 1,
+          "조건을 이용한 방정식": 1,
+          "조건 정리 및 밑면에서의 위치 관계 파악": 2,
+          "넓이 관계를 통한 사각형 ABCD의 높이 도출": 2,
+          "피타고라스 정리를 이용한 원기둥의 높이 계산": 2,
+          "조건 분석 및 도형의 성질 파악": 1,
+          "삼각형 ABH의 넓이 구하기": 1,
+          "좌표 설정 및 가정": 1,
+          "삼각형 ABH 넓이 계산": 5,
+          "사각형 ABCD 넓이 계산": 5,
+          "조건 적용": 1,
+          "좌표 설정": 5,
+          "방정식 설정 및 풀이": 1,
+          "좌표 설정 및 조건 정리": 1,
+          "방정식 풀이": 1,
+          "조건 정리와 도형 설정": 1,
+          "C, D의 위치 조건": 1,
+          "CD 길이 조건과 AD=BC 결합": 1,
+          "D와 C의 좌표 결정": 1,
+          "넓이 조건 이용": 1,
+          "방정식 풀기": 1,
+          "A, B의 일반적인 설정과 조건 재검토": 1,
+          "AD = BC 조건": 1,
+          "CD 조건 이용": 1,
+          "y_d = y_c 또는 y_d = -y_c 검토": 1,
+          "넓이 조건": 2,
+          "사다리꼴 ABCD의 넓이": 1,
+          "넓이 공식 적용": 1,
+          "높이 h 계산": 1,
+          "문제 이해 및 설정": 1,
+          "C, D의 좌표 설정": 1,
+          "AD = BC 조건 사용": 1,
+          "일반적인 C,D 설정 및 AD=BC 조건": 1,
+          "공간 사변형의 넓이 구하기": 1,
+          "점 D, C 위치 설정": 1,
+          "벡터와 넓이 계산 준비": 1,
+          "벡터와 거리 조건 활용": 1,
+          "대칭성 가정 및 단순화": 1,
+          "등변사다리꼴 가정 및 좌표 재설정": 1,
+          "넓이 계산 준비": 1,
+          "일반적 좌표 설정 및 대칭성 유지": 1,
+          "H와 삼각형 ABH 넓이 계산": 1,
+          "벡터와 길이 계산 준비": 1,
+          "좌표 가정 및 대칭성 활용": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 5.388888888888889,
+        "title_frequency_all_models": {
+          "기본 길이 정리(원 위의 현)": 1,
+          "좌표 설정(원기둥)": 1,
+          "조건 AD = BC 해석(대칭 조건)": 1,
+          "넓이 조건을 h로 연결": 1,
+          "원기둥·좌표 설정": 1,
+          "점 C, D의 표현(현 길이 3)": 1,
+          "조건 AD = BC로부터 얻는 결론": 1,
+          "삼각형 ABH의 넓이": 1,
+          "사각형 ABCD의 넓이(벡터/분할)": 1,
+          "넓이 조건으로 높이 h 구하기": 2,
+          "밑면 원의 정보 정리": 1,
+          "좌표 설정 및 D의 수선의 발 H": 1,
+          "삼각형 ABH 넓이": 1,
+          "조건 AD=BC로부터 C, D의 x좌표 관계": 1,
+          "CD=3으로부터 C, D의 좌표 구체화": 1,
+          "사각형 ABCD 넓이 계산(벡터/좌표)": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "넓이 계산": 1,
+          "조건을 이용한 높이 계산": 2,
+          "점 C, D의 좌표 결정": 1,
+          "점 H의 좌표와 삼각형 ABH": 2,
+          "사각형 ABCD의 넓이 계산": 7,
+          "사각형 ABCD의 넓이": 1,
+          "조건을 이용한 방정식": 1,
+          "조건 정리 및 기하학적 위치 분석": 1,
+          "도형의 위치 관계 파악": 1,
+          "삼각형 ABH의 넓이 구하기": 1,
+          "사각형 ABCD의 넓이와 사선 길이": 1,
+          "피타고라스 정리를 이용한 원기둥의 높이 계산": 1,
+          "조건 정리 및 기하학적 위치 파악": 1,
+          "좌표 설정": 8,
+          "삼각형 ABH 넓이 계산": 3,
+          "사각형 ABCD 넓이 계산": 3,
+          "조건 적용": 2,
+          "방정식 풀이": 2,
+          "AD = BC 조건 이용": 1,
+          "CD 길이 조건 이용": 1,
+          "y2 = y1 또는 y2 = -y1 구분": 1,
+          "점의 배치 결정": 1,
+          "사각형 ABCD 넓이 구하기": 1,
+          "삼각형 ABH 넓이 구하기": 1,
+          "넓이 조건 적용": 1,
+          "조건 정리 및 도형 설정": 1,
+          "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계": 1,
+          "점 C, D의 좌표 관계": 1,
+          "삼각형 ABH의 넓이와 조건식": 1,
+          "AD=BC 조건에서 관계식 도출": 1,
+          "CD 길이 조건과 원 위의 점 조건 결합": 1,
+          "점 H와 삼각형 ABH의 넓이": 1,
+          "높이 h 구하기": 1,
+          "벡터 및 거리 조건 적용": 1,
+          "대칭성 가정 및 단순화": 2,
+          "넓이 계산 준비": 1,
+          "삼각형 ABH의 넓이 계산": 3,
+          "벡터와 거리 관계 설정": 1,
+          "대칭성 가정과 단순화": 1,
+          "사각형 ABCD의 넓이 계산 전략": 1,
+          "사각형 ABCD의 넓이: 사영 활용": 1,
+          "대칭성 가정: C와 D의 위치 결정": 1,
+          "거리 조건 정리: AD = BC": 1,
+          "넓이 조건: 사각형 ABCD vs 삼각형 ABH": 1,
+          "값 대입: x₁ = 1.5, y₁ = 2": 1,
+          "넓이 계산: 삼각형 ABH": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 5.444444444444445,
+        "title_frequency_all_models": {
+          "조건 정리(원 위의 현 길이로 중심각 구하기)": 1,
+          "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))": 1,
+          "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)": 1,
+          "점 H와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터 외적 이용)": 1,
+          "넓이 조건으로 높이 \\(h\\) 구하기": 1,
+          "원기둥·좌표 설정": 2,
+          "C2의 점 C,D를 각도로 표현": 1,
+          "조건 AD=BC로부터 각도 관계 얻기": 1,
+          "넓이 조건: S(ABCD)=4·S(ABH) 정리": 1,
+          "면적 조건을 벡터로 정리": 1,
+          "조건 AD = BC로 단순화": 1,
+          "면적비로 높이 h 결정": 1,
+          "조건 정리": 7,
+          "좌표계 설정": 3,
+          "점 H의 좌표와 삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이 계산": 7,
+          "조건을 이용한 높이 계산": 3,
+          "점 H의 좌표와 삼각형 ABH": 2,
+          "사각형 ABCD의 넓이 계산": 3,
+          "조건 정리 및 도형의 성질 파악": 1,
+          "도형의 기하학적 특징 파악 및 좌표 설정": 1,
+          "조건 분석 및 도형의 성질 파악": 1,
+          "좌표 설정": 8,
+          "H 좌표 및 삼각형 ABH 넓이 계산": 2,
+          "넓이 조건 적용": 2,
+          "사각형 ABCD가 평면상임을 확인": 1,
+          "조건 적용 및 h 계산": 2,
+          "삼각형 ABH 넓이 계산": 3,
+          "좌표 설정 및 조건 정리": 1,
+          "좌표 관계 도출 (AD=BC, CD=3)": 1,
+          "삼각형 ABH의 넓이 계산": 1,
+          "높이 h 구하기": 1,
+          "AD=BC 조건 이용": 1,
+          "CD=3 조건 이용": 1,
+          "y_C와 y_D의 관계": 1,
+          "C, D 좌표 정리": 1,
+          "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계": 1,
+          "등변사다리꼴의 넓이 구하기": 1,
+          "삼각형 ABH 넓이 구하기": 1,
+          "사각형 ABCD 넓이 구하기": 1,
+          "방정식 풀이": 1,
+          "h^2에 관한 이차방정식": 1,
+          "문제 조건 정리": 1,
+          "AD = BC 조건": 1,
+          "CD=3 조건 활용": 1,
+          "C와 D의 y좌표 관계 결정": 1,
+          "사각형 ABCD의 넓이": 2,
+          "삼각형 ABH의 넓이": 2,
+          "넓이 조건과 높이 구하기": 1,
+          "벡터로 넓이 계산": 1,
+          "AD = BC 조건 적용": 1,
+          "대칭성 가정": 1,
+          "넓이 계산 준비": 2,
+          "벡터 및 거리 관계 설정": 1,
+          "대칭성 가정을 통한 단순화": 1,
+          "넓이 조건 분석": 1,
+          "대칭성 적용: y축 대칭 가정": 1,
+          "넓이 계산": 1,
+          "대칭성 가정 및 변수 단순화": 1,
+          "AD와 BC 길이 비교": 1,
+          "다른 대칭성 고려: AB를 축으로 대칭": 1,
+          "좌표 확정 및 H 구하기": 1
+        },
+        "accuracy_all_models": 0.1111111111111111,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.611111111111111,
+        "title_frequency_all_models": {
+          "밑면 원의 성질 정리": 1,
+          "조건 AD=BC로부터 투영 관계 도출": 1,
+          "좌표 설정 및 넓이식을 직접 세우기": 1,
+          "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기": 1,
+          "넓이 조건으로 높이 h 구하기": 1,
+          "도형 설정(좌표/기본값)": 1,
+          "AB=5로부터 A,B 위치 고정": 1,
+          "CD=3을 평면좌표로 표현": 1,
+          "조건 AD=BC를 (x,y)로 단순화": 1,
+          "삼각형 ABH 넓이": 1,
+          "사각형 ABCD 넓이(벡터/외적)": 1,
+          "넓이 조건으로 h 계산": 1,
+          "원기둥의 기본 설정": 1,
+          "밑면 위의 좌표 배치": 1,
+          "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리": 1,
+          "조건 \\(AD=BC\\)를 평면거리로 환산": 1,
+          "넓이 조건을 이용해 높이 \\(h\\) 구하기": 1,
+          "조건 정리": 6,
+          "좌표 설정": 6,
+          "넓이 계산": 2,
+          "조건을 이용한 방정식": 2,
+          "좌표계 설정": 3,
+          "점 H의 좌표와 삼각형 ABH": 1,
+          "사각형 ABCD의 넓이": 3,
+          "원 위의 점 조건": 1,
+          "조건으로 h 계산": 1,
+          "조건 분석 및 삼각형 ABH의 넓이 구하기": 1,
+          "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산": 1,
+          "조건 분석 및 밑면에서의 위치 관계 파악": 1,
+          "점 H의 위치 파악 및 평면상의 거리 계산": 1,
+          "삼각형 ABH 넓이 계산": 4,
+          "사각형 ABCD 넓이 계산": 4,
+          "조건 적용 및 높이 계산": 2,
+          "조건 적용": 1,
+          "좌표 설정 및 조건 적용": 1,
+          "좌표 설정 및 조건 정리": 1,
+          "AD=BC 조건을 이용한 관계식 유도": 1,
+          "CD 길이와 원의 방정식을 이용한 좌표 결정": 1,
+          "사각형 ABCD의 넓이 계산 및 높이 h 구하기": 1,
+          "조건 정리 및 기호 설정": 1,
+          "H점과 삼각형 ABH의 넓이": 1,
+          "사각형 ABCD 넓이 공식 선택": 1,
+          "AD=BC 조건을 이용한 대칭성 가정": 1,
+          "넓이 조건 적용": 1,
+          "h 구하기": 1,
+          "문제 이해 및 조건 정리": 1,
+          "C, D의 좌표 결정": 1,
+          "넓이 조건 활용": 1,
+          "대칭성 활용 및 가정": 1,
+          "사각형 ABCD의 넓이 계산": 1,
+          "대칭성 가정: D와 C의 위치": 1,
+          "사각형 ABCD의 넓이: 두 삼각형으로 분할": 1,
+          "벡터와 거리 계산": 1,
+          "대칭성 고려": 1,
+          "좌표 확정": 1,
+          "넓이 계산 준비": 1,
+          "삼각형 ABH의 넓이": 1,
+          "조건 적용: 넓이 비": 1,
+          "벡터와 대칭성 활용": 1,
+          "삼각형 ABH 넓이 계산 준비": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 5.180555555555555,
+      "title_frequency": {
+        "조건 정리(원 위의 현 길이로 각도 구하기)": 1,
+        "좌표 설정(원기둥의 높이를 변수로)": 1,
+        "면적 계산(ABCD와 ABH)": 1,
+        "넓이 조건 적용(4배 관계로 h 구하기)": 1,
+        "기하 설정(좌표/기본값)": 1,
+        "점 D의 수선발 H와 삼각형 ABH 넓이": 1,
+        "사각형 ABCD 넓이(벡터로 계산)": 1,
+        "조건 AD = BC로부터 C와 D의 관계 정리": 1,
+        "CD = 3으로 x, y 결정": 1,
+        "사각형 ABCD 넓이 계산(대칭 활용)": 1,
+        "넓이 조건으로 h 구하기": 1,
+        "기본 설정(좌표/반지름)": 1,
+        "현의 길이로 중심각 구하기": 1,
+        "면적 조건을 ‘밑면 투영 + 높이 성분’으로 해석": 1,
+        "대칭 배치로 단순화(AD=BC 조건 활용)": 1,
+        "면적 계산: [ABH]와 [ABCD]": 1,
+        "면적비 조건으로 h 구하기": 1,
+        "조건 정리": 27,
+        "좌표계 설정": 12,
+        "원 위의 점 조건": 3,
+        "넓이 계산": 7,
+        "조건을 이용한 높이 계산": 7,
+        "점 H의 좌표와 삼각형 ABH": 6,
+        "사각형 ABCD의 넓이 계산": 12,
+        "조건을 이용한 방정식": 4,
+        "조건 정리 및 밑면에서의 위치 관계 파악": 2,
+        "넓이 관계를 통한 사각형 ABCD의 높이 도출": 2,
+        "피타고라스 정리를 이용한 원기둥의 높이 계산": 3,
+        "조건 분석 및 도형의 성질 파악": 2,
+        "삼각형 ABH의 넓이 구하기": 2,
+        "좌표 설정 및 가정": 1,
+        "삼각형 ABH 넓이 계산": 15,
+        "사각형 ABCD 넓이 계산": 19,
+        "조건 적용": 4,
+        "좌표 설정": 27,
+        "방정식 설정 및 풀이": 1,
+        "좌표 설정 및 조건 정리": 3,
+        "방정식 풀이": 4,
+        "조건 정리와 도형 설정": 1,
+        "C, D의 위치 조건": 1,
+        "CD 길이 조건과 AD=BC 결합": 1,
+        "D와 C의 좌표 결정": 1,
+        "넓이 조건 이용": 1,
+        "방정식 풀기": 1,
+        "A, B의 일반적인 설정과 조건 재검토": 1,
+        "AD = BC 조건": 2,
+        "CD 조건 이용": 1,
+        "y_d = y_c 또는 y_d = -y_c 검토": 1,
+        "넓이 조건": 2,
+        "사다리꼴 ABCD의 넓이": 1,
+        "넓이 공식 적용": 1,
+        "높이 h 계산": 1,
+        "문제 이해 및 설정": 1,
+        "C, D의 좌표 설정": 1,
+        "AD = BC 조건 사용": 1,
+        "일반적인 C,D 설정 및 AD=BC 조건": 1,
+        "공간 사변형의 넓이 구하기": 1,
+        "점 D, C 위치 설정": 1,
+        "벡터와 넓이 계산 준비": 1,
+        "벡터와 거리 조건 활용": 1,
+        "대칭성 가정 및 단순화": 3,
+        "등변사다리꼴 가정 및 좌표 재설정": 1,
+        "넓이 계산 준비": 5,
+        "일반적 좌표 설정 및 대칭성 유지": 1,
+        "H와 삼각형 ABH 넓이 계산": 1,
+        "벡터와 길이 계산 준비": 1,
+        "좌표 가정 및 대칭성 활용": 1,
+        "기본 길이 정리(원 위의 현)": 1,
+        "좌표 설정(원기둥)": 1,
+        "조건 AD = BC 해석(대칭 조건)": 1,
+        "넓이 조건을 h로 연결": 1,
+        "원기둥·좌표 설정": 3,
+        "점 C, D의 표현(현 길이 3)": 1,
+        "조건 AD = BC로부터 얻는 결론": 1,
+        "삼각형 ABH의 넓이": 4,
+        "사각형 ABCD의 넓이(벡터/분할)": 1,
+        "넓이 조건으로 높이 h 구하기": 3,
+        "밑면 원의 정보 정리": 1,
+        "좌표 설정 및 D의 수선의 발 H": 1,
+        "삼각형 ABH 넓이": 2,
+        "조건 AD=BC로부터 C, D의 x좌표 관계": 1,
+        "CD=3으로부터 C, D의 좌표 구체화": 1,
+        "사각형 ABCD 넓이 계산(벡터/좌표)": 1,
+        "점 C, D의 좌표 결정": 1,
+        "사각형 ABCD의 넓이": 6,
+        "조건 정리 및 기하학적 위치 분석": 1,
+        "도형의 위치 관계 파악": 1,
+        "사각형 ABCD의 넓이와 사선 길이": 1,
+        "조건 정리 및 기하학적 위치 파악": 1,
+        "AD = BC 조건 이용": 1,
+        "CD 길이 조건 이용": 1,
+        "y2 = y1 또는 y2 = -y1 구분": 1,
+        "점의 배치 결정": 1,
+        "사각형 ABCD 넓이 구하기": 2,
+        "삼각형 ABH 넓이 구하기": 2,
+        "넓이 조건 적용": 4,
+        "조건 정리 및 도형 설정": 1,
+        "사각형 ABCD의 넓이와 삼각형 ABH의 넓이 관계": 1,
+        "점 C, D의 좌표 관계": 1,
+        "삼각형 ABH의 넓이와 조건식": 1,
+        "AD=BC 조건에서 관계식 도출": 1,
+        "CD 길이 조건과 원 위의 점 조건 결합": 1,
+        "점 H와 삼각형 ABH의 넓이": 1,
+        "높이 h 구하기": 2,
+        "벡터 및 거리 조건 적용": 1,
+        "삼각형 ABH의 넓이 계산": 4,
+        "벡터와 거리 관계 설정": 1,
+        "대칭성 가정과 단순화": 1,
+        "사각형 ABCD의 넓이 계산 전략": 1,
+        "사각형 ABCD의 넓이: 사영 활용": 1,
+        "대칭성 가정: C와 D의 위치 결정": 1,
+        "거리 조건 정리: AD = BC": 1,
+        "넓이 조건: 사각형 ABCD vs 삼각형 ABH": 1,
+        "값 대입: x₁ = 1.5, y₁ = 2": 1,
+        "넓이 계산: 삼각형 ABH": 1,
+        "조건 정리(원 위의 현 길이로 중심각 구하기)": 1,
+        "좌표 설정(윗면/아랫면 평행, 높이 \\(h\\))": 1,
+        "조건 \\(\\overline{AD}=\\overline{BC}\\) 해석(자동으로 성립 확인)": 1,
+        "점 H와 삼각형 ABH 넓이": 1,
+        "사각형 ABCD 넓이(벡터 외적 이용)": 1,
+        "넓이 조건으로 높이 \\(h\\) 구하기": 1,
+        "C2의 점 C,D를 각도로 표현": 1,
+        "조건 AD=BC로부터 각도 관계 얻기": 1,
+        "넓이 조건: S(ABCD)=4·S(ABH) 정리": 1,
+        "면적 조건을 벡터로 정리": 1,
+        "조건 AD = BC로 단순화": 1,
+        "면적비로 높이 h 결정": 1,
+        "점 H의 좌표와 삼각형 ABH 넓이": 1,
+        "조건 정리 및 도형의 성질 파악": 1,
+        "도형의 기하학적 특징 파악 및 좌표 설정": 1,
+        "H 좌표 및 삼각형 ABH 넓이 계산": 2,
+        "사각형 ABCD가 평면상임을 확인": 1,
+        "조건 적용 및 h 계산": 2,
+        "좌표 관계 도출 (AD=BC, CD=3)": 1,
+        "AD=BC 조건 이용": 1,
+        "CD=3 조건 이용": 1,
+        "y_C와 y_D의 관계": 1,
+        "C, D 좌표 정리": 1,
+        "사각형 ABCD 넓이와 삼각형 ABH 넓이 관계": 1,
+        "등변사다리꼴의 넓이 구하기": 1,
+        "h^2에 관한 이차방정식": 1,
+        "문제 조건 정리": 1,
+        "CD=3 조건 활용": 1,
+        "C와 D의 y좌표 관계 결정": 1,
+        "넓이 조건과 높이 구하기": 1,
+        "벡터로 넓이 계산": 1,
+        "AD = BC 조건 적용": 1,
+        "대칭성 가정": 1,
+        "벡터 및 거리 관계 설정": 1,
+        "대칭성 가정을 통한 단순화": 1,
+        "넓이 조건 분석": 1,
+        "대칭성 적용: y축 대칭 가정": 1,
+        "대칭성 가정 및 변수 단순화": 1,
+        "AD와 BC 길이 비교": 1,
+        "다른 대칭성 고려: AB를 축으로 대칭": 1,
+        "좌표 확정 및 H 구하기": 1,
+        "밑면 원의 성질 정리": 1,
+        "조건 AD=BC로부터 투영 관계 도출": 1,
+        "좌표 설정 및 넓이식을 직접 세우기": 1,
+        "원 위 조건과 길이 CD=3으로 y좌표 관계 만들기": 1,
+        "도형 설정(좌표/기본값)": 1,
+        "AB=5로부터 A,B 위치 고정": 1,
+        "CD=3을 평면좌표로 표현": 1,
+        "조건 AD=BC를 (x,y)로 단순화": 1,
+        "사각형 ABCD 넓이(벡터/외적)": 1,
+        "넓이 조건으로 h 계산": 1,
+        "원기둥의 기본 설정": 1,
+        "밑면 위의 좌표 배치": 1,
+        "조건 \\(CD=3\\)로부터 \\(C\\)의 위치 정리": 1,
+        "조건 \\(AD=BC\\)를 평면거리로 환산": 1,
+        "넓이 조건을 이용해 높이 \\(h\\) 구하기": 1,
+        "조건으로 h 계산": 1,
+        "조건 분석 및 삼각형 ABH의 넓이 구하기": 1,
+        "사각형 ABCD의 넓이와 사다리꼴의 높이(빗변) 계산": 1,
+        "조건 분석 및 밑면에서의 위치 관계 파악": 1,
+        "점 H의 위치 파악 및 평면상의 거리 계산": 1,
+        "조건 적용 및 높이 계산": 2,
+        "좌표 설정 및 조건 적용": 1,
+        "AD=BC 조건을 이용한 관계식 유도": 1,
+        "CD 길이와 원의 방정식을 이용한 좌표 결정": 1,
+        "사각형 ABCD의 넓이 계산 및 높이 h 구하기": 1,
+        "조건 정리 및 기호 설정": 1,
+        "H점과 삼각형 ABH의 넓이": 1,
+        "사각형 ABCD 넓이 공식 선택": 1,
+        "AD=BC 조건을 이용한 대칭성 가정": 1,
+        "h 구하기": 1,
+        "문제 이해 및 조건 정리": 1,
+        "C, D의 좌표 결정": 1,
+        "넓이 조건 활용": 1,
+        "대칭성 활용 및 가정": 1,
+        "대칭성 가정: D와 C의 위치": 1,
+        "사각형 ABCD의 넓이: 두 삼각형으로 분할": 1,
+        "벡터와 거리 계산": 1,
+        "대칭성 고려": 1,
+        "좌표 확정": 1,
+        "조건 적용: 넓이 비": 1,
+        "벡터와 대칭성 활용": 1,
+        "삼각형 ABH 넓이 계산 준비": 1
+      },
+      "accuracy": 0.08333333333333333,
+      "n_samples": 72
+    }
+  }
+}

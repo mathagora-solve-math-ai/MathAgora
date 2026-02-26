@@ -1,0 +1,4033 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T02:12:02Z",
+    "ended_at_utc": "2026-02-13T02:36:55Z",
+    "elapsed_seconds": 1493.144,
+    "problem_tag": "2026_odd_probability_25",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_probability_25",
+    "label": "2026_odd_probability_25 (확률과통계, 3점)",
+    "gold_answer": "2"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.631857395172119,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색인 경우 수 |A|",
+                "같은 수인 경우 수 |B|",
+                "교집합 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.963348865509033,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색으로 뽑는 경우 |A|",
+                "같은 수로 뽑는 경우 |B|",
+                "교집합 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.03781247138977,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우(|A|)",
+                "같은 수인 경우(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.631857395172119,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색인 경우 수 |A|",
+                "같은 수인 경우 수 |B|",
+                "교집합 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.963348865509033,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색으로 뽑는 경우 |A|",
+                "같은 수로 뽑는 경우 |B|",
+                "교집합 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.03781247138977,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우(|A|)",
+                "같은 수인 경우(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색인 경우 수 |A|": 1,
+            "같은 수인 경우 수 |B|": 1,
+            "교집합 |A∩B| 확인": 2,
+            "확률 계산": 3,
+            "사건 정의 및 포함배제": 2,
+            "같은 색으로 뽑는 경우 |A|": 1,
+            "같은 수로 뽑는 경우 |B|": 1,
+            "같은 색인 경우(|A|)": 1,
+            "같은 수인 경우(|B|)": 1,
+            "교집합 확인(|A∩B|)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색인 경우 수 |A|": 1,
+            "같은 수인 경우 수 |B|": 1,
+            "교집합 |A∩B| 확인": 2,
+            "확률 계산": 3,
+            "사건 정의 및 포함배제": 2,
+            "같은 색으로 뽑는 경우 |A|": 1,
+            "같은 수로 뽑는 경우 |B|": 1,
+            "같은 색인 경우(|A|)": 1,
+            "같은 수인 경우(|B|)": 1,
+            "교집합 확인(|A∩B|)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.826125383377075,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.601969003677368,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.742799282073975,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.826125383377075,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.601969003677368,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.742799282073975,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 3,
+            "각 경우의 수 계산": 3,
+            "확률 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 3,
+            "각 경우의 수 계산": 3,
+            "확률 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.71852207183838,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "조건 1: 같은 색일 경우의 수",
+                "조건 2: 같은 수일 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.65191388130188,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 경우",
+                "사건 B: 같은 수인 경우",
+                "최종 확률 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.93085479736328,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 공이 나올 경우의 수",
+                "사건 B: 같은 수가 적힌 공이 나올 경우의 수",
+                "최종 확률 계산 (덧셈정리)"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.71852207183838,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "조건 1: 같은 색일 경우의 수",
+                "조건 2: 같은 수일 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.65191388130188,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 경우",
+                "사건 B: 같은 수인 경우",
+                "최종 확률 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.93085479736328,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 공이 나올 경우의 수",
+                "사건 B: 같은 수가 적힌 공이 나올 경우의 수",
+                "최종 확률 계산 (덧셈정리)"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "전체 경우의 수 구하기": 3,
+            "조건 1: 같은 색일 경우의 수": 1,
+            "조건 2: 같은 수일 경우의 수": 1,
+            "최종 확률 계산": 2,
+            "사건 A: 같은 색인 경우": 1,
+            "사건 B: 같은 수인 경우": 1,
+            "사건 A: 같은 색인 공이 나올 경우의 수": 1,
+            "사건 B: 같은 수가 적힌 공이 나올 경우의 수": 1,
+            "최종 확률 계산 (덧셈정리)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수 구하기": 3,
+            "조건 1: 같은 색일 경우의 수": 1,
+            "조건 2: 같은 수일 경우의 수": 1,
+            "최종 확률 계산": 2,
+            "사건 A: 같은 색인 경우": 1,
+            "사건 B: 같은 수인 경우": 1,
+            "사건 A: 같은 색인 공이 나올 경우의 수": 1,
+            "사건 B: 같은 수가 적힌 공이 나올 경우의 수": 1,
+            "최종 확률 계산 (덧셈정리)": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.55151104927063,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.678706407546997,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.6143000125885,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.55151104927063,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.678706407546997,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.6143000125885,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "총 경우의 수 계산": 1,
+            "같은 색 경우 계산": 3,
+            "같은 숫자 경우 계산": 3,
+            "유리한 경우 합산 및 확률 계산": 1,
+            "전체 경우의 수 계산": 2,
+            "합집합 계산": 2,
+            "확률 계산": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "총 경우의 수 계산": 1,
+            "같은 색 경우 계산": 3,
+            "같은 숫자 경우 계산": 3,
+            "유리한 경우 합산 및 확률 계산": 1,
+            "전체 경우의 수 계산": 2,
+            "합집합 계산": 2,
+            "확률 계산": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.804073333740234,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "집합의 크기 계산",
+                "합집합의 크기(포함-배제 원리)",
+                "확률 계산 및 최종 답"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.481240510940552,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수",
+                "사건 A∩B의 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.73502779006958,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색인 경우",
+                "숫자가 같은 경우 (다른 색일 때만 고려)",
+                "중복 제거 (포함-배제 원리)",
+                "확률 계산"
+              ],
+              "final_answer": "② \\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.804073333740234,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "집합의 크기 계산",
+                "합집합의 크기(포함-배제 원리)",
+                "확률 계산 및 최종 답"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.481240510940552,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수",
+                "사건 A∩B의 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.73502779006958,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색인 경우",
+                "숫자가 같은 경우 (다른 색일 때만 고려)",
+                "중복 제거 (포함-배제 원리)",
+                "확률 계산"
+              ],
+              "final_answer": "② \\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "집합의 크기 계산": 1,
+            "합집합의 크기(포함-배제 원리)": 1,
+            "확률 계산 및 최종 답": 1,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "확률 계산": 2,
+            "같은 색인 경우": 1,
+            "숫자가 같은 경우 (다른 색일 때만 고려)": 1,
+            "중복 제거 (포함-배제 원리)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "집합의 크기 계산": 1,
+            "합집합의 크기(포함-배제 원리)": 1,
+            "확률 계산 및 최종 답": 1,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "확률 계산": 2,
+            "같은 색인 경우": 1,
+            "숫자가 같은 경우 (다른 색일 때만 고려)": 1,
+            "중복 제거 (포함-배제 원리)": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.27703094482422,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색 뽑을 확률 계산",
+                "같은 숫자 뽑을 확률 계산",
+                "같은 색이면서 같은 숫자인 경우 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.5542733669281,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "조건을 만족하는 경우의 수 계산",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "같은 색 **그리고** 같은 숫자인 경우의 수",
+                "조건 만족하는 전체 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.79073691368103,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산",
+                "같은 숫자일 확률 계산",
+                "같은 색이면서 같은 숫자일 확률 계산",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.27703094482422,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색 뽑을 확률 계산",
+                "같은 숫자 뽑을 확률 계산",
+                "같은 색이면서 같은 숫자인 경우 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.5542733669281,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "조건을 만족하는 경우의 수 계산",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "같은 색 **그리고** 같은 숫자인 경우의 수",
+                "조건 만족하는 전체 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.79073691368103,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산",
+                "같은 숫자일 확률 계산",
+                "같은 색이면서 같은 숫자일 확률 계산",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "같은 색 뽑을 확률 계산": 1,
+            "같은 숫자 뽑을 확률 계산": 1,
+            "같은 색이면서 같은 숫자인 경우 계산": 1,
+            "확률 계산": 2,
+            "전체 경우의 수 계산": 2,
+            "조건을 만족하는 경우의 수 계산": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "같은 색 **그리고** 같은 숫자인 경우의 수": 1,
+            "조건 만족하는 전체 경우의 수": 1,
+            "같은 색일 확률 계산": 1,
+            "같은 숫자일 확률 계산": 1,
+            "같은 색이면서 같은 숫자일 확률 계산": 1,
+            "최종 확률 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "같은 색 뽑을 확률 계산": 1,
+            "같은 숫자 뽑을 확률 계산": 1,
+            "같은 색이면서 같은 숫자인 경우 계산": 1,
+            "확률 계산": 2,
+            "전체 경우의 수 계산": 2,
+            "조건을 만족하는 경우의 수 계산": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "같은 색 **그리고** 같은 숫자인 경우의 수": 1,
+            "조건 만족하는 전체 경우의 수": 1,
+            "같은 색일 확률 계산": 1,
+            "같은 숫자일 확률 계산": 1,
+            "같은 색이면서 같은 숫자일 확률 계산": 1,
+            "최종 확률 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 3,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색인 경우 수 |A|": 1,
+          "같은 수인 경우 수 |B|": 1,
+          "교집합 |A∩B| 확인": 2,
+          "확률 계산": 12,
+          "사건 정의 및 포함배제": 2,
+          "같은 색으로 뽑는 경우 |A|": 1,
+          "같은 수로 뽑는 경우 |B|": 1,
+          "같은 색인 경우(|A|)": 1,
+          "같은 수인 경우(|B|)": 1,
+          "교집합 확인(|A∩B|)": 1,
+          "조건 정리": 9,
+          "사건 분석 - 포함배제 원리": 3,
+          "각 경우의 수 계산": 3,
+          "전체 경우의 수 구하기": 3,
+          "조건 1: 같은 색일 경우의 수": 1,
+          "조건 2: 같은 수일 경우의 수": 1,
+          "최종 확률 계산": 3,
+          "사건 A: 같은 색인 경우": 1,
+          "사건 B: 같은 수인 경우": 1,
+          "사건 A: 같은 색인 공이 나올 경우의 수": 1,
+          "사건 B: 같은 수가 적힌 공이 나올 경우의 수": 1,
+          "최종 확률 계산 (덧셈정리)": 1,
+          "총 경우의 수 계산": 1,
+          "같은 색 경우 계산": 3,
+          "같은 숫자 경우 계산": 3,
+          "유리한 경우 합산 및 확률 계산": 1,
+          "전체 경우의 수 계산": 4,
+          "합집합 계산": 2,
+          "집합의 크기 계산": 1,
+          "합집합의 크기(포함-배제 원리)": 1,
+          "확률 계산 및 최종 답": 1,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "같은 색인 경우": 1,
+          "숫자가 같은 경우 (다른 색일 때만 고려)": 1,
+          "중복 제거 (포함-배제 원리)": 1,
+          "같은 색 뽑을 확률 계산": 1,
+          "같은 숫자 뽑을 확률 계산": 1,
+          "같은 색이면서 같은 숫자인 경우 계산": 1,
+          "조건을 만족하는 경우의 수 계산": 1,
+          "같은 색인 경우의 수": 1,
+          "같은 숫자인 경우의 수": 1,
+          "같은 색 **그리고** 같은 숫자인 경우의 수": 1,
+          "조건 만족하는 전체 경우의 수": 1,
+          "같은 색일 확률 계산": 1,
+          "같은 숫자일 확률 계산": 1,
+          "같은 색이면서 같은 숫자일 확률 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.229362964630127,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색으로 뽑는 경우(|A|)",
+                "같은 숫자로 뽑는 경우(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.086886405944824,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "같은 색인 경우(|A|)",
+                "같은 수인 경우(|B|)",
+                "겹치는 경우 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.316215515136719,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우 계산(|A|)",
+                "같은 수인 경우 계산(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.229362964630127,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색으로 뽑는 경우(|A|)",
+                "같은 숫자로 뽑는 경우(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.086886405944824,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "같은 색인 경우(|A|)",
+                "같은 수인 경우(|B|)",
+                "겹치는 경우 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.316215515136719,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우 계산(|A|)",
+                "같은 수인 경우 계산(|B|)",
+                "교집합 확인(|A∩B|)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색으로 뽑는 경우(|A|)": 1,
+            "같은 숫자로 뽑는 경우(|B|)": 1,
+            "교집합 확인(|A∩B|)": 2,
+            "확률 계산": 3,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "같은 색인 경우(|A|)": 1,
+            "같은 수인 경우(|B|)": 1,
+            "겹치는 경우 확인(|A∩B|)": 1,
+            "사건 정의 및 포함배제": 1,
+            "같은 색인 경우 계산(|A|)": 1,
+            "같은 수인 경우 계산(|B|)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색으로 뽑는 경우(|A|)": 1,
+            "같은 숫자로 뽑는 경우(|B|)": 1,
+            "교집합 확인(|A∩B|)": 2,
+            "확률 계산": 3,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "같은 색인 경우(|A|)": 1,
+            "같은 수인 경우(|B|)": 1,
+            "겹치는 경우 확인(|A∩B|)": 1,
+            "사건 정의 및 포함배제": 1,
+            "같은 색인 경우 계산(|A|)": 1,
+            "같은 수인 경우 계산(|B|)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.957043170928955,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.703613519668579,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.25602674484253,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.957043170928955,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.703613519668579,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.25602674484253,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "전체 경우의 수": 2,
+            "같은 색인 경우의 수": 2,
+            "같은 숫자인 경우의 수": 2,
+            "포함-배제 원리 적용": 2,
+            "확률 계산": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "각 경우의 수 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "전체 경우의 수": 2,
+            "같은 색인 경우의 수": 2,
+            "같은 숫자인 경우의 수": 2,
+            "포함-배제 원리 적용": 2,
+            "확률 계산": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "각 경우의 수 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.33539366722107,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색일 경우",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우",
+                "확률의 덧셈정리 및 최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.106593132019043,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "조건 1: 같은 색인 경우의 수",
+                "조건 2: 같은 수인 경우의 수",
+                "확률 계산 (덧셈정리)"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.984713792800903,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.33539366722107,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색일 경우",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우",
+                "확률의 덧셈정리 및 최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.106593132019043,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "조건 1: 같은 색인 경우의 수",
+                "조건 2: 같은 수인 경우의 수",
+                "확률 계산 (덧셈정리)"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.984713792800903,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 꺼낸 공이 서로 같은 색일 경우": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우": 1,
+            "확률의 덧셈정리 및 최종 계산": 1,
+            "조건 1: 같은 색인 경우의 수": 1,
+            "조건 2: 같은 수인 경우의 수": 1,
+            "확률 계산 (덧셈정리)": 1,
+            "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수": 1,
+            "확률의 덧셈정리를 이용한 최종 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 꺼낸 공이 서로 같은 색일 경우": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우": 1,
+            "확률의 덧셈정리 및 최종 계산": 1,
+            "조건 1: 같은 색인 경우의 수": 1,
+            "조건 2: 같은 수인 경우의 수": 1,
+            "확률 계산 (덧셈정리)": 1,
+            "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수": 1,
+            "확률의 덧셈정리를 이용한 최종 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.63006663322449,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산",
+                "확률 계산"
+              ],
+              "final_answer": "\\dfrac{8}{15}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.31283211708069,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색인 경우 계산",
+                "같은 숫자인 경우 계산",
+                "중복 확인 및 총 유리한 경우",
+                "확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.53339385986328,
+              "step_count": 3,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "불리한 경우 분석",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.63006663322449,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산",
+                "확률 계산"
+              ],
+              "final_answer": "\\dfrac{8}{15}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.31283211708069,
+              "step_count": 5,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "같은 색인 경우 계산",
+                "같은 숫자인 경우 계산",
+                "중복 확인 및 총 유리한 경우",
+                "확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.53339385986328,
+              "step_count": 3,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "불리한 경우 분석",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "총 경우의 수 계산": 2,
+            "같은 색 경우 계산": 1,
+            "같은 숫자 경우 계산": 1,
+            "유리한 경우 합산": 1,
+            "확률 계산": 3,
+            "전체 경우의 수 계산": 1,
+            "같은 색인 경우 계산": 1,
+            "같은 숫자인 경우 계산": 1,
+            "중복 확인 및 총 유리한 경우": 1,
+            "불리한 경우 분석": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "총 경우의 수 계산": 2,
+            "같은 색 경우 계산": 1,
+            "같은 숫자 경우 계산": 1,
+            "유리한 경우 합산": 1,
+            "확률 계산": 3,
+            "전체 경우의 수 계산": 1,
+            "같은 색인 경우 계산": 1,
+            "같은 숫자인 경우 계산": 1,
+            "중복 확인 및 총 유리한 경우": 1,
+            "불리한 경우 분석": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.27994990348816,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "사건 A: 같은 색인 경우",
+                "사건 B: 같은 수인 경우",
+                "사건 A와 B의 교집합",
+                "합사건의 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.39731550216675,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "중복 제거 (포함-배제 원리)",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\) → 보기 ②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 42.57171416282654,
+              "step_count": 13,
+              "step_titles": [
+                "조건 정리",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A∩B) 계산",
+                "P(A∪B) 계산",
+                "기약분수 확인 및 보기 비교",
+                "P(A) 재계산",
+                "P(B) 재계산",
+                "통분 계산",
+                "조건 재해석",
+                "계산 오류 발견",
+                "P(B)의 올바른 계산",
+                "확률 재계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.27994990348816,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "사건 A: 같은 색인 경우",
+                "사건 B: 같은 수인 경우",
+                "사건 A와 B의 교집합",
+                "합사건의 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.39731550216675,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "중복 제거 (포함-배제 원리)",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\) → 보기 ②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 42.57171416282654,
+              "step_count": 13,
+              "step_titles": [
+                "조건 정리",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A∩B) 계산",
+                "P(A∪B) 계산",
+                "기약분수 확인 및 보기 비교",
+                "P(A) 재계산",
+                "P(B) 재계산",
+                "통분 계산",
+                "조건 재해석",
+                "계산 오류 발견",
+                "P(B)의 올바른 계산",
+                "확률 재계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 8.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "전체 경우의 수": 1,
+            "사건 A: 같은 색인 경우": 1,
+            "사건 B: 같은 수인 경우": 1,
+            "사건 A와 B의 교집합": 1,
+            "합사건의 확률 계산": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "중복 제거 (포함-배제 원리)": 1,
+            "확률 계산": 1,
+            "P(A) 계산": 1,
+            "P(B) 계산": 1,
+            "P(A∩B) 계산": 1,
+            "P(A∪B) 계산": 1,
+            "기약분수 확인 및 보기 비교": 1,
+            "P(A) 재계산": 1,
+            "P(B) 재계산": 1,
+            "통분 계산": 1,
+            "조건 재해석": 1,
+            "계산 오류 발견": 1,
+            "P(B)의 올바른 계산": 1,
+            "확률 재계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 8.0,
+          "step_std": 4.358898943540674,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "전체 경우의 수": 1,
+            "사건 A: 같은 색인 경우": 1,
+            "사건 B: 같은 수인 경우": 1,
+            "사건 A와 B의 교집합": 1,
+            "합사건의 확률 계산": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "중복 제거 (포함-배제 원리)": 1,
+            "확률 계산": 1,
+            "P(A) 계산": 1,
+            "P(B) 계산": 1,
+            "P(A∩B) 계산": 1,
+            "P(A∪B) 계산": 1,
+            "기약분수 확인 및 보기 비교": 1,
+            "P(A) 재계산": 1,
+            "P(B) 재계산": 1,
+            "통분 계산": 1,
+            "조건 재해석": 1,
+            "계산 오류 발견": 1,
+            "P(B)의 올바른 계산": 1,
+            "확률 재계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.439311265945435,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산",
+                "숫자가 같을 확률 계산",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 32.87187314033508,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산 (흰색 또는 검은색)",
+                "숫자가 같을 확률 계산",
+                "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.28899335861206,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 \\( P(A) \\) 계산",
+                "같은 숫자일 확률 \\( P(B) \\) 계산",
+                "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산",
+                "확률 합산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.439311265945435,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산",
+                "숫자가 같을 확률 계산",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 32.87187314033508,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 계산 (흰색 또는 검은색)",
+                "숫자가 같을 확률 계산",
+                "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.28899335861206,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색일 확률 \\( P(A) \\) 계산",
+                "같은 숫자일 확률 \\( P(B) \\) 계산",
+                "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산",
+                "확률 합산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 3,
+            "같은 색일 확률 계산": 1,
+            "숫자가 같을 확률 계산": 2,
+            "포함-배제 원리 적용": 1,
+            "확률 계산": 2,
+            "같은 색일 확률 계산 (흰색 또는 검은색)": 1,
+            "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)": 1,
+            "같은 색일 확률 \\( P(A) \\) 계산": 1,
+            "같은 숫자일 확률 \\( P(B) \\) 계산": 1,
+            "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산": 1,
+            "확률 합산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 3,
+            "같은 색일 확률 계산": 1,
+            "숫자가 같을 확률 계산": 2,
+            "포함-배제 원리 적용": 1,
+            "확률 계산": 2,
+            "같은 색일 확률 계산 (흰색 또는 검은색)": 1,
+            "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)": 1,
+            "같은 색일 확률 \\( P(A) \\) 계산": 1,
+            "같은 숫자일 확률 \\( P(B) \\) 계산": 1,
+            "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산": 1,
+            "확률 합산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.611111111111111,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 6,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색으로 뽑는 경우(|A|)": 1,
+          "같은 숫자로 뽑는 경우(|B|)": 1,
+          "교집합 확인(|A∩B|)": 2,
+          "확률 계산": 12,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "같은 색인 경우(|A|)": 1,
+          "같은 수인 경우(|B|)": 1,
+          "겹치는 경우 확인(|A∩B|)": 1,
+          "사건 정의 및 포함배제": 1,
+          "같은 색인 경우 계산(|A|)": 1,
+          "같은 수인 경우 계산(|B|)": 1,
+          "조건 정리": 9,
+          "같은 색인 경우의 수": 3,
+          "같은 숫자인 경우의 수": 3,
+          "포함-배제 원리 적용": 3,
+          "사건 분석 - 포함배제 원리": 1,
+          "각 경우의 수 계산": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 꺼낸 공이 서로 같은 색일 경우": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우": 1,
+          "확률의 덧셈정리 및 최종 계산": 1,
+          "조건 1: 같은 색인 경우의 수": 1,
+          "조건 2: 같은 수인 경우의 수": 1,
+          "확률 계산 (덧셈정리)": 1,
+          "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수": 1,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "총 경우의 수 계산": 2,
+          "같은 색 경우 계산": 1,
+          "같은 숫자 경우 계산": 1,
+          "유리한 경우 합산": 1,
+          "전체 경우의 수 계산": 4,
+          "같은 색인 경우 계산": 1,
+          "같은 숫자인 경우 계산": 1,
+          "중복 확인 및 총 유리한 경우": 1,
+          "불리한 경우 분석": 1,
+          "사건 A: 같은 색인 경우": 1,
+          "사건 B: 같은 수인 경우": 1,
+          "사건 A와 B의 교집합": 1,
+          "합사건의 확률 계산": 1,
+          "중복 제거 (포함-배제 원리)": 1,
+          "P(A) 계산": 1,
+          "P(B) 계산": 1,
+          "P(A∩B) 계산": 1,
+          "P(A∪B) 계산": 1,
+          "기약분수 확인 및 보기 비교": 1,
+          "P(A) 재계산": 1,
+          "P(B) 재계산": 1,
+          "통분 계산": 1,
+          "조건 재해석": 1,
+          "계산 오류 발견": 1,
+          "P(B)의 올바른 계산": 1,
+          "확률 재계산": 1,
+          "같은 색일 확률 계산": 1,
+          "숫자가 같을 확률 계산": 2,
+          "같은 색일 확률 계산 (흰색 또는 검은색)": 1,
+          "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)": 1,
+          "같은 색일 확률 \\( P(A) \\) 계산": 1,
+          "같은 숫자일 확률 \\( P(B) \\) 계산": 1,
+          "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산": 1,
+          "확률 합산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.709237813949585,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색인 경우 수 \\(|A|\\)",
+                "숫자가 같은 경우 수 \\(|B|\\)",
+                "교집합 \\(|A\\cap B|\\) 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.948083400726318,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "같은 색인 경우 수 |A|",
+                "같은 수인 경우 수 |B|",
+                "겹치는 경우 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.436118841171265,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "|A| 계산(같은 색)",
+                "|B| 계산(같은 숫자)",
+                "|A∩B| 계산(같은 색이면서 같은 숫자)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.709237813949585,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함-배제",
+                "같은 색인 경우 수 \\(|A|\\)",
+                "숫자가 같은 경우 수 \\(|B|\\)",
+                "교집합 \\(|A\\cap B|\\) 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.948083400726318,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "같은 색인 경우 수 |A|",
+                "같은 수인 경우 수 |B|",
+                "겹치는 경우 |A∩B| 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.436118841171265,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "|A| 계산(같은 색)",
+                "|B| 계산(같은 숫자)",
+                "|A∩B| 계산(같은 색이면서 같은 숫자)",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{8}{15}}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색인 경우 수 \\(|A|\\)": 1,
+            "숫자가 같은 경우 수 \\(|B|\\)": 1,
+            "교집합 \\(|A\\cap B|\\) 확인": 1,
+            "확률 계산": 3,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "같은 색인 경우 수 |A|": 1,
+            "같은 수인 경우 수 |B|": 1,
+            "겹치는 경우 |A∩B| 확인": 1,
+            "사건 정의 및 포함배제": 1,
+            "|A| 계산(같은 색)": 1,
+            "|B| 계산(같은 숫자)": 1,
+            "|A∩B| 계산(같은 색이면서 같은 숫자)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함-배제": 1,
+            "같은 색인 경우 수 \\(|A|\\)": 1,
+            "숫자가 같은 경우 수 \\(|B|\\)": 1,
+            "교집합 \\(|A\\cap B|\\) 확인": 1,
+            "확률 계산": 3,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "같은 색인 경우 수 |A|": 1,
+            "같은 수인 경우 수 |B|": 1,
+            "겹치는 경우 |A∩B| 확인": 1,
+            "사건 정의 및 포함배제": 1,
+            "|A| 계산(같은 색)": 1,
+            "|B| 계산(같은 숫자)": 1,
+            "|A∩B| 계산(같은 색이면서 같은 숫자)": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.54024863243103,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.66169023513794,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리 적용",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "같은 색이면서 같은 숫자인 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.007632732391357,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분류 및 포함-배제 원리 적용",
+                "각 사건의 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.54024863243103,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "각 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.66169023513794,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리 적용",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "같은 색이면서 같은 숫자인 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.007632732391357,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "사건 분류 및 포함-배제 원리 적용",
+                "각 사건의 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "각 경우의 수 계산": 1,
+            "확률 계산": 3,
+            "사건 분석 - 포함배제 원리 적용": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "같은 색이면서 같은 숫자인 경우의 수": 1,
+            "사건 분류 및 포함-배제 원리 적용": 1,
+            "각 사건의 경우의 수 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "각 경우의 수 계산": 1,
+            "확률 계산": 3,
+            "사건 분석 - 포함배제 원리 적용": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "같은 색이면서 같은 숫자인 경우의 수": 1,
+            "사건 분류 및 포함-배제 원리 적용": 1,
+            "각 사건의 경우의 수 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.74186682701111,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 경우의 수",
+                "사건 B: 같은 수인 경우의 수",
+                "확률의 덧셈정리 및 정답 도출"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.182042360305786,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "같은 색인 공이 나오는 경우의 수",
+                "같은 수가 적힌 공이 나오는 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.990877151489258,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색인 경우",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.74186682701111,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색인 경우의 수",
+                "사건 B: 같은 수인 경우의 수",
+                "확률의 덧셈정리 및 정답 도출"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.182042360305786,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "같은 색인 공이 나오는 경우의 수",
+                "같은 수가 적힌 공이 나오는 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.990877151489258,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 꺼낸 공이 서로 같은 색인 경우",
+                "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 같은 색인 경우의 수": 1,
+            "사건 B: 같은 수인 경우의 수": 1,
+            "확률의 덧셈정리 및 정답 도출": 1,
+            "같은 색인 공이 나오는 경우의 수": 1,
+            "같은 수가 적힌 공이 나오는 경우의 수": 1,
+            "최종 확률 계산": 1,
+            "사건 A: 꺼낸 공이 서로 같은 색인 경우": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우": 1,
+            "확률의 덧셈정리를 이용한 최종 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 같은 색인 경우의 수": 1,
+            "사건 B: 같은 수인 경우의 수": 1,
+            "확률의 덧셈정리 및 정답 도출": 1,
+            "같은 색인 공이 나오는 경우의 수": 1,
+            "같은 수가 적힌 공이 나오는 경우의 수": 1,
+            "최종 확률 계산": 1,
+            "사건 A: 꺼낸 공이 서로 같은 색인 경우": 1,
+            "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우": 1,
+            "확률의 덧셈정리를 이용한 최종 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.0910222530365,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "유리한 경우 분류",
+                "같은 색 경우 계산",
+                "다른 색이지만 숫자 같은 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.86515712738037,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우 수 계산",
+                "사건 분류: 같은 색 또는 같은 숫자",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.67963123321533,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.0910222530365,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "유리한 경우 분류",
+                "같은 색 경우 계산",
+                "다른 색이지만 숫자 같은 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.86515712738037,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우 수 계산",
+                "사건 분류: 같은 색 또는 같은 숫자",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.67963123321533,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "유리한 경우 합산 및 확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "총 경우의 수 계산": 1,
+            "유리한 경우 분류": 1,
+            "같은 색 경우 계산": 3,
+            "다른 색이지만 숫자 같은 경우 계산": 1,
+            "유리한 경우 합산 및 확률 계산": 3,
+            "총 경우 수 계산": 2,
+            "사건 분류: 같은 색 또는 같은 숫자": 1,
+            "같은 숫자 경우 계산": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "총 경우의 수 계산": 1,
+            "유리한 경우 분류": 1,
+            "같은 색 경우 계산": 3,
+            "다른 색이지만 숫자 같은 경우 계산": 1,
+            "유리한 경우 합산 및 확률 계산": 3,
+            "총 경우 수 계산": 2,
+            "사건 분류: 같은 색 또는 같은 숫자": 1,
+            "같은 숫자 경우 계산": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.433815717697144,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A ∩ B) 계산",
+                "합사건 확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\) → ②번",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.04223680496216,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수 (숫자가 같은 경우)",
+                "사건 A∩B의 경우의 수",
+                "합사건 확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.702659368515015,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 정의",
+                "P(A) 계산",
+                "P(B) 계산",
+                "합집합 확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.433815717697144,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A ∩ B) 계산",
+                "합사건 확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\) → ②번",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.04223680496216,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수 (숫자가 같은 경우)",
+                "사건 A∩B의 경우의 수",
+                "합사건 확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.702659368515015,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "사건 정의",
+                "P(A) 계산",
+                "P(B) 계산",
+                "합집합 확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "P(A) 계산": 2,
+            "P(B) 계산": 2,
+            "P(A ∩ B) 계산": 1,
+            "합사건 확률 계산": 2,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수 (숫자가 같은 경우)": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "사건 정의": 1,
+            "합집합 확률 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "P(A) 계산": 2,
+            "P(B) 계산": 2,
+            "P(A ∩ B) 계산": 1,
+            "합사건 확률 계산": 2,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수 (숫자가 같은 경우)": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "사건 정의": 1,
+            "합집합 확률 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.008442640304565,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "조건에 맞는 경우의 수 분리",
+                "같은 색인 경우의 수 (|A|)",
+                "숫자가 같은 경우의 수 (|B|)",
+                "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)",
+                "조건 만족하는 전체 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.57202959060669,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용",
+                "같은 색인 경우의 수 계산",
+                "숫자가 같은 경우의 수 계산",
+                "같은 색이면서 숫자도 같은 경우 계산 (교집합)",
+                "조건 만족 경우의 수 합산",
+                "확률 계산"
+              ],
+              "final_answer": "\\boxed{\\dfrac{8}{15}}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.738996505737305,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "적합한 사건 정의",
+                "같은 색 공 뽑기 (A)",
+                "같은 숫자 뽑기 (B)",
+                "같은 색 AND 같은 숫자 (A ∩ B)",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.008442640304565,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "조건에 맞는 경우의 수 분리",
+                "같은 색인 경우의 수 (|A|)",
+                "숫자가 같은 경우의 수 (|B|)",
+                "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)",
+                "조건 만족하는 전체 경우의 수",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.57202959060669,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용",
+                "같은 색인 경우의 수 계산",
+                "숫자가 같은 경우의 수 계산",
+                "같은 색이면서 숫자도 같은 경우 계산 (교집합)",
+                "조건 만족 경우의 수 합산",
+                "확률 계산"
+              ],
+              "final_answer": "\\boxed{\\dfrac{8}{15}}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 58.738996505737305,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "적합한 사건 정의",
+                "같은 색 공 뽑기 (A)",
+                "같은 숫자 뽑기 (B)",
+                "같은 색 AND 같은 숫자 (A ∩ B)",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 7.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 2,
+            "조건에 맞는 경우의 수 분리": 1,
+            "같은 색인 경우의 수 (|A|)": 1,
+            "숫자가 같은 경우의 수 (|B|)": 1,
+            "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)": 1,
+            "조건 만족하는 전체 경우의 수": 1,
+            "확률 계산": 3,
+            "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용": 1,
+            "같은 색인 경우의 수 계산": 1,
+            "숫자가 같은 경우의 수 계산": 1,
+            "같은 색이면서 숫자도 같은 경우 계산 (교집합)": 1,
+            "조건 만족 경우의 수 합산": 1,
+            "적합한 사건 정의": 1,
+            "같은 색 공 뽑기 (A)": 1,
+            "같은 숫자 뽑기 (B)": 1,
+            "같은 색 AND 같은 숫자 (A ∩ B)": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 2,
+            "조건에 맞는 경우의 수 분리": 1,
+            "같은 색인 경우의 수 (|A|)": 1,
+            "숫자가 같은 경우의 수 (|B|)": 1,
+            "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)": 1,
+            "조건 만족하는 전체 경우의 수": 1,
+            "확률 계산": 3,
+            "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용": 1,
+            "같은 색인 경우의 수 계산": 1,
+            "숫자가 같은 경우의 수 계산": 1,
+            "같은 색이면서 숫자도 같은 경우 계산 (교집합)": 1,
+            "조건 만족 경우의 수 합산": 1,
+            "적합한 사건 정의": 1,
+            "같은 색 공 뽑기 (A)": 1,
+            "같은 숫자 뽑기 (B)": 1,
+            "같은 색 AND 같은 숫자 (A ∩ B)": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.277777777777778,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 3,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색인 경우 수 \\(|A|\\)": 1,
+          "숫자가 같은 경우 수 \\(|B|\\)": 1,
+          "교집합 \\(|A\\cap B|\\) 확인": 1,
+          "확률 계산": 9,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "같은 색인 경우 수 |A|": 1,
+          "같은 수인 경우 수 |B|": 1,
+          "겹치는 경우 |A∩B| 확인": 1,
+          "사건 정의 및 포함배제": 1,
+          "|A| 계산(같은 색)": 1,
+          "|B| 계산(같은 숫자)": 1,
+          "|A∩B| 계산(같은 색이면서 같은 숫자)": 1,
+          "조건 정리": 9,
+          "사건 분석 - 포함배제 원리": 1,
+          "각 경우의 수 계산": 1,
+          "사건 분석 - 포함배제 원리 적용": 1,
+          "같은 색인 경우의 수": 1,
+          "같은 숫자인 경우의 수": 1,
+          "같은 색이면서 같은 숫자인 경우의 수": 1,
+          "사건 분류 및 포함-배제 원리 적용": 1,
+          "각 사건의 경우의 수 계산": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 같은 색인 경우의 수": 1,
+          "사건 B: 같은 수인 경우의 수": 1,
+          "확률의 덧셈정리 및 정답 도출": 1,
+          "같은 색인 공이 나오는 경우의 수": 1,
+          "같은 수가 적힌 공이 나오는 경우의 수": 1,
+          "최종 확률 계산": 1,
+          "사건 A: 꺼낸 공이 서로 같은 색인 경우": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우": 1,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "총 경우의 수 계산": 1,
+          "유리한 경우 분류": 1,
+          "같은 색 경우 계산": 3,
+          "다른 색이지만 숫자 같은 경우 계산": 1,
+          "유리한 경우 합산 및 확률 계산": 3,
+          "총 경우 수 계산": 2,
+          "사건 분류: 같은 색 또는 같은 숫자": 1,
+          "같은 숫자 경우 계산": 2,
+          "P(A) 계산": 2,
+          "P(B) 계산": 2,
+          "P(A ∩ B) 계산": 1,
+          "합사건 확률 계산": 2,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수 (숫자가 같은 경우)": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "사건 정의": 1,
+          "합집합 확률 계산": 1,
+          "전체 경우의 수 계산": 2,
+          "조건에 맞는 경우의 수 분리": 1,
+          "같은 색인 경우의 수 (|A|)": 1,
+          "숫자가 같은 경우의 수 (|B|)": 1,
+          "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)": 1,
+          "조건 만족하는 전체 경우의 수": 1,
+          "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용": 1,
+          "같은 색인 경우의 수 계산": 1,
+          "숫자가 같은 경우의 수 계산": 1,
+          "같은 색이면서 숫자도 같은 경우 계산 (교집합)": 1,
+          "조건 만족 경우의 수 합산": 1,
+          "적합한 사건 정의": 1,
+          "같은 색 공 뽑기 (A)": 1,
+          "같은 숫자 뽑기 (B)": 1,
+          "같은 색 AND 같은 숫자 (A ∩ B)": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.387274503707886,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "사건 A 계산(같은 색)",
+                "사건 B 계산(같은 숫자)",
+                "교집합 A∩B 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.6891419887542725,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "A: 같은 색인 경우의 수",
+                "B: 같은 수인 경우의 수",
+                "교집합 A∩B 확인",
+                "포함-배제로 확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.259285688400269,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우의 수 \\(|A|\\)",
+                "적힌 수가 같은 경우의 수 \\(|B|\\)",
+                "교집합 \\(|A\\cap B|\\) 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.387274503707886,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "사건 A 계산(같은 색)",
+                "사건 B 계산(같은 숫자)",
+                "교집합 A∩B 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.6891419887542725,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 분해(같은 색 또는 같은 수)",
+                "A: 같은 색인 경우의 수",
+                "B: 같은 수인 경우의 수",
+                "교집합 A∩B 확인",
+                "포함-배제로 확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\ (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.259285688400269,
+              "step_count": 6,
+              "step_titles": [
+                "전체 경우의 수",
+                "사건 정의 및 포함배제",
+                "같은 색인 경우의 수 \\(|A|\\)",
+                "적힌 수가 같은 경우의 수 \\(|B|\\)",
+                "교집합 \\(|A\\cap B|\\) 확인",
+                "확률 계산"
+              ],
+              "final_answer": "\\[\n\\frac{8}{15}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함배제": 2,
+            "사건 A 계산(같은 색)": 1,
+            "사건 B 계산(같은 숫자)": 1,
+            "교집합 A∩B 확인": 2,
+            "확률 계산": 2,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "A: 같은 색인 경우의 수": 1,
+            "B: 같은 수인 경우의 수": 1,
+            "포함-배제로 확률 계산": 1,
+            "같은 색인 경우의 수 \\(|A|\\)": 1,
+            "적힌 수가 같은 경우의 수 \\(|B|\\)": 1,
+            "교집합 \\(|A\\cap B|\\) 확인": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수": 3,
+            "사건 정의 및 포함배제": 2,
+            "사건 A 계산(같은 색)": 1,
+            "사건 B 계산(같은 숫자)": 1,
+            "교집합 A∩B 확인": 2,
+            "확률 계산": 2,
+            "사건 분해(같은 색 또는 같은 수)": 1,
+            "A: 같은 색인 경우의 수": 1,
+            "B: 같은 수인 경우의 수": 1,
+            "포함-배제로 확률 계산": 1,
+            "같은 색인 경우의 수 \\(|A|\\)": 1,
+            "적힌 수가 같은 경우의 수 \\(|B|\\)": 1,
+            "교집합 \\(|A\\cap B|\\) 확인": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.106483221054077,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "교집합 (같은 색 AND 같은 숫자)",
+                "최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.963802099227905,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "여사건 활용 전략",
+                "여사건 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.572980403900146,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색일 확률 계산",
+                "같은 숫자일 확률 계산",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.106483221054077,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 분석 - 포함배제 원리",
+                "같은 색인 경우의 수",
+                "같은 숫자인 경우의 수",
+                "교집합 (같은 색 AND 같은 숫자)",
+                "최종 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.963802099227905,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "여사건 활용 전략",
+                "여사건 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.572980403900146,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "같은 색일 확률 계산",
+                "같은 숫자일 확률 계산",
+                "포함-배제 원리 적용",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "교집합 (같은 색 AND 같은 숫자)": 1,
+            "최종 계산": 1,
+            "전체 경우의 수": 2,
+            "여사건 활용 전략": 1,
+            "여사건 계산": 1,
+            "확률 계산": 2,
+            "같은 색일 확률 계산": 1,
+            "같은 숫자일 확률 계산": 1,
+            "포함-배제 원리 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "사건 분석 - 포함배제 원리": 1,
+            "같은 색인 경우의 수": 1,
+            "같은 숫자인 경우의 수": 1,
+            "교집합 (같은 색 AND 같은 숫자)": 1,
+            "최종 계산": 1,
+            "전체 경우의 수": 2,
+            "여사건 활용 전략": 1,
+            "여사건 계산": 1,
+            "확률 계산": 2,
+            "같은 색일 확률 계산": 1,
+            "같은 숫자일 확률 계산": 1,
+            "포함-배제 원리 적용": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.677997589111328,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색 공이 나오는 경우의 수",
+                "사건 B: 같은 수 공이 나오는 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.181798219680786,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색이 나올 경우의 수",
+                "사건 B: 같은 수가 적혀 있을 경우의 수",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.36193871498108,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색이 나올 경우의 수",
+                "사건 B: 같은 수가 적혀 있을 경우의 수",
+                "확률의 덧셈정리 및 최종 답"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.677997589111328,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색 공이 나오는 경우의 수",
+                "사건 B: 같은 수 공이 나오는 경우의 수",
+                "최종 확률 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.181798219680786,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색이 나올 경우의 수",
+                "사건 B: 같은 수가 적혀 있을 경우의 수",
+                "확률의 덧셈정리를 이용한 최종 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.36193871498108,
+              "step_count": 4,
+              "step_titles": [
+                "전체 경우의 수 구하기",
+                "사건 A: 같은 색이 나올 경우의 수",
+                "사건 B: 같은 수가 적혀 있을 경우의 수",
+                "확률의 덧셈정리 및 최종 답"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 같은 색 공이 나오는 경우의 수": 1,
+            "사건 B: 같은 수 공이 나오는 경우의 수": 1,
+            "최종 확률 계산": 1,
+            "사건 A: 같은 색이 나올 경우의 수": 2,
+            "사건 B: 같은 수가 적혀 있을 경우의 수": 2,
+            "확률의 덧셈정리를 이용한 최종 계산": 1,
+            "확률의 덧셈정리 및 최종 답": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "전체 경우의 수 구하기": 3,
+            "사건 A: 같은 색 공이 나오는 경우의 수": 1,
+            "사건 B: 같은 수 공이 나오는 경우의 수": 1,
+            "최종 확률 계산": 1,
+            "사건 A: 같은 색이 나올 경우의 수": 2,
+            "사건 B: 같은 수가 적혀 있을 경우의 수": 2,
+            "확률의 덧셈정리를 이용한 최종 계산": 1,
+            "확률의 덧셈정리 및 최종 답": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.10543727874756,
+              "step_count": 3,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "불리한 경우 계산 (다른 색이고 다른 숫자)",
+                "유리한 경우 계산 및 확률 도출"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.5852210521698,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우의 수 계산",
+                "같은 숫자 경우의 수 계산",
+                "합집합 및 확률 계산"
+              ],
+              "final_answer": "\\dfrac{8}{15}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.15664768218994,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.10543727874756,
+              "step_count": 3,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "불리한 경우 계산 (다른 색이고 다른 숫자)",
+                "유리한 경우 계산 및 확률 도출"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.5852210521698,
+              "step_count": 4,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우의 수 계산",
+                "같은 숫자 경우의 수 계산",
+                "합집합 및 확률 계산"
+              ],
+              "final_answer": "\\dfrac{8}{15}",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.15664768218994,
+              "step_count": 5,
+              "step_titles": [
+                "총 경우의 수 계산",
+                "같은 색 경우 계산",
+                "같은 숫자 경우 계산",
+                "합집합 계산",
+                "확률 계산"
+              ],
+              "final_answer": "\\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "총 경우의 수 계산": 3,
+            "불리한 경우 계산 (다른 색이고 다른 숫자)": 1,
+            "유리한 경우 계산 및 확률 도출": 1,
+            "같은 색 경우의 수 계산": 1,
+            "같은 숫자 경우의 수 계산": 1,
+            "합집합 및 확률 계산": 1,
+            "같은 색 경우 계산": 1,
+            "같은 숫자 경우 계산": 1,
+            "합집합 계산": 1,
+            "확률 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "총 경우의 수 계산": 3,
+            "불리한 경우 계산 (다른 색이고 다른 숫자)": 1,
+            "유리한 경우 계산 및 확률 도출": 1,
+            "같은 색 경우의 수 계산": 1,
+            "같은 숫자 경우의 수 계산": 1,
+            "합집합 및 확률 계산": 1,
+            "같은 색 경우 계산": 1,
+            "같은 숫자 경우 계산": 1,
+            "합집합 계산": 1,
+            "확률 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.037253379821777,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 정의",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A ∩ B) 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② \\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.617364645004272,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수",
+                "사건 A∩B의 경우의 수",
+                "합사건의 확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.241211414337158,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "사건의 여사건 고려",
+                "여사건 경우의 수 세기",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.037253379821777,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "사건 정의",
+                "P(A) 계산",
+                "P(B) 계산",
+                "P(A ∩ B) 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② \\( \\dfrac{8}{15} \\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.617364645004272,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수",
+                "사건 A의 경우의 수",
+                "사건 B의 경우의 수",
+                "사건 A∩B의 경우의 수",
+                "합사건의 확률 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.241211414337158,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "사건의 여사건 고려",
+                "여사건 경우의 수 세기",
+                "확률 계산"
+              ],
+              "final_answer": "\\(\\frac{8}{15}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 2,
+            "사건 정의": 1,
+            "P(A) 계산": 1,
+            "P(B) 계산": 1,
+            "P(A ∩ B) 계산": 1,
+            "확률 계산": 2,
+            "전체 경우의 수": 1,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "합사건의 확률 계산": 1,
+            "문제 이해 및 조건 정리": 1,
+            "사건의 여사건 고려": 1,
+            "여사건 경우의 수 세기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "사건 정의": 1,
+            "P(A) 계산": 1,
+            "P(B) 계산": 1,
+            "P(A ∩ B) 계산": 1,
+            "확률 계산": 2,
+            "전체 경우의 수": 1,
+            "사건 A의 경우의 수": 1,
+            "사건 B의 경우의 수": 1,
+            "사건 A∩B의 경우의 수": 1,
+            "합사건의 확률 계산": 1,
+            "문제 이해 및 조건 정리": 1,
+            "사건의 여사건 고려": 1,
+            "여사건 경우의 수 세기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.910972595214844,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색이거나 수가 같은 경우의 수 계산 (합집합)",
+                "같은 색인 경우의 수 (|A|)",
+                "같은 수인 경우의 수 (|B|)",
+                "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산",
+                "합집합 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.490493535995483,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색인 경우의 수",
+                "수치가 같은 경우의 수",
+                "중복 제거 (같은 색이면서 수치도 같은 경우?)",
+                "최종 경우의 수 합산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.444642066955566,
+              "step_count": 7,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "조건 정리",
+                "같은 색일 경우의 수 계산",
+                "수값이 같은 경우의 수 계산",
+                "교집합 \\(A \\cap B\\) 계산",
+                "합집합 사건의 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.910972595214844,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색이거나 수가 같은 경우의 수 계산 (합집합)",
+                "같은 색인 경우의 수 (|A|)",
+                "같은 수인 경우의 수 (|B|)",
+                "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산",
+                "합집합 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.490493535995483,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "전체 경우의 수 계산",
+                "같은 색인 경우의 수",
+                "수치가 같은 경우의 수",
+                "중복 제거 (같은 색이면서 수치도 같은 경우?)",
+                "최종 경우의 수 합산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.444642066955566,
+              "step_count": 7,
+              "step_titles": [
+                "전체 경우의 수 계산",
+                "조건 정리",
+                "같은 색일 경우의 수 계산",
+                "수값이 같은 경우의 수 계산",
+                "교집합 \\(A \\cap B\\) 계산",
+                "합집합 사건의 경우의 수 계산",
+                "확률 계산"
+              ],
+              "final_answer": "② $\\dfrac{8}{15}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 7.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 3,
+            "같은 색이거나 수가 같은 경우의 수 계산 (합집합)": 1,
+            "같은 색인 경우의 수 (|A|)": 1,
+            "같은 수인 경우의 수 (|B|)": 1,
+            "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산": 1,
+            "합집합 경우의 수 계산": 1,
+            "확률 계산": 3,
+            "같은 색인 경우의 수": 1,
+            "수치가 같은 경우의 수": 1,
+            "중복 제거 (같은 색이면서 수치도 같은 경우?)": 1,
+            "최종 경우의 수 합산": 1,
+            "같은 색일 경우의 수 계산": 1,
+            "수값이 같은 경우의 수 계산": 1,
+            "교집합 \\(A \\cap B\\) 계산": 1,
+            "합집합 사건의 경우의 수 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 7.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "전체 경우의 수 계산": 3,
+            "같은 색이거나 수가 같은 경우의 수 계산 (합집합)": 1,
+            "같은 색인 경우의 수 (|A|)": 1,
+            "같은 수인 경우의 수 (|B|)": 1,
+            "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산": 1,
+            "합집합 경우의 수 계산": 1,
+            "확률 계산": 3,
+            "같은 색인 경우의 수": 1,
+            "수치가 같은 경우의 수": 1,
+            "중복 제거 (같은 색이면서 수치도 같은 경우?)": 1,
+            "최종 경우의 수 합산": 1,
+            "같은 색일 경우의 수 계산": 1,
+            "수값이 같은 경우의 수 계산": 1,
+            "교집합 \\(A \\cap B\\) 계산": 1,
+            "합집합 사건의 경우의 수 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 5.388888888888889,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 6,
+          "사건 정의 및 포함배제": 2,
+          "사건 A 계산(같은 색)": 1,
+          "사건 B 계산(같은 숫자)": 1,
+          "교집합 A∩B 확인": 2,
+          "확률 계산": 10,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "A: 같은 색인 경우의 수": 1,
+          "B: 같은 수인 경우의 수": 1,
+          "포함-배제로 확률 계산": 1,
+          "같은 색인 경우의 수 \\(|A|\\)": 1,
+          "적힌 수가 같은 경우의 수 \\(|B|\\)": 1,
+          "교집합 \\(|A\\cap B|\\) 확인": 1,
+          "조건 정리": 8,
+          "사건 분석 - 포함배제 원리": 1,
+          "같은 색인 경우의 수": 2,
+          "같은 숫자인 경우의 수": 1,
+          "교집합 (같은 색 AND 같은 숫자)": 1,
+          "최종 계산": 1,
+          "여사건 활용 전략": 1,
+          "여사건 계산": 1,
+          "같은 색일 확률 계산": 1,
+          "같은 숫자일 확률 계산": 1,
+          "포함-배제 원리 적용": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 같은 색 공이 나오는 경우의 수": 1,
+          "사건 B: 같은 수 공이 나오는 경우의 수": 1,
+          "최종 확률 계산": 1,
+          "사건 A: 같은 색이 나올 경우의 수": 2,
+          "사건 B: 같은 수가 적혀 있을 경우의 수": 2,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "확률의 덧셈정리 및 최종 답": 1,
+          "총 경우의 수 계산": 3,
+          "불리한 경우 계산 (다른 색이고 다른 숫자)": 1,
+          "유리한 경우 계산 및 확률 도출": 1,
+          "같은 색 경우의 수 계산": 1,
+          "같은 숫자 경우의 수 계산": 1,
+          "합집합 및 확률 계산": 1,
+          "같은 색 경우 계산": 1,
+          "같은 숫자 경우 계산": 1,
+          "합집합 계산": 1,
+          "사건 정의": 1,
+          "P(A) 계산": 1,
+          "P(B) 계산": 1,
+          "P(A ∩ B) 계산": 1,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "합사건의 확률 계산": 1,
+          "문제 이해 및 조건 정리": 1,
+          "사건의 여사건 고려": 1,
+          "여사건 경우의 수 세기": 1,
+          "전체 경우의 수 계산": 3,
+          "같은 색이거나 수가 같은 경우의 수 계산 (합집합)": 1,
+          "같은 색인 경우의 수 (|A|)": 1,
+          "같은 수인 경우의 수 (|B|)": 1,
+          "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산": 1,
+          "합집합 경우의 수 계산": 1,
+          "수치가 같은 경우의 수": 1,
+          "중복 제거 (같은 색이면서 수치도 같은 경우?)": 1,
+          "최종 경우의 수 합산": 1,
+          "같은 색일 경우의 수 계산": 1,
+          "수값이 같은 경우의 수 계산": 1,
+          "교집합 \\(A \\cap B\\) 계산": 1,
+          "합집합 사건의 경우의 수 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 3,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색인 경우 수 |A|": 1,
+          "같은 수인 경우 수 |B|": 1,
+          "교집합 |A∩B| 확인": 2,
+          "확률 계산": 12,
+          "사건 정의 및 포함배제": 2,
+          "같은 색으로 뽑는 경우 |A|": 1,
+          "같은 수로 뽑는 경우 |B|": 1,
+          "같은 색인 경우(|A|)": 1,
+          "같은 수인 경우(|B|)": 1,
+          "교집합 확인(|A∩B|)": 1,
+          "조건 정리": 9,
+          "사건 분석 - 포함배제 원리": 3,
+          "각 경우의 수 계산": 3,
+          "전체 경우의 수 구하기": 3,
+          "조건 1: 같은 색일 경우의 수": 1,
+          "조건 2: 같은 수일 경우의 수": 1,
+          "최종 확률 계산": 3,
+          "사건 A: 같은 색인 경우": 1,
+          "사건 B: 같은 수인 경우": 1,
+          "사건 A: 같은 색인 공이 나올 경우의 수": 1,
+          "사건 B: 같은 수가 적힌 공이 나올 경우의 수": 1,
+          "최종 확률 계산 (덧셈정리)": 1,
+          "총 경우의 수 계산": 1,
+          "같은 색 경우 계산": 3,
+          "같은 숫자 경우 계산": 3,
+          "유리한 경우 합산 및 확률 계산": 1,
+          "전체 경우의 수 계산": 4,
+          "합집합 계산": 2,
+          "집합의 크기 계산": 1,
+          "합집합의 크기(포함-배제 원리)": 1,
+          "확률 계산 및 최종 답": 1,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "같은 색인 경우": 1,
+          "숫자가 같은 경우 (다른 색일 때만 고려)": 1,
+          "중복 제거 (포함-배제 원리)": 1,
+          "같은 색 뽑을 확률 계산": 1,
+          "같은 숫자 뽑을 확률 계산": 1,
+          "같은 색이면서 같은 숫자인 경우 계산": 1,
+          "조건을 만족하는 경우의 수 계산": 1,
+          "같은 색인 경우의 수": 1,
+          "같은 숫자인 경우의 수": 1,
+          "같은 색 **그리고** 같은 숫자인 경우의 수": 1,
+          "조건 만족하는 전체 경우의 수": 1,
+          "같은 색일 확률 계산": 1,
+          "같은 숫자일 확률 계산": 1,
+          "같은 색이면서 같은 숫자일 확률 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 5.611111111111111,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 6,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색으로 뽑는 경우(|A|)": 1,
+          "같은 숫자로 뽑는 경우(|B|)": 1,
+          "교집합 확인(|A∩B|)": 2,
+          "확률 계산": 12,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "같은 색인 경우(|A|)": 1,
+          "같은 수인 경우(|B|)": 1,
+          "겹치는 경우 확인(|A∩B|)": 1,
+          "사건 정의 및 포함배제": 1,
+          "같은 색인 경우 계산(|A|)": 1,
+          "같은 수인 경우 계산(|B|)": 1,
+          "조건 정리": 9,
+          "같은 색인 경우의 수": 3,
+          "같은 숫자인 경우의 수": 3,
+          "포함-배제 원리 적용": 3,
+          "사건 분석 - 포함배제 원리": 1,
+          "각 경우의 수 계산": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 꺼낸 공이 서로 같은 색일 경우": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우": 1,
+          "확률의 덧셈정리 및 최종 계산": 1,
+          "조건 1: 같은 색인 경우의 수": 1,
+          "조건 2: 같은 수인 경우의 수": 1,
+          "확률 계산 (덧셈정리)": 1,
+          "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수": 1,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "총 경우의 수 계산": 2,
+          "같은 색 경우 계산": 1,
+          "같은 숫자 경우 계산": 1,
+          "유리한 경우 합산": 1,
+          "전체 경우의 수 계산": 4,
+          "같은 색인 경우 계산": 1,
+          "같은 숫자인 경우 계산": 1,
+          "중복 확인 및 총 유리한 경우": 1,
+          "불리한 경우 분석": 1,
+          "사건 A: 같은 색인 경우": 1,
+          "사건 B: 같은 수인 경우": 1,
+          "사건 A와 B의 교집합": 1,
+          "합사건의 확률 계산": 1,
+          "중복 제거 (포함-배제 원리)": 1,
+          "P(A) 계산": 1,
+          "P(B) 계산": 1,
+          "P(A∩B) 계산": 1,
+          "P(A∪B) 계산": 1,
+          "기약분수 확인 및 보기 비교": 1,
+          "P(A) 재계산": 1,
+          "P(B) 재계산": 1,
+          "통분 계산": 1,
+          "조건 재해석": 1,
+          "계산 오류 발견": 1,
+          "P(B)의 올바른 계산": 1,
+          "확률 재계산": 1,
+          "같은 색일 확률 계산": 1,
+          "숫자가 같을 확률 계산": 2,
+          "같은 색일 확률 계산 (흰색 또는 검은색)": 1,
+          "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)": 1,
+          "같은 색일 확률 \\( P(A) \\) 계산": 1,
+          "같은 숫자일 확률 \\( P(B) \\) 계산": 1,
+          "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산": 1,
+          "확률 합산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 5.277777777777778,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 3,
+          "사건 정의 및 포함-배제": 1,
+          "같은 색인 경우 수 \\(|A|\\)": 1,
+          "숫자가 같은 경우 수 \\(|B|\\)": 1,
+          "교집합 \\(|A\\cap B|\\) 확인": 1,
+          "확률 계산": 9,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "같은 색인 경우 수 |A|": 1,
+          "같은 수인 경우 수 |B|": 1,
+          "겹치는 경우 |A∩B| 확인": 1,
+          "사건 정의 및 포함배제": 1,
+          "|A| 계산(같은 색)": 1,
+          "|B| 계산(같은 숫자)": 1,
+          "|A∩B| 계산(같은 색이면서 같은 숫자)": 1,
+          "조건 정리": 9,
+          "사건 분석 - 포함배제 원리": 1,
+          "각 경우의 수 계산": 1,
+          "사건 분석 - 포함배제 원리 적용": 1,
+          "같은 색인 경우의 수": 1,
+          "같은 숫자인 경우의 수": 1,
+          "같은 색이면서 같은 숫자인 경우의 수": 1,
+          "사건 분류 및 포함-배제 원리 적용": 1,
+          "각 사건의 경우의 수 계산": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 같은 색인 경우의 수": 1,
+          "사건 B: 같은 수인 경우의 수": 1,
+          "확률의 덧셈정리 및 정답 도출": 1,
+          "같은 색인 공이 나오는 경우의 수": 1,
+          "같은 수가 적힌 공이 나오는 경우의 수": 1,
+          "최종 확률 계산": 1,
+          "사건 A: 꺼낸 공이 서로 같은 색인 경우": 1,
+          "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우": 1,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "총 경우의 수 계산": 1,
+          "유리한 경우 분류": 1,
+          "같은 색 경우 계산": 3,
+          "다른 색이지만 숫자 같은 경우 계산": 1,
+          "유리한 경우 합산 및 확률 계산": 3,
+          "총 경우 수 계산": 2,
+          "사건 분류: 같은 색 또는 같은 숫자": 1,
+          "같은 숫자 경우 계산": 2,
+          "P(A) 계산": 2,
+          "P(B) 계산": 2,
+          "P(A ∩ B) 계산": 1,
+          "합사건 확률 계산": 2,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수 (숫자가 같은 경우)": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "사건 정의": 1,
+          "합집합 확률 계산": 1,
+          "전체 경우의 수 계산": 2,
+          "조건에 맞는 경우의 수 분리": 1,
+          "같은 색인 경우의 수 (|A|)": 1,
+          "숫자가 같은 경우의 수 (|B|)": 1,
+          "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)": 1,
+          "조건 만족하는 전체 경우의 수": 1,
+          "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용": 1,
+          "같은 색인 경우의 수 계산": 1,
+          "숫자가 같은 경우의 수 계산": 1,
+          "같은 색이면서 숫자도 같은 경우 계산 (교집합)": 1,
+          "조건 만족 경우의 수 합산": 1,
+          "적합한 사건 정의": 1,
+          "같은 색 공 뽑기 (A)": 1,
+          "같은 숫자 뽑기 (B)": 1,
+          "같은 색 AND 같은 숫자 (A ∩ B)": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 5.388888888888889,
+        "title_frequency_all_models": {
+          "전체 경우의 수": 6,
+          "사건 정의 및 포함배제": 2,
+          "사건 A 계산(같은 색)": 1,
+          "사건 B 계산(같은 숫자)": 1,
+          "교집합 A∩B 확인": 2,
+          "확률 계산": 10,
+          "사건 분해(같은 색 또는 같은 수)": 1,
+          "A: 같은 색인 경우의 수": 1,
+          "B: 같은 수인 경우의 수": 1,
+          "포함-배제로 확률 계산": 1,
+          "같은 색인 경우의 수 \\(|A|\\)": 1,
+          "적힌 수가 같은 경우의 수 \\(|B|\\)": 1,
+          "교집합 \\(|A\\cap B|\\) 확인": 1,
+          "조건 정리": 8,
+          "사건 분석 - 포함배제 원리": 1,
+          "같은 색인 경우의 수": 2,
+          "같은 숫자인 경우의 수": 1,
+          "교집합 (같은 색 AND 같은 숫자)": 1,
+          "최종 계산": 1,
+          "여사건 활용 전략": 1,
+          "여사건 계산": 1,
+          "같은 색일 확률 계산": 1,
+          "같은 숫자일 확률 계산": 1,
+          "포함-배제 원리 적용": 1,
+          "전체 경우의 수 구하기": 3,
+          "사건 A: 같은 색 공이 나오는 경우의 수": 1,
+          "사건 B: 같은 수 공이 나오는 경우의 수": 1,
+          "최종 확률 계산": 1,
+          "사건 A: 같은 색이 나올 경우의 수": 2,
+          "사건 B: 같은 수가 적혀 있을 경우의 수": 2,
+          "확률의 덧셈정리를 이용한 최종 계산": 1,
+          "확률의 덧셈정리 및 최종 답": 1,
+          "총 경우의 수 계산": 3,
+          "불리한 경우 계산 (다른 색이고 다른 숫자)": 1,
+          "유리한 경우 계산 및 확률 도출": 1,
+          "같은 색 경우의 수 계산": 1,
+          "같은 숫자 경우의 수 계산": 1,
+          "합집합 및 확률 계산": 1,
+          "같은 색 경우 계산": 1,
+          "같은 숫자 경우 계산": 1,
+          "합집합 계산": 1,
+          "사건 정의": 1,
+          "P(A) 계산": 1,
+          "P(B) 계산": 1,
+          "P(A ∩ B) 계산": 1,
+          "사건 A의 경우의 수": 1,
+          "사건 B의 경우의 수": 1,
+          "사건 A∩B의 경우의 수": 1,
+          "합사건의 확률 계산": 1,
+          "문제 이해 및 조건 정리": 1,
+          "사건의 여사건 고려": 1,
+          "여사건 경우의 수 세기": 1,
+          "전체 경우의 수 계산": 3,
+          "같은 색이거나 수가 같은 경우의 수 계산 (합집합)": 1,
+          "같은 색인 경우의 수 (|A|)": 1,
+          "같은 수인 경우의 수 (|B|)": 1,
+          "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산": 1,
+          "합집합 경우의 수 계산": 1,
+          "수치가 같은 경우의 수": 1,
+          "중복 제거 (같은 색이면서 수치도 같은 경우?)": 1,
+          "최종 경우의 수 합산": 1,
+          "같은 색일 경우의 수 계산": 1,
+          "수값이 같은 경우의 수 계산": 1,
+          "교집합 \\(A \\cap B\\) 계산": 1,
+          "합집합 사건의 경우의 수 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 5.305555555555555,
+      "title_frequency": {
+        "전체 경우의 수": 18,
+        "사건 정의 및 포함-배제": 3,
+        "같은 색인 경우 수 |A|": 2,
+        "같은 수인 경우 수 |B|": 2,
+        "교집합 |A∩B| 확인": 2,
+        "확률 계산": 43,
+        "사건 정의 및 포함배제": 6,
+        "같은 색으로 뽑는 경우 |A|": 1,
+        "같은 수로 뽑는 경우 |B|": 1,
+        "같은 색인 경우(|A|)": 2,
+        "같은 수인 경우(|B|)": 2,
+        "교집합 확인(|A∩B|)": 3,
+        "조건 정리": 35,
+        "사건 분석 - 포함배제 원리": 6,
+        "각 경우의 수 계산": 5,
+        "전체 경우의 수 구하기": 12,
+        "조건 1: 같은 색일 경우의 수": 1,
+        "조건 2: 같은 수일 경우의 수": 1,
+        "최종 확률 계산": 5,
+        "사건 A: 같은 색인 경우": 2,
+        "사건 B: 같은 수인 경우": 2,
+        "사건 A: 같은 색인 공이 나올 경우의 수": 1,
+        "사건 B: 같은 수가 적힌 공이 나올 경우의 수": 1,
+        "최종 확률 계산 (덧셈정리)": 1,
+        "총 경우의 수 계산": 7,
+        "같은 색 경우 계산": 8,
+        "같은 숫자 경우 계산": 7,
+        "유리한 경우 합산 및 확률 계산": 4,
+        "전체 경우의 수 계산": 13,
+        "합집합 계산": 3,
+        "집합의 크기 계산": 1,
+        "합집합의 크기(포함-배제 원리)": 1,
+        "확률 계산 및 최종 답": 1,
+        "사건 A의 경우의 수": 3,
+        "사건 B의 경우의 수": 2,
+        "사건 A∩B의 경우의 수": 3,
+        "같은 색인 경우": 1,
+        "숫자가 같은 경우 (다른 색일 때만 고려)": 1,
+        "중복 제거 (포함-배제 원리)": 2,
+        "같은 색 뽑을 확률 계산": 1,
+        "같은 숫자 뽑을 확률 계산": 1,
+        "같은 색이면서 같은 숫자인 경우 계산": 1,
+        "조건을 만족하는 경우의 수 계산": 1,
+        "같은 색인 경우의 수": 7,
+        "같은 숫자인 경우의 수": 6,
+        "같은 색 **그리고** 같은 숫자인 경우의 수": 1,
+        "조건 만족하는 전체 경우의 수": 2,
+        "같은 색일 확률 계산": 3,
+        "같은 숫자일 확률 계산": 2,
+        "같은 색이면서 같은 숫자일 확률 계산": 1,
+        "같은 색으로 뽑는 경우(|A|)": 1,
+        "같은 숫자로 뽑는 경우(|B|)": 1,
+        "사건 분해(같은 색 또는 같은 수)": 3,
+        "겹치는 경우 확인(|A∩B|)": 1,
+        "같은 색인 경우 계산(|A|)": 1,
+        "같은 수인 경우 계산(|B|)": 1,
+        "포함-배제 원리 적용": 4,
+        "사건 A: 꺼낸 공이 서로 같은 색일 경우": 1,
+        "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우": 1,
+        "확률의 덧셈정리 및 최종 계산": 1,
+        "조건 1: 같은 색인 경우의 수": 1,
+        "조건 2: 같은 수인 경우의 수": 1,
+        "확률 계산 (덧셈정리)": 1,
+        "사건 A: 꺼낸 공이 서로 같은 색일 경우의 수": 1,
+        "사건 B: 꺼낸 공에 적힌 수가 서로 같을 경우의 수": 1,
+        "확률의 덧셈정리를 이용한 최종 계산": 3,
+        "유리한 경우 합산": 1,
+        "같은 색인 경우 계산": 1,
+        "같은 숫자인 경우 계산": 1,
+        "중복 확인 및 총 유리한 경우": 1,
+        "불리한 경우 분석": 1,
+        "사건 A와 B의 교집합": 1,
+        "합사건의 확률 계산": 2,
+        "P(A) 계산": 4,
+        "P(B) 계산": 4,
+        "P(A∩B) 계산": 1,
+        "P(A∪B) 계산": 1,
+        "기약분수 확인 및 보기 비교": 1,
+        "P(A) 재계산": 1,
+        "P(B) 재계산": 1,
+        "통분 계산": 1,
+        "조건 재해석": 1,
+        "계산 오류 발견": 1,
+        "P(B)의 올바른 계산": 1,
+        "확률 재계산": 1,
+        "숫자가 같을 확률 계산": 2,
+        "같은 색일 확률 계산 (흰색 또는 검은색)": 1,
+        "중복 제거 (같은 색이면서 같은 숫자인 경우 존재 여부 확인)": 1,
+        "같은 색일 확률 \\( P(A) \\) 계산": 1,
+        "같은 숫자일 확률 \\( P(B) \\) 계산": 1,
+        "같은 색이면서 같은 숫자일 확률 \\( P(A \\cap B) \\) 계산": 1,
+        "확률 합산": 1,
+        "같은 색인 경우 수 \\(|A|\\)": 1,
+        "숫자가 같은 경우 수 \\(|B|\\)": 1,
+        "교집합 \\(|A\\cap B|\\) 확인": 2,
+        "겹치는 경우 |A∩B| 확인": 1,
+        "|A| 계산(같은 색)": 1,
+        "|B| 계산(같은 숫자)": 1,
+        "|A∩B| 계산(같은 색이면서 같은 숫자)": 1,
+        "사건 분석 - 포함배제 원리 적용": 1,
+        "같은 색이면서 같은 숫자인 경우의 수": 1,
+        "사건 분류 및 포함-배제 원리 적용": 1,
+        "각 사건의 경우의 수 계산": 1,
+        "사건 A: 같은 색인 경우의 수": 1,
+        "사건 B: 같은 수인 경우의 수": 1,
+        "확률의 덧셈정리 및 정답 도출": 1,
+        "같은 색인 공이 나오는 경우의 수": 1,
+        "같은 수가 적힌 공이 나오는 경우의 수": 1,
+        "사건 A: 꺼낸 공이 서로 같은 색인 경우": 1,
+        "사건 B: 꺼낸 공에 적힌 수가 서로 같은 경우": 1,
+        "유리한 경우 분류": 1,
+        "다른 색이지만 숫자 같은 경우 계산": 1,
+        "총 경우 수 계산": 2,
+        "사건 분류: 같은 색 또는 같은 숫자": 1,
+        "P(A ∩ B) 계산": 2,
+        "합사건 확률 계산": 2,
+        "사건 B의 경우의 수 (숫자가 같은 경우)": 1,
+        "사건 정의": 2,
+        "합집합 확률 계산": 1,
+        "조건에 맞는 경우의 수 분리": 1,
+        "같은 색인 경우의 수 (|A|)": 2,
+        "숫자가 같은 경우의 수 (|B|)": 1,
+        "같은 색이면서 숫자도 같은 경우 (|A ∩ B|)": 1,
+        "좋은 경우(조건 만족) 계산: 포함-배제 원리 적용": 1,
+        "같은 색인 경우의 수 계산": 1,
+        "숫자가 같은 경우의 수 계산": 1,
+        "같은 색이면서 숫자도 같은 경우 계산 (교집합)": 1,
+        "조건 만족 경우의 수 합산": 1,
+        "적합한 사건 정의": 1,
+        "같은 색 공 뽑기 (A)": 1,
+        "같은 숫자 뽑기 (B)": 1,
+        "같은 색 AND 같은 숫자 (A ∩ B)": 1,
+        "사건 A 계산(같은 색)": 1,
+        "사건 B 계산(같은 숫자)": 1,
+        "교집합 A∩B 확인": 2,
+        "A: 같은 색인 경우의 수": 1,
+        "B: 같은 수인 경우의 수": 1,
+        "포함-배제로 확률 계산": 1,
+        "같은 색인 경우의 수 \\(|A|\\)": 1,
+        "적힌 수가 같은 경우의 수 \\(|B|\\)": 1,
+        "교집합 (같은 색 AND 같은 숫자)": 1,
+        "최종 계산": 1,
+        "여사건 활용 전략": 1,
+        "여사건 계산": 1,
+        "사건 A: 같은 색 공이 나오는 경우의 수": 1,
+        "사건 B: 같은 수 공이 나오는 경우의 수": 1,
+        "사건 A: 같은 색이 나올 경우의 수": 2,
+        "사건 B: 같은 수가 적혀 있을 경우의 수": 2,
+        "확률의 덧셈정리 및 최종 답": 1,
+        "불리한 경우 계산 (다른 색이고 다른 숫자)": 1,
+        "유리한 경우 계산 및 확률 도출": 1,
+        "같은 색 경우의 수 계산": 1,
+        "같은 숫자 경우의 수 계산": 1,
+        "합집합 및 확률 계산": 1,
+        "문제 이해 및 조건 정리": 1,
+        "사건의 여사건 고려": 1,
+        "여사건 경우의 수 세기": 1,
+        "같은 색이거나 수가 같은 경우의 수 계산 (합집합)": 1,
+        "같은 수인 경우의 수 (|B|)": 1,
+        "같은 색이면서 수가 같은 경우 (|A ∩ B|) 계산": 1,
+        "합집합 경우의 수 계산": 1,
+        "수치가 같은 경우의 수": 1,
+        "중복 제거 (같은 색이면서 수치도 같은 경우?)": 1,
+        "최종 경우의 수 합산": 1,
+        "같은 색일 경우의 수 계산": 1,
+        "수값이 같은 경우의 수 계산": 1,
+        "교집합 \\(A \\cap B\\) 계산": 1,
+        "합집합 사건의 경우의 수 계산": 1
+      },
+      "accuracy": 0.0,
+      "n_samples": 72
+    }
+  }
+}

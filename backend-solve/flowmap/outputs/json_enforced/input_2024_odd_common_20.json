@@ -1,0 +1,85 @@
+{
+  "problem_text": "20. $a>\\sqrt{2}$인 실수 $a$에 대하여 함수 $f(x)$를 $$f(x)=-x^3+ax^2+2x$$라 하자. 곡선 $y=f(x)$ 위의 점 $\\mathrm{O}(0,0)$에서의 접선이 곡선 $y=f(x)$와 만나는 점 중 $\\mathrm{O}$가 아닌 점을 $\\mathrm{A}$라 하고, 곡선 $y=f(x)$ 위의 점 $\\mathrm{A}$에서의 접선이 $x$축과 만나는 점을 $\\mathrm{B}$라 하자. 점 $\\mathrm{A}$가 선분 $\\mathrm{OB}$를 지름으로 하는 원 위의 점일 때, $\\overline{\\mathrm{OA}} \\times \\overline{\\mathrm{AB}}$의 값을 구하시오. [4점]",
+  "solutions": [
+    {
+      "model_name": "gpt-5.2",
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "O에서 접선과 점 A 구하기",
+          "content": "f(x)=-x^3+ax^2+2x 이므로 f'(x)=-3x^2+2ax+2.\n점 O(0,0)에서의 접선 기울기는 f'(0)=2, 접선은 y=2x.\n이 접선과 곡선의 교점은 f(x)=2x를 풀면 된다:\n-x^3+ax^2+2x=2x ⟺ -x^3+ax^2=0 ⟺ x^2(-x+a)=0.\n따라서 x=0(중근) 또는 x=a. O가 아닌 교점 A는 x=a이고\nA=(a, f(a))=(a, -a^3+a·a^2+2a)=(a, 2a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "A에서 접선과 점 B 구하기",
+          "content": "A에서의 접선 기울기: f'(a)=-3a^2+2a·a+2=2-a^2.\n접선 방정식은 점-기울기 형태로\ny-2a=(2-a^2)(x-a).\n이 직선이 x축(y=0)과 만나는 점 B의 x좌표를 구하면\n0-2a=(2-a^2)(x_B-a)\n⟺ x_B-a=\\frac{-2a}{2-a^2}=\\frac{2a}{a^2-2}\n⟺ x_B=a+\\frac{2a}{a^2-2}=\\frac{a(a^2-2)+2a}{a^2-2}=\\frac{a^3}{a^2-2}.\n따라서 B=(\\frac{a^3}{a^2-2}, 0). (조건 a>\\sqrt2로 분모 양수)"
+        },
+        {
+          "step_idx": 2,
+          "title": "원 위 조건을 직각 조건으로 변환",
+          "content": "A가 선분 OB를 지름으로 하는 원 위에 있다는 것은 (탈레스 정리)\n∠OAB=90° 즉, 벡터 AO와 AB가 수직임을 뜻한다.\nO=(0,0), A=(a,2a), B=(\\frac{a^3}{a^2-2},0).\n벡터 AO=O-A=(-a,-2a), 벡터 AB=B-A=(\\frac{a^3}{a^2-2}-a, -2a).\n수직 조건 AO·AB=0:\n(-a)\\left(\\frac{a^3}{a^2-2}-a\\right)+(-2a)(-2a)=0\n⟺ -a\\left(\\frac{a^3}{a^2-2}-a\\right)+4a^2=0.\na>0이므로 a로 나누면\n-\\left(\\frac{a^3}{a^2-2}-a\\right)+4a=0\n⟺ -\\frac{a^3}{a^2-2}+a+4a=0\n⟺ \\frac{a^3}{a^2-2}=5a.\n(a>0이므로) 다시 a로 나누면\n\\frac{a^2}{a^2-2}=5 ⟺ a^2=5a^2-10 ⟺ 4a^2=10 ⟺ a^2=\\frac52.\n따라서 a=\\sqrt{\\frac52} (조건 a>\\sqrt2 만족)."
+        },
+        {
+          "step_idx": 3,
+          "title": "OA와 AB 길이 계산",
+          "content": "a^2=\\frac52를 이용한다.\n먼저 OA=\\sqrt{(a-0)^2+(2a-0)^2}=\\sqrt{a^2+4a^2}=a\\sqrt5.\n다음으로 B의 x좌표는 위에서 \\frac{a^3}{a^2-2}=5a 이므로 B=(5a,0).\n따라서 AB=\\sqrt{(5a-a)^2+(0-2a)^2}=\\sqrt{(4a)^2+(-2a)^2}=a\\sqrt{20}=2a\\sqrt5.\n그러므로 \\overline{OA}\\times\\overline{AB}=(a\\sqrt5)(2a\\sqrt5)=2a^2\\cdot 5=10a^2=10\\cdot\\frac52=25."
+        }
+      ]
+    },
+    {
+      "model_name": "claude-opus-4.5",
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "점 O에서의 접선과 점 A 구하기",
+          "content": "f(x) = -x³ + ax² + 2x이므로 f'(x) = -3x² + 2ax + 2\n\n점 O(0,0)에서의 접선의 기울기: f'(0) = 2\n따라서 점 O에서의 접선: y = 2x\n\n접선 y = 2x와 곡선 y = f(x)의 교점을 구하면:\n-x³ + ax² + 2x = 2x\n-x³ + ax² = 0\nx²(-x + a) = 0\nx = 0 또는 x = a\n\n점 A는 O가 아닌 점이므로 A(a, f(a)) = A(a, 2a)"
+        },
+        {
+          "step_idx": 1,
+          "title": "점 A에서의 접선과 점 B 구하기",
+          "content": "점 A(a, 2a)에서의 접선의 기울기:\nf'(a) = -3a² + 2a·a + 2 = -3a² + 2a² + 2 = -a² + 2\n\n점 A에서의 접선의 방정식:\ny - 2a = (-a² + 2)(x - a)\ny = (-a² + 2)x - a(-a² + 2) + 2a\ny = (-a² + 2)x + a³ - 2a + 2a\ny = (-a² + 2)x + a³\n\n점 B는 이 접선이 x축과 만나는 점이므로 y = 0:\n0 = (-a² + 2)x + a³\nx = a³/(a² - 2)\n\n따라서 B(a³/(a² - 2), 0)"
+        },
+        {
+          "step_idx": 2,
+          "title": "점 A가 선분 OB를 지름으로 하는 원 위의 점 조건",
+          "content": "O(0, 0), B(a³/(a² - 2), 0), A(a, 2a)\n\n선분 OB를 지름으로 하는 원 위에 점 A가 있으면, ∠OAB = 90°\n즉, 벡터 AO와 벡터 AB가 수직이어야 함.\n\n벡터 AO = (0 - a, 0 - 2a) = (-a, -2a)\n벡터 AB = (a³/(a² - 2) - a, 0 - 2a) = (a³/(a² - 2) - a, -2a)\n\na³/(a² - 2) - a = (a³ - a(a² - 2))/(a² - 2) = (a³ - a³ + 2a)/(a² - 2) = 2a/(a² - 2)\n\n따라서 벡터 AB = (2a/(a² - 2), -2a)"
+        },
+        {
+          "step_idx": 3,
+          "title": "수직 조건으로 a 값 결정",
+          "content": "AO · AB = 0 (수직 조건)\n\n(-a) · (2a/(a² - 2)) + (-2a) · (-2a) = 0\n-2a²/(a² - 2) + 4a² = 0\n\n4a² = 2a²/(a² - 2)\n4a²(a² - 2) = 2a²\n\na² ≠ 0이므로 양변을 a²로 나누면:\n4(a² - 2) = 2\n4a² - 8 = 2\n4a² = 10\na² = 5/2\na = √(5/2) = √10/2 (a > √2 조건 만족)"
+        },
+        {
+          "step_idx": 4,
+          "title": "OA × AB 계산",
+          "content": "a² = 5/2이므로 a² - 2 = 1/2\n\n점 A(a, 2a)에서:\nOA² = a² + 4a² = 5a² = 5 · (5/2) = 25/2\nOA = 5/√2\n\n벡터 AB = (2a/(a² - 2), -2a) = (2a/(1/2), -2a) = (4a, -2a)\nAB² = 16a² + 4a² = 20a² = 20 · (5/2) = 50\nAB = 5√2\n\n따라서:\nOA × AB = (5/√2) × (5√2) = 25"
+        }
+      ]
+    },
+    {
+      "model_name": "gemini-3-pro",
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "점 A의 좌표 구하기",
+          "content": "함수 $f(x)=-x^3+ax^2+2x$를 미분하면 $f'(x)=-3x^2+2ax+2$입니다. 원점 $\\mathrm{O}(0,0)$에서의 접선의 기울기는 $f'(0)=2$이므로, 접선의 방정식은 $y=2x$입니다. 곡선과 접선의 교점을 구하기 위해 $-x^3+ax^2+2x=2x$를 풀면 $-x^2(x-a)=0$이 됩니다. $\\mathrm{O}$가 아닌 점 $\\mathrm{A}$의 $x$좌표는 $a$이므로, 점 $\\mathrm{A}$의 좌표는 $(a, 2a)$입니다."
+        },
+        {
+          "step_idx": 1,
+          "title": "수직 조건을 이용한 a값 결정",
+          "content": "점 $\\mathrm{A}$가 선분 $\\mathrm{OB}$를 지름으로 하는 원 위의 점이라는 조건은 $\\angle \\mathrm{OAB} = 90^\\circ$임을 의미합니다. 즉, 원점에서의 접선($\\mathrm{OA}$)과 점 $\\mathrm{A}$에서의 접선($\\mathrm{AB}$)이 서로 수직입니다. 점 $\\mathrm{A}$에서의 접선의 기울기는 $f'(a) = -3a^2+2a^2+2 = -a^2+2$입니다. 두 직선이 수직이므로 기울기의 곱은 $-1$이어야 합니다.\n$$2 \\times (-a^2+2) = -1$$\n$$-2a^2 + 4 = -1 \\implies a^2 = \\frac{5}{2}$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "점 B의 좌표 구하기",
+          "content": "점 $\\mathrm{A}$에서의 접선의 기울기는 $2 \\times m = -1$에서 $m=-\\frac{1}{2}$입니다. 점 $\\mathrm{A}(a, 2a)$를 지나고 기울기가 $-\\frac{1}{2}$인 직선의 방정식은 $y-2a = -\\frac{1}{2}(x-a)$입니다. 점 $\\mathrm{B}$는 이 직선의 $x$절편이므로 $y=0$을 대입하면, $-2a = -\\frac{1}{2}(x-a) \\implies 4a = x-a \\implies x=5a$가 됩니다. 따라서 점 $\\mathrm{B}$의 좌표는 $(5a, 0)$입니다."
+        },
+        {
+          "step_idx": 3,
+          "title": "최종 값 계산",
+          "content": "두 선분의 길이를 구하면 다음과 같습니다.\n$\\overline{\\mathrm{OA}} = \\sqrt{(a-0)^2 + (2a-0)^2} = \\sqrt{5a^2} = \\sqrt{5}a$\n$\\overline{\\mathrm{AB}} = \\sqrt{(5a-a)^2 + (0-2a)^2} = \\sqrt{16a^2 + 4a^2} = \\sqrt{20a^2} = 2\\sqrt{5}a$\n\n따라서 구하는 값은:\n$\\overline{\\mathrm{OA}} \\times \\overline{\\mathrm{AB}} = (\\sqrt{5}a) \\times (2\\sqrt{5}a) = 10a^2$\n$a^2 = \\frac{5}{2}$를 대입하면, $10 \\times \\frac{5}{2} = 25$입니다."
+        }
+      ]
+    }
+  ]
+}

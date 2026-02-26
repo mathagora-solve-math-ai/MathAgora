@@ -1,0 +1,4056 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:57:41Z",
+    "ended_at_utc": "2026-02-14T04:06:54Z",
+    "elapsed_seconds": 553.6,
+    "problem_tag": "2026_odd_probability_27",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 24,
+    "n_resumed_runs_from_flat_csv": 48
+  },
+  "problem": {
+    "id": "2026_odd_probability_27",
+    "label": "2026_odd_probability_27 (확률과통계, 3점)",
+    "gold_answer": "4"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.173129558563232,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 및 분산 V(X) 계산",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "④ 45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.408140659332275,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 계산 후 분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.047098398208618,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "분산의 스케일 성질 적용",
+                "기댓값 E(X), E(X^2) 계산",
+                "V(X) 및 최종 분산 계산"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.173129558563232,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 및 분산 V(X) 계산",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "④ 45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.408140659332275,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 계산 후 분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.047098398208618,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "분산의 스케일 성질 적용",
+                "기댓값 E(X), E(X^2) 계산",
+                "V(X) 및 최종 분산 계산"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E(X) 계산": 2,
+            "E(X^2) 및 분산 V(X) 계산": 1,
+            "스케일 변환 분산 V((1/a)X)": 2,
+            "E(X^2) 계산 후 분산 V(X) 구하기": 1,
+            "분산의 스케일 성질 적용": 1,
+            "기댓값 E(X), E(X^2) 계산": 1,
+            "V(X) 및 최종 분산 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E(X) 계산": 2,
+            "E(X^2) 및 분산 V(X) 계산": 1,
+            "스케일 변환 분산 V((1/a)X)": 2,
+            "E(X^2) 계산 후 분산 V(X) 구하기": 1,
+            "분산의 스케일 성질 적용": 1,
+            "기댓값 E(X), E(X^2) 계산": 1,
+            "V(X) 및 최종 분산 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.377399682998657,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.618645191192627,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.664048910140991,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.377399682998657,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.618645191192627,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.664048910140991,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "확률의 합으로 a 결정": 3,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V(X/a) 계산": 2,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 결정": 3,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V(X/a) 계산": 2,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.922629356384277,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.688985586166382,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.84386682510376,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.922629356384277,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.688985586166382,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.84386682510376,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "확률의 총합을 이용한 상수 a 구하기": 3,
+            "확률변수 X의 평균과 분산 계산": 3,
+            "분산의 성질을 이용한 최종 답 구하기": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 총합을 이용한 상수 a 구하기": 3,
+            "확률변수 X의 평균과 분산 계산": 3,
+            "분산의 성질을 이용한 최종 답 구하기": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.489232778549194,
+              "step_count": 5,
+              "step_titles": [
+                "확률분포 정규화",
+                "X의 기대값 계산",
+                "X의 이차 기대값 계산",
+                "X의 분산 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.55185294151306,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합으로 a 결정",
+                "X의 기대값 E(X) 계산",
+                "X의 이차적률 E(X²) 계산",
+                "X의 분산 V(X) 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.088035583496094,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용해 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.489232778549194,
+              "step_count": 5,
+              "step_titles": [
+                "확률분포 정규화",
+                "X의 기대값 계산",
+                "X의 이차 기대값 계산",
+                "X의 분산 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.55185294151306,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합으로 a 결정",
+                "X의 기대값 E(X) 계산",
+                "X의 이차적률 E(X²) 계산",
+                "X의 분산 V(X) 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.088035583496094,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용해 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "확률분포 정규화": 1,
+            "X의 기대값 계산": 1,
+            "X의 이차 기대값 계산": 1,
+            "X의 분산 계산": 1,
+            "(1/a)X의 분산 계산": 2,
+            "확률 합으로 a 결정": 1,
+            "X의 기대값 E(X) 계산": 1,
+            "X의 이차적률 E(X²) 계산": 1,
+            "X의 분산 V(X) 계산": 1,
+            "확률 합을 이용해 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1,
+            "Var(X) 계산": 1,
+            "Var((1/a)X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률분포 정규화": 1,
+            "X의 기대값 계산": 1,
+            "X의 이차 기대값 계산": 1,
+            "X의 분산 계산": 1,
+            "(1/a)X의 분산 계산": 2,
+            "확률 합으로 a 결정": 1,
+            "X의 기대값 E(X) 계산": 1,
+            "X의 이차적률 E(X²) 계산": 1,
+            "X의 분산 V(X) 계산": 1,
+            "확률 합을 이용해 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1,
+            "Var(X) 계산": 1,
+            "Var((1/a)X) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.13442325592041,
+              "step_count": 4,
+              "step_titles": [
+                "확률 합 1 조건을 이용하여 a 구하기",
+                "X의 평균과 제곱의 평균 계산",
+                "X의 분산 계산",
+                "V( (1/a)X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.47137641906738,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 총합을 이용한 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.34816384315491,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 확률의 총합이 1임을 이용",
+                "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산",
+                "$V\\left(\\frac{1}{a}X\\right)$ 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.13442325592041,
+              "step_count": 4,
+              "step_titles": [
+                "확률 합 1 조건을 이용하여 a 구하기",
+                "X의 평균과 제곱의 평균 계산",
+                "X의 분산 계산",
+                "V( (1/a)X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.47137641906738,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 총합을 이용한 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.34816384315491,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 확률의 총합이 1임을 이용",
+                "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산",
+                "$V\\left(\\frac{1}{a}X\\right)$ 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "확률 합 1 조건을 이용하여 a 구하기": 1,
+            "X의 평균과 제곱의 평균 계산": 1,
+            "X의 분산 계산": 1,
+            "V( (1/a)X ) 계산": 1,
+            "확률의 총합을 이용한 a 구하기": 1,
+            "E(X)와 E(X²) 계산": 1,
+            "V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "조건 정리 및 확률의 총합이 1임을 이용": 1,
+            "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산": 1,
+            "$V\\left(\\frac{1}{a}X\\right)$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률 합 1 조건을 이용하여 a 구하기": 1,
+            "X의 평균과 제곱의 평균 계산": 1,
+            "X의 분산 계산": 1,
+            "V( (1/a)X ) 계산": 1,
+            "확률의 총합을 이용한 a 구하기": 1,
+            "E(X)와 E(X²) 계산": 1,
+            "V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "조건 정리 및 확률의 총합이 1임을 이용": 1,
+            "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산": 1,
+            "$V\\left(\\frac{1}{a}X\\right)$ 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.9069402217865,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.696204662322998,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "a 값 결정",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "V(1/a X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 61.37031006813049,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 총합 계산",
+                "분산 계산 전략",
+                "기댓값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.9069402217865,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.696204662322998,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "a 값 결정",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "V(1/a X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 61.37031006813049,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 총합 계산",
+                "분산 계산 전략",
+                "기댓값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "확률의 합 계산": 1,
+            "분산 계산 준비": 1,
+            "기댓값 E(X) 계산": 3,
+            "이차모멘트 E(X²) 계산": 2,
+            "분산 V(X) 계산": 3,
+            "최종 분산 계산": 2,
+            "각 확률 계산": 1,
+            "a 값 결정": 1,
+            "E(X²) 계산": 1,
+            "V(1/a X) 계산": 1,
+            "확률의 총합 계산": 1,
+            "분산 계산 전략": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 7.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "확률의 합 계산": 1,
+            "분산 계산 준비": 1,
+            "기댓값 E(X) 계산": 3,
+            "이차모멘트 E(X²) 계산": 2,
+            "분산 V(X) 계산": 3,
+            "최종 분산 계산": 2,
+            "각 확률 계산": 1,
+            "a 값 결정": 1,
+            "E(X²) 계산": 1,
+            "V(1/a X) 계산": 1,
+            "확률의 총합 계산": 1,
+            "분산 계산 전략": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.444444444444445,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 3,
+          "기댓값 E(X) 계산": 5,
+          "E(X^2) 및 분산 V(X) 계산": 1,
+          "스케일 변환 분산 V((1/a)X)": 2,
+          "E(X^2) 계산 후 분산 V(X) 구하기": 1,
+          "분산의 스케일 성질 적용": 1,
+          "기댓값 E(X), E(X^2) 계산": 1,
+          "V(X) 및 최종 분산 계산": 1,
+          "확률의 합으로 a 결정": 3,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산": 3,
+          "V(X/a) 계산": 2,
+          "E(X) 계산": 1,
+          "E(X²) 계산": 2,
+          "V(X) 및 V(X/a) 계산": 1,
+          "확률의 총합을 이용한 상수 a 구하기": 3,
+          "확률변수 X의 평균과 분산 계산": 3,
+          "분산의 성질을 이용한 최종 답 구하기": 3,
+          "확률분포 정규화": 1,
+          "X의 기대값 계산": 1,
+          "X의 이차 기대값 계산": 1,
+          "X의 분산 계산": 2,
+          "(1/a)X의 분산 계산": 2,
+          "확률 합으로 a 결정": 1,
+          "X의 기대값 E(X) 계산": 1,
+          "X의 이차적률 E(X²) 계산": 1,
+          "X의 분산 V(X) 계산": 1,
+          "확률 합을 이용해 a 구하기": 1,
+          "기댓값 E[X] 계산": 1,
+          "E[X²] 계산": 1,
+          "Var(X) 계산": 1,
+          "Var((1/a)X) 계산": 1,
+          "확률 합 1 조건을 이용하여 a 구하기": 1,
+          "X의 평균과 제곱의 평균 계산": 1,
+          "V( (1/a)X ) 계산": 1,
+          "확률의 총합을 이용한 a 구하기": 1,
+          "V((1/a)X) 계산": 1,
+          "조건 정리 및 확률의 총합이 1임을 이용": 1,
+          "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산": 1,
+          "$V\\left(\\frac{1}{a}X\\right)$ 계산": 1,
+          "조건 정리": 3,
+          "확률의 합 계산": 1,
+          "분산 계산 준비": 1,
+          "이차모멘트 E(X²) 계산": 2,
+          "분산 V(X) 계산": 3,
+          "최종 분산 계산": 2,
+          "각 확률 계산": 1,
+          "a 값 결정": 1,
+          "V(1/a X) 계산": 1,
+          "확률의 총합 계산": 1,
+          "분산 계산 전략": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.759699583053589,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 및 분산 V(X) 계산",
+                "스케일링 성질로 V((1/a)X) 구하기"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.730506896972656,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱의 기댓값 계산",
+                "스케일 변환 분산 적용"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.84224271774292,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "분산의 스케일 성질 적용",
+                "기댓값 E(X), E(X^2) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.759699583053589,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X^2) 및 분산 V(X) 계산",
+                "스케일링 성질로 V((1/a)X) 구하기"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.730506896972656,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱의 기댓값 계산",
+                "스케일 변환 분산 적용"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.84224271774292,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "분산의 스케일 성질 적용",
+                "기댓값 E(X), E(X^2) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E(X) 계산": 1,
+            "E(X^2) 및 분산 V(X) 계산": 1,
+            "스케일링 성질로 V((1/a)X) 구하기": 1,
+            "기댓값과 제곱의 기댓값 계산": 1,
+            "스케일 변환 분산 적용": 1,
+            "분산의 스케일 성질 적용": 1,
+            "기댓값 E(X), E(X^2) 계산": 1,
+            "최종 분산 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E(X) 계산": 1,
+            "E(X^2) 및 분산 V(X) 계산": 1,
+            "스케일링 성질로 V((1/a)X) 구하기": 1,
+            "기댓값과 제곱의 기댓값 계산": 1,
+            "스케일 변환 분산 적용": 1,
+            "분산의 스케일 성질 적용": 1,
+            "기댓값 E(X), E(X^2) 계산": 1,
+            "최종 분산 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.351422548294067,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.50624132156372,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.565214395523071,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.351422548294067,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.50624132156372,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.565214395523071,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "확률의 합으로 a 구하기": 1,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V(X/a) 계산": 2,
+            "확률의 합으로 상수 a 결정": 1,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1,
+            "확률의 합으로 a 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 구하기": 1,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V(X/a) 계산": 2,
+            "확률의 합으로 상수 a 결정": 1,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1,
+            "확률의 합으로 a 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.734634,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "평균과 분산 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.876677,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.66217,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "기댓값 E(X)와 E(X²) 구하기",
+                "분산 V(X) 및 최종 답 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.734634,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "평균과 분산 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.876677,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 a 구하기",
+                "확률변수 X의 평균과 분산 계산",
+                "분산의 성질을 이용한 최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.66217,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "기댓값 E(X)와 E(X²) 구하기",
+                "분산 V(X) 및 최종 답 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "상수 a의 값 구하기": 2,
+            "평균과 분산 구하기": 1,
+            "최종 답 구하기": 1,
+            "확률의 총합을 이용한 상수 a 구하기": 1,
+            "확률변수 X의 평균과 분산 계산": 1,
+            "분산의 성질을 이용한 최종 답 구하기": 1,
+            "기댓값 E(X)와 E(X²) 구하기": 1,
+            "분산 V(X) 및 최종 답 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "상수 a의 값 구하기": 2,
+            "평균과 분산 구하기": 1,
+            "최종 답 구하기": 1,
+            "확률의 총합을 이용한 상수 a 구하기": 1,
+            "확률변수 X의 평균과 분산 계산": 1,
+            "분산의 성질을 이용한 최종 답 구하기": 1,
+            "기댓값 E(X)와 E(X²) 구하기": 1,
+            "분산 V(X) 및 최종 답 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.222465,
+              "step_count": 4,
+              "step_titles": [
+                "확률분포 완성",
+                "기대값 E(X) 계산",
+                "기대값 E(X²) 계산",
+                "분산 V(X) 및 V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.599854,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용해 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 Var(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.988564,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용한 a 계산",
+                "E[X] 계산",
+                "E[X²] 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.222465,
+              "step_count": 4,
+              "step_titles": [
+                "확률분포 완성",
+                "기대값 E(X) 계산",
+                "기대값 E(X²) 계산",
+                "분산 V(X) 및 V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.599854,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용해 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 Var(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.988564,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용한 a 계산",
+                "E[X] 계산",
+                "E[X²] 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "확률분포 완성": 1,
+            "기대값 E(X) 계산": 1,
+            "기대값 E(X²) 계산": 1,
+            "분산 V(X) 및 V((1/a)X) 계산": 1,
+            "확률 합을 이용해 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 2,
+            "분산 Var(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률 합을 이용한 a 계산": 1,
+            "E[X] 계산": 1,
+            "Var(X) 계산": 1,
+            "Var((1/a)X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률분포 완성": 1,
+            "기대값 E(X) 계산": 1,
+            "기대값 E(X²) 계산": 1,
+            "분산 V(X) 및 V((1/a)X) 계산": 1,
+            "확률 합을 이용해 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 2,
+            "분산 Var(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률 합을 이용한 a 계산": 1,
+            "E[X] 계산": 1,
+            "Var(X) 계산": 1,
+            "Var((1/a)X) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.690534,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V( (1/a)X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.861634,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "확률분포 정리",
+                "기댓값 E(X)와 E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.701562,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V( (1/a) X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.690534,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V( (1/a)X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.861634,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "확률분포 정리",
+                "기댓값 E(X)와 E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.701562,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V( (1/a) X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "확률의 합이 1임을 이용하여 a 구하기": 2,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V( (1/a)X ) 계산": 1,
+            "조건 정리": 1,
+            "확률분포 정리": 1,
+            "기댓값 E(X)와 E(X²) 계산": 1,
+            "분산 V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률분포표 정리": 1,
+            "V( (1/a) X ) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합이 1임을 이용하여 a 구하기": 2,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 2,
+            "V( (1/a)X ) 계산": 1,
+            "조건 정리": 1,
+            "확률분포 정리": 1,
+            "기댓값 E(X)와 E(X²) 계산": 1,
+            "분산 V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률분포표 정리": 1,
+            "V( (1/a) X ) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 58.688444,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "a 값 결정",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 60.114029,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.069492,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "확률의 합으로 a 구하기",
+                "분산 계산 전략",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 58.688444,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "a 값 결정",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 60.114029,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.069492,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "확률의 합으로 a 구하기",
+                "분산 계산 전략",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "각 확률 계산": 2,
+            "a 값 결정": 1,
+            "분산 계산 준비": 2,
+            "기댓값 E(X) 계산": 2,
+            "E(X²) 계산": 2,
+            "분산 V(X) 계산": 3,
+            "최종 분산 계산": 3,
+            "확률의 합 계산": 1,
+            "확률의 합으로 a 구하기": 1,
+            "분산 계산 전략": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 7.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "각 확률 계산": 2,
+            "a 값 결정": 1,
+            "분산 계산 준비": 2,
+            "기댓값 E(X) 계산": 2,
+            "E(X²) 계산": 2,
+            "분산 V(X) 계산": 3,
+            "최종 분산 계산": 3,
+            "확률의 합 계산": 1,
+            "확률의 합으로 a 구하기": 1,
+            "분산 계산 전략": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.611111111111111,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 5,
+          "기댓값 E(X) 계산": 3,
+          "E(X^2) 및 분산 V(X) 계산": 1,
+          "스케일링 성질로 V((1/a)X) 구하기": 1,
+          "기댓값과 제곱의 기댓값 계산": 1,
+          "스케일 변환 분산 적용": 1,
+          "분산의 스케일 성질 적용": 1,
+          "기댓값 E(X), E(X^2) 계산": 1,
+          "최종 분산 계산": 4,
+          "E(X)와 E(X²) 계산": 4,
+          "V(X) 계산": 4,
+          "V(X/a) 계산": 2,
+          "확률의 합으로 상수 a 결정": 1,
+          "E(X) 계산": 1,
+          "E(X²) 계산": 3,
+          "V(X) 및 V(X/a) 계산": 1,
+          "확률의 합으로 a 결정": 1,
+          "상수 a의 값 구하기": 2,
+          "평균과 분산 구하기": 1,
+          "최종 답 구하기": 1,
+          "확률의 총합을 이용한 상수 a 구하기": 1,
+          "확률변수 X의 평균과 분산 계산": 1,
+          "분산의 성질을 이용한 최종 답 구하기": 1,
+          "기댓값 E(X)와 E(X²) 구하기": 1,
+          "분산 V(X) 및 최종 답 계산": 1,
+          "확률분포 완성": 1,
+          "기대값 E(X) 계산": 1,
+          "기대값 E(X²) 계산": 1,
+          "분산 V(X) 및 V((1/a)X) 계산": 1,
+          "확률 합을 이용해 a 구하기": 1,
+          "기댓값 E[X] 계산": 2,
+          "E[X²] 계산": 3,
+          "분산 Var(X) 계산": 1,
+          "V((1/a)X) 계산": 2,
+          "확률 합을 이용한 a 계산": 1,
+          "E[X] 계산": 1,
+          "Var(X) 계산": 1,
+          "Var((1/a)X) 계산": 1,
+          "확률의 합이 1임을 이용하여 a 구하기": 2,
+          "V( (1/a)X ) 계산": 1,
+          "조건 정리": 4,
+          "확률분포 정리": 1,
+          "기댓값 E(X)와 E(X²) 계산": 1,
+          "분산 V(X) 계산": 4,
+          "확률분포표 정리": 1,
+          "V( (1/a) X ) 계산": 1,
+          "각 확률 계산": 2,
+          "a 값 결정": 1,
+          "분산 계산 준비": 2,
+          "확률의 합 계산": 1,
+          "분산 계산 전략": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.763897,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E[X], E[X^2] 계산",
+                "분산 V(X) 및 스케일링 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.378271,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값과 제곱기대값 계산",
+                "분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.704147,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱기댓값 계산",
+                "분산 V(X) 구하기",
+                "스케일링 성질로 V((1/a)X) 계산"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.763897,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값 E[X], E[X^2] 계산",
+                "분산 V(X) 및 스케일링 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.378271,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값과 제곱기대값 계산",
+                "분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.704147,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱기댓값 계산",
+                "분산 V(X) 구하기",
+                "스케일링 성질로 V((1/a)X) 계산"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E[X], E[X^2] 계산": 1,
+            "분산 V(X) 및 스케일링 적용": 1,
+            "기대값과 제곱기대값 계산": 1,
+            "분산 V(X) 구하기": 2,
+            "스케일 변환 분산 V((1/a)X)": 1,
+            "기댓값과 제곱기댓값 계산": 1,
+            "스케일링 성질로 V((1/a)X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 구하기": 3,
+            "기댓값 E[X], E[X^2] 계산": 1,
+            "분산 V(X) 및 스케일링 적용": 1,
+            "기대값과 제곱기대값 계산": 1,
+            "분산 V(X) 구하기": 2,
+            "스케일 변환 분산 V((1/a)X)": 1,
+            "기댓값과 제곱기댓값 계산": 1,
+            "스케일링 성질로 V((1/a)X) 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.863103,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산 후 V(X/a) 도출"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.418709,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.362377,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.863103,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산 후 V(X/a) 도출"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.418709,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.362377,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "확률의 합으로 상수 a 결정": 2,
+            "E(X)와 E(X²) 계산": 1,
+            "V(X) 계산 후 V(X/a) 도출": 1,
+            "확률의 합으로 a 구하기": 1,
+            "E(X) 계산": 2,
+            "E(X²) 계산": 2,
+            "V(X) 및 V(X/a) 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 상수 a 결정": 2,
+            "E(X)와 E(X²) 계산": 1,
+            "V(X) 계산 후 V(X/a) 도출": 1,
+            "확률의 합으로 a 구하기": 1,
+            "E(X) 계산": 2,
+            "E(X²) 계산": 2,
+            "V(X) 및 V(X/a) 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.815257,
+              "step_count": 4,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "평균과 제곱의 평균 계산",
+                "분산 V(X) 구하기",
+                "최종값 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.132495,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 성질을 이용한 상수 $a$ 구하기",
+                "기댓값 $E(X)$와 $E(X^2)$ 계산",
+                "분산 $V(X)$ 및 최종값 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.801047,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 $a$ 구하기",
+                "기댓값 $E(X)$ 구하기",
+                "분산 $V(X)$ 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.815257,
+              "step_count": 4,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "평균과 제곱의 평균 계산",
+                "분산 V(X) 구하기",
+                "최종값 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.132495,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 성질을 이용한 상수 $a$ 구하기",
+                "기댓값 $E(X)$와 $E(X^2)$ 계산",
+                "분산 $V(X)$ 및 최종값 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.801047,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 총합을 이용한 상수 $a$ 구하기",
+                "기댓값 $E(X)$ 구하기",
+                "분산 $V(X)$ 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "상수 a의 값 구하기": 1,
+            "평균과 제곱의 평균 계산": 1,
+            "분산 V(X) 구하기": 1,
+            "최종값 계산": 1,
+            "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+            "기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+            "분산 $V(X)$ 및 최종값 계산": 1,
+            "확률의 총합을 이용한 상수 $a$ 구하기": 1,
+            "기댓값 $E(X)$ 구하기": 1,
+            "분산 $V(X)$ 구하기": 1,
+            "최종 답 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "상수 a의 값 구하기": 1,
+            "평균과 제곱의 평균 계산": 1,
+            "분산 V(X) 구하기": 1,
+            "최종값 계산": 1,
+            "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+            "기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+            "분산 $V(X)$ 및 최종값 계산": 1,
+            "확률의 총합을 이용한 상수 $a$ 구하기": 1,
+            "기댓값 $E(X)$ 구하기": 1,
+            "분산 $V(X)$ 구하기": 1,
+            "최종 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.394242,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 결정",
+                "X의 분산 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.235256,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용한 a 계산",
+                "기댓값 E(X) 계산",
+                "제곱 기댓값 E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.331923,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합을 이용해 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "변환된 변수의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.394242,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 결정",
+                "X의 분산 계산",
+                "(1/a)X의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.235256,
+              "step_count": 5,
+              "step_titles": [
+                "확률 합을 이용한 a 계산",
+                "기댓값 E(X) 계산",
+                "제곱 기댓값 E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.331923,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합을 이용해 a 구하기",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "변환된 변수의 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "a 값 결정": 1,
+            "X의 분산 계산": 1,
+            "(1/a)X의 분산 계산": 1,
+            "확률 합을 이용한 a 계산": 1,
+            "기댓값 E(X) 계산": 2,
+            "제곱 기댓값 E(X²) 계산": 1,
+            "분산 V(X) 계산": 2,
+            "V((1/a)X) 계산": 1,
+            "확률의 합을 이용해 a 구하기": 1,
+            "E(X²) 계산": 1,
+            "변환된 변수의 분산 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "a 값 결정": 1,
+            "X의 분산 계산": 1,
+            "(1/a)X의 분산 계산": 1,
+            "확률 합을 이용한 a 계산": 1,
+            "기댓값 E(X) 계산": 2,
+            "제곱 기댓값 E(X²) 계산": 1,
+            "분산 V(X) 계산": 2,
+            "V((1/a)X) 계산": 1,
+            "확률의 합을 이용해 a 구하기": 1,
+            "E(X²) 계산": 1,
+            "변환된 변수의 분산 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.43433,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "확률분표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.299791,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 총합이 1임을 이용하여 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.136505,
+              "step_count": 5,
+              "step_titles": [
+                "a의 값 구하기",
+                "확률분포 정리",
+                "E(X)와 E(X^2) 계산",
+                "V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.43433,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합이 1임을 이용하여 a 구하기",
+                "확률분표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.299791,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 총합이 1임을 이용하여 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.136505,
+              "step_count": 5,
+              "step_titles": [
+                "a의 값 구하기",
+                "확률분포 정리",
+                "E(X)와 E(X^2) 계산",
+                "V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "확률의 합이 1임을 이용하여 a 구하기": 1,
+            "확률분표 정리": 1,
+            "E(X)와 E(X²) 계산": 2,
+            "Var(X) 계산": 2,
+            "Var((1/a)X) 계산": 2,
+            "확률의 총합이 1임을 이용하여 a 구하기": 1,
+            "확률분포표 정리": 1,
+            "a의 값 구하기": 1,
+            "확률분포 정리": 1,
+            "E(X)와 E(X^2) 계산": 1,
+            "V(X) 계산": 1,
+            "V((1/a)X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합이 1임을 이용하여 a 구하기": 1,
+            "확률분표 정리": 1,
+            "E(X)와 E(X²) 계산": 2,
+            "Var(X) 계산": 2,
+            "Var((1/a)X) 계산": 2,
+            "확률의 총합이 1임을 이용하여 a 구하기": 1,
+            "확률분포표 정리": 1,
+            "a의 값 구하기": 1,
+            "확률분포 정리": 1,
+            "E(X)와 E(X^2) 계산": 1,
+            "V(X) 계산": 1,
+            "V((1/a)X) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.320029,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "확률분포 완성",
+                "기댓값 E(X) 계산",
+                "분산 V(X) 계산",
+                "확률변수 변환: V(1/a X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.78778,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 289.972101,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "각 \\( x \\)에 대한 확률 계산"
+              ],
+              "final_answer": "} P(X = x) = 1\n\\]\n\n---\n\n[STEP title=\"각 \\( x \\)에 대한 확률 계산\"]  \n\\( x = 0, 1, 2, 3 \\)에 대해 \\( \\dfrac{|2x - 1|}{12} \\) 값을 계산한다.  \n\n- \\( x = 0 \\): \\( |2 \\cdot 0 - 1| = 1 \\) → \\( P(0) = \\dfrac{1}{12} \\)  \n- \\( x = 1 \\): \\( |2 \\cdot 1 - 1| = 1 \\) → \\( P(1) = \\dfrac{1}{12} \\)  \n- \\( x = 2 \\): \\( |4 - 1| = 3 \\",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.320029,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "각 확률 계산",
+                "확률분포 완성",
+                "기댓값 E(X) 계산",
+                "분산 V(X) 계산",
+                "확률변수 변환: V(1/a X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.78778,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률의 합 계산",
+                "분산 계산 준비",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 289.972101,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "각 \\( x \\)에 대한 확률 계산"
+              ],
+              "final_answer": "} P(X = x) = 1\n\\]\n\n---\n\n[STEP title=\"각 \\( x \\)에 대한 확률 계산\"]  \n\\( x = 0, 1, 2, 3 \\)에 대해 \\( \\dfrac{|2x - 1|}{12} \\) 값을 계산한다.  \n\n- \\( x = 0 \\): \\( |2 \\cdot 0 - 1| = 1 \\) → \\( P(0) = \\dfrac{1}{12} \\)  \n- \\( x = 1 \\): \\( |2 \\cdot 1 - 1| = 1 \\) → \\( P(1) = \\dfrac{1}{12} \\)  \n- \\( x = 2 \\): \\( |4 - 1| = 3 \\",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "각 확률 계산": 1,
+            "확률분포 완성": 1,
+            "기댓값 E(X) 계산": 2,
+            "분산 V(X) 계산": 2,
+            "확률변수 변환: V(1/a X) 계산": 1,
+            "확률의 합 계산": 1,
+            "분산 계산 준비": 1,
+            "E(X²) 계산": 1,
+            "최종 분산 계산": 1,
+            "각 \\( x \\)에 대한 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 2.6457513110645907,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "각 확률 계산": 1,
+            "확률분포 완성": 1,
+            "기댓값 E(X) 계산": 2,
+            "분산 V(X) 계산": 2,
+            "확률변수 변환: V(1/a X) 계산": 1,
+            "확률의 합 계산": 1,
+            "분산 계산 준비": 1,
+            "E(X²) 계산": 1,
+            "최종 분산 계산": 1,
+            "각 \\( x \\)에 대한 확률 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.222222222222222,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 4,
+          "기댓값 E[X], E[X^2] 계산": 1,
+          "분산 V(X) 및 스케일링 적용": 1,
+          "기대값과 제곱기대값 계산": 1,
+          "분산 V(X) 구하기": 3,
+          "스케일 변환 분산 V((1/a)X)": 1,
+          "기댓값과 제곱기댓값 계산": 1,
+          "스케일링 성질로 V((1/a)X) 계산": 1,
+          "확률의 합으로 상수 a 결정": 2,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산 후 V(X/a) 도출": 1,
+          "E(X) 계산": 2,
+          "E(X²) 계산": 4,
+          "V(X) 및 V(X/a) 계산": 2,
+          "상수 a의 값 구하기": 1,
+          "평균과 제곱의 평균 계산": 1,
+          "최종값 계산": 1,
+          "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+          "기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+          "분산 $V(X)$ 및 최종값 계산": 1,
+          "확률의 총합을 이용한 상수 $a$ 구하기": 1,
+          "기댓값 $E(X)$ 구하기": 1,
+          "분산 $V(X)$ 구하기": 1,
+          "최종 답 구하기": 1,
+          "a 값 결정": 1,
+          "X의 분산 계산": 1,
+          "(1/a)X의 분산 계산": 1,
+          "확률 합을 이용한 a 계산": 1,
+          "기댓값 E(X) 계산": 4,
+          "제곱 기댓값 E(X²) 계산": 1,
+          "분산 V(X) 계산": 4,
+          "V((1/a)X) 계산": 2,
+          "확률의 합을 이용해 a 구하기": 1,
+          "변환된 변수의 분산 계산": 1,
+          "확률의 합이 1임을 이용하여 a 구하기": 1,
+          "확률분표 정리": 1,
+          "Var(X) 계산": 2,
+          "Var((1/a)X) 계산": 2,
+          "확률의 총합이 1임을 이용하여 a 구하기": 1,
+          "확률분포표 정리": 1,
+          "a의 값 구하기": 1,
+          "확률분포 정리": 1,
+          "E(X)와 E(X^2) 계산": 1,
+          "V(X) 계산": 1,
+          "조건 정리": 3,
+          "각 확률 계산": 1,
+          "확률분포 완성": 1,
+          "확률변수 변환: V(1/a X) 계산": 1,
+          "확률의 합 계산": 1,
+          "분산 계산 준비": 1,
+          "최종 분산 계산": 1,
+          "각 \\( x \\)에 대한 확률 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.748063,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값 E(X) 계산",
+                "제곱의 기대값 E(X^2) 계산",
+                "분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.450024,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값 E(X) 계산",
+                "E(X^2) 계산",
+                "분산 V(X)와 스케일링 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.975632,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱기댓값 계산",
+                "분산의 스케일 성질 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.748063,
+              "step_count": 5,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값 E(X) 계산",
+                "제곱의 기대값 E(X^2) 계산",
+                "분산 V(X) 구하기",
+                "스케일 변환 분산 V((1/a)X)"
+              ],
+              "final_answer": "\\(45\\) (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.450024,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기대값 E(X) 계산",
+                "E(X^2) 계산",
+                "분산 V(X)와 스케일링 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.975632,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 a 구하기",
+                "기댓값과 제곱기댓값 계산",
+                "분산의 스케일 성질 적용"
+              ],
+              "final_answer": "45 (④)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "확률의 합으로 a 구하기": 3,
+            "기대값 E(X) 계산": 2,
+            "제곱의 기대값 E(X^2) 계산": 1,
+            "분산 V(X) 구하기": 1,
+            "스케일 변환 분산 V((1/a)X)": 1,
+            "E(X^2) 계산": 1,
+            "분산 V(X)와 스케일링 적용": 1,
+            "기댓값과 제곱기댓값 계산": 1,
+            "분산의 스케일 성질 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 a 구하기": 3,
+            "기대값 E(X) 계산": 2,
+            "제곱의 기대값 E(X^2) 계산": 1,
+            "분산 V(X) 구하기": 1,
+            "스케일 변환 분산 V((1/a)X)": 1,
+            "E(X^2) 계산": 1,
+            "분산 V(X)와 스케일링 적용": 1,
+            "기댓값과 제곱기댓값 계산": 1,
+            "분산의 스케일 성질 적용": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.330726,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.100887,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산 및 V(X/a) 도출"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.842376,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.330726,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산",
+                "V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.100887,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X)와 E(X²) 계산",
+                "V(X) 계산 및 V(X/a) 도출"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.842376,
+              "step_count": 4,
+              "step_titles": [
+                "확률의 합으로 상수 a 결정",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V(X/a) 계산"
+              ],
+              "final_answer": "**④ 45**\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "확률의 합으로 상수 a 결정": 3,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 1,
+            "V(X/a) 계산": 1,
+            "V(X) 계산 및 V(X/a) 도출": 1,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률의 합으로 상수 a 결정": 3,
+            "E(X)와 E(X²) 계산": 2,
+            "V(X) 계산": 1,
+            "V(X/a) 계산": 1,
+            "V(X) 계산 및 V(X/a) 도출": 1,
+            "E(X) 계산": 1,
+            "E(X²) 계산": 1,
+            "V(X) 및 V(X/a) 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.28619,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "확률변수 X의 분산 V(X) 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.212189,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a 구하기",
+                "기댓값 E(X) 및 E(X²) 계산",
+                "분산 계산 및 최종 답 도출"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.685768,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 성질을 이용한 상수 $a$ 구하기",
+                "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산",
+                "분산 공식을 이용한 최종 답 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.28619,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a의 값 구하기",
+                "확률변수 X의 분산 V(X) 구하기",
+                "최종 답 구하기"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.212189,
+              "step_count": 3,
+              "step_titles": [
+                "상수 a 구하기",
+                "기댓값 E(X) 및 E(X²) 계산",
+                "분산 계산 및 최종 답 도출"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.685768,
+              "step_count": 3,
+              "step_titles": [
+                "확률의 성질을 이용한 상수 $a$ 구하기",
+                "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산",
+                "분산 공식을 이용한 최종 답 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "상수 a의 값 구하기": 1,
+            "확률변수 X의 분산 V(X) 구하기": 1,
+            "최종 답 구하기": 1,
+            "상수 a 구하기": 1,
+            "기댓값 E(X) 및 E(X²) 계산": 1,
+            "분산 계산 및 최종 답 도출": 1,
+            "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+            "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+            "분산 공식을 이용한 최종 답 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "상수 a의 값 구하기": 1,
+            "확률변수 X의 분산 V(X) 구하기": 1,
+            "최종 답 구하기": 1,
+            "상수 a 구하기": 1,
+            "기댓값 E(X) 및 E(X²) 계산": 1,
+            "분산 계산 및 최종 답 도출": 1,
+            "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+            "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+            "분산 공식을 이용한 최종 답 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.064359,
+              "step_count": 5,
+              "step_titles": [
+                "확률 계산",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.216898,
+              "step_count": 4,
+              "step_titles": [
+                "확률 합 조건으로 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 V(X) 계산 및 V((1/a)X) 도출"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.339355,
+              "step_count": 4,
+              "step_titles": [
+                "확률분포 정리 및 a 계산",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.064359,
+              "step_count": 5,
+              "step_titles": [
+                "확률 계산",
+                "기댓값 E(X) 계산",
+                "E(X²) 계산",
+                "분산 V(X) 계산",
+                "V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.216898,
+              "step_count": 4,
+              "step_titles": [
+                "확률 합 조건으로 a 구하기",
+                "기댓값 E[X] 계산",
+                "E[X²] 계산",
+                "분산 V(X) 계산 및 V((1/a)X) 도출"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.339355,
+              "step_count": 4,
+              "step_titles": [
+                "확률분포 정리 및 a 계산",
+                "E(X) 계산",
+                "E(X²) 계산",
+                "V(X) 및 V((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "확률 계산": 1,
+            "기댓값 E(X) 계산": 1,
+            "E(X²) 계산": 2,
+            "분산 V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률 합 조건으로 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1,
+            "분산 V(X) 계산 및 V((1/a)X) 도출": 1,
+            "확률분포 정리 및 a 계산": 1,
+            "E(X) 계산": 1,
+            "V(X) 및 V((1/a)X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률 계산": 1,
+            "기댓값 E(X) 계산": 1,
+            "E(X²) 계산": 2,
+            "분산 V(X) 계산": 1,
+            "V((1/a)X) 계산": 1,
+            "확률 합 조건으로 a 구하기": 1,
+            "기댓값 E[X] 계산": 1,
+            "E[X²] 계산": 1,
+            "분산 V(X) 계산 및 V((1/a)X) 도출": 1,
+            "확률분포 정리 및 a 계산": 1,
+            "E(X) 계산": 1,
+            "V(X) 및 V((1/a)X) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.487892,
+              "step_count": 5,
+              "step_titles": [
+                "확률 분포 확인",
+                "확률분포표 완성",
+                "\\(E(X)\\)와 \\(E(X^2)\\) 계산",
+                "\\(V(X)\\) 계산",
+                "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산"
+              ],
+              "final_answer": "④ 45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.2693,
+              "step_count": 5,
+              "step_titles": [
+                "확률분표 조건으로 a 구하기",
+                "확률분표 정리",
+                "E(X)와 E(X^2) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 95.783635,
+              "step_count": 5,
+              "step_titles": [
+                "확률분포 조건과 상수 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var( (1/a) X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.487892,
+              "step_count": 5,
+              "step_titles": [
+                "확률 분포 확인",
+                "확률분포표 완성",
+                "\\(E(X)\\)와 \\(E(X^2)\\) 계산",
+                "\\(V(X)\\) 계산",
+                "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산"
+              ],
+              "final_answer": "④ 45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.2693,
+              "step_count": 5,
+              "step_titles": [
+                "확률분표 조건으로 a 구하기",
+                "확률분표 정리",
+                "E(X)와 E(X^2) 계산",
+                "Var(X) 계산",
+                "Var((1/a)X) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 95.783635,
+              "step_count": 5,
+              "step_titles": [
+                "확률분포 조건과 상수 a 구하기",
+                "확률분포표 정리",
+                "E(X)와 E(X²) 계산",
+                "Var(X) 계산",
+                "Var( (1/a) X ) 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "확률 분포 확인": 1,
+            "확률분포표 완성": 1,
+            "\\(E(X)\\)와 \\(E(X^2)\\) 계산": 1,
+            "\\(V(X)\\) 계산": 1,
+            "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산": 1,
+            "확률분표 조건으로 a 구하기": 1,
+            "확률분표 정리": 1,
+            "E(X)와 E(X^2) 계산": 1,
+            "Var(X) 계산": 2,
+            "Var((1/a)X) 계산": 1,
+            "확률분포 조건과 상수 a 구하기": 1,
+            "확률분포표 정리": 1,
+            "E(X)와 E(X²) 계산": 1,
+            "Var( (1/a) X ) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률 분포 확인": 1,
+            "확률분포표 완성": 1,
+            "\\(E(X)\\)와 \\(E(X^2)\\) 계산": 1,
+            "\\(V(X)\\) 계산": 1,
+            "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산": 1,
+            "확률분표 조건으로 a 구하기": 1,
+            "확률분표 정리": 1,
+            "E(X)와 E(X^2) 계산": 1,
+            "Var(X) 계산": 2,
+            "Var((1/a)X) 계산": 1,
+            "확률분포 조건과 상수 a 구하기": 1,
+            "확률분포표 정리": 1,
+            "E(X)와 E(X²) 계산": 1,
+            "Var( (1/a) X ) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 49.888013,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 x에 대한 확률 계산",
+                "전체 확률의 합으로 a 계산",
+                "분산 계산을 위한 준비",
+                "기대값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.922441,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "각 $ x $에 대한 확률 계산",
+                "$ a $ 대입 후 목표 식 도출",
+                "기댓값 $ \\mathrm{E}[X] $ 계산",
+                "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산",
+                "분산 $ \\mathrm{V}(X) $ 계산",
+                "목표 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.05685,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "확률 합 계산 및 a 구하기",
+                "분산 계산을 위한 변환식 설정",
+                "기댓값 E(X) 계산",
+                "E(X²) 및 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 49.888013,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "각 x에 대한 확률 계산",
+                "전체 확률의 합으로 a 계산",
+                "분산 계산을 위한 준비",
+                "기대값 E(X) 계산",
+                "이차모멘트 E(X²) 계산",
+                "분산 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.922441,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "각 $ x $에 대한 확률 계산",
+                "$ a $ 대입 후 목표 식 도출",
+                "기댓값 $ \\mathrm{E}[X] $ 계산",
+                "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산",
+                "분산 $ \\mathrm{V}(X) $ 계산",
+                "목표 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.05685,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "확률 합 계산 및 a 구하기",
+                "분산 계산을 위한 변환식 설정",
+                "기댓값 E(X) 계산",
+                "E(X²) 및 V(X) 계산",
+                "최종 분산 계산"
+              ],
+              "final_answer": "45",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 7.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "각 x에 대한 확률 계산": 1,
+            "전체 확률의 합으로 a 계산": 1,
+            "분산 계산을 위한 준비": 1,
+            "기대값 E(X) 계산": 1,
+            "이차모멘트 E(X²) 계산": 1,
+            "분산 V(X) 계산": 1,
+            "최종 분산 계산": 2,
+            "각 $ x $에 대한 확률 계산": 1,
+            "$ a $ 대입 후 목표 식 도출": 1,
+            "기댓값 $ \\mathrm{E}[X] $ 계산": 1,
+            "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산": 1,
+            "분산 $ \\mathrm{V}(X) $ 계산": 1,
+            "목표 분산 계산": 1,
+            "확률 합 계산 및 a 구하기": 1,
+            "분산 계산을 위한 변환식 설정": 1,
+            "기댓값 E(X) 계산": 1,
+            "E(X²) 및 V(X) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 7.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "각 x에 대한 확률 계산": 1,
+            "전체 확률의 합으로 a 계산": 1,
+            "분산 계산을 위한 준비": 1,
+            "기대값 E(X) 계산": 1,
+            "이차모멘트 E(X²) 계산": 1,
+            "분산 V(X) 계산": 1,
+            "최종 분산 계산": 2,
+            "각 $ x $에 대한 확률 계산": 1,
+            "$ a $ 대입 후 목표 식 도출": 1,
+            "기댓값 $ \\mathrm{E}[X] $ 계산": 1,
+            "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산": 1,
+            "분산 $ \\mathrm{V}(X) $ 계산": 1,
+            "목표 분산 계산": 1,
+            "확률 합 계산 및 a 구하기": 1,
+            "분산 계산을 위한 변환식 설정": 1,
+            "기댓값 E(X) 계산": 1,
+            "E(X²) 및 V(X) 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 3,
+          "기대값 E(X) 계산": 3,
+          "제곱의 기대값 E(X^2) 계산": 1,
+          "분산 V(X) 구하기": 1,
+          "스케일 변환 분산 V((1/a)X)": 1,
+          "E(X^2) 계산": 1,
+          "분산 V(X)와 스케일링 적용": 1,
+          "기댓값과 제곱기댓값 계산": 1,
+          "분산의 스케일 성질 적용": 1,
+          "확률의 합으로 상수 a 결정": 3,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산": 1,
+          "V(X/a) 계산": 1,
+          "V(X) 계산 및 V(X/a) 도출": 1,
+          "E(X) 계산": 2,
+          "E(X²) 계산": 3,
+          "V(X) 및 V(X/a) 계산": 1,
+          "상수 a의 값 구하기": 1,
+          "확률변수 X의 분산 V(X) 구하기": 1,
+          "최종 답 구하기": 1,
+          "상수 a 구하기": 1,
+          "기댓값 E(X) 및 E(X²) 계산": 1,
+          "분산 계산 및 최종 답 도출": 1,
+          "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+          "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+          "분산 공식을 이용한 최종 답 계산": 1,
+          "확률 계산": 1,
+          "기댓값 E(X) 계산": 2,
+          "분산 V(X) 계산": 2,
+          "V((1/a)X) 계산": 1,
+          "확률 합 조건으로 a 구하기": 1,
+          "기댓값 E[X] 계산": 1,
+          "E[X²] 계산": 1,
+          "분산 V(X) 계산 및 V((1/a)X) 도출": 1,
+          "확률분포 정리 및 a 계산": 1,
+          "V(X) 및 V((1/a)X) 계산": 1,
+          "확률 분포 확인": 1,
+          "확률분포표 완성": 1,
+          "\\(E(X)\\)와 \\(E(X^2)\\) 계산": 1,
+          "\\(V(X)\\) 계산": 1,
+          "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산": 1,
+          "확률분표 조건으로 a 구하기": 1,
+          "확률분표 정리": 1,
+          "E(X)와 E(X^2) 계산": 1,
+          "Var(X) 계산": 2,
+          "Var((1/a)X) 계산": 1,
+          "확률분포 조건과 상수 a 구하기": 1,
+          "확률분포표 정리": 1,
+          "Var( (1/a) X ) 계산": 1,
+          "조건 정리": 3,
+          "각 x에 대한 확률 계산": 1,
+          "전체 확률의 합으로 a 계산": 1,
+          "분산 계산을 위한 준비": 1,
+          "이차모멘트 E(X²) 계산": 1,
+          "최종 분산 계산": 2,
+          "각 $ x $에 대한 확률 계산": 1,
+          "$ a $ 대입 후 목표 식 도출": 1,
+          "기댓값 $ \\mathrm{E}[X] $ 계산": 1,
+          "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산": 1,
+          "분산 $ \\mathrm{V}(X) $ 계산": 1,
+          "목표 분산 계산": 1,
+          "확률 합 계산 및 a 구하기": 1,
+          "분산 계산을 위한 변환식 설정": 1,
+          "E(X²) 및 V(X) 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.444444444444445,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 3,
+          "기댓값 E(X) 계산": 5,
+          "E(X^2) 및 분산 V(X) 계산": 1,
+          "스케일 변환 분산 V((1/a)X)": 2,
+          "E(X^2) 계산 후 분산 V(X) 구하기": 1,
+          "분산의 스케일 성질 적용": 1,
+          "기댓값 E(X), E(X^2) 계산": 1,
+          "V(X) 및 최종 분산 계산": 1,
+          "확률의 합으로 a 결정": 3,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산": 3,
+          "V(X/a) 계산": 2,
+          "E(X) 계산": 1,
+          "E(X²) 계산": 2,
+          "V(X) 및 V(X/a) 계산": 1,
+          "확률의 총합을 이용한 상수 a 구하기": 3,
+          "확률변수 X의 평균과 분산 계산": 3,
+          "분산의 성질을 이용한 최종 답 구하기": 3,
+          "확률분포 정규화": 1,
+          "X의 기대값 계산": 1,
+          "X의 이차 기대값 계산": 1,
+          "X의 분산 계산": 2,
+          "(1/a)X의 분산 계산": 2,
+          "확률 합으로 a 결정": 1,
+          "X의 기대값 E(X) 계산": 1,
+          "X의 이차적률 E(X²) 계산": 1,
+          "X의 분산 V(X) 계산": 1,
+          "확률 합을 이용해 a 구하기": 1,
+          "기댓값 E[X] 계산": 1,
+          "E[X²] 계산": 1,
+          "Var(X) 계산": 1,
+          "Var((1/a)X) 계산": 1,
+          "확률 합 1 조건을 이용하여 a 구하기": 1,
+          "X의 평균과 제곱의 평균 계산": 1,
+          "V( (1/a)X ) 계산": 1,
+          "확률의 총합을 이용한 a 구하기": 1,
+          "V((1/a)X) 계산": 1,
+          "조건 정리 및 확률의 총합이 1임을 이용": 1,
+          "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산": 1,
+          "$V\\left(\\frac{1}{a}X\\right)$ 계산": 1,
+          "조건 정리": 3,
+          "확률의 합 계산": 1,
+          "분산 계산 준비": 1,
+          "이차모멘트 E(X²) 계산": 2,
+          "분산 V(X) 계산": 3,
+          "최종 분산 계산": 2,
+          "각 확률 계산": 1,
+          "a 값 결정": 1,
+          "V(1/a X) 계산": 1,
+          "확률의 총합 계산": 1,
+          "분산 계산 전략": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.611111111111111,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 5,
+          "기댓값 E(X) 계산": 3,
+          "E(X^2) 및 분산 V(X) 계산": 1,
+          "스케일링 성질로 V((1/a)X) 구하기": 1,
+          "기댓값과 제곱의 기댓값 계산": 1,
+          "스케일 변환 분산 적용": 1,
+          "분산의 스케일 성질 적용": 1,
+          "기댓값 E(X), E(X^2) 계산": 1,
+          "최종 분산 계산": 4,
+          "E(X)와 E(X²) 계산": 4,
+          "V(X) 계산": 4,
+          "V(X/a) 계산": 2,
+          "확률의 합으로 상수 a 결정": 1,
+          "E(X) 계산": 1,
+          "E(X²) 계산": 3,
+          "V(X) 및 V(X/a) 계산": 1,
+          "확률의 합으로 a 결정": 1,
+          "상수 a의 값 구하기": 2,
+          "평균과 분산 구하기": 1,
+          "최종 답 구하기": 1,
+          "확률의 총합을 이용한 상수 a 구하기": 1,
+          "확률변수 X의 평균과 분산 계산": 1,
+          "분산의 성질을 이용한 최종 답 구하기": 1,
+          "기댓값 E(X)와 E(X²) 구하기": 1,
+          "분산 V(X) 및 최종 답 계산": 1,
+          "확률분포 완성": 1,
+          "기대값 E(X) 계산": 1,
+          "기대값 E(X²) 계산": 1,
+          "분산 V(X) 및 V((1/a)X) 계산": 1,
+          "확률 합을 이용해 a 구하기": 1,
+          "기댓값 E[X] 계산": 2,
+          "E[X²] 계산": 3,
+          "분산 Var(X) 계산": 1,
+          "V((1/a)X) 계산": 2,
+          "확률 합을 이용한 a 계산": 1,
+          "E[X] 계산": 1,
+          "Var(X) 계산": 1,
+          "Var((1/a)X) 계산": 1,
+          "확률의 합이 1임을 이용하여 a 구하기": 2,
+          "V( (1/a)X ) 계산": 1,
+          "조건 정리": 4,
+          "확률분포 정리": 1,
+          "기댓값 E(X)와 E(X²) 계산": 1,
+          "분산 V(X) 계산": 4,
+          "확률분포표 정리": 1,
+          "V( (1/a) X ) 계산": 1,
+          "각 확률 계산": 2,
+          "a 값 결정": 1,
+          "분산 계산 준비": 2,
+          "확률의 합 계산": 1,
+          "분산 계산 전략": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.222222222222222,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 4,
+          "기댓값 E[X], E[X^2] 계산": 1,
+          "분산 V(X) 및 스케일링 적용": 1,
+          "기대값과 제곱기대값 계산": 1,
+          "분산 V(X) 구하기": 3,
+          "스케일 변환 분산 V((1/a)X)": 1,
+          "기댓값과 제곱기댓값 계산": 1,
+          "스케일링 성질로 V((1/a)X) 계산": 1,
+          "확률의 합으로 상수 a 결정": 2,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산 후 V(X/a) 도출": 1,
+          "E(X) 계산": 2,
+          "E(X²) 계산": 4,
+          "V(X) 및 V(X/a) 계산": 2,
+          "상수 a의 값 구하기": 1,
+          "평균과 제곱의 평균 계산": 1,
+          "최종값 계산": 1,
+          "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+          "기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+          "분산 $V(X)$ 및 최종값 계산": 1,
+          "확률의 총합을 이용한 상수 $a$ 구하기": 1,
+          "기댓값 $E(X)$ 구하기": 1,
+          "분산 $V(X)$ 구하기": 1,
+          "최종 답 구하기": 1,
+          "a 값 결정": 1,
+          "X의 분산 계산": 1,
+          "(1/a)X의 분산 계산": 1,
+          "확률 합을 이용한 a 계산": 1,
+          "기댓값 E(X) 계산": 4,
+          "제곱 기댓값 E(X²) 계산": 1,
+          "분산 V(X) 계산": 4,
+          "V((1/a)X) 계산": 2,
+          "확률의 합을 이용해 a 구하기": 1,
+          "변환된 변수의 분산 계산": 1,
+          "확률의 합이 1임을 이용하여 a 구하기": 1,
+          "확률분표 정리": 1,
+          "Var(X) 계산": 2,
+          "Var((1/a)X) 계산": 2,
+          "확률의 총합이 1임을 이용하여 a 구하기": 1,
+          "확률분포표 정리": 1,
+          "a의 값 구하기": 1,
+          "확률분포 정리": 1,
+          "E(X)와 E(X^2) 계산": 1,
+          "V(X) 계산": 1,
+          "조건 정리": 3,
+          "각 확률 계산": 1,
+          "확률분포 완성": 1,
+          "확률변수 변환: V(1/a X) 계산": 1,
+          "확률의 합 계산": 1,
+          "분산 계산 준비": 1,
+          "최종 분산 계산": 1,
+          "각 \\( x \\)에 대한 확률 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "확률의 합으로 a 구하기": 3,
+          "기대값 E(X) 계산": 3,
+          "제곱의 기대값 E(X^2) 계산": 1,
+          "분산 V(X) 구하기": 1,
+          "스케일 변환 분산 V((1/a)X)": 1,
+          "E(X^2) 계산": 1,
+          "분산 V(X)와 스케일링 적용": 1,
+          "기댓값과 제곱기댓값 계산": 1,
+          "분산의 스케일 성질 적용": 1,
+          "확률의 합으로 상수 a 결정": 3,
+          "E(X)와 E(X²) 계산": 3,
+          "V(X) 계산": 1,
+          "V(X/a) 계산": 1,
+          "V(X) 계산 및 V(X/a) 도출": 1,
+          "E(X) 계산": 2,
+          "E(X²) 계산": 3,
+          "V(X) 및 V(X/a) 계산": 1,
+          "상수 a의 값 구하기": 1,
+          "확률변수 X의 분산 V(X) 구하기": 1,
+          "최종 답 구하기": 1,
+          "상수 a 구하기": 1,
+          "기댓값 E(X) 및 E(X²) 계산": 1,
+          "분산 계산 및 최종 답 도출": 1,
+          "확률의 성질을 이용한 상수 $a$ 구하기": 1,
+          "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+          "분산 공식을 이용한 최종 답 계산": 1,
+          "확률 계산": 1,
+          "기댓값 E(X) 계산": 2,
+          "분산 V(X) 계산": 2,
+          "V((1/a)X) 계산": 1,
+          "확률 합 조건으로 a 구하기": 1,
+          "기댓값 E[X] 계산": 1,
+          "E[X²] 계산": 1,
+          "분산 V(X) 계산 및 V((1/a)X) 도출": 1,
+          "확률분포 정리 및 a 계산": 1,
+          "V(X) 및 V((1/a)X) 계산": 1,
+          "확률 분포 확인": 1,
+          "확률분포표 완성": 1,
+          "\\(E(X)\\)와 \\(E(X^2)\\) 계산": 1,
+          "\\(V(X)\\) 계산": 1,
+          "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산": 1,
+          "확률분표 조건으로 a 구하기": 1,
+          "확률분표 정리": 1,
+          "E(X)와 E(X^2) 계산": 1,
+          "Var(X) 계산": 2,
+          "Var((1/a)X) 계산": 1,
+          "확률분포 조건과 상수 a 구하기": 1,
+          "확률분포표 정리": 1,
+          "Var( (1/a) X ) 계산": 1,
+          "조건 정리": 3,
+          "각 x에 대한 확률 계산": 1,
+          "전체 확률의 합으로 a 계산": 1,
+          "분산 계산을 위한 준비": 1,
+          "이차모멘트 E(X²) 계산": 1,
+          "최종 분산 계산": 2,
+          "각 $ x $에 대한 확률 계산": 1,
+          "$ a $ 대입 후 목표 식 도출": 1,
+          "기댓값 $ \\mathrm{E}[X] $ 계산": 1,
+          "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산": 1,
+          "분산 $ \\mathrm{V}(X) $ 계산": 1,
+          "목표 분산 계산": 1,
+          "확률 합 계산 및 a 구하기": 1,
+          "분산 계산을 위한 변환식 설정": 1,
+          "E(X²) 및 V(X) 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.444444444444445,
+      "title_frequency": {
+        "확률의 합으로 a 구하기": 15,
+        "기댓값 E(X) 계산": 14,
+        "E(X^2) 및 분산 V(X) 계산": 2,
+        "스케일 변환 분산 V((1/a)X)": 4,
+        "E(X^2) 계산 후 분산 V(X) 구하기": 1,
+        "분산의 스케일 성질 적용": 3,
+        "기댓값 E(X), E(X^2) 계산": 2,
+        "V(X) 및 최종 분산 계산": 1,
+        "확률의 합으로 a 결정": 4,
+        "E(X)와 E(X²) 계산": 13,
+        "V(X) 계산": 9,
+        "V(X/a) 계산": 5,
+        "E(X) 계산": 6,
+        "E(X²) 계산": 12,
+        "V(X) 및 V(X/a) 계산": 5,
+        "확률의 총합을 이용한 상수 a 구하기": 4,
+        "확률변수 X의 평균과 분산 계산": 4,
+        "분산의 성질을 이용한 최종 답 구하기": 4,
+        "확률분포 정규화": 1,
+        "X의 기대값 계산": 1,
+        "X의 이차 기대값 계산": 1,
+        "X의 분산 계산": 3,
+        "(1/a)X의 분산 계산": 3,
+        "확률 합으로 a 결정": 1,
+        "X의 기대값 E(X) 계산": 1,
+        "X의 이차적률 E(X²) 계산": 1,
+        "X의 분산 V(X) 계산": 1,
+        "확률 합을 이용해 a 구하기": 2,
+        "기댓값 E[X] 계산": 4,
+        "E[X²] 계산": 5,
+        "Var(X) 계산": 6,
+        "Var((1/a)X) 계산": 5,
+        "확률 합 1 조건을 이용하여 a 구하기": 1,
+        "X의 평균과 제곱의 평균 계산": 1,
+        "V( (1/a)X ) 계산": 2,
+        "확률의 총합을 이용한 a 구하기": 1,
+        "V((1/a)X) 계산": 6,
+        "조건 정리 및 확률의 총합이 1임을 이용": 1,
+        "확률분포표 정리 및 $E[X]$, $E[X^2]$ 계산": 1,
+        "$V\\left(\\frac{1}{a}X\\right)$ 계산": 1,
+        "조건 정리": 13,
+        "확률의 합 계산": 3,
+        "분산 계산 준비": 4,
+        "이차모멘트 E(X²) 계산": 3,
+        "분산 V(X) 계산": 13,
+        "최종 분산 계산": 9,
+        "각 확률 계산": 4,
+        "a 값 결정": 3,
+        "V(1/a X) 계산": 1,
+        "확률의 총합 계산": 1,
+        "분산 계산 전략": 2,
+        "스케일링 성질로 V((1/a)X) 구하기": 1,
+        "기댓값과 제곱의 기댓값 계산": 1,
+        "스케일 변환 분산 적용": 1,
+        "확률의 합으로 상수 a 결정": 6,
+        "상수 a의 값 구하기": 4,
+        "평균과 분산 구하기": 1,
+        "최종 답 구하기": 3,
+        "기댓값 E(X)와 E(X²) 구하기": 1,
+        "분산 V(X) 및 최종 답 계산": 1,
+        "확률분포 완성": 2,
+        "기대값 E(X) 계산": 4,
+        "기대값 E(X²) 계산": 1,
+        "분산 V(X) 및 V((1/a)X) 계산": 1,
+        "분산 Var(X) 계산": 1,
+        "확률 합을 이용한 a 계산": 2,
+        "E[X] 계산": 1,
+        "확률의 합이 1임을 이용하여 a 구하기": 3,
+        "확률분포 정리": 2,
+        "기댓값 E(X)와 E(X²) 계산": 1,
+        "확률분포표 정리": 3,
+        "V( (1/a) X ) 계산": 1,
+        "기댓값 E[X], E[X^2] 계산": 1,
+        "분산 V(X) 및 스케일링 적용": 1,
+        "기대값과 제곱기대값 계산": 1,
+        "분산 V(X) 구하기": 4,
+        "기댓값과 제곱기댓값 계산": 2,
+        "스케일링 성질로 V((1/a)X) 계산": 1,
+        "V(X) 계산 후 V(X/a) 도출": 1,
+        "평균과 제곱의 평균 계산": 1,
+        "최종값 계산": 1,
+        "확률의 성질을 이용한 상수 $a$ 구하기": 2,
+        "기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+        "분산 $V(X)$ 및 최종값 계산": 1,
+        "확률의 총합을 이용한 상수 $a$ 구하기": 1,
+        "기댓값 $E(X)$ 구하기": 1,
+        "분산 $V(X)$ 구하기": 1,
+        "제곱 기댓값 E(X²) 계산": 1,
+        "확률의 합을 이용해 a 구하기": 1,
+        "변환된 변수의 분산 계산": 1,
+        "확률분표 정리": 2,
+        "확률의 총합이 1임을 이용하여 a 구하기": 1,
+        "a의 값 구하기": 1,
+        "E(X)와 E(X^2) 계산": 2,
+        "확률변수 변환: V(1/a X) 계산": 1,
+        "각 \\( x \\)에 대한 확률 계산": 1,
+        "제곱의 기대값 E(X^2) 계산": 1,
+        "E(X^2) 계산": 1,
+        "분산 V(X)와 스케일링 적용": 1,
+        "V(X) 계산 및 V(X/a) 도출": 1,
+        "확률변수 X의 분산 V(X) 구하기": 1,
+        "상수 a 구하기": 1,
+        "기댓값 E(X) 및 E(X²) 계산": 1,
+        "분산 계산 및 최종 답 도출": 1,
+        "$X$의 기댓값 $E(X)$와 $E(X^2)$ 계산": 1,
+        "분산 공식을 이용한 최종 답 계산": 1,
+        "확률 계산": 1,
+        "확률 합 조건으로 a 구하기": 1,
+        "분산 V(X) 계산 및 V((1/a)X) 도출": 1,
+        "확률분포 정리 및 a 계산": 1,
+        "V(X) 및 V((1/a)X) 계산": 1,
+        "확률 분포 확인": 1,
+        "확률분포표 완성": 1,
+        "\\(E(X)\\)와 \\(E(X^2)\\) 계산": 1,
+        "\\(V(X)\\) 계산": 1,
+        "\\(V\\left(\\frac{1}{a}X\\right)\\) 계산": 1,
+        "확률분표 조건으로 a 구하기": 1,
+        "확률분포 조건과 상수 a 구하기": 1,
+        "Var( (1/a) X ) 계산": 1,
+        "각 x에 대한 확률 계산": 1,
+        "전체 확률의 합으로 a 계산": 1,
+        "분산 계산을 위한 준비": 1,
+        "각 $ x $에 대한 확률 계산": 1,
+        "$ a $ 대입 후 목표 식 도출": 1,
+        "기댓값 $ \\mathrm{E}[X] $ 계산": 1,
+        "제2차 모멘트 $ \\mathrm{E}[X^2] $ 계산": 1,
+        "분산 $ \\mathrm{V}(X) $ 계산": 1,
+        "목표 분산 계산": 1,
+        "확률 합 계산 및 a 구하기": 1,
+        "분산 계산을 위한 변환식 설정": 1,
+        "E(X²) 및 V(X) 계산": 1
+      },
+      "accuracy": 1.0,
+      "n_samples": 72
+    }
+  }
+}

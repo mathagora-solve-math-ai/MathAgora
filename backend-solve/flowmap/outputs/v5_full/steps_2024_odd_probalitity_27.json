@@ -1,0 +1,113 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_probalitity_27",
+    "prob_area": "확률과통계",
+    "prob_point": "3",
+    "prob_desc": "27. 정규분포 $\\mathrm{N}(m, 5^2)$을 따르는 모집단에서 크기가 49인 표본을 임의추출하여 얻은 표본평균이 $\\overline{x}$일 때, 모평균 $m$에 대한 신뢰도 95%의 신뢰구간이 $a \\leq m \\leq \\dfrac{6}{5}a$이다. $\\overline{x}$의 값은? (단, $Z$가 표준정규분포를 따르는 확률변수일 때, $\\mathrm{P}(|Z| \\leq 1.96)=0.95$로 계산한다.) [3점]\n① 15.2 ② 15.4 ③ 15.6 ④ 15.8 ⑤ 16.0",
+    "answer": "2"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Relate CI to sample mean",
+        "body": "For a 95% confidence interval with known population variance, the interval for m is x̄ ± z_{0.025}·(σ/√n). With σ = 5 and n = 49, the standard error is 5/7. Using z_{0.025} = 1.96, the margin of error becomes 1.96·(5/7). This must match the given interval a ≤ m ≤ (6/5)a derived from the sample mean."
+      },
+      {
+        "title": "Set up equations using endpoints",
+        "body": "Compute the margin: 1.96·(5/7) = 9.8/7 = 1.4. Thus the lower bound is a = x̄ − 1.4 and the upper bound is (6/5)a = x̄ + 1.4. These two linear relations connect a and x̄ with the known margin terms."
+      },
+      {
+        "title": "Solve for a and sample mean",
+        "body": "From a = x̄ − 1.4, substitute x̄ = a + 1.4 into (6/5)a = x̄ + 1.4 to get (6/5)a = (a + 1.4) + 1.4 = a + 2.8. Rearranging gives 14 = a. Therefore x̄ = a + 1.4 = 14 + 1.4 = 15.4."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Compute 95% CI half-width",
+        "body": "For known σ=5 and n=49, the 95% CI for m is x̄ ± 1.96·(5/√49) = x̄ ± 1.96·(5/7). Thus the half-width h = 1.96·5/7 = 9.8/7 = 1.4."
+      },
+      {
+        "title": "Match given interval form",
+        "body": "Given CI is [a, (6/5)a]. Its center is (a + 1.2a)/2 = 1.1a and its half-width is (1.2a − a)/2 = 0.1a. Set 0.1a = 1.4 ⇒ a = 14."
+      },
+      {
+        "title": "Find sample mean",
+        "body": "x̄ equals the center of the interval: x̄ = 1.1a = 1.1·14 = 15.4. This corresponds to option ②."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Identify the confidence interval formula",
+        "body": "For a normal distribution N(m, σ²) with sample size n, the 95% confidence interval for the population mean m is:\n\n$\\bar{x} - z_{0.025} \\cdot \\frac{\\sigma}{\\sqrt{n}} \\leq m \\leq \\bar{x} + z_{0.025} \\cdot \\frac{\\sigma}{\\sqrt{n}}$\n\nGiven: σ = 5, n = 49, z = 1.96"
+      },
+      {
+        "title": "Calculate the margin of error",
+        "body": "Standard error = $\\frac{\\sigma}{\\sqrt{n}} = \\frac{5}{\\sqrt{49}} = \\frac{5}{7}$\n\nMargin of error = $1.96 \\times \\frac{5}{7} = \\frac{9.8}{7} = 1.4$\n\nSo the confidence interval is:\n$\\bar{x} - 1.4 \\leq m \\leq \\bar{x} + 1.4$"
+      },
+      {
+        "title": "Set up equations from given interval",
+        "body": "The given confidence interval is: $a \\leq m \\leq \\frac{6}{5}a$\n\nComparing with our calculated interval:\n- Lower bound: $a = \\bar{x} - 1.4$\n- Upper bound: $\\frac{6}{5}a = \\bar{x} + 1.4$"
+      },
+      {
+        "title": "Solve for a and x̄",
+        "body": "From the first equation: $a = \\bar{x} - 1.4$\n\nSubstitute into the second equation:\n$\\frac{6}{5}(\\bar{x} - 1.4) = \\bar{x} + 1.4$\n\n$\\frac{6}{5}\\bar{x} - \\frac{6}{5}(1.4) = \\bar{x} + 1.4$\n\n$\\frac{6}{5}\\bar{x} - 1.68 = \\bar{x} + 1.4$\n\n$\\frac{6}{5}\\bar{x} - \\bar{x} = 1.4 + 1.68$\n\n$\\frac{1}{5}\\bar{x} = 3.08$\n\n$\\bar{x} = 15.4$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Calculate the margin of error",
+        "body": "The formula for the 95% confidence interval for the population mean $m$ is $\\overline{x} - k \\frac{\\sigma}{\\sqrt{n}} \\leq m \\leq \\overline{x} + k \\frac{\\sigma}{\\sqrt{n}}$. \nGiven $\\sigma = 5$, $n = 49$, and for 95% confidence $k = 1.96$, we calculate the margin of error term:\n$$k \\frac{\\sigma}{\\sqrt{n}} = 1.96 \\times \\frac{5}{\\sqrt{49}} = 1.96 \\times \\frac{5}{7} = 0.28 \\times 5 = 1.4$$"
+      },
+      {
+        "title": "Set up equations based on the interval bounds",
+        "body": "The confidence interval is $[\\overline{x} - 1.4, \\overline{x} + 1.4]$. The problem states this interval is $[a, \\frac{6}{5}a]$. \nTherefore, we can write the system of equations:\n1) $\\overline{x} - 1.4 = a$\n2) $\\overline{x} + 1.4 = \\frac{6}{5}a$"
+      },
+      {
+        "title": "Solve the system of equations for the sample mean",
+        "body": "Substitute $a$ from the first equation into the second equation:\n$$\\overline{x} + 1.4 = \\frac{6}{5}(\\overline{x} - 1.4)$$ \nMultiply both sides by 5 to remove the fraction:\n$$5(\\overline{x} + 1.4) = 6(\\overline{x} - 1.4)$$\n$$5\\overline{x} + 7.0 = 6\\overline{x} - 8.4$$\n$$6\\overline{x} - 5\\overline{x} = 7.0 + 8.4$$\n$$\\overline{x} = 15.4$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Recall 95% confidence interval formula",
+        "body": "For a normal distribution N(m, σ²) with known σ, sample size n, and sample mean bar{x}, the 95% confidence interval for m is bar{x} ± z_{(0.025)} * (σ / √n), where z_{(0.025)} = 1.96. Here, σ = 5, n = 49."
+      },
+      {
+        "title": "Calculate margin of error",
+        "body": "Margin of error E = 1.96 * (5 / √49) = 1.96 * (5 / 7) = 1.96 * (5/7). Compute 5/7 ≈ 0.7143, then 1.96 * 0.7143 = 1.4 exactly, since 1.96/7 = 0.28 and 0.28 * 5 = 1.4. Thus, the interval is bar{x} - 1.4 ≤ m ≤ bar{x} + 1.4."
+      },
+      {
+        "title": "Identify center of given interval",
+        "body": "The given interval is a ≤ m ≤ (6/5)a = 1.2a. The center (sample mean bar{x}) is the midpoint: (a + 1.2a)/2 = 2.2a/2 = 1.1a. The half-length is (1.2a - a)/2 = 0.2a/2 = 0.1a, so full length 0.2a."
+      },
+      {
+        "title": "Equate lengths to solve for a",
+        "body": "The length of the confidence interval is 2E = 2 * 1.4 = 2.8. Set equal to given length: 0.2a = 2.8, so a = 2.8 / 0.2 = 14. Then bar{x} = 1.1a = 1.1 * 14 = 15.4."
+      },
+      {
+        "title": "Verify the interval",
+        "body": "For a = 14, interval is 14 ≤ m ≤ 16.8. Midpoint: (14 + 16.8)/2 = 15.4. Distance from mean: 15.4 - 14 = 1.4 and 16.8 - 15.4 = 1.4, matching E = 1.4."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ]
+  }
+}

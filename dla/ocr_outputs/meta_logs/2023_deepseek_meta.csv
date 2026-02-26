@@ -1,0 +1,11 @@
+"prob_id","raw_deepseek_ocr","raw_deepseek_ocr2"
+"2023_odd_common_1","<|ref|>text<|/ref|><|det|>[[24, 120, 520, 400]]<|/det|>
+1. \(\left(\frac{4}{2\sqrt{2}}\right)^{2+\sqrt{2}}\) 의 값은? [2점] 
+
+<|ref|>text<|/ref|><|det|>[[60, 580, 155, 760]]<|/det|>
+① \(\frac{1}{4}\) ② \(\frac{1}{2}\) ③ 1 ④ 2 ⑤ 4",""
+"2023_odd_common_2","<|ref|>text<|/ref|><|det|>[[24, 120, 520, 400]]<|/det|>
+1. \(\left(\frac{4}{2\sqrt{2}}\right)^{2+\sqrt{2}}\) 의 값은? [2점] 
+
+<|ref|>text<|/ref|><|det|>[[60, 580, 155, 760]]<|/det|>
+① \(\frac{1}{4}\) ② \(\frac{1}{2}\) ③ 1 ④ 2 ⑤ 4",""

@@ -1,0 +1,2777 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-12T19:57:45Z",
+    "ended_at_utc": "2026-02-12T20:13:35Z",
+    "elapsed_seconds": 950.239,
+    "problem_tag": "2026_odd_common_5",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72
+  },
+  "problem": {
+    "id": "2026_odd_common_5",
+    "label": "2026_odd_common_5 (수학2, 3점)",
+    "gold_answer": "3"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4425041675567627,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.176419258117676,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6523983478546143,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4425041675567627,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.176419258117676,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6523983478546143,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 후 대입": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 후 대입": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.584108352661133,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.1809258460998535,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.784682512283325,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.584108352661133,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.1809258460998535,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.784682512283325,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 계산": 2,
+            "f'(1) 계산": 3,
+            "미분": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 계산": 2,
+            "f'(1) 계산": 3,
+            "미분": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.29774522781372,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.413053035736084,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.32442831993103,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.29774522781372,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.413053035736084,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.32442831993103,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "곱의 미분법 적용": 3,
+            "도함수 구하기": 3,
+            "미분계수 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱의 미분법 적용": 3,
+            "도함수 구하기": 3,
+            "미분계수 계산": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.246311902999878,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.496782779693604,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.02076244354248,
+              "step_count": 3,
+              "step_titles": [
+                "함수 분해 및 미분법칙 적용",
+                "f'(x) 전개",
+                "x=1 대입 및 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.246311902999878,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.496782779693604,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.02076244354248,
+              "step_count": 3,
+              "step_titles": [
+                "함수 분해 및 미분법칙 적용",
+                "f'(x) 전개",
+                "x=1 대입 및 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "곱의 미분법 적용": 1,
+            "f'(1) 계산": 2,
+            "미분 공식 적용": 1,
+            "함수 분해 및 미분법칙 적용": 1,
+            "f'(x) 전개": 1,
+            "x=1 대입 및 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱의 미분법 적용": 1,
+            "f'(1) 계산": 2,
+            "미분 공식 적용": 1,
+            "함수 분해 및 미분법칙 적용": 1,
+            "f'(x) 전개": 1,
+            "x=1 대입 및 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.36522388458252,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.195302248001099,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.773677825927734,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.36522388458252,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.195302248001099,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.773677825927734,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 2,
+            "도함수 계산": 1,
+            "f'(1) 계산": 1,
+            "미분 계산": 1,
+            "x=1 대입": 2,
+            "조건 정리": 1,
+            "곱의 미분법 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 2,
+            "도함수 계산": 1,
+            "f'(1) 계산": 1,
+            "미분 계산": 1,
+            "x=1 대입": 2,
+            "조건 정리": 1,
+            "곱의 미분법 적용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.352675199508667,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.66055965423584,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "도함수 값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.476648092269897,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.352675199508667,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.66055965423584,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "도함수 값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.476648092269897,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 2,
+            "도함수 값 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 2,
+            "도함수 값 대입": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "함수 전개": 11,
+          "미분 후 대입": 3,
+          "미분 계산": 6,
+          "f'(1) 계산": 6,
+          "미분": 1,
+          "곱의 미분법 적용": 5,
+          "도함수 구하기": 3,
+          "미분계수 계산": 3,
+          "미분 공식 적용": 1,
+          "함수 분해 및 미분법칙 적용": 1,
+          "f'(x) 전개": 1,
+          "x=1 대입 및 계산": 1,
+          "도함수 계산": 1,
+          "x=1 대입": 2,
+          "조건 정리": 1,
+          "값 대입": 2,
+          "도함수 값 대입": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.88047194480896,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개(미분 준비)",
+                "미분 후 값 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.807312488555908,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분하기",
+                "x=1 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.421854019165039,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "값 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.88047194480896,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개(미분 준비)",
+                "미분 후 값 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.807312488555908,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분하기",
+                "x=1 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.421854019165039,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "값 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "함수 전개(미분 준비)": 1,
+            "미분 후 값 대입": 1,
+            "함수 전개": 2,
+            "미분하기": 1,
+            "x=1 대입": 1,
+            "미분": 1,
+            "값 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개(미분 준비)": 1,
+            "미분 후 값 대입": 1,
+            "함수 전개": 2,
+            "미분하기": 1,
+            "x=1 대입": 1,
+            "미분": 1,
+            "값 대입": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.080610036849976,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.577513933181763,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.750646114349365,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.080610036849976,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.577513933181763,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.750646114349365,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분": 1,
+            "f'(1) 계산": 3,
+            "도함수 계산": 1,
+            "미분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분": 1,
+            "f'(1) 계산": 3,
+            "도함수 계산": 1,
+            "미분 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.052472114562988,
+              "step_count": 3,
+              "step_titles": [
+                "미분법 선택",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.812593460083008,
+              "step_count": 2,
+              "step_titles": [
+                "미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.662555456161499,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.052472114562988,
+              "step_count": 3,
+              "step_titles": [
+                "미분법 선택",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.812593460083008,
+              "step_count": 2,
+              "step_titles": [
+                "미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.662555456161499,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "미분법 선택": 1,
+            "도함수 구하기": 1,
+            "미분계수 계산": 3,
+            "미분법 적용": 1,
+            "곱의 미분법 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "미분법 선택": 1,
+            "도함수 구하기": 1,
+            "미분계수 계산": 3,
+            "미분법 적용": 1,
+            "곱의 미분법 적용": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.420567274093628,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 값 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.699023246765137,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.73528289794922,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 수행",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.420567274093628,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 값 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.699023246765137,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.73528289794922,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 수행",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "곱의 미분법 적용": 1,
+            "f'(1) 값 계산": 1,
+            "미분 공식 적용": 1,
+            "x=1 대입": 1,
+            "함수 전개": 1,
+            "미분 수행": 1,
+            "값 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱의 미분법 적용": 1,
+            "f'(1) 값 계산": 1,
+            "미분 공식 적용": 1,
+            "x=1 대입": 1,
+            "함수 전개": 1,
+            "미분 수행": 1,
+            "값 대입": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.597729921340942,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.6176221370697,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.60169243812561,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.597729921340942,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.6176221370697,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.60169243812561,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱의 미분법 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 1,
+            "미분": 1,
+            "x=1 대입": 3,
+            "조건 정리": 2,
+            "곱의 미분법 적용": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 1,
+            "미분": 1,
+            "x=1 대입": 3,
+            "조건 정리": 2,
+            "곱의 미분법 적용": 2
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.84993028640747,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.557803630828857,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.463860988616943,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.84993028640747,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.557803630828857,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.463860988616943,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "함수 전개(미분 준비)": 1,
+          "미분 후 값 대입": 1,
+          "함수 전개": 10,
+          "미분하기": 1,
+          "x=1 대입": 5,
+          "미분": 3,
+          "값 대입": 5,
+          "f'(1) 계산": 3,
+          "도함수 계산": 1,
+          "미분 계산": 4,
+          "미분법 선택": 1,
+          "도함수 구하기": 1,
+          "미분계수 계산": 3,
+          "미분법 적용": 1,
+          "곱의 미분법 적용": 4,
+          "f'(1) 값 계산": 1,
+          "미분 공식 적용": 1,
+          "미분 수행": 1,
+          "조건 정리": 2
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.312283992767334,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분 선택",
+                "x=1 대입하여 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.136605978012085,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 값 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6876397132873535,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개(미분 준비)",
+                "미분 후 x=1 대입"
+              ],
+              "final_answer": "8 (③)",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.312283992767334,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분 선택",
+                "x=1 대입하여 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.136605978012085,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개",
+                "미분 후 값 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6876397132873535,
+              "step_count": 2,
+              "step_titles": [
+                "함수 전개(미분 준비)",
+                "미분 후 x=1 대입"
+              ],
+              "final_answer": "8 (③)",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "함수 전개 또는 곱의 미분 선택": 1,
+            "x=1 대입하여 계산": 1,
+            "함수 전개": 1,
+            "미분 후 값 대입": 1,
+            "함수 전개(미분 준비)": 1,
+            "미분 후 x=1 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개 또는 곱의 미분 선택": 1,
+            "x=1 대입하여 계산": 1,
+            "함수 전개": 1,
+            "미분 후 값 대입": 1,
+            "함수 전개(미분 준비)": 1,
+            "미분 후 x=1 대입": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.433500289916992,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.320945739746094,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.770598649978638,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.433500289916992,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.320945739746094,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.770598649978638,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분": 1,
+            "x=1 대입": 1,
+            "도함수 계산": 1,
+            "f'(1) 계산": 2,
+            "미분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분": 1,
+            "x=1 대입": 1,
+            "도함수 계산": 1,
+            "f'(1) 계산": 2,
+            "미분 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.856595516204834,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.903066158294678,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.547231435775757,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 공식 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.856595516204834,
+              "step_count": 3,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.903066158294678,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.547231435775757,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 공식 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "곱의 미분법 적용": 2,
+            "도함수 구하기": 1,
+            "미분계수 계산": 3,
+            "곱의 미분법 공식 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱의 미분법 적용": 2,
+            "도함수 구하기": 1,
+            "미분계수 계산": 3,
+            "곱의 미분법 공식 적용": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.46247148513794,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.96771788597107,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "x=1 대입 및 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.751070261001587,
+              "step_count": 3,
+              "step_titles": [
+                "곱셈 규칙 적용",
+                "미분식 정리",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.46247148513794,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.96771788597107,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "x=1 대입 및 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.751070261001587,
+              "step_count": 3,
+              "step_titles": [
+                "곱셈 규칙 적용",
+                "미분식 정리",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "곱의 미분법 적용": 2,
+            "f'(1) 계산": 1,
+            "x=1 대입 및 계산": 1,
+            "곱셈 규칙 적용": 1,
+            "미분식 정리": 1,
+            "x=1 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱의 미분법 적용": 2,
+            "f'(1) 계산": 1,
+            "x=1 대입 및 계산": 1,
+            "곱셈 규칙 적용": 1,
+            "미분식 정리": 1,
+            "x=1 대입": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.619894504547119,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "도함수 계산",
+                "$x=1$ 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.651694297790527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱셈법칙 적용",
+                "x=1에서의 값 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.598697185516357,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "8\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.619894504547119,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "도함수 계산",
+                "$x=1$ 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.651694297790527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱셈법칙 적용",
+                "x=1에서의 값 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.598697185516357,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "8\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "도함수 계산": 1,
+            "$x=1$ 대입": 1,
+            "곱셈법칙 적용": 1,
+            "x=1에서의 값 계산": 1,
+            "함수 전개": 1,
+            "미분 계산": 1,
+            "x=1 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "도함수 계산": 1,
+            "$x=1$ 대입": 1,
+            "곱셈법칙 적용": 1,
+            "x=1에서의 값 계산": 1,
+            "함수 전개": 1,
+            "미분 계산": 1,
+            "x=1 대입": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.361964225769043,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.634146451950073,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.952148675918579,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.361964225769043,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.634146451950073,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.952148675918579,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 계산": 3,
+            "값 대입": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.611111111111111,
+        "title_frequency_all_models": {
+          "함수 전개 또는 곱의 미분 선택": 1,
+          "x=1 대입하여 계산": 1,
+          "함수 전개": 8,
+          "미분 후 값 대입": 1,
+          "함수 전개(미분 준비)": 1,
+          "미분 후 x=1 대입": 1,
+          "미분": 1,
+          "x=1 대입": 3,
+          "도함수 계산": 2,
+          "f'(1) 계산": 3,
+          "미분 계산": 5,
+          "곱의 미분법 적용": 4,
+          "도함수 구하기": 1,
+          "미분계수 계산": 3,
+          "곱의 미분법 공식 적용": 1,
+          "x=1 대입 및 계산": 1,
+          "곱셈 규칙 적용": 1,
+          "미분식 정리": 1,
+          "조건 정리": 2,
+          "$x=1$ 대입": 1,
+          "곱셈법칙 적용": 1,
+          "x=1에서의 값 계산": 1,
+          "값 대입": 3
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.684816598892212,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분 선택",
+                "곱의 미분법 적용",
+                "x=1 대입하여 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.393828392028809,
+              "step_count": 3,
+              "step_titles": [
+                "함수 정리",
+                "곱의 미분법 적용",
+                "x=1 대입 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\)  (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.063961982727051,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분하기",
+                "x=1 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.684816598892212,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분 선택",
+                "곱의 미분법 적용",
+                "x=1 대입하여 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.393828392028809,
+              "step_count": 3,
+              "step_titles": [
+                "함수 정리",
+                "곱의 미분법 적용",
+                "x=1 대입 계산"
+              ],
+              "final_answer": "\\(f'(1)=8\\)  (③)",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.063961982727051,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분하기",
+                "x=1 대입"
+              ],
+              "final_answer": "\\(f'(1)=8\\) (③)",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개 또는 곱의 미분 선택": 1,
+            "곱의 미분법 적용": 2,
+            "x=1 대입하여 계산": 1,
+            "함수 정리": 1,
+            "x=1 대입 계산": 1,
+            "함수 전개": 1,
+            "미분하기": 1,
+            "x=1 대입": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개 또는 곱의 미분 선택": 1,
+            "곱의 미분법 적용": 2,
+            "x=1 대입하여 계산": 1,
+            "함수 정리": 1,
+            "x=1 대입 계산": 1,
+            "함수 전개": 1,
+            "미분하기": 1,
+            "x=1 대입": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.082212209701538,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.911874055862427,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.210654973983765,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.082212209701538,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.911874055862427,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.210654973983765,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "f'(1) 계산"
+              ],
+              "final_answer": "**③ 8**\n[/FINAL_ANSWER]",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분": 1,
+            "f'(1) 계산": 3,
+            "도함수 계산": 1,
+            "미분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분": 1,
+            "f'(1) 계산": 3,
+            "도함수 계산": 1,
+            "미분 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.37095308303833,
+              "step_count": 3,
+              "step_titles": [
+                "미분법 공식 선택",
+                "도함수 $f'(x)$ 구하기",
+                "값 대입 및 정답 도출"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.094263076782227,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.180195331573486,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법을 이용한 도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.37095308303833,
+              "step_count": 3,
+              "step_titles": [
+                "미분법 공식 선택",
+                "도함수 $f'(x)$ 구하기",
+                "값 대입 및 정답 도출"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.094263076782227,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법 적용",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.180195331573486,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법을 이용한 도함수 구하기",
+                "미분계수 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "미분법 공식 선택": 1,
+            "도함수 $f'(x)$ 구하기": 1,
+            "값 대입 및 정답 도출": 1,
+            "곱의 미분법 적용": 1,
+            "미분계수 계산": 2,
+            "곱의 미분법을 이용한 도함수 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "미분법 공식 선택": 1,
+            "도함수 $f'(x)$ 구하기": 1,
+            "값 대입 및 정답 도출": 1,
+            "곱의 미분법 적용": 1,
+            "미분계수 계산": 2,
+            "곱의 미분법을 이용한 도함수 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.722897052764893,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.13619112968445,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법칙 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.48269772529602,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.722897052764893,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.13619112968445,
+              "step_count": 2,
+              "step_titles": [
+                "곱의 미분법칙 적용",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.48269772529602,
+              "step_count": 2,
+              "step_titles": [
+                "미분 공식 적용",
+                "f'(1) 계산"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "함수 전개": 1,
+            "미분": 1,
+            "x=1 대입": 2,
+            "곱의 미분법칙 적용": 1,
+            "미분 공식 적용": 1,
+            "f'(1) 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 1,
+            "미분": 1,
+            "x=1 대입": 2,
+            "곱의 미분법칙 적용": 1,
+            "미분 공식 적용": 1,
+            "f'(1) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.076641082763672,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.820900678634644,
+              "step_count": 4,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분법 선택",
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.458218574523926,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱셈법칙 적용",
+                "x=1에서 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.076641082763672,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.820900678634644,
+              "step_count": 4,
+              "step_titles": [
+                "함수 전개 또는 곱의 미분법 선택",
+                "함수 전개",
+                "미분",
+                "x=1 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.458218574523926,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "곱셈법칙 적용",
+                "x=1에서 계산"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "함수 전개": 2,
+            "미분": 2,
+            "x=1 대입": 2,
+            "함수 전개 또는 곱의 미분법 선택": 1,
+            "조건 정리": 1,
+            "곱셈법칙 적용": 1,
+            "x=1에서 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 2,
+            "미분": 2,
+            "x=1 대입": 2,
+            "함수 전개 또는 곱의 미분법 선택": 1,
+            "조건 정리": 1,
+            "곱셈법칙 적용": 1,
+            "x=1에서 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.943364858627319,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 수행",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.0034849643707275,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.499334096908569,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.943364858627319,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 수행",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.0034849643707275,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "미분 계산",
+                "x=1 대입"
+              ],
+              "final_answer": "③ 8",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.499334096908569,
+              "step_count": 3,
+              "step_titles": [
+                "함수 전개",
+                "도함수 계산",
+                "값 대입"
+              ],
+              "final_answer": "8",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "함수 전개": 3,
+            "미분 수행": 1,
+            "값 대입": 2,
+            "미분 계산": 1,
+            "x=1 대입": 1,
+            "도함수 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 전개": 3,
+            "미분 수행": 1,
+            "값 대입": 2,
+            "미분 계산": 1,
+            "x=1 대입": 1,
+            "도함수 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "함수 전개 또는 곱의 미분 선택": 1,
+          "곱의 미분법 적용": 3,
+          "x=1 대입하여 계산": 1,
+          "함수 정리": 1,
+          "x=1 대입 계산": 1,
+          "함수 전개": 10,
+          "미분하기": 1,
+          "x=1 대입": 6,
+          "미분": 4,
+          "f'(1) 계산": 4,
+          "도함수 계산": 2,
+          "미분 계산": 2,
+          "미분법 공식 선택": 1,
+          "도함수 $f'(x)$ 구하기": 1,
+          "값 대입 및 정답 도출": 1,
+          "미분계수 계산": 2,
+          "곱의 미분법을 이용한 도함수 구하기": 1,
+          "곱의 미분법칙 적용": 1,
+          "미분 공식 적용": 1,
+          "함수 전개 또는 곱의 미분법 선택": 1,
+          "조건 정리": 1,
+          "곱셈법칙 적용": 1,
+          "x=1에서 계산": 1,
+          "미분 수행": 1,
+          "값 대입": 2
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "함수 전개": 11,
+          "미분 후 대입": 3,
+          "미분 계산": 6,
+          "f'(1) 계산": 6,
+          "미분": 1,
+          "곱의 미분법 적용": 5,
+          "도함수 구하기": 3,
+          "미분계수 계산": 3,
+          "미분 공식 적용": 1,
+          "함수 분해 및 미분법칙 적용": 1,
+          "f'(x) 전개": 1,
+          "x=1 대입 및 계산": 1,
+          "도함수 계산": 1,
+          "x=1 대입": 2,
+          "조건 정리": 1,
+          "값 대입": 2,
+          "도함수 값 대입": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "함수 전개(미분 준비)": 1,
+          "미분 후 값 대입": 1,
+          "함수 전개": 10,
+          "미분하기": 1,
+          "x=1 대입": 5,
+          "미분": 3,
+          "값 대입": 5,
+          "f'(1) 계산": 3,
+          "도함수 계산": 1,
+          "미분 계산": 4,
+          "미분법 선택": 1,
+          "도함수 구하기": 1,
+          "미분계수 계산": 3,
+          "미분법 적용": 1,
+          "곱의 미분법 적용": 4,
+          "f'(1) 값 계산": 1,
+          "미분 공식 적용": 1,
+          "미분 수행": 1,
+          "조건 정리": 2
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.611111111111111,
+        "title_frequency_all_models": {
+          "함수 전개 또는 곱의 미분 선택": 1,
+          "x=1 대입하여 계산": 1,
+          "함수 전개": 8,
+          "미분 후 값 대입": 1,
+          "함수 전개(미분 준비)": 1,
+          "미분 후 x=1 대입": 1,
+          "미분": 1,
+          "x=1 대입": 3,
+          "도함수 계산": 2,
+          "f'(1) 계산": 3,
+          "미분 계산": 5,
+          "곱의 미분법 적용": 4,
+          "도함수 구하기": 1,
+          "미분계수 계산": 3,
+          "곱의 미분법 공식 적용": 1,
+          "x=1 대입 및 계산": 1,
+          "곱셈 규칙 적용": 1,
+          "미분식 정리": 1,
+          "조건 정리": 2,
+          "$x=1$ 대입": 1,
+          "곱셈법칙 적용": 1,
+          "x=1에서의 값 계산": 1,
+          "값 대입": 3
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "함수 전개 또는 곱의 미분 선택": 1,
+          "곱의 미분법 적용": 3,
+          "x=1 대입하여 계산": 1,
+          "함수 정리": 1,
+          "x=1 대입 계산": 1,
+          "함수 전개": 10,
+          "미분하기": 1,
+          "x=1 대입": 6,
+          "미분": 4,
+          "f'(1) 계산": 4,
+          "도함수 계산": 2,
+          "미분 계산": 2,
+          "미분법 공식 선택": 1,
+          "도함수 $f'(x)$ 구하기": 1,
+          "값 대입 및 정답 도출": 1,
+          "미분계수 계산": 2,
+          "곱의 미분법을 이용한 도함수 구하기": 1,
+          "곱의 미분법칙 적용": 1,
+          "미분 공식 적용": 1,
+          "함수 전개 또는 곱의 미분법 선택": 1,
+          "조건 정리": 1,
+          "곱셈법칙 적용": 1,
+          "x=1에서 계산": 1,
+          "미분 수행": 1,
+          "값 대입": 2
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.7222222222222223,
+      "title_frequency": {
+        "함수 전개": 39,
+        "미분 후 대입": 3,
+        "미분 계산": 17,
+        "f'(1) 계산": 16,
+        "미분": 9,
+        "곱의 미분법 적용": 16,
+        "도함수 구하기": 5,
+        "미분계수 계산": 11,
+        "미분 공식 적용": 3,
+        "함수 분해 및 미분법칙 적용": 1,
+        "f'(x) 전개": 1,
+        "x=1 대입 및 계산": 2,
+        "도함수 계산": 6,
+        "x=1 대입": 16,
+        "조건 정리": 6,
+        "값 대입": 12,
+        "도함수 값 대입": 1,
+        "함수 전개(미분 준비)": 2,
+        "미분 후 값 대입": 2,
+        "미분하기": 2,
+        "미분법 선택": 1,
+        "미분법 적용": 1,
+        "f'(1) 값 계산": 1,
+        "미분 수행": 2,
+        "함수 전개 또는 곱의 미분 선택": 2,
+        "x=1 대입하여 계산": 2,
+        "미분 후 x=1 대입": 1,
+        "곱의 미분법 공식 적용": 1,
+        "곱셈 규칙 적용": 1,
+        "미분식 정리": 1,
+        "$x=1$ 대입": 1,
+        "곱셈법칙 적용": 2,
+        "x=1에서의 값 계산": 1,
+        "함수 정리": 1,
+        "x=1 대입 계산": 1,
+        "미분법 공식 선택": 1,
+        "도함수 $f'(x)$ 구하기": 1,
+        "값 대입 및 정답 도출": 1,
+        "곱의 미분법을 이용한 도함수 구하기": 1,
+        "곱의 미분법칙 적용": 1,
+        "함수 전개 또는 곱의 미분법 선택": 1,
+        "x=1에서 계산": 1
+      },
+      "accuracy": 0.0,
+      "n_samples": 72
+    }
+  }
+}

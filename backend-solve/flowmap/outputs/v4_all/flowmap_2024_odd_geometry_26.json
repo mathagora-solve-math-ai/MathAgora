@@ -1,0 +1,214 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "좌표 설정 및 조건 정리",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "좌표 설정(평면 α 위에서)",
+          "content": "평면 \\(\\alpha\\)를 \\(z=0\\)으로 두고, \\(\\overline{A'B'}=6\\)이므로\n\\[\nA'=(-3,0,0),\\quad B'=(3,0,0)\n\\]\n로 잡는다. 그러면 중점\n\\[\nM'=(0,0,0)\n\\]\n이다.\n\n또 \\(\\overline{PM'}\\perp \\overline{A'B'}\\)이고 \\(\\overline{PM'}=6\\)이므로 \\(x\\)-축(= \\(A'B'\\))에 수직인 \\(y\\)-방향으로\n\\[\nP=(0,6,0)\n\\]\n로 둘 수 있다.\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리 및 좌표 설정",
+          "content": "주어진 조건을 정리합니다:\n- AB = A'B' = 6 (선분과 정사영의 길이가 같음)\n- PM' ⊥ A'B', PM' = 6\n- 삼각형 A'B'P의 평면 ABP 위로의 정사영 넓이 = 9/2\n\nAB = A'B' = 6이므로, 선분 AB는 평면 α와 **평행**합니다.\n\n좌표를 설정합니다:\n- 평면 α를 xy평면(z = 0)으로 설정\n- A'B'의 중점을 원점에, A'B'를 x축 위에 배치\n\n그러면:\n- A' = (-3, 0, 0), B' = (3, 0, 0)\n- M'은 A'B'의 중점이므로 M' = (0, 0, 0)\n- PM' ⊥ A'B'이고 PM' = 6이므로 P = (0, 6, 0) 또는 (0, -6, 0)\n\nP = (0, 6, 0)으로 설정합니다.\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "조건 정리 및 평행 관계 파악",
+          "content": "선분 $\\mathrm{AB}$의 평면 $\\alpha$ 위로의 정사영이 $\\mathrm{A'B'}$이고, 두 선분의 길이가 $\\overline{\\mathrm{AB}} = \\overline{\\mathrm{A'B'}} = 6$으로 서로 같다.\n정사영의 길이가 원래 길이와 같으므로, 선분 $\\mathrm{AB}$는 평면 $\\alpha$와 평행하다.\n따라서 선분 $\\mathrm{AB}$의 중점 $\\mathrm{M}$의 정사영 $\\mathrm{M'}$은 선분 $\\mathrm{A'B'}$의 중점이 되며, 직선 $\\mathrm{AB}$와 직선 $\\mathrm{A'B'}$은 서로 평행하다."
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "AB와 평면 α의 평행 관계 및 점 A, B, M 좌표 결정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "A,B의 일반형과 조건 \\(\\overline{AB}=\\overline{A'B'}\\) 해석",
+          "content": "\\(A,B\\)는 각각 \\(A',B'\\)에서 수직(법선)방향으로 올라간 점이므로\n\\[\nA=(-3,0,a),\\quad B=(3,0,b)\\qquad (a,b\\neq 0,\\ a\\neq b\\ \\text{가능})\n\\]\n로 둘 수 있다.\n\n이때\n\\[\n\\overline{AB}^2=(6)^2+(b-a)^2\n\\]\n인데 \\(\\overline{AB}=6\\)이므로\n\\[\n36=36+(b-a)^2 \\Rightarrow b-a=0 \\Rightarrow a=b.\n\\]\n즉 \\(A,B\\)는 평면 \\(\\alpha\\)에 대해 같은 높이에 있고, 따라서 선분 \\(AB\\)는 평면 \\(\\alpha\\)와 **평행**이다.\n\n중점은\n\\[\nM=\\left(0,0,a\\right)\n\\]\n이고 \\(M'\\)는 \\((0,0,0)\\)로 맞다.\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "점 A, B, M의 좌표 결정",
+          "content": "AB가 평면 α와 평행하므로, A와 B는 같은 높이 h에 있습니다.\n- A = (-3, 0, h), B = (3, 0, h) (h > 0)\n- M = AB의 중점 = (0, 0, h)\n\nM의 정사영 M' = (0, 0, 0)이 맞습니다.\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "삼각형 A'B'P의 넓이 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "삼각형 \\(A'B'P\\)의 평면 \\(ABP\\)로의 정사영 넓이로부터 각도 구하기",
+          "content": "삼각형 \\(A'B'P\\)는 \\(\\alpha\\) 위에 있고,\n\\[\n\\text{밑변 }A'B'=6,\\quad \\text{높이 }PM'=6\n\\]\n이므로 넓이는\n\\[\n[ A'B'P ]=\\frac12\\cdot 6\\cdot 6=18.\n\\]\n\n어떤 평면 위의 도형을 다른 평면으로 **정사영**하면 넓이는\n\\[\n(\\text{원래 넓이})\\times \\cos\\theta\n\\]\n가 된다. 여기서 \\(\\theta\\)는 두 평면(여기서는 \\(\\alpha\\)와 \\(ABP\\)) 사이의 각이다.\n\n정사영 넓이가 \\(\\frac92\\)이므로\n\\[\n18\\cos\\theta=\\frac92 \\Rightarrow \\cos\\theta=\\frac{1}{4}.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "삼각형 A'B'P의 넓이 계산",
+          "content": "삼각형 A'B'P:\n- A' = (-3, 0, 0), B' = (3, 0, 0), P = (0, 6, 0)\n- 밑변 A'B' = 6, 높이 = 6\n\n넓이 = (1/2) × 6 × 6 = 18\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "삼각형 A'B'P의 넓이 계산",
+          "content": "평면 $\\alpha$ 위에 있는 삼각형 $\\mathrm{A'B'P}$의 넓이를 구한다.\n밑변을 $\\overline{\\mathrm{A'B'}}$로 보면 그 길이는 $6$이다.\n조건에서 $\\overline{\\mathrm{PM'}} \\perp \\overline{\\mathrm{A'B'}}$이고 $\\overline{\\mathrm{PM'}} = 6$이므로, $\\overline{\\mathrm{PM'}}$은 이 삼각형의 높이가 된다.\n따라서 삼각형 $\\mathrm{A'B'P}$의 넓이 $S$는 다음과 같다.\n$$S = \\frac{1}{2} \\times \\overline{\\mathrm{A'B'}} \\times \\overline{\\mathrm{PM'}} = \\frac{1}{2} \\times 6 \\times 6 = 18$$"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "평면 ABP의 법선벡터 및 두 평면 사이 각도 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "평면 \\(ABP\\)의 기울기(각도)를 \\(a\\)로 표현",
+          "content": "평면 \\(ABP\\)는 \\(AB\\) 방향(= \\(x\\)-방향)과 점 \\(P\\)를 포함한다.\n\n벡터를 잡으면\n\\[\n\\overrightarrow{AB}=(6,0,0),\\quad \\overrightarrow{AP}=(3,6,-a).\n\\]\n법선벡터는\n\\[\n\\vec n=\\overrightarrow{AB}\\times \\overrightarrow{AP}\n=(6,0,0)\\times(3,6,-a)=(0,6a,36).\n\\]\n\n평면 \\(\\alpha\\)의 법선은 \\(\\vec k=(0,0,1)\\).\n두 평면 사이 각 \\(\\theta\\)는 법선 사이 각과 같으므로\n\\[\n\\cos\\theta=\\frac{|\\vec n\\cdot \\vec k|}{\\|\\vec n\\|\\|\\vec k\\|}\n=\\frac{|36|}{\\sqrt{(6a)^2+36^2}}\n=\\frac{36}{6\\sqrt{a^2+36}}\n=\\frac{6}{\\sqrt{a^2+36}}.\n\\]\n그런데 \\(\\cos\\theta=\\frac14\\)이므로\n\\[\n\\frac{6}{\\sqrt{a^2+36}}=\\frac14\n\\Rightarrow \\sqrt{a^2+36}=24\n\\Rightarrow a^2=540\n\\Rightarrow |a|=6\\sqrt{15}.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "평면 ABP의 법선벡터 구하기",
+          "content": "점들의 좌표:\n- A = (-3, 0, h), B = (3, 0, h), P = (0, 6, 0)\n\n벡터:\n- $\\vec{PA} = (-3, -6, h)$\n- $\\vec{PB} = (3, -6, h)$\n\n법선벡터 $\\vec{n} = \\vec{PA} \\times \\vec{PB}$:\n$$\\vec{n} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ -3 & -6 & h \\\\ 3 & -6 & h \\end{vmatrix}$$\n\n$$= \\vec{i}[(-6)h - h(-6)] - \\vec{j}[(-3)h - h(3)] + \\vec{k}[(-3)(-6) - (-6)(3)]$$\n$$= \\vec{i}(-6h + 6h) - \\vec{j}(-3h - 3h) + \\vec{k}(18 + 18)$$\n$$= (0, 6h, 36)$$\n\n법선벡터: $\\vec{n} = (0, 6h, 36)$ 또는 간단히 $(0, h, 6)$\n[/STEP]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "정사영 넓이 조건으로 h 결정",
+          "content": "평면 α의 법선벡터: $\\vec{n_\\alpha} = (0, 0, 1)$\n평면 ABP의 법선벡터: $\\vec{n} = (0, h, 6)$\n\n두 평면이 이루는 각을 θ라 하면:\n$$\\cos\\theta = \\frac{|\\vec{n} \\cdot \\vec{n_\\alpha}|}{|\\vec{n}||\\vec{n_\\alpha}|} = \\frac{6}{\\sqrt{h^2 + 36}}$$\n\n정사영 넓이 = 원래 넓이 × |cosθ|\n$$\\frac{9}{2} = 18 \\times \\frac{6}{\\sqrt{h^2 + 36}}$$\n\n$$\\frac{9}{2} = \\frac{108}{\\sqrt{h^2 + 36}}$$\n\n$$\\sqrt{h^2 + 36} = \\frac{108 \\times 2}{9} = 24$$\n\n$$h^2 + 36 = 576$$\n$$h^2 = 540$$\n$$h = 6\\sqrt{15}$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "두 평면 사이의 각(이면각) 계산",
+          "content": "삼각형 $\\mathrm{A'B'P}$의 평면 $\\mathrm{ABP}$ 위로의 정사영의 넓이가 $\\frac{9}{2}$라고 주어졌다.\n평면 $\\mathrm{ABP}$와 평면 $\\alpha$가 이루는 예각의 크기를 $\\theta$라 하면, 정사영의 넓이 공식($S' = S \\cos\\theta$)에 의해 다음이 성립한다.\n$$\\frac{9}{2} = 18 \\times \\cos\\theta$$\n$$\\cos\\theta = \\frac{9/2}{18} = \\frac{1}{4}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "선분 PM의 길이 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "구하려는 \\(\\overline{PM}\\) 계산",
+          "content": "\\[\nP=(0,6,0),\\quad M=(0,0,a)\n\\]\n이므로\n\\[\nPM^2=(0-0)^2+(6-0)^2+(0-a)^2=36+a^2=36+540=576.\n\\]\n따라서\n\\[\nPM=24.\n\\]\n\n---"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "PM의 길이 계산",
+          "content": "- P = (0, 6, 0)\n- M = (0, 0, h) = (0, 0, 6√15)\n\n$$PM = \\sqrt{(0-0)^2 + (0-6)^2 + (6\\sqrt{15}-0)^2}$$\n$$= \\sqrt{0 + 36 + 36 \\times 15}$$\n$$= \\sqrt{36 + 540}$$\n$$= \\sqrt{576} = 24$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "선분 PM의 길이 계산",
+          "content": "이제 선분 $\\mathrm{PM}$의 길이를 구하기 위해 기하학적 위치 관계를 파악한다.\n1. $\\mathrm{M}$"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "최종 답안",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "\\[\n\\overline{PM}=24 \\quad (\\text{⑤})\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 6,
+          "title": "Final Answer",
+          "content": "**⑤ 24**\n[/FINAL_ANSWER]"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(npx tsc:*)",
+      "Bash(curl:*)",
+      "Bash(LC_ALL=C grep:*)",
+      "Read(//workspace/**)",
+      "Bash(sort:*)",
+      "Bash(echo \"directory not found\" ls /workspace/data/*.csv)",
+      "Bash(head -5 ls /workspace/backend-solve/flowmap/outputs/v4_all/steps_2024_odd_common_*.json)",
+      "Bash(python feedback_poc.py)",
+      "Bash(tee /tmp/feedback_full.log)"
+    ]
+  }
+}

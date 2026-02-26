@@ -1,0 +1,3750 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T05:55:14Z",
+    "ended_at_utc": "2026-02-13T06:35:32Z",
+    "elapsed_seconds": 2418.37,
+    "problem_tag": "2026_odd_geometry_26",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_geometry_26",
+    "label": "2026_odd_geometry_26 (기하, 3점)",
+    "gold_answer": "2"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.285144329071045,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.666414022445679,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 방정식 구하기",
+                "PF, PF' 계산",
+                "조건 대입하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.573969602584839,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 구하기 및 y절편 P",
+                "PF, PF' 계산",
+                "조건 PF·PF' = 8로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.285144329071045,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.666414022445679,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 방정식 구하기",
+                "PF, PF' 계산",
+                "조건 대입하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.573969602584839,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 구하기 및 y절편 P",
+                "PF, PF' 계산",
+                "조건 PF·PF' = 8로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 구하기": 1,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 표준형과 초점": 2,
+            "PF, PF' 계산": 2,
+            "조건 대입하여 a 구하기": 1,
+            "접선 구하기 및 y절편 P": 1,
+            "조건 PF·PF' = 8로 a 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 구하기": 1,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 표준형과 초점": 2,
+            "PF, PF' 계산": 2,
+            "조건 대입하여 a 구하기": 1,
+            "접선 구하기 및 y절편 P": 1,
+            "조건 PF·PF' = 8로 a 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.636559963226318,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF, PF' 계산 및 방정식 수립",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.173858880996704,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 점이 곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF × PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.4660325050354,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.636559963226318,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF, PF' 계산 및 방정식 수립",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.173858880996704,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 점이 곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF × PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.4660325050354,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "쌍곡선 분석 및 조건 확인": 1,
+            "접선의 방정식 유도": 2,
+            "점 P의 좌표 결정": 2,
+            "PF, PF' 계산 및 방정식 수립": 1,
+            "a 값 계산": 3,
+            "쌍곡선 분석 및 점이 곡선 위에 있는지 확인": 1,
+            "PF × PF' 계산": 1,
+            "쌍곡선 정보 정리": 1,
+            "점이 쌍곡선 위에 있는지 확인": 1,
+            "접선의 방정식 구하기": 1,
+            "점 P의 좌표 구하기": 1,
+            "PF와 PF' 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 분석 및 조건 확인": 1,
+            "접선의 방정식 유도": 2,
+            "점 P의 좌표 결정": 2,
+            "PF, PF' 계산 및 방정식 수립": 1,
+            "a 값 계산": 3,
+            "쌍곡선 분석 및 점이 곡선 위에 있는지 확인": 1,
+            "PF × PF' 계산": 1,
+            "쌍곡선 정보 정리": 1,
+            "점이 쌍곡선 위에 있는지 확인": 1,
+            "접선의 방정식 구하기": 1,
+            "점 P의 좌표 구하기": 1,
+            "PF와 PF' 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.908679008483887,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a 값 구하기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.074509859085083,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.789149045944214,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a 값 구하기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.908679008483887,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a 값 구하기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.074509859085083,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.789149045944214,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a 값 구하기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "초점의 좌표 구하기": 3,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리의 곱 계산 및 a 값 구하기": 2,
+            "접선의 방정식과 점 P의 좌표 구하기": 1,
+            "조건 적용 및 정답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "초점의 좌표 구하기": 3,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리의 곱 계산 및 a 값 구하기": 2,
+            "접선의 방정식과 점 P의 좌표 구하기": 1,
+            "조건 적용 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 66.50083231925964,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 식 정리 및 초점 찾기",
+                "점 확인 및 접선 방정식 구하기",
+                "P점 찾기",
+                "거리 계산 및 곱 구하기",
+                "a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.12302494049072,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "P점 좌표 구하기",
+                "PF × PF' 계산 및 a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 63.23495316505432,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 방정식 및 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "PF와 PF' 거리 계산",
+                "곱 계산 및 a값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 66.50083231925964,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 식 정리 및 초점 찾기",
+                "점 확인 및 접선 방정식 구하기",
+                "P점 찾기",
+                "거리 계산 및 곱 구하기",
+                "a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.12302494049072,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "P점 좌표 구하기",
+                "PF × PF' 계산 및 a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 63.23495316505432,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 방정식 및 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "PF와 PF' 거리 계산",
+                "곱 계산 및 a값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선 식 정리 및 초점 찾기": 1,
+            "점 확인 및 접선 방정식 구하기": 1,
+            "P점 찾기": 1,
+            "거리 계산 및 곱 구하기": 1,
+            "a 풀기": 1,
+            "쌍곡선 방정식 정리 및 초점 구하기": 1,
+            "접선 방정식 구하기": 1,
+            "P점 좌표 구하기": 1,
+            "PF × PF' 계산 및 a 풀기": 1,
+            "쌍곡선 방정식 및 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "P점 좌표 계산": 1,
+            "PF와 PF' 거리 계산": 1,
+            "곱 계산 및 a값 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 식 정리 및 초점 찾기": 1,
+            "점 확인 및 접선 방정식 구하기": 1,
+            "P점 찾기": 1,
+            "거리 계산 및 곱 구하기": 1,
+            "a 풀기": 1,
+            "쌍곡선 방정식 정리 및 초점 구하기": 1,
+            "접선 방정식 구하기": 1,
+            "P점 좌표 구하기": 1,
+            "PF × PF' 계산 및 a 풀기": 1,
+            "쌍곡선 방정식 및 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "P점 좌표 계산": 1,
+            "PF와 PF' 거리 계산": 1,
+            "곱 계산 및 a값 도출": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 46.99993181228638,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "곱 PF·PF' = 8 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.355772972106934,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P의 좌표",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\) (②번)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.108493089675903,
+              "step_count": 4,
+              "step_titles": [
+                "문제 재정리",
+                "접선의 방정식 구하기",
+                "거리 PF, PF' 계산",
+                "곱 조건에서 a 구하기"
+              ],
+              "final_answer": "\\(a = \\frac{4\\sqrt{3}}{3}\\) 이므로 보기에서 ②번이 정답이다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 46.99993181228638,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "곱 PF·PF' = 8 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.355772972106934,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P의 좌표",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\) (②번)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.108493089675903,
+              "step_count": 4,
+              "step_titles": [
+                "문제 재정리",
+                "접선의 방정식 구하기",
+                "거리 PF, PF' 계산",
+                "곱 조건에서 a 구하기"
+              ],
+              "final_answer": "\\(a = \\frac{4\\sqrt{3}}{3}\\) 이므로 보기에서 ②번이 정답이다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선의 표준형 변환": 2,
+            "접선 방정식 구하기": 2,
+            "점 P 구하기": 1,
+            "PF와 PF'의 길이 계산": 2,
+            "곱 PF·PF' = 8 조건 적용": 1,
+            "점 P의 좌표": 1,
+            "주어진 조건 적용": 1,
+            "문제 재정리": 1,
+            "접선의 방정식 구하기": 1,
+            "거리 PF, PF' 계산": 1,
+            "곱 조건에서 a 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 표준형 변환": 2,
+            "접선 방정식 구하기": 2,
+            "점 P 구하기": 1,
+            "PF와 PF'의 길이 계산": 2,
+            "곱 PF·PF' = 8 조건 적용": 1,
+            "점 P의 좌표": 1,
+            "주어진 조건 적용": 1,
+            "문제 재정리": 1,
+            "접선의 방정식 구하기": 1,
+            "거리 PF, PF' 계산": 1,
+            "곱 조건에서 a 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 84.19403457641602,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.58658790588379,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "초점 좌표 구하기",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.02003455162048,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 84.19403457641602,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.58658790588379,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "초점 좌표 구하기",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.02003455162048,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "쌍곡선 형태 분석 및 초점 위치 파악": 2,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 3,
+            "거리 PF와 PF' 계산": 3,
+            "곱 계산 및 방정식 세우기": 3,
+            "조건 정리": 1,
+            "초점 좌표 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 형태 분석 및 초점 위치 파악": 2,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 3,
+            "거리 PF와 PF' 계산": 3,
+            "곱 계산 및 방정식 세우기": 3,
+            "조건 정리": 1,
+            "초점 좌표 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 구하기": 1,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 표준형과 초점": 2,
+          "PF, PF' 계산": 2,
+          "조건 대입하여 a 구하기": 1,
+          "접선 구하기 및 y절편 P": 1,
+          "조건 PF·PF' = 8로 a 구하기": 1,
+          "쌍곡선 분석 및 조건 확인": 1,
+          "접선의 방정식 유도": 2,
+          "점 P의 좌표 결정": 2,
+          "PF, PF' 계산 및 방정식 수립": 1,
+          "a 값 계산": 3,
+          "쌍곡선 분석 및 점이 곡선 위에 있는지 확인": 1,
+          "PF × PF' 계산": 1,
+          "쌍곡선 정보 정리": 1,
+          "점이 쌍곡선 위에 있는지 확인": 1,
+          "접선의 방정식 구하기": 2,
+          "점 P의 좌표 구하기": 1,
+          "PF와 PF' 계산": 1,
+          "초점의 좌표 구하기": 3,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리의 곱 계산 및 a 값 구하기": 2,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "조건 적용 및 정답 도출": 1,
+          "쌍곡선 식 정리 및 초점 찾기": 1,
+          "점 확인 및 접선 방정식 구하기": 1,
+          "P점 찾기": 1,
+          "거리 계산 및 곱 구하기": 1,
+          "a 풀기": 1,
+          "쌍곡선 방정식 정리 및 초점 구하기": 1,
+          "P점 좌표 구하기": 1,
+          "PF × PF' 계산 및 a 풀기": 1,
+          "쌍곡선 방정식 및 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "P점 좌표 계산": 1,
+          "PF와 PF' 거리 계산": 1,
+          "곱 계산 및 a값 도출": 1,
+          "쌍곡선의 표준형 변환": 2,
+          "점 P 구하기": 1,
+          "PF와 PF'의 길이 계산": 2,
+          "곱 PF·PF' = 8 조건 적용": 1,
+          "점 P의 좌표": 1,
+          "주어진 조건 적용": 1,
+          "문제 재정리": 1,
+          "거리 PF, PF' 계산": 1,
+          "곱 조건에서 a 구하기": 1,
+          "쌍곡선 형태 분석 및 초점 위치 파악": 2,
+          "접선과 y축의 교점 P 구하기": 3,
+          "거리 PF와 PF' 계산": 3,
+          "곱 계산 및 방정식 세우기": 3,
+          "조건 정리": 1,
+          "초점 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.678940773010254,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선 표준형과 초점 구하기",
+                "접선 방정식 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.588938236236572,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 구하기 및 y절편 P",
+                "PF, PF' 계산",
+                "조건 PF·PF'=8로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.433837413787842,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF·PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.678940773010254,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선 표준형과 초점 구하기",
+                "접선 방정식 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.588938236236572,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 구하기 및 y절편 P",
+                "PF, PF' 계산",
+                "조건 PF·PF'=8로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.433837413787842,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF·PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "쌍곡선 표준형과 초점 구하기": 1,
+            "접선 방정식 구하기": 2,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 표준형과 초점": 1,
+            "접선 구하기 및 y절편 P": 1,
+            "PF, PF' 계산": 1,
+            "조건 PF·PF'=8로 a 구하기": 1,
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "y축과의 교점 P 구하기": 1,
+            "PF·PF' 계산 후 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 표준형과 초점 구하기": 1,
+            "접선 방정식 구하기": 2,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 표준형과 초점": 1,
+            "접선 구하기 및 y절편 P": 1,
+            "PF, PF' 계산": 1,
+            "조건 PF·PF'=8로 a 구하기": 1,
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "y축과의 교점 P 구하기": 1,
+            "PF·PF' 계산 후 조건 적용": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.470060586929321,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF × PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.851102113723755,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산 및 방정식 수립",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.873226642608643,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산 및 조건 적용"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.470060586929321,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF × PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.851102113723755,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 분석 및 조건 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산 및 방정식 수립",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.873226642608643,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산 및 조건 적용"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "쌍곡선 분석 및 조건 확인": 2,
+            "접선의 방정식 유도": 3,
+            "점 P의 좌표 결정": 1,
+            "PF × PF' 계산": 1,
+            "a 값 계산": 2,
+            "점 P의 좌표 계산": 2,
+            "PF, PF' 계산 및 방정식 수립": 1,
+            "쌍곡선 정보 정리": 1,
+            "점이 쌍곡선 위에 있는지 확인": 1,
+            "PF, PF' 계산 및 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 분석 및 조건 확인": 2,
+            "접선의 방정식 유도": 3,
+            "점 P의 좌표 결정": 1,
+            "PF × PF' 계산": 1,
+            "a 값 계산": 2,
+            "점 P의 좌표 계산": 2,
+            "PF, PF' 계산 및 방정식 수립": 1,
+            "쌍곡선 정보 정리": 1,
+            "점이 쌍곡선 위에 있는지 확인": 1,
+            "PF, PF' 계산 및 조건 적용": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.03696084022522,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "조건을 이용한 a의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.17426109313965,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식 및 점 P의 좌표",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.68384337425232,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건을 이용한 a의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.03696084022522,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "조건을 이용한 a의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.17426109313965,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식 및 점 P의 좌표",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.68384337425232,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건을 이용한 a의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "쌍곡선의 초점 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 1,
+            "조건을 이용한 a의 값 계산": 2,
+            "초점의 좌표 구하기": 2,
+            "접선의 방정식 및 점 P의 좌표": 1,
+            "조건 적용 및 정답 도출": 1,
+            "접선의 방정식과 점 P의 좌표 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 초점 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 1,
+            "조건을 이용한 a의 값 계산": 2,
+            "초점의 좌표 구하기": 2,
+            "접선의 방정식 및 점 P의 좌표": 1,
+            "조건 적용 및 정답 도출": 1,
+            "접선의 방정식과 점 P의 좌표 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.632323026657104,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "초점 위치 계산",
+                "접선 방정식 구하기",
+                "y축 교점 P 찾기",
+                "거리 PF와 PF' 계산 및 곱 구하기",
+                "방정식 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 46.348909854888916,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리 및 초점 구하기",
+                "점 확인 및 접선 방정식 구하기",
+                "P점 구하기",
+                "거리 곱 계산 및 a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 64.01157641410828,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 확인 및 초점 계산",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "거리 계산 및 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 53.632323026657104,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "초점 위치 계산",
+                "접선 방정식 구하기",
+                "y축 교점 P 찾기",
+                "거리 PF와 PF' 계산 및 곱 구하기",
+                "방정식 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 46.348909854888916,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리 및 초점 구하기",
+                "점 확인 및 접선 방정식 구하기",
+                "P점 구하기",
+                "거리 곱 계산 및 a 풀기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 64.01157641410828,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 확인 및 초점 계산",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "거리 계산 및 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선 방정식 정리": 1,
+            "초점 위치 계산": 1,
+            "접선 방정식 구하기": 2,
+            "y축 교점 P 찾기": 1,
+            "거리 PF와 PF' 계산 및 곱 구하기": 1,
+            "방정식 풀기": 1,
+            "쌍곡선 방정식 정리 및 초점 구하기": 1,
+            "점 확인 및 접선 방정식 구하기": 1,
+            "P점 구하기": 1,
+            "거리 곱 계산 및 a 풀기": 1,
+            "쌍곡선 방정식 확인 및 초점 계산": 1,
+            "P점 좌표 계산": 1,
+            "거리 계산 및 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 방정식 정리": 1,
+            "초점 위치 계산": 1,
+            "접선 방정식 구하기": 2,
+            "y축 교점 P 찾기": 1,
+            "거리 PF와 PF' 계산 및 곱 구하기": 1,
+            "방정식 풀기": 1,
+            "쌍곡선 방정식 정리 및 초점 구하기": 1,
+            "점 확인 및 접선 방정식 구하기": 1,
+            "P점 구하기": 1,
+            "거리 곱 계산 및 a 풀기": 1,
+            "쌍곡선 방정식 확인 및 초점 계산": 1,
+            "P점 좌표 계산": 1,
+            "거리 계산 및 조건 적용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 71.6505994796753,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선의 방정식 구하기",
+                "점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "② \\(\\dfrac{4\\sqrt{3}}{3}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.528822660446167,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 쌍곡선의 표준형 변환",
+                "주어진 점에서 접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\(\\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.21431279182434,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 쌍곡선의 표준형 변환",
+                "점 (a, √2a)에서의 접선 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "② \\(\\frac{4\\sqrt{3}}{3}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 71.6505994796753,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선의 방정식 구하기",
+                "점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "② \\(\\dfrac{4\\sqrt{3}}{3}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.528822660446167,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 쌍곡선의 표준형 변환",
+                "주어진 점에서 접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF'의 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\(\\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.21431279182434,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 쌍곡선의 표준형 변환",
+                "점 (a, √2a)에서의 접선 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "② \\(\\frac{4\\sqrt{3}}{3}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선의 표준형 변환": 1,
+            "접선의 방정식 구하기": 1,
+            "점 P 구하기": 1,
+            "PF와 PF'의 길이 계산": 2,
+            "주어진 조건 적용": 3,
+            "주어진 쌍곡선의 표준형 변환": 2,
+            "주어진 점에서 접선 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "점 (a, √2a)에서의 접선 구하기": 1,
+            "PF와 PF' 길이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 표준형 변환": 1,
+            "접선의 방정식 구하기": 1,
+            "점 P 구하기": 1,
+            "PF와 PF'의 길이 계산": 2,
+            "주어진 조건 적용": 3,
+            "주어진 쌍곡선의 표준형 변환": 2,
+            "주어진 점에서 접선 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "점 (a, √2a)에서의 접선 구하기": 1,
+            "PF와 PF' 길이 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 51.13148093223572,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.98126029968262,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 형태와 초점 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 51.19046688079834,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 형태 분석",
+                "초점 좌표 계산",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 51.13148093223572,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 50.98126029968262,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 형태와 초점 파악",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 51.19046688079834,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 형태 분석",
+                "초점 좌표 계산",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 1,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 3,
+            "거리 PF와 PF' 계산": 3,
+            "곱 계산 및 방정식 세우기": 3,
+            "쌍곡선의 형태와 초점 파악": 1,
+            "쌍곡선 형태 분석": 1,
+            "초점 좌표 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 3,
+            "거리 PF와 PF' 계산": 3,
+            "곱 계산 및 방정식 세우기": 3,
+            "쌍곡선의 형태와 초점 파악": 1,
+            "쌍곡선 형태 분석": 1,
+            "초점 좌표 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "쌍곡선 표준형과 초점 구하기": 1,
+          "접선 방정식 구하기": 7,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 표준형과 초점": 1,
+          "접선 구하기 및 y절편 P": 1,
+          "PF, PF' 계산": 1,
+          "조건 PF·PF'=8로 a 구하기": 1,
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "y축과의 교점 P 구하기": 1,
+          "PF·PF' 계산 후 조건 적용": 1,
+          "쌍곡선 분석 및 조건 확인": 2,
+          "접선의 방정식 유도": 3,
+          "점 P의 좌표 결정": 1,
+          "PF × PF' 계산": 1,
+          "a 값 계산": 2,
+          "점 P의 좌표 계산": 2,
+          "PF, PF' 계산 및 방정식 수립": 1,
+          "쌍곡선 정보 정리": 1,
+          "점이 쌍곡선 위에 있는지 확인": 1,
+          "PF, PF' 계산 및 조건 적용": 1,
+          "쌍곡선의 초점 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 1,
+          "조건을 이용한 a의 값 계산": 2,
+          "초점의 좌표 구하기": 2,
+          "접선의 방정식 및 점 P의 좌표": 1,
+          "조건 적용 및 정답 도출": 1,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "쌍곡선 방정식 정리": 1,
+          "초점 위치 계산": 1,
+          "y축 교점 P 찾기": 1,
+          "거리 PF와 PF' 계산 및 곱 구하기": 1,
+          "방정식 풀기": 1,
+          "쌍곡선 방정식 정리 및 초점 구하기": 1,
+          "점 확인 및 접선 방정식 구하기": 1,
+          "P점 구하기": 1,
+          "거리 곱 계산 및 a 풀기": 1,
+          "쌍곡선 방정식 확인 및 초점 계산": 1,
+          "P점 좌표 계산": 1,
+          "거리 계산 및 조건 적용": 1,
+          "쌍곡선의 표준형 변환": 1,
+          "접선의 방정식 구하기": 1,
+          "점 P 구하기": 1,
+          "PF와 PF'의 길이 계산": 2,
+          "주어진 조건 적용": 3,
+          "주어진 쌍곡선의 표준형 변환": 2,
+          "주어진 점에서 접선 방정식 구하기": 1,
+          "접선과 y축의 교점 P 구하기": 4,
+          "점 (a, √2a)에서의 접선 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "조건 정리": 1,
+          "거리 PF와 PF' 계산": 3,
+          "곱 계산 및 방정식 세우기": 3,
+          "쌍곡선의 형태와 초점 파악": 1,
+          "쌍곡선 형태 분석": 1,
+          "초점 좌표 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.532057523727417,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 및 거리 PF, PF' 계산",
+                "조건 대입하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=4\\sqrt2\n\\]\n(제시된 보기에는 해당 값이 없습니다.)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.543619155883789,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식과 점 P 구하기",
+                "PF·PF' 조건으로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.703927278518677,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 방정식 구하기",
+                "y축과의 교점 P",
+                "거리 PF, PF' 계산",
+                "조건 적용하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.532057523727417,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 및 거리 PF, PF' 계산",
+                "조건 대입하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=4\\sqrt2\n\\]\n(제시된 보기에는 해당 값이 없습니다.)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.543619155883789,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식과 점 P 구하기",
+                "PF·PF' 조건으로 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.703927278518677,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 표준형과 초점",
+                "접선 방정식 구하기",
+                "y축과의 교점 P",
+                "거리 PF, PF' 계산",
+                "조건 적용하여 a 구하기"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "쌍곡선 정리 및 초점 구하기": 2,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 및 거리 PF, PF' 계산": 1,
+            "조건 대입하여 a 구하기": 1,
+            "접선 방정식과 점 P 구하기": 1,
+            "PF·PF' 조건으로 a 구하기": 1,
+            "쌍곡선 표준형과 초점": 1,
+            "y축과의 교점 P": 1,
+            "거리 PF, PF' 계산": 1,
+            "조건 적용하여 a 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "쌍곡선 정리 및 초점 구하기": 2,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 및 거리 PF, PF' 계산": 1,
+            "조건 대입하여 a 구하기": 1,
+            "접선 방정식과 점 P 구하기": 1,
+            "PF·PF' 조건으로 a 구하기": 1,
+            "쌍곡선 표준형과 초점": 1,
+            "y축과의 교점 P": 1,
+            "거리 PF, PF' 계산": 1,
+            "조건 적용하여 a 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.710158586502075,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정리 및 점이 곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 구하기",
+                "PF, PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.13678503036499,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 거리 계산",
+                "조건을 이용한 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.648417949676514,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF, PF' 계산",
+                "조건을 이용한 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.710158586502075,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정리 및 점이 곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 구하기",
+                "PF, PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.13678503036499,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 거리 계산",
+                "조건을 이용한 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.648417949676514,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "접선의 방정식 유도",
+                "점 P의 좌표 결정",
+                "PF, PF' 계산",
+                "조건을 이용한 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "쌍곡선 정리 및 점이 곡선 위에 있는지 확인": 1,
+            "접선의 방정식 유도": 3,
+            "점 P의 좌표 구하기": 1,
+            "PF, PF' 계산": 2,
+            "a 값 계산": 1,
+            "쌍곡선 정보 정리": 2,
+            "점 P의 좌표 계산": 1,
+            "PF, PF' 거리 계산": 1,
+            "조건을 이용한 a 계산": 2,
+            "점 P의 좌표 결정": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 정리 및 점이 곡선 위에 있는지 확인": 1,
+            "접선의 방정식 유도": 3,
+            "점 P의 좌표 구하기": 1,
+            "PF, PF' 계산": 2,
+            "a 값 계산": 1,
+            "쌍곡선 정보 정리": 2,
+            "점 P의 좌표 계산": 1,
+            "PF, PF' 거리 계산": 1,
+            "조건을 이용한 a 계산": 2,
+            "점 P의 좌표 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.29760384559631,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건식을 이용한 a의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.116463899612427,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.097900867462158,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a의 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.29760384559631,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표 구하기",
+                "조건식을 이용한 a의 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.116463899612427,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.097900867462158,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리의 곱 계산 및 a의 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "쌍곡선의 초점 좌표 구하기": 2,
+            "접선의 방정식과 점 P의 좌표 구하기": 1,
+            "조건식을 이용한 a의 값 계산": 1,
+            "초점의 좌표 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리의 곱 계산 및 정답 도출": 1,
+            "거리의 곱 계산 및 a의 값 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 초점 좌표 구하기": 2,
+            "접선의 방정식과 점 P의 좌표 구하기": 1,
+            "조건식을 이용한 a의 값 계산": 1,
+            "초점의 좌표 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리의 곱 계산 및 정답 도출": 1,
+            "거리의 곱 계산 및 a의 값 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 50.2798593044281,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선과 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 a값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 74.7241861820221,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형 변환 및 초점 찾기",
+                "접선 방정식 구하기",
+                "점 P 찾기",
+                "거리 계산 및 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.93486833572388,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 표준형 변환 및 초점 구하기",
+                "접선 방정식 구하기",
+                "P점 구하기",
+                "거리 PF, PF' 계산 및 곱 구하기",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 50.2798593044281,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선과 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 a값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 74.7241861820221,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 표준형 변환 및 초점 찾기",
+                "접선 방정식 구하기",
+                "점 P 찾기",
+                "거리 계산 및 조건 적용"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.93486833572388,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 표준형 변환 및 초점 구하기",
+                "접선 방정식 구하기",
+                "P점 구하기",
+                "거리 PF, PF' 계산 및 곱 구하기",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선과 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "P점 좌표 계산": 1,
+            "거리 PF와 PF' 계산": 1,
+            "곱 계산 및 a값 도출": 1,
+            "쌍곡선 표준형 변환 및 초점 찾기": 1,
+            "접선 방정식 구하기": 2,
+            "점 P 찾기": 1,
+            "거리 계산 및 조건 적용": 1,
+            "쌍곡선 표준형 변환 및 초점 구하기": 1,
+            "P점 구하기": 1,
+            "거리 PF, PF' 계산 및 곱 구하기": 1,
+            "a 값 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선과 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "P점 좌표 계산": 1,
+            "거리 PF와 PF' 계산": 1,
+            "곱 계산 및 a값 도출": 1,
+            "쌍곡선 표준형 변환 및 초점 찾기": 1,
+            "접선 방정식 구하기": 2,
+            "점 P 찾기": 1,
+            "거리 계산 및 조건 적용": 1,
+            "쌍곡선 표준형 변환 및 초점 구하기": 1,
+            "P점 구하기": 1,
+            "거리 PF, PF' 계산 및 곱 구하기": 1,
+            "a 값 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.683793783187866,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF × PF' 계산",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{4\\sqrt{3}}{3}}\n\\]\n정답은 ②번입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 46.07409620285034,
+              "step_count": 5,
+              "step_titles": [
+                "접선 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "초점 좌표 확인",
+                "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "② \\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.98846435546875,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P 좌표 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 식 이용하여 a 구하기"
+              ],
+              "final_answer": "② \\(\\displaystyle \\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.683793783187866,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF × PF' 계산",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{4\\sqrt{3}}{3}}\n\\]\n정답은 ②번입니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 46.07409620285034,
+              "step_count": 5,
+              "step_titles": [
+                "접선 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "초점 좌표 확인",
+                "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "② \\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.98846435546875,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환",
+                "접선 방정식 구하기",
+                "점 P 좌표 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 식 이용하여 a 구하기"
+              ],
+              "final_answer": "② \\(\\displaystyle \\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "쌍곡선의 표준형 변환": 2,
+            "접선 방정식 구하기": 3,
+            "점 P의 좌표 구하기": 2,
+            "PF × PF' 계산": 1,
+            "a 값 구하기": 1,
+            "초점 좌표 확인": 1,
+            "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산": 1,
+            "방정식 풀기": 1,
+            "점 P 좌표 구하기": 1,
+            "PF와 PF' 길이 계산": 1,
+            "주어진 식 이용하여 a 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 표준형 변환": 2,
+            "접선 방정식 구하기": 3,
+            "점 P의 좌표 구하기": 2,
+            "PF × PF' 계산": 1,
+            "a 값 구하기": 1,
+            "초점 좌표 확인": 1,
+            "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산": 1,
+            "방정식 풀기": 1,
+            "점 P 좌표 구하기": 1,
+            "PF와 PF' 길이 계산": 1,
+            "주어진 식 이용하여 a 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.62199950218201,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF' 거리 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.06086182594299,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "점과 접선 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 45.078871965408325,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 형태 파악 및 초점 위치 계산",
+                "주어진 점에서의 접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF' 거리 계산",
+                "조건 PF × PF' = 8 적용"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.62199950218201,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF' 거리 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.06086182594299,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석 및 초점 위치 파악",
+                "점과 접선 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF와 PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 45.078871965408325,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 형태 파악 및 초점 위치 계산",
+                "주어진 점에서의 접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF와 PF' 거리 계산",
+                "조건 PF × PF' = 8 적용"
+              ],
+              "final_answer": "$\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "접선 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 3,
+            "PF와 PF' 거리 계산": 2,
+            "곱 계산 및 방정식 세우기": 2,
+            "쌍곡선 형태 분석 및 초점 위치 파악": 1,
+            "점과 접선 구하기": 1,
+            "거리 PF와 PF' 계산": 1,
+            "쌍곡선의 형태 파악 및 초점 위치 계산": 1,
+            "주어진 점에서의 접선 방정식 구하기": 1,
+            "조건 PF × PF' = 8 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "접선 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 3,
+            "PF와 PF' 거리 계산": 2,
+            "곱 계산 및 방정식 세우기": 2,
+            "쌍곡선 형태 분석 및 초점 위치 파악": 1,
+            "점과 접선 구하기": 1,
+            "거리 PF와 PF' 계산": 1,
+            "쌍곡선의 형태 파악 및 초점 위치 계산": 1,
+            "주어진 점에서의 접선 방정식 구하기": 1,
+            "조건 PF × PF' = 8 적용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.444444444444445,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 구하기": 2,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 및 거리 PF, PF' 계산": 1,
+          "조건 대입하여 a 구하기": 1,
+          "접선 방정식과 점 P 구하기": 1,
+          "PF·PF' 조건으로 a 구하기": 1,
+          "쌍곡선 표준형과 초점": 1,
+          "y축과의 교점 P": 1,
+          "거리 PF, PF' 계산": 1,
+          "조건 적용하여 a 구하기": 1,
+          "쌍곡선 정리 및 점이 곡선 위에 있는지 확인": 1,
+          "접선의 방정식 유도": 3,
+          "점 P의 좌표 구하기": 3,
+          "PF, PF' 계산": 2,
+          "a 값 계산": 1,
+          "쌍곡선 정보 정리": 2,
+          "점 P의 좌표 계산": 1,
+          "PF, PF' 거리 계산": 1,
+          "조건을 이용한 a 계산": 2,
+          "점 P의 좌표 결정": 1,
+          "쌍곡선의 초점 좌표 구하기": 2,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "조건식을 이용한 a의 값 계산": 1,
+          "초점의 좌표 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리의 곱 계산 및 정답 도출": 1,
+          "거리의 곱 계산 및 a의 값 구하기": 1,
+          "쌍곡선과 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "P점 좌표 계산": 1,
+          "거리 PF와 PF' 계산": 2,
+          "곱 계산 및 a값 도출": 1,
+          "쌍곡선 표준형 변환 및 초점 찾기": 1,
+          "점 P 찾기": 1,
+          "거리 계산 및 조건 적용": 1,
+          "쌍곡선 표준형 변환 및 초점 구하기": 1,
+          "P점 구하기": 1,
+          "거리 PF, PF' 계산 및 곱 구하기": 1,
+          "a 값 구하기": 2,
+          "쌍곡선의 표준형 변환": 2,
+          "PF × PF' 계산": 1,
+          "초점 좌표 확인": 1,
+          "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산": 1,
+          "방정식 풀기": 1,
+          "점 P 좌표 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "주어진 식 이용하여 a 구하기": 1,
+          "조건 정리": 1,
+          "접선과 y축의 교점 P 구하기": 3,
+          "PF와 PF' 거리 계산": 2,
+          "곱 계산 및 방정식 세우기": 2,
+          "쌍곡선 형태 분석 및 초점 위치 파악": 1,
+          "점과 접선 구하기": 1,
+          "쌍곡선의 형태 파악 및 초점 위치 계산": 1,
+          "주어진 점에서의 접선 방정식 구하기": 1,
+          "조건 PF × PF' = 8 적용": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.910865545272827,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 좌표",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 및 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.60762906074524,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선과 초점 정리",
+                "접선의 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.36438775062561,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF, PF' 계산 후 곱 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.910865545272827,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 좌표",
+                "접선 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 및 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad (\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.60762906074524,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선과 초점 정리",
+                "접선의 방정식 구하기",
+                "y축과의 교점 P 구하기",
+                "PF, PF' 계산 후 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.36438775062561,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 정리 및 초점 구하기",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF, PF' 계산 후 곱 조건 적용"
+              ],
+              "final_answer": "\\[\na=\\frac{4\\sqrt3}{3}\\quad(\\text{②})\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "쌍곡선 정리 및 초점 좌표": 1,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 구하기": 2,
+            "PF, PF' 계산 및 조건 적용": 1,
+            "쌍곡선과 초점 정리": 1,
+            "접선의 방정식 구하기": 1,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "PF, PF' 계산 후 곱 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 정리 및 초점 좌표": 1,
+            "접선 방정식 구하기": 2,
+            "y축과의 교점 P 구하기": 2,
+            "PF, PF' 계산 및 조건 적용": 1,
+            "쌍곡선과 초점 정리": 1,
+            "접선의 방정식 구하기": 1,
+            "PF, PF' 계산 후 조건 적용": 1,
+            "쌍곡선 정리 및 초점 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "PF, PF' 계산 후 곱 조건 적용": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.01878023147583,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.513538837432861,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "조건을 이용하여 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.662895202636719,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 조건 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.01878023147583,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 유도",
+                "점 P의 좌표 계산",
+                "PF, PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.513538837432861,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 정보 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "조건을 이용하여 a 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.662895202636719,
+              "step_count": 6,
+              "step_titles": [
+                "쌍곡선 조건 정리",
+                "점이 쌍곡선 위에 있는지 확인",
+                "접선의 방정식 구하기",
+                "점 P의 좌표 구하기",
+                "PF와 PF' 계산",
+                "a 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "쌍곡선 정보 정리": 2,
+            "점이 쌍곡선 위에 있는지 확인": 3,
+            "접선의 방정식 유도": 1,
+            "점 P의 좌표 계산": 1,
+            "PF, PF' 계산": 1,
+            "a 값 계산": 2,
+            "접선의 방정식 구하기": 2,
+            "점 P의 좌표 구하기": 2,
+            "PF와 PF' 계산": 2,
+            "조건을 이용하여 a 계산": 1,
+            "쌍곡선 조건 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 정보 정리": 2,
+            "점이 쌍곡선 위에 있는지 확인": 3,
+            "접선의 방정식 유도": 1,
+            "점 P의 좌표 계산": 1,
+            "PF, PF' 계산": 1,
+            "a 값 계산": 2,
+            "접선의 방정식 구하기": 2,
+            "점 P의 좌표 구하기": 2,
+            "PF와 PF' 계산": 2,
+            "조건을 이용하여 a 계산": 1,
+            "쌍곡선 조건 정리": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.96907925605774,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식 및 점 P의 좌표",
+                "거리의 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.558372497558594,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.866385459899902,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.96907925605774,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식 및 점 P의 좌표",
+                "거리의 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.558372497558594,
+              "step_count": 3,
+              "step_titles": [
+                "쌍곡선의 초점 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "거리 곱 계산 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.866385459899902,
+              "step_count": 3,
+              "step_titles": [
+                "초점의 좌표 구하기",
+                "접선의 방정식과 점 P의 좌표",
+                "조건 적용 및 정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "초점의 좌표 구하기": 2,
+            "접선의 방정식 및 점 P의 좌표": 1,
+            "거리의 곱 계산 및 정답 도출": 1,
+            "쌍곡선의 초점 좌표 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리 곱 계산 및 정답 도출": 1,
+            "조건 적용 및 정답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "초점의 좌표 구하기": 2,
+            "접선의 방정식 및 점 P의 좌표": 1,
+            "거리의 곱 계산 및 정답 도출": 1,
+            "쌍곡선의 초점 좌표 구하기": 1,
+            "접선의 방정식과 점 P의 좌표": 2,
+            "거리 곱 계산 및 정답 도출": 1,
+            "조건 적용 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 67.45611095428467,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "거리 계산 및 곱 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.39423084259033,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선과 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "거리 계산 및 곱셈",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.22067165374756,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "PF와 PF' 거리 계산",
+                "조건 적용 및 a 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 67.45611095428467,
+              "step_count": 4,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "거리 계산 및 곱 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.39423084259033,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선과 초점 확인",
+                "접선 방정식 도출",
+                "P점 좌표 계산",
+                "거리 계산 및 곱셈",
+                "a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 47.22067165374756,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 방정식 정리",
+                "접선 방정식 구하기",
+                "P점 좌표 계산",
+                "PF와 PF' 거리 계산",
+                "조건 적용 및 a 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선 방정식 정리": 2,
+            "접선 방정식 구하기": 2,
+            "P점 좌표 계산": 3,
+            "거리 계산 및 곱 구하기": 1,
+            "쌍곡선과 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "거리 계산 및 곱셈": 1,
+            "a 값 구하기": 1,
+            "PF와 PF' 거리 계산": 1,
+            "조건 적용 및 a 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 방정식 정리": 2,
+            "접선 방정식 구하기": 2,
+            "P점 좌표 계산": 3,
+            "거리 계산 및 곱 구하기": 1,
+            "쌍곡선과 초점 확인": 1,
+            "접선 방정식 도출": 1,
+            "거리 계산 및 곱셈": 1,
+            "a 값 구하기": 1,
+            "PF와 PF' 거리 계산": 1,
+            "조건 적용 및 a 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.65477108955383,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환 및 초점 구하기",
+                "접선의 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF, PF' 길이 계산",
+                "주어진 식을 이용해 a 구하기"
+              ],
+              "final_answer": "\\[\n\\frac{4\\sqrt{3}}{3}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 92.28575730323792,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 및 초점",
+                "접선 방정식 구하기",
+                "점 P 구하기",
+                "길이 PF와 PF' 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "\\(\\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.497332096099854,
+              "step_count": 4,
+              "step_titles": [
+                "문제 조건 정리",
+                "점 (a,√2a)에서 접선 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{4\\sqrt{3}}{3}}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.65477108955383,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 변환 및 초점 구하기",
+                "접선의 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "PF, PF' 길이 계산",
+                "주어진 식을 이용해 a 구하기"
+              ],
+              "final_answer": "\\[\n\\frac{4\\sqrt{3}}{3}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 92.28575730323792,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선의 표준형 및 초점",
+                "접선 방정식 구하기",
+                "점 P 구하기",
+                "길이 PF와 PF' 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "\\(\\frac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.497332096099854,
+              "step_count": 4,
+              "step_titles": [
+                "문제 조건 정리",
+                "점 (a,√2a)에서 접선 구하기",
+                "PF와 PF' 길이 계산",
+                "주어진 조건 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{4\\sqrt{3}}{3}}\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "쌍곡선의 표준형 변환 및 초점 구하기": 1,
+            "접선의 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "PF, PF' 길이 계산": 1,
+            "주어진 식을 이용해 a 구하기": 1,
+            "쌍곡선의 표준형 및 초점": 1,
+            "접선 방정식 구하기": 1,
+            "점 P 구하기": 1,
+            "길이 PF와 PF' 계산": 1,
+            "방정식 풀기": 1,
+            "문제 조건 정리": 1,
+            "점 (a,√2a)에서 접선 구하기": 1,
+            "PF와 PF' 길이 계산": 1,
+            "주어진 조건 적용": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선의 표준형 변환 및 초점 구하기": 1,
+            "접선의 방정식 구하기": 1,
+            "접선과 y축의 교점 P 구하기": 1,
+            "PF, PF' 길이 계산": 1,
+            "주어진 식을 이용해 a 구하기": 1,
+            "쌍곡선의 표준형 및 초점": 1,
+            "접선 방정식 구하기": 1,
+            "점 P 구하기": 1,
+            "길이 PF와 PF' 계산": 1,
+            "방정식 풀기": 1,
+            "문제 조건 정리": 1,
+            "점 (a,√2a)에서 접선 구하기": 1,
+            "PF와 PF' 길이 계산": 1,
+            "주어진 조건 적용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.11937236785889,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "선분 PF와 PF' 길이 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.18967866897583,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 구하기",
+                "거리 계산 및 곱 계산",
+                "조건 적용 및 a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 61.55772829055786,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF, PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 36.11937236785889,
+              "step_count": 5,
+              "step_titles": [
+                "쌍곡선 형태 분석",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "선분 PF와 PF' 길이 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.18967866897583,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 구하기",
+                "거리 계산 및 곱 계산",
+                "조건 적용 및 a 값 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{4\\sqrt{3}}{3}\\)",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 61.55772829055786,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 방정식 구하기",
+                "접선과 y축의 교점 P 구하기",
+                "거리 PF, PF' 계산",
+                "곱 계산 및 방정식 세우기"
+              ],
+              "final_answer": "② $\\dfrac{4\\sqrt{3}}{3}$",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "쌍곡선 형태 분석": 1,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 2,
+            "선분 PF와 PF' 길이 계산": 1,
+            "곱 계산 및 방정식 세우기": 2,
+            "조건 정리": 2,
+            "접선과 y축의 교점 구하기": 1,
+            "거리 계산 및 곱 계산": 1,
+            "조건 적용 및 a 값 구하기": 1,
+            "거리 PF, PF' 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "쌍곡선 형태 분석": 1,
+            "접선 방정식 구하기": 3,
+            "접선과 y축의 교점 P 구하기": 2,
+            "선분 PF와 PF' 길이 계산": 1,
+            "곱 계산 및 방정식 세우기": 2,
+            "조건 정리": 2,
+            "접선과 y축의 교점 구하기": 1,
+            "거리 계산 및 곱 계산": 1,
+            "조건 적용 및 a 값 구하기": 1,
+            "거리 PF, PF' 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 좌표": 1,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 구하기": 2,
+          "PF, PF' 계산 및 조건 적용": 1,
+          "쌍곡선과 초점 정리": 1,
+          "접선의 방정식 구하기": 4,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "접선과 y축의 교점 P 구하기": 4,
+          "PF, PF' 계산 후 곱 조건 적용": 1,
+          "쌍곡선 정보 정리": 2,
+          "점이 쌍곡선 위에 있는지 확인": 3,
+          "접선의 방정식 유도": 1,
+          "점 P의 좌표 계산": 1,
+          "PF, PF' 계산": 1,
+          "a 값 계산": 2,
+          "점 P의 좌표 구하기": 2,
+          "PF와 PF' 계산": 2,
+          "조건을 이용하여 a 계산": 1,
+          "쌍곡선 조건 정리": 1,
+          "초점의 좌표 구하기": 2,
+          "접선의 방정식 및 점 P의 좌표": 1,
+          "거리의 곱 계산 및 정답 도출": 1,
+          "쌍곡선의 초점 좌표 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리 곱 계산 및 정답 도출": 1,
+          "조건 적용 및 정답 도출": 1,
+          "쌍곡선 방정식 정리": 2,
+          "P점 좌표 계산": 3,
+          "거리 계산 및 곱 구하기": 1,
+          "쌍곡선과 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "거리 계산 및 곱셈": 1,
+          "a 값 구하기": 1,
+          "PF와 PF' 거리 계산": 1,
+          "조건 적용 및 a 구하기": 1,
+          "쌍곡선의 표준형 변환 및 초점 구하기": 1,
+          "PF, PF' 길이 계산": 1,
+          "주어진 식을 이용해 a 구하기": 1,
+          "쌍곡선의 표준형 및 초점": 1,
+          "점 P 구하기": 1,
+          "길이 PF와 PF' 계산": 1,
+          "방정식 풀기": 1,
+          "문제 조건 정리": 1,
+          "점 (a,√2a)에서 접선 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "주어진 조건 적용": 1,
+          "쌍곡선 형태 분석": 1,
+          "선분 PF와 PF' 길이 계산": 1,
+          "곱 계산 및 방정식 세우기": 2,
+          "조건 정리": 2,
+          "접선과 y축의 교점 구하기": 1,
+          "거리 계산 및 곱 계산": 1,
+          "조건 적용 및 a 값 구하기": 1,
+          "거리 PF, PF' 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 구하기": 1,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 표준형과 초점": 2,
+          "PF, PF' 계산": 2,
+          "조건 대입하여 a 구하기": 1,
+          "접선 구하기 및 y절편 P": 1,
+          "조건 PF·PF' = 8로 a 구하기": 1,
+          "쌍곡선 분석 및 조건 확인": 1,
+          "접선의 방정식 유도": 2,
+          "점 P의 좌표 결정": 2,
+          "PF, PF' 계산 및 방정식 수립": 1,
+          "a 값 계산": 3,
+          "쌍곡선 분석 및 점이 곡선 위에 있는지 확인": 1,
+          "PF × PF' 계산": 1,
+          "쌍곡선 정보 정리": 1,
+          "점이 쌍곡선 위에 있는지 확인": 1,
+          "접선의 방정식 구하기": 2,
+          "점 P의 좌표 구하기": 1,
+          "PF와 PF' 계산": 1,
+          "초점의 좌표 구하기": 3,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리의 곱 계산 및 a 값 구하기": 2,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "조건 적용 및 정답 도출": 1,
+          "쌍곡선 식 정리 및 초점 찾기": 1,
+          "점 확인 및 접선 방정식 구하기": 1,
+          "P점 찾기": 1,
+          "거리 계산 및 곱 구하기": 1,
+          "a 풀기": 1,
+          "쌍곡선 방정식 정리 및 초점 구하기": 1,
+          "P점 좌표 구하기": 1,
+          "PF × PF' 계산 및 a 풀기": 1,
+          "쌍곡선 방정식 및 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "P점 좌표 계산": 1,
+          "PF와 PF' 거리 계산": 1,
+          "곱 계산 및 a값 도출": 1,
+          "쌍곡선의 표준형 변환": 2,
+          "점 P 구하기": 1,
+          "PF와 PF'의 길이 계산": 2,
+          "곱 PF·PF' = 8 조건 적용": 1,
+          "점 P의 좌표": 1,
+          "주어진 조건 적용": 1,
+          "문제 재정리": 1,
+          "거리 PF, PF' 계산": 1,
+          "곱 조건에서 a 구하기": 1,
+          "쌍곡선 형태 분석 및 초점 위치 파악": 2,
+          "접선과 y축의 교점 P 구하기": 3,
+          "거리 PF와 PF' 계산": 3,
+          "곱 계산 및 방정식 세우기": 3,
+          "조건 정리": 1,
+          "초점 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "쌍곡선 표준형과 초점 구하기": 1,
+          "접선 방정식 구하기": 7,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 표준형과 초점": 1,
+          "접선 구하기 및 y절편 P": 1,
+          "PF, PF' 계산": 1,
+          "조건 PF·PF'=8로 a 구하기": 1,
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "y축과의 교점 P 구하기": 1,
+          "PF·PF' 계산 후 조건 적용": 1,
+          "쌍곡선 분석 및 조건 확인": 2,
+          "접선의 방정식 유도": 3,
+          "점 P의 좌표 결정": 1,
+          "PF × PF' 계산": 1,
+          "a 값 계산": 2,
+          "점 P의 좌표 계산": 2,
+          "PF, PF' 계산 및 방정식 수립": 1,
+          "쌍곡선 정보 정리": 1,
+          "점이 쌍곡선 위에 있는지 확인": 1,
+          "PF, PF' 계산 및 조건 적용": 1,
+          "쌍곡선의 초점 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 1,
+          "조건을 이용한 a의 값 계산": 2,
+          "초점의 좌표 구하기": 2,
+          "접선의 방정식 및 점 P의 좌표": 1,
+          "조건 적용 및 정답 도출": 1,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "쌍곡선 방정식 정리": 1,
+          "초점 위치 계산": 1,
+          "y축 교점 P 찾기": 1,
+          "거리 PF와 PF' 계산 및 곱 구하기": 1,
+          "방정식 풀기": 1,
+          "쌍곡선 방정식 정리 및 초점 구하기": 1,
+          "점 확인 및 접선 방정식 구하기": 1,
+          "P점 구하기": 1,
+          "거리 곱 계산 및 a 풀기": 1,
+          "쌍곡선 방정식 확인 및 초점 계산": 1,
+          "P점 좌표 계산": 1,
+          "거리 계산 및 조건 적용": 1,
+          "쌍곡선의 표준형 변환": 1,
+          "접선의 방정식 구하기": 1,
+          "점 P 구하기": 1,
+          "PF와 PF'의 길이 계산": 2,
+          "주어진 조건 적용": 3,
+          "주어진 쌍곡선의 표준형 변환": 2,
+          "주어진 점에서 접선 방정식 구하기": 1,
+          "접선과 y축의 교점 P 구하기": 4,
+          "점 (a, √2a)에서의 접선 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "조건 정리": 1,
+          "거리 PF와 PF' 계산": 3,
+          "곱 계산 및 방정식 세우기": 3,
+          "쌍곡선의 형태와 초점 파악": 1,
+          "쌍곡선 형태 분석": 1,
+          "초점 좌표 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.444444444444445,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 구하기": 2,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 및 거리 PF, PF' 계산": 1,
+          "조건 대입하여 a 구하기": 1,
+          "접선 방정식과 점 P 구하기": 1,
+          "PF·PF' 조건으로 a 구하기": 1,
+          "쌍곡선 표준형과 초점": 1,
+          "y축과의 교점 P": 1,
+          "거리 PF, PF' 계산": 1,
+          "조건 적용하여 a 구하기": 1,
+          "쌍곡선 정리 및 점이 곡선 위에 있는지 확인": 1,
+          "접선의 방정식 유도": 3,
+          "점 P의 좌표 구하기": 3,
+          "PF, PF' 계산": 2,
+          "a 값 계산": 1,
+          "쌍곡선 정보 정리": 2,
+          "점 P의 좌표 계산": 1,
+          "PF, PF' 거리 계산": 1,
+          "조건을 이용한 a 계산": 2,
+          "점 P의 좌표 결정": 1,
+          "쌍곡선의 초점 좌표 구하기": 2,
+          "접선의 방정식과 점 P의 좌표 구하기": 1,
+          "조건식을 이용한 a의 값 계산": 1,
+          "초점의 좌표 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리의 곱 계산 및 정답 도출": 1,
+          "거리의 곱 계산 및 a의 값 구하기": 1,
+          "쌍곡선과 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "P점 좌표 계산": 1,
+          "거리 PF와 PF' 계산": 2,
+          "곱 계산 및 a값 도출": 1,
+          "쌍곡선 표준형 변환 및 초점 찾기": 1,
+          "점 P 찾기": 1,
+          "거리 계산 및 조건 적용": 1,
+          "쌍곡선 표준형 변환 및 초점 구하기": 1,
+          "P점 구하기": 1,
+          "거리 PF, PF' 계산 및 곱 구하기": 1,
+          "a 값 구하기": 2,
+          "쌍곡선의 표준형 변환": 2,
+          "PF × PF' 계산": 1,
+          "초점 좌표 확인": 1,
+          "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산": 1,
+          "방정식 풀기": 1,
+          "점 P 좌표 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "주어진 식 이용하여 a 구하기": 1,
+          "조건 정리": 1,
+          "접선과 y축의 교점 P 구하기": 3,
+          "PF와 PF' 거리 계산": 2,
+          "곱 계산 및 방정식 세우기": 2,
+          "쌍곡선 형태 분석 및 초점 위치 파악": 1,
+          "점과 접선 구하기": 1,
+          "쌍곡선의 형태 파악 및 초점 위치 계산": 1,
+          "주어진 점에서의 접선 방정식 구하기": 1,
+          "조건 PF × PF' = 8 적용": 1
+        },
+        "accuracy_all_models": 0.05555555555555555,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "쌍곡선 정리 및 초점 좌표": 1,
+          "접선 방정식 구하기": 8,
+          "y축과의 교점 P 구하기": 2,
+          "PF, PF' 계산 및 조건 적용": 1,
+          "쌍곡선과 초점 정리": 1,
+          "접선의 방정식 구하기": 4,
+          "PF, PF' 계산 후 조건 적용": 1,
+          "쌍곡선 정리 및 초점 구하기": 1,
+          "접선과 y축의 교점 P 구하기": 4,
+          "PF, PF' 계산 후 곱 조건 적용": 1,
+          "쌍곡선 정보 정리": 2,
+          "점이 쌍곡선 위에 있는지 확인": 3,
+          "접선의 방정식 유도": 1,
+          "점 P의 좌표 계산": 1,
+          "PF, PF' 계산": 1,
+          "a 값 계산": 2,
+          "점 P의 좌표 구하기": 2,
+          "PF와 PF' 계산": 2,
+          "조건을 이용하여 a 계산": 1,
+          "쌍곡선 조건 정리": 1,
+          "초점의 좌표 구하기": 2,
+          "접선의 방정식 및 점 P의 좌표": 1,
+          "거리의 곱 계산 및 정답 도출": 1,
+          "쌍곡선의 초점 좌표 구하기": 1,
+          "접선의 방정식과 점 P의 좌표": 2,
+          "거리 곱 계산 및 정답 도출": 1,
+          "조건 적용 및 정답 도출": 1,
+          "쌍곡선 방정식 정리": 2,
+          "P점 좌표 계산": 3,
+          "거리 계산 및 곱 구하기": 1,
+          "쌍곡선과 초점 확인": 1,
+          "접선 방정식 도출": 1,
+          "거리 계산 및 곱셈": 1,
+          "a 값 구하기": 1,
+          "PF와 PF' 거리 계산": 1,
+          "조건 적용 및 a 구하기": 1,
+          "쌍곡선의 표준형 변환 및 초점 구하기": 1,
+          "PF, PF' 길이 계산": 1,
+          "주어진 식을 이용해 a 구하기": 1,
+          "쌍곡선의 표준형 및 초점": 1,
+          "점 P 구하기": 1,
+          "길이 PF와 PF' 계산": 1,
+          "방정식 풀기": 1,
+          "문제 조건 정리": 1,
+          "점 (a,√2a)에서 접선 구하기": 1,
+          "PF와 PF' 길이 계산": 1,
+          "주어진 조건 적용": 1,
+          "쌍곡선 형태 분석": 1,
+          "선분 PF와 PF' 길이 계산": 1,
+          "곱 계산 및 방정식 세우기": 2,
+          "조건 정리": 2,
+          "접선과 y축의 교점 구하기": 1,
+          "거리 계산 및 곱 계산": 1,
+          "조건 적용 및 a 값 구하기": 1,
+          "거리 PF, PF' 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.472222222222222,
+      "title_frequency": {
+        "쌍곡선 정리 및 초점 구하기": 5,
+        "접선 방정식 구하기": 31,
+        "y축과의 교점 P 구하기": 4,
+        "PF, PF' 계산 후 조건 적용": 3,
+        "쌍곡선 표준형과 초점": 4,
+        "PF, PF' 계산": 6,
+        "조건 대입하여 a 구하기": 2,
+        "접선 구하기 및 y절편 P": 2,
+        "조건 PF·PF' = 8로 a 구하기": 1,
+        "쌍곡선 분석 및 조건 확인": 3,
+        "접선의 방정식 유도": 9,
+        "점 P의 좌표 결정": 4,
+        "PF, PF' 계산 및 방정식 수립": 2,
+        "a 값 계산": 8,
+        "쌍곡선 분석 및 점이 곡선 위에 있는지 확인": 1,
+        "PF × PF' 계산": 3,
+        "쌍곡선 정보 정리": 6,
+        "점이 쌍곡선 위에 있는지 확인": 5,
+        "접선의 방정식 구하기": 7,
+        "점 P의 좌표 구하기": 6,
+        "PF와 PF' 계산": 3,
+        "초점의 좌표 구하기": 8,
+        "접선의 방정식과 점 P의 좌표": 7,
+        "거리의 곱 계산 및 a 값 구하기": 2,
+        "접선의 방정식과 점 P의 좌표 구하기": 3,
+        "조건 적용 및 정답 도출": 3,
+        "쌍곡선 식 정리 및 초점 찾기": 1,
+        "점 확인 및 접선 방정식 구하기": 2,
+        "P점 찾기": 1,
+        "거리 계산 및 곱 구하기": 2,
+        "a 풀기": 1,
+        "쌍곡선 방정식 정리 및 초점 구하기": 2,
+        "P점 좌표 구하기": 1,
+        "PF × PF' 계산 및 a 풀기": 1,
+        "쌍곡선 방정식 및 초점 확인": 1,
+        "접선 방정식 도출": 3,
+        "P점 좌표 계산": 6,
+        "PF와 PF' 거리 계산": 4,
+        "곱 계산 및 a값 도출": 2,
+        "쌍곡선의 표준형 변환": 5,
+        "점 P 구하기": 3,
+        "PF와 PF'의 길이 계산": 4,
+        "곱 PF·PF' = 8 조건 적용": 1,
+        "점 P의 좌표": 1,
+        "주어진 조건 적용": 5,
+        "문제 재정리": 1,
+        "거리 PF, PF' 계산": 3,
+        "곱 조건에서 a 구하기": 1,
+        "쌍곡선 형태 분석 및 초점 위치 파악": 3,
+        "접선과 y축의 교점 P 구하기": 14,
+        "거리 PF와 PF' 계산": 8,
+        "곱 계산 및 방정식 세우기": 10,
+        "조건 정리": 5,
+        "초점 좌표 구하기": 1,
+        "쌍곡선 표준형과 초점 구하기": 1,
+        "조건 PF·PF'=8로 a 구하기": 1,
+        "PF·PF' 계산 후 조건 적용": 1,
+        "점 P의 좌표 계산": 4,
+        "PF, PF' 계산 및 조건 적용": 2,
+        "쌍곡선의 초점 구하기": 1,
+        "조건을 이용한 a의 값 계산": 2,
+        "접선의 방정식 및 점 P의 좌표": 2,
+        "쌍곡선 방정식 정리": 3,
+        "초점 위치 계산": 1,
+        "y축 교점 P 찾기": 1,
+        "거리 PF와 PF' 계산 및 곱 구하기": 1,
+        "방정식 풀기": 3,
+        "P점 구하기": 2,
+        "거리 곱 계산 및 a 풀기": 1,
+        "쌍곡선 방정식 확인 및 초점 계산": 1,
+        "거리 계산 및 조건 적용": 2,
+        "주어진 쌍곡선의 표준형 변환": 2,
+        "주어진 점에서 접선 방정식 구하기": 1,
+        "점 (a, √2a)에서의 접선 구하기": 1,
+        "PF와 PF' 길이 계산": 3,
+        "쌍곡선의 형태와 초점 파악": 1,
+        "쌍곡선 형태 분석": 2,
+        "초점 좌표 계산": 1,
+        "y축과의 교점 P 및 거리 PF, PF' 계산": 1,
+        "접선 방정식과 점 P 구하기": 1,
+        "PF·PF' 조건으로 a 구하기": 1,
+        "y축과의 교점 P": 1,
+        "조건 적용하여 a 구하기": 1,
+        "쌍곡선 정리 및 점이 곡선 위에 있는지 확인": 1,
+        "PF, PF' 거리 계산": 1,
+        "조건을 이용한 a 계산": 2,
+        "쌍곡선의 초점 좌표 구하기": 3,
+        "조건식을 이용한 a의 값 계산": 1,
+        "거리의 곱 계산 및 정답 도출": 2,
+        "거리의 곱 계산 및 a의 값 구하기": 1,
+        "쌍곡선과 초점 확인": 2,
+        "쌍곡선 표준형 변환 및 초점 찾기": 1,
+        "점 P 찾기": 1,
+        "쌍곡선 표준형 변환 및 초점 구하기": 1,
+        "거리 PF, PF' 계산 및 곱 구하기": 1,
+        "a 값 구하기": 3,
+        "초점 좌표 확인": 1,
+        "거리 \\(\\overline{\\mathrm{PF}}\\)와 \\(\\overline{\\mathrm{PF'}}\\) 계산": 1,
+        "점 P 좌표 구하기": 1,
+        "주어진 식 이용하여 a 구하기": 1,
+        "점과 접선 구하기": 1,
+        "쌍곡선의 형태 파악 및 초점 위치 계산": 1,
+        "주어진 점에서의 접선 방정식 구하기": 1,
+        "조건 PF × PF' = 8 적용": 1,
+        "쌍곡선 정리 및 초점 좌표": 1,
+        "쌍곡선과 초점 정리": 1,
+        "PF, PF' 계산 후 곱 조건 적용": 1,
+        "조건을 이용하여 a 계산": 1,
+        "쌍곡선 조건 정리": 1,
+        "거리 곱 계산 및 정답 도출": 1,
+        "거리 계산 및 곱셈": 1,
+        "조건 적용 및 a 구하기": 1,
+        "쌍곡선의 표준형 변환 및 초점 구하기": 1,
+        "PF, PF' 길이 계산": 1,
+        "주어진 식을 이용해 a 구하기": 1,
+        "쌍곡선의 표준형 및 초점": 1,
+        "길이 PF와 PF' 계산": 1,
+        "문제 조건 정리": 1,
+        "점 (a,√2a)에서 접선 구하기": 1,
+        "선분 PF와 PF' 길이 계산": 1,
+        "접선과 y축의 교점 구하기": 1,
+        "거리 계산 및 곱 계산": 1,
+        "조건 적용 및 a 값 구하기": 1
+      },
+      "accuracy": 0.013888888888888888,
+      "n_samples": 72
+    }
+  }
+}

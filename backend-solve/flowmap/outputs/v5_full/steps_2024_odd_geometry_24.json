@@ -1,0 +1,93 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_geometry_24",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "prob_desc": "24. 타원 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{6}=1$ 위의 점 $(\\sqrt{3}, -2)$에서의 접선의 기울기는? (단, $a$는 양수이다.) [3점]\n① $\\sqrt{3}$ ② $\\dfrac{\\sqrt{3}}{2}$ ③ $\\dfrac{\\sqrt{3}}{3}$ ④ $\\dfrac{\\sqrt{3}}{4}$ ⑤ $\\dfrac{\\sqrt{3}}{5}$",
+    "answer": "3"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Confirm point and find a",
+        "body": "Substitute (x, y) = (√3, −2) into x²/a² + y²/6 = 1: 3/a² + 4/6 = 1 ⇒ 3/a² + 2/3 = 1 ⇒ 3/a² = 1/3 ⇒ a² = 9."
+      },
+      {
+        "title": "Differentiate and evaluate slope",
+        "body": "Implicitly differentiate x²/a² + y²/6 = 1: 2x/a² + (y/3)·y′ = 0 ⇒ y′ = −(6x)/(a²y). Substitute a² = 9 and (x, y) = (√3, −2): y′ = −(6√3)/(9·(−2)) = √3/3."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Find a from point on ellipse",
+        "body": "Plug (x, y) = (√3, −2) into x^2/a^2 + y^2/6 = 1: 3/a^2 + 4/6 = 1 ⇒ 3/a^2 + 2/3 = 1 ⇒ 3/a^2 = 1/3 ⇒ a^2 = 9."
+      },
+      {
+        "title": "Differentiate to get slope formula",
+        "body": "Implicitly differentiate: (2x)/a^2 + (1/6)·2y·y' = 0 ⇒ (2x)/a^2 + (y/3)y' = 0 ⇒ y' = −(6x)/(a^2 y)."
+      },
+      {
+        "title": "Evaluate slope at given point",
+        "body": "With a^2 = 9, x = √3, y = −2: y' = −(6√3)/(9·(−2)) = √3/3."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Find the value of a² using the point on ellipse",
+        "body": "The point (√3, -2) lies on the ellipse x²/a² + y²/6 = 1.\nSubstituting: (√3)²/a² + (-2)²/6 = 1\n3/a² + 4/6 = 1\n3/a² + 2/3 = 1\n3/a² = 1 - 2/3 = 1/3\na² = 9"
+      },
+      {
+        "title": "Find the slope using implicit differentiation",
+        "body": "The ellipse equation is: x²/9 + y²/6 = 1\nDifferentiating implicitly with respect to x:\n2x/9 + 2y·(dy/dx)/6 = 0\n2x/9 + y·(dy/dx)/3 = 0\nSolving for dy/dx:\ny·(dy/dx)/3 = -2x/9\ndy/dx = -2x/9 · 3/y = -2x/(3y)"
+      },
+      {
+        "title": "Calculate the slope at the given point",
+        "body": "At point (√3, -2):\ndy/dx = -2(√3)/(3·(-2))\ndy/dx = -2√3/(-6)\ndy/dx = √3/3"
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Determine the value of the constant a²",
+        "body": "Since the point $(\\sqrt{3}, -2)$ lies on the ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{6} = 1$, we substitute the coordinates $x = \\sqrt{3}$ and $y = -2$ into the equation:\n\n$$ \\frac{(\\sqrt{3})^2}{a^2} + \\frac{(-2)^2}{6} = 1 $$\n$$ \\frac{3}{a^2} + \\frac{4}{6} = 1 $$\n\nSimplify the fraction $\\frac{4}{6}$ to $\\frac{2}{3}$:\n$$ \\frac{3}{a^2} + \\frac{2}{3} = 1 $$\n$$ \\frac{3}{a^2} = 1 - \\frac{2}{3} $$\n$$ \\frac{3}{a^2} = \\frac{1}{3} $$\n\nSolving for $a^2$:\n$$ a^2 = 9 $$"
+      },
+      {
+        "title": "Calculate the slope of the tangent line",
+        "body": "Using the formula for the tangent line to an ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ at a point $(x_1, y_1)$, which is $\\frac{x_1 x}{a^2} + \\frac{y_1 y}{b^2} = 1$, we substitute $a^2 = 9$, $b^2 = 6$, $x_1 = \\sqrt{3}$, and $y_1 = -2$:\n\n$$ \\frac{\\sqrt{3}x}{9} + \\frac{-2y}{6} = 1 $$\n$$ \\frac{\\sqrt{3}}{9}x - \\frac{1}{3}y = 1 $$\n\nTo find the slope, we rearrange the equation into the form $y = mx + c$:\n$$ \\frac{1}{3}y = \\frac{\\sqrt{3}}{9}x - 1 $$\nMultiply both sides by 3:\n$$ y = \\frac{3\\sqrt{3}}{9}x - 3 $$\n$$ y = \\frac{\\sqrt{3}}{3}x - 3 $$\n\nThe slope of the tangent line is the coefficient of $x$, which is $\\frac{\\sqrt{3}}{3}$."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Verify point on ellipse",
+        "body": "Substitute \\(x = \\sqrt{3}\\), \\(y = -2\\) into the ellipse equation to find \\(a^2\\). \\[\\frac{(\\sqrt{3})^2}{a^2} + \\frac{(-2)^2}{6} = 1 \\] \\[\\frac{3}{a^2} + \\frac{4}{6} = 1 \\] \\[\\frac{3}{a^2} + \\frac{2}{3} = 1 \\] \\[\\frac{3}{a^2} = \\frac{1}{3} \\] \\[a^2 = 9\\]"
+      },
+      {
+        "title": "Implicit differentiation",
+        "body": "Differentiate the ellipse equation implicitly: \\[\\frac{x^2}{a^2} + \\frac{y^2}{6} = 1\\] \\[\\frac{2x}{a^2} + \\frac{2y}{6} \\frac{dy}{dx} = 0\\] \\[\\frac{dy}{dx} = -\\frac{x \\cdot 6}{y \\cdot a^2} \\cdot \\frac{a^2}{a^2} wait, simplify properly: \\] from \\[\\frac{2x}{a^2} + \\frac{2y y'}{6} = 0\\] \\[y' = -\\frac{x / a^2}{y / 6} = -\\frac{6x}{a^2 y}\\]"
+      },
+      {
+        "title": "Compute slope at point",
+        "body": "Plug in \\(x = \\sqrt{3}\\), \\(y = -2\\), \\(a^2 = 9\\): \\[m = -\\frac{6 \\sqrt{3}}{9 \\cdot (-2)} = -\\frac{6 \\sqrt{3}}{-18} = \\frac{6 \\sqrt{3}}{18} = \\frac{\\sqrt{3}}{3}\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ]
+  }
+}

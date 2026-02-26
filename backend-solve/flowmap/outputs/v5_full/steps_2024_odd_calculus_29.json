@@ -1,0 +1,137 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_calculus_29",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "prob_desc": "29. 첫째항과 공비가 각각 0이 아닌 두 등비수열 $\\{a_n\\},\\ \\{b_n\\}$에 대하여 두 급수 $\\sum\\limits_{n=1}^{\\infty} a_n,\\ \\sum\\limits_{n=1}^{\\infty} b_n$이 각각 수렴하고 $$\\begin{align} \\sum_{n=1}^{\\infty} a_n b_n = \\left( \\sum_{n=1}^{\\infty} a_n \\right) \\times \\left( \\sum_{n=1}^{\\infty} b_n \\right), \\\\ 3 \\times \\sum_{n=1}^{\\infty} |a_{2n}| = 7 \\times \\sum_{n=1}^{\\infty} |a_{3n}| \\end{align}$$이 성립한다. $\\sum\\limits_{n=1}^{\\infty} \\dfrac{b_{2n-1} + b_{3n+1}}{b_n} = S$일 때, $120S$의 값을 구하시오. [4점]",
+    "answer": "162"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Represent sequences algebraically",
+        "body": "Let the geometric sequences be a_n = A r^{n-1} and b_n = B s^{n-1} with nonzero A, B, r, s and |r|, |s| < 1 because the series of each sequence converges."
+      },
+      {
+        "title": "Relate ratios using product-sum condition",
+        "body": "Compute ∑ a_n = A/(1-r), ∑ b_n = B/(1-s), and ∑ a_n b_n = AB/(1 - r s). The equality AB/(1 - rs) = (A/(1 - r))(B/(1 - s)) simplifies (after canceling AB ≠ 0) to (1 - r)(1 - s) = 1 - rs, which rearranges to s = r/(2r - 1), assuming r ≠ 1/2."
+      },
+      {
+        "title": "Solve absolute-value sum condition",
+        "body": "Using |a_{2n}| = |A||r|^{2n-1} and |a_{3n}| = |A||r|^{3n-1}, compute the sums: ∑ |a_{2n}| = |A||r|/(1 - |r|^2) and ∑ |a_{3n}| = |A||r|^2/(1 - |r|^3). The relation 3∑|a_{2n}| = 7∑|a_{3n}| becomes 3|r|/(1 - |r|^2) = 7|r|^2/(1 - |r|^3). With |r| ≠ 0, this simplifies to 4|r|^3 - 7|r| + 3 = 0, whose admissible solution in (0,1) is |r| = 1/2."
+      },
+      {
+        "title": "Determine ratio signs and obtain s",
+        "body": "Since r ≠ 1/2 (from step 1), the solution |r| = 1/2 forces r = -1/2. Substitute into s = r/(2r - 1) to find s = (-1/2)/(-2) = 1/4."
+      },
+      {
+        "title": "Compute target series S",
+        "body": "With b_n = B(1/4)^{n-1}, evaluate (b_{2n-1} + b_{3n+1})/b_n = (1/4)^{n-1} + (1/4)^{2n+1}. Summing over n gives S = ∑_{n=1}^∞ (1/4)^{n-1} + ∑_{n=1}^∞ (1/4)^{2n+1} = 1/(1 - 1/4) + (1/4)^3/(1 - (1/4)^2) = 4/3 + 1/60 = 27/20, hence 120S = 162."
+      },
+      {
+        "title": "Final Answer",
+        "body": "162"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Parameterize the sequences",
+        "body": "Let a_n = A r^(n-1), b_n = B q^(n-1) with A,B ≠ 0 and |r|, |q| < 1 (since the series converge). Then sum a_n = A/(1 - r), sum b_n = B/(1 - q), and sum a_n b_n = AB/(1 - r q)."
+      },
+      {
+        "title": "Use product-of-sums condition",
+        "body": "Given sum a_n b_n = (sum a_n)(sum b_n), we get AB/(1 - r q) = (A/(1 - r))(B/(1 - q)). Cancelling AB ≠ 0 gives (1 - r)(1 - q) = 1 - r q, hence 2 r q = r + q."
+      },
+      {
+        "title": "Solve for r and q from absolute-sum condition",
+        "body": "Let x = |r|. Then |a_{2n}| = |A| x^(2n-1), so sum |a_{2n}| = |A| x/(1 - x^2). Also |a_{3n}| = |A| x^(3n-1), so sum |a_{3n}| = |A| x^2/(1 - x^3). The condition 3 sum |a_{2n}| = 7 sum |a_{3n}| gives 3/(1 - x^2) = 7 x/(1 - x^3) ⇒ 4 x^3 - 7 x + 3 = 0. Its roots are x = 1, 1/2, -3/2; with 0 < x < 1, we get |r| = 1/2. Check sign via 2 r q = r + q: if r = 1/2, then q = 1/2 + q (impossible), so r = -1/2. Plugging r = -1/2 into 2 r q = r + q gives -q = -1/2 + q ⇒ q = 1/4."
+      },
+      {
+        "title": "Evaluate S",
+        "body": "Compute (b_{2n-1} + b_{3n+1})/b_n = (B q^(2n-2) + B q^(3n)) / (B q^(n-1)) = q^(n-1) + q^(2n+1). Thus S = sum_{n=1}^∞ q^(n-1) + sum_{n=1}^∞ q^(2n+1) = 1/(1 - q) + q^3/(1 - q^2). With q = 1/4, S = 1/(1 - 1/4) + (1/64)/(1 - 1/16) = 4/3 + 1/60 = 27/20. Therefore 120 S = 120 * 27/20 = 162."
+      },
+      {
+        "title": "Final Answer",
+        "body": "162"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Set up geometric series notation",
+        "body": "Let $\\{a_n\\}$ have first term $a$ and common ratio $r$, so $a_n = ar^{n-1}$.\nLet $\\{b_n\\}$ have first term $b$ and common ratio $s$, so $b_n = bs^{n-1}$.\nFor convergence: $|r| < 1$ and $|s| < 1$.\n\nThe sums are:\n$\\sum_{n=1}^{\\infty} a_n = \\frac{a}{1-r}$\n$\\sum_{n=1}^{\\infty} b_n = \\frac{b}{1-s}$\n$\\sum_{n=1}^{\\infty} a_n b_n = \\sum_{n=1}^{\\infty} ab(rs)^{n-1} = \\frac{ab}{1-rs}$"
+      },
+      {
+        "title": "Apply first condition",
+        "body": "From $\\sum_{n=1}^{\\infty} a_n b_n = \\left(\\sum_{n=1}^{\\infty} a_n\\right) \\times \\left(\\sum_{n=1}^{\\infty} b_n\\right)$:\n\n$\\frac{ab}{1-rs} = \\frac{a}{1-r} \\cdot \\frac{b}{1-s} = \\frac{ab}{(1-r)(1-s)}$\n\nSince $ab \\neq 0$:\n$1-rs = (1-r)(1-s) = 1 - r - s + rs$\n$-rs = -r - s + rs$\n$r + s = 2rs$\n\nIf $rs \\neq 0$: $\\frac{1}{s} + \\frac{1}{r} = 2$, i.e., $\\frac{r+s}{rs} = 2$"
+      },
+      {
+        "title": "Apply second condition",
+        "body": "For $\\sum_{n=1}^{\\infty} |a_{2n}|$: $a_{2n} = ar^{2n-1}$, so $|a_{2n}| = |a||r|^{2n-1}$\n$\\sum_{n=1}^{\\infty} |a_{2n}| = |a||r| \\cdot \\frac{1}{1-r^2} = \\frac{|a||r|}{1-r^2}$\n\nFor $\\sum_{n=1}^{\\infty} |a_{3n}|$: $a_{3n} = ar^{3n-1}$, so $|a_{3n}| = |a||r|^{3n-1}$\n$\\sum_{n=1}^{\\infty} |a_{3n}| = |a||r|^2 \\cdot \\frac{1}{1-r^3} = \\frac{|a|r^2}{1-r^3}$\n\nFrom $3 \\times \\sum |a_{2n}| = 7 \\times \\sum |a_{3n}|$:\n$3 \\cdot \\frac{|r|}{1-r^2} = 7 \\cdot \\frac{r^2}{1-r^3}$\n\nLet $|r| = t$ where $0 < t < 1$:\n$\\frac{3t}{1-t^2} = \\frac{7t^2}{1-t^3}$\n$3t(1-t^3) = 7t^2(1-t^2)$\n$3(1-t^3) = 7t(1-t^2)$\n$3 - 3t^3 = 7t - 7t^3$\n$4t^3 - 7t + 3 = 0$"
+      },
+      {
+        "title": "Solve for r",
+        "body": "Factor $4t^3 - 7t + 3 = 0$:\nTry $t = 1$: $4 - 7 + 3 = 0$ ✓\nSo $(t-1)$ is a factor.\n$4t^3 - 7t + 3 = (t-1)(4t^2 + 4t - 3) = (t-1)(2t+3)(2t-1)$\n\nSolutions: $t = 1$, $t = -3/2$, $t = 1/2$\nSince $0 < t < 1$, we have $|r| = \\frac{1}{2}$"
+      },
+      {
+        "title": "Find s using the relation",
+        "body": "From $r + s = 2rs$ with $r = \\pm\\frac{1}{2}$:\n\nCase $r = \\frac{1}{2}$: $\\frac{1}{2} + s = s$, giving $\\frac{1}{2} = 0$ (contradiction)\n\nSo we use: $\\frac{1}{r} + \\frac{1}{s} = 2$\nWith $r = \\frac{1}{2}$: $2 + \\frac{1}{s} = 2$, so $\\frac{1}{s} = 0$ (invalid)\n\nWith $r = -\\frac{1}{2}$: $-2 + \\frac{1}{s} = 2$, so $\\frac{1}{s} = 4$, thus $s = \\frac{1}{4}$"
+      },
+      {
+        "title": "Calculate the final sum S",
+        "body": "$\\frac{b_{2n-1} + b_{3n+1}}{b_n} = \\frac{bs^{2n-2} + bs^{3n}}{bs^{n-1}} = s^{n-1} + s^{2n+1}$\n\n$S = \\sum_{n=1}^{\\infty} (s^{n-1} + s^{2n+1})$\n$= \\sum_{n=1}^{\\infty} s^{n-1} + s^3 \\sum_{n=1}^{\\infty} s^{2n-2}$\n$= \\frac{1}{1-s} + \\frac{s^3}{1-s^2}$\n\nWith $s = \\frac{1}{4}$:\n$= \\frac{1}{1-\\frac{1}{4}} + \\frac{\\frac{1}{64}}{1-\\frac{1}{16}}$\n$= \\frac{1}{\\frac{3}{4}} + \\frac{\\frac{1}{64}}{\\frac{15}{16}}$\n$= \\frac{4}{3} + \\frac{1}{64} \\cdot \\frac{16}{15}$\n$= \\frac{4}{3} + \\frac{1}{60}$\n$= \\frac{80}{60} + \\frac{1}{60} = \\frac{81}{60} = \\frac{27}{20}$\n\n$120S = 120 \\times \\frac{27}{20} = 6 \\times 27 = 162$"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Derive relation between ratios",
+        "body": "Let the first terms of the geometric sequences $\\{a_n\\}$ and $\\{b_n\\}$ be $a$ and $b$, and their common ratios be $r$ and $s$, respectively. The first condition is $\\sum_{n=1}^{\\infty} a_n b_n = (\\sum_{n=1}^{\\infty} a_n)(\\sum_{n=1}^{\\infty} b_n)$. Using the sum formula for geometric series, this implies $\\frac{ab}{1-rs} = \\frac{a}{1-r} \\times \\frac{b}{1-s}$. Simplifying $\\frac{1}{1-rs} = \\frac{1}{1-s-r+rs}$ leads to $1-s-r+rs = 1-rs$, which simplifies to $2rs = r+s$."
+      },
+      {
+        "title": "Determine |r| from absolute sums",
+        "body": "Analyze the condition $3 \\sum |a_{2n}| = 7 \\sum |a_{3n}|$. The sequence $\\{|a_{2n}|\\}$ has first term $|ar|$ and ratio $|r|^2$. Its sum is $\\frac{|ar|}{1-|r|^2}$. The sequence $\\{|a_{3n}|\\}$ has first term $|ar^2|$ and ratio $|r|^3$. Its sum is $\\frac{|ar^2|}{1-|r|^3}$. The equation becomes $3 \\frac{|r|}{1-|r|^2} = 7 \\frac{|r|^2}{1-|r|^3}$. Let $x=|r|$. Dividing by non-zero factors and simplifying yields $\\frac{3}{1+x} = \\frac{7x}{1+x+x^2}$. Cross-multiplying gives $3(1+x+x^2) = 7x(1+x)$, which reduces to $4x^2 + 4x - 3 = 0$. Factoring as $(2x-1)(2x+3)=0$, we find $x=1/2$ (since $x>0$). Thus, $|r|=1/2$."
+      },
+      {
+        "title": "Find common ratios r and s",
+        "body": "Since $|r|=1/2$, $r$ is either $1/2$ or $-1/2$. We substitute into $2rs = r+s$ to find $s$. Solving for $s$: $s(2r-1) = r$, so $s = \\frac{r}{2r-1}$.\nIf $r=1/2$, the denominator $2(1/2)-1 = 0$, so no solution exists.\nIf $r=-1/2$, $s = \\frac{-1/2}{-1-1} = \\frac{-1/2}{-2} = \\frac{1}{4}$.\nThus, $r=-1/2$ and $s=1/4$. Both satisfy the convergence condition (absolute value < 1)."
+      },
+      {
+        "title": "Compute the sum S",
+        "body": "We need to calculate $S = \\sum_{n=1}^{\\infty} \\frac{b_{2n-1} + b_{3n+1}}{b_n}$. Substitute $b_n = b s^{n-1}$. The general term is $\\frac{b s^{2n-2} + b s^{3n}}{b s^{n-1}} = s^{n-1} + s^{2n+1}$.\n$S = \\sum_{n=1}^{\\infty} s^{n-1} + \\sum_{n=1}^{\\infty} s^{2n+1}$.\nThe first sum is $\\frac{1}{1-s}$. The second sum is a geometric series with first term $s^3$ and ratio $s^2$, so it sums to $\\frac{s^3}{1-s^2}$.\nUsing $s=1/4$: $\\sum_{n=1}^{\\infty} s^{n-1} = \\frac{1}{1-1/4} = \\frac{4}{3}$.\n$\\sum_{n=1}^{\\infty} s^{2n+1} = \\frac{(1/4)^3}{1-(1/4)^2} = \\frac{1/64}{15/16} = \\frac{1}{60}$.\n$S = \\frac{4}{3} + \\frac{1}{60} = \\frac{80}{60} + \\frac{1}{60} = \\frac{81}{60} = \\frac{27}{20}$."
+      },
+      {
+        "title": "Calculate final answer",
+        "body": "Evaluate $120S$. Substituting the value of $S$: $120 \\times \\frac{27}{20} = 6 \\times 27 = 162$."
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Define geometric sequences",
+        "body": "Denote the sequences: \\(a_n = A r^{n-1}\\) with \\(|r| < 1\\), and \\(b_n = B s^{n-1}\\) with \\(|s| < 1\\), where \\(A \neq 0\\), \\(B \neq 0\\). The infinite sums are \\(\\sum a_n = A / (1 - r)\\) and \\(\\sum b_n = B / (1 - s)\\)."
+      },
+      {
+        "title": "Apply product of sums condition",
+        "body": "The condition \\(\\sum a_n b_n = (\\sum a_n)(\\sum b_n)\\) gives \\(\\sum (A B (r s)^{n-1}) = A B / (1 - r s)\\), so \\(1 / (1 - r s) = 1 / [(1 - r)(1 - s)]\\). Simplifying yields \\((1 - r)(1 - s) = 1 - r s\\), or \\(r + s = 2 r s\\), equivalently \\(1/r + 1/s = 2\\)."
+      },
+      {
+        "title": "Apply absolute value sum condition",
+        "body": "Compute \\(\\sum |a_{2n}| = |A r| / (1 - |r|^2)\\) and \\(\\sum |a_{3n}| = |A| |r|^2 / (1 - |r|^3)\\). The condition \\(3 \\sum |a_{2n}| = 7 \\sum |a_{3n}|\\) simplifies to \\(3 x / (1 - x^2) = 7 x^2 / (1 - x^3)\\) where \\(x = |r|\\). Solving \\(4 x^3 - 7 x + 3 = 0\\) gives roots \\(x = 1\\) (invalid) and \\(x = 1/2\\), so \\(|r| = 1/2\\)."
+      },
+      {
+        "title": "Determine ratios r and s",
+        "body": "From \\(1/r + 1/s = 2\\) and \\(|r| = 1/2\\): if \\(r = 1/2\\), then \\(1/s = 0\\) (impossible); if \\(r = -1/2\\), then \\(1/s = 4\\), so \\(s = 1/4\\)."
+      },
+      {
+        "title": "Compute S",
+        "body": "The term \\((b_{2n-1} + b_{3n+1}) / b_n = s^{n-1} + s^{2n+1}\\). Thus, \\(S = \\sum_{n=1}^\\infty s^{n-1} + \\sum_{n=1}^\\infty s^{2n+1} = 1/(1 - s) + s^3 / (1 - s^2)\\). Substituting \\(s = 1/4\\) gives \\(S = 4/3 + 1/60 = 27/20\\)."
+      },
+      {
+        "title": "Find 120S",
+        "body": "\\(120 S = 120 \times 27/20 = 162\\)."
+      },
+      {
+        "title": "Final Answer",
+        "body": "162"
+      }
+    ]
+  }
+}

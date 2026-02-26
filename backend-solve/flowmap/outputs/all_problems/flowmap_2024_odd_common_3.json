@@ -1,0 +1,192 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "조건 정리 및 sin θ 구하기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "\\[\n\\frac{3}{2}\\pi<\\theta<2\\pi,\\quad \\sin(-\\theta)=\\frac13\n\\]\n삼각함수 성질 \\(\\sin(-\\theta)=-\\sin\\theta\\) 이므로\n\\[\n-\\sin\\theta=\\frac13 \\Rightarrow \\sin\\theta=-\\frac13\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "주어진 조건을 정리합니다.\n- $\\dfrac{3}{2}\\pi < \\theta < 2\\pi$ (제4사분면)\n- $\\sin(-\\theta) = \\dfrac{1}{3}$"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "sin θ 구하기",
+          "content": "삼각함수의 성질을 이용합니다.\n\n$$\\sin(-\\theta) = -\\sin\\theta = \\dfrac{1}{3}$$\n\n따라서:\n$$\\sin\\theta = -\\dfrac{1}{3}$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "sin θ 값 구하기",
+          "content": "삼각함수의 성질 중 $\\sin(-\\theta) = -\\sin \\theta$임을 이용합니다.\n주어진 식 $\\sin(-\\theta) = \\dfrac{1}{3}$에 대입하면 다음과 같습니다.\n$$-\\sin \\theta = \\dfrac{1}{3}$$\n$$\\therefore \\sin \\theta = -\\dfrac{1}{3}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "사분면 판단",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "사분면 판단",
+          "content": "\\(\\frac{3}{2}\\pi<\\theta<2\\pi\\) 이므로 \\(\\theta\\)는 제4사분면에 있다.  \n제4사분면에서 \\(\\sin\\theta<0,\\ \\cos\\theta>0\\) 이고, 위에서 \\(\\sin\\theta=-\\frac13\\)과 일치한다."
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "cos θ 구하기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "cosθ 구하기",
+          "content": "\\[\n\\sin^2\\theta+\\cos^2\\theta=1\n\\]\n\\[\n\\left(-\\frac13\\right)^2+\\cos^2\\theta=1\n\\Rightarrow \\frac19+\\cos^2\\theta=1\n\\Rightarrow \\cos^2\\theta=\\frac89\n\\]\n제4사분면이므로 \\(\\cos\\theta>0\\):\n\\[\n\\cos\\theta=\\sqrt{\\frac89}=\\frac{2\\sqrt2}{3}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "cos θ 구하기",
+          "content": "삼각함수의 기본 관계식을 사용합니다.\n\n$$\\sin^2\\theta + \\cos^2\\theta = 1$$\n\n$$\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\dfrac{1}{9} = \\dfrac{8}{9}$$\n\n$$\\cos\\theta = \\pm\\dfrac{\\sqrt{8}}{3} = \\pm\\dfrac{2\\sqrt{2}}{3}$$\n\n$\\theta$가 제4사분면에 있으므로 $\\cos\\theta > 0$:\n$$\\cos\\theta = \\dfrac{2\\sqrt{2}}{3}$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "cos θ 값 구하기",
+          "content": "삼각함수의 관계식 $\\sin^2 \\theta + \\cos^2 \\theta = 1$을 이용하여 $\\cos \\theta$를 구합니다.\n$$\\left(-\\dfrac{1}{3}\\right)^2 + \\cos^2 \\theta = 1$$\n$$\\dfrac{1}{9} + \\cos^2 \\theta = 1$$\n$$\\cos^2 \\theta = \\dfrac{8}{9}$$\n이때, 문제의 조건 $\\dfrac{3}{2}\\pi < \\theta < 2\\pi$에 의해 $\\theta$는 **제4사분면**의 각입니다. 제4사분면에서 코사인($\\cos$)은 양수이므로 양의 제곱근을 취합니다.\n$$\\cos \\theta = \\sqrt{\\dfrac{8}{9}} = \\dfrac{2\\sqrt{2}}{3}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "tan θ 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "tanθ 계산",
+          "content": "\\[\n\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\n=\\frac{-\\frac13}{\\frac{2\\sqrt2}{3}}\n=-\\frac{1}{2\\sqrt2}\n=-\\frac{\\sqrt2}{4}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "tan θ 계산",
+          "content": "$$\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta} = \\dfrac{-\\dfrac{1}{3}}{\\dfrac{2\\sqrt{2}}{3}}$$\n\n$$\\tan\\theta = -\\dfrac{1}{3} \\times \\dfrac{3}{2\\sqrt{2}} = -\\dfrac{1}{2\\sqrt{2}}$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "tan θ 값 계산",
+          "content": "$\\tan \\theta = \\dfrac{\\sin \\theta}{\\cos \\theta}$ 관계식을 이용하여 값을 계산합니다.\n$$\\tan \\theta = \\dfrac{-\\frac{1}{3}}{\\frac{2\\sqrt{2}}{3}} = -\\dfrac{1}{2\\sqrt{2}}$$\n분모를 유리화하면 다음과 같습니다.\n$$\\tan \\theta = -\\dfrac{1 \\times \\sqrt{2}}{2\\sqrt{2} \\times \\sqrt{2}} = -\\dfrac{\\sqrt{2}}{4}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "유리화",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "유리화",
+          "content": "$$\\tan\\theta = -\\dfrac{1}{2\\sqrt{2}} \\times \\dfrac{\\sqrt{2}}{\\sqrt{2}} = -\\dfrac{\\sqrt{2}}{4}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "최종 답",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "\\[\n\\tan\\theta=-\\frac{\\sqrt2}{4}\\quad (\\text{②})\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "② $-\\dfrac{\\sqrt{2}}{4}$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "②"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    }
+  ]
+}

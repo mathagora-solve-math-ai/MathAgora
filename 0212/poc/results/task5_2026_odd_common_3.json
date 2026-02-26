@@ -1,0 +1,2938 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-12T19:27:13Z",
+    "ended_at_utc": "2026-02-12T19:42:18Z",
+    "elapsed_seconds": 904.396,
+    "problem_tag": "2026_odd_common_3",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72
+  },
+  "problem": {
+    "id": "2026_odd_common_3",
+    "label": "2026_odd_common_3 (수학1, 3점)",
+    "gold_answer": "5"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.018720626831055,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 변형 및 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.8658225536346436,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 변형 및 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.491907358169556,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합의 성질로 전개",
+                "미지수 합 계산"
+              ],
+              "final_answer": "\\[\n\\sum_{k=1}^{4} a_k=5 \\quad (\\text{⑤})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.018720626831055,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 변형 및 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.8658225536346436,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 변형 및 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.491907358169556,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합의 성질로 전개",
+                "미지수 합 계산"
+              ],
+              "final_answer": "\\[\n\\sum_{k=1}^{4} a_k=5 \\quad (\\text{⑤})\n\\]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "등식 변형 및 계산": 2,
+            "합의 성질로 전개": 1,
+            "미지수 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "등식 변형 및 계산": 2,
+            "합의 성질로 전개": 1,
+            "미지수 합 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.551922798156738,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리 및 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.5457799434661865,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.355818748474121,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리 및 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.551922798156738,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리 및 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.5457799434661865,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.355818748474121,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리 및 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "시그마 분리 및 계산": 2,
+            "목표값 도출": 2,
+            "각 합 계산": 1,
+            "방정식 풀이": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "시그마 분리 및 계산": 2,
+            "목표값 도출": 2,
+            "각 합 계산": 1,
+            "방정식 풀이": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.884774208068848,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 이용",
+                "합의 계산 및 정답 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.084570169448853,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용하여 식 정리",
+                "자연수의 합 계산 및 대입",
+                "최종 값 구하기"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.319565534591675,
+              "step_count": 3,
+              "step_titles": [
+                "시그마 성질 적용",
+                "자연수의 합 계산",
+                "방정식 풀이 및 정답 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.884774208068848,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 이용",
+                "합의 계산 및 정답 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.084570169448853,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용하여 식 정리",
+                "자연수의 합 계산 및 대입",
+                "최종 값 구하기"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.319565534591675,
+              "step_count": 3,
+              "step_titles": [
+                "시그마 성질 적용",
+                "자연수의 합 계산",
+                "방정식 풀이 및 정답 도출"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "시그마의 성질 이용": 1,
+            "합의 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용하여 식 정리": 1,
+            "자연수의 합 계산 및 대입": 1,
+            "최종 값 구하기": 1,
+            "시그마 성질 적용": 1,
+            "자연수의 합 계산": 1,
+            "방정식 풀이 및 정답 도출": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "시그마의 성질 이용": 1,
+            "합의 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용하여 식 정리": 1,
+            "자연수의 합 계산 및 대입": 1,
+            "최종 값 구하기": 1,
+            "시그마 성질 적용": 1,
+            "자연수의 합 계산": 1,
+            "방정식 풀이 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.266144275665283,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합식 확장",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.442144632339478,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합식 정리",
+                "합 계산 및 ∑a_k 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.447821378707886,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 합식 분리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.266144275665283,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합식 확장",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.442144632339478,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합식 정리",
+                "합 계산 및 ∑a_k 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.447821378707886,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 합식 분리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "주어진 합식 확장": 1,
+            "합 계산 및 정리": 1,
+            "주어진 합식 정리": 1,
+            "합 계산 및 ∑a_k 도출": 1,
+            "주어진 합식 분리": 1,
+            "∑k 계산": 1,
+            "∑a_k 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 합식 확장": 1,
+            "합 계산 및 정리": 1,
+            "주어진 합식 정리": 1,
+            "합 계산 및 ∑a_k 도출": 1,
+            "주어진 합식 분리": 1,
+            "∑k 계산": 1,
+            "∑a_k 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.4032275676727295,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 계산",
+                "값 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.344555854797363,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 계산",
+                "값 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.858269453048706,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 계산",
+                "수열의 합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.4032275676727295,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 계산",
+                "값 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.344555854797363,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 계산",
+                "값 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.858269453048706,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 계산",
+                "수열의 합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "합 계산": 2,
+            "값 구하기": 2,
+            "시그마 계산": 1,
+            "수열의 합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "합 계산": 2,
+            "값 구하기": 2,
+            "시그마 계산": 1,
+            "수열의 합 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.671212196350098,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계산 수행",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.112677574157715,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계수 처리 및 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.042760610580444,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계산 수행"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.671212196350098,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계산 수행",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.112677574157715,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계수 처리 및 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.042760610580444,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "계산 수행"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "시그마 분리": 3,
+            "계산 수행": 2,
+            "미지수 해 구하기": 2,
+            "계수 처리 및 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "시그마 분리": 3,
+            "계산 수행": 2,
+            "미지수 해 구하기": 2,
+            "계수 처리 및 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 9,
+          "등식 변형 및 계산": 2,
+          "합의 성질로 전개": 1,
+          "미지수 합 계산": 1,
+          "주어진 조건 정리": 3,
+          "시그마 분리 및 계산": 2,
+          "목표값 도출": 2,
+          "각 합 계산": 1,
+          "방정식 풀이": 1,
+          "시그마의 성질 이용": 1,
+          "합의 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용하여 식 정리": 1,
+          "자연수의 합 계산 및 대입": 1,
+          "최종 값 구하기": 1,
+          "시그마 성질 적용": 1,
+          "자연수의 합 계산": 1,
+          "방정식 풀이 및 정답 도출": 1,
+          "주어진 합식 확장": 1,
+          "합 계산 및 정리": 1,
+          "주어진 합식 정리": 1,
+          "합 계산 및 ∑a_k 도출": 1,
+          "주어진 합식 분리": 1,
+          "∑k 계산": 1,
+          "∑a_k 구하기": 1,
+          "합 계산": 2,
+          "값 구하기": 2,
+          "시그마 계산": 1,
+          "수열의 합 구하기": 1,
+          "시그마 분리": 3,
+          "계산 수행": 2,
+          "미지수 해 구하기": 2,
+          "계수 처리 및 계산": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4916932582855225,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "필요한 합 계산",
+                "미지 합 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.211069822311401,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분배",
+                "합 계산 및 미지수 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.762768268585205,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4916932582855225,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "필요한 합 계산",
+                "미지 합 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.211069822311401,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분배",
+                "합 계산 및 미지수 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.762768268585205,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등식 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "필요한 합 계산": 1,
+            "미지 합 구하기": 1,
+            "시그마 분배": 1,
+            "합 계산 및 미지수 구하기": 1,
+            "등식 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "필요한 합 계산": 1,
+            "미지 합 구하기": 1,
+            "시그마 분배": 1,
+            "합 계산 및 미지수 구하기": 1,
+            "등식 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.33774471282959,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리",
+                "k의 합 계산",
+                "목표값 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.454225540161133,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "상수 합 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.461188554763794,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "k의 합 계산",
+                "목표 값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.33774471282959,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "시그마 분리",
+                "k의 합 계산",
+                "목표값 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.454225540161133,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "상수 합 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.461188554763794,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "k의 합 계산",
+                "목표 값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "주어진 조건 정리": 2,
+            "시그마 분리": 1,
+            "k의 합 계산": 2,
+            "목표값 계산": 1,
+            "조건식 정리": 1,
+            "상수 합 계산": 1,
+            "목표값 도출": 1,
+            "목표 값 도출": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 2,
+            "시그마 분리": 1,
+            "k의 합 계산": 2,
+            "목표값 계산": 1,
+            "조건식 정리": 1,
+            "상수 합 계산": 1,
+            "목표값 도출": 1,
+            "목표 값 도출": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.860413551330566,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 대입",
+                "방정식 풀이 및 최종 답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.30051040649414,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.04985475540161,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 적용",
+                "상수항 계산 및 정답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.860413551330566,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 대입",
+                "방정식 풀이 및 최종 답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.30051040649414,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.04985475540161,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 적용",
+                "상수항 계산 및 정답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "시그마의 성질을 이용한 식 변형": 2,
+            "자연수의 합 계산 및 대입": 1,
+            "방정식 풀이 및 최종 답 도출": 1,
+            "자연수의 합 계산 및 방정식 풀이": 1,
+            "시그마의 성질 적용": 1,
+            "상수항 계산 및 정답 도출": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "시그마의 성질을 이용한 식 변형": 2,
+            "자연수의 합 계산 및 대입": 1,
+            "방정식 풀이 및 최종 답 도출": 1,
+            "자연수의 합 계산 및 방정식 풀이": 1,
+            "시그마의 성질 적용": 1,
+            "상수항 계산 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.434266328811646,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확장",
+                "합 분리 및 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.937610864639282,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확장",
+                "합 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.897879362106323,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합 확장",
+                "합 분리 및 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.434266328811646,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확장",
+                "합 분리 및 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.937610864639282,
+              "step_count": 3,
+              "step_titles": [
+                "조건 확장",
+                "합 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.897879362106323,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 합 확장",
+                "합 분리 및 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 확장": 2,
+            "합 분리 및 계산": 2,
+            "∑a_k 구하기": 2,
+            "합 계산": 1,
+            "주어진 합 확장": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 확장": 2,
+            "합 분리 및 계산": 2,
+            "∑a_k 구하기": 2,
+            "합 계산": 1,
+            "주어진 합 확장": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.629336833953857,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 식 변형",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.990892171859741,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.166178941726685,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.629336833953857,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 식 변형",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.990892171859741,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.166178941726685,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "조건 정리 및 식 변형": 1,
+            "방정식 풀기": 2,
+            "조건 정리": 2,
+            "합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 식 변형": 1,
+            "방정식 풀기": 2,
+            "조건 정리": 2,
+            "합 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.122294664382935,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수 합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.712236166000366,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.851794958114624,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.122294664382935,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수 합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.712236166000366,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.851794958114624,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "시그마 분리": 3,
+            "상수 합 계산": 1,
+            "미지수 해 구하기": 3,
+            "상수합 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "시그마 분리": 3,
+            "상수 합 계산": 1,
+            "미지수 해 구하기": 3,
+            "상수합 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 8,
+          "필요한 합 계산": 1,
+          "미지 합 구하기": 1,
+          "시그마 분배": 1,
+          "합 계산 및 미지수 구하기": 1,
+          "등식 계산": 1,
+          "주어진 조건 정리": 2,
+          "시그마 분리": 4,
+          "k의 합 계산": 2,
+          "목표값 계산": 1,
+          "조건식 정리": 1,
+          "상수 합 계산": 2,
+          "목표값 도출": 1,
+          "목표 값 도출": 1,
+          "시그마의 성질을 이용한 식 변형": 2,
+          "자연수의 합 계산 및 대입": 1,
+          "방정식 풀이 및 최종 답 도출": 1,
+          "자연수의 합 계산 및 방정식 풀이": 1,
+          "시그마의 성질 적용": 1,
+          "상수항 계산 및 정답 도출": 1,
+          "조건 확장": 2,
+          "합 분리 및 계산": 2,
+          "∑a_k 구하기": 2,
+          "합 계산": 1,
+          "주어진 합 확장": 1,
+          "조건 정리 및 식 변형": 1,
+          "방정식 풀기": 2,
+          "합 구하기": 1,
+          "미지수 해 구하기": 3,
+          "상수합 계산": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.6235544681549072,
+              "step_count": 2,
+              "step_titles": [
+                "식 전개 및 합 정리",
+                "등식 변형 및 값 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.545315742492676,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6249663829803467,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.6235544681549072,
+              "step_count": 2,
+              "step_titles": [
+                "식 전개 및 합 정리",
+                "등식 변형 및 값 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.545315742492676,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6249663829803467,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 계산"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "식 전개 및 합 정리": 1,
+            "등식 변형 및 값 계산": 1,
+            "조건 정리": 2,
+            "합 계산 및 정리": 1,
+            "합 분리 및 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "식 전개 및 합 정리": 1,
+            "등식 변형 및 값 계산": 1,
+            "조건 정리": 2,
+            "합 계산 및 정리": 1,
+            "합 분리 및 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.7361438274383545,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "k의 합 계산",
+                "목표값 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.486743927001953,
+              "step_count": 2,
+              "step_titles": [
+                "시그마 전개",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.6322338581085205,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.7361438274383545,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "k의 합 계산",
+                "목표값 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.486743927001953,
+              "step_count": 2,
+              "step_titles": [
+                "시그마 전개",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.6322338581085205,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건식 정리": 1,
+            "k의 합 계산": 1,
+            "목표값 계산": 1,
+            "시그마 전개": 1,
+            "합 계산 및 정리": 1,
+            "주어진 조건 정리": 1,
+            "각 합 계산": 1,
+            "방정식 풀이": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건식 정리": 1,
+            "k의 합 계산": 1,
+            "목표값 계산": 1,
+            "시그마 전개": 1,
+            "합 계산 및 정리": 1,
+            "주어진 조건 정리": 1,
+            "각 합 계산": 1,
+            "방정식 풀이": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.858598470687866,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 이용",
+                "상수항 계산 및 정답 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.33360147476196,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 분리",
+                "자연수의 합 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.20502257347107,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 방정식 수립",
+                "최종 값 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.858598470687866,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 이용",
+                "상수항 계산 및 정답 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.33360147476196,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 분리",
+                "자연수의 합 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.20502257347107,
+              "step_count": 3,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 변형",
+                "자연수의 합 계산 및 방정식 수립",
+                "최종 값 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "시그마의 성질 이용": 1,
+            "상수항 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식 분리": 1,
+            "자연수의 합 계산": 1,
+            "최종 값 계산": 2,
+            "시그마의 성질을 이용한 식 변형": 1,
+            "자연수의 합 계산 및 방정식 수립": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "시그마의 성질 이용": 1,
+            "상수항 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식 분리": 1,
+            "자연수의 합 계산": 1,
+            "최종 값 계산": 2,
+            "시그마의 성질을 이용한 식 변형": 1,
+            "자연수의 합 계산 및 방정식 수립": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.270562171936035,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.768987894058228,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "합 분배",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.930676221847534,
+              "step_count": 2,
+              "step_titles": [
+                "조건 재구성",
+                "S 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.270562171936035,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.768987894058228,
+              "step_count": 4,
+              "step_titles": [
+                "주어진 조건 정리",
+                "합 분배",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.930676221847534,
+              "step_count": 2,
+              "step_titles": [
+                "조건 재구성",
+                "S 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 2,
+            "∑k 계산": 2,
+            "∑a_k 구하기": 2,
+            "합 분배": 1,
+            "조건 재구성": 1,
+            "S 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 2,
+            "∑k 계산": 2,
+            "∑a_k 구하기": 2,
+            "합 분배": 1,
+            "조건 재구성": 1,
+            "S 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.785352945327759,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "방정식 풀기"
+              ],
+              "final_answer": "5  \n정답은 ⑤번입니다.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.69594144821167,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.13175702095032,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 계산",
+                "수열 합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.785352945327759,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "방정식 풀기"
+              ],
+              "final_answer": "5  \n정답은 ⑤번입니다.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.69594144821167,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.13175702095032,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "시그마 계산",
+                "수열 합 구하기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "방정식 풀기": 1,
+            "합 구하기": 1,
+            "시그마 계산": 1,
+            "수열 합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "방정식 풀기": 1,
+            "합 구하기": 1,
+            "시그마 계산": 1,
+            "수열 합 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.205366849899292,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수 합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.547074556350708,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 정리",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.59741759300232,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.205366849899292,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "상수 합 계산",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.547074556350708,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 정리",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.59741759300232,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리",
+                "미지수 해 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "시그마 분리": 1,
+            "상수 합 계산": 1,
+            "미지수 해 구하기": 3,
+            "합 분리 및 정리": 1,
+            "합 분리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "시그마 분리": 1,
+            "상수 합 계산": 1,
+            "미지수 해 구하기": 3,
+            "합 분리 및 정리": 1,
+            "합 분리": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.6666666666666665,
+        "title_frequency_all_models": {
+          "식 전개 및 합 정리": 1,
+          "등식 변형 및 값 계산": 1,
+          "조건 정리": 8,
+          "합 계산 및 정리": 2,
+          "합 분리 및 계산": 1,
+          "조건식 정리": 1,
+          "k의 합 계산": 1,
+          "목표값 계산": 1,
+          "시그마 전개": 1,
+          "주어진 조건 정리": 3,
+          "각 합 계산": 1,
+          "방정식 풀이": 1,
+          "시그마의 성질 이용": 1,
+          "상수항 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식 분리": 1,
+          "자연수의 합 계산": 1,
+          "최종 값 계산": 2,
+          "시그마의 성질을 이용한 식 변형": 1,
+          "자연수의 합 계산 및 방정식 수립": 1,
+          "∑k 계산": 2,
+          "∑a_k 구하기": 2,
+          "합 분배": 1,
+          "조건 재구성": 1,
+          "S 계산": 1,
+          "방정식 풀기": 1,
+          "합 구하기": 1,
+          "시그마 계산": 1,
+          "수열 합 구하기": 1,
+          "시그마 분리": 1,
+          "상수 합 계산": 1,
+          "미지수 해 구하기": 3,
+          "합 분리 및 정리": 1,
+          "합 분리": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.032679319381714,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등차합 계산 및 값 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.785717964172363,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 목표값 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6547253131866455,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.032679319381714,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "등차합 계산 및 값 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.785717964172363,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 목표값 구하기"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.6547253131866455,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "5 (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "등차합 계산 및 값 구하기": 1,
+            "합 계산 및 목표값 구하기": 1,
+            "합 계산 및 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "등차합 계산 및 값 구하기": 1,
+            "합 계산 및 목표값 구하기": 1,
+            "합 계산 및 정리": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.710978269577026,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "각 합 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.5266993045806885,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.008991003036499,
+              "step_count": 2,
+              "step_titles": [
+                "조건식 전개",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.710978269577026,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "각 합 계산",
+                "목표값 도출"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.5266993045806885,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "각 합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "**⑤ 5**\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.008991003036499,
+              "step_count": 2,
+              "step_titles": [
+                "조건식 전개",
+                "합 계산 및 정리"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건식 정리": 1,
+            "각 합 계산": 2,
+            "목표값 도출": 1,
+            "주어진 조건 정리": 1,
+            "방정식 풀이": 1,
+            "조건식 전개": 1,
+            "합 계산 및 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건식 정리": 1,
+            "각 합 계산": 2,
+            "목표값 도출": 1,
+            "주어진 조건 정리": 1,
+            "방정식 풀이": 1,
+            "조건식 전개": 1,
+            "합 계산 및 정리": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.183222770690918,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 적용 및 식 분리",
+                "자연수의 합 계산 및 정답 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 33.283623695373535,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 정리",
+                "계산 및 정답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.823069095611572,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식의 분리",
+                "상수항 계산 및 방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.183222770690918,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질 적용 및 식 분리",
+                "자연수의 합 계산 및 정답 도출"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 33.283623695373535,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식 정리",
+                "계산 및 정답 도출"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.823069095611572,
+              "step_count": 2,
+              "step_titles": [
+                "시그마의 성질을 이용한 식의 분리",
+                "상수항 계산 및 방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "시그마의 성질 적용 및 식 분리": 1,
+            "자연수의 합 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식 정리": 1,
+            "계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식의 분리": 1,
+            "상수항 계산 및 방정식 풀이": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "시그마의 성질 적용 및 식 분리": 1,
+            "자연수의 합 계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식 정리": 1,
+            "계산 및 정답 도출": 1,
+            "시그마의 성질을 이용한 식의 분리": 1,
+            "상수항 계산 및 방정식 풀이": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.704108953475952,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.893784046173096,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.442880392074585,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 합 분리",
+                "상수 합 계산",
+                "∑a_k 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.704108953475952,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.893784046173096,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "∑k 계산",
+                "∑a_k 구하기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.442880392074585,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 합 분리",
+                "상수 합 계산",
+                "∑a_k 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "∑k 계산": 2,
+            "∑a_k 구하기": 2,
+            "주어진 조건 정리": 1,
+            "주어진 합 분리": 1,
+            "상수 합 계산": 1,
+            "∑a_k 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "∑k 계산": 2,
+            "∑a_k 구하기": 2,
+            "주어진 조건 정리": 1,
+            "주어진 합 분리": 1,
+            "상수 합 계산": 1,
+            "∑a_k 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.4595489501953125,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.36011838912964,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.164567232131958,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "합 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.4595489501953125,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분리",
+                "합 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.36011838912964,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.164567232131958,
+              "step_count": 3,
+              "step_titles": [
+                "조건식 정리",
+                "합 계산",
+                "방정식 풀기"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "시그마 분리": 1,
+            "합 계산": 3,
+            "방정식 풀이": 1,
+            "조건식 정리": 1,
+            "방정식 풀기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "시그마 분리": 1,
+            "합 계산": 3,
+            "방정식 풀이": 1,
+            "조건식 정리": 1,
+            "방정식 풀기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.954867601394653,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분해",
+                "합계 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.238501310348511,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 정리",
+                "미지수에 대한 방정식 풀기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.708815097808838,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분할",
+                "상수항 계산",
+                "방정식 정리"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.954867601394653,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분해",
+                "합계 계산",
+                "방정식 풀이"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.238501310348511,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합 분리 및 정리",
+                "미지수에 대한 방정식 풀기"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.708815097808838,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "시그마 분할",
+                "상수항 계산",
+                "방정식 정리"
+              ],
+              "final_answer": "5",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "시그마 분해": 1,
+            "합계 계산": 1,
+            "방정식 풀이": 1,
+            "합 분리 및 정리": 1,
+            "미지수에 대한 방정식 풀기": 1,
+            "시그마 분할": 1,
+            "상수항 계산": 1,
+            "방정식 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "시그마 분해": 1,
+            "합계 계산": 1,
+            "방정식 풀이": 1,
+            "합 분리 및 정리": 1,
+            "미지수에 대한 방정식 풀기": 1,
+            "시그마 분할": 1,
+            "상수항 계산": 1,
+            "방정식 정리": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "조건 정리": 9,
+          "등차합 계산 및 값 구하기": 1,
+          "합 계산 및 목표값 구하기": 1,
+          "합 계산 및 정리": 2,
+          "조건식 정리": 2,
+          "각 합 계산": 2,
+          "목표값 도출": 1,
+          "주어진 조건 정리": 2,
+          "방정식 풀이": 3,
+          "조건식 전개": 1,
+          "시그마의 성질 적용 및 식 분리": 1,
+          "자연수의 합 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식 정리": 1,
+          "계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식의 분리": 1,
+          "상수항 계산 및 방정식 풀이": 1,
+          "∑k 계산": 2,
+          "∑a_k 구하기": 2,
+          "주어진 합 분리": 1,
+          "상수 합 계산": 1,
+          "∑a_k 계산": 1,
+          "시그마 분리": 1,
+          "합 계산": 3,
+          "방정식 풀기": 1,
+          "시그마 분해": 1,
+          "합계 계산": 1,
+          "합 분리 및 정리": 1,
+          "미지수에 대한 방정식 풀기": 1,
+          "시그마 분할": 1,
+          "상수항 계산": 1,
+          "방정식 정리": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 9,
+          "등식 변형 및 계산": 2,
+          "합의 성질로 전개": 1,
+          "미지수 합 계산": 1,
+          "주어진 조건 정리": 3,
+          "시그마 분리 및 계산": 2,
+          "목표값 도출": 2,
+          "각 합 계산": 1,
+          "방정식 풀이": 1,
+          "시그마의 성질 이용": 1,
+          "합의 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용하여 식 정리": 1,
+          "자연수의 합 계산 및 대입": 1,
+          "최종 값 구하기": 1,
+          "시그마 성질 적용": 1,
+          "자연수의 합 계산": 1,
+          "방정식 풀이 및 정답 도출": 1,
+          "주어진 합식 확장": 1,
+          "합 계산 및 정리": 1,
+          "주어진 합식 정리": 1,
+          "합 계산 및 ∑a_k 도출": 1,
+          "주어진 합식 분리": 1,
+          "∑k 계산": 1,
+          "∑a_k 구하기": 1,
+          "합 계산": 2,
+          "값 구하기": 2,
+          "시그마 계산": 1,
+          "수열의 합 구하기": 1,
+          "시그마 분리": 3,
+          "계산 수행": 2,
+          "미지수 해 구하기": 2,
+          "계수 처리 및 계산": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 8,
+          "필요한 합 계산": 1,
+          "미지 합 구하기": 1,
+          "시그마 분배": 1,
+          "합 계산 및 미지수 구하기": 1,
+          "등식 계산": 1,
+          "주어진 조건 정리": 2,
+          "시그마 분리": 4,
+          "k의 합 계산": 2,
+          "목표값 계산": 1,
+          "조건식 정리": 1,
+          "상수 합 계산": 2,
+          "목표값 도출": 1,
+          "목표 값 도출": 1,
+          "시그마의 성질을 이용한 식 변형": 2,
+          "자연수의 합 계산 및 대입": 1,
+          "방정식 풀이 및 최종 답 도출": 1,
+          "자연수의 합 계산 및 방정식 풀이": 1,
+          "시그마의 성질 적용": 1,
+          "상수항 계산 및 정답 도출": 1,
+          "조건 확장": 2,
+          "합 분리 및 계산": 2,
+          "∑a_k 구하기": 2,
+          "합 계산": 1,
+          "주어진 합 확장": 1,
+          "조건 정리 및 식 변형": 1,
+          "방정식 풀기": 2,
+          "합 구하기": 1,
+          "미지수 해 구하기": 3,
+          "상수합 계산": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.6666666666666665,
+        "title_frequency_all_models": {
+          "식 전개 및 합 정리": 1,
+          "등식 변형 및 값 계산": 1,
+          "조건 정리": 8,
+          "합 계산 및 정리": 2,
+          "합 분리 및 계산": 1,
+          "조건식 정리": 1,
+          "k의 합 계산": 1,
+          "목표값 계산": 1,
+          "시그마 전개": 1,
+          "주어진 조건 정리": 3,
+          "각 합 계산": 1,
+          "방정식 풀이": 1,
+          "시그마의 성질 이용": 1,
+          "상수항 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식 분리": 1,
+          "자연수의 합 계산": 1,
+          "최종 값 계산": 2,
+          "시그마의 성질을 이용한 식 변형": 1,
+          "자연수의 합 계산 및 방정식 수립": 1,
+          "∑k 계산": 2,
+          "∑a_k 구하기": 2,
+          "합 분배": 1,
+          "조건 재구성": 1,
+          "S 계산": 1,
+          "방정식 풀기": 1,
+          "합 구하기": 1,
+          "시그마 계산": 1,
+          "수열 합 구하기": 1,
+          "시그마 분리": 1,
+          "상수 합 계산": 1,
+          "미지수 해 구하기": 3,
+          "합 분리 및 정리": 1,
+          "합 분리": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.7222222222222223,
+        "title_frequency_all_models": {
+          "조건 정리": 9,
+          "등차합 계산 및 값 구하기": 1,
+          "합 계산 및 목표값 구하기": 1,
+          "합 계산 및 정리": 2,
+          "조건식 정리": 2,
+          "각 합 계산": 2,
+          "목표값 도출": 1,
+          "주어진 조건 정리": 2,
+          "방정식 풀이": 3,
+          "조건식 전개": 1,
+          "시그마의 성질 적용 및 식 분리": 1,
+          "자연수의 합 계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식 정리": 1,
+          "계산 및 정답 도출": 1,
+          "시그마의 성질을 이용한 식의 분리": 1,
+          "상수항 계산 및 방정식 풀이": 1,
+          "∑k 계산": 2,
+          "∑a_k 구하기": 2,
+          "주어진 합 분리": 1,
+          "상수 합 계산": 1,
+          "∑a_k 계산": 1,
+          "시그마 분리": 1,
+          "합 계산": 3,
+          "방정식 풀기": 1,
+          "시그마 분해": 1,
+          "합계 계산": 1,
+          "합 분리 및 정리": 1,
+          "미지수에 대한 방정식 풀기": 1,
+          "시그마 분할": 1,
+          "상수항 계산": 1,
+          "방정식 정리": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.763888888888889,
+      "title_frequency": {
+        "조건 정리": 34,
+        "등식 변형 및 계산": 2,
+        "합의 성질로 전개": 1,
+        "미지수 합 계산": 1,
+        "주어진 조건 정리": 10,
+        "시그마 분리 및 계산": 2,
+        "목표값 도출": 4,
+        "각 합 계산": 4,
+        "방정식 풀이": 5,
+        "시그마의 성질 이용": 2,
+        "합의 계산 및 정답 도출": 1,
+        "시그마의 성질을 이용하여 식 정리": 1,
+        "자연수의 합 계산 및 대입": 2,
+        "최종 값 구하기": 1,
+        "시그마 성질 적용": 1,
+        "자연수의 합 계산": 2,
+        "방정식 풀이 및 정답 도출": 1,
+        "주어진 합식 확장": 1,
+        "합 계산 및 정리": 5,
+        "주어진 합식 정리": 1,
+        "합 계산 및 ∑a_k 도출": 1,
+        "주어진 합식 분리": 1,
+        "∑k 계산": 5,
+        "∑a_k 구하기": 7,
+        "합 계산": 6,
+        "값 구하기": 2,
+        "시그마 계산": 2,
+        "수열의 합 구하기": 1,
+        "시그마 분리": 9,
+        "계산 수행": 2,
+        "미지수 해 구하기": 8,
+        "계수 처리 및 계산": 1,
+        "필요한 합 계산": 1,
+        "미지 합 구하기": 1,
+        "시그마 분배": 1,
+        "합 계산 및 미지수 구하기": 1,
+        "등식 계산": 1,
+        "k의 합 계산": 3,
+        "목표값 계산": 2,
+        "조건식 정리": 4,
+        "상수 합 계산": 4,
+        "목표 값 도출": 1,
+        "시그마의 성질을 이용한 식 변형": 3,
+        "방정식 풀이 및 최종 답 도출": 1,
+        "자연수의 합 계산 및 방정식 풀이": 1,
+        "시그마의 성질 적용": 1,
+        "상수항 계산 및 정답 도출": 2,
+        "조건 확장": 2,
+        "합 분리 및 계산": 3,
+        "주어진 합 확장": 1,
+        "조건 정리 및 식 변형": 1,
+        "방정식 풀기": 4,
+        "합 구하기": 2,
+        "상수합 계산": 2,
+        "식 전개 및 합 정리": 1,
+        "등식 변형 및 값 계산": 1,
+        "시그마 전개": 1,
+        "시그마의 성질을 이용한 식 분리": 1,
+        "최종 값 계산": 2,
+        "자연수의 합 계산 및 방정식 수립": 1,
+        "합 분배": 1,
+        "조건 재구성": 1,
+        "S 계산": 1,
+        "수열 합 구하기": 1,
+        "합 분리 및 정리": 2,
+        "합 분리": 1,
+        "등차합 계산 및 값 구하기": 1,
+        "합 계산 및 목표값 구하기": 1,
+        "조건식 전개": 1,
+        "시그마의 성질 적용 및 식 분리": 1,
+        "자연수의 합 계산 및 정답 도출": 1,
+        "시그마의 성질을 이용한 식 정리": 1,
+        "계산 및 정답 도출": 1,
+        "시그마의 성질을 이용한 식의 분리": 1,
+        "상수항 계산 및 방정식 풀이": 1,
+        "주어진 합 분리": 1,
+        "∑a_k 계산": 1,
+        "시그마 분해": 1,
+        "합계 계산": 1,
+        "미지수에 대한 방정식 풀기": 1,
+        "시그마 분할": 1,
+        "상수항 계산": 1,
+        "방정식 정리": 1
+      },
+      "accuracy": 0.9305555555555556,
+      "n_samples": 72
+    }
+  }
+}

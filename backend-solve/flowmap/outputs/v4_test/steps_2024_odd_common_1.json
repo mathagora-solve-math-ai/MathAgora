@@ -1,0 +1,61 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_common_1",
+    "prob_area": "수학1",
+    "prob_point": "2",
+    "prob_desc": "1.$\\sqrt[3]{24} \\times 3^{\\tfrac{2}{3}}$의 값은? [2점]\n① 6 ② 7 ③ 8 ④ 9 ⑤ 10",
+    "answer": "1"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "지수 형태로 바꾸기",
+        "body": "\\[\n\\sqrt[3]{24}\\times 3^{\\frac23}\n=24^{\\frac13}\\times 3^{\\frac23}\n\\]"
+      },
+      {
+        "title": "소인수분해 후 지수법칙 적용",
+        "body": "\\[\n24=2^3\\cdot 3\n\\Rightarrow 24^{\\frac13}=(2^3\\cdot 3)^{\\frac13}=2\\cdot 3^{\\frac13}\n\\]\n따라서\n\\[\n24^{\\frac13}\\times 3^{\\frac23}\n=(2\\cdot 3^{\\frac13})\\times 3^{\\frac23}\n=2\\cdot 3^{\\frac13+\\frac23}\n=2\\cdot 3^1\n=6\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "6 (①)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "지수 형태로 변환",
+        "body": "주어진 식을 지수 형태로 통일합니다.\n\n$$\\sqrt[3]{24} \\times 3^{\\frac{2}{3}} = 24^{\\frac{1}{3}} \\times 3^{\\frac{2}{3}}$$\n\n[/STEP]"
+      },
+      {
+        "title": "24를 소인수분해",
+        "body": "24를 소인수분해합니다.\n\n$$24 = 8 \\times 3 = 2^3 \\times 3$$\n\n따라서:\n$$24^{\\frac{1}{3}} = (2^3 \\times 3)^{\\frac{1}{3}} = 2^{3 \\cdot \\frac{1}{3}} \\times 3^{\\frac{1}{3}} = 2 \\times 3^{\\frac{1}{3}}$$\n\n[/STEP]"
+      },
+      {
+        "title": "계산",
+        "body": "원래 식에 대입하여 계산합니다.\n\n$$2 \\times 3^{\\frac{1}{3}} \\times 3^{\\frac{2}{3}} = 2 \\times 3^{\\frac{1}{3} + \\frac{2}{3}} = 2 \\times 3^1 = 2 \\times 3 = 6$$\n\n[/STEP]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "**① 6**\n[/FINAL_ANSWER]"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "거듭제곱근의 지수 변환 및 소인수분해",
+        "body": "주어진 식 $\\sqrt[3]{24} \\times 3^{\\tfrac{2}{3}}$에서 거듭제곱근을 지수 형태로 변환하고, 밑인 24를 소인수분해합니다.\n$\\sqrt[3]{24} = 24^{\\frac{1}{3}} = (2^3 \\times 3)^{\\frac{1}{3}}$"
+      },
+      {
+        "title": "지수법칙 적용 및 식 정리",
+        "body": "지수법칙 $(ab)^n = a^n b^n$과 $a^m \\times a^n = a^{m+n}$을 이용하여 식을 간단히 합니다.\n$(2^3 \\times 3)^{\\frac{1}{3}} \\times 3^{\\frac{2}{3}} = (2^{3 \\times \\frac{1}{3}} \\times 3^{\\frac{1}{3}}) \\times 3^{\\frac{2}{3}}$\n$= 2^1 \\times 3^{\\frac{1}{3}} \\times 3^{\\frac{2}{3}}$\n$= 2 \\times 3^{(\\frac{1}{3} + \\frac{2}{3})}$"
+      },
+      {
+        "title": "최종 계산",
+        "body": "지수의 덧셈을 계산하여 최종 값을 구합니다.\n$2 \\times 3^1 = 2 \\times 3 = 6$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "① 6"
+      }
+    ]
+  }
+}

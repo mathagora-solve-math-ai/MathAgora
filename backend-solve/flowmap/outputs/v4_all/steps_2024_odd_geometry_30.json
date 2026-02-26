@@ -1,0 +1,81 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_geometry_30",
+    "prob_area": "기하",
+    "prob_point": "4",
+    "prob_desc": "30. 좌표평면에 한 변의 길이가 4인 정삼각형 $\\mathrm{ABC}$가 있다. 선분 $\\mathrm{AB}$를 1:3으로 내분하는 점을 $\\mathrm{D}$, 선분 $\\mathrm{BC}$를 1:3으로 내분하는 점을 $\\mathrm{E}$, 선분 $\\mathrm{CA}$를 1:3으로 내분하는 점을 $\\mathrm{F}$라 하자. 네 점 $\\mathrm{P,\\ Q,\\ R,\\ X}$가 다음 조건을 만족시킨다.\n> (가) $|\\overrightarrow{DP}| = |\\overrightarrow{EQ}| = |\\overrightarrow{FR}| = 1$\n> (나) $\\overrightarrow{AX} = \\overrightarrow{PB}+\\overrightarrow{QC}+\\overrightarrow{RA}$\n$|\\overrightarrow{AX}|$의 값이 최대일 때, 삼각형 $\\mathrm{PQR}$의 넓이를 $S$라 하자. $16S^2$의 값을 구하시오. [4점]",
+    "answer": "147"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "좌표 설정 및 내분점 구하기",
+        "body": "한 변의 길이가 4인 정삼각형을 좌표로 두자.\n\\[\nA(0,0),\\quad B(4,0),\\quad C\\left(2,2\\sqrt3\\right)\n\\]\n내분비 \\(1:3\\)은 “앞:뒤 = 1:3”으로, 예를 들어 \\(D\\)가 \\(AB\\)를 \\(1:3\\)으로 내분하면 \\(AD:DB=1:3\\)이다.\n\n- \\(D\\in AB\\): \\(A\\to B\\)의 \\(1/4\\) 지점\n\\[\nD=A+\\frac14(B-A)=(1,0)\n\\]\n- \\(E\\in BC\\): \\(BE:EC=1:3\\)\n\\[\nE=B+\\frac14(C-B)=\\left(4,0\\right)+\\frac14\\left(-2,2\\sqrt3\\right)=\\left(\\frac72,\\frac{\\sqrt3}{2}\\right)\n\\]\n- \\(F\\in CA\\): \\(CF:FA=1:3\\)\n\\[\nF=C+\\frac14(A-C)=\\left(2,2\\sqrt3\\right)+\\frac14\\left(-2,-2\\sqrt3\\right)=\\left(\\frac32,\\frac{3\\sqrt3}{2}\\right)\n\\]"
+      },
+      {
+        "title": "벡터식 정리: AX를 P,Q,R로 표현",
+        "body": "조건 (나):\n\\[\n\\overrightarrow{AX}=\\overrightarrow{PB}+\\overrightarrow{QC}+\\overrightarrow{RA}\n\\]\n각 항을 점벡터로 쓰면\n\\[\n\\overrightarrow{PB}=B-P,\\quad \\overrightarrow{QC}=C-Q,\\quad \\overrightarrow{RA}=A-R\n\\]\n따라서\n\\[\n\\overrightarrow{AX}=(B+C+A)-(P+Q+R)\n\\]\n즉 \\(A=(0,0)\\)이므로\n\\[\n\\overrightarrow{AX}=B+C-(P+Q+R)\n\\]\n여기서 \\(B+C=(6,2\\sqrt3)\\)는 상수이므로, \\(|\\overrightarrow{AX}|\\) 최대화는 \\(|(P+Q+R)-(B+C)|\\) 최대화와 같다."
+      },
+      {
+        "title": "P,Q,R의 자유도: 반지름 1 원 위의 점",
+        "body": "조건 (가)에서\n\\[\n|DP|=|EQ|=|FR|=1\n\\]\n즉\n\\[\nP=D+u,\\quad Q=E+v,\\quad R=F+w\n\\]\n단, \\(|u|=|v|=|w|=1\\).\n\n그러면\n\\[\nP+Q+R=(D+E+F)+(u+v+w)\n\\]\n따라서\n\\[\n\\overrightarrow{AX}=B+C-(D+E+F)-(u+v+w)\n\\]\n상수벡터를\n\\[\nK:=B+C-(D+E+F)\n\\]\n라 두면\n\\[\n\\overrightarrow{AX}=K-(u+v+w)\n\\]\n\n이제 \\(K\\)를 계산하자.\n\\[\nD+E+F=\\left(1+\\frac72+\\frac32,\\ 0+\\frac{\\sqrt3}{2}+\\frac{3\\sqrt3}{2}\\right)=(6,2\\sqrt3)\n\\]\n그런데 \\(B+C=(6,2\\sqrt3)\\)이므로\n\\[\nK=(6,2\\sqrt3)-(6,2\\sqrt3)=(0,0)\n\\]\n결국\n\\[\n\\overrightarrow{AX}=-(u+v+w)\n\\]\n따라서 \\(|\\overrightarrow{AX}|\\) 최대화는 \\(|u+v+w|\\) 최대화와 완전히 같다."
+      },
+      {
+        "title": "AX 최대 조건: u,v,w의 정렬",
+        "body": "\\(|u|=|v|=|w|=1\\)인 세 벡터의 합의 크기 최대는 세 벡터가 모두 같은 방향일 때이며,\n\\[\n|u+v+w|_{\\max}=|u|+|v|+|w|=3\n\\]\n따라서 최대가 되는 경우는\n\\[\nu=v=w \\quad(\\text{같은 단위벡터})\n\\]\n즉\n\\[\nP=D+u,\\quad Q=E+u,\\quad R=F+u\n\\]\n이때 삼각형 \\(PQR\\)은 삼각형 \\(DEF\\)를 평행이동한 것이므로 넓이가 같다:\n\\[\n[ PQR ] = [ DEF ] = S\n\\]"
+      },
+      {
+        "title": "삼각형 DEF의 넓이 계산",
+        "body": "좌표로 넓이를 구하자.  \n\\[\nD(1,0),\\quad E\\left(\\frac72,\\frac{\\sqrt3}{2}\\right),\\quad F\\left(\\frac32,\\frac{3\\sqrt3}{2}\\right)\n\\]\n벡터\n\\[\n\\overrightarrow{DE}=\\left(\\frac52,\\frac{\\sqrt3}{2}\\right),\\quad\n\\overrightarrow{DF}=\\left(\\frac12,\\frac{3\\sqrt3}{2}\\right)\n\\]\n넓이\n\\[\nS=[DEF]=\\frac12\\left|\\det(\\overrightarrow{DE},\\overrightarrow{DF})\\right|\n=\\frac12\\left|\\frac52\\cdot\\frac{3\\sqrt3}{2}-\\frac{\\sqrt3}{2}\\cdot\\frac12\\right|\n\\]\n\\[\n=\\frac12\\left|\\frac{15\\sqrt3}{4}-\\frac{\\sqrt3}{4}\\right|\n=\\frac12\\cdot\\frac{14\\sqrt3}{4}\n=\\frac{7\\sqrt3}{4}\n\\]"
+      },
+      {
+        "title": "16S^2 계산",
+        "body": "\\[\nS=\\frac{7\\sqrt3}{4}\\quad\\Rightarrow\\quad S^2=\\frac{49\\cdot 3}{16}=\\frac{147}{16}\n\\]\n따라서\n\\[\n16S^2=16\\cdot\\frac{147}{16}=147\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "147"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "좌표 설정",
+        "body": "정삼각형 ABC의 좌표를 설정합니다.\n- $A = (0, 0)$\n- $B = (4, 0)$\n- $C = (2, 2\\sqrt{3})$"
+      },
+      {
+        "title": "내분점 D, E, F 계산",
+        "body": "각 변을 1:3으로 내분하는 점:\n\n**점 D** (AB를 1:3 내분): \n$$D = A + \\frac{1}{4}\\overrightarrow{AB} = (0,0) + \\frac{1}{4}(4,0) = (1, 0)$$\n\n**점 E** (BC를 1:3 내분):\n$$E = B + \\frac{1}{4}\\overrightarrow{BC} = (4,0) + \\frac{1}{4}(-2, 2\\sqrt{3}) = \\left(\\frac{7}{2}, \\frac{\\sqrt{3}}{2}\\right)$$\n\n**점 F** (CA를 1:3 내분):\n$$F = C + \\frac{1}{4}\\overrightarrow{CA} = (2, 2\\sqrt{3}) + \\frac{1}{4}(-2, -2\\sqrt{3}) = \\left(\\frac{3}{2}, \\frac{3\\sqrt{3}}{2}\\right)$$"
+      },
+      {
+        "title": "조건 (나)의 벡터 정리",
+        "body": "$$\\overrightarrow{AX} = \\overrightarrow{PB} + \\overrightarrow{QC} + \\overrightarrow{RA}$$\n\n각 벡터를 분해합니다:\n- $\\overrightarrow{PB} = \\overrightarrow{AB} - \\overrightarrow{AP} = \\overrightarrow{AB} - (\\overrightarrow{AD} + \\overrightarrow{DP})$\n- $\\overrightarrow{QC} = \\overrightarrow{AC} - \\overrightarrow{AQ} = \\overrightarrow{AC} - (\\overrightarrow{AE} + \\overrightarrow{EQ})$\n- $\\overrightarrow{RA} = -\\overrightarrow{AR} = -(\\overrightarrow{AF} + \\overrightarrow{FR})$\n\n$\\overrightarrow{AD} = \\frac{1}{4}\\overrightarrow{AB}$, $\\overrightarrow{AE} = \\overrightarrow{AB} + \\frac{1}{4}\\overrightarrow{BC}$, $\\overrightarrow{AF} = \\overrightarrow{AC} + \\frac{1}{4}\\overrightarrow{CA} = \\frac{3}{4}\\overrightarrow{AC}$\n\n$$\\overrightarrow{PB} = \\overrightarrow{AB} - \\frac{1}{4}\\overrightarrow{AB} - \\overrightarrow{DP} = \\frac{3}{4}\\overrightarrow{AB} - \\overrightarrow{DP}$$\n\n$$\\overrightarrow{QC} = \\overrightarrow{AC} - \\overrightarrow{AB} - \\frac{1}{4}\\overrightarrow{BC} - \\overrightarrow{EQ} = \\overrightarrow{AC} - \\overrightarrow{AB} - \\frac{1}{4}(\\overrightarrow{AC}-\\overrightarrow{AB}) - \\overrightarrow{EQ} = \\frac{3}{4}\\overrightarrow{AC} - \\frac{3}{4}\\overrightarrow{AB} - \\overrightarrow{EQ}$$\n\n$$\\overrightarrow{RA} = -\\frac{3}{4}\\overrightarrow{AC} - \\overrightarrow{FR}$$\n\n합산:\n$$\\overrightarrow{AX} = \\frac{3}{4}\\overrightarrow{AB} + \\frac{3}{4}\\overrightarrow{AC} - \\frac{3}{4}\\overrightarrow{AB} - \\frac{3}{4}\\overrightarrow{AC} - (\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR})$$\n\n$$\\overrightarrow{AX} = -(\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR})$$"
+      },
+      {
+        "title": "최댓값 조건 분석",
+        "body": "$|\\overrightarrow{AX}| = |\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR}|$가 최대가 되려면 세 벡터가 같은 방향을 가리켜야 합니다.\n\n$|\\overrightarrow{DP}| = |\\overrightarrow{EQ}| = |\\overrightarrow{FR}| = 1$이므로, 세 벡터가 모두 같은 방향일 때:\n$$|\\overrightarrow{AX}|_{\\max} = 3$$"
+      },
+      {
+        "title": "P, Q, R의 좌표 계산",
+        "body": "세 벡터가 같은 방향 $(\\cos\\theta, \\sin\\theta)$일 때:\n- $P = D + (\\cos\\theta, \\sin\\theta) = (1 + \\cos\\theta, \\sin\\theta)$\n- $Q = E + (\\cos\\theta, \\sin\\theta) = \\left(\\frac{7}{2} + \\cos\\theta, \\frac{\\sqrt{3}}{2} + \\sin\\theta\\right)$\n- $R = F + (\\cos\\theta, \\sin\\theta) = \\left(\\frac{3}{2} + \\cos\\theta, \\frac{3\\sqrt{3}}{2} + \\sin\\theta\\right)$"
+      },
+      {
+        "title": "삼각형 PQR의 넓이 계산",
+        "body": "$\\overrightarrow{PQ}$와 $\\overrightarrow{PR}$을 계산:\n$$\\overrightarrow{PQ} = Q - P = \\left(\\frac{5}{2}, \\frac{\\sqrt{3}}{2}\\right)$$\n$$\\overrightarrow{PR} = R - P = \\left(\\frac{1}{2}, \\frac{3\\sqrt{3}}{2}\\right)$$\n\n넓이 공식:\n$$S = \\frac{1}{2}|x_1 y_2 - x_2 y_1| = \\frac{1}{2}\\left|\\frac{5}{2} \\cdot \\frac{3\\sqrt{3}}{2} - \\frac{1}{2} \\cdot \\frac{\\sqrt{3}}{2}\\right|$$\n\n$$S = \\frac{1}{2}\\left|\\frac{15\\sqrt{3}}{4} - \\frac{\\sqrt{3}}{4}\\right| = \\frac{1}{2} \\cdot \\frac{14\\sqrt{3}}{4} = \\frac{7\\sqrt{3}}{4}$$"
+      },
+      {
+        "title": "최종 계산",
+        "body": "$$S^2 = \\left(\\frac{7\\sqrt{3}}{4}\\right)^2 = \\frac{49 \\times 3}{16} = \\frac{147}{16}$$\n\n$$16S^2 = 16 \\times \\frac{147}{16} = 147$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "147"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "벡터 $\\overrightarrow{AX}$의 변형 및 정리",
+        "body": "주어진 식 $\\overrightarrow{AX} = \\overrightarrow{PB}+\\overrightarrow{QC}+\\overrightarrow{RA}$를 시점과 종점을 분리하여 정리합니다.\n점 $\\mathrm{D, E, F}$를 각각의 기준점으로 삼아 벡터를 분해하면 다음과 같습니다.\n$$ \\overrightarrow{PB} = \\overrightarrow{PD} + \\overrightarrow{DB} = -\\overrightarrow{DP} + \\overrightarrow{DB} $$\n$$ \\overrightarrow{QC} = \\overrightarrow{QE} + \\overrightarrow{EC} = -\\overrightarrow{EQ} + \\overrightarrow{EC} $$\n$$ \\overrightarrow{RA} = \\overrightarrow{RF} + \\overrightarrow{FA} = -\\overrightarrow{FR} + \\overrightarrow{FA} $$\n이를 원래 식에 대입하면,\n$$ \\overrightarrow{AX} = -(\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR}) + (\\overrightarrow{DB} + \\overrightarrow{EC} + \\overrightarrow{FA}) $$\n여기서 점 $\\mathrm{D, E, F}$는 각각 변 $\\mathrm{AB, BC, CA}$를 $1:3$으로 내분하는 점이므로,\n$$ \\overrightarrow{DB} = \\frac{3}{4}\\overrightarrow{AB}, \\quad \\overrightarrow{EC} = \\frac{3}{4}\\overrightarrow{BC}, \\quad \\overrightarrow{FA} = \\frac{3}{4}\\overrightarrow{CA} $$\n따라서 상수 벡터 부분의 합은 다음과 같습니다.\n$$ \\overrightarrow{DB} + \\overrightarrow{EC} +"
+      }
+    ]
+  }
+}

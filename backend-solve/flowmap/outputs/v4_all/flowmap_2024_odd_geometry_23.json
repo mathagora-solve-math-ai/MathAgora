@@ -1,0 +1,164 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "중점 공식 적용",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "중점 공식 적용",
+          "content": "점 \\(A(a,-2,6)\\), \\(B(9,2,b)\\)의 중점 \\(M\\)은\n\\[\nM\\left(\\frac{a+9}{2},\\ \\frac{-2+2}{2},\\ \\frac{6+b}{2}\\right)\n\\]\n입니다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "중점 공식 적용",
+          "content": "선분 AB의 중점 좌표는 두 점의 각 좌표의 평균입니다.\n\nA$(a, -2, 6)$, B$(9, 2, b)$의 중점이 $(4, 0, 7)$이므로:\n\n$$\\left(\\frac{a+9}{2}, \\frac{-2+2}{2}, \\frac{6+b}{2}\\right) = (4, 0, 7)$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "중점의 좌표 공식 적용",
+          "content": "좌표공간의 두 점 $\\mathrm{A}(x_1, y_1, z_1)$, $\\mathrm{B}(x_2, y_2, z_2)$를 잇는 선분 $\\mathrm{AB}$의 중점 좌표는 $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$입니다.\n\n주어진 두 점 $\\mathrm{A}(a, -2, 6)$, $\\mathrm{B}(9, 2, b)$에 대하여 중점의 좌표를 구하면 다음과 같습니다.\n$$ \\left(\\frac{a+9}{2}, \\frac{-2+2}{2}, \\frac{6+b}{2}\\right) $$\n\n문제에서 주어진 중점의 좌표가 $(4, 0, 7)$이므로, 각 성분별로 등식을 세웁니다.\n$$ \\frac{a+9}{2} = 4, \\quad \\frac{0}{2} = 0, \\quad \\frac{6+b}{2} = 7 $$"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "좌표 성분별 방정식 세우기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "좌표 성분별로 방정식 세우기",
+          "content": "중점이 \\((4,0,7)\\)이므로 성분별로\n\\[\n\\frac{a+9}{2}=4,\\quad \\frac{-2+2}{2}=0,\\quad \\frac{6+b}{2}=7\n\\]\n입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "a, b 값 구하기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "a, b 구하기",
+          "content": "\\[\n\\frac{a+9}{2}=4 \\Rightarrow a+9=8 \\Rightarrow a=-1\n\\]\n\\[\n\\frac{6+b}{2}=7 \\Rightarrow 6+b=14 \\Rightarrow b=8\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "각 좌표별 방정식 풀기",
+          "content": "**x좌표:**\n$$\\frac{a+9}{2} = 4$$\n$$a + 9 = 8$$\n$$a = -1$$\n\n**z좌표:**\n$$\\frac{6+b}{2} = 7$$\n$$6 + b = 14$$\n$$b = 8$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "미지수 계산",
+          "content": "위 단계에서 세운 식을 통해 $a$와 $b$의 값을 각각 구합니다.\n\n1. $x$좌표:\n$$ \\frac{a+9}{2} = 4 \\implies a+9 = 8 \\implies a = -1 $$\n\n2. $z$좌표:\n$$ \\frac{6+b}{2} = 7 \\implies 6+b = 14 \\implies b = 8 $$"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "a+b 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "a+b 계산",
+          "content": "\\[\na+b=-1+8=7\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "a+b 계산",
+          "content": "$$a + b = -1 + 8 = 7$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "최종 답 구하기",
+          "content": "구해진 $a$와 $b$의 값을 더하여 최종 답을 구합니다.\n$$ a+b = -1 + 8 = 7 $$"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "최종 답",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "\\(7\\) (④)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "**7** (④번)"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "④"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    }
+  ]
+}

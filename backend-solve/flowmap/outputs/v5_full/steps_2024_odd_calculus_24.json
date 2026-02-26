@@ -1,0 +1,97 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_calculus_24",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "prob_desc": "24. 매개변수 $t(t  \\gt 0)$으로 나타내어진 곡선 $$x = \\ln(t^3 + 1), \\quad y = \\sin\\pi t$$에서 $t=1$일 때, $\\dfrac{dy}{dx}$의 값은? [3점]\n① $-\\dfrac{1}{3}\\pi$ ② $-\\dfrac{2}{3}\\pi$ ③ $-\\pi$ ④ $-\\dfrac{4}{3}\\pi$ ⑤ $-\\dfrac{5}{3}\\pi$",
+    "answer": "2"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Differentiate parametric equations",
+        "body": "Compute derivatives with respect to t: dx/dt = d/dt[ln(t^3+1)] = (3t^2)/(t^3+1), dy/dt = d/dt[sin(πt)] = π cos(πt). Then dy/dx = (dy/dt)/(dx/dt) = π cos(πt) * (t^3 + 1)/(3t^2)."
+      },
+      {
+        "title": "Evaluate at t = 1",
+        "body": "Substitute t = 1: cos(π) = -1, so dy/dx = π(-1) * (1^3 + 1)/(3 * 1^2) = -2π/3."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Differentiate x(t) and y(t)",
+        "body": "Compute derivatives with respect to t: dy/dt = π cos(πt), dx/dt = d/dt[ln(t^3+1)] = (3t^2)/(t^3+1)."
+      },
+      {
+        "title": "Form dy/dx and evaluate",
+        "body": "dy/dx = (dy/dt)/(dx/dt) = [π cos(πt)] / [3t^2/(t^3+1)] = π cos(πt)·(t^3+1)/(3t^2). At t=1: cos(π) = -1, so dy/dx = π(-1)(2)/3 = -2π/3."
+      },
+      {
+        "title": "Select the option",
+        "body": "The value -2π/3 corresponds to option ②."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Find dy/dt and dx/dt",
+        "body": "Given parametric equations:\n- x = ln(t³ + 1)\n- y = sin(πt)\n\nFor dy/dx with parametric equations: dy/dx = (dy/dt)/(dx/dt)\n\nCalculate dy/dt:\ndy/dt = d/dt[sin(πt)] = π·cos(πt)\n\nCalculate dx/dt:\ndx/dt = d/dt[ln(t³ + 1)] = (3t²)/(t³ + 1)"
+      },
+      {
+        "title": "Evaluate derivatives at t = 1",
+        "body": "At t = 1:\n\ndy/dt|_{t=1} = π·cos(π·1) = π·cos(π) = π·(-1) = -π\n\ndx/dt|_{t=1} = (3·1²)/(1³ + 1) = 3/(1 + 1) = 3/2"
+      },
+      {
+        "title": "Calculate dy/dx at t = 1",
+        "body": "dy/dx = (dy/dt)/(dx/dt) = (-π)/(3/2) = -π · (2/3) = -2π/3"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Differentiate x and y with respect to t",
+        "body": "To find $\\frac{dy}{dx}$, we first compute the derivatives of $x$ and $y$ with respect to the parameter $t$. \nFor $x = \\ln(t^3 + 1)$, using the chain rule:\n$$ \\frac{dx}{dt} = \\frac{3t^2}{t^3 + 1} $$\nFor $y = \\sin\\pi t$, using the chain rule:\n$$ \\frac{dy}{dt} = \\pi \\cos\\pi t $$"
+      },
+      {
+        "title": "Calculate dy/dx at t=1",
+        "body": "Using the formula for parametric differentiation, $\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$. We evaluate the derivatives at $t=1$:\n$$ \\frac{dx}{dt}\\bigg|_{t=1} = \\frac{3(1)^2}{1^3 + 1} = \\frac{3}{2} $$\n$$ \\frac{dy}{dt}\\bigg|_{t=1} = \\pi \\cos\\pi = \\pi(-1) = -\\pi $$\nSubstituting these values gives:\n$$ \\frac{dy}{dx} = \\frac{-\\pi}{\\frac{3}{2}} = -\\frac{2}{3}\\pi $$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Recall parametric derivative formula",
+        "body": "For parametric equations x(t) and y(t), dy/dx = (dy/dt) / (dx/dt)."
+      },
+      {
+        "title": "Compute dx/dt and dy/dt",
+        "body": "dx/dt = d/dt [ln(t³ + 1)] = (3t²)/(t³ + 1). dy/dt = d/dt [sin(π t)] = π cos(π t)."
+      },
+      {
+        "title": "Form dy/dx expression",
+        "body": "dy/dx = [π cos(π t)] / [(3t²)/(t³ + 1)] = [π cos(π t) (t³ + 1)] / (3t²)."
+      },
+      {
+        "title": "Evaluate at t=1",
+        "body": "At t=1: cos(π·1) = -1, t³ + 1 = 2, 3t² = 3. dy/dx = [π(-1)(2)] / 3 = -2π/3."
+      },
+      {
+        "title": "Final Answer",
+        "body": "2"
+      }
+    ]
+  }
+}

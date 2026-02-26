@@ -1,0 +1,73 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_calculus_29",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "prob_desc": "29. 첫째항과 공비가 각각 0이 아닌 두 등비수열 $\\{a_n\\},\\ \\{b_n\\}$에 대하여 두 급수 $\\sum\\limits_{n=1}^{\\infty} a_n,\\ \\sum\\limits_{n=1}^{\\infty} b_n$이 각각 수렴하고 $$\\begin{align} \\sum_{n=1}^{\\infty} a_n b_n = \\left( \\sum_{n=1}^{\\infty} a_n \\right) \\times \\left( \\sum_{n=1}^{\\infty} b_n \\right), \\\\ 3 \\times \\sum_{n=1}^{\\infty} |a_{2n}| = 7 \\times \\sum_{n=1}^{\\infty} |a_{3n}| \\end{align}$$이 성립한다. $\\sum\\limits_{n=1}^{\\infty} \\dfrac{b_{2n-1} + b_{3n+1}}{b_n} = S$일 때, $120S$의 값을 구하시오. [4점]",
+    "answer": "162"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "등비수열 설정 및 수렴조건",
+        "body": "등비수열을\n\\[\na_n=A r^{n-1},\\quad b_n=B s^{n-1}\\qquad (A,B\\neq 0)\n\\]\n로 두자. 두 급수 \\(\\sum a_n,\\sum b_n\\)가 수렴하므로\n\\[\n|r|<1,\\quad |s|<1.\n\\]\n\n또한\n\\[\n\\sum_{n=1}^\\infty a_n=\\frac{A}{1-r},\\quad \\sum_{n=1}^\\infty b_n=\\frac{B}{1-s},\\quad \n\\sum_{n=1}^\\infty a_n b_n=\\sum_{n=1}^\\infty AB(rs)^{n-1}=\\frac{AB}{1-rs}.\n\\]\n\n---"
+      },
+      {
+        "title": "첫 번째 등식에서 공비 관계 구하기",
+        "body": "조건\n\\[\n\\sum_{n=1}^{\\infty} a_n b_n = \\left( \\sum_{n=1}^{\\infty} a_n \\right)\\left( \\sum_{n=1}^{\\infty} b_n \\right)\n\\]\n을 대입하면\n\\[\n\\frac{AB}{1-rs}=\\frac{A}{1-r}\\cdot\\frac{B}{1-s}.\n\\]\n\\(AB\\neq 0\\)이므로 약분하여\n\\[\n\\frac{1}{1-rs}=\\frac{1}{(1-r)(1-s)}\n\\]\n\\[\n(1-r)(1-s)=1-rs.\n\\]\n좌변 전개: \\(1-r-s+rs\\). 따라서\n\\[\n1-r-s+rs=1-rs \\quad\\Rightarrow\\quad -r-s+rs=-rs\n\\]\n\\[\nr+s=2rs.\n\\]\n정리하면\n\\[\ns(2r-1)=r \\quad\\Rightarrow\\quad s=\\frac{r}{2r-1}.\n\\]\n\n---"
+      },
+      {
+        "title": "절댓값 급수 조건으로 r 결정",
+        "body": "조건\n\\[\n3\\sum_{n=1}^\\infty |a_{2n}|=7\\sum_{n=1}^\\infty |a_{3n}|\n\\]\n에서\n\\[\na_{2n}=A r^{2n-1},\\quad a_{3n}=A r^{3n-1}.\n\\]\n따라서\n\\[\n\\sum_{n=1}^\\infty |a_{2n}|=\\sum_{n=1}^\\infty |A||r|^{2n-1}\n=|A|\\cdot \\frac{|r|}{1-|r|^2},\n\\]\n\\[\n\\sum_{n=1}^\\infty |a_{3n}|=\\sum_{n=1}^\\infty |A||r|^{3n-1}\n=|A|\\cdot \\frac{|r|^2}{1-|r|^3}.\n\\]\n이를 대입하면\n\\[\n3|A|\\frac{|r|}{1-|r|^2}=7|A|\\frac{|r|^2}{1-|r|^3}.\n\\]\n\\(|A|\\neq 0,\\ |r|\\neq 0\\)이므로 약분하여\n\\[\n3\\frac{1}{1-|r|^2}=7\\frac{|r|}{1-|r|^3}.\n\\]\n\\(t=|r|\\,(0<t<1)\\)라 두면\n\\[\n\\frac{3}{1-t^2}=\\frac{7t}{1-t^3}.\n\\]\n교차곱:\n\\[\n3(1-t^3)=7t(1-t^2)\n\\]\n\\[\n3-3t^3=7t-7t^3\n\\]\n\\[\n3=7t-4t^3\n\\]\n\\[\n4t^3-7t+3=0.\n\\]\n인수분해하면\n\\[\n4t^3-7t+3=(t-1)(4t^2+4t-3).\n\\]\n\\(0<t<1\\)이므로 \\(t\\neq 1\\), 따라서\n\\[\n4t^2+4t-3=0 \\Rightarrow t=\\frac{-4+\\sqrt{16+48}}{8}=\\frac{-4+8}{8}=\\frac12.\n\\]\n즉\n\\[\n|r|=\\frac12 \\Rightarrow r=\\frac12 \\text{ 또는 } r=-\\frac12.\n\\]\n\n이제 \\(s=\\dfrac{r}{2r-1}\\)에 대입:\n- \\(r=\\frac12\\)이면 \\(2r-1=0\\)이 되어 \\(s\\)가 정의되지 않으므로 불가능.\n- 따라서 \\(r=-\\frac12\\).\n\n그러면\n\\[\ns=\\frac{-\\frac12}{2(-\\frac12)-1}=\\frac{-\\frac12}{-1-1}=\\frac{-\\frac12}{-2}=\\frac14.\n\\]\n\n---"
+      },
+      {
+        "title": "S 계산",
+        "body": "구하려는 값\n\\[\nS=\\sum_{n=1}^\\infty \\frac{b_{2n-1}+b_{3n+1}}{b_n}.\n\\]\n\\(b_n=B s^{n-1}\\)이므로\n\\[\n\\frac{b_{2n-1}}{b_n}=\\frac{B s^{2n-2}}{B s^{n-1}}=s^{n-1},\n\\]\n\\[\n\\frac{b_{3n+1}}{b_n}=\\frac{B s^{3n}}{B s^{n-1}}=s^{2n+1}.\n\\]\n따라서\n\\[\nS=\\sum_{n=1}^\\infty \\left(s^{n-1}+s^{2n+1}\\right)\n=\\sum_{n=1}^\\infty s^{n-1}+\\sum_{n=1}^\\infty s^{2n+1}.\n\\]\n각각 등비급수로 계산하면\n\\[\n\\sum_{n=1}^\\infty s^{n-1}=\\frac{1}{1-s},\n\\]\n\\[\n\\sum_{n=1}^\\infty s^{2n+1}=s^3\\sum_{n=1}^\\infty (s^2)^{n-1}=\\frac{s^3}{1-s^2}.\n\\]\n따라서\n\\[\nS=\\frac{1}{1-s}+\\frac{s^3}{1-s^2}.\n\\]\n\\(s=\\frac14\\) 대입:\n\\[\n\\frac{1}{1-\\frac14}=\\frac{1}{\\frac34}=\\frac43,\n\\]\n\\[\n\\frac{s^3}{1-s^2}=\\frac{\\left(\\frac14\\right)^3}{1-\\left(\\frac14\\right)^2}\n=\\frac{\\frac{1}{64}}{1-\\frac{1}{16}}\n=\\frac{\\frac{1}{64}}{\\frac{15}{16}}\n=\\frac{1}{64}\\cdot\\frac{16}{15}=\\frac{1}{60}.\n\\]\n따라서\n\\[\nS=\\frac43+\\frac{1}{60}=\\frac{80}{60}+\\frac{1}{60}=\\frac{81}{60}=\\frac{27}{20}.\n\\]\n그러므로\n\\[\n120S=120\\cdot \\frac{27}{20}=6\\cdot 27=162.\n\\]\n\n---"
+      },
+      {
+        "title": "Final Answer",
+        "body": "\\(120S=162\\)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "등비급수 공식 설정",
+        "body": "첫째항이 $a$, 공비가 $r$인 등비수열 $\\{a_n\\}$과 첫째항이 $b$, 공비가 $s$인 등비수열 $\\{b_n\\}$을 설정합니다.\n\n- $a_n = a \\cdot r^{n-1}$, $b_n = b \\cdot s^{n-1}$\n- 급수가 수렴하므로 $|r| < 1$, $|s| < 1$\n\n등비급수의 합:\n$$\\sum_{n=1}^{\\infty} a_n = \\frac{a}{1-r}, \\quad \\sum_{n=1}^{\\infty} b_n = \\frac{b}{1-s}$$"
+      },
+      {
+        "title": "첫 번째 조건 분석",
+        "body": "$a_n b_n = ab \\cdot (rs)^{n-1}$이므로:\n$$\\sum_{n=1}^{\\infty} a_n b_n = \\frac{ab}{1-rs}$$\n\n첫 번째 조건:\n$$\\frac{ab}{1-rs} = \\frac{a}{1-r} \\cdot \\frac{b}{1-s}$$\n\n$ab \\neq 0$이므로 양변을 $ab$로 나누면:\n$$\\frac{1}{1-rs} = \\frac{1}{(1-r)(1-s)}$$\n\n따라서:\n$$(1-r)(1-s) = 1-rs$$\n$$1 - r - s + rs = 1 - rs$$\n$$-r - s + 2rs = 0$$\n$$r + s = 2rs$$"
+      },
+      {
+        "title": "두 번째 조건 분석",
+        "body": "$|a_{2n}| = |a| \\cdot |r|^{2n-1} = |a| \\cdot |r|^{-1} \\cdot (r^2)^n$이므로:\n$$\\sum_{n=1}^{\\infty} |a_{2n}| = \\frac{|a| \\cdot |r|}{1-r^2}$$\n\n마찬가지로:\n$$\\sum_{n=1}^{\\infty} |a_{3n}| = \\frac{|a| \\cdot |r|^2}{1-|r|^3}$$\n\n두 번째 조건 ($|r| = \\rho$로 표기):\n$$3 \\cdot \\frac{|a|\\rho}{1-\\rho^2} = 7 \\cdot \\frac{|a|\\rho^2}{1-\\rho^3}$$\n\n$|a|\\rho \\neq 0$으로 나누면:\n$$\\frac{3}{1-\\rho^2} = \\frac{7\\rho}{1-\\rho^3}$$\n\n$$3(1-\\rho^3) = 7\\rho(1-\\rho^2)$$\n$$3 - 3\\rho^3 = 7\\rho - 7\\rho^3$$\n$$3 = 7\\rho - 4\\rho^3$$\n$$4\\rho^3 - 7\\rho + 3 = 0$$"
+      },
+      {
+        "title": "공비 r 계산",
+        "body": "$4\\rho^3 - 7\\rho + 3 = 0$을 풀면:\n\n$\\rho = 1$이 근: $(4\\rho^2 + 4\\rho - 3) = 0$으로 인수분해\n$$(ρ-1)(4\\rho^2 + 4\\rho - 3) = 0$$\n$$4\\rho^2 + 4\\rho - 3 = 0 \\Rightarrow \\rho = \\frac{-4 \\pm \\sqrt{64}}{8} = \\frac{-4 \\pm 8}{8}$$\n\n$\\rho = \\frac{1}{2}$ 또는 $\\rho = -\\frac{3}{2}$\n\n$|r| < 1$이어야 하므로 $|r| = \\frac{1}{2}$, 즉 $r = \\pm\\frac{1}{2}$"
+      },
+      {
+        "title": "공비 s 계산",
+        "body": "$r + s = 2rs$에서 $s = \\frac{r}{2r-1}$\n\n- $r = \\frac{1}{2}$: $s = \\frac{1/2}{0}$ → 불가\n- $r = -\\frac{1}{2}$: $s = \\frac{-1/2}{-2} = \\frac{1}{4}$\n\n따라서 $r = -\\frac{1}{2}$, $s = \\frac{1}{4}$"
+      },
+      {
+        "title": "S 계산",
+        "body": "$$\\frac{b_{2n-1} + b_{3n+1}}{b_n} = \\frac{b \\cdot s^{2n-2} + b \\cdot s^{3n}}{b \\cdot s^{n-1}} = s^{n-1} + s^{2n+1}$$\n\n$$S = \\sum_{n=1}^{\\infty} (s^{n-1} + s^{2n+1}) = \\sum_{n=1}^{\\infty} s^{n-1} + s^2 \\sum_{n=1}^{\\infty} s^{2n-1}$$\n\n$$= \\frac{1}{1-s} + s^2 \\cdot \\frac{s}{1-s^2} = \\frac{1}{1-s} + \\frac{s^3}{1-s^2}$$\n\n$s = \\frac{1}{4}$를 대입:\n$$S = \\frac{1}{1-\\frac{1}{4}} + \\frac{(\\frac{1}{4})^3}{1-\\frac{1}{16}} = \\frac{1}{\\frac{3}{4}} + \\frac{\\frac{1}{64}}{\\frac{15}{16}}$$\n\n$$= \\frac{4}{3} + \\frac{1}{64} \\cdot \\frac{16}{15} = \\frac{4}{3} + \\frac{1}{60}$$\n\n$$= \\frac{80}{60} + \\frac{1}{60} = \\frac{81}{60} = \\frac{27}{20}$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "$$120S = 120 \\times \\frac{27}{20} = 6 \\times 27 = \\boxed{162}$$"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "조건 정리 및 공비 사이의 관계식 유도",
+        "body": "등비수열 $\\{a_n\\}$의 첫째항을 $a$, 공비를 $r$, $\\{b_n\\}$의 첫째항을 $b$, 공비를 $s$라 하자. (단, $a, b \\neq 0$, $0 < |r| < 1$, $0 < |s| < 1$)\n첫 번째 조건 $\\sum_{n=1}^{\\infty} a_n b_n = \\left( \\sum_{n=1}^{\\infty} a_n \\right) \\times \\left( \\sum_{n=1}^{\\infty} b_n \\right)$을 식으로 나타내면 다음과 같다.\n$$ \\frac{ab}{1-rs} = \\frac{a}{1-r} \\times \\frac{b}{1-s} $$\n양변을 $ab$로 나누고 정리하면,\n$$ \\frac{1}{1-rs} = \\frac{1}{(1-r)(1-s)} $$\n$$ 1-rs = 1 - r - s + rs $$\n$$ 2rs - r - s = 0 \\quad \\cdots \\text{(ㄱ)} $$\n식 (ㄱ)을 $s$에 대해 정리하면 $s(2r-1) = r$ 이므로 $s = \\frac{r}{2r-1}$이다."
+      },
+      {
+        "title": "절댓값 급수 조건을 통한 공비 r 결정",
+        "body": "두 번째 조건 $3 \\times \\sum_{n=1}^{\\infty} |a_{2n}| = 7 \\times \\sum_{n=1}^{\\infty} |a_{3n}|$을 분석한다.\n수열 $\\{|a_{2n}|\\}$은 첫째항 $|ar|$, 공비 $|r^2|=r^2$인 등비수열이고,\n수열 $\\{|a_{3n}|\\}$은 첫째항 $|ar^2|$, 공비 $|r^3|=|r|^3$인 등비수열이다.\n$$ 3 \\times \\frac{|ar|}{1-r^2} = 7 \\times \\frac{|ar^2|}{1-|r|^3} $$\n양변을 $|ar|$ ($a, r \\neq 0$)로 나누고 $|r|=x$라 두면 ($0<x<1$),\n$$ \\frac{3}{1-x^2} = \\frac{7x}{1-x^3} $$\n$$ \\frac{3}{(1-x)(1+x)} = \\frac{7x}{(1-x)(1+x+x^2)} $$\n양변에 $(1-x)$를 곱하고 대각선으로 곱하여 정리하면,\n$$ 3(1+x+x^2) = 7x(1+x) $$\n$$ 3 + 3x + 3x^2 = 7x + 7x^2 $$\n$$ 4x^2 + 4x - 3 = 0 $$\n$$ (2x-1)(2x+3) = 0 $$\n$x>0"
+      }
+    ]
+  }
+}

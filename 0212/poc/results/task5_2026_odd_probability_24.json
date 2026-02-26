@@ -1,0 +1,3234 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:57:28Z",
+    "ended_at_utc": "2026-02-14T03:57:41Z",
+    "elapsed_seconds": 12.789,
+    "problem_tag": "2026_odd_probability_24",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 1,
+    "n_resumed_runs_from_flat_csv": 71
+  },
+  "problem": {
+    "id": "2026_odd_probability_24",
+    "label": "2026_odd_probability_24 (확률과통계, 3점)",
+    "gold_answer": "1"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.006641,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.51108,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.870042,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.006641,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.51108,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.870042,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교집합 확률 구하기": 2,
+            "합집합 공식 적용": 3,
+            "교집합 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교집합 확률 구하기": 2,
+            "합집합 공식 적용": 3,
+            "교집합 확률 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.380265,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.060255,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.198781,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.380265,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.060255,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.198781,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 3,
+            "합집합 공식으로 P(B) 계산": 1,
+            "P(B) 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 3,
+            "합집합 공식으로 P(B) 계산": 1,
+            "P(B) 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.1944,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.85822,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.058148,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 구하기",
+                "확률의 덧셈정리를 이용하여 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.1944,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.85822,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.058148,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 구하기",
+                "확률의 덧셈정리를 이용하여 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "곱셈정리를 이용한 교집합 확률 계산": 2,
+            "확률의 덧셈정리를 이용한 P(B) 계산": 2,
+            "교집합의 확률 구하기": 1,
+            "확률의 덧셈정리를 이용하여 P(B) 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "곱셈정리를 이용한 교집합 확률 계산": 2,
+            "확률의 덧셈정리를 이용한 P(B) 계산": 2,
+            "교집합의 확률 구하기": 1,
+            "확률의 덧셈정리를 이용하여 P(B) 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.312643,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.576778,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.91024,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.312643,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.576778,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.91024,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용 및 P(B) 계산": 1,
+            "합집합 공식 적용": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용 및 P(B) 계산": 1,
+            "합집합 공식 적용": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.104509,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.178548,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.779296159744263,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.104509,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.178548,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.779296159744263,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 3,
+            "합사건 확률 공식 이용": 3,
+            "P(B) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "합사건 확률 공식 이용": 3,
+            "P(B) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.678869,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 정리 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.452624,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.619346,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "합사건 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.678869,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 정리 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.452624,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.619346,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "합사건 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "조건부 확률 공식 적용": 2,
+            "합사건 공식 적용": 3,
+            "방정식 정리 및 계산": 1,
+            "방정식 풀이": 1,
+            "조건부확률 활용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "조건부 확률 공식 적용": 2,
+            "합사건 공식 적용": 3,
+            "방정식 정리 및 계산": 1,
+            "방정식 풀이": 1,
+            "조건부확률 활용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 구하기": 2,
+          "합집합 공식 적용": 5,
+          "교집합 확률 계산": 4,
+          "P(A∩B) 계산": 3,
+          "합집합 공식으로 P(B) 계산": 1,
+          "P(B) 계산": 3,
+          "곱셈정리를 이용한 교집합 확률 계산": 2,
+          "확률의 덧셈정리를 이용한 P(B) 계산": 2,
+          "교집합의 확률 구하기": 1,
+          "확률의 덧셈정리를 이용하여 P(B) 구하기": 1,
+          "주어진 조건 정리": 3,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 공식 이용": 3,
+          "조건부 확률 공식 적용": 2,
+          "합사건 공식 적용": 3,
+          "방정식 정리 및 계산": 1,
+          "방정식 풀이": 1,
+          "조건부확률 활용": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.402953,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용",
+                "값 정리"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.250517,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.305247,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.402953,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용",
+                "값 정리"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.250517,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.305247,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교집합 확률 계산": 2,
+            "합집합 공식 적용": 3,
+            "값 정리": 1,
+            "P(B) 구하기": 1,
+            "교집합 확률 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교집합 확률 계산": 2,
+            "합집합 공식 적용": 3,
+            "값 정리": 1,
+            "P(B) 구하기": 1,
+            "교집합 확률 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.452674,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.787762,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.198689,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.452674,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.787762,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.198689,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 2,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 2,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.472652,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "덧셈정리를 이용한 P(B) 구하기"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.799297,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.043926,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.472652,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "덧셈정리를 이용한 P(B) 구하기"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.799297,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.043926,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "교집합의 확률 계산": 3,
+            "덧셈정리를 이용한 P(B) 구하기": 1,
+            "확률의 덧셈정리 적용": 2
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교집합의 확률 계산": 3,
+            "덧셈정리를 이용한 P(B) 구하기": 1,
+            "확률의 덧셈정리 적용": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.943584,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.096056,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.502818,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.943584,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.096056,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.502818,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "주어진 조건 정리": 3,
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용": 2,
+            "합집합 공식 적용 및 P(B) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 3,
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용": 2,
+            "합집합 공식 적용 및 P(B) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.452306,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\( \\frac{7}{10} \\) → ①",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.410391,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.652682,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "\\( P(B) \\) 계산"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.452306,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\( \\frac{7}{10} \\) → ①",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.410391,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.652682,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "\\( P(B) \\) 계산"
+              ],
+              "final_answer": "① \\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "합사건 확률 이용": 1,
+            "P(B) 계산": 1,
+            "합사건 확률 공식 이용": 2,
+            "방정식 풀이": 1,
+            "\\( P(B) \\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "합사건 확률 이용": 1,
+            "P(B) 계산": 1,
+            "합사건 확률 공식 이용": 2,
+            "방정식 풀이": 1,
+            "\\( P(B) \\) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.13881,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 확률 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 38.52873,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 활용",
+                "합사건 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.698342,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "합사건 확률 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.13881,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 확률 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 38.52873,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 활용",
+                "합사건 공식 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 31.698342,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "합사건 확률 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "조건부 확률 공식 적용": 1,
+            "합사건 확률 공식 적용": 2,
+            "조건부 확률 활용": 1,
+            "합사건 공식 적용": 1,
+            "조건부확률 활용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "조건부 확률 공식 적용": 1,
+            "합사건 확률 공식 적용": 2,
+            "조건부 확률 활용": 1,
+            "합사건 공식 적용": 1,
+            "조건부확률 활용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 계산": 6,
+          "합집합 공식 적용": 5,
+          "값 정리": 1,
+          "P(B) 구하기": 1,
+          "교집합 확률 구하기": 1,
+          "P(A∩B) 계산": 2,
+          "합집합 공식으로 P(B) 계산": 3,
+          "교집합의 확률 계산": 3,
+          "덧셈정리를 이용한 P(B) 구하기": 1,
+          "확률의 덧셈정리 적용": 2,
+          "주어진 조건 정리": 3,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 이용": 1,
+          "P(B) 계산": 1,
+          "합사건 확률 공식 이용": 2,
+          "방정식 풀이": 1,
+          "\\( P(B) \\) 계산": 1,
+          "조건부 확률 공식 적용": 1,
+          "합사건 확률 공식 적용": 2,
+          "조건부 확률 활용": 1,
+          "합사건 공식 적용": 1,
+          "조건부확률 활용": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.029842,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.133265,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.964986,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률로 교집합 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\(\\displaystyle P(B)=\\frac{7}{10}\\) (①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.029842,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.133265,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.964986,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률로 교집합 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\(\\displaystyle P(B)=\\frac{7}{10}\\) (①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교집합 확률 계산": 2,
+            "합집합 공식으로 P(B) 구하기": 1,
+            "합집합 공식 적용": 2,
+            "조건부확률로 교집합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교집합 확률 계산": 2,
+            "합집합 공식으로 P(B) 구하기": 1,
+            "합집합 공식 적용": 2,
+            "조건부확률로 교집합 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.970263,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.346201,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.578912,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.970263,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.346201,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.578912,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 2,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 2,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.385504,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합의 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.286011,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.335267,
+              "step_count": 2,
+              "step_titles": [
+                "곱사건의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.385504,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합의 확률 계산",
+                "확률의 덧셈정리를 이용한 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.286011,
+              "step_count": 2,
+              "step_titles": [
+                "교집합의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.335267,
+              "step_count": 2,
+              "step_titles": [
+                "곱사건의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "곱셈정리를 이용한 교집합의 확률 계산": 1,
+            "확률의 덧셈정리를 이용한 P(B) 구하기": 1,
+            "교집합의 확률 계산": 1,
+            "확률의 덧셈정리 적용": 2,
+            "곱사건의 확률 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱셈정리를 이용한 교집합의 확률 계산": 1,
+            "확률의 덧셈정리를 이용한 P(B) 구하기": 1,
+            "교집합의 확률 계산": 1,
+            "확률의 덧셈정리 적용": 2,
+            "곱사건의 확률 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.23991,
+              "step_count": 2,
+              "step_titles": [
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.832044,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.348687,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.23991,
+              "step_count": 2,
+              "step_titles": [
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.832044,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.348687,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용": 2,
+            "주어진 조건 정리": 2,
+            "합집합 공식 적용 및 P(B) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교집합 확률 계산": 3,
+            "합집합 공식 적용": 2,
+            "주어진 조건 정리": 2,
+            "합집합 공식 적용 및 P(B) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.019679,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.3527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\) (보기 ①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.107254,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합집합 확률 공식 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.019679,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.3527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합사건 확률 공식 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\) (보기 ①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.107254,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "합집합 확률 공식 이용",
+                "P(B) 계산"
+              ],
+              "final_answer": "\\[\n\\frac{7}{10}\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "합사건 확률 이용": 1,
+            "P(B) 계산": 2,
+            "합사건 확률 공식 이용": 1,
+            "방정식 풀이": 1,
+            "합집합 확률 공식 이용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "합사건 확률 이용": 1,
+            "P(B) 계산": 2,
+            "합사건 확률 공식 이용": 1,
+            "방정식 풀이": 1,
+            "합집합 확률 공식 이용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.42353,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 이용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.812132,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.310661,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "확률의 덧셈법칙 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.42353,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 이용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.812132,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 19.310661,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 활용",
+                "확률의 덧셈법칙 적용"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "조건부 확률 이용": 1,
+            "합사건 공식 적용": 2,
+            "방정식 풀이": 2,
+            "조건부확률 공식 적용": 1,
+            "조건부확률 활용": 1,
+            "확률의 덧셈법칙 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "조건부 확률 이용": 1,
+            "합사건 공식 적용": 2,
+            "방정식 풀이": 2,
+            "조건부확률 공식 적용": 1,
+            "조건부확률 활용": 1,
+            "확률의 덧셈법칙 적용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.888888888888889,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 계산": 6,
+          "합집합 공식으로 P(B) 구하기": 1,
+          "합집합 공식 적용": 4,
+          "조건부확률로 교집합 구하기": 1,
+          "P(A∩B) 계산": 2,
+          "합집합 공식으로 P(B) 계산": 3,
+          "곱셈정리를 이용한 교집합의 확률 계산": 1,
+          "확률의 덧셈정리를 이용한 P(B) 구하기": 1,
+          "교집합의 확률 계산": 1,
+          "확률의 덧셈정리 적용": 2,
+          "곱사건의 확률 계산": 1,
+          "주어진 조건 정리": 2,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 이용": 1,
+          "P(B) 계산": 2,
+          "합사건 확률 공식 이용": 1,
+          "방정식 풀이": 3,
+          "합집합 확률 공식 이용": 1,
+          "조건부 확률 이용": 1,
+          "합사건 공식 적용": 2,
+          "조건부확률 공식 적용": 1,
+          "조건부확률 활용": 1,
+          "확률의 덧셈법칙 적용": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.95716,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.848061,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.59015,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.95716,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "\\[\nP(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.848061,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\mathrm{P}(B)=\\frac{7}{10}\\quad (\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.59015,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 구하기",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{7}{10}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교집합 확률 구하기": 3,
+            "합집합 공식으로 P(B) 계산": 1,
+            "합집합 공식 적용": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교집합 확률 구하기": 3,
+            "합집합 공식으로 P(B) 계산": 1,
+            "합집합 공식 적용": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.045385,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.556123,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.947061,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.045385,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "P(A∩B) 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.556123,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.947061,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식으로 P(B) 계산"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 1,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "P(A∩B) 계산": 1,
+            "합집합 공식으로 P(B) 계산": 3,
+            "교집합 확률 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.318186,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 구하기",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.579074,
+              "step_count": 2,
+              "step_titles": [
+                "곱사건의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.523668,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 P(A∩B) 계산",
+                "덧셈정리를 적용하여 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.318186,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 교집합 확률 구하기",
+                "확률의 덧셈정리를 이용한 P(B) 계산"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.579074,
+              "step_count": 2,
+              "step_titles": [
+                "곱사건의 확률 계산",
+                "확률의 덧셈정리 적용"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.523668,
+              "step_count": 2,
+              "step_titles": [
+                "곱셈정리를 이용한 P(A∩B) 계산",
+                "덧셈정리를 적용하여 P(B) 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "곱셈정리를 이용한 교집합 확률 구하기": 1,
+            "확률의 덧셈정리를 이용한 P(B) 계산": 1,
+            "곱사건의 확률 계산": 1,
+            "확률의 덧셈정리 적용": 1,
+            "곱셈정리를 이용한 P(A∩B) 계산": 1,
+            "덧셈정리를 적용하여 P(B) 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "곱셈정리를 이용한 교집합 확률 구하기": 1,
+            "확률의 덧셈정리를 이용한 P(B) 계산": 1,
+            "곱사건의 확률 계산": 1,
+            "확률의 덧셈정리 적용": 1,
+            "곱셈정리를 이용한 P(A∩B) 계산": 1,
+            "덧셈정리를 적용하여 P(B) 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.568726,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "P(A ∩ B) 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① 7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.342062,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.082417,
+              "step_count": 2,
+              "step_titles": [
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.568726,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "P(A ∩ B) 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "① 7/10",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.342062,
+              "step_count": 3,
+              "step_titles": [
+                "주어진 조건 정리",
+                "교집합 확률 계산",
+                "합집합 공식 적용"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.082417,
+              "step_count": 2,
+              "step_titles": [
+                "교집합 확률 계산",
+                "합집합 공식 적용 및 P(B) 계산"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "주어진 조건 정리": 2,
+            "P(A ∩ B) 계산": 1,
+            "합집합 공식 적용 및 P(B) 계산": 2,
+            "교집합 확률 계산": 2,
+            "합집합 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "주어진 조건 정리": 2,
+            "P(A ∩ B) 계산": 1,
+            "합집합 공식 적용 및 P(B) 계산": 2,
+            "교집합 확률 계산": 2,
+            "합집합 공식 적용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.679527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 해석",
+                "덧셈정리 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\( \\dfrac{7}{10} \\), 따라서 정답은 ①",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.666444,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B) = \\frac{7}{10}\n\\]\n따라서 정답은 **①**입니다.",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.004005,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "방정식 세우기",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\) (①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.679527,
+              "step_count": 3,
+              "step_titles": [
+                "조건 해석",
+                "덧셈정리 이용",
+                "방정식 풀이"
+              ],
+              "final_answer": "\\( \\dfrac{7}{10} \\), 따라서 정답은 ①",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.666444,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\[\nP(B) = \\frac{7}{10}\n\\]\n따라서 정답은 **①**입니다.",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.004005,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "방정식 세우기",
+                "P(B) 구하기"
+              ],
+              "final_answer": "\\(\\dfrac{7}{10}\\) (①)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 해석": 1,
+            "덧셈정리 이용": 1,
+            "방정식 풀이": 1,
+            "조건 정리": 2,
+            "P(B) 구하기": 2,
+            "방정식 세우기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 해석": 1,
+            "덧셈정리 이용": 1,
+            "방정식 풀이": 1,
+            "조건 정리": 2,
+            "P(B) 구하기": 2,
+            "방정식 세우기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.873292,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률을 이용해 P(A ∩ B) 구하기",
+                "확률의 덧셈 법칙 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.476719,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.729947,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 이용",
+                "합사건 확률 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.873292,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률을 이용해 P(A ∩ B) 구하기",
+                "확률의 덧셈 법칙 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "① $\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.476719,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부 확률 공식 적용",
+                "합사건 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.729947,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "조건부확률 이용",
+                "합사건 확률 공식 적용",
+                "방정식 풀이"
+              ],
+              "final_answer": "$\\dfrac{7}{10}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "조건부 확률을 이용해 P(A ∩ B) 구하기": 1,
+            "확률의 덧셈 법칙 적용": 1,
+            "방정식 풀이": 3,
+            "조건부 확률 공식 적용": 1,
+            "합사건 공식 적용": 1,
+            "조건부확률 이용": 1,
+            "합사건 확률 공식 적용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "조건부 확률을 이용해 P(A ∩ B) 구하기": 1,
+            "확률의 덧셈 법칙 적용": 1,
+            "방정식 풀이": 3,
+            "조건부 확률 공식 적용": 1,
+            "합사건 공식 적용": 1,
+            "조건부확률 이용": 1,
+            "합사건 확률 공식 적용": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.888888888888889,
+        "title_frequency_all_models": {
+          "조건 정리": 11,
+          "교집합 확률 구하기": 3,
+          "합집합 공식으로 P(B) 계산": 4,
+          "합집합 공식 적용": 3,
+          "P(A∩B) 계산": 1,
+          "교집합 확률 계산": 4,
+          "곱셈정리를 이용한 교집합 확률 구하기": 1,
+          "확률의 덧셈정리를 이용한 P(B) 계산": 1,
+          "곱사건의 확률 계산": 1,
+          "확률의 덧셈정리 적용": 1,
+          "곱셈정리를 이용한 P(A∩B) 계산": 1,
+          "덧셈정리를 적용하여 P(B) 구하기": 1,
+          "주어진 조건 정리": 2,
+          "P(A ∩ B) 계산": 1,
+          "합집합 공식 적용 및 P(B) 계산": 2,
+          "조건 해석": 1,
+          "덧셈정리 이용": 1,
+          "방정식 풀이": 4,
+          "P(B) 구하기": 2,
+          "방정식 세우기": 1,
+          "조건부 확률을 이용해 P(A ∩ B) 구하기": 1,
+          "확률의 덧셈 법칙 적용": 1,
+          "조건부 확률 공식 적용": 1,
+          "합사건 공식 적용": 1,
+          "조건부확률 이용": 1,
+          "합사건 확률 공식 적용": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 구하기": 2,
+          "합집합 공식 적용": 5,
+          "교집합 확률 계산": 4,
+          "P(A∩B) 계산": 3,
+          "합집합 공식으로 P(B) 계산": 1,
+          "P(B) 계산": 3,
+          "곱셈정리를 이용한 교집합 확률 계산": 2,
+          "확률의 덧셈정리를 이용한 P(B) 계산": 2,
+          "교집합의 확률 구하기": 1,
+          "확률의 덧셈정리를 이용하여 P(B) 구하기": 1,
+          "주어진 조건 정리": 3,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 공식 이용": 3,
+          "조건부 확률 공식 적용": 2,
+          "합사건 공식 적용": 3,
+          "방정식 정리 및 계산": 1,
+          "방정식 풀이": 1,
+          "조건부확률 활용": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 계산": 6,
+          "합집합 공식 적용": 5,
+          "값 정리": 1,
+          "P(B) 구하기": 1,
+          "교집합 확률 구하기": 1,
+          "P(A∩B) 계산": 2,
+          "합집합 공식으로 P(B) 계산": 3,
+          "교집합의 확률 계산": 3,
+          "덧셈정리를 이용한 P(B) 구하기": 1,
+          "확률의 덧셈정리 적용": 2,
+          "주어진 조건 정리": 3,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 이용": 1,
+          "P(B) 계산": 1,
+          "합사건 확률 공식 이용": 2,
+          "방정식 풀이": 1,
+          "\\( P(B) \\) 계산": 1,
+          "조건부 확률 공식 적용": 1,
+          "합사건 확률 공식 적용": 2,
+          "조건부 확률 활용": 1,
+          "합사건 공식 적용": 1,
+          "조건부확률 활용": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.888888888888889,
+        "title_frequency_all_models": {
+          "조건 정리": 12,
+          "교집합 확률 계산": 6,
+          "합집합 공식으로 P(B) 구하기": 1,
+          "합집합 공식 적용": 4,
+          "조건부확률로 교집합 구하기": 1,
+          "P(A∩B) 계산": 2,
+          "합집합 공식으로 P(B) 계산": 3,
+          "곱셈정리를 이용한 교집합의 확률 계산": 1,
+          "확률의 덧셈정리를 이용한 P(B) 구하기": 1,
+          "교집합의 확률 계산": 1,
+          "확률의 덧셈정리 적용": 2,
+          "곱사건의 확률 계산": 1,
+          "주어진 조건 정리": 2,
+          "합집합 공식 적용 및 P(B) 계산": 1,
+          "합사건 확률 이용": 1,
+          "P(B) 계산": 2,
+          "합사건 확률 공식 이용": 1,
+          "방정식 풀이": 3,
+          "합집합 확률 공식 이용": 1,
+          "조건부 확률 이용": 1,
+          "합사건 공식 적용": 2,
+          "조건부확률 공식 적용": 1,
+          "조건부확률 활용": 1,
+          "확률의 덧셈법칙 적용": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.888888888888889,
+        "title_frequency_all_models": {
+          "조건 정리": 11,
+          "교집합 확률 구하기": 3,
+          "합집합 공식으로 P(B) 계산": 4,
+          "합집합 공식 적용": 3,
+          "P(A∩B) 계산": 1,
+          "교집합 확률 계산": 4,
+          "곱셈정리를 이용한 교집합 확률 구하기": 1,
+          "확률의 덧셈정리를 이용한 P(B) 계산": 1,
+          "곱사건의 확률 계산": 1,
+          "확률의 덧셈정리 적용": 1,
+          "곱셈정리를 이용한 P(A∩B) 계산": 1,
+          "덧셈정리를 적용하여 P(B) 구하기": 1,
+          "주어진 조건 정리": 2,
+          "P(A ∩ B) 계산": 1,
+          "합집합 공식 적용 및 P(B) 계산": 2,
+          "조건 해석": 1,
+          "덧셈정리 이용": 1,
+          "방정식 풀이": 4,
+          "P(B) 구하기": 2,
+          "방정식 세우기": 1,
+          "조건부 확률을 이용해 P(A ∩ B) 구하기": 1,
+          "확률의 덧셈 법칙 적용": 1,
+          "조건부 확률 공식 적용": 1,
+          "합사건 공식 적용": 1,
+          "조건부확률 이용": 1,
+          "합사건 확률 공식 적용": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.888888888888889,
+      "title_frequency": {
+        "조건 정리": 47,
+        "교집합 확률 구하기": 6,
+        "합집합 공식 적용": 17,
+        "교집합 확률 계산": 20,
+        "P(A∩B) 계산": 8,
+        "합집합 공식으로 P(B) 계산": 11,
+        "P(B) 계산": 6,
+        "곱셈정리를 이용한 교집합 확률 계산": 2,
+        "확률의 덧셈정리를 이용한 P(B) 계산": 3,
+        "교집합의 확률 구하기": 1,
+        "확률의 덧셈정리를 이용하여 P(B) 구하기": 1,
+        "주어진 조건 정리": 10,
+        "합집합 공식 적용 및 P(B) 계산": 5,
+        "합사건 확률 공식 이용": 6,
+        "조건부 확률 공식 적용": 4,
+        "합사건 공식 적용": 7,
+        "방정식 정리 및 계산": 1,
+        "방정식 풀이": 9,
+        "조건부확률 활용": 3,
+        "값 정리": 1,
+        "P(B) 구하기": 3,
+        "교집합의 확률 계산": 4,
+        "덧셈정리를 이용한 P(B) 구하기": 1,
+        "확률의 덧셈정리 적용": 5,
+        "합사건 확률 이용": 2,
+        "\\( P(B) \\) 계산": 1,
+        "합사건 확률 공식 적용": 3,
+        "조건부 확률 활용": 1,
+        "합집합 공식으로 P(B) 구하기": 1,
+        "조건부확률로 교집합 구하기": 1,
+        "곱셈정리를 이용한 교집합의 확률 계산": 1,
+        "확률의 덧셈정리를 이용한 P(B) 구하기": 1,
+        "곱사건의 확률 계산": 2,
+        "합집합 확률 공식 이용": 1,
+        "조건부 확률 이용": 1,
+        "조건부확률 공식 적용": 1,
+        "확률의 덧셈법칙 적용": 1,
+        "곱셈정리를 이용한 교집합 확률 구하기": 1,
+        "곱셈정리를 이용한 P(A∩B) 계산": 1,
+        "덧셈정리를 적용하여 P(B) 구하기": 1,
+        "P(A ∩ B) 계산": 1,
+        "조건 해석": 1,
+        "덧셈정리 이용": 1,
+        "방정식 세우기": 1,
+        "조건부 확률을 이용해 P(A ∩ B) 구하기": 1,
+        "확률의 덧셈 법칙 적용": 1,
+        "조건부확률 이용": 1
+      },
+      "accuracy": 0.8888888888888888,
+      "n_samples": 72
+    }
+  }
+}

@@ -1,0 +1,13 @@
+torch
+torchvision
+transformers==4.46.3
+pdf2image
+pypdf
+pillow
+pandas
+numpy
+tqdm
+imagesize
+addict
+einops
+easydict

@@ -1,0 +1,434 @@
+{
+  "problem_id": "2024_odd_common_7",
+  "ground_truth": "5",
+  "prob_type": "5지선다형",
+  "baseline": {
+    "GPT-5-Codex": {
+      "answer": "5",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 5
+        },
+        {
+          "run_index": 2,
+          "answer": 5
+        },
+        {
+          "run_index": 3,
+          "answer": 5
+        }
+      ]
+    },
+    "Claude Opus 4.5": {
+      "answer": "5",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 5
+        },
+        {
+          "run_index": 2,
+          "answer": 5
+        },
+        {
+          "run_index": 3,
+          "answer": 5
+        }
+      ]
+    },
+    "GPT-5": {
+      "answer": "5",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 5
+        },
+        {
+          "run_index": 2,
+          "answer": 5
+        },
+        {
+          "run_index": 3,
+          "answer": 5
+        }
+      ]
+    },
+    "Gemini 3 Pro": {
+      "answer": "5",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 5
+        },
+        {
+          "run_index": 2,
+          "answer": 5
+        },
+        {
+          "run_index": 3,
+          "answer": 5
+        }
+      ]
+    },
+    "Grok 4 Fast": {
+      "answer": "3",
+      "correct": false,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 3
+        },
+        {
+          "run_index": 2,
+          "answer": 2
+        },
+        {
+          "run_index": 3,
+          "answer": 1
+        }
+      ]
+    }
+  },
+  "self": {
+    "GPT-5-Codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find and classify stationary points",
+          "content": "Differentiate f(x)=1/3 x^3−2x^2−12x+4 to get f′(x)=x^2−4x−12. Solve f′(x)=0 → (x−6)(x+2)=0, giving x=−2 and x=6. Using f″(x)=2x−4, f″(−2)=−8<0 ⇒ local maximum at α=−2; f″(6)=8>0 ⇒ local minimum at β=6."
+        },
+        {
+          "step_idx": 1,
+          "title": "Compute the difference",
+          "content": "β−α = 6 − (−2) = 8, which corresponds to option ⑤."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "Relied on attempt 1 (same reasoning as attempts 2 and 3), no corrections necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 3.8871355056762695
+    },
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find the derivative of f(x)",
+          "content": "Given f(x) = (1/3)x³ - 2x² - 12x + 4\nf'(x) = x² - 4x - 12"
+        },
+        {
+          "step_idx": 1,
+          "title": "Find critical points by solving f'(x) = 0",
+          "content": "x² - 4x - 12 = 0\nFactoring: (x - 6)(x + 2) = 0\nSolutions: x = 6 or x = -2"
+        },
+        {
+          "step_idx": 2,
+          "title": "Determine which is maximum and minimum using second derivative test",
+          "content": "f''(x) = 2x - 4\nAt x = -2: f''(-2) = 2(-2) - 4 = -8 < 0, so x = -2 is a local maximum\nAt x = 6: f''(6) = 2(6) - 4 = 8 > 0, so x = 6 is a local minimum\nTherefore α = -2 (local maximum) and β = 6 (local minimum)"
+        },
+        {
+          "step_idx": 3,
+          "title": "Calculate β - α",
+          "content": "β - α = 6 - (-2) = 6 + 2 = 8"
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "All three attempts followed the same correct approach and arrived at the same answer of 8. The derivative calculation is correct, the factoring is correct (can verify: (x-6)(x+2) = x² + 2x - 6x - 12 = x² - 4x - 12 ✓), the second derivative test correctly identifies x = -2 as maximum and x = 6 as minimum, and β - α = 8 corresponds to answer choice ⑤.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 7.134031534194946
+    },
+    "GPT-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Differentiate f(x)",
+          "content": "f'(x) = x^2 - 4x - 12; f''(x) = 2x - 4."
+        },
+        {
+          "step_idx": 1,
+          "title": "Find critical points",
+          "content": "Solve f'(x)=0: x^2 - 4x - 12 = 0 ⇒ x = -2, 6."
+        },
+        {
+          "step_idx": 2,
+          "title": "Classify extrema",
+          "content": "f''(-2) = -8 < 0 ⇒ local max at α = -2; f''(6) = 8 > 0 ⇒ local min at β = 6."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute β − α",
+          "content": "β − α = 6 − (−2) = 8 ⇒ choice ⑤."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "All three attempts correctly differentiated, found critical points, and identified α = −2 (max) and β = 6 (min). I reinforced the classification using the second derivative; the earlier mention of an arbitrary constant C was unnecessary but harmless. No change to the answer.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 22.005250453948975
+    },
+    "Gemini 3 Pro": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Find the derivative of f(x)",
+          "content": "To determine the critical points where local extrema occur, first find the derivative of the function $f(x)=\\frac{1}{3}x^3-2x^2-12x+4$. Differentiating term by term with respect to $x$: $$f'(x) = x^2 - 4x - 12$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "Find critical points",
+          "content": "Set the derivative equal to zero to solve for $x$: $$x^2 - 4x - 12 = 0$$ Factoring the quadratic expression: $$(x-6)(x+2) = 0$$ The critical points are $x = 6$ and $x = -2$."
+        },
+        {
+          "step_idx": 3,
+          "title": "Identify local maximum and minimum",
+          "content": "Since the leading coefficient of the cubic function $f(x)$ is positive ($\\frac{1}{3}$), the graph increases, reaches a local maximum, decreases to a local minimum, and increases again. Thus:\n- The smaller critical value corresponds to the local maximum: $\\alpha = -2$.\n- The larger critical value corresponds to the local minimum: $\\beta = 6$."
+        },
+        {
+          "step_idx": 4,
+          "title": "Calculate the final value",
+          "content": "Compute $\\beta - \\alpha$ using the identified values:\n$$\\beta - \\alpha = 6 - (-2) = 6 + 2 = 8$$"
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "All previous attempts correctly calculated the derivative, identified the critical points, classified the maxima and minima correctly based on the sign of the leading coefficient, and performed the final subtraction accurately. The calculated value is 8, which corresponds to option 5.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 24.945061683654785
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Compute first derivative",
+          "content": "f(x) = (1/3)x^3 - 2x^2 - 12x + 4. f'(x) = x^2 - 4x - 12."
+        },
+        {
+          "step_idx": 1,
+          "title": "Find critical points",
+          "content": "Set f'(x) = 0: x^2 - 4x - 12 = 0. Discriminant = 16 + 48 = 64. Roots: x = [4 ± 8]/2, so x = 6 and x = -2."
+        },
+        {
+          "step_idx": 2,
+          "title": "Classify extrema with second derivative",
+          "content": "f''(x) = 2x - 4. At x = -2: f''(-2) = -8 < 0, maximum (α = -2). At x = 6: f''(6) = 8 > 0, minimum (β = 6)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute β - α",
+          "content": "β - α = 6 - (-2) = 8."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "None of the previous attempts used the correct polynomial or computed the derivative accurately; recomputed from the given problem statement.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 6.6279685497283936
+    }
+  },
+  "self_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Find the first derivative",
+        "content": "Given f(x) = (1/3)x³ - 2x² - 12x + 4, I need to find f'(x) to locate critical points.\n\nf'(x) = x² - 4x - 12"
+      },
+      {
+        "step_idx": 1,
+        "title": "Solve for critical points",
+        "content": "Setting f'(x) = 0:\nx² - 4x - 12 = 0\n\nI can factor this quadratic:\n(x - 6)(x + 2) = 0\n\nSo x = 6 or x = -2"
+      },
+      {
+        "step_idx": 2,
+        "title": "Classify the critical points using the second derivative test",
+        "content": "f''(x) = 2x - 4\n\nAt x = -2:\nf''(-2) = 2(-2) - 4 = -4 - 4 = -8 < 0\nSince f''(-2) < 0, this is a local maximum, so α = -2\n\nAt x = 6:\nf''(6) = 2(6) - 4 = 12 - 4 = 8 > 0\nSince f''(6) > 0, this is a local minimum, so β = 6"
+      },
+      {
+        "step_idx": 3,
+        "title": "Calculate β - α",
+        "content": "β - α = 6 - (-2) = 6 + 2 = 8"
+      }
+    ],
+    "final_answer": 5,
+    "rationale": "All model solutions arrived at the same answer through consistent reasoning. The derivative calculation, factoring, and second derivative test were performed correctly by all models. The classification of extrema is also consistent with the behavior of a cubic function with positive leading coefficient (local max occurs before local min).",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 7.792231559753418
+  },
+  "cross": {
+    "GPT-5-Codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Critical points",
+          "content": "f'(x)=x^2-4x-12, so critical points solve (x-6)(x+2)=0 → x=-2,6."
+        },
+        {
+          "step_idx": 1,
+          "title": "Classify extrema and compute difference",
+          "content": "f''(x)=2x-4. f''(-2)=-8<0 ⇒ α=-2 (local max); f''(6)=8>0 ⇒ β=6 (local min). Thus β-α=8."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "My reasoning matches Claude, GPT-5, and Gemini; Grok’s approach is incorrect. No changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 2.222217559814453
+    },
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find the derivative of f(x)",
+          "content": "Given f(x) = (1/3)x³ - 2x² - 12x + 4\nf'(x) = x² - 4x - 12"
+        },
+        {
+          "step_idx": 1,
+          "title": "Find critical points by solving f'(x) = 0",
+          "content": "x² - 4x - 12 = 0\nFactoring: (x - 6)(x + 2) = 0\nSolutions: x = 6 or x = -2"
+        },
+        {
+          "step_idx": 2,
+          "title": "Determine which is maximum and minimum",
+          "content": "f''(x) = 2x - 4\nAt x = -2: f''(-2) = 2(-2) - 4 = -8 < 0, so x = -2 is a local maximum\nAt x = 6: f''(6) = 2(6) - 4 = 8 > 0, so x = 6 is a local minimum\nTherefore α = -2 (local maximum) and β = 6 (local minimum)"
+        },
+        {
+          "step_idx": 3,
+          "title": "Calculate β - α",
+          "content": "β - α = 6 - (-2) = 6 + 2 = 8"
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "My solution matches GPT-5-Codex, GPT-5, and Gemini 3 Pro solutions exactly. All four solutions correctly find the derivative, solve for critical points (x = -2 and x = 6), use the second derivative test to confirm x = -2 is a local maximum (α) and x = 6 is a local minimum (β), and calculate β - α = 8. Grok 4 Fast appears to have misunderstood the problem and used an incorrect approach involving depressing the cubic, arriving at an incorrect answer of 2. My original solution is correct and requires no revision.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 7.740182399749756
+    },
+    "GPT-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Differentiate",
+          "content": "f(x) = (1/3)x^3 − 2x^2 − 12x + 4 ⇒ f'(x) = x^2 − 4x − 12, f''(x)=2x−4"
+        },
+        {
+          "step_idx": 1,
+          "title": "Critical points",
+          "content": "Solve f'(x)=0 ⇒ x^2−4x−12=0 ⇒ (x−6)(x+2)=0 ⇒ x=−2, 6"
+        },
+        {
+          "step_idx": 2,
+          "title": "Classify extrema",
+          "content": "f''(−2)=−8<0 ⇒ α=−2 (max). f''(6)=8>0 ⇒ β=6 (min)"
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute difference",
+          "content": "β−α = 6 − (−2) = 8 ⇒ choice ⑤"
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "Matches GPT-5-Codex, Claude, and Gemini: derivative → critical points −2 and 6 → classify via f'' → β−α=8. Grok’s approach is incorrect (irrelevant depressed-cubic shift). Minor correction from my original: I wrote +C instead of the given +4, though it doesn’t affect f′; fixed here.",
+      "revised": true,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 22.66389560699463
+    },
+    "Gemini 3 Pro": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Find the derivative of the function",
+          "content": "To find the local extrema, differentiate the function $f(x) = \\frac{1}{3}x^3 - 2x^2 - 12x + 4$ with respect to $x$: $$f'(x) = x^2 - 4x - 12$$"
+        },
+        {
+          "step_idx": 2,
+          "title": "Solve for critical points",
+          "content": "Set the derivative equal to zero: $$x^2 - 4x - 12 = 0$$ Factoring gives $$(x - 6)(x + 2) = 0$$ Thus, the critical points are $x = 6$ and $x = -2$."
+        },
+        {
+          "step_idx": 3,
+          "title": "Identify local maximum and minimum",
+          "content": "Using the second derivative test, find $f''(x) = 2x - 4$. At $x = -2$, $f''(-2) = -8 < 0$, indicating a local maximum ($\\alpha = -2$). At $x = 6$, $f''(6) = 8 > 0$, indicating a local minimum ($\\beta = 6$). This is consistent with the leading coefficient being positive, where the smaller root is the maximum."
+        },
+        {
+          "step_idx": 4,
+          "title": "Calculate the final value",
+          "content": "Calculate $\\beta - \\alpha$: $$\\beta - \\alpha = 6 - (-2) = 8$$ This corresponds to option 5."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "My solution is consistent with GPT-5-Codex, Claude Opus 4.5, and GPT-5, all of which correctly identified the critical points at x=-2 and x=6 and calculated the difference as 8. Grok 4 Fast incorrectly applied a method for depressing cubic polynomials to find the inflection point (x=2) rather than answering the specific question about the difference between the local minimum and maximum locations. I am confident in the result 8.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 14.03403115272522
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Find the derivative",
+          "content": "Given f(x) = (1/3)x³ - 2x² - 12x + 4, differentiate to get f'(x) = x² - 4x - 12."
+        },
+        {
+          "step_idx": 2,
+          "title": "Solve for critical points",
+          "content": "Set f'(x) = 0: x² - 4x - 12 = 0. Factoring gives (x - 6)(x + 2) = 0, so x = -2 or x = 6."
+        },
+        {
+          "step_idx": 3,
+          "title": "Classify extrema using second derivative",
+          "content": "Compute f''(x) = 2x - 4. At x = -2, f''(-2) = -8 < 0, so local maximum (α = -2). At x = 6, f''(6) = 8 > 0, so local minimum (β = 6)."
+        },
+        {
+          "step_idx": 4,
+          "title": "Calculate β - α",
+          "content": "β - α = 6 - (-2) = 8."
+        }
+      ],
+      "final_answer": 5,
+      "feedback": "My initial solution incorrectly attempted to depress the cubic and guessed β - α = 2 based on the substitution k=2, missing the actual critical points. All other models correctly used differentiation to find extrema at x=-2 (max) and x=6 (min), yielding difference 8 (option ⑤). I spotted the error and revised to match the standard, correct approach.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 13.660168170928955
+    }
+  },
+  "cross_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Compute the first derivative",
+        "content": "Given f(x) = (1/3)x³ - 2x² - 12x + 4, I need to find where the function has local extrema. Taking the derivative: f'(x) = x² - 4x - 12"
+      },
+      {
+        "step_idx": 1,
+        "title": "Find critical points",
+        "content": "Setting f'(x) = 0 to find critical points: x² - 4x - 12 = 0. I can factor this as (x - 6)(x + 2) = 0, giving x = 6 and x = -2 as the critical points."
+      },
+      {
+        "step_idx": 2,
+        "title": "Determine nature of critical points using second derivative",
+        "content": "Computing the second derivative: f''(x) = 2x - 4. At x = -2: f''(-2) = 2(-2) - 4 = -8 < 0, so x = -2 is a local maximum. At x = 6: f''(6) = 2(6) - 4 = 8 > 0, so x = 6 is a local minimum."
+      },
+      {
+        "step_idx": 3,
+        "title": "Identify α and β",
+        "content": "Since the function has a local maximum at x = -2, we have α = -2. Since the function has a local minimum at x = 6, we have β = 6."
+      },
+      {
+        "step_idx": 4,
+        "title": "Calculate β - α",
+        "content": "β - α = 6 - (-2) = 6 + 2 = 8"
+      }
+    ],
+    "final_answer": 5,
+    "rationale": "All model solutions agree and follow correct calculus procedures. The derivative calculation, factoring, and second derivative test are all performed correctly. The answer β - α = 8 corresponds to choice ⑤.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 6.717139959335327
+  }
+}

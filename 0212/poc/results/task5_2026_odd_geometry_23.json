@@ -1,0 +1,2620 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T05:09:42Z",
+    "ended_at_utc": "2026-02-13T05:19:24Z",
+    "elapsed_seconds": 581.641,
+    "problem_tag": "2026_odd_geometry_23",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_geometry_23",
+    "label": "2026_odd_geometry_23 (기하, 2점)",
+    "gold_answer": "3"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.043966054916382,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.8441555500030518,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 1.9569928646087646,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.043966054916382,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.8441555500030518,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 1.9569928646087646,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.9464304447174072,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.812169075012207,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.998096466064453,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.9464304447174072,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.812169075012207,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.998096466064453,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈": 3,
+            "모든 성분의 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈": 3,
+            "모든 성분의 합 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.274597883224487,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.036025524139404,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.657000541687012,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.274597883224487,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.036025524139404,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.657000541687012,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈 계산": 2,
+            "모든 성분의 합 구하기": 2,
+            "벡터의 덧셈": 1,
+            "모든 성분의 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈 계산": 2,
+            "모든 성분의 합 구하기": 2,
+            "벡터의 덧셈": 1,
+            "모든 성분의 합 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.707967042922974,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.432267427444458,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.501694202423096,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.707967042922974,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.432267427444458,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.501694202423096,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분 합 계산": 3
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.41677451133728,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.664474964141846,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.266629695892334,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.41677451133728,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.664474964141846,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.266629695892334,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 합 계산": 3,
+            "성분의 합 구하기": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 합 계산": 3,
+            "성분의 합 구하기": 3
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.470563650131226,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.737561941146851,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.472097635269165,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.470563650131226,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.737561941146851,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.472097635269165,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈 수행": 2,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈 수행": 2,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.0,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 6,
+          "성분의 합 계산": 6,
+          "벡터의 덧셈": 4,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈 계산": 2,
+          "모든 성분의 합 구하기": 2,
+          "성분 합 계산": 3,
+          "벡터 합 계산": 3,
+          "성분의 합 구하기": 3,
+          "벡터 덧셈 수행": 2,
+          "벡터 덧셈 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.403953790664673,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.1236679553985596,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.029557228088379,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 2.403953790664673,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.1236679553985596,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 2.029557228088379,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.92109227180481,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.2046079635620117,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.836700439453125,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.92109227180481,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.2046079635620117,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.836700439453125,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈 계산": 1,
+            "모든 성분의 합 계산": 3,
+            "벡터 덧셈": 1,
+            "벡터의 덧셈": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈 계산": 1,
+            "모든 성분의 합 계산": 3,
+            "벡터 덧셈": 1,
+            "벡터의 덧셈": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.378631591796875,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.930137395858765,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.634914875030518,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.378631591796875,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.930137395858765,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.634914875030518,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈 계산": 2,
+            "모든 성분의 합 구하기": 3,
+            "벡터의 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈 계산": 2,
+            "모든 성분의 합 구하기": 3,
+            "벡터의 합 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.95220112800598,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분 합산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.808761596679688,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.124613761901855,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.95220112800598,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 계산",
+                "성분 합산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.808761596679688,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.124613761901855,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 합 계산": 1,
+            "성분 합산": 2,
+            "벡터 덧셈": 2,
+            "성분 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 합 계산": 1,
+            "성분 합산": 2,
+            "벡터 덧셈": 2,
+            "성분 합 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.253022909164429,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.955920219421387,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.3984222412109375,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.253022909164429,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.955920219421387,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.3984222412109375,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2,
+            "벡터 합 구하기": 1,
+            "모든 성분의 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2,
+            "벡터 합 구하기": 1,
+            "모든 성분의 합 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.69693660736084,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.2398083209991455,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.042004585266113,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.69693660736084,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 2.2398083209991455,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.042004585266113,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 1,
+            "벡터 덧셈": 1,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "벡터 덧셈": 1,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.0555555555555554,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 9,
+          "성분의 합 계산": 8,
+          "벡터 덧셈 계산": 3,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈": 1,
+          "벡터의 덧셈 계산": 2,
+          "모든 성분의 합 구하기": 3,
+          "벡터의 합 계산": 1,
+          "벡터 합 계산": 1,
+          "성분 합산": 2,
+          "성분 합 계산": 1,
+          "벡터 합 구하기": 1,
+          "조건 정리": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 1.7889649868011475,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.5499770641326904,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.099372386932373,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 1.7889649868011475,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.5499770641326904,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.099372386932373,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.508868455886841,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.2135937213897705,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.9155094623565674,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.508868455886841,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.2135937213897705,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.9155094623565674,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈": 1,
+            "모든 성분의 합 계산": 1,
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈": 1,
+            "모든 성분의 합 계산": 1,
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.370864152908325,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.12759780883789,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.416400671005249,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.370864152908325,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.12759780883789,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.416400671005249,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈 계산": 3,
+            "모든 성분의 합 계산": 2,
+            "모든 성분의 합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈 계산": 3,
+            "모든 성분의 합 계산": 2,
+            "모든 성분의 합 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.965010643005371,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.52033281326294,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.18025517463684,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.965010643005371,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 계산",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.52033281326294,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.18025517463684,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈 계산": 1,
+            "성분 합 계산": 3,
+            "벡터 덧셈": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈 계산": 1,
+            "성분 합 계산": 3,
+            "벡터 덧셈": 2
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4973089694976807,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.6177146434783936,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합",
+                "성분의 합"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.390511989593506,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.4973089694976807,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.6177146434783936,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합",
+                "성분의 합"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.390511989593506,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈 수행": 1,
+            "성분의 합 계산": 1,
+            "벡터의 합": 1,
+            "성분의 합": 1,
+            "벡터 합 구하기": 1,
+            "모든 성분의 합 계산": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈 수행": 1,
+            "성분의 합 계산": 1,
+            "벡터의 합": 1,
+            "성분의 합": 1,
+            "벡터 합 구하기": 1,
+            "모든 성분의 합 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.159758806228638,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.88183069229126,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.543092727661133,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.159758806228638,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.88183069229126,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.543092727661133,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분의 합 계산": 3
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.0,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 10,
+          "성분의 합 계산": 9,
+          "벡터의 덧셈": 1,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈 계산": 3,
+          "모든 성분의 합 구하기": 1,
+          "벡터 덧셈 계산": 1,
+          "성분 합 계산": 3,
+          "벡터 덧셈 수행": 1,
+          "벡터의 합": 1,
+          "성분의 합": 1,
+          "벡터 합 구하기": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 1.8413238525390625,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.8237800598144531,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 1.948366403579712,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 1.8413238525390625,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 1.8237800598144531,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 1.948366403579712,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 합 구하기",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 3,
+            "벡터 합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 3,
+            "벡터 합 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.3323378562927246,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.9410414695739746,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.356067657470703,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 3.3323378562927246,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 3.9410414695739746,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "모든 성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.356067657470703,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 2,
+            "모든 성분의 합 계산": 2,
+            "벡터의 덧셈": 1,
+            "성분의 합 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 2,
+            "모든 성분의 합 계산": 2,
+            "벡터의 덧셈": 1,
+            "성분의 합 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.882416725158691,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.481064081192017,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.32833218574524,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.882416725158691,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.481064081192017,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.32833218574524,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 덧셈 계산",
+                "모든 성분의 합 구하기"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터의 덧셈 계산": 3,
+            "모든 성분의 합 구하기": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터의 덧셈 계산": 3,
+            "모든 성분의 합 구하기": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.779195547103882,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.582874774932861,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.395888566970825,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.779195547103882,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.582874774932861,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.395888566970825,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 3,
+            "성분 합 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 3,
+            "성분 합 계산": 3
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.179131746292114,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.601210117340088,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.43733286857605,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.179131746292114,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.601210117340088,
+              "step_count": 2,
+              "step_titles": [
+                "벡터의 합 계산",
+                "성분의 합 구하기"
+              ],
+              "final_answer": "③ 3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.43733286857605,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈",
+                "성분의 합 계산"
+              ],
+              "final_answer": "③ 3\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2,
+            "벡터의 합 계산": 1,
+            "성분의 합 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "벡터 덧셈": 2,
+            "성분의 합 계산": 2,
+            "벡터의 합 계산": 1,
+            "성분의 합 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.630137205123901,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.103359937667847,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.971993684768677,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.630137205123901,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 덧셈 계산",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.103359937667847,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.971993684768677,
+              "step_count": 2,
+              "step_titles": [
+                "벡터 덧셈 수행",
+                "성분의 합 계산"
+              ],
+              "final_answer": "3",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 1,
+            "벡터 덧셈 계산": 1,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 수행": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "벡터 덧셈 계산": 1,
+            "성분의 합 계산": 3,
+            "벡터 덧셈 수행": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.0555555555555554,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 9,
+          "성분의 합 계산": 9,
+          "벡터 합 구하기": 1,
+          "모든 성분의 합 계산": 2,
+          "벡터의 덧셈": 1,
+          "벡터의 덧셈 계산": 3,
+          "모든 성분의 합 구하기": 3,
+          "성분 합 계산": 3,
+          "벡터의 합 계산": 1,
+          "성분의 합 구하기": 1,
+          "조건 정리": 1,
+          "벡터 덧셈 계산": 1,
+          "벡터 덧셈 수행": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.0,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 6,
+          "성분의 합 계산": 6,
+          "벡터의 덧셈": 4,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈 계산": 2,
+          "모든 성분의 합 구하기": 2,
+          "성분 합 계산": 3,
+          "벡터 합 계산": 3,
+          "성분의 합 구하기": 3,
+          "벡터 덧셈 수행": 2,
+          "벡터 덧셈 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.0555555555555554,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 9,
+          "성분의 합 계산": 8,
+          "벡터 덧셈 계산": 3,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈": 1,
+          "벡터의 덧셈 계산": 2,
+          "모든 성분의 합 구하기": 3,
+          "벡터의 합 계산": 1,
+          "벡터 합 계산": 1,
+          "성분 합산": 2,
+          "성분 합 계산": 1,
+          "벡터 합 구하기": 1,
+          "조건 정리": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.0,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 10,
+          "성분의 합 계산": 9,
+          "벡터의 덧셈": 1,
+          "모든 성분의 합 계산": 4,
+          "벡터의 덧셈 계산": 3,
+          "모든 성분의 합 구하기": 1,
+          "벡터 덧셈 계산": 1,
+          "성분 합 계산": 3,
+          "벡터 덧셈 수행": 1,
+          "벡터의 합": 1,
+          "성분의 합": 1,
+          "벡터 합 구하기": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.0555555555555554,
+        "title_frequency_all_models": {
+          "벡터 덧셈": 9,
+          "성분의 합 계산": 9,
+          "벡터 합 구하기": 1,
+          "모든 성분의 합 계산": 2,
+          "벡터의 덧셈": 1,
+          "벡터의 덧셈 계산": 3,
+          "모든 성분의 합 구하기": 3,
+          "성분 합 계산": 3,
+          "벡터의 합 계산": 1,
+          "성분의 합 구하기": 1,
+          "조건 정리": 1,
+          "벡터 덧셈 계산": 1,
+          "벡터 덧셈 수행": 2
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.0277777777777777,
+      "title_frequency": {
+        "벡터 덧셈": 34,
+        "성분의 합 계산": 32,
+        "벡터의 덧셈": 7,
+        "모든 성분의 합 계산": 14,
+        "벡터의 덧셈 계산": 10,
+        "모든 성분의 합 구하기": 9,
+        "성분 합 계산": 10,
+        "벡터 합 계산": 4,
+        "성분의 합 구하기": 4,
+        "벡터 덧셈 수행": 5,
+        "벡터 덧셈 계산": 6,
+        "벡터의 합 계산": 2,
+        "성분 합산": 2,
+        "벡터 합 구하기": 3,
+        "조건 정리": 2,
+        "벡터의 합": 1,
+        "성분의 합": 1
+      },
+      "accuracy": 0.9861111111111112,
+      "n_samples": 72
+    }
+  }
+}

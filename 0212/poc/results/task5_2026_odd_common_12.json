@@ -1,0 +1,3928 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:46:06Z",
+    "ended_at_utc": "2026-02-14T03:53:07Z",
+    "elapsed_seconds": 421.317,
+    "problem_tag": "2026_odd_common_12",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 27,
+    "n_resumed_runs_from_flat_csv": 45
+  },
+  "problem": {
+    "id": "2026_odd_common_12",
+    "label": "2026_odd_common_12 (수학1, 4점)",
+    "gold_answer": "2"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.07715892791748,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "공비에 대한 방정식 만들기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.357006549835205,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "공비 구하기(비교/소거)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.411478281021118,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립하여 공비 구하기",
+                "a1과 a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.07715892791748,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "공비에 대한 방정식 만들기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.357006549835205,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "공비 구하기(비교/소거)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.411478281021118,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립하여 공비 구하기",
+                "a1과 a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "등비수열 식 세우기": 3,
+            "공비에 대한 방정식 만들기": 1,
+            "a10 계산": 2,
+            "공비 구하기(비교/소거)": 1,
+            "연립하여 공비 구하기": 1,
+            "a1과 a10 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 식 세우기": 3,
+            "공비에 대한 방정식 만들기": 1,
+            "a10 계산": 2,
+            "공비 구하기(비교/소거)": 1,
+            "연립하여 공비 구하기": 1,
+            "a1과 a10 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.573781251907349,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열의 핵심 관계 활용",
+                "첫째항 구하기",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.878913402557373,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "공비 r 계산",
+                "a₁ + a₄ + a₇ 전개",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.884026527404785,
+              "step_count": 6,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 합의 관계 분석",
+                "공비 r 계산",
+                "a₁ + a₄ + a₇ 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.573781251907349,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열의 핵심 관계 활용",
+                "첫째항 구하기",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.878913402557373,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "공비 r 계산",
+                "a₁ + a₄ + a₇ 전개",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.884026527404785,
+              "step_count": 6,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 합의 관계 분석",
+                "공비 r 계산",
+                "a₁ + a₄ + a₇ 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "등비수열 성질 파악": 3,
+            "등비수열의 핵심 관계 활용": 1,
+            "첫째항 구하기": 1,
+            "$a_{10}$ 계산": 1,
+            "등비수열 항 표현": 2,
+            "공비 r 계산": 2,
+            "a₁ + a₄ + a₇ 전개": 1,
+            "a₁₀ 계산": 2,
+            "두 합의 관계 분석": 1,
+            "a₁ + a₄ + a₇ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 성질 파악": 3,
+            "등비수열의 핵심 관계 활용": 1,
+            "첫째항 구하기": 1,
+            "$a_{10}$ 계산": 1,
+            "등비수열 항 표현": 2,
+            "공비 r 계산": 2,
+            "a₁ + a₄ + a₇ 전개": 1,
+            "a₁₀ 계산": 2,
+            "두 합의 관계 분석": 1,
+            "a₁ + a₄ + a₇ 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.50112557411194,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계 파악",
+                "$a_{10}$ 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.130876302719116,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비의 관계식 유도",
+                "첫째항 및 최종값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.843498706817627,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계 파악",
+                "$a_{10}$ 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.50112557411194,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계 파악",
+                "$a_{10}$ 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.130876302719116,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비의 관계식 유도",
+                "첫째항 및 최종값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.843498706817627,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계 파악",
+                "$a_{10}$ 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "공비 관계 파악": 2,
+            "$a_{10}$ 값 구하기": 2,
+            "공비의 관계식 유도": 1,
+            "첫째항 및 최종값 계산": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "공비 관계 파악": 2,
+            "$a_{10}$ 값 구하기": 2,
+            "공비의 관계식 유도": 1,
+            "첫째항 및 최종값 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.27047061920166,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 정의",
+                "방정식 세우기",
+                "공통 부분 도입 및 \\(r^3\\) 계산",
+                "\\(S\\)와 \\(a\\) 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.46376633644104,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건 정리",
+                "방정식 세우기",
+                "r^3 및 a1 구하기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.66499662399292,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건을 이용한 방정식 수립",
+                "공비의 세제곱 계산",
+                "초항 및 a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.27047061920166,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 정의",
+                "방정식 세우기",
+                "공통 부분 도입 및 \\(r^3\\) 계산",
+                "\\(S\\)와 \\(a\\) 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.46376633644104,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건 정리",
+                "방정식 세우기",
+                "r^3 및 a1 구하기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.66499662399292,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건을 이용한 방정식 수립",
+                "공비의 세제곱 계산",
+                "초항 및 a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "등비수열 정의": 1,
+            "방정식 세우기": 2,
+            "공통 부분 도입 및 \\(r^3\\) 계산": 1,
+            "\\(S\\)와 \\(a\\) 계산": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "등비수열 항 표현": 2,
+            "조건 정리": 1,
+            "r^3 및 a1 구하기": 1,
+            "a10 계산": 1,
+            "조건을 이용한 방정식 수립": 1,
+            "공비의 세제곱 계산": 1,
+            "초항 및 a10 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 정의": 1,
+            "방정식 세우기": 2,
+            "공통 부분 도입 및 \\(r^3\\) 계산": 1,
+            "\\(S\\)와 \\(a\\) 계산": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "등비수열 항 표현": 2,
+            "조건 정리": 1,
+            "r^3 및 a1 구하기": 1,
+            "a10 계산": 1,
+            "조건을 이용한 방정식 수립": 1,
+            "공비의 세제곱 계산": 1,
+            "초항 및 a10 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.363214492797852,
+              "step_count": 0,
+              "step_titles": [],
+              "final_answer": "\\[\n\\boxed{②}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.793807983398438,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.074101448059082,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "등비수열 항 표현",
+                "공통 인수 제거",
+                "a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.363214492797852,
+              "step_count": 0,
+              "step_titles": [],
+              "final_answer": "\\[\n\\boxed{②}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.793807983398438,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)\n\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.074101448059082,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "등비수열 항 표현",
+                "공통 인수 제거",
+                "a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 2,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "등비수열 항 표현": 1,
+            "공통 인수 제거": 1,
+            "a 구하기": 1,
+            "a₁₀ 계산": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.6666666666666665,
+          "step_std": 2.5166114784235836,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "등비수열 항 표현": 1,
+            "공통 인수 제거": 1,
+            "a 구하기": 1,
+            "a₁₀ 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.89309048652649,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.82128667831421,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.585384845733643,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.89309048652649,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.82128667831421,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.585384845733643,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "식 전개": 1,
+            "식 정리 및 대입": 3,
+            "a 값 구하기": 2,
+            "a₁₀ 계산": 3,
+            "항 표현 변환": 2,
+            "r³ 대입하여 a 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "식 전개": 1,
+            "식 정리 및 대입": 3,
+            "a 값 구하기": 2,
+            "a₁₀ 계산": 3,
+            "항 표현 변환": 2,
+            "r³ 대입하여 a 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.888888888888889,
+        "title_frequency_all_models": {
+          "등비수열 식 세우기": 3,
+          "공비에 대한 방정식 만들기": 1,
+          "a10 계산": 3,
+          "공비 구하기(비교/소거)": 1,
+          "연립하여 공비 구하기": 1,
+          "a1과 a10 계산": 1,
+          "등비수열 성질 파악": 3,
+          "등비수열의 핵심 관계 활용": 1,
+          "첫째항 구하기": 2,
+          "$a_{10}$ 계산": 1,
+          "등비수열 항 표현": 5,
+          "공비 r 계산": 2,
+          "a₁ + a₄ + a₇ 전개": 1,
+          "a₁₀ 계산": 6,
+          "두 합의 관계 분석": 1,
+          "a₁ + a₄ + a₇ 계산": 1,
+          "조건 정리": 9,
+          "공비 관계 파악": 2,
+          "$a_{10}$ 값 구하기": 2,
+          "공비의 관계식 유도": 1,
+          "첫째항 및 최종값 계산": 1,
+          "등비수열 정의": 1,
+          "방정식 세우기": 2,
+          "공통 부분 도입 및 \\(r^3\\) 계산": 1,
+          "\\(S\\)와 \\(a\\) 계산": 1,
+          "\\(a_{10}\\) 계산": 2,
+          "r^3 및 a1 구하기": 1,
+          "조건을 이용한 방정식 수립": 1,
+          "공비의 세제곱 계산": 1,
+          "초항 및 a10 계산": 1,
+          "공통 인수 제거": 1,
+          "a 구하기": 1,
+          "식 전개": 1,
+          "식 정리 및 대입": 3,
+          "a 값 구하기": 2,
+          "항 표현 변환": 2,
+          "r³ 대입하여 a 구하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.95125150680542,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "연립을 공비로 단순화",
+                "첫째항과 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.581955671310425,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 표현",
+                "공비 구하기(비교/소거)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.755728244781494,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립으로 공비 구하기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.95125150680542,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "연립을 공비로 단순화",
+                "첫째항과 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.581955671310425,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 표현",
+                "공비 구하기(비교/소거)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.755728244781494,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립으로 공비 구하기",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "등비수열 식으로 정리": 1,
+            "연립을 공비로 단순화": 1,
+            "첫째항과 \\(a_{10}\\) 계산": 1,
+            "등비수열 식으로 표현": 1,
+            "공비 구하기(비교/소거)": 1,
+            "a10 계산": 2,
+            "등비수열 식 세우기": 1,
+            "연립으로 공비 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 식으로 정리": 1,
+            "연립을 공비로 단순화": 1,
+            "첫째항과 \\(a_{10}\\) 계산": 1,
+            "등비수열 식으로 표현": 1,
+            "공비 구하기(비교/소거)": 1,
+            "a10 계산": 2,
+            "등비수열 식 세우기": 1,
+            "연립으로 공비 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.606626987457275,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리 및 등비수열 성질 활용",
+                "공비 r 구하기",
+                "a₁ + a₄ + a₇ 값 구하기",
+                "a₁ 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.661202192306519,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 식의 관계 분석",
+                "공비 r 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.164529085159302,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "공비 관계 도출",
+                "첫째항 합 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.606626987457275,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리 및 등비수열 성질 활용",
+                "공비 r 구하기",
+                "a₁ + a₄ + a₇ 값 구하기",
+                "a₁ 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.661202192306519,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 식의 관계 분석",
+                "공비 r 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.164529085159302,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "공비 관계 도출",
+                "첫째항 합 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리 및 등비수열 성질 활용": 1,
+            "공비 r 구하기": 1,
+            "a₁ + a₄ + a₇ 값 구하기": 1,
+            "a₁ 값 구하기": 1,
+            "a₁₀ 계산": 2,
+            "등비수열 성질 파악": 2,
+            "등비수열 항 표현": 1,
+            "두 식의 관계 분석": 1,
+            "공비 r 계산": 1,
+            "공비 관계 도출": 1,
+            "첫째항 합 계산": 1,
+            "$a_{10}$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 등비수열 성질 활용": 1,
+            "공비 r 구하기": 1,
+            "a₁ + a₄ + a₇ 값 구하기": 1,
+            "a₁ 값 구하기": 1,
+            "a₁₀ 계산": 2,
+            "등비수열 성질 파악": 2,
+            "등비수열 항 표현": 1,
+            "두 식의 관계 분석": 1,
+            "공비 r 계산": 1,
+            "공비 관계 도출": 1,
+            "첫째항 합 계산": 1,
+            "$a_{10}$ 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.836076736450195,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 식의 구조 파악",
+                "공비 계산",
+                "a_10의 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.74690341949463,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리 및 식 세우기",
+                "공비 구하기",
+                "첫째항 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.36709976196289,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 구하기",
+                "첫째항 및 정답 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.836076736450195,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 식의 구조 파악",
+                "공비 계산",
+                "a_10의 값 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.74690341949463,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리 및 식 세우기",
+                "공비 구하기",
+                "첫째항 구하기",
+                "최종 값 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.36709976196289,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비 구하기",
+                "첫째항 및 정답 계산"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리 및 식의 구조 파악": 1,
+            "공비 계산": 1,
+            "a_10의 값 구하기": 1,
+            "조건 정리 및 식 세우기": 1,
+            "공비 구하기": 2,
+            "첫째항 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리": 1,
+            "첫째항 및 정답 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 식의 구조 파악": 1,
+            "공비 계산": 1,
+            "a_10의 값 구하기": 1,
+            "조건 정리 및 식 세우기": 1,
+            "공비 구하기": 2,
+            "첫째항 구하기": 1,
+            "최종 값 계산": 1,
+            "조건 정리": 1,
+            "첫째항 및 정답 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.493877,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 항 표현",
+                "주어진 조건 정리",
+                "방정식 세우기",
+                "S2와 S1 관계 이용",
+                "a1과 a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.179967,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 정의",
+                "조건 정리",
+                "\\(r^3\\) 구하기",
+                "\\(a\\)와 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.828707,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 정의",
+                "조건 정리 및 방정식 세우기",
+                "공비 계산",
+                "초항 및 $a_{10}$ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.493877,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 항 표현",
+                "주어진 조건 정리",
+                "방정식 세우기",
+                "S2와 S1 관계 이용",
+                "a1과 a10 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.179967,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 정의",
+                "조건 정리",
+                "\\(r^3\\) 구하기",
+                "\\(a\\)와 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.828707,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 정의",
+                "조건 정리 및 방정식 세우기",
+                "공비 계산",
+                "초항 및 $a_{10}$ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "등비수열 항 표현": 1,
+            "주어진 조건 정리": 1,
+            "방정식 세우기": 1,
+            "S2와 S1 관계 이용": 1,
+            "a1과 a10 계산": 1,
+            "등비수열 정의": 2,
+            "조건 정리": 1,
+            "\\(r^3\\) 구하기": 1,
+            "\\(a\\)와 \\(a_{10}\\) 계산": 1,
+            "조건 정리 및 방정식 세우기": 1,
+            "공비 계산": 1,
+            "초항 및 $a_{10}$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 항 표현": 1,
+            "주어진 조건 정리": 1,
+            "방정식 세우기": 1,
+            "S2와 S1 관계 이용": 1,
+            "a1과 a10 계산": 1,
+            "등비수열 정의": 2,
+            "조건 정리": 1,
+            "\\(r^3\\) 구하기": 1,
+            "\\(a\\)와 \\(a_{10}\\) 계산": 1,
+            "조건 정리 및 방정식 세우기": 1,
+            "공비 계산": 1,
+            "초항 및 $a_{10}$ 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.600202,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "r³에 대한 방정식",
+                "a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.606972,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 변형",
+                "등비수열 합 공식 이용",
+                "a₁ 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.835857,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "공통 인수 이용",
+                "첫째항 \\(a\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.600202,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "r³에 대한 방정식",
+                "a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.606972,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 변형",
+                "등비수열 합 공식 이용",
+                "a₁ 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.835857,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "공통 인수 이용",
+                "첫째항 \\(a\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "r³에 대한 방정식": 1,
+            "a 구하기": 1,
+            "a₁₀ 계산": 2,
+            "식 변형": 1,
+            "등비수열 합 공식 이용": 1,
+            "a₁ 구하기": 1,
+            "공통 인수 이용": 1,
+            "첫째항 \\(a\\) 구하기": 1,
+            "\\(a_{10}\\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "r³에 대한 방정식": 1,
+            "a 구하기": 1,
+            "a₁₀ 계산": 2,
+            "식 변형": 1,
+            "등비수열 합 공식 이용": 1,
+            "a₁ 구하기": 1,
+            "공통 인수 이용": 1,
+            "첫째항 \\(a\\) 구하기": 1,
+            "\\(a_{10}\\) 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.953775,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개 및 대입",
+                "식 정리 및 연립",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.73284,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.681416,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a_{10} 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.953775,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개 및 대입",
+                "식 정리 및 연립",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.73284,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.681416,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항 표현 변환",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a_{10} 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "식 전개 및 대입": 1,
+            "식 정리 및 연립": 1,
+            "r³ 대입하여 a 구하기": 1,
+            "a₁₀ 계산": 2,
+            "항 표현 변환": 2,
+            "식 정리 및 대입": 2,
+            "a 값 구하기": 2,
+            "a_{10} 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "식 전개 및 대입": 1,
+            "식 정리 및 연립": 1,
+            "r³ 대입하여 a 구하기": 1,
+            "a₁₀ 계산": 2,
+            "항 표현 변환": 2,
+            "식 정리 및 대입": 2,
+            "a 값 구하기": 2,
+            "a_{10} 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.111111111111111,
+        "title_frequency_all_models": {
+          "등비수열 식으로 정리": 1,
+          "연립을 공비로 단순화": 1,
+          "첫째항과 \\(a_{10}\\) 계산": 1,
+          "등비수열 식으로 표현": 1,
+          "공비 구하기(비교/소거)": 1,
+          "a10 계산": 2,
+          "등비수열 식 세우기": 1,
+          "연립으로 공비 구하기": 1,
+          "조건 정리 및 등비수열 성질 활용": 1,
+          "공비 r 구하기": 1,
+          "a₁ + a₄ + a₇ 값 구하기": 1,
+          "a₁ 값 구하기": 1,
+          "a₁₀ 계산": 6,
+          "등비수열 성질 파악": 2,
+          "등비수열 항 표현": 2,
+          "두 식의 관계 분석": 1,
+          "공비 r 계산": 1,
+          "공비 관계 도출": 1,
+          "첫째항 합 계산": 1,
+          "$a_{10}$ 계산": 1,
+          "조건 정리 및 식의 구조 파악": 1,
+          "공비 계산": 2,
+          "a_10의 값 구하기": 1,
+          "조건 정리 및 식 세우기": 1,
+          "공비 구하기": 2,
+          "첫째항 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리": 8,
+          "첫째항 및 정답 계산": 1,
+          "주어진 조건 정리": 1,
+          "방정식 세우기": 1,
+          "S2와 S1 관계 이용": 1,
+          "a1과 a10 계산": 1,
+          "등비수열 정의": 2,
+          "\\(r^3\\) 구하기": 1,
+          "\\(a\\)와 \\(a_{10}\\) 계산": 1,
+          "조건 정리 및 방정식 세우기": 1,
+          "초항 및 $a_{10}$ 계산": 1,
+          "r³에 대한 방정식": 1,
+          "a 구하기": 1,
+          "식 변형": 1,
+          "등비수열 합 공식 이용": 1,
+          "a₁ 구하기": 1,
+          "공통 인수 이용": 1,
+          "첫째항 \\(a\\) 구하기": 1,
+          "\\(a_{10}\\) 계산": 1,
+          "식 전개 및 대입": 1,
+          "식 정리 및 연립": 1,
+          "r³ 대입하여 a 구하기": 1,
+          "항 표현 변환": 2,
+          "식 정리 및 대입": 2,
+          "a 값 구하기": 2,
+          "a_{10} 계산": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.876324,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "공비에 대한 방정식 만들기",
+                "a10 계산"
+              ],
+              "final_answer": "\\[\na_{10}=\\frac{24}{7}\\quad (\\text{②})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.863969,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립하여 공비 구하기",
+                "a10 계산하기"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.111944,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 식으로 표현",
+                "조건을 간단히 정리",
+                "공통인수로 공비 구하기",
+                "a와 a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.876324,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "공비에 대한 방정식 만들기",
+                "a10 계산"
+              ],
+              "final_answer": "\\[\na_{10}=\\frac{24}{7}\\quad (\\text{②})\n\\]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.863969,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식 세우기",
+                "연립하여 공비 구하기",
+                "a10 계산하기"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.111944,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 식으로 표현",
+                "조건을 간단히 정리",
+                "공통인수로 공비 구하기",
+                "a와 a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "등비수열 식으로 정리": 1,
+            "공비에 대한 방정식 만들기": 1,
+            "a10 계산": 1,
+            "등비수열 식 세우기": 1,
+            "연립하여 공비 구하기": 1,
+            "a10 계산하기": 1,
+            "등비수열 식으로 표현": 1,
+            "조건을 간단히 정리": 1,
+            "공통인수로 공비 구하기": 1,
+            "a와 a10 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 식으로 정리": 1,
+            "공비에 대한 방정식 만들기": 1,
+            "a10 계산": 1,
+            "등비수열 식 세우기": 1,
+            "연립하여 공비 구하기": 1,
+            "a10 계산하기": 1,
+            "등비수열 식으로 표현": 1,
+            "조건을 간단히 정리": 1,
+            "공통인수로 공비 구하기": 1,
+            "a와 a10 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.748958,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "공비 관계 유도",
+                "합의 값 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{24}{7}}$$ (② 번)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.955088,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "두 등식의 관계 분석",
+                "첫째항 결정",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.34906,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "조건식 정리",
+                "첫째항 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.748958,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "공비 관계 유도",
+                "합의 값 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "$$\\boxed{\\dfrac{24}{7}}$$ (② 번)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.955088,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "두 등식의 관계 분석",
+                "첫째항 결정",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.34906,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "조건식 정리",
+                "첫째항 계산",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "등비수열 성질 파악": 3,
+            "공비 관계 유도": 1,
+            "합의 값 계산": 1,
+            "$a_{10}$ 계산": 3,
+            "두 등식의 관계 분석": 1,
+            "첫째항 결정": 1,
+            "조건식 정리": 1,
+            "첫째항 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 성질 파악": 3,
+            "공비 관계 유도": 1,
+            "합의 값 계산": 1,
+            "$a_{10}$ 계산": 3,
+            "두 등식의 관계 분석": 1,
+            "첫째항 결정": 1,
+            "조건식 정리": 1,
+            "첫째항 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.825454,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 공비의 성질 파악",
+                "공비와 첫째항 구하기",
+                "a_10 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.582168,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 $r^3$의 값 구하기",
+                "첫째항 $a$ 구하기",
+                "$a_{10}$의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.500839,
+              "step_count": 3,
+              "step_titles": [
+                "공비와 항의 관계 파악",
+                "첫째항 구하기",
+                "정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.825454,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 공비의 성질 파악",
+                "공비와 첫째항 구하기",
+                "a_10 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.582168,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 $r^3$의 값 구하기",
+                "첫째항 $a$ 구하기",
+                "$a_{10}$의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.500839,
+              "step_count": 3,
+              "step_titles": [
+                "공비와 항의 관계 파악",
+                "첫째항 구하기",
+                "정답 도출"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리 및 공비의 성질 파악": 1,
+            "공비와 첫째항 구하기": 1,
+            "a_10 값 계산": 1,
+            "조건 정리 및 $r^3$의 값 구하기": 1,
+            "첫째항 $a$ 구하기": 1,
+            "$a_{10}$의 값 계산": 1,
+            "공비와 항의 관계 파악": 1,
+            "첫째항 구하기": 1,
+            "정답 도출": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 공비의 성질 파악": 1,
+            "공비와 첫째항 구하기": 1,
+            "a_10 값 계산": 1,
+            "조건 정리 및 $r^3$의 값 구하기": 1,
+            "첫째항 $a$ 구하기": 1,
+            "$a_{10}$의 값 계산": 1,
+            "공비와 항의 관계 파악": 1,
+            "첫째항 구하기": 1,
+            "정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.931944,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 표현",
+                "r^3 계산",
+                "a 계산",
+                "a_{10} 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 44.702081,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 정의 및 방정식 세우기",
+                "공비 계산",
+                "초항 계산 및 $a_{10}$ 구하기"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.17187,
+              "step_count": 4,
+              "step_titles": [
+                "변수 정의 및 방정식 세우기",
+                "방정식 나누기",
+                "\\(a\\) 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 37.931944,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 표현",
+                "r^3 계산",
+                "a 계산",
+                "a_{10} 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 44.702081,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 정의 및 방정식 세우기",
+                "공비 계산",
+                "초항 계산 및 $a_{10}$ 구하기"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 33.17187,
+              "step_count": 4,
+              "step_titles": [
+                "변수 정의 및 방정식 세우기",
+                "방정식 나누기",
+                "\\(a\\) 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "식 표현": 1,
+            "r^3 계산": 1,
+            "a 계산": 1,
+            "a_{10} 계산": 1,
+            "등비수열 정의 및 방정식 세우기": 1,
+            "공비 계산": 1,
+            "초항 계산 및 $a_{10}$ 구하기": 1,
+            "변수 정의 및 방정식 세우기": 1,
+            "방정식 나누기": 1,
+            "\\(a\\) 계산": 1,
+            "\\(a_{10}\\) 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "식 표현": 1,
+            "r^3 계산": 1,
+            "a 계산": 1,
+            "a_{10} 계산": 1,
+            "등비수열 정의 및 방정식 세우기": 1,
+            "공비 계산": 1,
+            "초항 계산 및 $a_{10}$ 구하기": 1,
+            "변수 정의 및 방정식 세우기": 1,
+            "방정식 나누기": 1,
+            "\\(a\\) 계산": 1,
+            "\\(a_{10}\\) 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.158469,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫째항과 공비 관계식 도출",
+                "공비의 관계 이용",
+                "등비수열 항들의 합으로 공비 결정",
+                "a와 a_{10} 구하기"
+              ],
+              "final_answer": "\\( \\frac{24}{7} \\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.746745,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계식 유도",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.368818,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "수열 항 변환",
+                "공비 r로 표현",
+                "a 구하기",
+                "a_10 계산"
+              ],
+              "final_answer": "\\( \\dfrac{24}{7} \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.158469,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫째항과 공비 관계식 도출",
+                "공비의 관계 이용",
+                "등비수열 항들의 합으로 공비 결정",
+                "a와 a_{10} 구하기"
+              ],
+              "final_answer": "\\( \\frac{24}{7} \\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.746745,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "공비 관계식 유도",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.368818,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "수열 항 변환",
+                "공비 r로 표현",
+                "a 구하기",
+                "a_10 계산"
+              ],
+              "final_answer": "\\( \\dfrac{24}{7} \\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "첫째항과 공비 관계식 도출": 1,
+            "공비의 관계 이용": 1,
+            "등비수열 항들의 합으로 공비 결정": 1,
+            "a와 a_{10} 구하기": 1,
+            "공비 관계식 유도": 1,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "수열 항 변환": 1,
+            "공비 r로 표현": 1,
+            "a 구하기": 1,
+            "a_10 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "첫째항과 공비 관계식 도출": 1,
+            "공비의 관계 이용": 1,
+            "등비수열 항들의 합으로 공비 결정": 1,
+            "a와 a_{10} 구하기": 1,
+            "공비 관계식 유도": 1,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "수열 항 변환": 1,
+            "공비 r로 표현": 1,
+            "a 구하기": 1,
+            "a_10 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.720258,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항을 공비 표현으로 변환",
+                "식 정리 및 소거",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.062255,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "방정식 세우기",
+                "식 정리 및 대입",
+                "값 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.843891,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "각 항 표현",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.720258,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항을 공비 표현으로 변환",
+                "식 정리 및 소거",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.062255,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "방정식 세우기",
+                "식 정리 및 대입",
+                "값 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.843891,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "각 항 표현",
+                "식 정리 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "항을 공비 표현으로 변환": 1,
+            "식 정리 및 소거": 1,
+            "a 값 구하기": 2,
+            "a₁₀ 계산": 3,
+            "방정식 세우기": 1,
+            "식 정리 및 대입": 2,
+            "값 대입하여 a 구하기": 1,
+            "각 항 표현": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "항을 공비 표현으로 변환": 1,
+            "식 정리 및 소거": 1,
+            "a 값 구하기": 2,
+            "a₁₀ 계산": 3,
+            "방정식 세우기": 1,
+            "식 정리 및 대입": 2,
+            "값 대입하여 a 구하기": 1,
+            "각 항 표현": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.0,
+        "title_frequency_all_models": {
+          "등비수열 식으로 정리": 1,
+          "공비에 대한 방정식 만들기": 1,
+          "a10 계산": 1,
+          "등비수열 식 세우기": 1,
+          "연립하여 공비 구하기": 1,
+          "a10 계산하기": 1,
+          "등비수열 식으로 표현": 1,
+          "조건을 간단히 정리": 1,
+          "공통인수로 공비 구하기": 1,
+          "a와 a10 계산": 1,
+          "등비수열 성질 파악": 3,
+          "공비 관계 유도": 1,
+          "합의 값 계산": 1,
+          "$a_{10}$ 계산": 3,
+          "두 등식의 관계 분석": 1,
+          "첫째항 결정": 1,
+          "조건식 정리": 1,
+          "첫째항 계산": 1,
+          "조건 정리 및 공비의 성질 파악": 1,
+          "공비와 첫째항 구하기": 1,
+          "a_10 값 계산": 1,
+          "조건 정리 및 $r^3$의 값 구하기": 1,
+          "첫째항 $a$ 구하기": 1,
+          "$a_{10}$의 값 계산": 1,
+          "공비와 항의 관계 파악": 1,
+          "첫째항 구하기": 2,
+          "정답 도출": 1,
+          "조건 정리": 7,
+          "식 표현": 1,
+          "r^3 계산": 1,
+          "a 계산": 1,
+          "a_{10} 계산": 1,
+          "등비수열 정의 및 방정식 세우기": 1,
+          "공비 계산": 1,
+          "초항 계산 및 $a_{10}$ 구하기": 1,
+          "변수 정의 및 방정식 세우기": 1,
+          "방정식 나누기": 1,
+          "\\(a\\) 계산": 1,
+          "\\(a_{10}\\) 계산": 2,
+          "첫째항과 공비 관계식 도출": 1,
+          "공비의 관계 이용": 1,
+          "등비수열 항들의 합으로 공비 결정": 1,
+          "a와 a_{10} 구하기": 1,
+          "공비 관계식 유도": 1,
+          "수열 항 변환": 1,
+          "공비 r로 표현": 1,
+          "a 구하기": 1,
+          "a_10 계산": 1,
+          "항을 공비 표현으로 변환": 1,
+          "식 정리 및 소거": 1,
+          "a 값 구하기": 2,
+          "a₁₀ 계산": 3,
+          "방정식 세우기": 1,
+          "식 정리 및 대입": 2,
+          "값 대입하여 a 구하기": 1,
+          "각 항 표현": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.357596,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건을 식으로 정리",
+                "두 식의 비로 공비 구하기",
+                "첫째항과 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.646969,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "두 식의 비로 공비 구하기",
+                "a₁과 a₁₀ 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.279173,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "공비 구하기(비교)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.357596,
+              "step_count": 4,
+              "step_titles": [
+                "등비수열 항 표현",
+                "조건을 식으로 정리",
+                "두 식의 비로 공비 구하기",
+                "첫째항과 \\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.646969,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "두 식의 비로 공비 구하기",
+                "a₁과 a₁₀ 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.279173,
+              "step_count": 3,
+              "step_titles": [
+                "등비수열 식으로 정리",
+                "공비 구하기(비교)",
+                "a10 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{24}{7}\\) (②)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "등비수열 항 표현": 1,
+            "조건을 식으로 정리": 1,
+            "두 식의 비로 공비 구하기": 2,
+            "첫째항과 \\(a_{10}\\) 계산": 1,
+            "등비수열 식으로 정리": 2,
+            "a₁과 a₁₀ 계산": 1,
+            "공비 구하기(비교)": 1,
+            "a10 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 항 표현": 1,
+            "조건을 식으로 정리": 1,
+            "두 식의 비로 공비 구하기": 2,
+            "첫째항과 \\(a_{10}\\) 계산": 1,
+            "등비수열 식으로 정리": 2,
+            "a₁과 a₁₀ 계산": 1,
+            "공비 구하기(비교)": 1,
+            "a10 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.726496,
+              "step_count": 6,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 조건식 세우기",
+                "공비 r 구하기",
+                "a(1 + r³ + r⁶) 값 활용",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.187397,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 식의 관계 분석",
+                "공비 r 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.84911,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "등비수열의 성질 활용",
+                "공비 r³ 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.726496,
+              "step_count": 6,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 조건식 세우기",
+                "공비 r 구하기",
+                "a(1 + r³ + r⁶) 값 활용",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.187397,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 성질 파악",
+                "등비수열 항 표현",
+                "두 식의 관계 분석",
+                "공비 r 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.84911,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "등비수열의 성질 활용",
+                "공비 r³ 계산",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "등비수열 성질 파악": 2,
+            "등비수열 항 표현": 2,
+            "두 조건식 세우기": 1,
+            "공비 r 구하기": 1,
+            "a(1 + r³ + r⁶) 값 활용": 1,
+            "a₁₀ 계산": 3,
+            "두 식의 관계 분석": 1,
+            "공비 r 계산": 1,
+            "조건 정리": 1,
+            "등비수열의 성질 활용": 1,
+            "공비 r³ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "등비수열 성질 파악": 2,
+            "등비수열 항 표현": 2,
+            "두 조건식 세우기": 1,
+            "공비 r 구하기": 1,
+            "a(1 + r³ + r⁶) 값 활용": 1,
+            "a₁₀ 계산": 3,
+            "두 식의 관계 분석": 1,
+            "공비 r 계산": 1,
+            "조건 정리": 1,
+            "등비수열의 성질 활용": 1,
+            "공비 r³ 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.23015,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 식의 변형",
+                "공비와 첫째항 구하기",
+                "답 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.010393,
+              "step_count": 3,
+              "step_titles": [
+                "조건 식 정리 및 구조 파악",
+                "공비의 관계식 도출",
+                "a_10의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.871929,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비의 거듭제곱($r^3$) 구하기",
+                "첫째항 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.23015,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 식의 변형",
+                "공비와 첫째항 구하기",
+                "답 구하기"
+              ],
+              "final_answer": "②",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.010393,
+              "step_count": 3,
+              "step_titles": [
+                "조건 식 정리 및 구조 파악",
+                "공비의 관계식 도출",
+                "a_10의 값 계산"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.871929,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "공비의 거듭제곱($r^3$) 구하기",
+                "첫째항 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "② $\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리 및 식의 변형": 1,
+            "공비와 첫째항 구하기": 1,
+            "답 구하기": 1,
+            "조건 식 정리 및 구조 파악": 1,
+            "공비의 관계식 도출": 1,
+            "a_10의 값 계산": 1,
+            "조건 정리": 1,
+            "공비의 거듭제곱($r^3$) 구하기": 1,
+            "첫째항 계산 및 최종 답 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 식의 변형": 1,
+            "공비와 첫째항 구하기": 1,
+            "답 구하기": 1,
+            "조건 식 정리 및 구조 파악": 1,
+            "공비의 관계식 도출": 1,
+            "a_10의 값 계산": 1,
+            "조건 정리": 1,
+            "공비의 거듭제곱($r^3$) 구하기": 1,
+            "첫째항 계산 및 최종 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 43.722075,
+              "step_count": 5,
+              "step_titles": [
+                "변수 정의",
+                "조건 정리",
+                "공비 계산",
+                "첫 항 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.498256,
+              "step_count": 4,
+              "step_titles": [
+                "변수 설정",
+                "방정식 세우기",
+                "방정식 나누기",
+                "대입 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.00792,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 정의",
+                "주어진 조건 방정식화",
+                "공통 항 도입 및 단순화",
+                "$s$ 계산 및 $a$ 구하기",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 43.722075,
+              "step_count": 5,
+              "step_titles": [
+                "변수 정의",
+                "조건 정리",
+                "공비 계산",
+                "첫 항 계산",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.498256,
+              "step_count": 4,
+              "step_titles": [
+                "변수 설정",
+                "방정식 세우기",
+                "방정식 나누기",
+                "대입 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.00792,
+              "step_count": 5,
+              "step_titles": [
+                "등비수열 정의",
+                "주어진 조건 방정식화",
+                "공통 항 도입 및 단순화",
+                "$s$ 계산 및 $a$ 구하기",
+                "$a_{10}$ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "변수 정의": 1,
+            "조건 정리": 1,
+            "공비 계산": 1,
+            "첫 항 계산": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "변수 설정": 1,
+            "방정식 세우기": 1,
+            "방정식 나누기": 1,
+            "대입 및 계산": 1,
+            "등비수열 정의": 1,
+            "주어진 조건 방정식화": 1,
+            "공통 항 도입 및 단순화": 1,
+            "$s$ 계산 및 $a$ 구하기": 1,
+            "$a_{10}$ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "변수 정의": 1,
+            "조건 정리": 1,
+            "공비 계산": 1,
+            "첫 항 계산": 1,
+            "\\(a_{10}\\) 계산": 1,
+            "변수 설정": 1,
+            "방정식 세우기": 1,
+            "방정식 나누기": 1,
+            "대입 및 계산": 1,
+            "등비수열 정의": 1,
+            "주어진 조건 방정식화": 1,
+            "공통 항 도입 및 단순화": 1,
+            "$s$ 계산 및 $a$ 구하기": 1,
+            "$a_{10}$ 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.218846,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "두 식 비교하여 공비 관계 유도",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\frac{24}{7}\\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.651566,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "등비수열 합의 관계 이용",
+                "첫째항 \\(a\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.958456,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 방정식 이용",
+                "두 식 비교하여 공비 관계 찾기",
+                "첫째항 \\(a_1\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.218846,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "두 식 비교하여 공비 관계 유도",
+                "첫째항 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "\\(\\frac{24}{7}\\) (②번)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.651566,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "등비수열 합의 관계 이용",
+                "첫째항 \\(a\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.958456,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "첫 번째 방정식 이용",
+                "두 식 비교하여 공비 관계 찾기",
+                "첫째항 \\(a_1\\) 구하기",
+                "\\(a_{10}\\) 계산"
+              ],
+              "final_answer": "② \\(\\dfrac{24}{7}\\)",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "두 식 비교하여 공비 관계 유도": 1,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 3,
+            "등비수열 합의 관계 이용": 1,
+            "첫째항 \\(a\\) 구하기": 1,
+            "첫 번째 방정식 이용": 1,
+            "두 식 비교하여 공비 관계 찾기": 1,
+            "첫째항 \\(a_1\\) 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "두 식 비교하여 공비 관계 유도": 1,
+            "첫째항 구하기": 1,
+            "\\(a_{10}\\) 계산": 3,
+            "등비수열 합의 관계 이용": 1,
+            "첫째항 \\(a\\) 구하기": 1,
+            "첫 번째 방정식 이용": 1,
+            "두 식 비교하여 공비 관계 찾기": 1,
+            "첫째항 \\(a_1\\) 구하기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.321083,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항을 공비로 표현",
+                "식 정리 및 연립",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.441767,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개",
+                "식 변형 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.859528,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개 및 대입",
+                "변수 제거를 통한 관계 도출",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.321083,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "항을 공비로 표현",
+                "식 정리 및 연립",
+                "r³ 대입하여 a 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.441767,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개",
+                "식 변형 및 대입",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.859528,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "식 전개 및 대입",
+                "변수 제거를 통한 관계 도출",
+                "a 값 구하기",
+                "a₁₀ 계산"
+              ],
+              "final_answer": "$\\dfrac{24}{7}$",
+              "is_correct": true,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "항을 공비로 표현": 1,
+            "식 정리 및 연립": 1,
+            "r³ 대입하여 a 구하기": 1,
+            "a₁₀ 계산": 3,
+            "식 전개": 1,
+            "식 변형 및 대입": 1,
+            "a 값 구하기": 2,
+            "식 전개 및 대입": 1,
+            "변수 제거를 통한 관계 도출": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "항을 공비로 표현": 1,
+            "식 정리 및 연립": 1,
+            "r³ 대입하여 a 구하기": 1,
+            "a₁₀ 계산": 3,
+            "식 전개": 1,
+            "식 변형 및 대입": 1,
+            "a 값 구하기": 2,
+            "식 전개 및 대입": 1,
+            "변수 제거를 통한 관계 도출": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.222222222222222,
+        "title_frequency_all_models": {
+          "등비수열 항 표현": 3,
+          "조건을 식으로 정리": 1,
+          "두 식의 비로 공비 구하기": 2,
+          "첫째항과 \\(a_{10}\\) 계산": 1,
+          "등비수열 식으로 정리": 2,
+          "a₁과 a₁₀ 계산": 1,
+          "공비 구하기(비교)": 1,
+          "a10 계산": 1,
+          "등비수열 성질 파악": 2,
+          "두 조건식 세우기": 1,
+          "공비 r 구하기": 1,
+          "a(1 + r³ + r⁶) 값 활용": 1,
+          "a₁₀ 계산": 6,
+          "두 식의 관계 분석": 1,
+          "공비 r 계산": 1,
+          "조건 정리": 9,
+          "등비수열의 성질 활용": 1,
+          "공비 r³ 계산": 1,
+          "조건 정리 및 식의 변형": 1,
+          "공비와 첫째항 구하기": 1,
+          "답 구하기": 1,
+          "조건 식 정리 및 구조 파악": 1,
+          "공비의 관계식 도출": 1,
+          "a_10의 값 계산": 1,
+          "공비의 거듭제곱($r^3$) 구하기": 1,
+          "첫째항 계산 및 최종 답 구하기": 1,
+          "변수 정의": 1,
+          "공비 계산": 1,
+          "첫 항 계산": 1,
+          "\\(a_{10}\\) 계산": 4,
+          "변수 설정": 1,
+          "방정식 세우기": 1,
+          "방정식 나누기": 1,
+          "대입 및 계산": 1,
+          "등비수열 정의": 1,
+          "주어진 조건 방정식화": 1,
+          "공통 항 도입 및 단순화": 1,
+          "$s$ 계산 및 $a$ 구하기": 1,
+          "$a_{10}$ 계산": 1,
+          "두 식 비교하여 공비 관계 유도": 1,
+          "첫째항 구하기": 1,
+          "등비수열 합의 관계 이용": 1,
+          "첫째항 \\(a\\) 구하기": 1,
+          "첫 번째 방정식 이용": 1,
+          "두 식 비교하여 공비 관계 찾기": 1,
+          "첫째항 \\(a_1\\) 구하기": 1,
+          "항을 공비로 표현": 1,
+          "식 정리 및 연립": 1,
+          "r³ 대입하여 a 구하기": 1,
+          "식 전개": 1,
+          "식 변형 및 대입": 1,
+          "a 값 구하기": 2,
+          "식 전개 및 대입": 1,
+          "변수 제거를 통한 관계 도출": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.888888888888889,
+        "title_frequency_all_models": {
+          "등비수열 식 세우기": 3,
+          "공비에 대한 방정식 만들기": 1,
+          "a10 계산": 3,
+          "공비 구하기(비교/소거)": 1,
+          "연립하여 공비 구하기": 1,
+          "a1과 a10 계산": 1,
+          "등비수열 성질 파악": 3,
+          "등비수열의 핵심 관계 활용": 1,
+          "첫째항 구하기": 2,
+          "$a_{10}$ 계산": 1,
+          "등비수열 항 표현": 5,
+          "공비 r 계산": 2,
+          "a₁ + a₄ + a₇ 전개": 1,
+          "a₁₀ 계산": 6,
+          "두 합의 관계 분석": 1,
+          "a₁ + a₄ + a₇ 계산": 1,
+          "조건 정리": 9,
+          "공비 관계 파악": 2,
+          "$a_{10}$ 값 구하기": 2,
+          "공비의 관계식 유도": 1,
+          "첫째항 및 최종값 계산": 1,
+          "등비수열 정의": 1,
+          "방정식 세우기": 2,
+          "공통 부분 도입 및 \\(r^3\\) 계산": 1,
+          "\\(S\\)와 \\(a\\) 계산": 1,
+          "\\(a_{10}\\) 계산": 2,
+          "r^3 및 a1 구하기": 1,
+          "조건을 이용한 방정식 수립": 1,
+          "공비의 세제곱 계산": 1,
+          "초항 및 a10 계산": 1,
+          "공통 인수 제거": 1,
+          "a 구하기": 1,
+          "식 전개": 1,
+          "식 정리 및 대입": 3,
+          "a 값 구하기": 2,
+          "항 표현 변환": 2,
+          "r³ 대입하여 a 구하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.111111111111111,
+        "title_frequency_all_models": {
+          "등비수열 식으로 정리": 1,
+          "연립을 공비로 단순화": 1,
+          "첫째항과 \\(a_{10}\\) 계산": 1,
+          "등비수열 식으로 표현": 1,
+          "공비 구하기(비교/소거)": 1,
+          "a10 계산": 2,
+          "등비수열 식 세우기": 1,
+          "연립으로 공비 구하기": 1,
+          "조건 정리 및 등비수열 성질 활용": 1,
+          "공비 r 구하기": 1,
+          "a₁ + a₄ + a₇ 값 구하기": 1,
+          "a₁ 값 구하기": 1,
+          "a₁₀ 계산": 6,
+          "등비수열 성질 파악": 2,
+          "등비수열 항 표현": 2,
+          "두 식의 관계 분석": 1,
+          "공비 r 계산": 1,
+          "공비 관계 도출": 1,
+          "첫째항 합 계산": 1,
+          "$a_{10}$ 계산": 1,
+          "조건 정리 및 식의 구조 파악": 1,
+          "공비 계산": 2,
+          "a_10의 값 구하기": 1,
+          "조건 정리 및 식 세우기": 1,
+          "공비 구하기": 2,
+          "첫째항 구하기": 1,
+          "최종 값 계산": 1,
+          "조건 정리": 8,
+          "첫째항 및 정답 계산": 1,
+          "주어진 조건 정리": 1,
+          "방정식 세우기": 1,
+          "S2와 S1 관계 이용": 1,
+          "a1과 a10 계산": 1,
+          "등비수열 정의": 2,
+          "\\(r^3\\) 구하기": 1,
+          "\\(a\\)와 \\(a_{10}\\) 계산": 1,
+          "조건 정리 및 방정식 세우기": 1,
+          "초항 및 $a_{10}$ 계산": 1,
+          "r³에 대한 방정식": 1,
+          "a 구하기": 1,
+          "식 변형": 1,
+          "등비수열 합 공식 이용": 1,
+          "a₁ 구하기": 1,
+          "공통 인수 이용": 1,
+          "첫째항 \\(a\\) 구하기": 1,
+          "\\(a_{10}\\) 계산": 1,
+          "식 전개 및 대입": 1,
+          "식 정리 및 연립": 1,
+          "r³ 대입하여 a 구하기": 1,
+          "항 표현 변환": 2,
+          "식 정리 및 대입": 2,
+          "a 값 구하기": 2,
+          "a_{10} 계산": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.0,
+        "title_frequency_all_models": {
+          "등비수열 식으로 정리": 1,
+          "공비에 대한 방정식 만들기": 1,
+          "a10 계산": 1,
+          "등비수열 식 세우기": 1,
+          "연립하여 공비 구하기": 1,
+          "a10 계산하기": 1,
+          "등비수열 식으로 표현": 1,
+          "조건을 간단히 정리": 1,
+          "공통인수로 공비 구하기": 1,
+          "a와 a10 계산": 1,
+          "등비수열 성질 파악": 3,
+          "공비 관계 유도": 1,
+          "합의 값 계산": 1,
+          "$a_{10}$ 계산": 3,
+          "두 등식의 관계 분석": 1,
+          "첫째항 결정": 1,
+          "조건식 정리": 1,
+          "첫째항 계산": 1,
+          "조건 정리 및 공비의 성질 파악": 1,
+          "공비와 첫째항 구하기": 1,
+          "a_10 값 계산": 1,
+          "조건 정리 및 $r^3$의 값 구하기": 1,
+          "첫째항 $a$ 구하기": 1,
+          "$a_{10}$의 값 계산": 1,
+          "공비와 항의 관계 파악": 1,
+          "첫째항 구하기": 2,
+          "정답 도출": 1,
+          "조건 정리": 7,
+          "식 표현": 1,
+          "r^3 계산": 1,
+          "a 계산": 1,
+          "a_{10} 계산": 1,
+          "등비수열 정의 및 방정식 세우기": 1,
+          "공비 계산": 1,
+          "초항 계산 및 $a_{10}$ 구하기": 1,
+          "변수 정의 및 방정식 세우기": 1,
+          "방정식 나누기": 1,
+          "\\(a\\) 계산": 1,
+          "\\(a_{10}\\) 계산": 2,
+          "첫째항과 공비 관계식 도출": 1,
+          "공비의 관계 이용": 1,
+          "등비수열 항들의 합으로 공비 결정": 1,
+          "a와 a_{10} 구하기": 1,
+          "공비 관계식 유도": 1,
+          "수열 항 변환": 1,
+          "공비 r로 표현": 1,
+          "a 구하기": 1,
+          "a_10 계산": 1,
+          "항을 공비 표현으로 변환": 1,
+          "식 정리 및 소거": 1,
+          "a 값 구하기": 2,
+          "a₁₀ 계산": 3,
+          "방정식 세우기": 1,
+          "식 정리 및 대입": 2,
+          "값 대입하여 a 구하기": 1,
+          "각 항 표현": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.222222222222222,
+        "title_frequency_all_models": {
+          "등비수열 항 표현": 3,
+          "조건을 식으로 정리": 1,
+          "두 식의 비로 공비 구하기": 2,
+          "첫째항과 \\(a_{10}\\) 계산": 1,
+          "등비수열 식으로 정리": 2,
+          "a₁과 a₁₀ 계산": 1,
+          "공비 구하기(비교)": 1,
+          "a10 계산": 1,
+          "등비수열 성질 파악": 2,
+          "두 조건식 세우기": 1,
+          "공비 r 구하기": 1,
+          "a(1 + r³ + r⁶) 값 활용": 1,
+          "a₁₀ 계산": 6,
+          "두 식의 관계 분석": 1,
+          "공비 r 계산": 1,
+          "조건 정리": 9,
+          "등비수열의 성질 활용": 1,
+          "공비 r³ 계산": 1,
+          "조건 정리 및 식의 변형": 1,
+          "공비와 첫째항 구하기": 1,
+          "답 구하기": 1,
+          "조건 식 정리 및 구조 파악": 1,
+          "공비의 관계식 도출": 1,
+          "a_10의 값 계산": 1,
+          "공비의 거듭제곱($r^3$) 구하기": 1,
+          "첫째항 계산 및 최종 답 구하기": 1,
+          "변수 정의": 1,
+          "공비 계산": 1,
+          "첫 항 계산": 1,
+          "\\(a_{10}\\) 계산": 4,
+          "변수 설정": 1,
+          "방정식 세우기": 1,
+          "방정식 나누기": 1,
+          "대입 및 계산": 1,
+          "등비수열 정의": 1,
+          "주어진 조건 방정식화": 1,
+          "공통 항 도입 및 단순화": 1,
+          "$s$ 계산 및 $a$ 구하기": 1,
+          "$a_{10}$ 계산": 1,
+          "두 식 비교하여 공비 관계 유도": 1,
+          "첫째항 구하기": 1,
+          "등비수열 합의 관계 이용": 1,
+          "첫째항 \\(a\\) 구하기": 1,
+          "첫 번째 방정식 이용": 1,
+          "두 식 비교하여 공비 관계 찾기": 1,
+          "첫째항 \\(a_1\\) 구하기": 1,
+          "항을 공비로 표현": 1,
+          "식 정리 및 연립": 1,
+          "r³ 대입하여 a 구하기": 1,
+          "식 전개": 1,
+          "식 변형 및 대입": 1,
+          "a 값 구하기": 2,
+          "식 전개 및 대입": 1,
+          "변수 제거를 통한 관계 도출": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.055555555555555,
+      "title_frequency": {
+        "등비수열 식 세우기": 5,
+        "공비에 대한 방정식 만들기": 2,
+        "a10 계산": 7,
+        "공비 구하기(비교/소거)": 2,
+        "연립하여 공비 구하기": 2,
+        "a1과 a10 계산": 2,
+        "등비수열 성질 파악": 10,
+        "등비수열의 핵심 관계 활용": 1,
+        "첫째항 구하기": 6,
+        "$a_{10}$ 계산": 6,
+        "등비수열 항 표현": 10,
+        "공비 r 계산": 4,
+        "a₁ + a₄ + a₇ 전개": 1,
+        "a₁₀ 계산": 21,
+        "두 합의 관계 분석": 1,
+        "a₁ + a₄ + a₇ 계산": 1,
+        "조건 정리": 33,
+        "공비 관계 파악": 2,
+        "$a_{10}$ 값 구하기": 2,
+        "공비의 관계식 유도": 1,
+        "첫째항 및 최종값 계산": 1,
+        "등비수열 정의": 4,
+        "방정식 세우기": 5,
+        "공통 부분 도입 및 \\(r^3\\) 계산": 1,
+        "\\(S\\)와 \\(a\\) 계산": 1,
+        "\\(a_{10}\\) 계산": 9,
+        "r^3 및 a1 구하기": 1,
+        "조건을 이용한 방정식 수립": 1,
+        "공비의 세제곱 계산": 1,
+        "초항 및 a10 계산": 1,
+        "공통 인수 제거": 1,
+        "a 구하기": 3,
+        "식 전개": 2,
+        "식 정리 및 대입": 7,
+        "a 값 구하기": 8,
+        "항 표현 변환": 4,
+        "r³ 대입하여 a 구하기": 3,
+        "등비수열 식으로 정리": 4,
+        "연립을 공비로 단순화": 1,
+        "첫째항과 \\(a_{10}\\) 계산": 2,
+        "등비수열 식으로 표현": 2,
+        "연립으로 공비 구하기": 1,
+        "조건 정리 및 등비수열 성질 활용": 1,
+        "공비 r 구하기": 2,
+        "a₁ + a₄ + a₇ 값 구하기": 1,
+        "a₁ 값 구하기": 1,
+        "두 식의 관계 분석": 2,
+        "공비 관계 도출": 1,
+        "첫째항 합 계산": 1,
+        "조건 정리 및 식의 구조 파악": 1,
+        "공비 계산": 4,
+        "a_10의 값 구하기": 1,
+        "조건 정리 및 식 세우기": 1,
+        "공비 구하기": 2,
+        "최종 값 계산": 1,
+        "첫째항 및 정답 계산": 1,
+        "주어진 조건 정리": 1,
+        "S2와 S1 관계 이용": 1,
+        "\\(r^3\\) 구하기": 1,
+        "\\(a\\)와 \\(a_{10}\\) 계산": 1,
+        "조건 정리 및 방정식 세우기": 1,
+        "초항 및 $a_{10}$ 계산": 1,
+        "r³에 대한 방정식": 1,
+        "식 변형": 1,
+        "등비수열 합 공식 이용": 1,
+        "a₁ 구하기": 1,
+        "공통 인수 이용": 1,
+        "첫째항 \\(a\\) 구하기": 2,
+        "식 전개 및 대입": 2,
+        "식 정리 및 연립": 2,
+        "a_{10} 계산": 2,
+        "a10 계산하기": 1,
+        "조건을 간단히 정리": 1,
+        "공통인수로 공비 구하기": 1,
+        "a와 a10 계산": 1,
+        "공비 관계 유도": 1,
+        "합의 값 계산": 1,
+        "두 등식의 관계 분석": 1,
+        "첫째항 결정": 1,
+        "조건식 정리": 1,
+        "첫째항 계산": 1,
+        "조건 정리 및 공비의 성질 파악": 1,
+        "공비와 첫째항 구하기": 2,
+        "a_10 값 계산": 1,
+        "조건 정리 및 $r^3$의 값 구하기": 1,
+        "첫째항 $a$ 구하기": 1,
+        "$a_{10}$의 값 계산": 1,
+        "공비와 항의 관계 파악": 1,
+        "정답 도출": 1,
+        "식 표현": 1,
+        "r^3 계산": 1,
+        "a 계산": 1,
+        "등비수열 정의 및 방정식 세우기": 1,
+        "초항 계산 및 $a_{10}$ 구하기": 1,
+        "변수 정의 및 방정식 세우기": 1,
+        "방정식 나누기": 2,
+        "\\(a\\) 계산": 1,
+        "첫째항과 공비 관계식 도출": 1,
+        "공비의 관계 이용": 1,
+        "등비수열 항들의 합으로 공비 결정": 1,
+        "a와 a_{10} 구하기": 1,
+        "공비 관계식 유도": 1,
+        "수열 항 변환": 1,
+        "공비 r로 표현": 1,
+        "a_10 계산": 1,
+        "항을 공비 표현으로 변환": 1,
+        "식 정리 및 소거": 1,
+        "값 대입하여 a 구하기": 1,
+        "각 항 표현": 1,
+        "조건을 식으로 정리": 1,
+        "두 식의 비로 공비 구하기": 2,
+        "a₁과 a₁₀ 계산": 1,
+        "공비 구하기(비교)": 1,
+        "두 조건식 세우기": 1,
+        "a(1 + r³ + r⁶) 값 활용": 1,
+        "등비수열의 성질 활용": 1,
+        "공비 r³ 계산": 1,
+        "조건 정리 및 식의 변형": 1,
+        "답 구하기": 1,
+        "조건 식 정리 및 구조 파악": 1,
+        "공비의 관계식 도출": 1,
+        "a_10의 값 계산": 1,
+        "공비의 거듭제곱($r^3$) 구하기": 1,
+        "첫째항 계산 및 최종 답 구하기": 1,
+        "변수 정의": 1,
+        "첫 항 계산": 1,
+        "변수 설정": 1,
+        "대입 및 계산": 1,
+        "주어진 조건 방정식화": 1,
+        "공통 항 도입 및 단순화": 1,
+        "$s$ 계산 및 $a$ 구하기": 1,
+        "두 식 비교하여 공비 관계 유도": 1,
+        "등비수열 합의 관계 이용": 1,
+        "첫 번째 방정식 이용": 1,
+        "두 식 비교하여 공비 관계 찾기": 1,
+        "첫째항 \\(a_1\\) 구하기": 1,
+        "항을 공비로 표현": 1,
+        "식 변형 및 대입": 1,
+        "변수 제거를 통한 관계 도출": 1
+      },
+      "accuracy": 0.8888888888888888,
+      "n_samples": 72
+    }
+  }
+}

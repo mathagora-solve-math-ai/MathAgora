@@ -1,0 +1,359 @@
+{
+  "problem_id": "2024_odd_geometry_27",
+  "ground_truth": "3",
+  "answer_type": "choice",
+  "baseline": {
+    "gpt-5-codex": {
+      "answer": "3",
+      "correct": true
+    },
+    "gpt-5": {
+      "answer": "3",
+      "correct": true
+    },
+    "claude-opus-4.5": {
+      "answer": "3",
+      "correct": true
+    },
+    "gemini-3-pro": {
+      "answer": "3",
+      "correct": true
+    },
+    "grok-4-fast": {
+      "answer": "3",
+      "correct": true
+    }
+  },
+  "self_feedback": {
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Parameter setup",
+          "content": "Let A lie on y^2 = 8x with parameter t ≠ 0, so A = (2t^2, 4t). The parabola’s directrix is x = -2, hence the foot B of the perpendicular from A has coordinates B = (-2, 4t). The focus is F = (2, 0). The line BF has slope (0 - 4t)/(2 - (-2)) = -t, so its equation is y = -t(x - 2)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Impose BC = CD",
+          "content": "Parameterize points on BF by s using B + s(1, -t). This gives coordinates (-2 + s, 4t - ts). Intersections with the parabola satisfy [t(4 - s)]^2 = 8(-2 + s), leading to t^2 s^2 - 8(t^2 + 1)s + 16(t^2 + 1) = 0. The roots are s = [4(t^2 + 1) ± 4√(t^2 + 1)]/t^2. Along BF, the nearer intersection to B is at s₂ = (4(t^2 + 1) - 4√(t^2 + 1))/t^2 and the farther at s₁ = (4(t^2 + 1) + 4√(t^2 + 1))/t^2. Because distances along BF are proportional to s, the condition BC = CD becomes s₂ = s₁ - s₂, so s₁ = 2s₂. Substituting the expressions for s₁ and s₂ yields t^2 + 1 = 3√(t^2 + 1), hence √(t^2 + 1) = 3, giving t^2 = 8."
+        },
+        {
+          "step_idx": 2,
+          "title": "Compute area of ABD",
+          "content": "Take t = 2√2 (the sign does not affect area). Then A = (16, 8√2), B = (-2, 8√2). The intersection parameters become s₂ = 3 and s₁ = 6, so D = (-2 + 6, 4t - t·6) = (4, -4√2). Using vectors B - A = (-18, 0) and D - A = (-12, -12√2), the area of triangle ABD is ½ |(-18)(-12√2) - 0| = 108√2."
+        },
+        {
+          "step_idx": 3,
+          "title": "Final Answer",
+          "content": "3"
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "Checked each algebraic and geometric step; all computations and conclusions are consistent, so no changes were necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 18.705209255218506
+    },
+    "gpt-5": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 85.99647569656372
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Identify parabola properties",
+          "content": "For parabola $y^2 = 8x$, we have $4p = 8$, so $p = 2$.\nFocus F is at $(2, 0)$.\nDirectrix is the line $x = -2$."
+        },
+        {
+          "step_idx": 2,
+          "title": "Set up point A and B",
+          "content": "Let point A on the parabola be $(2t^2, 4t)$ for some parameter $t$ (since $y^2 = (4t)^2 = 16t^2 = 8 \\cdot 2t^2$ ✓).\n\nPoint B is the foot of perpendicular from A to directrix $x = -2$.\nSo B = $(-2, 4t)$."
+        },
+        {
+          "step_idx": 3,
+          "title": "Find line BF equation",
+          "content": "Line BF passes through B$(-2, 4t)$ and F$(2, 0)$.\nSlope $m = \\frac{0 - 4t}{2 - (-2)} = \\frac{-4t}{4} = -t$\n\nLine BF: $y - 0 = -t(x - 2)$\n$y = -t(x - 2) = -tx + 2t$"
+        },
+        {
+          "step_idx": 4,
+          "title": "Find intersection points C and D",
+          "content": "Substitute into $y^2 = 8x$:\n$(-tx + 2t)^2 = 8x$\n$t^2x^2 - 4t^2x + 4t^2 = 8x$\n$t^2x^2 - (4t^2 + 8)x + 4t^2 = 0$\n\nLet the x-coordinates of C and D be $x_1$ and $x_2$.\n$x_1 + x_2 = \\frac{4t^2 + 8}{t^2} = 4 + \\frac{8}{t^2}$\n$x_1 x_2 = 4$"
+        },
+        {
+          "step_idx": 5,
+          "title": "Apply condition BC = CD",
+          "content": "For collinear points B, C, D on line BF:\nB is at $x = -2$. Let $x_1 < x_2$ (since CF < DF).\n\nThe distance BC and CD should be measured along the line. Since all three points are collinear:\n$BC = x_1 - (-2) = x_1 + 2$ (proportional to x-difference)\n$CD = x_2 - x_1$\n\nCondition BC = CD means: $x_1 + 2 = x_2 - x_1$\n$2x_1 + 2 = x_2$\n$x_2 = 2x_1 + 2$"
+        },
+        {
+          "step_idx": 6,
+          "title": "Solve for x₁ and x₂",
+          "content": "From $x_1 x_2 = 4$:\n$x_1(2x_1 + 2) = 4$\n$2x_1^2 + 2x_1 - 4 = 0$\n$x_1^2 + x_1 - 2 = 0$\n$(x_1 + 2)(x_1 - 1) = 0$\n\nSince $x_1 > 0$ (on parabola), $x_1 = 1$\n$x_2 = 2(1) + 2 = 4$\n\nCheck: $x_1 x_2 = 1 \\cdot 4 = 4$ ✓\n$x_1 + x_2 = 5 = 4 + 8/t^2$, so $t^2 = 8$, $t = 2\\sqrt{2}$"
+        },
+        {
+          "step_idx": 7,
+          "title": "Find all coordinates",
+          "content": "With $t = 2\\sqrt{2}$:\n- A = $(2t^2, 4t) = (16, 8\\sqrt{2})$\n- B = $(-2, 8\\sqrt{2})$\n- For C: $x_1 = 1$, $y_1 = -t(1-2) = t = 2\\sqrt{2}$, so C = $(1, 2\\sqrt{2})$\n- For D: $x_2 = 4$, $y_2 = -t(4-2) = -2t = -4\\sqrt{2}$, so D = $(4, -4\\sqrt{2})$\n\nVerify C and D on parabola:\nC: $(2\\sqrt{2})^2 = 8 = 8(1)$ ✓\nD: $(-4\\sqrt{2})^2 = 32 = 8(4)$ ✓"
+        },
+        {
+          "step_idx": 8,
+          "title": "Calculate area of triangle ABD",
+          "content": "A = $(16, 8\\sqrt{2})$, B = $(-2, 8\\sqrt{2})$, D = $(4, -4\\sqrt{2})$\n\nArea = $\\frac{1}{2}|x_A(y_B - y_D) + x_B(y_D - y_A) + x_D(y_A - y_B)|$\n\n$= \\frac{1}{2}|16(8\\sqrt{2} - (-4\\sqrt{2})) + (-2)((-4\\sqrt{2}) - 8\\sqrt{2}) + 4(8\\sqrt{2} - 8\\sqrt{2})|$\n\n$= \\frac{1}{2}|16(12\\sqrt{2}) + (-2)(-12\\sqrt{2}) + 4(0)|$\n\n$= \\frac{1}{2}|192\\sqrt{2} + 24\\sqrt{2}|$\n\n$= \\frac{1}{2} \\cdot 216\\sqrt{2} = 108\\sqrt{2}$"
+        },
+        {
+          "step_idx": 9,
+          "title": "Final Answer",
+          "content": "The area of triangle ABD is $108\\sqrt{2}$, which corresponds to choice ③."
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "Verified all steps: parabola properties correct, parametric representation valid, line BF equation correct, intersection calculation correct, BC=CD condition properly applied using x-coordinates (valid since points are collinear), solving for coordinates correct, and area calculation verified. All steps are mathematically sound.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 16.410856008529663
+    },
+    "gemini-3-pro": {
+      "error": "Could not extract JSON from response:\n{\n  \"steps\": [\n    {\n      \"step_idx\": 0,\n      \"title\": \"Setup coordinates and points\",\n      \"content\": \"The parabola equation is $y^2 = 8x$, which implies $4p=8$ so $p=2$. The focus is $F(2, 0)$ and the directrix is $x = -2$. Let point $A$ on the parabola be $(2t^2, 4t)$. The projection $B$ of $A$ onto the directrix $x=-2$ is $(-2, 4t)$.\"\n    },\n    {\n      \"step_idx\": 1,\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 36.15232062339783
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Parabola Properties and Points",
+          "content": "The parabola is y²=8x, so a=2. Focus F is at (2, 0), directrix x=-2. Parametrize point A as (2t², 4t) with t ≠ 0. Perpendicular from A to directrix is horizontal, so B is (-2, 4t). Line BF has parametric equations: x=-2+4s, y=4t(1-s), where s=0 at B, s=1 at F. Speed is 4√(1+t²), so distances proportional to Δs."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find Intersection Parameters",
+          "content": "Intersect line with parabola: leads to quadratic in s: t² s² -2(t²+1)s + (t²+1)=0. Let r=√(t²+1). Roots: s₂=r/(r+1), s₁=r/(r-1) with 0<s₂<1<s₁. Order: B (s=0), C (s=s₂), F (s=1), D (s=s₁)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Apply BC=CD Condition",
+          "content": "BC ∝ s₂, CD ∝ (s₁ - s₂). Set s₂ = s₁ - s₂ ⇒ s₁=2 s₂. Solve: r/(r-1)=2 r/(r+1) ⇒ r=3. Thus, √(t²+1)=3 ⇒ t²=8, |t|=2√2. Verify CF ∝ (1-s₂)=1/4, DF ∝ (s₁-1)=1/2, so CF < DF."
+        },
+        {
+          "step_idx": 4,
+          "title": "Coordinates and Area Calculation",
+          "content": "A(16, 4t), B(-2, 4t), D at s₁=3/2: x_D=-2+4*(3/2)=4, y_D=4t(1-3/2)=-2t. Base AB=18 (horizontal). Height=|-2t-4t|=6|t|=12√2. Area=(1/2)*18*12√2=108√2."
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "3"
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "Verified each step: parametric equations, quadratic derivation, root formulas, condition solving, coordinates, and area calculation all correct mathematically. No errors found.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 10.824282169342041
+    }
+  },
+  "cross_feedback": {
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Parameterize points and line BF",
+          "content": "Let A on y^2=8x be (2t^2,4t) with t≠0. Directrix is x=-2, so foot B is (-2,4t). Focus F=(2,0). Line BF has slope -t and equation y=-t(x-2)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Find intersections and impose BC=CD",
+          "content": "Express points on BF as B+s(1,-t). Intersections with parabola satisfy t^2s^2-8(t^2+1)s+16(t^2+1)=0. Roots s1,s2 correspond to C,D. Condition BC=CD gives s1=2s2, leading to t^2+1=3√(t^2+1) and t^2=8."
+        },
+        {
+          "step_idx": 2,
+          "title": "Compute coordinates and area",
+          "content": "With t=2√2, A=(16,8√2), B=(-2,8√2), D=(4,-4√2). Area of △ABD is 1/2|det(B−A, D−A)| = 108√2."
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "My approach matches the others’ parameterization, intersection handling, and distance condition, yielding the same area. No changes required.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 2.8233208656311035
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Setup and parametrization",
+          "content": "Parabola y^2=8x has focus F(2,0) and directrix x=-2. Let A=(2t^2, 4t) (t≠0). The foot to the directrix is B=(-2, 4t)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Line BF and intersections",
+          "content": "Slope of BF is (0-4t)/(2-(-2))=-t, so y=-t x+2t. Intersect with y^2=8x: t^2 x^2-(4t^2+8)x+4t^2=0. Let roots be x_C, x_D; then x_C+x_D=(4t^2+8)/t^2 and x_C x_D=4."
+        },
+        {
+          "step_idx": 2,
+          "title": "Use BC=CD to fix C and t",
+          "content": "Since B,C,D are collinear on BF and BC=CD with C between B and D, C is the midpoint: x_C=(x_B+x_D)/2 ⇒ x_D=2x_C+2 (as x_B=-2). Using x_C x_D=4 gives x_C(2x_C+2)=4 ⇒ x_C=1 (reject x_C=-2). Then x_D=4. From x_C+x_D=5=(4t^2+8)/t^2 ⇒ t^2=8."
+        },
+        {
+          "step_idx": 3,
+          "title": "Coordinates and area",
+          "content": "With t=±2√2: A=(16,4t), B=(-2,4t), D=(4, -2t). Vector B−A=(-18,0), D−A=(-12, -6t). Area = 1/2 |det(B−A, D−A)| = 1/2 |(-18)(-6t)| = 54|t| = 108√2."
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "My solution matches the others: same parametrization A=(2t^2,4t), B=(-2,4t), line BF with slope -t, and solving intersections. I used the midpoint condition componentwise (x_D=2x_C−x_B) due to BC=CD and collinearity; others used a line parameter or y-coordinates but arrived at t^2=8 and the same area 108√2. No errors found; no changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 44.462302923202515
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Identify parabola properties",
+          "content": "For parabola $y^2 = 8x$, we have $4p = 8$, so $p = 2$.\nFocus F is at $(2, 0)$.\nDirectrix is the line $x = -2$."
+        },
+        {
+          "step_idx": 1,
+          "title": "Set up points A and B",
+          "content": "Let point A on the parabola be $(2t^2, 4t)$ for some parameter $t \\neq 0$.\nThis satisfies $y^2 = (4t)^2 = 16t^2 = 8(2t^2)$ ✓\n\nPoint B is the foot of perpendicular from A to directrix $x = -2$.\nSo B = $(-2, 4t)$."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find line BF equation",
+          "content": "Line BF passes through B$(-2, 4t)$ and F$(2, 0)$.\nSlope $m = \\frac{0 - 4t}{2 - (-2)} = \\frac{-4t}{4} = -t$\n\nLine BF: $y - 0 = -t(x - 2)$\n$y = -tx + 2t$"
+        },
+        {
+          "step_idx": 3,
+          "title": "Find intersection points C and D",
+          "content": "Substitute into $y^2 = 8x$:\n$(-tx + 2t)^2 = 8x$\n$t^2x^2 - 4t^2x + 4t^2 = 8x$\n$t^2x^2 - (4t^2 + 8)x + 4t^2 = 0$\n\nLet the x-coordinates of C and D be $x_1$ and $x_2$.\nBy Vieta's formulas:\n$x_1 + x_2 = \\frac{4t^2 + 8}{t^2} = 4 + \\frac{8}{t^2}$\n$x_1 x_2 = 4$"
+        },
+        {
+          "step_idx": 4,
+          "title": "Apply condition BC = CD",
+          "content": "Since B, C, D are collinear on line BF, and B is on the directrix at $x = -2$:\n- BC corresponds to distance from B to C\n- CD corresponds to distance from C to D\n\nFor collinear points, BC = CD means C is the midpoint of BD.\nThis gives us: $x_C = \\frac{x_B + x_D}{2} = \\frac{-2 + x_D}{2}$\n\nSo $x_D = 2x_C + 2$\n\nWith $x_1 = x_C$ (smaller) and $x_2 = x_D$ (larger), since CF < DF:\n$x_2 = 2x_1 + 2$"
+        },
+        {
+          "step_idx": 5,
+          "title": "Solve for x₁ and x₂",
+          "content": "From $x_1 x_2 = 4$:\n$x_1(2x_1 + 2) = 4$\n$2x_1^2 + 2x_1 - 4 = 0$\n$x_1^2 + x_1 - 2 = 0$\n$(x_1 + 2)(x_1 - 1) = 0$\n\nSince $x_1 > 0$ (on parabola), $x_1 = 1$\n$x_2 = 2(1) + 2 = 4$\n\nVerification: $x_1 + x_2 = 5 = 4 + 8/t^2$\nSo $t^2 = 8$, meaning $t = \\pm 2\\sqrt{2}$"
+        },
+        {
+          "step_idx": 6,
+          "title": "Find all coordinates",
+          "content": "Take $t = 2\\sqrt{2}$ (by symmetry, either sign gives same area):\n- A = $(2t^2, 4t) = (16, 8\\sqrt{2})$\n- B = $(-2, 8\\sqrt{2})$\n\nFor C: $x_1 = 1$, $y_C = -t(1-2) = t = 2\\sqrt{2}$\nSo C = $(1, 2\\sqrt{2})$\n\nFor D: $x_2 = 4$, $y_D = -t(4-2) = -2t = -4\\sqrt{2}$\nSo D = $(4, -4\\sqrt{2})$\n\nVerify CF < DF: CF = $|x_1 + 2| = 3$, DF = $|x_2 + 2| = 6$ ✓"
+        },
+        {
+          "step_idx": 7,
+          "title": "Calculate area of triangle ABD",
+          "content": "A = $(16, 8\\sqrt{2})$, B = $(-2, 8\\sqrt{2})$, D = $(4, -4\\sqrt{2})$\n\nNote that A and B have the same y-coordinate, so AB is horizontal.\nBase AB = $|16 - (-2)| = 18$\n\nHeight = vertical distance from D to line AB (which is $y = 8\\sqrt{2}$)\nHeight = $|8\\sqrt{2} - (-4\\sqrt{2})| = 12\\sqrt{2}$\n\nArea = $\\frac{1}{2} \\times 18 \\times 12\\sqrt{2} = 108\\sqrt{2}$"
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "My solution matches all other models' solutions. All models found t² = 8, coordinates A(16, 8√2), B(-2, 8√2), D(4, -4√2), and area = 108√2. The key insight was recognizing that BC = CD means C is the midpoint of BD, leading to the relationship x_D = 2x_C + 2. All approaches are consistent and arrive at the same answer ③.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 18.31535768508911
+    },
+    "gemini-3-pro": {
+      "error": "Could not extract JSON from response:\n{\n  \"steps\": [\n    {\n      \"step_idx\": 0,\n      \"title\": \"Setup coordinates and parameters\",\n      \"content\": \"Using the parabola equation $y^2 = 8x$, we identify $p=2$, focus $F(2, 0)$, and directrix $x = -2$. Let point $A$ be $(2t^2, 4t)$ with parameter $t \\\\neq 0$. The projection $B$ of $A$ onto the directrix is $B(-2, 4t)$.\"\n    },\n    {\n      \"step_idx\": 1,\n      \"title\": \"Establish line BF a",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 41.3106529712677
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "Parabola Properties and Points",
+          "content": "The parabola is y² = 8x, so a = 2. Focus F is at (2, 0), directrix x = -2. Parametrize point A as (2t², 4t) with t ≠ 0. Perpendicular from A to directrix is horizontal, so B is (-2, 4t). Line BF has parametric equations: x = -2 + 4s, y = 4t(1 - s), where s=0 at B, s=1 at F. Speed is 4√(1 + t²), so distances proportional to Δs."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find Intersection Parameters",
+          "content": "Intersect line with parabola: leads to quadratic in s: t² s² - 2(t² + 1)s + (t² + 1) = 0. Let r = √(t² + 1). Roots: s₂ = r / (r + 1), s₁ = r / (r - 1) with 0 < s₂ < 1 < s₁. Order: B (s=0), C (s=s₂), F (s=1), D (s=s₁)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Apply BC = CD Condition",
+          "content": "BC ∝ s₂, CD ∝ (s₁ - s₂). Set s₂ = s₁ - s₂ ⇒ s₁ = 2 s₂. Solve: r / (r - 1) = 2 r / (r + 1) ⇒ r = 3. Thus, √(t² + 1) = 3 ⇒ t² = 8, |t| = 2√2. Verify CF ∝ (1 - s₂) = 1/4, DF ∝ (s₁ - 1) = 1/2, so CF < DF."
+        },
+        {
+          "step_idx": 4,
+          "title": "Coordinates and Area Calculation",
+          "content": "A(16, 4t), B(-2, 4t), D at s₁ = 3/2: x_D = -2 + 4*(3/2) = 4, y_D = 4t(1 - 3/2) = -2t. Base AB = 18 (horizontal). Height = | -2t - 4t | = 6|t| = 12√2. Area = (1/2)*18*12√2 = 108√2."
+        },
+        {
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "3"
+        }
+      ],
+      "final_answer": 3,
+      "feedback": "My approach uses parametric equations along BF and solves for t via the distance condition in parameter space, which is correct and leads to the same result as others. Other models use x-coordinate differences (valid since distances proportional to Δx on the line), y-parameterization, or direct quadratic solving, all confirming t²=8 and area 108√2. No errors in my solution; approaches differ but are equivalent and consistent.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 11.830344676971436
+    }
+  },
+  "aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "포물선의 기본 요소 파악",
+        "content": "포물선 y² = 8x에서 4p = 8이므로 p = 2입니다.\n- 초점 F = (2, 0)\n- 준선: x = -2"
+      },
+      {
+        "step_idx": 1,
+        "title": "점 A와 B의 좌표 설정",
+        "content": "포물선 위의 점 A를 매개변수 t를 사용하여 A = (2t², 4t)로 나타냅니다 (t ≠ 0).\n점 A에서 준선 x = -2에 내린 수선의 발 B는 같은 y좌표를 가지므로:\nB = (-2, 4t)"
+      },
+      {
+        "step_idx": 2,
+        "title": "직선 BF의 방정식 유도",
+        "content": "B(-2, 4t)와 F(2, 0)을 지나는 직선의 기울기:\nm = (0 - 4t)/(2 - (-2)) = -4t/4 = -t\n\n직선 BF의 방정식: y - 0 = -t(x - 2)\n따라서 y = -t(x - 2) = -tx + 2t"
+      },
+      {
+        "step_idx": 3,
+        "title": "직선 BF와 포물선의 교점 C, D 구하기",
+        "content": "y = -tx + 2t를 y² = 8x에 대입:\n(-tx + 2t)² = 8x\nt²x² - 4t²x + 4t² = 8x\nt²x² - (4t² + 8)x + 4t² = 0\n\n근과 계수의 관계에서 C, D의 x좌표를 x_C, x_D라 하면:\nx_C + x_D = (4t² + 8)/t² = 4 + 8/t²\nx_C · x_D = 4"
+      },
+      {
+        "step_idx": 4,
+        "title": "BC = CD 조건 적용",
+        "content": "B, C, D가 직선 위에 있고 BC = CD이면, C는 BD의 중점입니다.\n(단, CF < DF 조건에서 x_C < x_D임을 알 수 있음)\n\n직선 위에서 x좌표의 중점 조건:\nx_C = (x_B + x_D)/2 = (-2 + x_D)/2\n\n이를 정리하면: 2x_C = -2 + x_D\n따라서: x_D = 2x_C + 2"
+      },
+      {
+        "step_idx": 5,
+        "title": "x_C와 x_D 값 결정",
+        "content": "x_C · x_D = 4와 x_D = 2x_C + 2를 연립:\nx_C(2x_C + 2) = 4\n2x_C² + 2x_C - 4 = 0\nx_C² + x_C - 2 = 0\n(x_C + 2)(x_C - 1) = 0\n\n포물선 위의 점이므로 x_C > 0, 따라서 x_C = 1\nx_D = 2(1) + 2 = 4\n\n검증: x_C · x_D = 1 × 4 = 4 ✓"
+      },
+      {
+        "step_idx": 6,
+        "title": "매개변수 t 결정",
+        "content": "x_C + x_D = 1 + 4 = 5\n또한 x_C + x_D = 4 + 8/t²\n\n따라서: 5 = 4 + 8/t²\n8/t² = 1\nt² = 8\nt = ±2√2"
+      },
+      {
+        "step_idx": 7,
+        "title": "각 점의 좌표 계산",
+        "content": "t = 2√2를 사용 (부호는 넓이에 영향 없음):\n\nA = (2t², 4t) = (2 × 8, 4 × 2√2) = (16, 8√2)\nB = (-2, 4t) = (-2, 8√2)\n\nD의 좌표: x_D = 4\ny_D = -t(x_D - 2) = -2√2(4 - 2) = -4√2\n따라서 D = (4, -4√2)\n\n참고로 C = (1, 2√2)"
+      },
+      {
+        "step_idx": 8,
+        "title": "삼각형 ABD의 넓이 계산",
+        "content": "A = (16, 8√2), B = (-2, 8√2), D = (4, -4√2)\n\nA와 B는 같은 y좌표를 가지므로 AB는 수평선분입니다.\n밑변 AB의 길이 = |16 - (-2)| = 18\n\n높이 = D에서 직선 y = 8√2까지의 수직 거리\n= |8√2 - (-4√2)| = |12√2| = 12√2\n\n삼각형 ABD의 넓이 = (1/2) × 밑변 × 높이\n= (1/2) × 18 × 12√2\n= 9 × 12√2\n= 108√2"
+      }
+    ],
+    "final_answer": 3,
+    "rationale": "모든 참조 모델들이 동일한 접근법을 사용했고, 최종 답 108√2에 수렴했습니다. 포물선의 매개변수 표현, BC=CD 조건을 중점 조건으로 변환, 근과 계수의 관계 활용 등 핵심 논리가 일관되게 적용되었습니다. Claude의 Step 8에서 104√2라고 잘못 기재했지만, 실제 계산 과정은 108√2를 지지합니다.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 22.52982234954834
+  }
+}

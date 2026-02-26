@@ -1,0 +1,3973 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T02:36:55Z",
+    "ended_at_utc": "2026-02-13T03:29:47Z",
+    "elapsed_seconds": 3172.249,
+    "problem_tag": "2026_odd_probability_29",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_probability_29",
+    "label": "2026_odd_probability_29 (확률과통계, 4점)",
+    "gold_answer": "977"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.8238844871521,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.001938343048096,
+              "step_count": 4,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 p 구하기",
+                "E(X)=4800 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산 준비",
+                "표준정규분포표로 확률값 k 구하기"
+              ],
+              "final_answer": "\\[\n1000\\times k=1000\\times 0.977=977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.748856782913208,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "조건 \\(\\mathrm{E}(X)=4800\\)을 만족하려면 \\(a=12\\)가 되어야 하나, \\(a\\le 6\\)과 모순이므로 문제 조건이 서로 양립하지 않아 \\(k\\)를 구할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.8238844871521,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.001938343048096,
+              "step_count": 4,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 p 구하기",
+                "E(X)=4800 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산 준비",
+                "표준정규분포표로 확률값 k 구하기"
+              ],
+              "final_answer": "\\[\n1000\\times k=1000\\times 0.977=977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.748856782913208,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "조건 \\(\\mathrm{E}(X)=4800\\)을 만족하려면 \\(a=12\\)가 되어야 하나, \\(a\\le 6\\)과 모순이므로 문제 조건이 서로 양립하지 않아 \\(k\\)를 구할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "한 번의 시행에서 ‘기록=3’ 확률 구하기": 2,
+            "기댓값 조건으로 a 결정": 2,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+            "E(X)=4800 조건으로 a 결정": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+            "표준정규분포표로 확률값 k 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "한 번의 시행에서 ‘기록=3’ 확률 구하기": 2,
+            "기댓값 조건으로 a 결정": 2,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+            "E(X)=4800 조건으로 a 결정": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+            "표준정규분포표로 확률값 k 구하기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.545225620269775,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "E(X)로부터 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.077650785446167,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.508496522903442,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.545225620269775,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "E(X)로부터 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.077650785446167,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.508496522903442,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기록이 3일 확률 계산": 2,
+            "E(X)로부터 a 결정": 1,
+            "분산 및 표준편차 계산": 2,
+            "정규분포 근사 및 확률 계산": 3,
+            "최종 답 계산": 1,
+            "a값 결정": 2,
+            "최종 계산": 2,
+            "분산 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기록이 3일 확률 계산": 2,
+            "E(X)로부터 a 결정": 1,
+            "분산 및 표준편차 계산": 2,
+            "정규분포 근사 및 확률 계산": 3,
+            "최종 답 계산": 1,
+            "a값 결정": 2,
+            "최종 계산": 2,
+            "분산 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.458338975906372,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "a의 값 결정 및 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.41820812225342,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "평균을 이용한 상수 a의 값 결정",
+                "확률변수 X의 정규분포 근사",
+                "확률 k 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.848217010498047,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "a의 값 결정 및 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.458338975906372,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "a의 값 결정 및 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.41820812225342,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "평균을 이용한 상수 a의 값 결정",
+                "확률변수 X의 정규분포 근사",
+                "확률 k 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.848217010498047,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "a의 값 결정 및 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 3,
+            "a의 값 결정 및 정규분포 근사": 2,
+            "표준정규분포를 이용한 확률 계산": 2,
+            "평균을 이용한 상수 a의 값 결정": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "확률 k 계산 및 최종 답 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 3,
+            "a의 값 결정 및 정규분포 근사": 2,
+            "표준정규분포를 이용한 확률 계산": 2,
+            "평균을 이용한 상수 a의 값 결정": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "확률 k 계산 및 최종 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 118.57430219650269,
+              "step_count": 4,
+              "step_titles": [
+                "문제 조건 정리",
+                "a 값 계산",
+                "X의 분포 및 모수 계산",
+                "정규 근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 58.79498267173767,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 근사",
+                "표 이용 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 83.30706095695496,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 및 파라미터 계산",
+                "정규 근사 및 표 사용"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 118.57430219650269,
+              "step_count": 4,
+              "step_titles": [
+                "문제 조건 정리",
+                "a 값 계산",
+                "X의 분포 및 모수 계산",
+                "정규 근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 58.79498267173767,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 근사",
+                "표 이용 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 83.30706095695496,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 및 파라미터 계산",
+                "정규 근사 및 표 사용"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "문제 조건 정리": 1,
+            "a 값 계산": 1,
+            "X의 분포 및 모수 계산": 1,
+            "정규 근사": 1,
+            "a 값 구하기": 2,
+            "X의 분포 근사": 1,
+            "표 이용 확률 계산": 1,
+            "X의 분포 및 파라미터 계산": 1,
+            "정규 근사 및 표 사용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 조건 정리": 1,
+            "a 값 계산": 1,
+            "X의 분포 및 모수 계산": 1,
+            "정규 근사": 1,
+            "a 값 구하기": 2,
+            "X의 분포 근사": 1,
+            "표 이용 확률 계산": 1,
+            "X의 분포 및 파라미터 계산": 1,
+            "정규 근사 및 표 사용": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.84757924079895,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록=3일 확률",
+                "이항분포 모수와 기댓값 조건",
+                "정규근사 적용",
+                "표준정규분포표 이용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.013781309127808,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 이용하여 a 구하기",
+                "확률 분포 및 근사 조건",
+                "정규 근사와 연속성 수정",
+                "표 이용 주의사항 확인"
+              ],
+              "final_answer": "\\( k = 0.977 \\)  \n\\( 1000 \\times k = 977 \\)\n\n답: 977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 39.962528705596924,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록=3일 확률",
+                "확률변수 X의 분포와 평균",
+                "정규 근사 조건 확인",
+                "P(X ≤ 4800 + 30a) 계산",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 35.84757924079895,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록=3일 확률",
+                "이항분포 모수와 기댓값 조건",
+                "정규근사 적용",
+                "표준정규분포표 이용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.013781309127808,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 이용하여 a 구하기",
+                "확률 분포 및 근사 조건",
+                "정규 근사와 연속성 수정",
+                "표 이용 주의사항 확인"
+              ],
+              "final_answer": "\\( k = 0.977 \\)  \n\\( 1000 \\times k = 977 \\)\n\n답: 977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 39.962528705596924,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록=3일 확률",
+                "확률변수 X의 분포와 평균",
+                "정규 근사 조건 확인",
+                "P(X ≤ 4800 + 30a) 계산",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "한 번 시행에서 기록=3일 확률": 2,
+            "이항분포 모수와 기댓값 조건": 1,
+            "정규근사 적용": 1,
+            "표준정규분포표 이용": 1,
+            "최종 계산": 1,
+            "기댓값 이용하여 a 구하기": 1,
+            "확률 분포 및 근사 조건": 1,
+            "정규 근사와 연속성 수정": 1,
+            "표 이용 주의사항 확인": 1,
+            "확률변수 X의 분포와 평균": 1,
+            "정규 근사 조건 확인": 1,
+            "P(X ≤ 4800 + 30a) 계산": 1,
+            "1000×k 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "한 번 시행에서 기록=3일 확률": 2,
+            "이항분포 모수와 기댓값 조건": 1,
+            "정규근사 적용": 1,
+            "표준정규분포표 이용": 1,
+            "최종 계산": 1,
+            "기댓값 이용하여 a 구하기": 1,
+            "확률 분포 및 근사 조건": 1,
+            "정규 근사와 연속성 수정": 1,
+            "표 이용 주의사항 확인": 1,
+            "확률변수 X의 분포와 평균": 1,
+            "정규 근사 조건 확인": 1,
+            "P(X ≤ 4800 + 30a) 계산": 1,
+            "1000×k 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.096604108810425,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "확률 p 계산 (조건부 확률)",
+                "정규분포 근사 준비",
+                "확률 계산: P(X ≤ 4800 + 30a)"
+              ],
+              "final_answer": "\\[\n1000 \\times k = 1000 \\times 0.977 = 977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.297950744628906,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 계산을 위한 확률 분석",
+                "방정식 풀이",
+                "정규분포 근사를 위한 평균과 분산 계산",
+                "정규분포 근사 및 z-값 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.185034036636353,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "확률 p 계산",
+                "기대값과 분산 계산",
+                "정규근사 및 확률 계산"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.096604108810425,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "확률 p 계산 (조건부 확률)",
+                "정규분포 근사 준비",
+                "확률 계산: P(X ≤ 4800 + 30a)"
+              ],
+              "final_answer": "\\[\n1000 \\times k = 1000 \\times 0.977 = 977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.297950744628906,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 계산을 위한 확률 분석",
+                "방정식 풀이",
+                "정규분포 근사를 위한 평균과 분산 계산",
+                "정규분포 근사 및 z-값 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.185034036636353,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "확률 p 계산",
+                "기대값과 분산 계산",
+                "정규근사 및 확률 계산"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기대값 조건을 이용해 a 결정": 2,
+            "확률 p 계산 (조건부 확률)": 1,
+            "정규분포 근사 준비": 1,
+            "확률 계산: P(X ≤ 4800 + 30a)": 1,
+            "기댓값 계산을 위한 확률 분석": 1,
+            "방정식 풀이": 1,
+            "정규분포 근사를 위한 평균과 분산 계산": 1,
+            "정규분포 근사 및 z-값 계산": 1,
+            "최종 계산": 1,
+            "확률 p 계산": 1,
+            "기대값과 분산 계산": 1,
+            "정규근사 및 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기대값 조건을 이용해 a 결정": 2,
+            "확률 p 계산 (조건부 확률)": 1,
+            "정규분포 근사 준비": 1,
+            "확률 계산: P(X ≤ 4800 + 30a)": 1,
+            "기댓값 계산을 위한 확률 분석": 1,
+            "방정식 풀이": 1,
+            "정규분포 근사를 위한 평균과 분산 계산": 1,
+            "정규분포 근사 및 z-값 계산": 1,
+            "최종 계산": 1,
+            "확률 p 계산": 1,
+            "기대값과 분산 계산": 1,
+            "정규근사 및 확률 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 구하기": 2,
+          "기댓값 조건으로 a 결정": 2,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+          "E(X)=4800 조건으로 a 결정": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+          "표준정규분포표로 확률값 k 구하기": 1,
+          "조건 정리": 9,
+          "기록이 3일 확률 계산": 2,
+          "E(X)로부터 a 결정": 1,
+          "분산 및 표준편차 계산": 2,
+          "정규분포 근사 및 확률 계산": 3,
+          "최종 답 계산": 1,
+          "a값 결정": 2,
+          "최종 계산": 4,
+          "분산 계산": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 3,
+          "a의 값 결정 및 정규분포 근사": 2,
+          "표준정규분포를 이용한 확률 계산": 2,
+          "평균을 이용한 상수 a의 값 결정": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "확률 k 계산 및 최종 답 구하기": 1,
+          "문제 조건 정리": 1,
+          "a 값 계산": 1,
+          "X의 분포 및 모수 계산": 1,
+          "정규 근사": 1,
+          "a 값 구하기": 2,
+          "X의 분포 근사": 1,
+          "표 이용 확률 계산": 1,
+          "X의 분포 및 파라미터 계산": 1,
+          "정규 근사 및 표 사용": 1,
+          "한 번 시행에서 기록=3일 확률": 2,
+          "이항분포 모수와 기댓값 조건": 1,
+          "정규근사 적용": 1,
+          "표준정규분포표 이용": 1,
+          "기댓값 이용하여 a 구하기": 1,
+          "확률 분포 및 근사 조건": 1,
+          "정규 근사와 연속성 수정": 1,
+          "표 이용 주의사항 확인": 1,
+          "확률변수 X의 분포와 평균": 1,
+          "정규 근사 조건 확인": 1,
+          "P(X ≤ 4800 + 30a) 계산": 1,
+          "1000×k 계산": 1,
+          "기대값 조건을 이용해 a 결정": 2,
+          "확률 p 계산 (조건부 확률)": 1,
+          "정규분포 근사 준비": 1,
+          "확률 계산: P(X ≤ 4800 + 30a)": 1,
+          "기댓값 계산을 위한 확률 분석": 1,
+          "방정식 풀이": 1,
+          "정규분포 근사를 위한 평균과 분산 계산": 1,
+          "정규분포 근사 및 z-값 계산": 1,
+          "확률 p 계산": 1,
+          "기대값과 분산 계산": 1,
+          "정규근사 및 확률 계산": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.481743335723877,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.669809341430664,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "주어진 조건 \\(\\mathrm{E}(X)=4800\\)을 적용하면 \\(a=12\\)가 나오는데, 이는 \\(a\\le 6\\)과 모순이므로 조건을 만족하는 \\(a\\)가 존재하지 않습니다. 따라서 \\(k\\) 및 \\(1000k\\)는 주어진 정보만으로 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.28102445602417,
+              "step_count": 5,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기대값 조건으로 a 결정",
+                "정규근사에 필요한 평균과 분산",
+                "구하려는 확률을 Z로 변환",
+                "표준정규분포표로 k 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\).",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.481743335723877,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.669809341430664,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "주어진 조건 \\(\\mathrm{E}(X)=4800\\)을 적용하면 \\(a=12\\)가 나오는데, 이는 \\(a\\le 6\\)과 모순이므로 조건을 만족하는 \\(a\\)가 존재하지 않습니다. 따라서 \\(k\\) 및 \\(1000k\\)는 주어진 정보만으로 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.28102445602417,
+              "step_count": 5,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 구하기",
+                "기대값 조건으로 a 결정",
+                "정규근사에 필요한 평균과 분산",
+                "구하려는 확률을 Z로 변환",
+                "표준정규분포표로 k 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\).",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "한 번의 시행에서 ‘기록=3’ 확률 구하기": 3,
+            "기댓값 조건으로 a 결정": 2,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "기대값 조건으로 a 결정": 1,
+            "정규근사에 필요한 평균과 분산": 1,
+            "구하려는 확률을 Z로 변환": 1,
+            "표준정규분포표로 k 계산": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.3333333333333335,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "한 번의 시행에서 ‘기록=3’ 확률 구하기": 3,
+            "기댓값 조건으로 a 결정": 2,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "기대값 조건으로 a 결정": 1,
+            "정규근사에 필요한 평균과 분산": 1,
+            "구하려는 확률을 Z로 변환": 1,
+            "표준정규분포표로 k 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.886256694793701,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.285025596618652,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.38352084159851,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사로 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.886256694793701,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.285025596618652,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.38352084159851,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "a값 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사로 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "a값 결정": 3,
+            "분산 및 표준편차 계산": 3,
+            "정규분포 근사 및 확률 계산": 2,
+            "최종 계산": 3,
+            "기록이 3일 확률 계산": 2,
+            "정규분포 근사로 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "a값 결정": 3,
+            "분산 및 표준편차 계산": 3,
+            "정규분포 근사 및 확률 계산": 2,
+            "최종 계산": 3,
+            "기록이 3일 확률 계산": 2,
+            "정규분포 근사로 확률 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.901644468307495,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록된 수가 3일 확률 구하기",
+                "기댓값을 이용한 상수 a의 값 결정",
+                "확률변수 X의 정규분포 근사",
+                "표준화를 통한 확률 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.17836952209473,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "상수 a 결정 및 정규분포 근사",
+                "표준화를 통한 k값 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.24352765083313,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행의 확률 계산 및 상수 a 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준화를 통한 확률 k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.901644468307495,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록된 수가 3일 확률 구하기",
+                "기댓값을 이용한 상수 a의 값 결정",
+                "확률변수 X의 정규분포 근사",
+                "표준화를 통한 확률 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 34.17836952209473,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "상수 a 결정 및 정규분포 근사",
+                "표준화를 통한 k값 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.24352765083313,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행의 확률 계산 및 상수 a 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준화를 통한 확률 k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "1회 시행에서 기록된 수가 3일 확률 구하기": 1,
+            "기댓값을 이용한 상수 a의 값 결정": 1,
+            "확률변수 X의 정규분포 근사": 2,
+            "표준화를 통한 확률 계산 및 최종 답 구하기": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+            "상수 a 결정 및 정규분포 근사": 1,
+            "표준화를 통한 k값 계산 및 최종 답 구하기": 1,
+            "1회 시행의 확률 계산 및 상수 a 구하기": 1,
+            "표준화를 통한 확률 k 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "1회 시행에서 기록된 수가 3일 확률 구하기": 1,
+            "기댓값을 이용한 상수 a의 값 결정": 1,
+            "확률변수 X의 정규분포 근사": 2,
+            "표준화를 통한 확률 계산 및 최종 답 구하기": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+            "상수 a 결정 및 정규분포 근사": 1,
+            "표준화를 통한 k값 계산 및 최종 답 구하기": 1,
+            "1회 시행의 확률 계산 및 상수 a 구하기": 1,
+            "표준화를 통한 확률 k 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 94.95850872993469,
+              "step_count": 4,
+              "step_titles": [
+                "a 값 구하기",
+                "분산 및 표준편차 계산",
+                "정규 근사 및 z값 계산",
+                "확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 84.67065024375916,
+              "step_count": 4,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포와 모수 계산",
+                "확률 계산을 위한 정규 근사",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 104.76702809333801,
+              "step_count": 3,
+              "step_titles": [
+                "기대값을 이용한 a 계산",
+                "확률 계산을 위한 정규 근사",
+                "표를 이용한 확률 값 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 94.95850872993469,
+              "step_count": 4,
+              "step_titles": [
+                "a 값 구하기",
+                "분산 및 표준편차 계산",
+                "정규 근사 및 z값 계산",
+                "확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 84.67065024375916,
+              "step_count": 4,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포와 모수 계산",
+                "확률 계산을 위한 정규 근사",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 104.76702809333801,
+              "step_count": 3,
+              "step_titles": [
+                "기대값을 이용한 a 계산",
+                "확률 계산을 위한 정규 근사",
+                "표를 이용한 확률 값 구하기"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "a 값 구하기": 2,
+            "분산 및 표준편차 계산": 1,
+            "정규 근사 및 z값 계산": 1,
+            "확률 계산": 1,
+            "X의 분포와 모수 계산": 1,
+            "확률 계산을 위한 정규 근사": 2,
+            "최종 값 계산": 1,
+            "기대값을 이용한 a 계산": 1,
+            "표를 이용한 확률 값 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "a 값 구하기": 2,
+            "분산 및 표준편차 계산": 1,
+            "정규 근사 및 z값 계산": 1,
+            "확률 계산": 1,
+            "X의 분포와 모수 계산": 1,
+            "확률 계산을 위한 정규 근사": 2,
+            "최종 값 계산": 1,
+            "기대값을 이용한 a 계산": 1,
+            "표를 이용한 확률 값 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.45198130607605,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록이 3일 확률",
+                "q 계산 및 a 구하기",
+                "정규 근사 적용",
+                "z값 계산 및 확률 구하기",
+                "1000k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.087814807891846,
+              "step_count": 7,
+              "step_titles": [
+                "문제 조건 정리",
+                "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기",
+                "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정",
+                "\\( X \\)의 이항분포 정규근사 조건 확인",
+                "\\( P(X \\le 4800 + 30a) \\) 계산",
+                "표준정규분포표 이용",
+                "\\( 1000k \\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.401171684265137,
+              "step_count": 6,
+              "step_titles": [
+                "문제 조건 정리",
+                "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기",
+                "\\( a \\) 값 결정하기",
+                "이항분포의 정규근사",
+                "확률 \\( P(X \\le 4800 + 30a) \\) 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.45198130607605,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 기록이 3일 확률",
+                "q 계산 및 a 구하기",
+                "정규 근사 적용",
+                "z값 계산 및 확률 구하기",
+                "1000k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.087814807891846,
+              "step_count": 7,
+              "step_titles": [
+                "문제 조건 정리",
+                "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기",
+                "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정",
+                "\\( X \\)의 이항분포 정규근사 조건 확인",
+                "\\( P(X \\le 4800 + 30a) \\) 계산",
+                "표준정규분포표 이용",
+                "\\( 1000k \\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.401171684265137,
+              "step_count": 6,
+              "step_titles": [
+                "문제 조건 정리",
+                "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기",
+                "\\( a \\) 값 결정하기",
+                "이항분포의 정규근사",
+                "확률 \\( P(X \\le 4800 + 30a) \\) 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 1,
+            "한 번 시행에서 기록이 3일 확률": 1,
+            "q 계산 및 a 구하기": 1,
+            "정규 근사 적용": 1,
+            "z값 계산 및 확률 구하기": 1,
+            "1000k 계산": 1,
+            "문제 조건 정리": 2,
+            "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기": 1,
+            "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정": 1,
+            "\\( X \\)의 이항분포 정규근사 조건 확인": 1,
+            "\\( P(X \\le 4800 + 30a) \\) 계산": 1,
+            "표준정규분포표 이용": 1,
+            "\\( 1000k \\) 계산": 1,
+            "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기": 1,
+            "\\( a \\) 값 결정하기": 1,
+            "이항분포의 정규근사": 1,
+            "확률 \\( P(X \\le 4800 + 30a) \\) 계산": 1,
+            "최종 답 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "한 번 시행에서 기록이 3일 확률": 1,
+            "q 계산 및 a 구하기": 1,
+            "정규 근사 적용": 1,
+            "z값 계산 및 확률 구하기": 1,
+            "1000k 계산": 1,
+            "문제 조건 정리": 2,
+            "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기": 1,
+            "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정": 1,
+            "\\( X \\)의 이항분포 정규근사 조건 확인": 1,
+            "\\( P(X \\le 4800 + 30a) \\) 계산": 1,
+            "표준정규분포표 이용": 1,
+            "\\( 1000k \\) 계산": 1,
+            "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기": 1,
+            "\\( a \\) 값 결정하기": 1,
+            "이항분포의 정규근사": 1,
+            "확률 \\( P(X \\le 4800 + 30a) \\) 계산": 1,
+            "최종 답 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 186.5654137134552,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "a 대입 후 X의 분포 파악",
+                "정규근사로 확률 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.62357258796692,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 $a$ 결정",
+                "확률변수 $X$의 분포 파악",
+                "정규근사 및 표준화"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.830421209335327,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건 분석",
+                "확률 \\( p \\) 계산",
+                "방정식 세우기",
+                "정규분포 근사 준비",
+                "표준정규변환"
+              ],
+              "final_answer": "\\[\n1000 \\times k = 1000 \\times 0.977 = 977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 186.5654137134552,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 a 결정",
+                "a 대입 후 X의 분포 파악",
+                "정규근사로 확률 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.62357258796692,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건을 이용해 $a$ 결정",
+                "확률변수 $X$의 분포 파악",
+                "정규근사 및 표준화"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.830421209335327,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기대값 조건 분석",
+                "확률 \\( p \\) 계산",
+                "방정식 세우기",
+                "정규분포 근사 준비",
+                "표준정규변환"
+              ],
+              "final_answer": "\\[\n1000 \\times k = 1000 \\times 0.977 = 977\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기대값 조건을 이용해 a 결정": 1,
+            "a 대입 후 X의 분포 파악": 1,
+            "정규근사로 확률 계산": 1,
+            "최종 값 계산": 1,
+            "기대값 조건을 이용해 $a$ 결정": 1,
+            "확률변수 $X$의 분포 파악": 1,
+            "정규근사 및 표준화": 1,
+            "기대값 조건 분석": 1,
+            "확률 \\( p \\) 계산": 1,
+            "방정식 세우기": 1,
+            "정규분포 근사 준비": 1,
+            "표준정규변환": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기대값 조건을 이용해 a 결정": 1,
+            "a 대입 후 X의 분포 파악": 1,
+            "정규근사로 확률 계산": 1,
+            "최종 값 계산": 1,
+            "기대값 조건을 이용해 $a$ 결정": 1,
+            "확률변수 $X$의 분포 파악": 1,
+            "정규근사 및 표준화": 1,
+            "기대값 조건 분석": 1,
+            "확률 \\( p \\) 계산": 1,
+            "방정식 세우기": 1,
+            "정규분포 근사 준비": 1,
+            "표준정규변환": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 구하기": 3,
+          "기댓값 조건으로 a 결정": 2,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "기대값 조건으로 a 결정": 1,
+          "정규근사에 필요한 평균과 분산": 1,
+          "구하려는 확률을 Z로 변환": 1,
+          "표준정규분포표로 k 계산": 1,
+          "조건 정리": 7,
+          "a값 결정": 3,
+          "분산 및 표준편차 계산": 4,
+          "정규분포 근사 및 확률 계산": 2,
+          "최종 계산": 3,
+          "기록이 3일 확률 계산": 2,
+          "정규분포 근사로 확률 계산": 1,
+          "1회 시행에서 기록된 수가 3일 확률 구하기": 1,
+          "기댓값을 이용한 상수 a의 값 결정": 1,
+          "확률변수 X의 정규분포 근사": 2,
+          "표준화를 통한 확률 계산 및 최종 답 구하기": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+          "상수 a 결정 및 정규분포 근사": 1,
+          "표준화를 통한 k값 계산 및 최종 답 구하기": 1,
+          "1회 시행의 확률 계산 및 상수 a 구하기": 1,
+          "표준화를 통한 확률 k 계산": 1,
+          "a 값 구하기": 2,
+          "정규 근사 및 z값 계산": 1,
+          "확률 계산": 1,
+          "X의 분포와 모수 계산": 1,
+          "확률 계산을 위한 정규 근사": 2,
+          "최종 값 계산": 2,
+          "기대값을 이용한 a 계산": 1,
+          "표를 이용한 확률 값 구하기": 1,
+          "한 번 시행에서 기록이 3일 확률": 1,
+          "q 계산 및 a 구하기": 1,
+          "정규 근사 적용": 1,
+          "z값 계산 및 확률 구하기": 1,
+          "1000k 계산": 1,
+          "문제 조건 정리": 2,
+          "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기": 1,
+          "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정": 1,
+          "\\( X \\)의 이항분포 정규근사 조건 확인": 1,
+          "\\( P(X \\le 4800 + 30a) \\) 계산": 1,
+          "표준정규분포표 이용": 1,
+          "\\( 1000k \\) 계산": 1,
+          "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기": 1,
+          "\\( a \\) 값 결정하기": 1,
+          "이항분포의 정규근사": 1,
+          "확률 \\( P(X \\le 4800 + 30a) \\) 계산": 1,
+          "최종 답 계산": 1,
+          "기대값 조건을 이용해 a 결정": 1,
+          "a 대입 후 X의 분포 파악": 1,
+          "정규근사로 확률 계산": 1,
+          "기대값 조건을 이용해 $a$ 결정": 1,
+          "확률변수 $X$의 분포 파악": 1,
+          "정규근사 및 표준화": 1,
+          "기대값 조건 분석": 1,
+          "확률 \\( p \\) 계산": 1,
+          "방정식 세우기": 1,
+          "정규분포 근사 준비": 1,
+          "표준정규변환": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.547654151916504,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 p 구하기",
+                "E(X)=4800으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.965369939804077,
+              "step_count": 4,
+              "step_titles": [
+                "한 시행에서 ‘기록=3’의 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사 준비(평균, 분산, 표준화)",
+                "표준정규분포표로 확률 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\).",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.920212030410767,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’의 확률 p 구하기",
+                "E(X)=4800 조건으로 a 결정"
+              ],
+              "final_answer": "문제 조건이 서로 모순이어서( \\(a\\le 6\\)이면 \\(E(X)\\le 3600\\) ) \\(E(X)=4800\\)을 만족하는 \\(a\\)가 존재하지 않으므로, \\(k\\) 및 \\(1000k\\)를 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.547654151916504,
+              "step_count": 3,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’ 확률 p 구하기",
+                "E(X)=4800으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.965369939804077,
+              "step_count": 4,
+              "step_titles": [
+                "한 시행에서 ‘기록=3’의 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사 준비(평균, 분산, 표준화)",
+                "표준정규분포표로 확률 계산"
+              ],
+              "final_answer": "\\(1000\\times k=1000\\times 0.977=977\\).",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.920212030410767,
+              "step_count": 2,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록=3’의 확률 p 구하기",
+                "E(X)=4800 조건으로 a 결정"
+              ],
+              "final_answer": "문제 조건이 서로 모순이어서( \\(a\\le 6\\)이면 \\(E(X)\\le 3600\\) ) \\(E(X)=4800\\)을 만족하는 \\(a\\)가 존재하지 않으므로, \\(k\\) 및 \\(1000k\\)를 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+            "E(X)=4800으로 a 결정": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "한 시행에서 ‘기록=3’의 확률 구하기": 1,
+            "기댓값 조건으로 a 결정": 1,
+            "정규근사 준비(평균, 분산, 표준화)": 1,
+            "표준정규분포표로 확률 계산": 1,
+            "한 번의 시행에서 ‘기록=3’의 확률 p 구하기": 1,
+            "E(X)=4800 조건으로 a 결정": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+            "E(X)=4800으로 a 결정": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+            "한 시행에서 ‘기록=3’의 확률 구하기": 1,
+            "기댓값 조건으로 a 결정": 1,
+            "정규근사 준비(평균, 분산, 표준화)": 1,
+            "표준정규분포표로 확률 계산": 1,
+            "한 번의 시행에서 ‘기록=3’의 확률 p 구하기": 1,
+            "E(X)=4800 조건으로 a 결정": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.917696237564087,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "E(X)로부터 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.769292831420898,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 확률 설정",
+                "한 번 시행에서 기록이 3일 확률 p 계산",
+                "E(X)=4800 조건으로 a 결정",
+                "분산 및 표준편차 계산",
+                "정규근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.67423129081726,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 확률 설정",
+                "확률 p 계산",
+                "E(X)를 이용하여 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.917696237564087,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록이 3일 확률 계산",
+                "E(X)로부터 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.769292831420898,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 확률 설정",
+                "한 번 시행에서 기록이 3일 확률 p 계산",
+                "E(X)=4800 조건으로 a 결정",
+                "분산 및 표준편차 계산",
+                "정규근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.67423129081726,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 확률 설정",
+                "확률 p 계산",
+                "E(X)를 이용하여 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "기록이 3일 확률 계산": 1,
+            "E(X)로부터 a 결정": 1,
+            "분산 및 표준편차 계산": 3,
+            "정규분포 근사 및 확률 계산": 2,
+            "최종 계산": 1,
+            "조건 정리 및 확률 설정": 2,
+            "한 번 시행에서 기록이 3일 확률 p 계산": 1,
+            "E(X)=4800 조건으로 a 결정": 1,
+            "정규근사 및 확률 계산": 1,
+            "최종 답 계산": 2,
+            "확률 p 계산": 1,
+            "E(X)를 이용하여 a 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "기록이 3일 확률 계산": 1,
+            "E(X)로부터 a 결정": 1,
+            "분산 및 표준편차 계산": 3,
+            "정규분포 근사 및 확률 계산": 2,
+            "최종 계산": 1,
+            "조건 정리 및 확률 설정": 2,
+            "한 번 시행에서 기록이 3일 확률 p 계산": 1,
+            "E(X)=4800 조건으로 a 결정": 1,
+            "정규근사 및 확률 계산": 1,
+            "최종 답 계산": 2,
+            "확률 p 계산": 1,
+            "E(X)를 이용하여 a 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.84787058830261,
+              "step_count": 4,
+              "step_titles": [
+                "확률 계산 및 조건 정리",
+                "상수 a의 값 구하기",
+                "정규분포 근사 및 확률 구하기",
+                "최종 답 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.009687900543213,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "주어진 평균을 이용하여 자연수 a 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.62389349937439,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "평균을 이용한 a값 결정",
+                "정규분포 근사",
+                "표준화 및 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.84787058830261,
+              "step_count": 4,
+              "step_titles": [
+                "확률 계산 및 조건 정리",
+                "상수 a의 값 구하기",
+                "정규분포 근사 및 확률 구하기",
+                "최종 답 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.009687900543213,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "주어진 평균을 이용하여 자연수 a 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준정규분포를 이용한 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.62389349937439,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "평균을 이용한 a값 결정",
+                "정규분포 근사",
+                "표준화 및 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "확률 계산 및 조건 정리": 1,
+            "상수 a의 값 구하기": 1,
+            "정규분포 근사 및 확률 구하기": 1,
+            "최종 답 계산": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 2,
+            "주어진 평균을 이용하여 자연수 a 구하기": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "표준정규분포를 이용한 확률 계산": 1,
+            "평균을 이용한 a값 결정": 1,
+            "정규분포 근사": 1,
+            "표준화 및 확률 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "확률 계산 및 조건 정리": 1,
+            "상수 a의 값 구하기": 1,
+            "정규분포 근사 및 확률 구하기": 1,
+            "최종 답 계산": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 2,
+            "주어진 평균을 이용하여 자연수 a 구하기": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "표준정규분포를 이용한 확률 계산": 1,
+            "평균을 이용한 a값 결정": 1,
+            "정규분포 근사": 1,
+            "표준화 및 확률 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.00632119178772,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 및 근사",
+                "정규 근사 및 z값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 109.60310816764832,
+              "step_count": 5,
+              "step_titles": [
+                "a 값 구하기",
+                "임계값 계산",
+                "X의 정규 근사",
+                "z 값 계산",
+                "표 이용 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 102.54747581481934,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포와 모수 계산",
+                "확률 근사 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 72.00632119178772,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포 및 근사",
+                "정규 근사 및 z값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 109.60310816764832,
+              "step_count": 5,
+              "step_titles": [
+                "a 값 구하기",
+                "임계값 계산",
+                "X의 정규 근사",
+                "z 값 계산",
+                "표 이용 확률 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 102.54747581481934,
+              "step_count": 3,
+              "step_titles": [
+                "a 값 구하기",
+                "X의 분포와 모수 계산",
+                "확률 근사 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "a 값 구하기": 3,
+            "X의 분포 및 근사": 1,
+            "정규 근사 및 z값 계산": 1,
+            "임계값 계산": 1,
+            "X의 정규 근사": 1,
+            "z 값 계산": 1,
+            "표 이용 확률 계산": 1,
+            "X의 분포와 모수 계산": 1,
+            "확률 근사 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 1.1547005383792515,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "a 값 구하기": 3,
+            "X의 분포 및 근사": 1,
+            "정규 근사 및 z값 계산": 1,
+            "임계값 계산": 1,
+            "X의 정규 근사": 1,
+            "z 값 계산": 1,
+            "표 이용 확률 계산": 1,
+            "X의 분포와 모수 계산": 1,
+            "확률 근사 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.863121032714844,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률 p 계산",
+                "X의 분포와 E(X)=4800 이용",
+                "X의 정규 근사",
+                "P(X ≤ 4800+30a) 계산",
+                "표준정규분포표 이용",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 155.2360429763794,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기",
+                "이항분포의 평균 조건 이용하여 \\(a\\) 구하기",
+                "\\(p\\) 재계산 및 이항분포의 정규근사 준비",
+                "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산",
+                "\\(1000 \\times k\\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.13858675956726,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "한 번의 시행에서 기록된 수가 3일 확률",
+                "기댓값 조건을 이용한 \\(a\\) 구하기",
+                "이항분포의 정규근사",
+                "\\(P(X \\le 4800 + 30a)\\) 계산",
+                "표준정규분포표 활용",
+                "\\(1000 \\times k\\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 24.863121032714844,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률 p 계산",
+                "X의 분포와 E(X)=4800 이용",
+                "X의 정규 근사",
+                "P(X ≤ 4800+30a) 계산",
+                "표준정규분포표 이용",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 155.2360429763794,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기",
+                "이항분포의 평균 조건 이용하여 \\(a\\) 구하기",
+                "\\(p\\) 재계산 및 이항분포의 정규근사 준비",
+                "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산",
+                "\\(1000 \\times k\\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.13858675956726,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "한 번의 시행에서 기록된 수가 3일 확률",
+                "기댓값 조건을 이용한 \\(a\\) 구하기",
+                "이항분포의 정규근사",
+                "\\(P(X \\le 4800 + 30a)\\) 계산",
+                "표준정규분포표 활용",
+                "\\(1000 \\times k\\) 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "확률 p 계산": 1,
+            "X의 분포와 E(X)=4800 이용": 1,
+            "X의 정규 근사": 1,
+            "P(X ≤ 4800+30a) 계산": 1,
+            "표준정규분포표 이용": 1,
+            "1000×k 계산": 1,
+            "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기": 1,
+            "이항분포의 평균 조건 이용하여 \\(a\\) 구하기": 1,
+            "\\(p\\) 재계산 및 이항분포의 정규근사 준비": 1,
+            "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산": 1,
+            "\\(1000 \\times k\\) 계산": 2,
+            "한 번의 시행에서 기록된 수가 3일 확률": 1,
+            "기댓값 조건을 이용한 \\(a\\) 구하기": 1,
+            "이항분포의 정규근사": 1,
+            "\\(P(X \\le 4800 + 30a)\\) 계산": 1,
+            "표준정규분포표 활용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "확률 p 계산": 1,
+            "X의 분포와 E(X)=4800 이용": 1,
+            "X의 정규 근사": 1,
+            "P(X ≤ 4800+30a) 계산": 1,
+            "표준정규분포표 이용": 1,
+            "1000×k 계산": 1,
+            "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기": 1,
+            "이항분포의 평균 조건 이용하여 \\(a\\) 구하기": 1,
+            "\\(p\\) 재계산 및 이항분포의 정규근사 준비": 1,
+            "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산": 1,
+            "\\(1000 \\times k\\) 계산": 2,
+            "한 번의 시행에서 기록된 수가 3일 확률": 1,
+            "기댓값 조건을 이용한 \\(a\\) 구하기": 1,
+            "이항분포의 정규근사": 1,
+            "\\(P(X \\le 4800 + 30a)\\) 계산": 1,
+            "표준정규분포표 활용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 230.27236342430115,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률 모델 설정",
+                "확률 p 계산",
+                "a 값 결정",
+                "정규분포 근사 준비",
+                "표준정규분포표 활용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.52271795272827,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "기대값 계산을 위한 확률 정리",
+                "조건부 확률로 p 표현",
+                "a 값 결정",
+                "분산 계산 준비",
+                "정규분포 근사 적용",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.588958740234375,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "확률 모델링",
+                "기대값 조건 활용",
+                "정규분포 근사 준비",
+                "확률 계산 및 정규근사"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 230.27236342430115,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "확률 모델 설정",
+                "확률 p 계산",
+                "a 값 결정",
+                "정규분포 근사 준비",
+                "표준정규분포표 활용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.52271795272827,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "기대값 계산을 위한 확률 정리",
+                "조건부 확률로 p 표현",
+                "a 값 결정",
+                "분산 계산 준비",
+                "정규분포 근사 적용",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 17.588958740234375,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "확률 모델링",
+                "기대값 조건 활용",
+                "정규분포 근사 준비",
+                "확률 계산 및 정규근사"
+              ],
+              "final_answer": "$ 1000 \\times k = 1000 \\times 0.977 = 977 $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "확률 모델 설정": 1,
+            "확률 p 계산": 1,
+            "a 값 결정": 2,
+            "정규분포 근사 준비": 2,
+            "표준정규분포표 활용": 1,
+            "최종 계산": 1,
+            "기대값 계산을 위한 확률 정리": 1,
+            "조건부 확률로 p 표현": 1,
+            "분산 계산 준비": 1,
+            "정규분포 근사 적용": 1,
+            "최종 값 계산": 1,
+            "확률 모델링": 1,
+            "기대값 조건 활용": 1,
+            "확률 계산 및 정규근사": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "확률 모델 설정": 1,
+            "확률 p 계산": 1,
+            "a 값 결정": 2,
+            "정규분포 근사 준비": 2,
+            "표준정규분포표 활용": 1,
+            "최종 계산": 1,
+            "기대값 계산을 위한 확률 정리": 1,
+            "조건부 확률로 p 표현": 1,
+            "분산 계산 준비": 1,
+            "정규분포 근사 적용": 1,
+            "최종 값 계산": 1,
+            "확률 모델링": 1,
+            "기대값 조건 활용": 1,
+            "확률 계산 및 정규근사": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+          "E(X)=4800으로 a 결정": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "한 시행에서 ‘기록=3’의 확률 구하기": 1,
+          "기댓값 조건으로 a 결정": 1,
+          "정규근사 준비(평균, 분산, 표준화)": 1,
+          "표준정규분포표로 확률 계산": 1,
+          "한 번의 시행에서 ‘기록=3’의 확률 p 구하기": 1,
+          "E(X)=4800 조건으로 a 결정": 2,
+          "조건 정리": 7,
+          "기록이 3일 확률 계산": 1,
+          "E(X)로부터 a 결정": 1,
+          "분산 및 표준편차 계산": 3,
+          "정규분포 근사 및 확률 계산": 2,
+          "최종 계산": 2,
+          "조건 정리 및 확률 설정": 2,
+          "한 번 시행에서 기록이 3일 확률 p 계산": 1,
+          "정규근사 및 확률 계산": 1,
+          "최종 답 계산": 3,
+          "확률 p 계산": 3,
+          "E(X)를 이용하여 a 결정": 1,
+          "확률 계산 및 조건 정리": 1,
+          "상수 a의 값 구하기": 1,
+          "정규분포 근사 및 확률 구하기": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 2,
+          "주어진 평균을 이용하여 자연수 a 구하기": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "표준정규분포를 이용한 확률 계산": 1,
+          "평균을 이용한 a값 결정": 1,
+          "정규분포 근사": 1,
+          "표준화 및 확률 계산": 1,
+          "a 값 구하기": 3,
+          "X의 분포 및 근사": 1,
+          "정규 근사 및 z값 계산": 1,
+          "임계값 계산": 1,
+          "X의 정규 근사": 2,
+          "z 값 계산": 1,
+          "표 이용 확률 계산": 1,
+          "X의 분포와 모수 계산": 1,
+          "확률 근사 계산": 1,
+          "X의 분포와 E(X)=4800 이용": 1,
+          "P(X ≤ 4800+30a) 계산": 1,
+          "표준정규분포표 이용": 1,
+          "1000×k 계산": 1,
+          "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기": 1,
+          "이항분포의 평균 조건 이용하여 \\(a\\) 구하기": 1,
+          "\\(p\\) 재계산 및 이항분포의 정규근사 준비": 1,
+          "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산": 1,
+          "\\(1000 \\times k\\) 계산": 2,
+          "한 번의 시행에서 기록된 수가 3일 확률": 1,
+          "기댓값 조건을 이용한 \\(a\\) 구하기": 1,
+          "이항분포의 정규근사": 1,
+          "\\(P(X \\le 4800 + 30a)\\) 계산": 1,
+          "표준정규분포표 활용": 2,
+          "확률 모델 설정": 1,
+          "a 값 결정": 2,
+          "정규분포 근사 준비": 2,
+          "기대값 계산을 위한 확률 정리": 1,
+          "조건부 확률로 p 표현": 1,
+          "분산 계산 준비": 1,
+          "정규분포 근사 적용": 1,
+          "최종 값 계산": 1,
+          "확률 모델링": 1,
+          "기대값 조건 활용": 1,
+          "확률 계산 및 정규근사": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.17937445640564,
+              "step_count": 2,
+              "step_titles": [
+                "시행 1회의 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "문제의 조건을 그대로 적용하면 \\(\\mathrm E(X)=200(a+12)\\)이므로 \\(\\mathrm E(X)=4800\\Rightarrow a=12\\)가 되어 \\(a\\le 6\\)과 모순입니다. 따라서 제시된 조건들만으로는 \\(k\\) 및 \\(1000k\\)를 일의적으로 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.855054378509521,
+              "step_count": 5,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록한 수=3’의 확률",
+                "기대값 조건으로 a 구하기",
+                "정규근사에 필요한 평균과 분산",
+                "구하려는 확률을 표준화",
+                "표 이용(오른쪽 표준정규분포표)"
+              ],
+              "final_answer": "\\[\n1000\\times k \\approx 1000\\times 0.999=999\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.303544998168945,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 '기록=3'의 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산 준비",
+                "표준정규분포표로 근사값 산출"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.17937445640564,
+              "step_count": 2,
+              "step_titles": [
+                "시행 1회의 ‘기록=3’ 확률 구하기",
+                "기댓값 조건으로 a 결정"
+              ],
+              "final_answer": "문제의 조건을 그대로 적용하면 \\(\\mathrm E(X)=200(a+12)\\)이므로 \\(\\mathrm E(X)=4800\\Rightarrow a=12\\)가 되어 \\(a\\le 6\\)과 모순입니다. 따라서 제시된 조건들만으로는 \\(k\\) 및 \\(1000k\\)를 일의적으로 결정할 수 없습니다.",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.855054378509521,
+              "step_count": 5,
+              "step_titles": [
+                "한 번의 시행에서 ‘기록한 수=3’의 확률",
+                "기대값 조건으로 a 구하기",
+                "정규근사에 필요한 평균과 분산",
+                "구하려는 확률을 표준화",
+                "표 이용(오른쪽 표준정규분포표)"
+              ],
+              "final_answer": "\\[\n1000\\times k \\approx 1000\\times 0.999=999\n\\]",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.303544998168945,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 '기록=3'의 확률 구하기",
+                "기댓값 조건으로 a 결정",
+                "정규근사로 P(X ≤ 4800+30a) 계산 준비",
+                "표준정규분포표로 근사값 산출"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "시행 1회의 ‘기록=3’ 확률 구하기": 1,
+            "기댓값 조건으로 a 결정": 2,
+            "한 번의 시행에서 ‘기록한 수=3’의 확률": 1,
+            "기대값 조건으로 a 구하기": 1,
+            "정규근사에 필요한 평균과 분산": 1,
+            "구하려는 확률을 표준화": 1,
+            "표 이용(오른쪽 표준정규분포표)": 1,
+            "1회 시행에서 '기록=3'의 확률 구하기": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+            "표준정규분포표로 근사값 산출": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.6666666666666665,
+          "step_std": 1.5275252316519468,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "시행 1회의 ‘기록=3’ 확률 구하기": 1,
+            "기댓값 조건으로 a 결정": 2,
+            "한 번의 시행에서 ‘기록한 수=3’의 확률": 1,
+            "기대값 조건으로 a 구하기": 1,
+            "정규근사에 필요한 평균과 분산": 1,
+            "구하려는 확률을 표준화": 1,
+            "표 이용(오른쪽 표준정규분포표)": 1,
+            "1회 시행에서 '기록=3'의 확률 구하기": 1,
+            "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+            "표준정규분포표로 근사값 산출": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.031903743743896,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 3이 기록될 확률 계산",
+                "기댓값 조건으로 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.104426383972168,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 계산 및 정규근사",
+                "확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.669230937957764,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록된 수가 3일 확률 계산",
+                "E(X) = 4800 조건으로 a 결정",
+                "X의 분산 및 정규근사",
+                "확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.031903743743896,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "한 번 시행에서 3이 기록될 확률 계산",
+                "기댓값 조건으로 a 결정",
+                "분산 및 표준편차 계산",
+                "정규분포 근사 및 확률 계산",
+                "최종 답 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.104426383972168,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a값 결정",
+                "분산 계산 및 정규근사",
+                "확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.669230937957764,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "기록된 수가 3일 확률 계산",
+                "E(X) = 4800 조건으로 a 결정",
+                "X의 분산 및 정규근사",
+                "확률 계산",
+                "최종 계산"
+              ],
+              "final_answer": "977\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "한 번 시행에서 3이 기록될 확률 계산": 1,
+            "기댓값 조건으로 a 결정": 1,
+            "분산 및 표준편차 계산": 1,
+            "정규분포 근사 및 확률 계산": 1,
+            "최종 답 계산": 1,
+            "a값 결정": 1,
+            "분산 계산 및 정규근사": 1,
+            "확률 계산": 2,
+            "최종 계산": 2,
+            "기록된 수가 3일 확률 계산": 1,
+            "E(X) = 4800 조건으로 a 결정": 1,
+            "X의 분산 및 정규근사": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "한 번 시행에서 3이 기록될 확률 계산": 1,
+            "기댓값 조건으로 a 결정": 1,
+            "분산 및 표준편차 계산": 1,
+            "정규분포 근사 및 확률 계산": 1,
+            "최종 답 계산": 1,
+            "a값 결정": 1,
+            "분산 계산 및 정규근사": 1,
+            "확률 계산": 2,
+            "최종 계산": 2,
+            "기록된 수가 3일 확률 계산": 1,
+            "E(X) = 4800 조건으로 a 결정": 1,
+            "X의 분산 및 정규근사": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.687594413757324,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 3이 기록될 확률 구하기",
+                "평균을 이용하여 상수 a 값 구하기",
+                "정규분포 근사 및 표준화",
+                "확률 계산 및 최종 답 도출"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.72778797149658,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기",
+                "확률변수 $X$의 정규분포 파라미터 결정",
+                "표준화를 이용한 확률 $k$ 및 $1000k$ 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.238157987594604,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "자연수 a의 값 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준정규분포를 이용한 k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.687594413757324,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 3이 기록될 확률 구하기",
+                "평균을 이용하여 상수 a 값 구하기",
+                "정규분포 근사 및 표준화",
+                "확률 계산 및 최종 답 도출"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 37.72778797149658,
+              "step_count": 3,
+              "step_titles": [
+                "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기",
+                "확률변수 $X$의 정규분포 파라미터 결정",
+                "표준화를 이용한 확률 $k$ 및 $1000k$ 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.238157987594604,
+              "step_count": 4,
+              "step_titles": [
+                "1회 시행에서 기록한 수가 3일 확률 구하기",
+                "자연수 a의 값 구하기",
+                "확률변수 X의 정규분포 근사",
+                "표준정규분포를 이용한 k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "1회 시행에서 3이 기록될 확률 구하기": 1,
+            "평균을 이용하여 상수 a 값 구하기": 1,
+            "정규분포 근사 및 표준화": 1,
+            "확률 계산 및 최종 답 도출": 1,
+            "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기": 1,
+            "확률변수 $X$의 정규분포 파라미터 결정": 1,
+            "표준화를 이용한 확률 $k$ 및 $1000k$ 계산": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+            "자연수 a의 값 구하기": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "표준정규분포를 이용한 k 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "1회 시행에서 3이 기록될 확률 구하기": 1,
+            "평균을 이용하여 상수 a 값 구하기": 1,
+            "정규분포 근사 및 표준화": 1,
+            "확률 계산 및 최종 답 도출": 1,
+            "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기": 1,
+            "확률변수 $X$의 정규분포 파라미터 결정": 1,
+            "표준화를 이용한 확률 $k$ 및 $1000k$ 계산": 1,
+            "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+            "자연수 a의 값 구하기": 1,
+            "확률변수 X의 정규분포 근사": 1,
+            "표준정규분포를 이용한 k 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 83.69689416885376,
+              "step_count": 8,
+              "step_titles": [
+                "기대값을 이용한 p 계산",
+                "p의 a에 대한 표현 유도",
+                "a 값 계산",
+                "X의 평균과 분산 계산",
+                "확률 계산 대상 설정",
+                "정규 근사 및 z 값 계산",
+                "표 이용한 확률 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 85.98218536376953,
+              "step_count": 3,
+              "step_titles": [
+                "기대값 조건을 이용한 a 계산",
+                "X의 분포와 근사",
+                "정규 근사와 표 이용"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 67.98429465293884,
+              "step_count": 3,
+              "step_titles": [
+                "a 구하기",
+                "X의 분포 및 파라미터 계산",
+                "정규 근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 83.69689416885376,
+              "step_count": 8,
+              "step_titles": [
+                "기대값을 이용한 p 계산",
+                "p의 a에 대한 표현 유도",
+                "a 값 계산",
+                "X의 평균과 분산 계산",
+                "확률 계산 대상 설정",
+                "정규 근사 및 z 값 계산",
+                "표 이용한 확률 계산",
+                "최종 값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 85.98218536376953,
+              "step_count": 3,
+              "step_titles": [
+                "기대값 조건을 이용한 a 계산",
+                "X의 분포와 근사",
+                "정규 근사와 표 이용"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 67.98429465293884,
+              "step_count": 3,
+              "step_titles": [
+                "a 구하기",
+                "X의 분포 및 파라미터 계산",
+                "정규 근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "기대값을 이용한 p 계산": 1,
+            "p의 a에 대한 표현 유도": 1,
+            "a 값 계산": 1,
+            "X의 평균과 분산 계산": 1,
+            "확률 계산 대상 설정": 1,
+            "정규 근사 및 z 값 계산": 1,
+            "표 이용한 확률 계산": 1,
+            "최종 값 계산": 1,
+            "기대값 조건을 이용한 a 계산": 1,
+            "X의 분포와 근사": 1,
+            "정규 근사와 표 이용": 1,
+            "a 구하기": 1,
+            "X의 분포 및 파라미터 계산": 1,
+            "정규 근사": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 2.8867513459481287,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "기대값을 이용한 p 계산": 1,
+            "p의 a에 대한 표현 유도": 1,
+            "a 값 계산": 1,
+            "X의 평균과 분산 계산": 1,
+            "확률 계산 대상 설정": 1,
+            "정규 근사 및 z 값 계산": 1,
+            "표 이용한 확률 계산": 1,
+            "최종 값 계산": 1,
+            "기대값 조건을 이용한 a 계산": 1,
+            "X의 분포와 근사": 1,
+            "정규 근사와 표 이용": 1,
+            "a 구하기": 1,
+            "X의 분포 및 파라미터 계산": 1,
+            "정규 근사": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 99.40484857559204,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "이항분포 설정 및 기댓값 조건 이용",
+                "정규 근사 적용",
+                "k 값 확인 및 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 104.41923308372498,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "주사위 조건 확률 계산",
+                "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기",
+                "기대값 조건을 이용해 \\( a \\) 구하기",
+                "\\( p \\)와 이항분포의 정규근사 조건 확인",
+                "\\( X \\le 4800 + 30a \\)의 확률 계산",
+                "표준정규분포표를 이용한 확률 계산",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 88.2331612110138,
+              "step_count": 6,
+              "step_titles": [
+                "조건에 따른 확률 계산",
+                "E(X)=4800 이용하여 a 구하기",
+                "p 구하기 및 분산 계산",
+                "정규근사 및 표준화",
+                "정규분포표 이용",
+                "1000×k 계산"
+              ],
+              "final_answer": "**\n977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 99.40484857559204,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "이항분포 설정 및 기댓값 조건 이용",
+                "정규 근사 적용",
+                "k 값 확인 및 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 104.41923308372498,
+              "step_count": 8,
+              "step_titles": [
+                "조건 정리",
+                "주사위 조건 확률 계산",
+                "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기",
+                "기대값 조건을 이용해 \\( a \\) 구하기",
+                "\\( p \\)와 이항분포의 정규근사 조건 확인",
+                "\\( X \\le 4800 + 30a \\)의 확률 계산",
+                "표준정규분포표를 이용한 확률 계산",
+                "1000×k 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 88.2331612110138,
+              "step_count": 6,
+              "step_titles": [
+                "조건에 따른 확률 계산",
+                "E(X)=4800 이용하여 a 구하기",
+                "p 구하기 및 분산 계산",
+                "정규근사 및 표준화",
+                "정규분포표 이용",
+                "1000×k 계산"
+              ],
+              "final_answer": "**\n977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "이항분포 설정 및 기댓값 조건 이용": 1,
+            "정규 근사 적용": 1,
+            "k 값 확인 및 계산": 1,
+            "주사위 조건 확률 계산": 1,
+            "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기": 1,
+            "기대값 조건을 이용해 \\( a \\) 구하기": 1,
+            "\\( p \\)와 이항분포의 정규근사 조건 확인": 1,
+            "\\( X \\le 4800 + 30a \\)의 확률 계산": 1,
+            "표준정규분포표를 이용한 확률 계산": 1,
+            "1000×k 계산": 2,
+            "조건에 따른 확률 계산": 1,
+            "E(X)=4800 이용하여 a 구하기": 1,
+            "p 구하기 및 분산 계산": 1,
+            "정규근사 및 표준화": 1,
+            "정규분포표 이용": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.0,
+          "step_std": 2.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "이항분포 설정 및 기댓값 조건 이용": 1,
+            "정규 근사 적용": 1,
+            "k 값 확인 및 계산": 1,
+            "주사위 조건 확률 계산": 1,
+            "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기": 1,
+            "기대값 조건을 이용해 \\( a \\) 구하기": 1,
+            "\\( p \\)와 이항분포의 정규근사 조건 확인": 1,
+            "\\( X \\le 4800 + 30a \\)의 확률 계산": 1,
+            "표준정규분포표를 이용한 확률 계산": 1,
+            "1000×k 계산": 2,
+            "조건에 따른 확률 계산": 1,
+            "E(X)=4800 이용하여 a 구하기": 1,
+            "p 구하기 및 분산 계산": 1,
+            "정규근사 및 표준화": 1,
+            "정규분포표 이용": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.4635009765625,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 조건에서 $a$ 구하기",
+                "분산 계산 및 정규근사 준비",
+                "정규분포 근사 적용",
+                "최종값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.53387784957886,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "확률 구조 분석",
+                "기대값 조건으로 a 찾기",
+                "a 결정 및 기댓값, 분산 계산",
+                "정규 근사 적용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.39116287231445,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "각 경우의 확률 계산",
+                "기댓값 조건 이용",
+                "a 값 대입 및 분포 근사",
+                "확률 계산 및 정규근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 44.4635009765625,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "기댓값 조건에서 $a$ 구하기",
+                "분산 계산 및 정규근사 준비",
+                "정규분포 근사 적용",
+                "최종값 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.53387784957886,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "확률 구조 분석",
+                "기대값 조건으로 a 찾기",
+                "a 결정 및 기댓값, 분산 계산",
+                "정규 근사 적용",
+                "최종 계산"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.39116287231445,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "각 경우의 확률 계산",
+                "기댓값 조건 이용",
+                "a 값 대입 및 분포 근사",
+                "확률 계산 및 정규근사"
+              ],
+              "final_answer": "977",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "기댓값 조건에서 $a$ 구하기": 1,
+            "분산 계산 및 정규근사 준비": 1,
+            "정규분포 근사 적용": 1,
+            "최종값 계산": 1,
+            "확률 구조 분석": 1,
+            "기대값 조건으로 a 찾기": 1,
+            "a 결정 및 기댓값, 분산 계산": 1,
+            "정규 근사 적용": 1,
+            "최종 계산": 1,
+            "각 경우의 확률 계산": 1,
+            "기댓값 조건 이용": 1,
+            "a 값 대입 및 분포 근사": 1,
+            "확률 계산 및 정규근사": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "기댓값 조건에서 $a$ 구하기": 1,
+            "분산 계산 및 정규근사 준비": 1,
+            "정규분포 근사 적용": 1,
+            "최종값 계산": 1,
+            "확률 구조 분석": 1,
+            "기대값 조건으로 a 찾기": 1,
+            "a 결정 및 기댓값, 분산 계산": 1,
+            "정규 근사 적용": 1,
+            "최종 계산": 1,
+            "각 경우의 확률 계산": 1,
+            "기댓값 조건 이용": 1,
+            "a 값 대입 및 분포 근사": 1,
+            "확률 계산 및 정규근사": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.833333333333333,
+        "title_frequency_all_models": {
+          "시행 1회의 ‘기록=3’ 확률 구하기": 1,
+          "기댓값 조건으로 a 결정": 3,
+          "한 번의 시행에서 ‘기록한 수=3’의 확률": 1,
+          "기대값 조건으로 a 구하기": 1,
+          "정규근사에 필요한 평균과 분산": 1,
+          "구하려는 확률을 표준화": 1,
+          "표 이용(오른쪽 표준정규분포표)": 1,
+          "1회 시행에서 '기록=3'의 확률 구하기": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+          "표준정규분포표로 근사값 산출": 1,
+          "조건 정리": 8,
+          "한 번 시행에서 3이 기록될 확률 계산": 1,
+          "분산 및 표준편차 계산": 1,
+          "정규분포 근사 및 확률 계산": 1,
+          "최종 답 계산": 1,
+          "a값 결정": 1,
+          "분산 계산 및 정규근사": 1,
+          "확률 계산": 2,
+          "최종 계산": 3,
+          "기록된 수가 3일 확률 계산": 1,
+          "E(X) = 4800 조건으로 a 결정": 1,
+          "X의 분산 및 정규근사": 1,
+          "1회 시행에서 3이 기록될 확률 구하기": 1,
+          "평균을 이용하여 상수 a 값 구하기": 1,
+          "정규분포 근사 및 표준화": 1,
+          "확률 계산 및 최종 답 도출": 1,
+          "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기": 1,
+          "확률변수 $X$의 정규분포 파라미터 결정": 1,
+          "표준화를 이용한 확률 $k$ 및 $1000k$ 계산": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+          "자연수 a의 값 구하기": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "표준정규분포를 이용한 k 계산": 1,
+          "기대값을 이용한 p 계산": 1,
+          "p의 a에 대한 표현 유도": 1,
+          "a 값 계산": 1,
+          "X의 평균과 분산 계산": 1,
+          "확률 계산 대상 설정": 1,
+          "정규 근사 및 z 값 계산": 1,
+          "표 이용한 확률 계산": 1,
+          "최종 값 계산": 1,
+          "기대값 조건을 이용한 a 계산": 1,
+          "X의 분포와 근사": 1,
+          "정규 근사와 표 이용": 1,
+          "a 구하기": 1,
+          "X의 분포 및 파라미터 계산": 1,
+          "정규 근사": 1,
+          "이항분포 설정 및 기댓값 조건 이용": 1,
+          "정규 근사 적용": 2,
+          "k 값 확인 및 계산": 1,
+          "주사위 조건 확률 계산": 1,
+          "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기": 1,
+          "기대값 조건을 이용해 \\( a \\) 구하기": 1,
+          "\\( p \\)와 이항분포의 정규근사 조건 확인": 1,
+          "\\( X \\le 4800 + 30a \\)의 확률 계산": 1,
+          "표준정규분포표를 이용한 확률 계산": 1,
+          "1000×k 계산": 2,
+          "조건에 따른 확률 계산": 1,
+          "E(X)=4800 이용하여 a 구하기": 1,
+          "p 구하기 및 분산 계산": 1,
+          "정규근사 및 표준화": 1,
+          "정규분포표 이용": 1,
+          "기댓값 조건에서 $a$ 구하기": 1,
+          "분산 계산 및 정규근사 준비": 1,
+          "정규분포 근사 적용": 1,
+          "최종값 계산": 1,
+          "확률 구조 분석": 1,
+          "기대값 조건으로 a 찾기": 1,
+          "a 결정 및 기댓값, 분산 계산": 1,
+          "각 경우의 확률 계산": 1,
+          "기댓값 조건 이용": 1,
+          "a 값 대입 및 분포 근사": 1,
+          "확률 계산 및 정규근사": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 구하기": 2,
+          "기댓값 조건으로 a 결정": 2,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+          "E(X)=4800 조건으로 a 결정": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+          "표준정규분포표로 확률값 k 구하기": 1,
+          "조건 정리": 9,
+          "기록이 3일 확률 계산": 2,
+          "E(X)로부터 a 결정": 1,
+          "분산 및 표준편차 계산": 2,
+          "정규분포 근사 및 확률 계산": 3,
+          "최종 답 계산": 1,
+          "a값 결정": 2,
+          "최종 계산": 4,
+          "분산 계산": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 3,
+          "a의 값 결정 및 정규분포 근사": 2,
+          "표준정규분포를 이용한 확률 계산": 2,
+          "평균을 이용한 상수 a의 값 결정": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "확률 k 계산 및 최종 답 구하기": 1,
+          "문제 조건 정리": 1,
+          "a 값 계산": 1,
+          "X의 분포 및 모수 계산": 1,
+          "정규 근사": 1,
+          "a 값 구하기": 2,
+          "X의 분포 근사": 1,
+          "표 이용 확률 계산": 1,
+          "X의 분포 및 파라미터 계산": 1,
+          "정규 근사 및 표 사용": 1,
+          "한 번 시행에서 기록=3일 확률": 2,
+          "이항분포 모수와 기댓값 조건": 1,
+          "정규근사 적용": 1,
+          "표준정규분포표 이용": 1,
+          "기댓값 이용하여 a 구하기": 1,
+          "확률 분포 및 근사 조건": 1,
+          "정규 근사와 연속성 수정": 1,
+          "표 이용 주의사항 확인": 1,
+          "확률변수 X의 분포와 평균": 1,
+          "정규 근사 조건 확인": 1,
+          "P(X ≤ 4800 + 30a) 계산": 1,
+          "1000×k 계산": 1,
+          "기대값 조건을 이용해 a 결정": 2,
+          "확률 p 계산 (조건부 확률)": 1,
+          "정규분포 근사 준비": 1,
+          "확률 계산: P(X ≤ 4800 + 30a)": 1,
+          "기댓값 계산을 위한 확률 분석": 1,
+          "방정식 풀이": 1,
+          "정규분포 근사를 위한 평균과 분산 계산": 1,
+          "정규분포 근사 및 z-값 계산": 1,
+          "확률 p 계산": 1,
+          "기대값과 분산 계산": 1,
+          "정규근사 및 확률 계산": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.555555555555555,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 구하기": 3,
+          "기댓값 조건으로 a 결정": 2,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "기대값 조건으로 a 결정": 1,
+          "정규근사에 필요한 평균과 분산": 1,
+          "구하려는 확률을 Z로 변환": 1,
+          "표준정규분포표로 k 계산": 1,
+          "조건 정리": 7,
+          "a값 결정": 3,
+          "분산 및 표준편차 계산": 4,
+          "정규분포 근사 및 확률 계산": 2,
+          "최종 계산": 3,
+          "기록이 3일 확률 계산": 2,
+          "정규분포 근사로 확률 계산": 1,
+          "1회 시행에서 기록된 수가 3일 확률 구하기": 1,
+          "기댓값을 이용한 상수 a의 값 결정": 1,
+          "확률변수 X의 정규분포 근사": 2,
+          "표준화를 통한 확률 계산 및 최종 답 구하기": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+          "상수 a 결정 및 정규분포 근사": 1,
+          "표준화를 통한 k값 계산 및 최종 답 구하기": 1,
+          "1회 시행의 확률 계산 및 상수 a 구하기": 1,
+          "표준화를 통한 확률 k 계산": 1,
+          "a 값 구하기": 2,
+          "정규 근사 및 z값 계산": 1,
+          "확률 계산": 1,
+          "X의 분포와 모수 계산": 1,
+          "확률 계산을 위한 정규 근사": 2,
+          "최종 값 계산": 2,
+          "기대값을 이용한 a 계산": 1,
+          "표를 이용한 확률 값 구하기": 1,
+          "한 번 시행에서 기록이 3일 확률": 1,
+          "q 계산 및 a 구하기": 1,
+          "정규 근사 적용": 1,
+          "z값 계산 및 확률 구하기": 1,
+          "1000k 계산": 1,
+          "문제 조건 정리": 2,
+          "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기": 1,
+          "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정": 1,
+          "\\( X \\)의 이항분포 정규근사 조건 확인": 1,
+          "\\( P(X \\le 4800 + 30a) \\) 계산": 1,
+          "표준정규분포표 이용": 1,
+          "\\( 1000k \\) 계산": 1,
+          "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기": 1,
+          "\\( a \\) 값 결정하기": 1,
+          "이항분포의 정규근사": 1,
+          "확률 \\( P(X \\le 4800 + 30a) \\) 계산": 1,
+          "최종 답 계산": 1,
+          "기대값 조건을 이용해 a 결정": 1,
+          "a 대입 후 X의 분포 파악": 1,
+          "정규근사로 확률 계산": 1,
+          "기대값 조건을 이용해 $a$ 결정": 1,
+          "확률변수 $X$의 분포 파악": 1,
+          "정규근사 및 표준화": 1,
+          "기대값 조건 분석": 1,
+          "확률 \\( p \\) 계산": 1,
+          "방정식 세우기": 1,
+          "정규분포 근사 준비": 1,
+          "표준정규변환": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.944444444444445,
+        "title_frequency_all_models": {
+          "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 1,
+          "E(X)=4800으로 a 결정": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산": 1,
+          "한 시행에서 ‘기록=3’의 확률 구하기": 1,
+          "기댓값 조건으로 a 결정": 1,
+          "정규근사 준비(평균, 분산, 표준화)": 1,
+          "표준정규분포표로 확률 계산": 1,
+          "한 번의 시행에서 ‘기록=3’의 확률 p 구하기": 1,
+          "E(X)=4800 조건으로 a 결정": 2,
+          "조건 정리": 7,
+          "기록이 3일 확률 계산": 1,
+          "E(X)로부터 a 결정": 1,
+          "분산 및 표준편차 계산": 3,
+          "정규분포 근사 및 확률 계산": 2,
+          "최종 계산": 2,
+          "조건 정리 및 확률 설정": 2,
+          "한 번 시행에서 기록이 3일 확률 p 계산": 1,
+          "정규근사 및 확률 계산": 1,
+          "최종 답 계산": 3,
+          "확률 p 계산": 3,
+          "E(X)를 이용하여 a 결정": 1,
+          "확률 계산 및 조건 정리": 1,
+          "상수 a의 값 구하기": 1,
+          "정규분포 근사 및 확률 구하기": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 2,
+          "주어진 평균을 이용하여 자연수 a 구하기": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "표준정규분포를 이용한 확률 계산": 1,
+          "평균을 이용한 a값 결정": 1,
+          "정규분포 근사": 1,
+          "표준화 및 확률 계산": 1,
+          "a 값 구하기": 3,
+          "X의 분포 및 근사": 1,
+          "정규 근사 및 z값 계산": 1,
+          "임계값 계산": 1,
+          "X의 정규 근사": 2,
+          "z 값 계산": 1,
+          "표 이용 확률 계산": 1,
+          "X의 분포와 모수 계산": 1,
+          "확률 근사 계산": 1,
+          "X의 분포와 E(X)=4800 이용": 1,
+          "P(X ≤ 4800+30a) 계산": 1,
+          "표준정규분포표 이용": 1,
+          "1000×k 계산": 1,
+          "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기": 1,
+          "이항분포의 평균 조건 이용하여 \\(a\\) 구하기": 1,
+          "\\(p\\) 재계산 및 이항분포의 정규근사 준비": 1,
+          "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산": 1,
+          "\\(1000 \\times k\\) 계산": 2,
+          "한 번의 시행에서 기록된 수가 3일 확률": 1,
+          "기댓값 조건을 이용한 \\(a\\) 구하기": 1,
+          "이항분포의 정규근사": 1,
+          "\\(P(X \\le 4800 + 30a)\\) 계산": 1,
+          "표준정규분포표 활용": 2,
+          "확률 모델 설정": 1,
+          "a 값 결정": 2,
+          "정규분포 근사 준비": 2,
+          "기대값 계산을 위한 확률 정리": 1,
+          "조건부 확률로 p 표현": 1,
+          "분산 계산 준비": 1,
+          "정규분포 근사 적용": 1,
+          "최종 값 계산": 1,
+          "확률 모델링": 1,
+          "기대값 조건 활용": 1,
+          "확률 계산 및 정규근사": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.833333333333333,
+        "title_frequency_all_models": {
+          "시행 1회의 ‘기록=3’ 확률 구하기": 1,
+          "기댓값 조건으로 a 결정": 3,
+          "한 번의 시행에서 ‘기록한 수=3’의 확률": 1,
+          "기대값 조건으로 a 구하기": 1,
+          "정규근사에 필요한 평균과 분산": 1,
+          "구하려는 확률을 표준화": 1,
+          "표 이용(오른쪽 표준정규분포표)": 1,
+          "1회 시행에서 '기록=3'의 확률 구하기": 1,
+          "정규근사로 P(X ≤ 4800+30a) 계산 준비": 1,
+          "표준정규분포표로 근사값 산출": 1,
+          "조건 정리": 8,
+          "한 번 시행에서 3이 기록될 확률 계산": 1,
+          "분산 및 표준편차 계산": 1,
+          "정규분포 근사 및 확률 계산": 1,
+          "최종 답 계산": 1,
+          "a값 결정": 1,
+          "분산 계산 및 정규근사": 1,
+          "확률 계산": 2,
+          "최종 계산": 3,
+          "기록된 수가 3일 확률 계산": 1,
+          "E(X) = 4800 조건으로 a 결정": 1,
+          "X의 분산 및 정규근사": 1,
+          "1회 시행에서 3이 기록될 확률 구하기": 1,
+          "평균을 이용하여 상수 a 값 구하기": 1,
+          "정규분포 근사 및 표준화": 1,
+          "확률 계산 및 최종 답 도출": 1,
+          "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기": 1,
+          "확률변수 $X$의 정규분포 파라미터 결정": 1,
+          "표준화를 이용한 확률 $k$ 및 $1000k$ 계산": 1,
+          "1회 시행에서 기록한 수가 3일 확률 구하기": 1,
+          "자연수 a의 값 구하기": 1,
+          "확률변수 X의 정규분포 근사": 1,
+          "표준정규분포를 이용한 k 계산": 1,
+          "기대값을 이용한 p 계산": 1,
+          "p의 a에 대한 표현 유도": 1,
+          "a 값 계산": 1,
+          "X의 평균과 분산 계산": 1,
+          "확률 계산 대상 설정": 1,
+          "정규 근사 및 z 값 계산": 1,
+          "표 이용한 확률 계산": 1,
+          "최종 값 계산": 1,
+          "기대값 조건을 이용한 a 계산": 1,
+          "X의 분포와 근사": 1,
+          "정규 근사와 표 이용": 1,
+          "a 구하기": 1,
+          "X의 분포 및 파라미터 계산": 1,
+          "정규 근사": 1,
+          "이항분포 설정 및 기댓값 조건 이용": 1,
+          "정규 근사 적용": 2,
+          "k 값 확인 및 계산": 1,
+          "주사위 조건 확률 계산": 1,
+          "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기": 1,
+          "기대값 조건을 이용해 \\( a \\) 구하기": 1,
+          "\\( p \\)와 이항분포의 정규근사 조건 확인": 1,
+          "\\( X \\le 4800 + 30a \\)의 확률 계산": 1,
+          "표준정규분포표를 이용한 확률 계산": 1,
+          "1000×k 계산": 2,
+          "조건에 따른 확률 계산": 1,
+          "E(X)=4800 이용하여 a 구하기": 1,
+          "p 구하기 및 분산 계산": 1,
+          "정규근사 및 표준화": 1,
+          "정규분포표 이용": 1,
+          "기댓값 조건에서 $a$ 구하기": 1,
+          "분산 계산 및 정규근사 준비": 1,
+          "정규분포 근사 적용": 1,
+          "최종값 계산": 1,
+          "확률 구조 분석": 1,
+          "기대값 조건으로 a 찾기": 1,
+          "a 결정 및 기댓값, 분산 계산": 1,
+          "각 경우의 확률 계산": 1,
+          "기댓값 조건 이용": 1,
+          "a 값 대입 및 분포 근사": 1,
+          "확률 계산 및 정규근사": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.680555555555555,
+      "title_frequency": {
+        "한 번의 시행에서 ‘기록=3’ 확률 구하기": 5,
+        "기댓값 조건으로 a 결정": 8,
+        "정규근사로 P(X ≤ 4800+30a) 계산": 3,
+        "한 번의 시행에서 ‘기록=3’ 확률 p 구하기": 2,
+        "E(X)=4800 조건으로 a 결정": 3,
+        "정규근사로 P(X ≤ 4800+30a) 계산 준비": 2,
+        "표준정규분포표로 확률값 k 구하기": 1,
+        "조건 정리": 31,
+        "기록이 3일 확률 계산": 5,
+        "E(X)로부터 a 결정": 2,
+        "분산 및 표준편차 계산": 10,
+        "정규분포 근사 및 확률 계산": 8,
+        "최종 답 계산": 6,
+        "a값 결정": 6,
+        "최종 계산": 12,
+        "분산 계산": 1,
+        "1회 시행에서 기록한 수가 3일 확률 구하기": 7,
+        "a의 값 결정 및 정규분포 근사": 2,
+        "표준정규분포를 이용한 확률 계산": 3,
+        "평균을 이용한 상수 a의 값 결정": 1,
+        "확률변수 X의 정규분포 근사": 5,
+        "확률 k 계산 및 최종 답 구하기": 1,
+        "문제 조건 정리": 3,
+        "a 값 계산": 2,
+        "X의 분포 및 모수 계산": 1,
+        "정규 근사": 2,
+        "a 값 구하기": 7,
+        "X의 분포 근사": 1,
+        "표 이용 확률 계산": 2,
+        "X의 분포 및 파라미터 계산": 2,
+        "정규 근사 및 표 사용": 1,
+        "한 번 시행에서 기록=3일 확률": 2,
+        "이항분포 모수와 기댓값 조건": 1,
+        "정규근사 적용": 1,
+        "표준정규분포표 이용": 3,
+        "기댓값 이용하여 a 구하기": 1,
+        "확률 분포 및 근사 조건": 1,
+        "정규 근사와 연속성 수정": 1,
+        "표 이용 주의사항 확인": 1,
+        "확률변수 X의 분포와 평균": 1,
+        "정규 근사 조건 확인": 1,
+        "P(X ≤ 4800 + 30a) 계산": 1,
+        "1000×k 계산": 4,
+        "기대값 조건을 이용해 a 결정": 3,
+        "확률 p 계산 (조건부 확률)": 1,
+        "정규분포 근사 준비": 4,
+        "확률 계산: P(X ≤ 4800 + 30a)": 1,
+        "기댓값 계산을 위한 확률 분석": 1,
+        "방정식 풀이": 1,
+        "정규분포 근사를 위한 평균과 분산 계산": 1,
+        "정규분포 근사 및 z-값 계산": 1,
+        "확률 p 계산": 4,
+        "기대값과 분산 계산": 1,
+        "정규근사 및 확률 계산": 2,
+        "기대값 조건으로 a 결정": 1,
+        "정규근사에 필요한 평균과 분산": 2,
+        "구하려는 확률을 Z로 변환": 1,
+        "표준정규분포표로 k 계산": 1,
+        "정규분포 근사로 확률 계산": 1,
+        "1회 시행에서 기록된 수가 3일 확률 구하기": 1,
+        "기댓값을 이용한 상수 a의 값 결정": 1,
+        "표준화를 통한 확률 계산 및 최종 답 구하기": 1,
+        "상수 a 결정 및 정규분포 근사": 1,
+        "표준화를 통한 k값 계산 및 최종 답 구하기": 1,
+        "1회 시행의 확률 계산 및 상수 a 구하기": 1,
+        "표준화를 통한 확률 k 계산": 1,
+        "정규 근사 및 z값 계산": 2,
+        "확률 계산": 3,
+        "X의 분포와 모수 계산": 2,
+        "확률 계산을 위한 정규 근사": 2,
+        "최종 값 계산": 4,
+        "기대값을 이용한 a 계산": 1,
+        "표를 이용한 확률 값 구하기": 1,
+        "한 번 시행에서 기록이 3일 확률": 1,
+        "q 계산 및 a 구하기": 1,
+        "정규 근사 적용": 3,
+        "z값 계산 및 확률 구하기": 1,
+        "1000k 계산": 1,
+        "한 번의 시행에서 '기록한 수=3'일 확률 \\( p \\) 구하기": 1,
+        "\\( E(X)=4800 \\)을 이용하여 \\( a \\) 결정": 1,
+        "\\( X \\)의 이항분포 정규근사 조건 확인": 1,
+        "\\( P(X \\le 4800 + 30a) \\) 계산": 1,
+        "\\( 1000k \\) 계산": 1,
+        "한 번의 시행에서 기록된 수가 3일 확률 \\( p \\) 구하기": 1,
+        "\\( a \\) 값 결정하기": 1,
+        "이항분포의 정규근사": 2,
+        "확률 \\( P(X \\le 4800 + 30a) \\) 계산": 1,
+        "a 대입 후 X의 분포 파악": 1,
+        "정규근사로 확률 계산": 1,
+        "기대값 조건을 이용해 $a$ 결정": 1,
+        "확률변수 $X$의 분포 파악": 1,
+        "정규근사 및 표준화": 2,
+        "기대값 조건 분석": 1,
+        "확률 \\( p \\) 계산": 1,
+        "방정식 세우기": 1,
+        "표준정규변환": 1,
+        "E(X)=4800으로 a 결정": 1,
+        "한 시행에서 ‘기록=3’의 확률 구하기": 1,
+        "정규근사 준비(평균, 분산, 표준화)": 1,
+        "표준정규분포표로 확률 계산": 1,
+        "한 번의 시행에서 ‘기록=3’의 확률 p 구하기": 1,
+        "조건 정리 및 확률 설정": 2,
+        "한 번 시행에서 기록이 3일 확률 p 계산": 1,
+        "E(X)를 이용하여 a 결정": 1,
+        "확률 계산 및 조건 정리": 1,
+        "상수 a의 값 구하기": 1,
+        "정규분포 근사 및 확률 구하기": 1,
+        "주어진 평균을 이용하여 자연수 a 구하기": 1,
+        "평균을 이용한 a값 결정": 1,
+        "정규분포 근사": 1,
+        "표준화 및 확률 계산": 1,
+        "X의 분포 및 근사": 1,
+        "임계값 계산": 1,
+        "X의 정규 근사": 2,
+        "z 값 계산": 1,
+        "확률 근사 계산": 1,
+        "X의 분포와 E(X)=4800 이용": 1,
+        "P(X ≤ 4800+30a) 계산": 1,
+        "한 번의 시행에서 '기록한 수가 3'이 될 확률 \\(p\\) 구하기": 1,
+        "이항분포의 평균 조건 이용하여 \\(a\\) 구하기": 1,
+        "\\(p\\) 재계산 및 이항분포의 정규근사 준비": 1,
+        "\\(\\mathrm{P}(X \\le 4800 + 30a)\\) 계산": 1,
+        "\\(1000 \\times k\\) 계산": 2,
+        "한 번의 시행에서 기록된 수가 3일 확률": 1,
+        "기댓값 조건을 이용한 \\(a\\) 구하기": 1,
+        "\\(P(X \\le 4800 + 30a)\\) 계산": 1,
+        "표준정규분포표 활용": 2,
+        "확률 모델 설정": 1,
+        "a 값 결정": 2,
+        "기대값 계산을 위한 확률 정리": 1,
+        "조건부 확률로 p 표현": 1,
+        "분산 계산 준비": 1,
+        "정규분포 근사 적용": 2,
+        "확률 모델링": 1,
+        "기대값 조건 활용": 1,
+        "확률 계산 및 정규근사": 2,
+        "시행 1회의 ‘기록=3’ 확률 구하기": 1,
+        "한 번의 시행에서 ‘기록한 수=3’의 확률": 1,
+        "기대값 조건으로 a 구하기": 1,
+        "구하려는 확률을 표준화": 1,
+        "표 이용(오른쪽 표준정규분포표)": 1,
+        "1회 시행에서 '기록=3'의 확률 구하기": 1,
+        "표준정규분포표로 근사값 산출": 1,
+        "한 번 시행에서 3이 기록될 확률 계산": 1,
+        "분산 계산 및 정규근사": 1,
+        "기록된 수가 3일 확률 계산": 1,
+        "E(X) = 4800 조건으로 a 결정": 1,
+        "X의 분산 및 정규근사": 1,
+        "1회 시행에서 3이 기록될 확률 구하기": 1,
+        "평균을 이용하여 상수 a 값 구하기": 1,
+        "정규분포 근사 및 표준화": 1,
+        "확률 계산 및 최종 답 도출": 1,
+        "1회 시행에서 기록된 수가 3일 확률 및 상수 $a$ 구하기": 1,
+        "확률변수 $X$의 정규분포 파라미터 결정": 1,
+        "표준화를 이용한 확률 $k$ 및 $1000k$ 계산": 1,
+        "자연수 a의 값 구하기": 1,
+        "표준정규분포를 이용한 k 계산": 1,
+        "기대값을 이용한 p 계산": 1,
+        "p의 a에 대한 표현 유도": 1,
+        "X의 평균과 분산 계산": 1,
+        "확률 계산 대상 설정": 1,
+        "정규 근사 및 z 값 계산": 1,
+        "표 이용한 확률 계산": 1,
+        "기대값 조건을 이용한 a 계산": 1,
+        "X의 분포와 근사": 1,
+        "정규 근사와 표 이용": 1,
+        "a 구하기": 1,
+        "이항분포 설정 및 기댓값 조건 이용": 1,
+        "k 값 확인 및 계산": 1,
+        "주사위 조건 확률 계산": 1,
+        "한 번 시행에서 기록 3일 확률 \\( p \\) 구하기": 1,
+        "기대값 조건을 이용해 \\( a \\) 구하기": 1,
+        "\\( p \\)와 이항분포의 정규근사 조건 확인": 1,
+        "\\( X \\le 4800 + 30a \\)의 확률 계산": 1,
+        "표준정규분포표를 이용한 확률 계산": 1,
+        "조건에 따른 확률 계산": 1,
+        "E(X)=4800 이용하여 a 구하기": 1,
+        "p 구하기 및 분산 계산": 1,
+        "정규분포표 이용": 1,
+        "기댓값 조건에서 $a$ 구하기": 1,
+        "분산 계산 및 정규근사 준비": 1,
+        "최종값 계산": 1,
+        "확률 구조 분석": 1,
+        "기대값 조건으로 a 찾기": 1,
+        "a 결정 및 기댓값, 분산 계산": 1,
+        "각 경우의 확률 계산": 1,
+        "기댓값 조건 이용": 1,
+        "a 값 대입 및 분포 근사": 1
+      },
+      "accuracy": 0.9305555555555556,
+      "n_samples": 72
+    }
+  }
+}

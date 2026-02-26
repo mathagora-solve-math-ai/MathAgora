@@ -1,0 +1,405 @@
+{
+  "problem_id": "2024_odd_common_21",
+  "ground_truth": "10",
+  "prob_type": "단답형",
+  "baseline": {
+    "Claude Opus 4.5": {
+      "answer": "10",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 10
+        },
+        {
+          "run_index": 2,
+          "answer": 10
+        },
+        {
+          "run_index": 3,
+          "answer": 8
+        }
+      ]
+    },
+    "Grok 4 Fast": {
+      "answer": "4",
+      "correct": false,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 4
+        },
+        {
+          "run_index": 2,
+          "answer": 4
+        },
+        {
+          "run_index": 3,
+          "answer": 4
+        }
+      ]
+    },
+    "GPT-5-Codex": {
+      "answer": "10",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 10
+        },
+        {
+          "run_index": 2,
+          "answer": 10
+        }
+      ]
+    },
+    "GPT-5": {
+      "answer": "10",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 10
+        },
+        {
+          "run_index": 2,
+          "answer": 10
+        },
+        {
+          "run_index": 3,
+          "answer": 10
+        }
+      ]
+    }
+  },
+  "self": {
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Analyze the piecewise function f(x)",
+          "content": "f(x) = -x² + 6x for -1 ≤ x < 6\nf(x) = a·log₄(x-5) for x ≥ 6\n\nFor quadratic part: f(x) = -(x-3)² + 9, vertex at (3, 9), max value 9\nAt x = -1: f(-1) = -1 - 6 = -7\nAt x = 6⁻: f(6) = -36 + 36 = 0\nAt x = 6: f(6) = a·log₄(1) = 0\n\nThe function is continuous at x = 6."
+        },
+        {
+          "step_idx": 1,
+          "title": "Determine g(t) for t ∈ [0, 2]",
+          "content": "Interval [t-1, t+1] ⊆ [-1, 3]\nSince f is increasing on [-1, 3], maximum is at x = t+1\ng(t) = -(t+1)² + 6(t+1) = -t² + 4t + 5\nThis equals -(t-2)² + 9, increasing on [0, 2]\ng(0) = 5, g(2) = 9"
+        },
+        {
+          "step_idx": 2,
+          "title": "Determine g(t) for t ∈ [2, 4]",
+          "content": "Interval [t-1, t+1] contains x = 3 (vertex)\ng(t) = f(3) = 9"
+        },
+        {
+          "step_idx": 3,
+          "title": "Determine g(t) for t ∈ [4, 5]",
+          "content": "Interval [t-1, t+1] ⊆ [3, 6]\nSince f is decreasing on [3, 6], maximum is at x = t-1\ng(t) = -(t-1)² + 6(t-1) = -t² + 8t - 7\nAt t = 4: g(4) = -16 + 32 - 7 = 9\nAt t = 5: g(5) = -25 + 40 - 7 = 8"
+        },
+        {
+          "step_idx": 4,
+          "title": "Determine g(t) for t ∈ [5, 7]",
+          "content": "Interval [t-1, t+1] spans both pieces.\nQuadratic part on [t-1, 6): max at x = t-1 gives h₁(t) = -t² + 8t - 7\nLog part on [6, t+1]: max at x = t+1 gives h₂(t) = a·log₄(t-4)\n\nAt t = 5: h₁(5) = 8, h₂(5) = a·log₄(1) = 0, so g(5) = 8\nAt t = 6: h₁(6) = -36 + 48 - 7 = 5, h₂(6) = a·log₄(2) = a/2\nAt t = 7: h₁(7) = -49 + 56 - 7 = 0, h₂(7) = a·log₄(3)\n\ng(t) = max{h₁(t), h₂(t)}"
+        },
+        {
+          "step_idx": 5,
+          "title": "Determine g(t) for t ≥ 7",
+          "content": "Interval [t-1, t+1] ⊆ [6, ∞)\nSince a > 0, log is increasing, max at right endpoint\ng(t) = a·log₄(t-4)\nAt t = 7: g(7) = a·log₄(3)\nAs t → ∞, g(t) → ∞"
+        },
+        {
+          "step_idx": 6,
+          "title": "Find where minimum of g(t) occurs",
+          "content": "g(0) = 5 is a candidate minimum\nFor t ∈ [2, 5], g(t) ≥ 8 > 5\nFor t ≥ 7, g(t) = a·log₄(t-4) is increasing, minimum at t = 7\n\nKey analysis for t ∈ [5, 7]:\nh₁(t) = -t² + 8t - 7 decreases from 8 to 0\nh₂(t) = a·log₄(t-4) increases from 0 to a·log₄(3)\n\nThey intersect at some t* where -t² + 8t - 7 = a·log₄(t-4)\nThe minimum of g(t) = max{h₁(t), h₂(t)} occurs at this intersection."
+        },
+        {
+          "step_idx": 7,
+          "title": "Condition for minimum = 5",
+          "content": "At t = 6: h₁(6) = 5, h₂(6) = a/2\n\nIf a/2 ≤ 5 (i.e., a ≤ 10), then at t = 6, g(6) = max{5, a/2} = 5 when a ≤ 10\n\nFor t slightly less than 6: h₁ > 5, h₂ < a/2\nFor t slightly more than 6: h₁ < 5, h₂ > a/2\n\nIf a/2 < 5, then for t > 6, there's a region where max{h₁, h₂} < 5 (the minimum of the max dips below 5)\n\nFor the minimum of g to be exactly 5, we need the intersection point to give value 5.\nThis happens when h₁(6) = h₂(6) = 5, i.e., a/2 = 5, so a = 10."
+        },
+        {
+          "step_idx": 8,
+          "title": "Verify a = 10",
+          "content": "With a = 10:\n- g(0) = 5\n- g(6) = max{5, 5} = 5\n- For t ∈ (5, 6): h₁ > 5 dominates\n- For t ∈ (6, 7): h₂ = 10·log₄(t-4) > 5 when t > 6 (since log₄(t-4) > 1/2)\n  At t just above 6: h₂ just above 5, h₁ just below 5, so g(t) just above 5\n- For t ≥ 7: g(t) = 10·log₄(t-4) ≥ 10·log₄(3) > 5\n\nMinimum of g(t) is exactly 5, achieved at t = 0 and t = 6.\n\nIf a < 10, then at t = 6, g(6) = 5, but for t slightly > 6, the minimum dips below 5.\nSo minimum value of a is 10."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "Relied primarily on Attempt 2, which correctly identified that the critical condition occurs at t = 6 where h₁(6) = 5 and h₂(6) = a/2. For the minimum of g(t) to be exactly 5, we need a/2 = 5, giving a = 10. Attempt 3's answer of 8 was incorrect due to computational errors in the final step. The key insight is that the intersection of the two functions h₁ and h₂ at t = 6 determines when g achieves its minimum value of 5.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 21.066781759262085
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Define f(x) and g(t)",
+          "content": "f(x) = -x² + 6x for -1 ≤ x < 6, f(x) = a log₄(x-5) for x ≥ 6. g(t) = max f(x) on [t-1, t+1] for t ≥ 0. Goal: minimal positive a such that min_{t≥0} g(t) = 5."
+        },
+        {
+          "step_idx": 1,
+          "title": "Analyze g(t) in [0,5]",
+          "content": "In quadratic region, g(t) = 5 at t=0, increases to 9 at t=2-4, decreases to 8 at t=5. Minimum in this interval is 5."
+        },
+        {
+          "step_idx": 2,
+          "title": "Analyze g(t) in [5,7)",
+          "content": "g(t) = max( f(t-1), a log₄(t-4) ), where f(t-1) decreases from 8 to 0, a log₄(t-4) increases from 0 to a log₄(3) ≈ 0.792a."
+        },
+        {
+          "step_idx": 3,
+          "title": "Condition for min g(t) = 5",
+          "content": "The upper envelope of f(t-1) and a log₄(t-4) must be ≥5, with equality to achieve min=5. This occurs when they intersect at value 5."
+        },
+        {
+          "step_idx": 4,
+          "title": "Find intersection at t=6",
+          "content": "At t=6, f(5) = 5, a log₄(2) = a/2 = 5 ⇒ a=10. Verify f(t-1) ≥ 10 log₄(t-4) for t ∈ [5,6], confirmed by ratio ≥10."
+        },
+        {
+          "step_idx": 5,
+          "title": "Verify for t>6 and overall",
+          "content": "For t>6, g(t) follows 10 log₄(t-4) ≥5, increasing. All g(t) ≥5, min=5 at t=0 and t=6. For a<10, intersection after t=6 gives g<5."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "All previous attempts misunderstood the problem (e.g., integrals, multiple choice, wrong setups) and gave incorrect answer 4. Corrected by solving the actual piecewise max problem, finding a=10.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 75.17367219924927
+    },
+    "GPT-5-Codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Maxima while interval stays in quadratic piece",
+          "content": "For 0 ≤ t < 5, the window [t−1, t+1] lies inside (−1, 6), so g(t) is the maximum of f(x) = −x² + 6x over that interval. Because the parabola increases up to x = 3 and then decreases, g(t) equals −t² + 4t + 5 on 0 ≤ t < 2, equals 9 on 2 ≤ t ≤ 4 (the vertex is captured), and equals −t² + 8t − 7 on 4 < t < 5. All these values are ≥ 5, with equality only at t = 0."
+        },
+        {
+          "step_idx": 1,
+          "title": "Intervals meeting the logarithmic piece",
+          "content": "When t ≥ 5, the window intersects x ≥ 6, so g(t) = max{Q(t), L(t)}, where Q(t) = −(t−1)² + 6(t−1) = −t² + 8t − 7 is the quadratic maximum (from x = t−1) and L(t) = a log₄(t − 4) is the logarithmic maximum (from x = t + 1). Q(t) decreases, giving Q(5) = 8, Q(6) = 5, and Q(t) < 5 for all t > 6. Once t ≥ 7 the entire window lies in the logarithmic region, so g(t) = L(t)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Ensuring the minimum of g stays at 5",
+          "content": "Since g(0) = 5, we require g(t) ≥ 5 for all t ≥ 0. This already holds for t ≤ 6. For t > 6 the quadratic contribution is below 5, so we need L(t) ≥ 5. Because log₄(t − 4) is increasing and approaches 1/2 as t ↓ 6, the tight condition is a · (1/2) ≥ 5, i.e., a ≥ 10. With a = 10, g(t) ≥ 5 everywhere and the minimum value remains 5 (attained at t = 0 and t = 6). Any smaller a would let g(t) drop below 5 for t slightly larger than 6."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "Relied on Attempt 2, confirming its intervals and maxima analysis; no corrections were needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 27.444953203201294
+    },
+    "GPT-5": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 68.89863920211792
+    }
+  },
+  "self_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Analyze the function f(x)",
+        "content": "The function is defined as:\n- f(x) = -x² + 6x for -1 ≤ x < 6\n- f(x) = a·log₄(x-5) for x ≥ 6\n\nFor the quadratic part: f(x) = -(x-3)² + 9, so the vertex is at (3, 9) with maximum value 9.\n- f(-1) = -1 - 6 = -7\n- f(6⁻) = -36 + 36 = 0\n- f(6) = a·log₄(1) = 0\n\nThe function is continuous at x = 6. The quadratic increases on [-1, 3] and decreases on [3, 6]."
+      },
+      {
+        "step_idx": 1,
+        "title": "Compute g(t) for t ∈ [0, 2]",
+        "content": "The interval [t-1, t+1] ⊆ [-1, 3] for t ∈ [0, 2].\nSince f is increasing on this region, the maximum is at the right endpoint x = t+1.\ng(t) = f(t+1) = -(t+1)² + 6(t+1) = -t² - 2t - 1 + 6t + 6 = -t² + 4t + 5\n\nThis is a downward parabola with vertex at t = 2.\n- g(0) = 5\n- g(2) = -4 + 8 + 5 = 9\n\nSo g(t) increases from 5 to 9 on [0, 2]."
+      },
+      {
+        "step_idx": 2,
+        "title": "Compute g(t) for t ∈ [2, 4]",
+        "content": "The interval [t-1, t+1] contains x = 3 (the vertex of the parabola).\nSince the maximum of the quadratic is at x = 3, we have g(t) = f(3) = 9 for all t ∈ [2, 4]."
+      },
+      {
+        "step_idx": 3,
+        "title": "Compute g(t) for t ∈ [4, 5]",
+        "content": "The interval [t-1, t+1] ⊆ [3, 6] for t ∈ [4, 5].\nSince f is decreasing on [3, 6], the maximum is at the left endpoint x = t-1.\ng(t) = f(t-1) = -(t-1)² + 6(t-1) = -t² + 2t - 1 + 6t - 6 = -t² + 8t - 7\n\n- g(4) = -16 + 32 - 7 = 9\n- g(5) = -25 + 40 - 7 = 8"
+      },
+      {
+        "step_idx": 4,
+        "title": "Compute g(t) for t ∈ [5, 7]",
+        "content": "The interval [t-1, t+1] spans both pieces of f(x).\n- On [t-1, 6): quadratic part, maximum at x = t-1 gives h₁(t) = -t² + 8t - 7\n- On [6, t+1]: logarithmic part, since a > 0 and log is increasing, maximum at x = t+1 gives h₂(t) = a·log₄(t-4)\n\ng(t) = max{h₁(t), h₂(t)}\n\nAt t = 5: h₁(5) = 8, h₂(5) = a·log₄(1) = 0, so g(5) = 8\nAt t = 6: h₁(6) = -36 + 48 - 7 = 5, h₂(6) = a·log₄(2) = a/2\nAt t = 7: h₁(7) = -49 + 56 - 7 = 0, h₂(7) = a·log₄(3)"
+      },
+      {
+        "step_idx": 5,
+        "title": "Compute g(t) for t ≥ 7",
+        "content": "The interval [t-1, t+1] ⊆ [6, ∞).\nSince the logarithmic function is increasing, g(t) = f(t+1) = a·log₄(t-4).\nThis is increasing in t, so g(t) ≥ a·log₄(3) for t ≥ 7."
+      },
+      {
+        "step_idx": 6,
+        "title": "Find the minimum of g(t)",
+        "content": "From the analysis:\n- g(0) = 5 (potential minimum)\n- g(t) ∈ [5, 9] for t ∈ [0, 2]\n- g(t) = 9 for t ∈ [2, 4]\n- g(t) ∈ [8, 9] for t ∈ [4, 5]\n\nFor t ∈ [5, 7]: h₁(t) decreases from 8 to 0, h₂(t) increases from 0 to a·log₄(3).\nThe minimum of max{h₁(t), h₂(t)} occurs where they intersect.\n\nFor t ≥ 7: g(t) increases from a·log₄(3)."
+      },
+      {
+        "step_idx": 7,
+        "title": "Determine condition for min g(t) = 5",
+        "content": "We need min g(t) = 5. Since g(0) = 5, we need g(t) ≥ 5 for all t ≥ 0.\n\nAt t = 6: h₁(6) = 5, h₂(6) = a/2.\nIf a/2 < 5 (i.e., a < 10), then for t slightly greater than 6, h₁(t) < 5 and h₂(t) is still small, so g(t) = max{h₁(t), h₂(t)} < 5 somewhere.\n\nIf a/2 = 5 (i.e., a = 10), then at t = 6, both values equal 5, and g(6) = 5.\nFor t > 6: h₂(t) = 10·log₄(t-4) > 5 since log₄(t-4) > 1/2 for t > 6.\n\nSo with a = 10, g(t) ≥ 5 for all t, with min = 5 achieved at t = 0 and t = 6."
+      },
+      {
+        "step_idx": 8,
+        "title": "Verify a = 10 is minimal",
+        "content": "If a < 10, then a/2 < 5, and at t = 6, g(6) = max{5, a/2} = 5.\nBut for t slightly greater than 6, h₁(t) drops below 5, and h₂(t) = a·log₄(t-4) < 5 (since the intersection happens later).\nThis means g(t) < 5 for some t ∈ (6, 7), violating the condition.\n\nTherefore, the minimum value of a is 10."
+      }
+    ],
+    "final_answer": 10,
+    "rationale": "All three detailed solutions (Claude, Grok, GPT-5-Codex) arrive at a = 10 through consistent analysis. The key insight is that at t = 6, the quadratic contribution gives exactly 5, and to prevent g(t) from dropping below 5 for t > 6, we need a·log₄(2) = a/2 ≥ 5, giving a ≥ 10.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 25.90136694908142
+  },
+  "cross": {
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Analyze the piecewise function f(x)",
+          "content": "f(x) = -x² + 6x for -1 ≤ x < 6\nf(x) = a·log₄(x-5) for x ≥ 6\n\nFor the quadratic part: f(x) = -x² + 6x = -(x-3)² + 9\nThis is a downward parabola with vertex at (3, 9), maximum value 9.\nAt x = -1: f(-1) = -1 - 6 = -7\nAt x = 6⁻: f(6⁻) = -36 + 36 = 0\nAt x = 6: f(6) = a·log₄(1) = 0\n\nThe function is continuous at x = 6."
+        },
+        {
+          "step_idx": 1,
+          "title": "Find where f(x) ≥ 5",
+          "content": "For -1 ≤ x < 6: f(x) = -(x-3)² + 9 ≥ 5\n⇒ (x-3)² ≤ 4\n⇒ |x-3| ≤ 2\n⇒ 1 ≤ x ≤ 5\n\nFor x ≥ 6: f(x) = a·log₄(x-5) ≥ 5\n⇒ log₄(x-5) ≥ 5/a\n⇒ x-5 ≥ 4^(5/a)\n⇒ x ≥ 5 + 4^(5/a)\n\nSo S = {x : f(x) ≥ 5} = [1, 5] ∪ [5 + 4^(5/a), ∞)"
+        },
+        {
+          "step_idx": 2,
+          "title": "Analyze g(t) = max f(x) on [t-1, t+1]",
+          "content": "g(t) is the maximum of f on the interval [t-1, t+1] of length 2.\n\nAt t = 0: interval is [-1, 1], and max occurs at x = 1 where f(1) = -1 + 6 = 5.\nSo g(0) = 5, meaning min g(t) ≤ 5.\n\nFor min g(t) = 5, we need g(t) ≥ 5 for all t ≥ 0.\nThis means every interval [t-1, t+1] must contain at least one point from S."
+        },
+        {
+          "step_idx": 3,
+          "title": "Identify gaps in S",
+          "content": "The gaps where f(x) < 5 are:\n- (-1, 1): but for t ≥ 0, [t-1, t+1] always contains x = 1 if t ≤ 2, so this gap doesn't cause problems.\n- (5, 5 + 4^(5/a)): This gap has length L = 4^(5/a).\n\nFor every [t-1, t+1] to intersect S, we need no length-2 interval to fit entirely inside any gap.\n\nThe gap (5, 5 + 4^(5/a)) can contain a length-2 interval if 4^(5/a) > 2.\nIf 4^(5/a) ≤ 2, then no length-2 interval fits in this gap."
+        },
+        {
+          "step_idx": 4,
+          "title": "Solve for minimum a",
+          "content": "Require: 4^(5/a) ≤ 2\n\nTaking log base 4: 5/a ≤ log₄(2) = 1/2\n\n⇒ 5/a ≤ 1/2\n⇒ a ≥ 10\n\nSo the minimum value of a is 10.\n\nVerification: With a = 10, the gap is (5, 5 + 4^(1/2)) = (5, 7).\nAny interval [t-1, t+1] either contains a point from [1, 5] or a point from [7, ∞).\n- If t ≤ 6, then t-1 ≤ 5, so [t-1, t+1] contains x = 5 ∈ S.\n- If t > 6, then t+1 > 7, so [t-1, t+1] contains x ≥ 7 ∈ S.\n\nThus g(t) ≥ 5 for all t ≥ 0, and g(0) = 5, so min g(t) = 5."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "My original solution had the right idea but was convoluted. GPT-5-Codex and GPT-5 both used the cleaner approach of finding where f(x) ≥ 5 and ensuring every length-2 interval intersects this set. The gap analysis shows that requiring 4^(5/a) ≤ 2 gives a ≥ 10. I've revised my solution to follow this cleaner approach, confirming the answer is 10.",
+      "revised": true,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 16.288512468338013
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Define f(x) and g(t)",
+          "content": "The function f(x) is piecewise: f(x) = -x² + 6x for -1 ≤ x < 6, a downward parabola with vertex at x=3, f(3)=9. f(-1)=-7, f(6⁻)=0. For x ≥ 6, f(x) = a log₄(x-5), with f(6)=0, continuous at x=6. g(t) = max{f(x) : x ∈ [t-1, t+1]} for t ≥ 0."
+        },
+        {
+          "step_idx": 1,
+          "title": "Analyze g(t) for t in [0,7)",
+          "content": "For 0 ≤ t < 2, [t-1,t+1] ⊆ [-1,3), max at x=t+1, g(t) = -(t+1)² + 6(t+1) = -t² + 4t + 5, from 5 at t=0 to 9 at t=2. For 2 ≤ t ≤ 4, interval contains 3, g(t)=9. For 4 < t < 5, max at x=t-1 (since >3), g(t)= -(t-1)² + 6(t-1) = -t² + 8t -7, from 9 at t=4 to 8 at t=5. For 5 ≤ t < 7, interval [t-1,t+1] crosses 6. Quadratic max at x=t-1 if t-1 ≤5, f(t-1)= -t² +8t -7. Log max at x=t+1 ≥6, a log₄(t+1-5)=a log₄(t-4). At t=5, max(8, a log₄(1)=0)=8. At t=6, max(f(5)=5, a log₄(2)=a/2). All ≥5."
+        },
+        {
+          "step_idx": 2,
+          "title": "Analyze g(t) for t ≥7",
+          "content": "For t ≥7, [t-1,t+1] ⊆ [6,∞), so g(t) = max of log part, increasing: g(t)= a log₄(t-4), min at t=7: a log₄(3)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Ensure min g(t)=5",
+          "content": "g(0)=5. For min g(t)=5 on [0,∞), need g(t) ≥5 everywhere, with equality at t=0. For t<7, holds (≥5). For t≥7, a log₄(t-4) ≥5 for all t≥7, tightest at t=7: a log₄(3) ≥5. Minimal a when equality: a = 5 / log₄(3). Since log₄(3)= log₂3 / log₂4 = log₂3 / 2, a= 5 / (log₂3 / 2) = 10 / log₂3 = 10 log₃2. But to confirm integer: wait, actually compute shows a=10 satisfies a log₄(2)=10*(1/2)=5 at limit, but wait."
+        },
+        {
+          "step_idx": 4,
+          "title": "Correct tight constraint",
+          "content": "Reassess near t=6⁺. As t→6⁺, interval [5,7] at t=6, but for t just above 6, quadratic f(t-1)<5 for t>6, log max a log₄(t-4)→a log₄(2)=a/2 as t→6⁺ (t-4→2). To have g(t)≥5 near t=6⁺ where quadratic <5, need a/2 ≥5, so a≥10. At a=10, g(t)→5 as t→6⁺, and g(7)=10 log₄(3)≈10*0.792=7.92>5, increasing. Thus min g=5 at t=0 and approaches 5 near t=6⁺."
+        },
+        {
+          "step_idx": 5,
+          "title": "Verify and conclude",
+          "content": "For a=10, g(t)≥5 everywhere, min=5. For a<10, near t=6⁺, g(t)<5, so min<5. Thus minimal a=10."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "My original solution incorrectly defined g(t) as an integral, misunderstanding the problem entirely; this was a critical error. Other models correctly interpreted g(t) as the maximum on [t-1,t+1] and analyzed piecewise, all arriving at 10. GPT-5's gap analysis (requiring gap length ≤2, leading to a≥10) is elegant confirmation. I corrected by adopting the proper definition and following similar piecewise max analysis, confirming the tight constraint is a/2=5 near the junction, yielding a=10.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 6.930534839630127
+    },
+    "GPT-5-Codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Quadratic branch analysis",
+          "content": "For −1 ≤ x < 6, f(x) = −x² + 6x has vertex at x=3 with value 9. Evaluating maxima of f on [t−1, t+1] while the interval stays within (or touches) the quadratic branch yields: g(t) = −t² + 4t + 5 for 0 ≤ t < 2; g(t) = 9 for 2 ≤ t ≤ 4 (interval contains x=3); g(t) = −t² + 8t − 7 for 4 < t < 5 (where the interval lies entirely to the right of the vertex). All these values are ≥5, with g(0) = 5."
+        },
+        {
+          "step_idx": 1,
+          "title": "Transition to logarithmic branch",
+          "content": "For t ≥ 5, the interval [t−1, t+1] intersects or lies wholly within the logarithmic branch. When 5 ≤ t < 7, g(t) = max{−t² + 8t − 7, a·log₄(t−4)}; note that the quadratic part decreases to 5 at t=6 and drops below 5 afterward. For t ≥ 7, the interval is contained in x ≥ 6, and the maximum is attained at x = t+1, so g(t) = a·log₄(t−4), which grows with t."
+        },
+        {
+          "step_idx": 2,
+          "title": "Enforcing minimum value",
+          "content": "Since g(0) = 5, the global minimum of g(t) on [0, ∞) equals 5 provided g(t) ≥ 5 for every t ≥ 0. The quadratic contributions already satisfy this, reaching 5 at t=6. For t > 6, only the logarithmic term can control the maximum, so we require a·log₄(t−4) ≥ 5 for all t > 6. The tightest constraint occurs as t→6⁺, where log₄(t−4)→log₄2 = 1/2, giving a·(1/2) ≥ 5 ⇒ a ≥ 10. With a = 10, g(t) ≥ 5 for all t, and equality holds at t = 0 and t = 6. Thus the minimal positive a is 10."
+        }
+      ],
+      "final_answer": 10,
+      "feedback": "My reasoning matches GPT-5’s interval-gap argument and reaches the same minimal value a = 10. Claude’s solution ultimately agrees despite some ambiguity, while Grok’s answer was off-topic. No corrections were needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 22.17178225517273
+    },
+    "GPT-5": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 84.16840028762817
+    }
+  },
+  "cross_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Analyze the piecewise function f(x)",
+        "content": "The function f(x) is defined as:\n- f(x) = -x² + 6x for -1 ≤ x < 6\n- f(x) = a·log₄(x-5) for x ≥ 6\n\nFor the quadratic part: f(x) = -x² + 6x = -(x-3)² + 9\nThis is a downward parabola with vertex at (3, 9).\nKey values: f(-1) = -1 - 6 = -7, f(6⁻) = -36 + 36 = 0\n\nFor the logarithmic part: f(6) = a·log₄(1) = 0\nSo f is continuous at x = 6."
+      },
+      {
+        "step_idx": 1,
+        "title": "Find where f(x) = 5 in the quadratic region",
+        "content": "Solve -x² + 6x = 5:\n-x² + 6x - 5 = 0\nx² - 6x + 5 = 0\n(x-1)(x-5) = 0\nSo x = 1 or x = 5\n\nThus f(x) ≥ 5 on [1, 5] in the quadratic region, with f(x) < 5 on [-1, 1) and (5, 6)."
+      },
+      {
+        "step_idx": 2,
+        "title": "Compute g(t) for various ranges of t",
+        "content": "g(t) = max{f(x) : x ∈ [t-1, t+1]} for t ≥ 0.\n\nFor 0 ≤ t ≤ 2: interval [t-1, t+1] ⊆ [-1, 3], max at right endpoint x = t+1\ng(t) = -(t+1)² + 6(t+1) = -t² + 4t + 5\nAt t = 0: g(0) = 5\nAt t = 2: g(2) = -4 + 8 + 5 = 9\n\nFor 2 ≤ t ≤ 4: interval contains x = 3 (vertex)\ng(t) = 9\n\nFor 4 ≤ t ≤ 5: interval [t-1, t+1] has max at left endpoint x = t-1 (since t-1 ≥ 3)\ng(t) = -(t-1)² + 6(t-1) = -t² + 8t - 7\nAt t = 4: g(4) = -16 + 32 - 7 = 9\nAt t = 5: g(5) = -25 + 40 - 7 = 8"
+      },
+      {
+        "step_idx": 3,
+        "title": "Analyze g(t) for 5 ≤ t < 7 (transition region)",
+        "content": "For 5 ≤ t < 7, interval [t-1, t+1] crosses x = 6.\nQuadratic max is at x = t-1 (for t-1 ≤ 5) or at x = 5 (for t-1 > 5).\nLog max is at x = t+1: a·log₄(t+1-5) = a·log₄(t-4)\n\nAt t = 5: quadratic gives f(4) = 8, log gives a·log₄(1) = 0, so g(5) = 8\nAt t = 6: quadratic gives f(5) = 5, log gives a·log₄(2) = a/2\nSo g(6) = max(5, a/2)\n\nFor t slightly above 6: quadratic part gives f(t-1) < 5 (since t-1 > 5)\nSo g(t) depends primarily on the log part: a·log₄(t-4)"
+      },
+      {
+        "step_idx": 4,
+        "title": "Analyze g(t) for t ≥ 7",
+        "content": "For t ≥ 7, interval [t-1, t+1] ⊆ [6, ∞), entirely in log region.\ng(t) = a·log₄(t+1-5) = a·log₄(t-4)\n\nThis is increasing in t, so minimum on [7, ∞) occurs at t = 7:\ng(7) = a·log₄(3)"
+      },
+      {
+        "step_idx": 5,
+        "title": "Determine the constraint for min g(t) = 5",
+        "content": "We know g(0) = 5, so min g(t) ≤ 5.\nFor min g(t) = 5, we need g(t) ≥ 5 for all t ≥ 0.\n\nFrom steps 2-3, g(t) ≥ 5 for 0 ≤ t ≤ 6 (with equality at t = 0).\n\nThe critical constraint comes from t just above 6:\nAs t → 6⁺, the quadratic part f(t-1) → f(5) = 5 but drops below 5 for t > 6.\nThe log part gives a·log₄(t-4) → a·log₄(2) = a/2 as t → 6⁺.\n\nFor g(t) ≥ 5 near t = 6⁺, we need a/2 ≥ 5, so a ≥ 10.\n\nAlso check t = 7: g(7) = a·log₄(3) = a·(log₂3)/2 ≈ 0.792a\nWith a = 10: g(7) ≈ 7.92 > 5 ✓"
+      },
+      {
+        "step_idx": 6,
+        "title": "Verify a = 10 works",
+        "content": "With a = 10:\n- g(0) = 5 ✓\n- g(t) ≥ 5 for 0 ≤ t ≤ 5 (quadratic analysis shows values 5 to 9)\n- At t = 6: g(6) = max(5, 5) = 5 ✓\n- For t > 6: g(t) = 10·log₄(t-4) ≥ 10·log₄(2) = 5 ✓\n\nThe minimum of g(t) on [0, ∞) is 5, achieved at t = 0 and t = 6.\n\nFor a < 10, g(t) < 5 for t slightly above 6, so min g(t) < 5.\n\nTherefore, minimum a = 10."
+      }
+    ],
+    "final_answer": 10,
+    "rationale": "All three detailed solutions (Claude, Grok, GPT-5-Codex) arrive at a = 10. The key insight is that as t approaches 6 from above, the quadratic part drops below 5 and the log part must compensate. The constraint a·log₄(2) = a/2 ≥ 5 gives a ≥ 10. I verified this independently.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 26.17865538597107
+  }
+}

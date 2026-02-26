@@ -1,0 +1,397 @@
+{
+  "problem_id": "2024_odd_calculus_30",
+  "ground_truth": "125",
+  "prob_type": "단답형",
+  "baseline": {
+    "Claude Opus 4.5": {
+      "answer": "200",
+      "correct": false,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 200
+        },
+        {
+          "run_index": 2,
+          "answer": 100
+        },
+        {
+          "run_index": 3,
+          "answer": 200
+        }
+      ]
+    },
+    "Grok 4 Fast": {
+      "answer": "0",
+      "correct": false,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 4
+        },
+        {
+          "run_index": 2,
+          "answer": 0
+        },
+        {
+          "run_index": 3,
+          "answer": 0
+        }
+      ]
+    },
+    "GPT-5": {
+      "answer": "125",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 125
+        },
+        {
+          "run_index": 2,
+          "answer": 125
+        },
+        {
+          "run_index": 3,
+          "answer": 125
+        }
+      ]
+    },
+    "GPT-5-Codex": {
+      "answer": "125",
+      "correct": true,
+      "_runs": [
+        {
+          "run_index": 1,
+          "answer": 125
+        },
+        {
+          "run_index": 2,
+          "answer": 125
+        },
+        {
+          "run_index": 3,
+          "answer": 125
+        }
+      ]
+    }
+  },
+  "self": {
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Set up the problem and find the tangent line",
+          "content": "Given f'(x) = |sin x|cos x. The tangent line at point (a, f(a)) on curve y = f(x) has equation:\ng(x) = f(a) + f'(a)(x - a) = f(a) + |sin a|cos a · (x - a)"
+        },
+        {
+          "step_idx": 1,
+          "title": "Define h(x) and find h'(x)",
+          "content": "h(x) = ∫₀ˣ {f(t) - g(t)} dt\n\nBy the Fundamental Theorem of Calculus:\nh'(x) = f(x) - g(x) = f(x) - f(a) - |sin a|cos a · (x - a)\n\nAt x = a:\nh'(a) = f(a) - f(a) - |sin a|cos a · 0 = 0\n\nSo x = a is always a critical point of h(x)."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find h''(x) to analyze extrema",
+          "content": "h''(x) = f'(x) - |sin a|cos a\n\nAt x = a:\nh''(a) = |sin a|cos a - |sin a|cos a = 0\n\nSince h''(a) = 0, we need to analyze when h'(x) changes sign at x = a."
+        },
+        {
+          "step_idx": 3,
+          "title": "Analyze sign change of h'(x)",
+          "content": "Near x = a, using Taylor expansion:\nh'(x) ≈ h'(a) + h''(a)(x-a) + (1/2)h'''(a)(x-a)² + ...\n\nSince h'(a) = 0 and h''(a) = 0:\nh'(x) ≈ (1/2)h'''(a)(x-a)² + higher order terms\n\nh'''(x) = f''(x), so h'''(a) = f''(a)\n\nIf h'''(a) ≠ 0, then h'(x) doesn't change sign at x = a (same sign on both sides), so no extremum.\n\nFor h(x) to have an extremum at x = a, we need h'(x) to change sign, which requires f'(x) = |sin x|cos x to have a local extremum at x = a."
+        },
+        {
+          "step_idx": 4,
+          "title": "Find extrema of f'(x) = |sin x|cos x",
+          "content": "For x ∈ (0, π): |sin x| = sin x, so f'(x) = sin x cos x = (1/2)sin 2x\n- Derivative: cos 2x = 0 gives x = π/4, 3π/4\n- At x = π/4: local max of f'(x) = 1/2\n- At x = 3π/4: local min of f'(x) = -1/2\n\nFor x ∈ (π, 2π): |sin x| = -sin x, so f'(x) = -sin x cos x = -(1/2)sin 2x\n- Derivative: -cos 2x = 0 gives x = 5π/4, 7π/4\n- At x = 5π/4: local max of f'(x) = 1/2\n- At x = 7π/4: local min of f'(x) = -1/2\n\nAlso check continuity at x = nπ: At these points, sin x = 0, so f'(nπ) = 0.\nThese are local minima of |f'(x)| but we need to check if they are extrema of f'(x) itself.\n\nAt x = π: f'(x) transitions from -(1/2)sin 2x to (1/2)sin 2x pattern. Near π, f'(x) = -1/2 at 3π/4, then 0 at π, then -1/2 at some point... Actually at x = π, f'(x) = 0 and this is a local max (coming from negative values)."
+        },
+        {
+          "step_idx": 5,
+          "title": "Carefully enumerate all extrema of f'(x)",
+          "content": "Looking at f'(x) = |sin x|cos x for x > 0:\n\n- x = π/4: local max (value = 1/2)\n- x = π/2: local min (value = 0, since cos(π/2) = 0)\n- x = 3π/4: local max (value = 1/2 since sin(3π/4) > 0, cos(3π/4) < 0, so actually -1/2)... \n\nLet me recalculate: At x = 3π/4: |sin(3π/4)| = √2/2, cos(3π/4) = -√2/2\nf'(3π/4) = (√2/2)(-√2/2) = -1/2. This is a local MIN.\n\nAt x = π: f'(π) = |0|·(-1) = 0. Coming from -1/2, going to positive values. Local max.\nAt x = 5π/4: f'(x) = |sin(5π/4)|cos(5π/4) = (√2/2)(-√2/2) = -1/2. Local min.\nAt x = 3π/2: f'(3π/2) = 1·0 = 0. Local max.\nAt x = 7π/4: f'(7π/4) = (√2/2)(√2/2) = 1/2. Local max.\nAt x = 2π: f'(2π) = 0·1 = 0. Local min.\n\nPattern: extrema at π/4, π/2, 3π/4, π, 5π/4, 3π/2, 7π/4, 2π, ..."
+        },
+        {
+          "step_idx": 6,
+          "title": "List all positive a values in order",
+          "content": "The extrema of f'(x) = |sin x|cos x occur at:\na₁ = π/4\na₂ = π/2\na₃ = 3π/4\na₄ = π\na₅ = 5π/4\na₆ = 3π/2\na₇ = 7π/4\na₈ = 2π\n...and so on, with spacing of π/4"
+        },
+        {
+          "step_idx": 7,
+          "title": "Calculate the final answer",
+          "content": "a₆ = 3π/2\na₂ = π/2\n\na₆ - a₂ = 3π/2 - π/2 = π\n\n(100/π) × (a₆ - a₂) = (100/π) × π = 100"
+        }
+      ],
+      "final_answer": 100,
+      "feedback": "Attempt 2 had the correct approach. The key insight is that for h(x) to have a local extremum at x = a, f'(x) must have a local extremum at x = a. The extrema of f'(x) = |sin x|cos x occur at every multiple of π/4, giving a₁ = π/4, a₂ = π/2, a₃ = 3π/4, etc. Attempts 1 and 3 incorrectly identified fewer extrema points. The correct answer is 100.",
+      "revised": true,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 25.319668292999268
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Derive f(x) from f'(x) = |sin x| cos x",
+          "content": "Integrating, f(x) = (1/2) sin x |sin x| + K, where K is a constant. The constant cancels in f(t) - g(t)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Tangent line g(x)",
+          "content": "g(x) = f(a) + f'(a)(x - a), with f'(a) = |sin a| cos a. Thus, f(t) - g(t) = (1/2)[sin t |sin t| - sin a |sin a|] - |sin a| cos a (t - a)."
+        },
+        {
+          "step_idx": 2,
+          "title": "h(x) and extremum condition",
+          "content": "h'(x) = f(x) - g(x), h'(a) = 0 always. h''(x) = f'(x) - f'(a), h''(a) = 0 always. For local extremum, require f''(a) = 0 so the leading term in h'(x) is cubic."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute f''(x)",
+          "content": "f''(x) = sgn(sin x) cos 2x, where sin x ≠ 0. Set f''(a) = 0 implies cos 2a = 0 since |sgn(sin a)| = 1. Thus, 2a = π/2 + kπ, a = (2k + 1)π/4 for k = 0,1,2,..."
+        },
+        {
+          "step_idx": 4,
+          "title": "Verify extremum",
+          "content": "At these a, f'''(a) = -2 sgn(sin a) sin 2a = ∓2 (since sin 2a = ±1), ≠ 0. Thus, h'(x) ≈ (1/6) f'''(a) (x - a)^3 changes sign, confirming local max or min."
+        },
+        {
+          "step_idx": 5,
+          "title": "Find a_n and compute",
+          "content": "a_n = (2n - 1)π/4. a_2 = 3π/4, a_6 = 11π/4. a_6 - a_2 = 2π. (100/π)(2π) = 200."
+        }
+      ],
+      "final_answer": 200,
+      "feedback": "None of the attempts were correct: Attempt 1 misinterpreted the tangent and DE; Attempts 2 and 3 ignored |sin x| and used wrong condition h(a)=0 instead of extremum via f''(a)=0. Derived everything from scratch.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 67.73299527168274
+    },
+    "GPT-5": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 121.6219413280487
+    },
+    "GPT-5-Codex": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 24.19423770904541
+    }
+  },
+  "self_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Find f(x) by integrating f'(x)",
+        "content": "Given f'(x) = |sin x| cos x.\n\nFor x ∈ [2kπ, (2k+1)π], sin x ≥ 0, so |sin x| = sin x:\nf'(x) = sin x cos x = (1/2)sin 2x\n\nFor x ∈ [(2k+1)π, (2k+2)π], sin x ≤ 0, so |sin x| = -sin x:\nf'(x) = -sin x cos x = -(1/2)sin 2x\n\nIntegrating: f(x) = (1/2)sin x |sin x| + C (this can be verified by differentiation)"
+      },
+      {
+        "step_idx": 1,
+        "title": "Set up the tangent line g(x) and h(x)",
+        "content": "The tangent line at (a, f(a)) is:\ng(x) = f(a) + f'(a)(x - a) = f(a) + |sin a| cos a · (x - a)\n\nh(x) = ∫₀ˣ [f(t) - g(t)] dt\n\nBy the Fundamental Theorem of Calculus:\nh'(x) = f(x) - g(x) = f(x) - f(a) - |sin a| cos a · (x - a)"
+      },
+      {
+        "step_idx": 2,
+        "title": "Analyze critical points of h(x)",
+        "content": "At x = a:\nh'(a) = f(a) - f(a) - |sin a| cos a · 0 = 0\n\nSo x = a is always a critical point of h(x).\n\nh''(x) = f'(x) - |sin a| cos a = f'(x) - f'(a)\n\nAt x = a: h''(a) = f'(a) - f'(a) = 0\n\nSince both h'(a) = 0 and h''(a) = 0, we need higher-order analysis."
+      },
+      {
+        "step_idx": 3,
+        "title": "Determine condition for extremum",
+        "content": "h'''(x) = f''(x)\n\nFor h(x) to have an extremum at x = a, we need h'(x) to change sign at x = a.\n\nWith h'(a) = 0 and h''(a) = 0, if h'''(a) ≠ 0, then h'(x) ≈ (1/2)h'''(a)(x-a)² near a, which doesn't change sign.\n\nFor a sign change, we need h'''(a) = f''(a) = 0 and h''''(a) ≠ 0.\n\nAlternatively, if f'(x) - f'(a) changes sign at x = a (meaning f'(x) has a local extremum at a), then h'(x) changes sign."
+      },
+      {
+        "step_idx": 4,
+        "title": "Compute f''(x) and find where f''(a) = 0",
+        "content": "For sin x > 0: f'(x) = sin x cos x = (1/2)sin 2x\nf''(x) = cos 2x\n\nFor sin x < 0: f'(x) = -sin x cos x = -(1/2)sin 2x\nf''(x) = -cos 2x\n\nSo f''(x) = sgn(sin x) · cos 2x where sin x ≠ 0.\n\nFor f''(a) = 0 with sin a ≠ 0, we need cos 2a = 0.\nThis gives 2a = π/2 + kπ, so a = (2k+1)π/4 for k = 0, 1, 2, ..."
+      },
+      {
+        "step_idx": 5,
+        "title": "Verify these are extrema of h(x)",
+        "content": "At a = (2k+1)π/4, we have cos 2a = 0, so sin 2a = ±1.\n\nf'''(x) = derivative of f''(x) = sgn(sin x) · (-2 sin 2x) = -2 sgn(sin x) sin 2x\n\nAt these points: f'''(a) = -2 sgn(sin a) · (±1) ≠ 0\n\nh''''(a) = f'''(a) ≠ 0\n\nSince h'(a) = h''(a) = h'''(a) = 0 but h''''(a) ≠ 0, we have h'(x) ≈ (1/6)h''''(a)(x-a)³ near a, which DOES change sign.\n\nThus h(x) has an extremum at each a = (2k+1)π/4."
+      },
+      {
+        "step_idx": 6,
+        "title": "List the sequence aₙ and compute the answer",
+        "content": "The positive values where h has extrema are:\na₁ = π/4 (k=0)\na₂ = 3π/4 (k=1)\na₃ = 5π/4 (k=2)\na₄ = 7π/4 (k=3)\na₅ = 9π/4 (k=4)\na₆ = 11π/4 (k=5)\n\nIn general: aₙ = (2n-1)π/4\n\na₆ - a₂ = 11π/4 - 3π/4 = 8π/4 = 2π\n\nFinal answer: (100/π) × (a₆ - a₂) = (100/π) × 2π = 200"
+      }
+    ],
+    "final_answer": 200,
+    "rationale": "Grok 4's solution correctly identifies that f''(a) = 0 is needed for an extremum, which occurs at a = (2k+1)π/4. The sequence aₙ = (2n-1)π/4 gives a₂ = 3π/4 and a₆ = 11π/4, so a₆ - a₂ = 2π. Claude's answer of 100 incorrectly identifies extrema at multiples of π/4 including even multiples, but f''(x) = 0 requires cos 2x = 0, which only happens at odd multiples of π/4.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 20.692003965377808
+  },
+  "cross": {
+    "Claude Opus 4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find f(x) and the tangent line g(x)",
+          "content": "Given f'(x) = |sin x|cos x. The tangent line at point (a, f(a)) on y = f(x) has equation: g(x) = f'(a)(x - a) + f(a) = |sin a|cos a · (x - a) + f(a)"
+        },
+        {
+          "step_idx": 1,
+          "title": "Set up h(x) and find h'(x)",
+          "content": "h(x) = ∫₀ˣ {f(t) - g(t)} dt. By the Fundamental Theorem of Calculus: h'(x) = f(x) - g(x). At x = a: h'(a) = f(a) - g(a) = f(a) - [|sin a|cos a · (a - a) + f(a)] = 0. So x = a is always a critical point."
+        },
+        {
+          "step_idx": 2,
+          "title": "Analyze h''(x) for extrema conditions",
+          "content": "h''(x) = f'(x) - g'(x) = f'(x) - f'(a) = |sin x|cos x - |sin a|cos a. At x = a: h''(a) = 0. Since h'(a) = 0 and h''(a) = 0, we need higher order analysis."
+        },
+        {
+          "step_idx": 3,
+          "title": "Determine when h has local extremum at x = a",
+          "content": "Let F(x) = f(x) - g(x). Then F(a) = 0 and F'(a) = 0. For h to have an extremum at x = a, F(x) must change sign at x = a. This happens when the first non-zero derivative of F at a is of odd order, or when f' has a discontinuity in its derivative at a."
+        },
+        {
+          "step_idx": 4,
+          "title": "Case 1: Interior points where sin a ≠ 0",
+          "content": "For sin a > 0: f'(x) = sin x cos x = ½sin 2x, so f''(x) = cos 2x. For sin a < 0: f'(x) = -sin x cos x = -½sin 2x, so f''(x) = -cos 2x. F''(a) = f''(a). If f''(a) ≠ 0, then F(x) ≈ ½f''(a)(x-a)² near a, which doesn't change sign. So we need f''(a) = 0, i.e., cos 2a = 0. This gives a = π/4, 3π/4, 5π/4, 7π/4, etc. (all π/4 + nπ/2 for n ≥ 0). At these points, f'''(a) ≠ 0, so F changes sign."
+        },
+        {
+          "step_idx": 5,
+          "title": "Case 2: Boundary points a = nπ (n ≥ 1)",
+          "content": "At a = nπ, sin a = 0, so f'(a) = 0 and g(x) = f(a) (horizontal line). The function f(x) behaves like ½sin²x or -½sin²x on either side of nπ, with opposite signs. So f(x) - f(a) changes sign across a = nπ, meaning h has a local extremum there."
+        },
+        {
+          "step_idx": 6,
+          "title": "List all positive a values in order",
+          "content": "Combining both cases: {π/4, 3π/4, 5π/4, 7π/4, 9π/4, ...} ∪ {π, 2π, 3π, ...}. Ordering: a₁ = π/4, a₂ = 3π/4, a₃ = π, a₄ = 5π/4, a₅ = 7π/4, a₆ = 2π, a₇ = 9π/4, ..."
+        },
+        {
+          "step_idx": 7,
+          "title": "Calculate a₆ - a₂",
+          "content": "a₆ = 2π, a₂ = 3π/4. a₆ - a₂ = 2π - 3π/4 = 8π/4 - 3π/4 = 5π/4"
+        },
+        {
+          "step_idx": 8,
+          "title": "Calculate final answer",
+          "content": "(100/π) × (a₆ - a₂) = (100/π) × (5π/4) = 100 × 5/4 = 125"
+        }
+      ],
+      "final_answer": 125,
+      "feedback": "My original solution missed the critical points at a = nπ where f' is not smooth (sin a = 0). At these points, the tangent is horizontal but f(x) - f(a) changes sign across x = a, making them valid extrema of h. After including these points, the ordered sequence becomes π/4, 3π/4, π, 5π/4, 7π/4, 2π, ... giving a₂ = 3π/4 and a₆ = 2π. The corrected answer is 125, matching GPT-5 and GPT-5-Codex.",
+      "revised": true,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 20.451388835906982
+    },
+    "Grok 4 Fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Identify f(x) and tangent g(x)",
+          "content": "Given f'(x) = |sin x| cos x. On intervals where sin x ≥ 0, f(x) = (1/2) sin² x + C_k; where sin x < 0, f(x) = -(1/2) sin² x + C_k, with constants chosen for continuity and differentiability, yielding f continuous and f' continuous everywhere. The tangent at a is g(x) = f(a) + f'(a)(x - a)."
+        },
+        {
+          "step_idx": 1,
+          "title": "Set up h(x) and h'(x)",
+          "content": "h(x) = ∫₀^x [f(t) - g(t)] dt, so h'(x) = f(x) - g(x). Then h'(a) = 0 and h''(x) = f'(x) - f'(a), so h''(a) = 0 where defined. Extrema at x = a occur when h'(x) changes sign at a."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find interior points where f''(a) = 0",
+          "content": "Where sin a ≠ 0, f''(x) = ± cos 2x (sign depending on interval). f''(a) = 0 when cos 2a = 0, so 2a = π/2 + kπ, a = π/4 + k π/2 for k ≥ 0. At these points, f'''(a) = ∓2 sin 2a = ∓2(±1) ≠ 0, leading to h'(x) ≈ (1/6) f'''(a) (x - a)^3, which changes sign."
+        },
+        {
+          "step_idx": 3,
+          "title": "Check boundary points a = kπ (k ≥ 1)",
+          "content": "At a = kπ, f'(a) = 0, g(x) = f(a) (horizontal). Near a = π, h'(x) = f(x) - f(π) ≈ (1/2)(π - x)^2 > 0 for x < π and ≈ -(1/2)(x - π)^2 < 0 for x > π, changing from + to -, a local max. Similarly for other kπ."
+        },
+        {
+          "step_idx": 4,
+          "title": "List positive a in increasing order",
+          "content": "Points: π/4 + m π/2 (m ≥ 0) and nπ (n ≥ 1). Ordered: a₁ = π/4, a₂ = 3π/4, a₃ = π, a₄ = 5π/4, a₅ = 7π/4, a₆ = 2π."
+        },
+        {
+          "step_idx": 5,
+          "title": "Compute the required value",
+          "content": "a₆ - a₂ = 2π - 3π/4 = 5π/4. Then (100/π) × (5π/4) = 100 × 5/4 = 125."
+        }
+      ],
+      "final_answer": 125,
+      "feedback": "My original solution misinterpreted g(x) as from a DE like y' = g y, leading to incorrect h(x) expression; it ignored the tangent line definition. Claude missed extrema at kπ due to non-differentiability there, getting 200. GPT models correctly included them, yielding 125, which matches analysis showing sign change of h' at those points. Revised to follow GPT approach.",
+      "revised": true,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 47.3262357711792
+    },
+    "GPT-5": {
+      "error": "Could not extract JSON from response:\n",
+      "final_answer": null,
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 83.89075422286987
+    },
+    "GPT-5-Codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Antiderivative of f'",
+          "content": "On intervals where sin x>0 (2kπ<x<(2k+1)π), f'(x)=sin x cos x=½ sin 2x, giving f(x)=½ sin²x after matching constants. Where sin x<0 ((2k-1)π<x<2kπ), f'(x)=−½ sin 2x, yielding f(x)=−½ sin²x, with continuity ensuring f(nπ)=0 for all integers n."
+        },
+        {
+          "step_idx": 1,
+          "title": "Extremum condition for h at x=a",
+          "content": "With g(x)=f(a)+f'(a)(x−a), h'(x)=f(x)−g(x) and h'(a)=0. An extremum requires the first nonzero Taylor term of f(x)−g(x) about a to be odd order or a sign change due to non-smoothness. For sin a≠0, f''(a)=±cos 2a; extremum arises when cos 2a=0 (a=π/4+kπ/2), where f'''(a)≠0 so the sign changes. For sin a=0 (a=kπ), f is C¹ but not C², and f(x) switches sign across a, also giving extrema."
+        },
+        {
+          "step_idx": 2,
+          "title": "Ordering qualifying a and computing the target expression",
+          "content": "Positive solutions are {π/4+kπ/2 | k≥0} ∪ {kπ | k≥1}. In increasing order: π/4, 3π/4, π, 5π/4, 7π/4, 2π, … Hence a₂=3π/4 and a₆=2π. Therefore (100/π)(a₆−a₂) = (100/π)(5π/4) = 125."
+        }
+      ],
+      "final_answer": 125,
+      "feedback": "My solution and GPT-5’s agree, correctly including a=kπ along with a=π/4+kπ/2. Claude omitted the kπ points and thus misordered the sequence, while Grok solved a different problem altogether. No revisions were needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 15.563626766204834
+    }
+  },
+  "cross_aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "Find f(x) from f'(x)",
+        "content": "Given f'(x) = |sin x| cos x. For x ∈ (2kπ, (2k+1)π) where sin x > 0: f'(x) = sin x cos x = ½ sin 2x, so f(x) = -¼ cos 2x + C = ½ sin²x + C'. For x ∈ ((2k-1)π, 2kπ) where sin x < 0: f'(x) = -sin x cos x = -½ sin 2x, so f(x) = ¼ cos 2x + C = -½ sin²x + C'. With continuity at x = nπ (where sin²(nπ) = 0), we can take f(x) = ½ sin²x for sin x ≥ 0 and f(x) = -½ sin²x for sin x < 0, with f(nπ) = 0."
+      },
+      {
+        "step_idx": 1,
+        "title": "Set up tangent line and h(x)",
+        "content": "The tangent line at (a, f(a)) is g(x) = f(a) + f'(a)(x - a). Then h(x) = ∫₀ˣ [f(t) - g(t)] dt. By the Fundamental Theorem: h'(x) = f(x) - g(x). At x = a: h'(a) = f(a) - g(a) = f(a) - f(a) - f'(a)·0 = 0. So x = a is always a critical point of h."
+      },
+      {
+        "step_idx": 2,
+        "title": "Analyze conditions for extremum",
+        "content": "h''(x) = f'(x) - f'(a), so h''(a) = 0. For h to have a local extremum at x = a, we need h'(x) = f(x) - g(x) to change sign at x = a. Let F(x) = f(x) - g(x). Then F(a) = 0, F'(a) = 0. We need to determine when F changes sign at a."
+      },
+      {
+        "step_idx": 3,
+        "title": "Case 1: Interior points (sin a ≠ 0)",
+        "content": "For sin a > 0: f(x) = ½ sin²x near a, so f''(x) = cos 2x. For sin a < 0: f(x) = -½ sin²x, so f''(x) = -cos 2x. Near x = a, F(x) ≈ ½ f''(a)(x-a)². If f''(a) ≠ 0, F doesn't change sign. So we need f''(a) = 0, i.e., cos 2a = 0, giving a = π/4 + kπ/2 for k ≥ 0. At these points, f'''(a) ≠ 0 (since f'''(x) = ∓2 sin 2x and sin 2a = ±1 ≠ 0), so F(x) ≈ (1/6)f'''(a)(x-a)³ which changes sign."
+      },
+      {
+        "step_idx": 4,
+        "title": "Case 2: Boundary points (a = nπ for n ≥ 1)",
+        "content": "At a = nπ, sin a = 0, so f'(a) = 0 and g(x) = f(a) = 0 (horizontal line). Near a = nπ, f(x) = ½ sin²x on one side and f(x) = -½ sin²x on the other (depending on which interval). So f(x) - g(x) = f(x) changes from positive to negative (or vice versa) as x crosses nπ. This means h'(x) changes sign, giving an extremum."
+      },
+      {
+        "step_idx": 5,
+        "title": "List all qualifying positive values of a",
+        "content": "From Case 1: a = π/4, 3π/4, 5π/4, 7π/4, 9π/4, ... (i.e., π/4 + kπ/2 for k = 0, 1, 2, ...). From Case 2: a = π, 2π, 3π, ... Combining and ordering: a₁ = π/4, a₂ = 3π/4, a₃ = π, a₄ = 5π/4, a₅ = 7π/4, a₆ = 2π, a₇ = 9π/4, ..."
+      },
+      {
+        "step_idx": 6,
+        "title": "Compute the final answer",
+        "content": "a₆ = 2π, a₂ = 3π/4. Therefore a₆ - a₂ = 2π - 3π/4 = 8π/4 - 3π/4 = 5π/4. The answer is (100/π) × (5π/4) = 100 × 5/4 = 125."
+      }
+    ],
+    "final_answer": 125,
+    "rationale": "All three complete solutions agree on the answer 125. The key insights are: (1) h has a critical point at x=a always, (2) for an extremum, we need h'(x) to change sign, (3) this happens when f''(a)=0 (giving a = π/4 + kπ/2) or at boundary points a = nπ where f has a corner. The ordering gives a₂ = 3π/4 and a₆ = 2π, yielding the final answer 125.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 19.573452949523926
+  }
+}

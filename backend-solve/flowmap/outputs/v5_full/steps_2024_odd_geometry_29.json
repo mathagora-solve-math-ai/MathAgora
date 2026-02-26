@@ -1,0 +1,169 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_geometry_29",
+    "prob_area": "기하",
+    "prob_point": "4",
+    "prob_desc": "29. 양수 $c$에 대하여 두 점 $\\mathrm{F}(c,0),\\ \\mathrm{F'}(-c,0)$을 초점으로 하고, 주축의 길이가 6인 쌍곡선이 있다. 이 쌍곡선 위에 다음 조건을 만족시키는 서로 다른 두 점 $\\mathrm{P,\\ Q}$가 존재하도록 하는 모든 $c$의 값의 합을 구하시오. [4점]\n> (가) 점 $\\mathrm{P}$는 제1사분면 위에 있고, 점 $\\mathrm{Q}$는 직선 $\\mathrm{PF'}$ 위에 있다.\n> (나) 삼각형 $\\mathrm{PFF'}$는 이등변삼각형이다. \n> (다) 삼각형 $\\mathrm{PQF}$의 둘레의 길이는 28이다.",
+    "answer": "11"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Set up hyperbola",
+        "body": "With transverse axis length 6 we have a=3, and the hyperbola with foci F(c,0), F'(-c,0) is x^2/9 - y^2/b^2 = 1 with b^2 = c^2 - 9; hence c>3. Any point P on the right branch can be written as P = (3 sec θ, b tan θ) for θ ∈ (0, π/2). Distances to the foci are PF = √((x-c)^2 + y^2), PF' = √((x+c)^2 + y^2), and FF' = 2c."
+      },
+      {
+        "title": "Apply isosceles condition",
+        "body": "Triangle PFF' is isosceles. Possibilities: (i) PF = FF' = 2c, or (ii) PF' = FF' = 2c (PF = PF' is impossible because it would force x=0). Using PF^2 = c^2 sec^2 θ - 6c sec θ + 9 and PF'^2 = c^2 sec^2 θ + 6c sec θ + 9, solving PF = 2c gives sec θ = 2 + 3/c; solving PF' = 2c gives sec θ = 2 - 3/c. Both correspond to c>3 and yield valid P in the first quadrant, so both cases must be checked."
+      },
+      {
+        "title": "Case PF = FF'",
+        "body": "Here sec θ = 2 + 3/c. This gives P = (3 sec θ, b tan θ) with PF = 2c and PF' = 2(c+3). Parameterizing the line F'P as F' + λ(P−F'), the second intersection with the hyperbola occurs at λ_Q = (c−3)/(c+9), leading to Q ≠ P. Distances along the line yield PQ = (1−λ_Q)·PF' = 24(c+3)/(c+9). Using the known angle at F' from triangle PFF' (cos = (c+3)/(2c)) and F'Q = λ_Q·PF' = 2(c^2−9)/(c+9), the law of cosines in triangle FF'Q gives FQ = 2(c^2 + 3c + 18)/(c+9). Perimeter PF + PQ + FQ = 2c + 24(c+3)/(c+9) + 2(c^2 + 3c + 18)/(c+9) = 28 simplifies to 4c^2 + 20c − 144 = 0, so c = 4 (only positive root exceeding 3)."
+      },
+      {
+        "title": "Case PF' = FF'",
+        "body": "Now sec θ = 2 − 3/c, giving PF = 2(c−3) and PF' = 2c. The same line-parameter method yields λ_Q = (c^2−9)/(c^2 + 12c − 9), so PQ = (1−λ_Q)·PF' = 24 c^2 /(c^2 + 12c − 9). From triangle PFF', cos ∠PF'F = (c^2 + 6c − 9)/(2c^2). With F'Q = λ_Q · PF' = 2c(c^2 − 9)/(c^2 + 12c − 9), applying the law of cosines in FF'Q gives FQ = 2(c^3 + 3c^2 + 27c − 27)/(c^2 + 12c − 9). The perimeter condition 2(c−3) + 24 c^2 /(c^2 + 12c − 9) + 2(c^3 + 3c^2 + 27c − 27)/(c^2 + 12c − 9) = 28 reduces to c^3 + 5c^2 − 93c + 63 = 0, whose only root greater than 3 is c = 7."
+      },
+      {
+        "title": "Combine results",
+        "body": "Both cases yield admissible configurations only when c = 4 or c = 7, so the sum of all such positive c values is 4 + 7 = 11."
+      },
+      {
+        "title": "Final Answer",
+        "body": "11"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Set up the hyperbola",
+        "body": "The hyperbola has center at the origin with transverse axis length 6, so a=3. With foci F(c,0), F'(-c,0), we have b^2=c^2-9 and equation x^2/9 - y^2/b^2 = 1. Hence c>3."
+      },
+      {
+        "title": "Identify isosceles possibilities",
+        "body": "Triangle PFF' is isosceles. PF=PF' is impossible on this hyperbola (that would force x=0). Thus the only possibilities are: Case A: PF=FF'=2c, i.e., PF=2c. Case B: PF'=FF'=2c, i.e., PF'=2c. For c>3, each case yields a point P in the first quadrant on the hyperbola: solving with the hyperbola gives x=6+9/c (Case A) and x=6-9/c (Case B), both >3, and y>0."
+      },
+      {
+        "title": "Focal-chord and distance relations",
+        "body": "Let Q be the other intersection of the line PF' with the hyperbola. Because P is in the first quadrant and the line has positive slope through F'(-c,0), Q lies on the left branch in the second quadrant, and along the line the order is F'–Q–P. For any point R on the hyperbola: on the right branch, F'R = FR + 6; on the left branch, FR = F'R + 6. Also, collinearity and the order F'–Q–P give F'P = F'Q + QP."
+      },
+      {
+        "title": "Perimeter in Case A (PF=2c)",
+        "body": "Here FP=2c and, since P is on the right branch, F'P=FP+6=2c+6. For Q on the left branch, FQ=F'Q+6. The perimeter S=FP+FQ+PQ = 2c + (F'Q+6) + PQ = 2c+6 + (F'Q+PQ) = 2c+6+F'P = 2c+6+(2c+6) = 4c+12. Setting S=28 gives 4c+12=28 ⇒ c=4, which satisfies c>3."
+      },
+      {
+        "title": "Perimeter in Case B (PF'=2c)",
+        "body": "Here F'P=2c and, since P is on the right branch, FP=F'P−6=2c−6. For Q on the left branch, FQ=F'Q+6. Then S=FP+FQ+PQ = (2c−6) + (F'Q+6) + PQ = 2c + (F'Q+PQ) = 2c + F'P = 2c + 2c = 4c. Setting S=28 gives 4c=28 ⇒ c=7, which satisfies c>3."
+      },
+      {
+        "title": "Sum all valid c",
+        "body": "The valid values are c=4 and c=7. Their sum is 11."
+      },
+      {
+        "title": "Final Answer",
+        "body": "11"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Set up the hyperbola equation",
+        "body": "The hyperbola has foci F(c,0) and F'(-c,0), with major axis length 2a = 6, so a = 3.\nThe hyperbola equation is x²/9 - y²/b² = 1 where b² = c² - 9.\nFor any point P on the hyperbola: |PF - PF'| = 6."
+      },
+      {
+        "title": "Analyze isosceles triangle PFF' cases",
+        "body": "Since P is in the first quadrant and triangle PFF' is isosceles, we have three possible cases:\n- Case 1: PF = PF' (P on the y-axis, but P must be in first quadrant on hyperbola, impossible)\n- Case 2: PF = FF' = 2c\n- Case 3: PF' = FF' = 2c"
+      },
+      {
+        "title": "Case 2: PF = 2c",
+        "body": "If PF = 2c, then from |PF' - PF| = 6:\nPF' - 2c = 6 (since P is on the right branch in first quadrant)\nPF' = 2c + 6\n\nPoint Q is on line PF' and on the hyperbola.\nPerimeter of triangle PQF = PQ + QF + PF = PQ + QF + 2c"
+      },
+      {
+        "title": "Case 2: Calculate perimeter using hyperbola property",
+        "body": "For Q on the hyperbola: |QF - QF'| = 6\nSince Q is on line PF', let's say QF' = PF' - PQ = 2c + 6 - PQ (if Q is between P and F')\n\nIf Q is on the left branch: QF - QF' = 6, so QF = QF' + 6\nPerimeter = PQ + QF + 2c = PQ + (QF' + 6) + 2c\n= PQ + (2c + 6 - PQ) + 6 + 2c = 4c + 12\n\nSetting 4c + 12 = 28: c = 4"
+      },
+      {
+        "title": "Case 2: Verify c = 4",
+        "body": "For c = 4: PF = 8, PF' = 14\nUsing PF' = 14, FF' = 8, and checking if such P exists in first quadrant.\nb² = 16 - 9 = 7\n\nFrom PF = 8 and P on hyperbola x²/9 - y²/7 = 1:\nUsing focal radius: PF = ex - a = (c/3)x - 3 = (4/3)x - 3 = 8\nSo x = 33/4 = 8.25 > 3 ✓\n\nQ must be distinct from P and on left branch - need to verify Q exists.\nQ on line PF' extended to left branch is possible. ✓"
+      },
+      {
+        "title": "Case 3: PF' = 2c",
+        "body": "If PF' = 2c, then from PF' - PF = 6:\n2c - PF = 6, so PF = 2c - 6 (requires c > 3)\n\nFor Q on line PF' (extended beyond P or between F' and P):\nIf Q is on right branch: QF' - QF = 6"
+      },
+      {
+        "title": "Case 3: Q on right branch, beyond P",
+        "body": "If Q is on the right branch beyond P from F':\nQF' = PF' + PQ = 2c + PQ\nQF = QF' - 6 = 2c + PQ - 6\n\nPerimeter = PQ + QF + PF = PQ + (2c + PQ - 6) + (2c - 6)\n= 2PQ + 4c - 12 = 28\nSo PQ = 20 - 2c\n\nNeed PQ > 0: c < 10, and c > 3\nNeed to verify such Q exists distinct from P."
+      },
+      {
+        "title": "Case 3: Q between F' and P on left branch",
+        "body": "If Q is on left branch between F' and P:\nQF' = PF' - PQ = 2c - PQ\nQF - QF' = 6, so QF = 2c - PQ + 6\n\nPerimeter = PQ + QF + PF = PQ + (2c - PQ + 6) + (2c - 6) = 4c = 28\nSo c = 7"
+      },
+      {
+        "title": "Verify c = 7 for Case 3",
+        "body": "For c = 7: PF' = 14, PF = 8, b² = 49 - 9 = 40\nCheck P exists: PF = (7/3)x - 3 = 8, so x = 33/7 ≈ 4.71 > 3 ✓\n\nFor isosceles triangle: need to verify PF' = FF' = 14, but FF' = 2c = 14 ✓\nQ on left branch with QF' = 2c - PQ must exist with PQ > 0.\nThis is valid. ✓"
+      },
+      {
+        "title": "Sum all valid values of c",
+        "body": "Valid values of c found:\n- Case 2: c = 4\n- Case 3: c = 7\n\nSum = 4 + 7 = 11"
+      },
+      {
+        "title": "Final Answer",
+        "body": "11"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Hyperbola Properties",
+        "body": "Given the transverse axis length is 6, we have $2a = 6$, so $a = 3$. The foci are $F(c, 0)$ and $F'(-c, 0)$. According to the definition of a hyperbola, for any point $X$ on the curve, the absolute difference of distances to the foci is constant: $|XF - XF'| = 2a = 6$."
+      },
+      {
+        "title": "Analyze Point Positions",
+        "body": "Point $P$ is in the first quadrant (right branch), so $PF' > PF$ and $PF' - PF = 6$. Point $F'$ is the left focus, located 'inside' the left branch, while $P$ is on the right branch. The line segment connecting $F'$ and $P$ must intersect the left branch at a point $Q$. Thus, the points are collinear in the order $F', Q, P$. For point $Q$ on the left branch, $QF$ is the distance to the far focus, so $QF - QF' = 6$."
+      },
+      {
+        "title": "Calculate PF' Length",
+        "body": "The perimeter of $\\triangle PQF$ is given as 28. The perimeter is $PQ + QF + FP$. Since the points $F', Q, P$ are collinear, $PQ = PF' - QF'$. Substituting this, the perimeter is $(PF' - QF') + QF + FP$. Since $QF - QF' = 6$, we replace $QF$ with $QF' + 6$. Then, Perimeter = $PF' - QF' + (QF' + 6) + FP = PF' + 6 + FP$. Using the hyperbola definition for $P$ ($FP = PF' - 6$), the perimeter becomes $PF' + 6 + (PF' - 6) = 2PF'$. Therefore, $2PF' = 28$, which implies $PF' = 14$."
+      },
+      {
+        "title": "Determine Triangle Sides",
+        "body": "We have $PF' = 14$. Using the definition $PF' - PF = 6$, we find $PF = 14 - 6 = 8$. The third side of $\\triangle PFF'$ is the distance between foci, $F'F = 2c$. Thus, the side lengths of $\\triangle PFF'$ are $14$, $8$, and $2c$."
+      },
+      {
+        "title": "Solve for c",
+        "body": "Since $\\triangle PFF'$ is an isosceles triangle, two of its sides must be equal. There are two possible cases for the side $2c$:\n1. $2c = 14 \\implies c = 7$. (Triangle sides 14, 8, 14)\n2. $2c = 8 \\implies c = 4$. (Triangle sides 14, 8, 8)\nThe case $14=8$ is impossible. We must check the triangle inequality and existence conditions. For $c=7$, $8+14 > 14$ (valid). For $c=4$, $8+8 > 14$ (valid). Also $c > a=3$ holds for both."
+      },
+      {
+        "title": "Calculate Final Sum",
+        "body": "Both $c=7$ and $c=4$ yield valid geometric configurations with $P$ in the first quadrant. The sum of all possible values of $c$ is $7 + 4 = 11$."
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Identify hyperbola parameters",
+        "body": "The hyperbola has foci at F(c, 0) and F'(-c, 0), with transverse axis length 6, so 2a = 6 and a = 3. Thus, c > 3 and b² = c² - 9. Points on the right branch satisfy PF' - PF = 6."
+      },
+      {
+        "title": "Determine isosceles triangle condition",
+        "body": "Triangle PFF' is isosceles with sides PF, PF' = PF + 6, and FF' = 2c. Possible equalities: PF = 2c (case 1) or PF' = 2c so PF = 2c - 6 (case 2). For case 1, x_p = 6 + 9/c. For case 2, x_p = 6 - 9/c. Both yield points P in the first quadrant for c > 3."
+      },
+      {
+        "title": "Parametrize line PF' and find Q",
+        "body": "Parametrize line: (X, Y) = (-c, 0) + t (x_p + c, y_p). Intersections with hyperbola give quadratic in t with roots t = 1 (P) and t_q = b² / (c² + 2c x_p + 9), where 0 < t_q < 1. Q is on the left branch (x_q < -3). Distance PQ = (1 - t_q) PF'."
+      },
+      {
+        "title": "Compute perimeter of triangle PQF",
+        "body": "QF' = t_q PF', and since Q is on left branch, QF = QF' + 6 = t_q PF' + 6. Perimeter = PQ + PF + QF = (1 - t_q) PF' + PF + t_q PF' + 6 = PF' + PF + 6 = (PF + 6) + PF + 6 = 2 PF + 12."
+      },
+      {
+        "title": "Solve for c using perimeter = 28",
+        "body": "Set 2 PF + 12 = 28, so PF = 8. Case 1: 2c = 8 ⇒ c = 4. Case 2: 2c - 6 = 8 ⇒ c = 7. Both satisfy all conditions: P in first quadrant, Q distinct on left branch and on PF', perimeter 28."
+      },
+      {
+        "title": "Sum of all such c",
+        "body": "The values are c = 4 and c = 7, sum = 11."
+      },
+      {
+        "title": "Final Answer",
+        "body": "11"
+      }
+    ]
+  }
+}

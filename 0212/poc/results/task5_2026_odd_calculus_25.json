@@ -1,0 +1,3687 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T04:02:52Z",
+    "ended_at_utc": "2026-02-14T04:03:16Z",
+    "elapsed_seconds": 23.541,
+    "problem_tag": "2026_odd_calculus_25",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 1,
+    "n_resumed_runs_from_flat_csv": 71
+  },
+  "problem": {
+    "id": "2026_odd_calculus_25",
+    "label": "2026_odd_calculus_25 (미적분, 3점)",
+    "gold_answer": "3"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.851952,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 n^2로 정규화"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.076246,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 a_n/n으로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.326612,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 부등식에서 a_n의 성장률 파악",
+                "극한식을 a_n/n로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad\\text{(③)}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.851952,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 n^2로 정규화"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.076246,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 a_n/n으로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.326612,
+              "step_count": 2,
+              "step_titles": [
+                "주어진 부등식에서 a_n의 성장률 파악",
+                "극한식을 a_n/n로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad\\text{(③)}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "a_n의 성장률(비율) 파악": 2,
+            "극한식을 n^2로 정규화": 1,
+            "극한식을 a_n/n으로 정리": 1,
+            "주어진 부등식에서 a_n의 성장률 파악": 1,
+            "극한식을 a_n/n로 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 성장률(비율) 파악": 2,
+            "극한식을 n^2로 정규화": 1,
+            "극한식을 a_n/n으로 정리": 1,
+            "주어진 부등식에서 a_n의 성장률 파악": 1,
+            "극한식을 a_n/n로 정리": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.435531,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리 및 전략 수립",
+                "하한의 점근적 분석",
+                "샌드위치 정리로 a_n의 점근 행동 결정",
+                "극한 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.695022,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 확인",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.321876,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 분석 및 극한 추정",
+                "극한식 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.435531,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리 및 전략 수립",
+                "하한의 점근적 분석",
+                "샌드위치 정리로 a_n의 점근 행동 결정",
+                "극한 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.695022,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 확인",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.321876,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 분석 및 극한 추정",
+                "극한식 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리 및 전략 수립": 1,
+            "하한의 점근적 분석": 1,
+            "샌드위치 정리로 a_n의 점근 행동 결정": 1,
+            "극한 계산": 1,
+            "부등식 양변의 극한 분석": 1,
+            "a_n의 점근적 행동 확인": 1,
+            "극한값 계산": 2,
+            "부등식 분석 및 극한 추정": 1,
+            "극한식 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 전략 수립": 1,
+            "하한의 점근적 분석": 1,
+            "샌드위치 정리로 a_n의 점근 행동 결정": 1,
+            "극한 계산": 1,
+            "부등식 양변의 극한 분석": 1,
+            "a_n의 점근적 행동 확인": 1,
+            "극한값 계산": 2,
+            "부등식 분석 및 극한 추정": 1,
+            "극한식 정리": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.119545,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기",
+                "주어진 식의 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.105023,
+              "step_count": 2,
+              "step_titles": [
+                "수열의 극한값 분석",
+                "식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.637976,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기",
+                "주어진 식의 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.119545,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기",
+                "주어진 식의 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.105023,
+              "step_count": 2,
+              "step_titles": [
+                "수열의 극한값 분석",
+                "식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.637976,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기",
+                "주어진 식의 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기": 2,
+            "주어진 식의 극한값 계산": 2,
+            "수열의 극한값 분석": 1,
+            "식의 변형 및 최종 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기": 2,
+            "주어진 식의 극한값 계산": 2,
+            "수열의 극한값 분석": 1,
+            "식의 변형 및 최종 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 71.44672,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현 재구성",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 95.820444,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현에 대입",
+                "n²로 나누어 극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 93.539956,
+              "step_count": 3,
+              "step_titles": [
+                "수열의 점근적 거동 분석",
+                "극한 식의 점근적 계산",
+                "극한의 일치성 확인"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 71.44672,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현 재구성",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 95.820444,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현에 대입",
+                "n²로 나누어 극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 93.539956,
+              "step_count": 3,
+              "step_titles": [
+                "수열의 점근적 거동 분석",
+                "극한 식의 점근적 계산",
+                "극한의 일치성 확인"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "a_n의 점근적 거동 분석": 2,
+            "극한 표현 재구성": 1,
+            "극한 계산": 1,
+            "극한 표현에 대입": 1,
+            "n²로 나누어 극한 계산": 1,
+            "수열의 점근적 거동 분석": 1,
+            "극한 식의 점근적 계산": 1,
+            "극한의 일치성 확인": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 점근적 거동 분석": 2,
+            "극한 표현 재구성": 1,
+            "극한 계산": 1,
+            "극한 표현에 대입": 1,
+            "n²로 나누어 극한 계산": 1,
+            "수열의 점근적 거동 분석": 1,
+            "극한 식의 점근적 계산": 1,
+            "극한의 일치성 확인": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 56.073128,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "a_n/n의 극한",
+                "주어진 극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.716571,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 53.569318,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 56.073128,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "a_n/n의 극한",
+                "주어진 극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.716571,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 53.569318,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "a_n/n의 극한": 1,
+            "주어진 극한식 변형": 1,
+            "극한 계산": 2,
+            "극한식 변형": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "a_n/n의 극한": 1,
+            "주어진 극한식 변형": 1,
+            "극한 계산": 2,
+            "극한식 변형": 2
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.077682,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 극한 분석",
+                "극한식 변형",
+                "샌드위치 정리 적용 검토",
+                "대입과 극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.042602,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌우 극한 비교 전략",
+                "하한 근사 계산",
+                "극한식의 분자와 분모 분석",
+                "샌드위치 정리 적용 준비",
+                "대입형식: a_n = 5n + b_n",
+                "극한 계산: a_n = 5n + b_n 대입"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.833401,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 분자와 분모 분석",
+                "대입과 근사",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.077682,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 극한 분석",
+                "극한식 변형",
+                "샌드위치 정리 적용 검토",
+                "대입과 극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 39.042602,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "좌우 극한 비교 전략",
+                "하한 근사 계산",
+                "극한식의 분자와 분모 분석",
+                "샌드위치 정리 적용 준비",
+                "대입형식: a_n = 5n + b_n",
+                "극한 계산: a_n = 5n + b_n 대입"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.833401,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 분자와 분모 분석",
+                "대입과 근사",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "부등식의 극한 분석": 1,
+            "극한식 변형": 1,
+            "샌드위치 정리 적용 검토": 1,
+            "대입과 극한 계산": 1,
+            "좌우 극한 비교 전략": 1,
+            "하한 근사 계산": 1,
+            "극한식의 분자와 분모 분석": 2,
+            "샌드위치 정리 적용 준비": 1,
+            "대입형식: a_n = 5n + b_n": 1,
+            "극한 계산: a_n = 5n + b_n 대입": 1,
+            "부등식의 근사 분석": 1,
+            "대입과 근사": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "부등식의 극한 분석": 1,
+            "극한식 변형": 1,
+            "샌드위치 정리 적용 검토": 1,
+            "대입과 극한 계산": 1,
+            "좌우 극한 비교 전략": 1,
+            "하한 근사 계산": 1,
+            "극한식의 분자와 분모 분석": 2,
+            "샌드위치 정리 적용 준비": 1,
+            "대입형식: a_n = 5n + b_n": 1,
+            "극한 계산: a_n = 5n + b_n 대입": 1,
+            "부등식의 근사 분석": 1,
+            "대입과 근사": 1,
+            "극한 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 파악": 2,
+          "극한식을 n^2로 정규화": 1,
+          "극한식을 a_n/n으로 정리": 1,
+          "주어진 부등식에서 a_n의 성장률 파악": 1,
+          "극한식을 a_n/n로 정리": 1,
+          "조건 정리 및 전략 수립": 1,
+          "하한의 점근적 분석": 1,
+          "샌드위치 정리로 a_n의 점근 행동 결정": 1,
+          "극한 계산": 5,
+          "부등식 양변의 극한 분석": 1,
+          "a_n의 점근적 행동 확인": 1,
+          "극한값 계산": 2,
+          "부등식 분석 및 극한 추정": 1,
+          "극한식 정리": 1,
+          "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기": 2,
+          "주어진 식의 극한값 계산": 2,
+          "수열의 극한값 분석": 1,
+          "식의 변형 및 최종 계산": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 표현 재구성": 1,
+          "극한 표현에 대입": 1,
+          "n²로 나누어 극한 계산": 1,
+          "수열의 점근적 거동 분석": 1,
+          "극한 식의 점근적 계산": 1,
+          "극한의 일치성 확인": 1,
+          "조건 정리": 6,
+          "a_n/n의 극한": 1,
+          "주어진 극한식 변형": 1,
+          "극한식 변형": 3,
+          "부등식의 극한 분석": 1,
+          "샌드위치 정리 적용 검토": 1,
+          "대입과 극한 계산": 1,
+          "좌우 극한 비교 전략": 1,
+          "하한 근사 계산": 1,
+          "극한식의 분자와 분모 분석": 2,
+          "샌드위치 정리 적용 준비": 1,
+          "대입형식: a_n = 5n + b_n": 1,
+          "극한 계산: a_n = 5n + b_n 대입": 1,
+          "부등식의 근사 분석": 1,
+          "대입과 근사": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.566683,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 n으로 정규화"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.395251,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "극한식에 대입 후 최고차항 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.943176,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 a_n/n로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 5.566683,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 n으로 정규화"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.395251,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "극한식에 대입 후 최고차항 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.943176,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 파악",
+                "극한식을 a_n/n로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "a_n의 성장률(비율) 파악": 2,
+            "극한식을 n으로 정규화": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "극한식에 대입 후 최고차항 비교": 1,
+            "극한식을 a_n/n로 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 성장률(비율) 파악": 2,
+            "극한식을 n으로 정규화": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "극한식에 대입 후 최고차항 비교": 1,
+            "극한식을 a_n/n로 정리": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.677764,
+              "step_count": 4,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 a_n의 점근적 행동 결정",
+                "극한식 계산",
+                "최종 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.442172,
+              "step_count": 4,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 점근적 행동 결정",
+                "극한식 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.620915,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 확인",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.677764,
+              "step_count": 4,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 a_n의 점근적 행동 결정",
+                "극한식 계산",
+                "최종 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.442172,
+              "step_count": 4,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 점근적 행동 결정",
+                "극한식 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.620915,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 확인",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "부등식 양변의 극한 분석": 3,
+            "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+            "극한식 계산": 1,
+            "최종 극한값 계산": 1,
+            "샌드위치 정리로 점근적 행동 결정": 1,
+            "극한식 정리": 1,
+            "극한값 계산": 2,
+            "a_n의 점근적 행동 확인": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "부등식 양변의 극한 분석": 3,
+            "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+            "극한식 계산": 1,
+            "최종 극한값 계산": 1,
+            "샌드위치 정리로 점근적 행동 결정": 1,
+            "극한식 정리": 1,
+            "극한값 계산": 2,
+            "a_n의 점근적 행동 확인": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.607026,
+              "step_count": 2,
+              "step_titles": [
+                "샌드위치 정리를 이용한 극한값 확인",
+                "식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.510575,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기",
+                "식의 변형 및 최종 극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.89045,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 샌드위치 정리 적용",
+                "식의 변형 및 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.607026,
+              "step_count": 2,
+              "step_titles": [
+                "샌드위치 정리를 이용한 극한값 확인",
+                "식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.510575,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기",
+                "식의 변형 및 최종 극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.89045,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리 및 샌드위치 정리 적용",
+                "식의 변형 및 극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "샌드위치 정리를 이용한 극한값 확인": 1,
+            "식의 변형 및 최종 계산": 1,
+            "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+            "식의 변형 및 최종 극한값 계산": 1,
+            "조건 정리 및 샌드위치 정리 적용": 1,
+            "식의 변형 및 극한값 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "샌드위치 정리를 이용한 극한값 확인": 1,
+            "식의 변형 및 최종 계산": 1,
+            "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+            "식의 변형 및 최종 극한값 계산": 1,
+            "조건 정리 및 샌드위치 정리 적용": 1,
+            "식의 변형 및 극한값 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.555148,
+              "step_count": 3,
+              "step_titles": [
+                "a_n / n의 극한 구하기",
+                "극한을 l로 표현하기",
+                "극한 계산하기"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 69.069731,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 분석",
+                "극한 표현 대입",
+                "n²으로 나누어 극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.959033,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.555148,
+              "step_count": 3,
+              "step_titles": [
+                "a_n / n의 극한 구하기",
+                "극한을 l로 표현하기",
+                "극한 계산하기"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 69.069731,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 분석",
+                "극한 표현 대입",
+                "n²으로 나누어 극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.959033,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "a_n / n의 극한 구하기": 1,
+            "극한을 l로 표현하기": 1,
+            "극한 계산하기": 1,
+            "부등식 분석": 1,
+            "극한 표현 대입": 1,
+            "n²으로 나누어 극한 계산": 1,
+            "조건 분석": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n / n의 극한 구하기": 1,
+            "극한을 l로 표현하기": 1,
+            "극한 계산하기": 1,
+            "부등식 분석": 1,
+            "극한 표현 대입": 1,
+            "n²으로 나누어 극한 계산": 1,
+            "조건 분석": 1,
+            "극한 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.992576,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.728859,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "극한 추정",
+                "주어진 극한식 변형",
+                "극한 직접 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.869465,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a_n의 차수 추정",
+                "극한식 변형",
+                "b_n의 극한 존재 여부",
+                "n^2으로 나누기"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.992576,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.728859,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "극한 추정",
+                "주어진 극한식 변형",
+                "극한 직접 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.869465,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "a_n의 차수 추정",
+                "극한식 변형",
+                "b_n의 극한 존재 여부",
+                "n^2으로 나누기"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "극한식 변형": 2,
+            "극한 계산": 1,
+            "극한 추정": 1,
+            "주어진 극한식 변형": 1,
+            "극한 직접 계산": 1,
+            "a_n의 차수 추정": 1,
+            "b_n의 극한 존재 여부": 1,
+            "n^2으로 나누기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "극한식 변형": 2,
+            "극한 계산": 1,
+            "극한 추정": 1,
+            "주어진 극한식 변형": 1,
+            "극한 직접 계산": 1,
+            "a_n의 차수 추정": 1,
+            "b_n의 극한 존재 여부": 1,
+            "n^2으로 나누기": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.769953,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 주도항 분석",
+                "극한의 엄밀한 계산"
+              ],
+              "final_answer": "$$\n\\frac{25}{10} = \\frac{5}{2}\n$$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 45.547616,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변과 우변의 근사 분석",
+                "극한식 변형",
+                "a_n의 형태 가정 및 대입",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.392495,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 분자와 분모 근사",
+                "대입 전략: $a_n = 5n + b_n$",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 42.769953,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 주도항 분석",
+                "극한의 엄밀한 계산"
+              ],
+              "final_answer": "$$\n\\frac{25}{10} = \\frac{5}{2}\n$$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 45.547616,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변과 우변의 근사 분석",
+                "극한식 변형",
+                "a_n의 형태 가정 및 대입",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 34.392495,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한식의 분자와 분모 근사",
+                "대입 전략: $a_n = 5n + b_n$",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "부등식의 근사 분석": 2,
+            "극한식의 주도항 분석": 1,
+            "극한의 엄밀한 계산": 1,
+            "좌변과 우변의 근사 분석": 1,
+            "극한식 변형": 1,
+            "a_n의 형태 가정 및 대입": 1,
+            "극한 계산": 2,
+            "극한식의 분자와 분모 근사": 1,
+            "대입 전략: $a_n = 5n + b_n$": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "부등식의 근사 분석": 2,
+            "극한식의 주도항 분석": 1,
+            "극한의 엄밀한 계산": 1,
+            "좌변과 우변의 근사 분석": 1,
+            "극한식 변형": 1,
+            "a_n의 형태 가정 및 대입": 1,
+            "극한 계산": 2,
+            "극한식의 분자와 분모 근사": 1,
+            "대입 전략: $a_n = 5n + b_n$": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 파악": 2,
+          "극한식을 n으로 정규화": 1,
+          "a_n의 성장률(선형) 파악": 1,
+          "극한식에 대입 후 최고차항 비교": 1,
+          "극한식을 a_n/n로 정리": 1,
+          "부등식 양변의 극한 분석": 3,
+          "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+          "극한식 계산": 1,
+          "최종 극한값 계산": 1,
+          "샌드위치 정리로 점근적 행동 결정": 1,
+          "극한식 정리": 1,
+          "극한값 계산": 2,
+          "a_n의 점근적 행동 확인": 1,
+          "샌드위치 정리를 이용한 극한값 확인": 1,
+          "식의 변형 및 최종 계산": 1,
+          "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+          "식의 변형 및 최종 극한값 계산": 1,
+          "조건 정리 및 샌드위치 정리 적용": 1,
+          "식의 변형 및 극한값 계산": 1,
+          "a_n / n의 극한 구하기": 1,
+          "극한을 l로 표현하기": 1,
+          "극한 계산하기": 1,
+          "부등식 분석": 1,
+          "극한 표현 대입": 1,
+          "n²으로 나누어 극한 계산": 1,
+          "조건 분석": 1,
+          "극한 계산": 4,
+          "조건 정리": 6,
+          "극한식 변형": 3,
+          "극한 추정": 1,
+          "주어진 극한식 변형": 1,
+          "극한 직접 계산": 1,
+          "a_n의 차수 추정": 1,
+          "b_n의 극한 존재 여부": 1,
+          "n^2으로 나누기": 1,
+          "부등식의 근사 분석": 2,
+          "극한식의 주도항 분석": 1,
+          "극한의 엄밀한 계산": 1,
+          "좌변과 우변의 근사 분석": 1,
+          "a_n의 형태 가정 및 대입": 1,
+          "극한식의 분자와 분모 근사": 1,
+          "대입 전략: $a_n = 5n + b_n$": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.588826,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률(비율) 추정",
+                "극한식을 a_n/n로 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.060282,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "a_n/n의 극한 구하기(샌드위치)",
+                "식을 n^2로 정규화하여 극한 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{5}{2}\\) (③)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.184877,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 추정",
+                "식을 n으로 정규화하여 극한 계산"
+              ],
+              "final_answer": "\\[\n\\frac{5}{2}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.588826,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률(비율) 추정",
+                "극한식을 a_n/n로 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.060282,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "a_n/n의 극한 구하기(샌드위치)",
+                "식을 n^2로 정규화하여 극한 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{5}{2}\\) (③)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.184877,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(비율) 추정",
+                "식을 n으로 정규화하여 극한 계산"
+              ],
+              "final_answer": "\\[\n\\frac{5}{2}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "a_n의 성장률(비율) 추정": 2,
+            "극한식을 a_n/n로 정리": 1,
+            "극한값 계산": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "a_n/n의 극한 구하기(샌드위치)": 1,
+            "식을 n^2로 정규화하여 극한 계산": 1,
+            "식을 n으로 정규화하여 극한 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 성장률(비율) 추정": 2,
+            "극한식을 a_n/n로 정리": 1,
+            "극한값 계산": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "a_n/n의 극한 구하기(샌드위치)": 1,
+            "식을 n^2로 정규화하여 극한 계산": 1,
+            "식을 n으로 정규화하여 극한 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.193221,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 결정",
+                "극한값 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.044237,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 a_n의 점근적 행동 결정",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.033242,
+              "step_count": 4,
+              "step_titles": [
+                "조건 분석 및 하한 정리",
+                "샌드위치 정리로 점근적 행동 파악",
+                "극한식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.193221,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "a_n의 점근적 행동 결정",
+                "극한값 계산"
+              ],
+              "final_answer": "$$\\frac{5}{2}$$\n\n**정답: ③**\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.044237,
+              "step_count": 3,
+              "step_titles": [
+                "부등식 양변의 극한 분석",
+                "샌드위치 정리로 a_n의 점근적 행동 결정",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.033242,
+              "step_count": 4,
+              "step_titles": [
+                "조건 분석 및 하한 정리",
+                "샌드위치 정리로 점근적 행동 파악",
+                "극한식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "부등식 양변의 극한 분석": 2,
+            "a_n의 점근적 행동 결정": 1,
+            "극한값 계산": 3,
+            "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+            "조건 분석 및 하한 정리": 1,
+            "샌드위치 정리로 점근적 행동 파악": 1,
+            "극한식 변형": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "부등식 양변의 극한 분석": 2,
+            "a_n의 점근적 행동 결정": 1,
+            "극한값 계산": 3,
+            "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+            "조건 분석 및 하한 정리": 1,
+            "샌드위치 정리로 점근적 행동 파악": 1,
+            "극한식 변형": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.549504,
+              "step_count": 2,
+              "step_titles": [
+                "극한값의 범위 확인",
+                "식의 변형 및 극한 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.220218,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기",
+                "주어진 식의 변형 및 극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.231644,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a_n/n의 극한값 구하기",
+                "구하려는 식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.549504,
+              "step_count": 2,
+              "step_titles": [
+                "극한값의 범위 확인",
+                "식의 변형 및 극한 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.220218,
+              "step_count": 2,
+              "step_titles": [
+                "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기",
+                "주어진 식의 변형 및 극한값 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 21.231644,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a_n/n의 극한값 구하기",
+                "구하려는 식 변형",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "극한값의 범위 확인": 1,
+            "식의 변형 및 극한 계산": 1,
+            "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+            "주어진 식의 변형 및 극한값 계산": 1,
+            "조건 정리 및 a_n/n의 극한값 구하기": 1,
+            "구하려는 식 변형": 1,
+            "극한값 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "극한값의 범위 확인": 1,
+            "식의 변형 및 극한 계산": 1,
+            "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+            "주어진 식의 변형 및 극한값 계산": 1,
+            "조건 정리 및 a_n/n의 극한값 구하기": 1,
+            "구하려는 식 변형": 1,
+            "극한값 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 88.837541,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 행동 분석",
+                "한계식에 대입",
+                "n²로 나누어 단순화"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 101.408568,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 70.587248,
+              "step_count": 4,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현에 대입",
+                "a_n/n의 극한 계산",
+                "극한 값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 88.837541,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 행동 분석",
+                "한계식에 대입",
+                "n²로 나누어 단순화"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 101.408568,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 70.587248,
+              "step_count": 4,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 표현에 대입",
+                "a_n/n의 극한 계산",
+                "극한 값 도출"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "a_n의 점근적 행동 분석": 1,
+            "한계식에 대입": 1,
+            "n²로 나누어 단순화": 1,
+            "a_n의 점근적 거동 분석": 2,
+            "극한식 변형": 1,
+            "극한 계산": 1,
+            "극한 표현에 대입": 1,
+            "a_n/n의 극한 계산": 1,
+            "극한 값 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 점근적 행동 분석": 1,
+            "한계식에 대입": 1,
+            "n²로 나누어 단순화": 1,
+            "a_n의 점근적 거동 분석": 2,
+            "극한식 변형": 1,
+            "극한 계산": 1,
+            "극한 표현에 대입": 1,
+            "a_n/n의 극한 계산": 1,
+            "극한 값 도출": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 60.63765,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a_n/n의 극한",
+                "a_n의 점근적 형태 추정",
+                "극한식 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.598461,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 a_n/n의 극한",
+                "주어진 극한식 변형 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\) (③번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.66812,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "주어진 극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 60.63765,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 a_n/n의 극한",
+                "a_n의 점근적 형태 추정",
+                "극한식 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.598461,
+              "step_count": 2,
+              "step_titles": [
+                "조건 분석 및 a_n/n의 극한",
+                "주어진 극한식 변형 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\) (③번)",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 43.66812,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "주어진 극한식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "조건 정리 및 a_n/n의 극한": 1,
+            "a_n의 점근적 형태 추정": 1,
+            "극한식 계산": 1,
+            "조건 분석 및 a_n/n의 극한": 1,
+            "주어진 극한식 변형 및 계산": 1,
+            "조건 정리": 1,
+            "주어진 극한식 변형": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리 및 a_n/n의 극한": 1,
+            "a_n의 점근적 형태 추정": 1,
+            "극한식 계산": 1,
+            "조건 분석 및 a_n/n의 극한": 1,
+            "주어진 극한식 변형 및 계산": 1,
+            "조건 정리": 1,
+            "주어진 극한식 변형": 1,
+            "극한 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.858315,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변 근사",
+                "극한식의 분석",
+                "극한 계산 준비",
+                "주요 항으로 나누기"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.697676,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한 식의 분자와 분모 분석",
+                "극한에 대입하고 근사",
+                "극한 계산 (분자/분모를 $n^2$로 나누기)"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.860231,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌우 극한을 통한 $a_n$의 동작 분석",
+                "극한식의 분자와 분모 정리",
+                "대입과 근사: $a_n = 5n + b_n$",
+                "주요 항으로 나누기"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.858315,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변 근사",
+                "극한식의 분석",
+                "극한 계산 준비",
+                "주요 항으로 나누기"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.697676,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부등식의 근사 분석",
+                "극한 식의 분자와 분모 분석",
+                "극한에 대입하고 근사",
+                "극한 계산 (분자/분모를 $n^2$로 나누기)"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.860231,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌우 극한을 통한 $a_n$의 동작 분석",
+                "극한식의 분자와 분모 정리",
+                "대입과 근사: $a_n = 5n + b_n$",
+                "주요 항으로 나누기"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌변 근사": 1,
+            "극한식의 분석": 1,
+            "극한 계산 준비": 1,
+            "주요 항으로 나누기": 2,
+            "부등식의 근사 분석": 1,
+            "극한 식의 분자와 분모 분석": 1,
+            "극한에 대입하고 근사": 1,
+            "극한 계산 (분자/분모를 $n^2$로 나누기)": 1,
+            "좌우 극한을 통한 $a_n$의 동작 분석": 1,
+            "극한식의 분자와 분모 정리": 1,
+            "대입과 근사: $a_n = 5n + b_n$": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌변 근사": 1,
+            "극한식의 분석": 1,
+            "극한 계산 준비": 1,
+            "주요 항으로 나누기": 2,
+            "부등식의 근사 분석": 1,
+            "극한 식의 분자와 분모 분석": 1,
+            "극한에 대입하고 근사": 1,
+            "극한 계산 (분자/분모를 $n^2$로 나누기)": 1,
+            "좌우 극한을 통한 $a_n$의 동작 분석": 1,
+            "극한식의 분자와 분모 정리": 1,
+            "대입과 근사: $a_n = 5n + b_n$": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.2222222222222223,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 추정": 2,
+          "극한식을 a_n/n로 정리": 1,
+          "극한값 계산": 5,
+          "a_n의 성장률(선형) 파악": 1,
+          "a_n/n의 극한 구하기(샌드위치)": 1,
+          "식을 n^2로 정규화하여 극한 계산": 1,
+          "식을 n으로 정규화하여 극한 계산": 1,
+          "부등식 양변의 극한 분석": 2,
+          "a_n의 점근적 행동 결정": 1,
+          "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+          "조건 분석 및 하한 정리": 1,
+          "샌드위치 정리로 점근적 행동 파악": 1,
+          "극한식 변형": 2,
+          "극한값의 범위 확인": 1,
+          "식의 변형 및 극한 계산": 1,
+          "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+          "주어진 식의 변형 및 극한값 계산": 1,
+          "조건 정리 및 a_n/n의 극한값 구하기": 1,
+          "구하려는 식 변형": 1,
+          "a_n의 점근적 행동 분석": 1,
+          "한계식에 대입": 1,
+          "n²로 나누어 단순화": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 계산": 2,
+          "극한 표현에 대입": 1,
+          "a_n/n의 극한 계산": 1,
+          "극한 값 도출": 1,
+          "조건 정리 및 a_n/n의 극한": 1,
+          "a_n의 점근적 형태 추정": 1,
+          "극한식 계산": 1,
+          "조건 분석 및 a_n/n의 극한": 1,
+          "주어진 극한식 변형 및 계산": 1,
+          "조건 정리": 4,
+          "주어진 극한식 변형": 1,
+          "좌변 근사": 1,
+          "극한식의 분석": 1,
+          "극한 계산 준비": 1,
+          "주요 항으로 나누기": 2,
+          "부등식의 근사 분석": 1,
+          "극한 식의 분자와 분모 분석": 1,
+          "극한에 대입하고 근사": 1,
+          "극한 계산 (분자/분모를 $n^2$로 나누기)": 1,
+          "좌우 극한을 통한 $a_n$의 동작 분석": 1,
+          "극한식의 분자와 분모 정리": 1,
+          "대입과 근사: $a_n = 5n + b_n$": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.773828,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률( n에 대한 비율 ) 파악",
+                "극한식을 a_n/n으로 정리",
+                "극한 대입"
+              ],
+              "final_answer": "\\[\n\\frac{5}{2}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.920167,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "극한식을 a_n/n으로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.898915,
+              "step_count": 3,
+              "step_titles": [
+                "성장률(점근) 파악",
+                "비율 수렴 확인",
+                "극한식 정리 및 주요항 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.773828,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 성장률( n에 대한 비율 ) 파악",
+                "극한식을 a_n/n으로 정리",
+                "극한 대입"
+              ],
+              "final_answer": "\\[\n\\frac{5}{2}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.920167,
+              "step_count": 2,
+              "step_titles": [
+                "a_n의 성장률(선형) 파악",
+                "극한식을 a_n/n으로 정리"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.898915,
+              "step_count": 3,
+              "step_titles": [
+                "성장률(점근) 파악",
+                "비율 수렴 확인",
+                "극한식 정리 및 주요항 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}}\\quad(\\text{③})\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "a_n의 성장률( n에 대한 비율 ) 파악": 1,
+            "극한식을 a_n/n으로 정리": 2,
+            "극한 대입": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "성장률(점근) 파악": 1,
+            "비율 수렴 확인": 1,
+            "극한식 정리 및 주요항 비교": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 성장률( n에 대한 비율 ) 파악": 1,
+            "극한식을 a_n/n으로 정리": 2,
+            "극한 대입": 1,
+            "a_n의 성장률(선형) 파악": 1,
+            "성장률(점근) 파악": 1,
+            "비율 수렴 확인": 1,
+            "극한식 정리 및 주요항 비교": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.334775,
+              "step_count": 3,
+              "step_titles": [
+                "조건 분석 및 하한 정리",
+                "샌드위치 정리 적용",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.235296,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 전략 수립",
+                "하한과 상한의 극한 분석",
+                "극한식 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.435652,
+              "step_count": 3,
+              "step_titles": [
+                "조건 분석 및 경계 함수의 극한 파악",
+                "극한 계산을 위한 분자·분모 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.334775,
+              "step_count": 3,
+              "step_titles": [
+                "조건 분석 및 하한 정리",
+                "샌드위치 정리 적용",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.235296,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리 및 전략 수립",
+                "하한과 상한의 극한 분석",
+                "극한식 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.435652,
+              "step_count": 3,
+              "step_titles": [
+                "조건 분석 및 경계 함수의 극한 파악",
+                "극한 계산을 위한 분자·분모 정리",
+                "극한값 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 분석 및 하한 정리": 1,
+            "샌드위치 정리 적용": 1,
+            "극한값 계산": 2,
+            "조건 정리 및 전략 수립": 1,
+            "하한과 상한의 극한 분석": 1,
+            "극한식 계산": 1,
+            "조건 분석 및 경계 함수의 극한 파악": 1,
+            "극한 계산을 위한 분자·분모 정리": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 분석 및 하한 정리": 1,
+            "샌드위치 정리 적용": 1,
+            "극한값 계산": 2,
+            "조건 정리 및 전략 수립": 1,
+            "하한과 상한의 극한 분석": 1,
+            "극한식 계산": 1,
+            "조건 분석 및 경계 함수의 극한 파악": 1,
+            "극한 계산을 위한 분자·분모 정리": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.051838,
+              "step_count": 2,
+              "step_titles": [
+                "조건 식을 이용한 수열의 극한값 도출",
+                "주어진 식의 극한 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 33.264122,
+              "step_count": 2,
+              "step_titles": [
+                "샌드위치 정리를 이용한 극한값 구하기",
+                "구하려는 식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.547089,
+              "step_count": 2,
+              "step_titles": [
+                "수열의 극한값 유도",
+                "식 변형 및 정답 도출"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.051838,
+              "step_count": 2,
+              "step_titles": [
+                "조건 식을 이용한 수열의 극한값 도출",
+                "주어진 식의 극한 계산"
+              ],
+              "final_answer": "③",
+              "is_correct": false,
+              "is_correct_recheck": true,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 33.264122,
+              "step_count": 2,
+              "step_titles": [
+                "샌드위치 정리를 이용한 극한값 구하기",
+                "구하려는 식의 변형 및 최종 계산"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.547089,
+              "step_count": 2,
+              "step_titles": [
+                "수열의 극한값 유도",
+                "식 변형 및 정답 도출"
+              ],
+              "final_answer": "③ $\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "조건 식을 이용한 수열의 극한값 도출": 1,
+            "주어진 식의 극한 계산": 1,
+            "샌드위치 정리를 이용한 극한값 구하기": 1,
+            "구하려는 식의 변형 및 최종 계산": 1,
+            "수열의 극한값 유도": 1,
+            "식 변형 및 정답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 식을 이용한 수열의 극한값 도출": 1,
+            "주어진 식의 극한 계산": 1,
+            "샌드위치 정리를 이용한 극한값 구하기": 1,
+            "구하려는 식의 변형 및 최종 계산": 1,
+            "수열의 극한값 유도": 1,
+            "식 변형 및 정답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 65.775688,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 68.345897,
+              "step_count": 2,
+              "step_titles": [
+                "분석 전략: a_n의 점근적 거동 파악",
+                "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 67.775109,
+              "step_count": 4,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "b_n 도입 및 극한",
+                "표현식 재구성",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 65.775688,
+              "step_count": 3,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "극한 식 변형",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 68.345897,
+              "step_count": 2,
+              "step_titles": [
+                "분석 전략: a_n의 점근적 거동 파악",
+                "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 67.775109,
+              "step_count": 4,
+              "step_titles": [
+                "a_n의 점근적 거동 분석",
+                "b_n 도입 및 극한",
+                "표현식 재구성",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "a_n의 점근적 거동 분석": 2,
+            "극한 식 변형": 1,
+            "극한 계산": 2,
+            "분석 전략: a_n의 점근적 거동 파악": 1,
+            "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔": 1,
+            "b_n 도입 및 극한": 1,
+            "표현식 재구성": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.0,
+          "step_std": 1.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "a_n의 점근적 거동 분석": 2,
+            "극한 식 변형": 1,
+            "극한 계산": 2,
+            "분석 전략: a_n의 점근적 거동 파악": 1,
+            "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔": 1,
+            "b_n 도입 및 극한": 1,
+            "표현식 재구성": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.984216,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "극한값 구하기"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.5311176776886,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "조건을 이용한 \\(a_n\\)의 근사",
+                "극한식 정리",
+                "분자와 분모를 \\(n\\)에 대해 전개",
+                "극한 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}} \\quad \\text{(③)}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.524829,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리와 극한 계획",
+                "극한 계산을 위한 치환",
+                "극한 직접 계산"
+              ],
+              "final_answer": "③ \\(\\frac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.984216,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "극한값 구하기"
+              ],
+              "final_answer": "③ \\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 23.5311176776886,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "조건을 이용한 \\(a_n\\)의 근사",
+                "극한식 정리",
+                "분자와 분모를 \\(n\\)에 대해 전개",
+                "극한 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{5}{2}} \\quad \\text{(③)}\n\\]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.524829,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리와 극한 계획",
+                "극한 계산을 위한 치환",
+                "극한 직접 계산"
+              ],
+              "final_answer": "③ \\(\\frac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "조건 정리": 2,
+            "극한값 구하기": 1,
+            "조건을 이용한 \\(a_n\\)의 근사": 1,
+            "극한식 정리": 1,
+            "분자와 분모를 \\(n\\)에 대해 전개": 1,
+            "극한 계산": 1,
+            "조건 정리와 극한 계획": 1,
+            "극한 계산을 위한 치환": 1,
+            "극한 직접 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 1.5275252316519468,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "극한값 구하기": 1,
+            "조건을 이용한 \\(a_n\\)의 근사": 1,
+            "극한식 정리": 1,
+            "분자와 분모를 \\(n\\)에 대해 전개": 1,
+            "극한 계산": 1,
+            "조건 정리와 극한 계획": 1,
+            "극한 계산을 위한 치환": 1,
+            "극한 직접 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.87228,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변과 우변의 근사 계산",
+                "극한식 변형과 대입 전략",
+                "대입: $a_n = 5n + b_n$ 형태 도입",
+                "주요 항만 남기고 나머지 무시"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 203.998605,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "부등식 분석 및 근사",
+                "극한 계산을 위한 변수 치환",
+                "극한 식 변형",
+                "주요 항으로 나누기",
+                "극한 평가"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.199591,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌우 부등식의 근사 분석",
+                "극한식에 대입을 위한 변수 치환",
+                "극한식 변형 및 분석",
+                "식을 n²로 정리",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.87228,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "좌변과 우변의 근사 계산",
+                "극한식 변형과 대입 전략",
+                "대입: $a_n = 5n + b_n$ 형태 도입",
+                "주요 항만 남기고 나머지 무시"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 203.998605,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "부등식 분석 및 근사",
+                "극한 계산을 위한 변수 치환",
+                "극한 식 변형",
+                "주요 항으로 나누기",
+                "극한 평가"
+              ],
+              "final_answer": "$\\dfrac{5}{2}$",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.199591,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "좌우 부등식의 근사 분석",
+                "극한식에 대입을 위한 변수 치환",
+                "극한식 변형 및 분석",
+                "식을 n²로 정리",
+                "극한 계산"
+              ],
+              "final_answer": "\\(\\dfrac{5}{2}\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "좌변과 우변의 근사 계산": 1,
+            "극한식 변형과 대입 전략": 1,
+            "대입: $a_n = 5n + b_n$ 형태 도입": 1,
+            "주요 항만 남기고 나머지 무시": 1,
+            "부등식 분석 및 근사": 1,
+            "극한 계산을 위한 변수 치환": 1,
+            "극한 식 변형": 1,
+            "주요 항으로 나누기": 1,
+            "극한 평가": 1,
+            "좌우 부등식의 근사 분석": 1,
+            "극한식에 대입을 위한 변수 치환": 1,
+            "극한식 변형 및 분석": 1,
+            "식을 n²로 정리": 1,
+            "극한 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "좌변과 우변의 근사 계산": 1,
+            "극한식 변형과 대입 전략": 1,
+            "대입: $a_n = 5n + b_n$ 형태 도입": 1,
+            "주요 항만 남기고 나머지 무시": 1,
+            "부등식 분석 및 근사": 1,
+            "극한 계산을 위한 변수 치환": 1,
+            "극한 식 변형": 1,
+            "주요 항으로 나누기": 1,
+            "극한 평가": 1,
+            "좌우 부등식의 근사 분석": 1,
+            "극한식에 대입을 위한 변수 치환": 1,
+            "극한식 변형 및 분석": 1,
+            "식을 n²로 정리": 1,
+            "극한 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.2777777777777777,
+        "title_frequency_all_models": {
+          "a_n의 성장률( n에 대한 비율 ) 파악": 1,
+          "극한식을 a_n/n으로 정리": 2,
+          "극한 대입": 1,
+          "a_n의 성장률(선형) 파악": 1,
+          "성장률(점근) 파악": 1,
+          "비율 수렴 확인": 1,
+          "극한식 정리 및 주요항 비교": 1,
+          "조건 분석 및 하한 정리": 1,
+          "샌드위치 정리 적용": 1,
+          "극한값 계산": 2,
+          "조건 정리 및 전략 수립": 1,
+          "하한과 상한의 극한 분석": 1,
+          "극한식 계산": 1,
+          "조건 분석 및 경계 함수의 극한 파악": 1,
+          "극한 계산을 위한 분자·분모 정리": 1,
+          "조건 식을 이용한 수열의 극한값 도출": 1,
+          "주어진 식의 극한 계산": 1,
+          "샌드위치 정리를 이용한 극한값 구하기": 1,
+          "구하려는 식의 변형 및 최종 계산": 1,
+          "수열의 극한값 유도": 1,
+          "식 변형 및 정답 도출": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 식 변형": 2,
+          "극한 계산": 4,
+          "분석 전략: a_n의 점근적 거동 파악": 1,
+          "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔": 1,
+          "b_n 도입 및 극한": 1,
+          "표현식 재구성": 1,
+          "조건 정리": 5,
+          "극한값 구하기": 1,
+          "조건을 이용한 \\(a_n\\)의 근사": 1,
+          "극한식 정리": 1,
+          "분자와 분모를 \\(n\\)에 대해 전개": 1,
+          "조건 정리와 극한 계획": 1,
+          "극한 계산을 위한 치환": 1,
+          "극한 직접 계산": 1,
+          "좌변과 우변의 근사 계산": 1,
+          "극한식 변형과 대입 전략": 1,
+          "대입: $a_n = 5n + b_n$ 형태 도입": 1,
+          "주요 항만 남기고 나머지 무시": 1,
+          "부등식 분석 및 근사": 1,
+          "극한 계산을 위한 변수 치환": 1,
+          "주요 항으로 나누기": 1,
+          "극한 평가": 1,
+          "좌우 부등식의 근사 분석": 1,
+          "극한식에 대입을 위한 변수 치환": 1,
+          "극한식 변형 및 분석": 1,
+          "식을 n²로 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 파악": 2,
+          "극한식을 n^2로 정규화": 1,
+          "극한식을 a_n/n으로 정리": 1,
+          "주어진 부등식에서 a_n의 성장률 파악": 1,
+          "극한식을 a_n/n로 정리": 1,
+          "조건 정리 및 전략 수립": 1,
+          "하한의 점근적 분석": 1,
+          "샌드위치 정리로 a_n의 점근 행동 결정": 1,
+          "극한 계산": 5,
+          "부등식 양변의 극한 분석": 1,
+          "a_n의 점근적 행동 확인": 1,
+          "극한값 계산": 2,
+          "부등식 분석 및 극한 추정": 1,
+          "극한식 정리": 1,
+          "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기": 2,
+          "주어진 식의 극한값 계산": 2,
+          "수열의 극한값 분석": 1,
+          "식의 변형 및 최종 계산": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 표현 재구성": 1,
+          "극한 표현에 대입": 1,
+          "n²로 나누어 극한 계산": 1,
+          "수열의 점근적 거동 분석": 1,
+          "극한 식의 점근적 계산": 1,
+          "극한의 일치성 확인": 1,
+          "조건 정리": 6,
+          "a_n/n의 극한": 1,
+          "주어진 극한식 변형": 1,
+          "극한식 변형": 3,
+          "부등식의 극한 분석": 1,
+          "샌드위치 정리 적용 검토": 1,
+          "대입과 극한 계산": 1,
+          "좌우 극한 비교 전략": 1,
+          "하한 근사 계산": 1,
+          "극한식의 분자와 분모 분석": 2,
+          "샌드위치 정리 적용 준비": 1,
+          "대입형식: a_n = 5n + b_n": 1,
+          "극한 계산: a_n = 5n + b_n 대입": 1,
+          "부등식의 근사 분석": 1,
+          "대입과 근사": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.1666666666666665,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 파악": 2,
+          "극한식을 n으로 정규화": 1,
+          "a_n의 성장률(선형) 파악": 1,
+          "극한식에 대입 후 최고차항 비교": 1,
+          "극한식을 a_n/n로 정리": 1,
+          "부등식 양변의 극한 분석": 3,
+          "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+          "극한식 계산": 1,
+          "최종 극한값 계산": 1,
+          "샌드위치 정리로 점근적 행동 결정": 1,
+          "극한식 정리": 1,
+          "극한값 계산": 2,
+          "a_n의 점근적 행동 확인": 1,
+          "샌드위치 정리를 이용한 극한값 확인": 1,
+          "식의 변형 및 최종 계산": 1,
+          "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+          "식의 변형 및 최종 극한값 계산": 1,
+          "조건 정리 및 샌드위치 정리 적용": 1,
+          "식의 변형 및 극한값 계산": 1,
+          "a_n / n의 극한 구하기": 1,
+          "극한을 l로 표현하기": 1,
+          "극한 계산하기": 1,
+          "부등식 분석": 1,
+          "극한 표현 대입": 1,
+          "n²으로 나누어 극한 계산": 1,
+          "조건 분석": 1,
+          "극한 계산": 4,
+          "조건 정리": 6,
+          "극한식 변형": 3,
+          "극한 추정": 1,
+          "주어진 극한식 변형": 1,
+          "극한 직접 계산": 1,
+          "a_n의 차수 추정": 1,
+          "b_n의 극한 존재 여부": 1,
+          "n^2으로 나누기": 1,
+          "부등식의 근사 분석": 2,
+          "극한식의 주도항 분석": 1,
+          "극한의 엄밀한 계산": 1,
+          "좌변과 우변의 근사 분석": 1,
+          "a_n의 형태 가정 및 대입": 1,
+          "극한식의 분자와 분모 근사": 1,
+          "대입 전략: $a_n = 5n + b_n$": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.2222222222222223,
+        "title_frequency_all_models": {
+          "a_n의 성장률(비율) 추정": 2,
+          "극한식을 a_n/n로 정리": 1,
+          "극한값 계산": 5,
+          "a_n의 성장률(선형) 파악": 1,
+          "a_n/n의 극한 구하기(샌드위치)": 1,
+          "식을 n^2로 정규화하여 극한 계산": 1,
+          "식을 n으로 정규화하여 극한 계산": 1,
+          "부등식 양변의 극한 분석": 2,
+          "a_n의 점근적 행동 결정": 1,
+          "샌드위치 정리로 a_n의 점근적 행동 결정": 1,
+          "조건 분석 및 하한 정리": 1,
+          "샌드위치 정리로 점근적 행동 파악": 1,
+          "극한식 변형": 2,
+          "극한값의 범위 확인": 1,
+          "식의 변형 및 극한 계산": 1,
+          "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+          "주어진 식의 변형 및 극한값 계산": 1,
+          "조건 정리 및 a_n/n의 극한값 구하기": 1,
+          "구하려는 식 변형": 1,
+          "a_n의 점근적 행동 분석": 1,
+          "한계식에 대입": 1,
+          "n²로 나누어 단순화": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 계산": 2,
+          "극한 표현에 대입": 1,
+          "a_n/n의 극한 계산": 1,
+          "극한 값 도출": 1,
+          "조건 정리 및 a_n/n의 극한": 1,
+          "a_n의 점근적 형태 추정": 1,
+          "극한식 계산": 1,
+          "조건 분석 및 a_n/n의 극한": 1,
+          "주어진 극한식 변형 및 계산": 1,
+          "조건 정리": 4,
+          "주어진 극한식 변형": 1,
+          "좌변 근사": 1,
+          "극한식의 분석": 1,
+          "극한 계산 준비": 1,
+          "주요 항으로 나누기": 2,
+          "부등식의 근사 분석": 1,
+          "극한 식의 분자와 분모 분석": 1,
+          "극한에 대입하고 근사": 1,
+          "극한 계산 (분자/분모를 $n^2$로 나누기)": 1,
+          "좌우 극한을 통한 $a_n$의 동작 분석": 1,
+          "극한식의 분자와 분모 정리": 1,
+          "대입과 근사: $a_n = 5n + b_n$": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.2777777777777777,
+        "title_frequency_all_models": {
+          "a_n의 성장률( n에 대한 비율 ) 파악": 1,
+          "극한식을 a_n/n으로 정리": 2,
+          "극한 대입": 1,
+          "a_n의 성장률(선형) 파악": 1,
+          "성장률(점근) 파악": 1,
+          "비율 수렴 확인": 1,
+          "극한식 정리 및 주요항 비교": 1,
+          "조건 분석 및 하한 정리": 1,
+          "샌드위치 정리 적용": 1,
+          "극한값 계산": 2,
+          "조건 정리 및 전략 수립": 1,
+          "하한과 상한의 극한 분석": 1,
+          "극한식 계산": 1,
+          "조건 분석 및 경계 함수의 극한 파악": 1,
+          "극한 계산을 위한 분자·분모 정리": 1,
+          "조건 식을 이용한 수열의 극한값 도출": 1,
+          "주어진 식의 극한 계산": 1,
+          "샌드위치 정리를 이용한 극한값 구하기": 1,
+          "구하려는 식의 변형 및 최종 계산": 1,
+          "수열의 극한값 유도": 1,
+          "식 변형 및 정답 도출": 1,
+          "a_n의 점근적 거동 분석": 2,
+          "극한 식 변형": 2,
+          "극한 계산": 4,
+          "분석 전략: a_n의 점근적 거동 파악": 1,
+          "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔": 1,
+          "b_n 도입 및 극한": 1,
+          "표현식 재구성": 1,
+          "조건 정리": 5,
+          "극한값 구하기": 1,
+          "조건을 이용한 \\(a_n\\)의 근사": 1,
+          "극한식 정리": 1,
+          "분자와 분모를 \\(n\\)에 대해 전개": 1,
+          "조건 정리와 극한 계획": 1,
+          "극한 계산을 위한 치환": 1,
+          "극한 직접 계산": 1,
+          "좌변과 우변의 근사 계산": 1,
+          "극한식 변형과 대입 전략": 1,
+          "대입: $a_n = 5n + b_n$ 형태 도입": 1,
+          "주요 항만 남기고 나머지 무시": 1,
+          "부등식 분석 및 근사": 1,
+          "극한 계산을 위한 변수 치환": 1,
+          "주요 항으로 나누기": 1,
+          "극한 평가": 1,
+          "좌우 부등식의 근사 분석": 1,
+          "극한식에 대입을 위한 변수 치환": 1,
+          "극한식 변형 및 분석": 1,
+          "식을 n²로 정리": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.2083333333333335,
+      "title_frequency": {
+        "a_n의 성장률(비율) 파악": 4,
+        "극한식을 n^2로 정규화": 1,
+        "극한식을 a_n/n으로 정리": 3,
+        "주어진 부등식에서 a_n의 성장률 파악": 1,
+        "극한식을 a_n/n로 정리": 3,
+        "조건 정리 및 전략 수립": 2,
+        "하한의 점근적 분석": 1,
+        "샌드위치 정리로 a_n의 점근 행동 결정": 1,
+        "극한 계산": 15,
+        "부등식 양변의 극한 분석": 6,
+        "a_n의 점근적 행동 확인": 2,
+        "극한값 계산": 11,
+        "부등식 분석 및 극한 추정": 1,
+        "극한식 정리": 3,
+        "극한값 $\\lim\\limits_{n \\to \\infty} \\dfrac{a_n}{n}$ 구하기": 2,
+        "주어진 식의 극한값 계산": 2,
+        "수열의 극한값 분석": 1,
+        "식의 변형 및 최종 계산": 2,
+        "a_n의 점근적 거동 분석": 6,
+        "극한 표현 재구성": 1,
+        "극한 표현에 대입": 2,
+        "n²로 나누어 극한 계산": 1,
+        "수열의 점근적 거동 분석": 1,
+        "극한 식의 점근적 계산": 1,
+        "극한의 일치성 확인": 1,
+        "조건 정리": 21,
+        "a_n/n의 극한": 1,
+        "주어진 극한식 변형": 3,
+        "극한식 변형": 8,
+        "부등식의 극한 분석": 1,
+        "샌드위치 정리 적용 검토": 1,
+        "대입과 극한 계산": 1,
+        "좌우 극한 비교 전략": 1,
+        "하한 근사 계산": 1,
+        "극한식의 분자와 분모 분석": 2,
+        "샌드위치 정리 적용 준비": 1,
+        "대입형식: a_n = 5n + b_n": 1,
+        "극한 계산: a_n = 5n + b_n 대입": 1,
+        "부등식의 근사 분석": 4,
+        "대입과 근사": 1,
+        "극한식을 n으로 정규화": 1,
+        "a_n의 성장률(선형) 파악": 3,
+        "극한식에 대입 후 최고차항 비교": 1,
+        "샌드위치 정리로 a_n의 점근적 행동 결정": 2,
+        "극한식 계산": 3,
+        "최종 극한값 계산": 1,
+        "샌드위치 정리로 점근적 행동 결정": 1,
+        "샌드위치 정리를 이용한 극한값 확인": 1,
+        "극한값 $\\lim\\limits_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+        "식의 변형 및 최종 극한값 계산": 1,
+        "조건 정리 및 샌드위치 정리 적용": 1,
+        "식의 변형 및 극한값 계산": 1,
+        "a_n / n의 극한 구하기": 1,
+        "극한을 l로 표현하기": 1,
+        "극한 계산하기": 1,
+        "부등식 분석": 1,
+        "극한 표현 대입": 1,
+        "n²으로 나누어 극한 계산": 1,
+        "조건 분석": 1,
+        "극한 추정": 1,
+        "극한 직접 계산": 2,
+        "a_n의 차수 추정": 1,
+        "b_n의 극한 존재 여부": 1,
+        "n^2으로 나누기": 1,
+        "극한식의 주도항 분석": 1,
+        "극한의 엄밀한 계산": 1,
+        "좌변과 우변의 근사 분석": 1,
+        "a_n의 형태 가정 및 대입": 1,
+        "극한식의 분자와 분모 근사": 1,
+        "대입 전략: $a_n = 5n + b_n$": 1,
+        "a_n의 성장률(비율) 추정": 2,
+        "a_n/n의 극한 구하기(샌드위치)": 1,
+        "식을 n^2로 정규화하여 극한 계산": 1,
+        "식을 n으로 정규화하여 극한 계산": 1,
+        "a_n의 점근적 행동 결정": 1,
+        "조건 분석 및 하한 정리": 2,
+        "샌드위치 정리로 점근적 행동 파악": 1,
+        "극한값의 범위 확인": 1,
+        "식의 변형 및 극한 계산": 1,
+        "극한값 $\\lim_{n \\to \\infty} \\frac{a_n}{n}$ 구하기": 1,
+        "주어진 식의 변형 및 극한값 계산": 1,
+        "조건 정리 및 a_n/n의 극한값 구하기": 1,
+        "구하려는 식 변형": 1,
+        "a_n의 점근적 행동 분석": 1,
+        "한계식에 대입": 1,
+        "n²로 나누어 단순화": 1,
+        "a_n/n의 극한 계산": 1,
+        "극한 값 도출": 1,
+        "조건 정리 및 a_n/n의 극한": 1,
+        "a_n의 점근적 형태 추정": 1,
+        "조건 분석 및 a_n/n의 극한": 1,
+        "주어진 극한식 변형 및 계산": 1,
+        "좌변 근사": 1,
+        "극한식의 분석": 1,
+        "극한 계산 준비": 1,
+        "주요 항으로 나누기": 3,
+        "극한 식의 분자와 분모 분석": 1,
+        "극한에 대입하고 근사": 1,
+        "극한 계산 (분자/분모를 $n^2$로 나누기)": 1,
+        "좌우 극한을 통한 $a_n$의 동작 분석": 1,
+        "극한식의 분자와 분모 정리": 1,
+        "대입과 근사: $a_n = 5n + b_n$": 1,
+        "a_n의 성장률( n에 대한 비율 ) 파악": 1,
+        "극한 대입": 1,
+        "성장률(점근) 파악": 1,
+        "비율 수렴 확인": 1,
+        "극한식 정리 및 주요항 비교": 1,
+        "샌드위치 정리 적용": 1,
+        "하한과 상한의 극한 분석": 1,
+        "조건 분석 및 경계 함수의 극한 파악": 1,
+        "극한 계산을 위한 분자·분모 정리": 1,
+        "조건 식을 이용한 수열의 극한값 도출": 1,
+        "주어진 식의 극한 계산": 1,
+        "샌드위치 정리를 이용한 극한값 구하기": 1,
+        "구하려는 식의 변형 및 최종 계산": 1,
+        "수열의 극한값 유도": 1,
+        "식 변형 및 정답 도출": 1,
+        "극한 식 변형": 2,
+        "분석 전략: a_n의 점근적 거동 파악": 1,
+        "한계값 계산: 분자·분모를 \\(n^2\\)으로 나눔": 1,
+        "b_n 도입 및 극한": 1,
+        "표현식 재구성": 1,
+        "극한값 구하기": 1,
+        "조건을 이용한 \\(a_n\\)의 근사": 1,
+        "분자와 분모를 \\(n\\)에 대해 전개": 1,
+        "조건 정리와 극한 계획": 1,
+        "극한 계산을 위한 치환": 1,
+        "좌변과 우변의 근사 계산": 1,
+        "극한식 변형과 대입 전략": 1,
+        "대입: $a_n = 5n + b_n$ 형태 도입": 1,
+        "주요 항만 남기고 나머지 무시": 1,
+        "부등식 분석 및 근사": 1,
+        "극한 계산을 위한 변수 치환": 1,
+        "극한 평가": 1,
+        "좌우 부등식의 근사 분석": 1,
+        "극한식에 대입을 위한 변수 치환": 1,
+        "극한식 변형 및 분석": 1,
+        "식을 n²로 정리": 1
+      },
+      "accuracy": 0.0,
+      "n_samples": 72
+    }
+  }
+}

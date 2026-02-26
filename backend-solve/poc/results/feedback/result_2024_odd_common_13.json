@@ -1,0 +1,467 @@
+{
+  "problem_id": "2024_odd_common_13",
+  "ground_truth": "1",
+  "answer_type": "choice",
+  "baseline": {
+    "gpt-5.2": {
+      "answer": "1",
+      "correct": true
+    },
+    "claude-opus-4.5": {
+      "answer": "1",
+      "correct": true
+    },
+    "gemini-3-pro": {
+      "answer": "1",
+      "correct": true
+    },
+    "gpt-5-codex": {
+      "answer": "1",
+      "correct": true
+    },
+    "gpt-5": {
+      "answer": "1",
+      "correct": true
+    },
+    "grok-4-fast": {
+      "answer": "1",
+      "correct": true
+    }
+  },
+  "self_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "삼각형 ABC에서 AC 구하기",
+          "content": "AB=3, BC=√13, ∠BAC=π/3.\n코사인 법칙(BC는 ∠A의 맞은편):\nBC^2 = AB^2 + AC^2 - 2·AB·AC·cosA\n13 = 9 + AC^2 - 2·3·AC·(1/2) = 9 + AC^2 - 3AC\nAC^2 - 3AC - 4 = 0 → (AC-4)(AC+1)=0\n따라서 AC=4."
+        },
+        {
+          "step_idx": 1,
+          "title": "넓이비로부터 sin∠ACD 식 세우기",
+          "content": "S1 = (1/2)·AB·AC·sin∠BAC = (1/2)·3·4·sin(π/3)\n= 6·(√3/2) = 3√3.\nS2 = (1/2)·AC·CD·sin∠ACD = (1/2)·4·CD·sin∠ACD = 2·CD·sin∠ACD.\nS2 = (5/6)S1 이므로\n2·CD·sin∠ACD = (5/6)·3√3 = 5√3/2\nCD·sin∠ACD = 5√3/4\n따라서 sin∠ACD = (5√3)/(4CD)."
+        },
+        {
+          "step_idx": 2,
+          "title": "R/sin∠ADC를 AD·CD, S2만으로 정리",
+          "content": "삼각형 ACD에서 넓이 공식 S2 = (abc)/(4R) 를 쓰면\nS2 = (AC·CD·AD)/(4R) → R = (AC·CD·AD)/(4S2).\n또한 S2 = (1/2)·AD·CD·sin∠ADC → sin∠ADC = (2S2)/(AD·CD).\n따라서\nR/sin∠ADC = (AC·CD·AD)/(4S2) · (AD·CD)/(2S2)\n= AC·(AD·CD)^2/(8S2^2)."
+        },
+        {
+          "step_idx": 3,
+          "title": "주어진 값 대입하여 계산",
+          "content": "AC=4, AD·CD=9, S2=(5/6)S1=(5/6)·3√3=5√3/2.\n따라서\nR/sin∠ADC = 4·9^2 / (8·(5√3/2)^2)\n= 4·81 / (8·(25·3/4))\n= 324 / 150\n= 54/25."
+        },
+        {
+          "step_idx": 4,
+          "title": "정답 선택",
+          "content": "R/sin(∠ADC) = 54/25 이므로 ①."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "각 단계의 핵심 식들을 점검했다. Step 1의 코사인 법칙 적용과 근의 선택(길이이므로 AC=4) 모두 타당하다. Step 2의 넓이 계산(S1=3√3) 및 S2=(5/6)S1에서 CD·sin∠ACD=5√3/4 도출이 정확하다. Step 3에서 S=abc/(4R), S=(1/2)bc sinA를 조합해 R/sin∠ADC = AC(AD·CD)^2/(8S2^2)로 각도 없이 정리한 과정이 올바르다. Step 4의 수치 대입 및 계산 결과 54/25도 정확하며 보기 ①에 해당한다. 수정할 오류가 없다.",
+      "revised": false,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 10.711769819259644
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 1,
+          "title": "조건 정리",
+          "content": "주어진 조건을 정리합니다.\n- $\\overline{AB} = 3$, $\\overline{BC} = \\sqrt{13}$, $\\angle BAC = \\frac{\\pi}{3}$\n- $\\overline{AD} \\times \\overline{CD} = 9$\n- $S_2 = \\frac{5}{6}S_1$\n\n구해야 할 값: $\\frac{R}{\\sin(\\angle ADC)}$"
+        },
+        {
+          "step_idx": 2,
+          "title": "삼각형 ABC에서 AC 구하기",
+          "content": "코사인 법칙을 적용합니다.\n\n$$BC^2 = AB^2 + AC^2 - 2 \\cdot AB \\cdot AC \\cdot \\cos(\\angle BAC)$$\n\n$$13 = 9 + AC^2 - 2 \\cdot 3 \\cdot AC \\cdot \\frac{1}{2}$$\n\n$$13 = 9 + AC^2 - 3 \\cdot AC$$\n\n$$AC^2 - 3 \\cdot AC - 4 = 0$$\n\n$$(AC - 4)(AC + 1) = 0$$\n\n따라서 $AC = 4$ (양수)"
+        },
+        {
+          "step_idx": 3,
+          "title": "S₁ 계산",
+          "content": "$$S_1 = \\frac{1}{2} \\cdot AB \\cdot AC \\cdot \\sin(\\angle BAC) = \\frac{1}{2} \\cdot 3 \\cdot 4 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "S₂와 각 ACD 관계 설정",
+          "content": "$AD = a$, $CD = b$라 하면 $ab = 9$\n\n$$S_2 = \\frac{1}{2} \\cdot AD \\cdot CD \\cdot \\sin(\\angle ADC) = \\frac{1}{2} \\cdot 9 \\cdot \\sin(\\angle ADC) = \\frac{9}{2}\\sin(\\angle ADC)$$\n\n$S_2 = \\frac{5}{6}S_1 = \\frac{5}{6} \\cdot 3\\sqrt{3} = \\frac{5\\sqrt{3}}{2}$\n\n따라서:\n$$\\frac{9}{2}\\sin(\\angle ADC) = \\frac{5\\sqrt{3}}{2}$$\n\n$$\\sin(\\angle ADC) = \\frac{5\\sqrt{3}}{9}$$"
+        },
+        {
+          "step_idx": 5,
+          "title": "외접원 반지름 R 구하기",
+          "content": "삼각형 ACD의 외접원에서 사인 법칙:\n$$2R = \\frac{AC}{\\sin(\\angle ADC)} = \\frac{4}{\\frac{5\\sqrt{3}}{9}} = \\frac{36}{5\\sqrt{3}} = \\frac{36\\sqrt{3}}{15} = \\frac{12\\sqrt{3}}{5}$$\n\n$$R = \\frac{6\\sqrt{3}}{5}$$"
+        },
+        {
+          "step_idx": 6,
+          "title": "최종 계산",
+          "content": "$$\\frac{R}{\\sin(\\angle ADC)} = \\frac{\\frac{6\\sqrt{3}}{5}}{\\frac{5\\sqrt{3}}{9}} = \\frac{6\\sqrt{3}}{5} \\times \\frac{9}{5\\sqrt{3}} = \\frac{54}{25}$$"
+        },
+        {
+          "step_idx": 7,
+          "title": "Final Answer",
+          "content": "① $\\dfrac{54}{25}$"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "모든 단계를 검증했습니다. Step 2에서 코사인 법칙 적용이 올바르고 AC=4가 정확합니다. Step 3에서 S₁ = 3√3 계산이 맞습니다. Step 4에서 삼각형 ACD의 넓이 공식에서 ∠ADC를 사용한 것이 올바르며, sin(∠ADC) = 5√3/9가 정확합니다. Step 5에서 사인 법칙으로 R = 6√3/5를 구한 것이 맞습니다. Step 6에서 최종 계산 R/sin(∠ADC) = 54/25가 정확합니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 10.793610572814941
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Step 1: AC의 길이 구하기",
+          "content": "삼각형 $\\mathrm{ABC}$에서 코사인법칙을 적용하여 변 $\\mathrm{AC}$의 길이를 구한다.\n$\\overline{\\mathrm{AC}}=x$라 하면,\n$$ \\overline{\\mathrm{BC}}^2 = \\overline{\\mathrm{AB}}^2 + \\overline{\\mathrm{AC}}^2 - 2 \\cdot \\overline{\\mathrm{AB}} \\cdot \\overline{\\mathrm{AC}} \\cdot \\cos(\\angle \\mathrm{BAC}) $$\n$$ 13 = 3^2 + x^2 - 2 \\cdot 3 \\cdot x \\cdot \\cos\\left(\\frac{\\pi}{3}\\right) $$\n$$ 13 = 9 + x^2 - 3x $$\n$$ x^2 - 3x - 4 = 0 $$\n$$ (x-4)(x+1) = 0 $$\n$x>0$이므로 $\\overline{\\mathrm{AC}}=4$이다."
+        },
+        {
+          "step_idx": 1,
+          "title": "Step 2: 넓이 관계를 이용한 sin(ADC) 구하기",
+          "content": "먼저 삼각형 $\\mathrm{ABC}$의 넓이 $S_1$을 계산한다.\n$$ S_1 = \\frac{1}{2} \\cdot \\overline{\\mathrm{AB}} \\cdot \\overline{\\mathrm{AC}} \\cdot \\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2} \\cdot 3 \\cdot 4 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3} $$\n문제의 조건 $S_2 = \\frac{5}{6}S_1$을 이용하여 삼각형 $\\mathrm{ACD}$의 넓이 $S_2$를 구한다.\n$$ S_2 = \\frac{5}{6} \\cdot 3\\sqrt{3} = \\frac{5\\sqrt{3}}{2} $$\n또한, $S_2$는 $\\overline{\\mathrm{AD}}$, $\\overline{\\mathrm{CD}}$와 끼인각 $\\angle \\mathrm{ADC}$를 이용하여 표현할 수 있다. $\\angle \\mathrm{ADC} = D$라 하자.\n$$ S_2 = \\frac{1}{2} \\cdot \\overline{\\mathrm{AD}} \\cdot \\overline{\\mathrm{CD}} \\cdot \\sin D $$\n조건에서 $\\overline{\\mathrm{AD}} \\times \\overline{\\mathrm{CD}} = 9$이므로,\n$$ \\frac{5\\sqrt{3}}{2} = \\frac{1}{2} \\cdot 9 \\cdot \\sin D $$\n$$ \\sin D = \\frac{5\\sqrt{3}}{9} $$"
+        },
+        {
+          "step_idx": 2,
+          "title": "Step 3: 사인법칙을 이용한 식의 값 계산",
+          "content": "삼각형 $\\mathrm{ACD}$에서 사인법칙을 적용하면 외접원의 반지름 $R$은 다음과 같다.\n$$ 2R = \\frac{\\overline{\\mathrm{AC}}}{\\sin D} \\implies R = \\frac{\\overline{\\mathrm{AC}}}{2\\sin D} $$\n구하고자 하는 값은 $\\dfrac{R}{\\sin D}$이므로, 위 식을 대입하여 정리한다.\n$$ \\frac{R}{\\sin D} = \\frac{\\frac{\\overline{\\mathrm{AC}}}{2\\sin D}}{\\sin D} = \\frac{\\overline{\\mathrm{AC}}}{2\\sin^2 D} $$\n앞서 구한 $\\overline{\\mathrm{AC}}=4$와 $\\sin D = \\frac{5\\sqrt{3}}{9}$를 대입한다.\n$$ \\sin^2 D = \\left(\\frac{5\\sqrt{3}}{9}\\right)^2 = \\frac{75}{81} = \\frac{25}{27} $$\n$$ \\frac{R}{\\sin D} = \\frac{4}{2 \\cdot \\frac{25}{27}} = \\frac{4}{\\frac{50}{27}} = 4 \\cdot \\frac{27}{50} = \\frac{54}{25} $$"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "The solution includes all logical steps: calculating side AC via the Law of Cosines, determining sin(ADC) from the area relationship, and using the Law of Sines to find the required ratio. All arithmetic is correct.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 30.324742555618286
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Compute AC using Law of Cosines",
+          "content": "In triangle ABC, apply the Law of Cosines with AB = 3, BC = √13, and ∠BAC = π/3: 13 = 9 + AC² − 2·3·AC·(1/2). Thus AC² − 3AC − 4 = 0, so AC = 4."
+        },
+        {
+          "step_idx": 1,
+          "title": "Relate triangle areas to sin∠ADC",
+          "content": "Triangle ABC has area S₁ = (1/2)·AB·AC·sin(π/3) = (3√3/4)·AC. Triangle ACD has area S₂ = (1/2)·AD·CD·sin∠ADC = (1/2)·9·sinθ with θ = ∠ADC. Using S₂ = (5/6)S₁ and AC = 4, obtain 9 sinθ = 5√3, so sinθ = 5√3/9."
+        },
+        {
+          "step_idx": 2,
+          "title": "Evaluate R divided by sin∠ADC",
+          "content": "In triangle ACD, AC = 2R sinθ, hence R = AC/(2 sinθ). Therefore R/sinθ = AC/(2 sin²θ) = 4/(2·25/27) = 54/25."
+        },
+        {
+          "step_idx": 3,
+          "title": "Select final answer",
+          "content": "The value 54/25 corresponds to choice ①."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "All computations and deductions in each step were verified as correct; no changes were necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 10.074969291687012
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Express S1 and S2",
+          "content": "For triangle ABC: S1 = (1/2)·AB·AC·sin∠BAC = (1/2)·3·AC·(√3/2) = (3√3/4)·AC. For triangle ACD: S2 = (1/2)·AD·CD·sin∠ADC = (1/2)·9·sin∠ADC = (9/2)·sin∠ADC."
+        },
+        {
+          "step_idx": 1,
+          "title": "Relate sin∠ADC and AC",
+          "content": "Given S2 = (5/6)S1, we have (9/2)·sin∠ADC = (5/6)·(3√3/4)·AC = (5√3/8)·AC. Hence sin∠ADC = (5√3/36)·AC."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find AC via Law of Cosines",
+          "content": "In △ABC, with AB=3, BC=√13, ∠BAC=60°, apply Law of Cosines: BC^2 = AB^2 + AC^2 − 2·AB·AC·cos60°. So 13 = 9 + AC^2 − 3AC ⇒ AC^2 − 3AC − 4 = 0 ⇒ AC = 4 (positive root)."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute R/sin∠ADC",
+          "content": "In △ACD, R = AC/(2·sin∠ADC), so R/sin∠ADC = AC/(2·sin^2∠ADC). Using sin∠ADC = (5√3/36)·AC and AC=4: R/sin∠ADC = AC / [2·(25·3/1296)·AC^2] = 216/(25·AC) = 216/100 = 54/25."
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Checked area formulas, use of AD·CD=9, the relation S2=(5/6)S1, Law of Cosines for AC, and the circumradius formula R = a/(2 sin A) with a=AC opposite ∠ADC. All arithmetic and algebraic steps are correct. No changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 46.725990295410156
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find AC length using coordinates",
+          "content": "Place A at (0,0), B at (3,0). Let AC = x, so C at (x/2, x√3/2). Distance BC = √13 gives (x/2 - 3)^2 + (x√3/2)^2 = 13. Simplify: x^2 - 3x - 4 = 0. Solve: x = 4."
+        },
+        {
+          "step_idx": 1,
+          "title": "Calculate area S1 of triangle ABC",
+          "content": "S1 = (1/2) × AB × AC × sin(π/3) = (1/2) × 3 × 4 × (√3/2) = 3√3."
+        },
+        {
+          "step_idx": 2,
+          "title": "Determine S2 and sinθ from area formula",
+          "content": "S2 = (5/6)S1 = (5/6) × 3√3 = (5/2)√3. In triangle ACD, S2 = (1/2) × AD × CD × sinθ = (1/2) × 9 × sinθ. Thus, (9/2) sinθ = (5/2)√3, so sinθ = 5√3/9."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute R and the required ratio",
+          "content": "R = AC / (2 sinθ) = 4 / (2 × 5√3/9) = 2 / sinθ. Then R / sinθ = 2 / (sinθ)^2. (sinθ)^2 = (25 × 3)/81 = 25/27. So 2 / (25/27) = 2 × 27/25 = 54/25."
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Verified all steps: coordinate setup and AC calculation correct; area S1 correct; S2 and sinθ derivation correct; R formula and ratio computation accurate, matching 54/25. No errors found, no changes needed.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 11.352917194366455
+    }
+  },
+  "cross_feedback": {
+    "gpt-5.2": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "AC 계산 (△ABC 코사인법칙)",
+          "content": "BC^2=AB^2+AC^2-2·AB·AC·cos∠BAC ⇒ 13=9+AC^2-3AC ⇒ AC^2-3AC-4=0 ⇒ AC=4."
+        },
+        {
+          "step_idx": 1,
+          "title": "넓이로 S1, S2 확보",
+          "content": "S1=½·AB·AC·sin(π/3)=½·3·4·(√3/2)=3√3.  S2=(5/6)S1=(5√3)/2."
+        },
+        {
+          "step_idx": 2,
+          "title": "R/sin∠ADC를 각 없이 정리",
+          "content": "△ACD에서 S2=½·AD·CD·sin∠ADC, 그리고 AD·CD=9이므로 sin∠ADC=2S2/(AD·CD)=2·((5√3)/2)/9=5√3/9.\n또한 사인법칙으로 R=AC/(2sin∠ADC). 따라서 R/sin∠ADC = AC/(2 sin^2∠ADC)."
+        },
+        {
+          "step_idx": 3,
+          "title": "값 대입",
+          "content": "sin^2∠ADC=(5√3/9)^2=75/81=25/27.  R/sin∠ADC=4/(2·25/27)=4·27/50=54/25 ⇒ ①."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "다른 모델들은 S2를 곧바로 ½·AD·CD·sin∠ADC로 두고(AD·CD=9) sin∠ADC를 즉시 구한 뒤, R=AC/(2sin∠ADC)로 끝냈습니다. 내 풀이도 최종값은 같지만, Step 2에서 S2를 ½·AC·CD·sin∠ACD로 잡아 CD·sin∠ACD를 구하는 우회가 불필요했고, Step 3~4에서 넓이-외접반지름 공식을 결합해 각을 없애는 정리는 가능하나 더 복잡했습니다. 핵심 오류는 없으며 정답 54/25(①)로 유지하되, 다른 모델들처럼 더 간단한 경로로 정리해 제시했습니다.",
+      "revised": true,
+      "_model_id": "openai/gpt-5.2",
+      "_elapsed_s": 7.817903995513916
+    },
+    "claude-opus-4.5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "주어진 조건을 정리합니다.\n- $\\overline{AB} = 3$, $\\overline{BC} = \\sqrt{13}$, $\\angle BAC = \\frac{\\pi}{3}$\n- $\\overline{AD} \\times \\overline{CD} = 9$\n- $S_2 = \\frac{5}{6}S_1$\n\n구해야 할 값: $\\frac{R}{\\sin(\\angle ADC)}$"
+        },
+        {
+          "step_idx": 1,
+          "title": "삼각형 ABC에서 AC 구하기",
+          "content": "코사인 법칙을 적용합니다.\n\n$$BC^2 = AB^2 + AC^2 - 2 \\cdot AB \\cdot AC \\cdot \\cos(\\angle BAC)$$\n\n$$13 = 9 + AC^2 - 2 \\cdot 3 \\cdot AC \\cdot \\frac{1}{2}$$\n\n$$13 = 9 + AC^2 - 3 \\cdot AC$$\n\n$$AC^2 - 3 \\cdot AC - 4 = 0$$\n\n$$(AC - 4)(AC + 1) = 0$$\n\n따라서 $AC = 4$ (양수)"
+        },
+        {
+          "step_idx": 2,
+          "title": "S₁ 계산",
+          "content": "$$S_1 = \\frac{1}{2} \\cdot AB \\cdot AC \\cdot \\sin(\\angle BAC) = \\frac{1}{2} \\cdot 3 \\cdot 4 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$$"
+        },
+        {
+          "step_idx": 3,
+          "title": "S₂와 sin(∠ADC) 계산",
+          "content": "$AD = a$, $CD = b$라 하면 $ab = 9$\n\n$$S_2 = \\frac{1}{2} \\cdot AD \\cdot CD \\cdot \\sin(\\angle ADC) = \\frac{1}{2} \\cdot 9 \\cdot \\sin(\\angle ADC) = \\frac{9}{2}\\sin(\\angle ADC)$$\n\n$S_2 = \\frac{5}{6}S_1 = \\frac{5}{6} \\cdot 3\\sqrt{3} = \\frac{5\\sqrt{3}}{2}$\n\n따라서:\n$$\\frac{9}{2}\\sin(\\angle ADC) = \\frac{5\\sqrt{3}}{2}$$\n\n$$\\sin(\\angle ADC) = \\frac{5\\sqrt{3}}{9}$$"
+        },
+        {
+          "step_idx": 4,
+          "title": "외접원 반지름 R 구하기",
+          "content": "삼각형 ACD의 외접원에서 사인 법칙:\n$$2R = \\frac{AC}{\\sin(\\angle ADC)} = \\frac{4}{\\frac{5\\sqrt{3}}{9}} = \\frac{36}{5\\sqrt{3}} = \\frac{12\\sqrt{3}}{5}$$\n\n$$R = \\frac{6\\sqrt{3}}{5}$$"
+        },
+        {
+          "step_idx": 5,
+          "title": "최종 계산",
+          "content": "$$\\frac{R}{\\sin(\\angle ADC)} = \\frac{\\frac{6\\sqrt{3}}{5}}{\\frac{5\\sqrt{3}}{9}} = \\frac{6\\sqrt{3}}{5} \\times \\frac{9}{5\\sqrt{3}} = \\frac{54}{25}$$"
+        },
+        {
+          "step_idx": 6,
+          "title": "검증",
+          "content": "다른 방법으로 검증:\n$$\\frac{R}{\\sin(\\angle ADC)} = \\frac{AC}{2\\sin^2(\\angle ADC)}$$\n\n$$\\sin^2(\\angle ADC) = \\left(\\frac{5\\sqrt{3}}{9}\\right)^2 = \\frac{75}{81} = \\frac{25}{27}$$\n\n$$\\frac{R}{\\sin(\\angle ADC)} = \\frac{4}{2 \\cdot \\frac{25}{27}} = \\frac{4 \\cdot 27}{50} = \\frac{108}{50} = \\frac{54}{25}$$"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "모든 다른 모델들과 동일한 접근 방식을 사용했고, 동일한 답 54/25를 얻었습니다. AC = 4, sin(∠ADC) = 5√3/9를 구한 후, 사인 법칙을 이용하여 R을 구하고 R/sin(∠ADC)를 계산하는 과정이 일치합니다. 특히 gpt-5.2의 공식 R/sin(∠ADC) = AC·(AD·CD)²/(8S₂²)를 사용한 검증도 같은 결과를 보여줍니다. 풀이에 오류가 없습니다.",
+      "revised": false,
+      "_model_id": "anthropic/claude-opus-4.5",
+      "_elapsed_s": 17.15175461769104
+    },
+    "gemini-3-pro": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Calculate the length of AC",
+          "content": "In $\\triangle \\mathrm{ABC}$, apply the Law of Cosines to find $\\overline{\\mathrm{AC}}$. Let $\\overline{\\mathrm{AC}}=x$. The given values are $\\overline{\\mathrm{AB}}=3$, $\\overline{\\mathrm{BC}}=\\sqrt{13}$, and $\\angle \\mathrm{BAC}=\\frac{\\pi}{3}$.\n$$ \\overline{\\mathrm{BC}}^2 = \\overline{\\mathrm{AB}}^2 + \\overline{\\mathrm{AC}}^2 - 2 \\cdot \\overline{\\mathrm{AB}} \\cdot \\overline{\\mathrm{AC}} \\cdot \\cos(\\frac{\\pi}{3}) $$\n$$ 13 = 3^2 + x^2 - 2 \\cdot 3 \\cdot x \\cdot \\frac{1}{2} $$\n$$ 13 = 9 + x^2 - 3x \\implies x^2 - 3x - 4 = 0 $$\nFactoring the quadratic equation gives $(x-4)(x+1) = 0$. Since length must be positive, $\\overline{\\mathrm{AC}}=4$."
+        },
+        {
+          "step_idx": 1,
+          "title": "Calculate areas and determined sin(ADC)",
+          "content": "First, calculate the area $S_1$ of $\\triangle \\mathrm{ABC}$:\n$$ S_1 = \\frac{1}{2} \\cdot \\overline{\\mathrm{AB}} \\cdot \\overline{\\mathrm{AC}} \\cdot \\sin(\\frac{\\pi}{3}) = \\frac{1}{2} \\cdot 3 \\cdot 4 \\cdot \\frac{\\sqrt{3}}{2} = 3\\sqrt{3} $$\nGiven $S_2 = \\frac{5}{6}S_1$, calculate the area $S_2$ of $\\triangle \\mathrm{ACD}$:\n$$ S_2 = \\frac{5}{6} \\cdot 3\\sqrt{3} = \\frac{5\\sqrt{3}}{2} $$\nUsing the area formula for $\\triangle \\mathrm{ACD}$ with condition $\\overline{\\mathrm{AD}} \\times \\overline{\\mathrm{CD}} = 9$:\n$$ S_2 = \\frac{1}{2} \\cdot \\overline{\\mathrm{AD}} \\cdot \\overline{\\mathrm{CD}} \\cdot \\sin(\\angle \\mathrm{ADC}) = \\frac{1}{2} \\cdot 9 \\cdot \\sin(\\angle \\mathrm{ADC}) $$\nEquating the expressions for $S_2$ gives:\n$$ \\frac{9}{2} \\sin(\\angle \\mathrm{ADC}) = \\frac{5\\sqrt{3}}{2} \\implies \\sin(\\angle \\mathrm{ADC}) = \\frac{5\\sqrt{3}}{9} $$"
+        },
+        {
+          "step_idx": 2,
+          "title": "Calculate the required value using the Sine Rule",
+          "content": "Let $D = \\angle \\mathrm{ADC}$. By the Sine Rule in $\\triangle \\mathrm{ACD}$, the circumradius $R$ satisfies:\n$$ 2R = \\frac{\\overline{\\mathrm{AC}}}{\\sin D} \\implies R = \\frac{\\overline{\\mathrm{AC}}}{2\\sin D} $$\nWe need to find the value of $\\frac{R}{\\sin D}$. Substituting the expression for $R$:\n$$ \\frac{R}{\\sin D} = \\frac{\\frac{\\overline{\\mathrm{AC}}}{2\\sin D}}{\\sin D} = \\frac{\\overline{\\mathrm{AC}}}{2\\sin^2 D} $$\nSubstitute $\\overline{\\mathrm{AC}} = 4$ and $\\sin D = \\frac{5\\sqrt{3}}{9}$:\n$$ \\sin^2 D = \\left(\\frac{5\\sqrt{3}}{9}\\right)^2 = \\frac{75}{81} = \\frac{25}{27} $$\n$$ \\frac{R}{\\sin D} = \\frac{4}{2 \\cdot \\frac{25}{27}} = \\frac{4}{\\frac{50}{27}} = 4 \\cdot \\frac{27}{50} = \\frac{54}{25} $$"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My original solution correctly identified the method using the Law of Cosines to find AC, the area formula to find sin(ADC), and the Sine Rule to relate R. The calculations match those of other models. The logic is consistent and verified.",
+      "revised": false,
+      "_model_id": "google/gemini-3-pro-preview",
+      "_elapsed_s": 27.416784524917603
+    },
+    "gpt-5-codex": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Compute AC via Law of Cosines",
+          "content": "In triangle ABC, use BC^2 = AB^2 + AC^2 - 2·AB·AC·cos(∠BAC). With AB=3, BC=√13, ∠BAC=π/3, we get 13 = 9 + AC^2 - 3AC ⇒ AC^2 - 3AC - 4 = 0 ⇒ AC = 4."
+        },
+        {
+          "step_idx": 1,
+          "title": "Determine sin∠ADC from area ratio",
+          "content": "Area S₁ of △ABC is (1/2)·AB·AC·sin(π/3) = (1/2)·3·4·(√3/2) = 3√3. Given S₂ = (5/6)S₁, we have S₂ = (5√3)/2. Meanwhile S₂ = (1/2)·AD·CD·sin∠ADC = (1/2)·9·sinθ, so sinθ = (5√3)/9, where θ = ∠ADC."
+        },
+        {
+          "step_idx": 2,
+          "title": "Evaluate R / sin∠ADC",
+          "content": "Using R = AC/(2 sinθ) for △ACD, we obtain R/sinθ = AC/(2 sin²θ). Substituting AC = 4 and sinθ = (5√3)/9, we get sin²θ = 25/27 and R/sinθ = 4 / (2·25/27) = 54/25."
+        },
+        {
+          "step_idx": 3,
+          "title": "Select final option",
+          "content": "The value 54/25 corresponds to choice ①."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "Compared with other models, the approach and computations match throughout. No discrepancies found, so no changes were necessary.",
+      "revised": false,
+      "_model_id": "openai/gpt-5-codex",
+      "_elapsed_s": 6.850512504577637
+    },
+    "gpt-5": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Express S1 and S2",
+          "content": "S1 = (1/2)·AB·AC·sin∠BAC = (1/2)·3·AC·(√3/2) = (3√3/4)·AC. S2 = (1/2)·AD·CD·sin∠ADC = (1/2)·9·sin∠ADC."
+        },
+        {
+          "step_idx": 1,
+          "title": "Relate sin∠ADC to AC",
+          "content": "Given S2 = (5/6)S1, we get (9/2)·sin∠ADC = (5/6)·(3√3/4)·AC ⇒ sin∠ADC = (5√3/36)·AC."
+        },
+        {
+          "step_idx": 2,
+          "title": "Find AC via Law of Cosines in △ABC",
+          "content": "BC^2 = AB^2 + AC^2 − 2·AB·AC·cos∠BAC ⇒ 13 = 9 + AC^2 − 3AC ⇒ AC^2 − 3AC − 4 = 0 ⇒ AC = 4."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute R/sin∠ADC",
+          "content": "In △ACD, 2R = AC/ sin∠ADC ⇒ R/sin∠ADC = AC/(2·sin^2∠ADC). With sin∠ADC = (5√3/36)·AC and AC=4, R/sin∠ADC = 54/25."
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My approach matches the others: find AC by the Law of Cosines, use the area ratio with AD·CD=9 to get sin∠ADC, then apply 2R = AC/sin∠ADC to compute R/sin∠ADC. Some solutions directly computed sin∠ADC = 5√3/9 from S2 without first expressing it in terms of AC, or used S = abc/(4R) to eliminate the angle; all yield 54/25. No errors found, so no changes needed.",
+      "revised": false,
+      "_model_id": "openai/gpt-5",
+      "_elapsed_s": 81.36356925964355
+    },
+    "grok-4-fast": {
+      "steps": [
+        {
+          "step_idx": 0,
+          "title": "Find AC length using law of cosines",
+          "content": "Place A at (0,0), B at (3,0). Let AC = x, so C at (x/2, x√3/2). Distance BC = √13 gives (x/2 - 3)^2 + (x√3/2)^2 = 13. Simplify: x^2 - 3x - 4 = 0. Solve: x = 4."
+        },
+        {
+          "step_idx": 1,
+          "title": "Calculate area S1 of triangle ABC",
+          "content": "S1 = (1/2) × AB × AC × sin(π/3) = (1/2) × 3 × 4 × (√3/2) = 3√3."
+        },
+        {
+          "step_idx": 2,
+          "title": "Determine S2 and sinθ from area formula",
+          "content": "S2 = (5/6)S1 = (5/6) × 3√3 = (5/2)√3. In triangle ACD, S2 = (1/2) × AD × CD × sinθ = (1/2) × 9 × sinθ. Thus, (9/2) sinθ = (5/2)√3, so sinθ = 5√3/9."
+        },
+        {
+          "step_idx": 3,
+          "title": "Compute R and the required ratio",
+          "content": "R = AC / (2 sinθ) = 4 / (2 × 5√3/9) = 2 / sinθ. Then R / sinθ = 2 / (sinθ)^2. (sinθ)^2 = (25 × 3)/81 = 25/27. So 2 / (25/27) = 2 × 27/25 = 54/25."
+        },
+        {
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "1"
+        }
+      ],
+      "final_answer": 1,
+      "feedback": "My solution matches the approaches of other models, all arriving at 54/25 using similar steps: finding AC=4 via law of cosines (equivalent to my coordinate method), computing S1 and S2, deriving sin∠ADC=5√3/9, and using the formula for R from the law of sines to get R/sin∠ADC = AC/(2 sin²∠ADC) = 54/25. Some models used alternative derivations like the abc/4R formula but reached the same result. No errors spotted in my solution.",
+      "revised": false,
+      "_model_id": "x-ai/grok-4-fast",
+      "_elapsed_s": 20.84645438194275
+    }
+  },
+  "aggregation": {
+    "steps": [
+      {
+        "step_idx": 0,
+        "title": "주어진 조건 정리",
+        "content": "사각형 ABCD에서 다음 조건이 주어졌다:\n- AB = 3\n- BC = √13\n- AD × CD = 9\n- ∠BAC = π/3\n- S₂ = (5/6)S₁ (여기서 S₁은 삼각형 ABC의 넓이, S₂는 삼각형 ACD의 넓이)\n\n구해야 할 값: R/sin(∠ADC), 여기서 R은 삼각형 ACD의 외접원 반지름"
+      },
+      {
+        "step_idx": 1,
+        "title": "코사인 법칙으로 AC 구하기",
+        "content": "삼각형 ABC에서 코사인 법칙을 적용한다.\n\nBC² = AB² + AC² - 2·AB·AC·cos(∠BAC)\n\n13 = 9 + AC² - 2·3·AC·cos(π/3)\n\ncos(π/3) = 1/2 이므로:\n13 = 9 + AC² - 3·AC\n\nAC² - 3·AC - 4 = 0\n\n인수분해: (AC - 4)(AC + 1) = 0\n\nAC > 0 이므로 AC = 4"
+      },
+      {
+        "step_idx": 2,
+        "title": "삼각형 ABC의 넓이 S₁ 계산",
+        "content": "삼각형 ABC의 넓이 공식을 사용한다:\n\nS₁ = (1/2)·AB·AC·sin(∠BAC)\n\nsin(π/3) = √3/2 이므로:\n\nS₁ = (1/2)·3·4·(√3/2) = 6·(√3/2) = 3√3"
+      },
+      {
+        "step_idx": 3,
+        "title": "삼각형 ACD의 넓이 S₂ 계산",
+        "content": "조건에서 S₂ = (5/6)S₁ 이므로:\n\nS₂ = (5/6)·3√3 = (5√3)/2"
+      },
+      {
+        "step_idx": 4,
+        "title": "sin(∠ADC) 구하기",
+        "content": "삼각형 ACD에서 넓이 공식을 적용한다:\n\nS₂ = (1/2)·AD·CD·sin(∠ADC)\n\nAD × CD = 9 이므로:\n\n(5√3)/2 = (1/2)·9·sin(∠ADC)\n\n(5√3)/2 = (9/2)·sin(∠ADC)\n\nsin(∠ADC) = (5√3)/9"
+      },
+      {
+        "step_idx": 5,
+        "title": "외접원 반지름 R 구하기",
+        "content": "삼각형 ACD에서 사인 법칙을 적용한다. AC는 ∠ADC의 대변이므로:\n\n2R = AC/sin(∠ADC)\n\n2R = 4/[(5√3)/9] = 4·(9)/(5√3) = 36/(5√3)\n\n유리화: 2R = 36√3/(5·3) = 36√3/15 = (12√3)/5\n\n따라서 R = (6√3)/5"
+      },
+      {
+        "step_idx": 6,
+        "title": "최종값 R/sin(∠ADC) 계산",
+        "content": "R/sin(∠ADC) = [(6√3)/5] / [(5√3)/9]\n\n= [(6√3)/5] · [9/(5√3)]\n\n= (6√3 · 9) / (5 · 5√3)\n\n= 54/25\n\n또는 다른 방법으로:\nR = AC/(2·sin(∠ADC)) 이므로\nR/sin(∠ADC) = AC/(2·sin²(∠ADC))\n\nsin²(∠ADC) = [(5√3)/9]² = (25·3)/81 = 75/81 = 25/27\n\nR/sin(∠ADC) = 4/(2·25/27) = 4·27/50 = 108/50 = 54/25"
+      }
+    ],
+    "final_answer": 1,
+    "rationale": "모든 참조 모델들이 동일한 접근법을 사용했고, 같은 답에 도달했다. 코사인 법칙으로 AC=4를 구하고, 넓이 조건에서 sin(∠ADC)를 유도한 후, 사인 법칙으로 R을 구하는 과정이 모두 일관성이 있었다. 계산 과정도 정확하게 검증되었다.",
+    "confidence": "high",
+    "_model_id": "anthropic/claude-opus-4.5",
+    "_elapsed_s": 15.10193657875061
+  }
+}

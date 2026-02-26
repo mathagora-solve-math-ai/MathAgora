@@ -1,0 +1,3806 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-14T03:47:27Z",
+    "ended_at_utc": "2026-02-14T03:48:55Z",
+    "elapsed_seconds": 87.989,
+    "problem_tag": "2026_odd_common_13",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 7,
+    "n_resumed_runs_from_flat_csv": 65
+  },
+  "problem": {
+    "id": "2026_odd_common_13",
+    "label": "2026_odd_common_13 (수학2, 4점)",
+    "gold_answer": "5"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.28737998008728,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.423589944839478,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.474905014038086,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 이루는 삼각형의 꼭짓점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.28737998008728,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.423589944839478,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.474905014038086,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 이루는 삼각형의 꼭짓점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "둘러싸인 도형 넓이 계산": 1,
+            "삼각형 넓이 계산": 1,
+            "y축과 이루는 삼각형의 꼭짓점 찾기": 1,
+            "넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "둘러싸인 도형 넓이 계산": 1,
+            "삼각형 넓이 계산": 1,
+            "y축과 이루는 삼각형의 꼭짓점 찾기": 1,
+            "넓이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.455535173416138,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.514289379119873,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.661375045776367,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.455535173416138,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.514289379119873,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.661375045776367,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 찾기": 3,
+            "도형의 넓이 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 찾기": 3,
+            "도형의 넓이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.14942193031311,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선의 교점과 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.352078,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.24656,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선의 교점과 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.14942193031311,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선의 교점과 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": false,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.352078,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.24656,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선의 교점과 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "접선 l의 방정식 구하기": 2,
+            "접선 m의 방정식 구하기": 2,
+            "두 직선의 교점과 y절편 구하기": 2,
+            "도형의 넓이 계산": 2,
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "교점 및 도형의 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l의 방정식 구하기": 2,
+            "접선 m의 방정식 구하기": 2,
+            "두 직선의 교점과 y절편 구하기": 2,
+            "도형의 넓이 계산": 2,
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "교점 및 도형의 넓이 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 100.071982,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "l과 m의 교점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 62.808724,
+              "step_count": 4,
+              "step_titles": [
+                "f(x)의 접선 l 구하기",
+                "g(x)의 미분과 접선 m 구하기",
+                "교점과 교차점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 55.559413,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 y축 교점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 100.071982,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "l과 m의 교점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 62.808724,
+              "step_count": 4,
+              "step_titles": [
+                "f(x)의 접선 l 구하기",
+                "g(x)의 미분과 접선 m 구하기",
+                "교점과 교차점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 55.559413,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 y축 교점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 2,
+            "접선 m 구하기": 2,
+            "l과 m의 교점 구하기": 1,
+            "넓이 계산": 3,
+            "f(x)의 접선 l 구하기": 1,
+            "g(x)의 미분과 접선 m 구하기": 1,
+            "교점과 교차점 찾기": 1,
+            "교점 및 y축 교점 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 2,
+            "접선 m 구하기": 2,
+            "l과 m의 교점 구하기": 1,
+            "넓이 계산": 3,
+            "f(x)의 접선 l 구하기": 1,
+            "g(x)의 미분과 접선 m 구하기": 1,
+            "교점과 교차점 찾기": 1,
+            "교점 및 y축 교점 구하기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.944558,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선과 y축으로 둘러싸인 도형의 영역 파악",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 125.161275,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선과 y축으로 둘러싸인 도형의 범위 확인",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.289585,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 정보 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "l, m, y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.944558,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선과 y축으로 둘러싸인 도형의 영역 파악",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 125.161275,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선과 y축으로 둘러싸인 도형의 범위 확인",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.289585,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 정보 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "l, m, y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "접선 l의 방정식 구하기": 3,
+            "접선 m의 방정식 구하기": 3,
+            "두 직선과 y축으로 둘러싸인 도형의 영역 파악": 1,
+            "삼각형의 넓이 계산": 2,
+            "두 직선과 y축으로 둘러싸인 도형의 범위 확인": 1,
+            "주어진 정보 정리": 1,
+            "l, m, y축의 교점 찾기": 1,
+            "도형의 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "접선 l의 방정식 구하기": 3,
+            "접선 m의 방정식 구하기": 3,
+            "두 직선과 y축으로 둘러싸인 도형의 영역 파악": 1,
+            "삼각형의 넓이 계산": 2,
+            "두 직선과 y축으로 둘러싸인 도형의 범위 확인": 1,
+            "주어진 정보 정리": 1,
+            "l, m, y축의 교점 찾기": 1,
+            "도형의 넓이 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 188.080643,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "접선 m의 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 접선 l과 m의 교점 구하기",
+                "삼각형 넓이 계산 (벡터 또는 공식 사용)"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 73.914873,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "l과 m의 교점 구하기",
+                "삼각형의 꼭짓점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.435432,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 접선의 교점 구하기",
+                "도형의 꼭짓점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 188.080643,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "접선 m의 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 접선 l과 m의 교점 구하기",
+                "삼각형 넓이 계산 (벡터 또는 공식 사용)"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 73.914873,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "l과 m의 교점 구하기",
+                "삼각형의 꼭짓점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 41.435432,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 접선의 교점 구하기",
+                "도형의 꼭짓점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 6.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 3,
+            "접선 m의 기울기 계산": 1,
+            "접선 m의 방정식": 1,
+            "두 접선과 y축의 교점 구하기": 3,
+            "두 접선 l과 m의 교점 구하기": 1,
+            "삼각형 넓이 계산 (벡터 또는 공식 사용)": 1,
+            "접선 m의 기울기와 방정식": 2,
+            "l과 m의 교점 구하기": 1,
+            "삼각형의 꼭짓점과 넓이 계산": 1,
+            "두 접선의 교점 구하기": 1,
+            "도형의 꼭짓점과 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 6.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 3,
+            "접선 m의 기울기 계산": 1,
+            "접선 m의 방정식": 1,
+            "두 접선과 y축의 교점 구하기": 3,
+            "두 접선 l과 m의 교점 구하기": 1,
+            "삼각형 넓이 계산 (벡터 또는 공식 사용)": 1,
+            "접선 m의 기울기와 방정식": 2,
+            "l과 m의 교점 구하기": 1,
+            "삼각형의 꼭짓점과 넓이 계산": 1,
+            "두 접선의 교점 구하기": 1,
+            "도형의 꼭짓점과 넓이 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과의 교점 및 두 직선의 교점": 2,
+          "둘러싸인 도형 넓이 계산": 1,
+          "삼각형 넓이 계산": 1,
+          "y축과 이루는 삼각형의 꼭짓점 찾기": 1,
+          "넓이 계산": 4,
+          "두 직선과 y축의 교점 찾기": 3,
+          "도형의 넓이 계산": 6,
+          "접선 l의 방정식 구하기": 5,
+          "접선 m의 방정식 구하기": 5,
+          "두 직선의 교점과 y절편 구하기": 2,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점 및 도형의 넓이 계산": 1,
+          "l과 m의 교점 구하기": 2,
+          "f(x)의 접선 l 구하기": 1,
+          "g(x)의 미분과 접선 m 구하기": 1,
+          "교점과 교차점 찾기": 1,
+          "교점 및 y축 교점 구하기": 1,
+          "조건 정리": 5,
+          "두 직선과 y축으로 둘러싸인 도형의 영역 파악": 1,
+          "삼각형의 넓이 계산": 2,
+          "두 직선과 y축으로 둘러싸인 도형의 범위 확인": 1,
+          "주어진 정보 정리": 1,
+          "l, m, y축의 교점 찾기": 1,
+          "접선 l의 기울기와 방정식": 3,
+          "접선 m의 기울기 계산": 1,
+          "접선 m의 방정식": 1,
+          "두 접선과 y축의 교점 구하기": 3,
+          "두 접선 l과 m의 교점 구하기": 1,
+          "삼각형 넓이 계산 (벡터 또는 공식 사용)": 1,
+          "접선 m의 기울기와 방정식": 2,
+          "삼각형의 꼭짓점과 넓이 계산": 1,
+          "두 접선의 교점 구하기": 1,
+          "도형의 꼭짓점과 넓이 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.031144,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이(삼각형) 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.742366,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 만드는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.000508,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이(삼각형) 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.031144,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이(삼각형) 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.742366,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 만드는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.000508,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "둘러싸인 도형 넓이(삼각형) 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "둘러싸인 도형 넓이(삼각형) 계산": 2,
+            "y축과 만드는 도형의 꼭짓점 찾기": 1,
+            "삼각형 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "둘러싸인 도형 넓이(삼각형) 계산": 2,
+            "y축과 만드는 도형의 꼭짓점 찾기": 1,
+            "삼각형 넓이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.27491,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.107359,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.959409,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.27491,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.107359,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.959409,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 찾기": 3,
+            "도형의 넓이 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 찾기": 3,
+            "도형의 넓이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.276064,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.649963,
+              "step_count": 4,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "두 직선의 교점과 $y$절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.985437,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 31.276064,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.649963,
+              "step_count": 4,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "두 직선의 교점과 $y$절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.985437,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "교점 및 도형의 넓이 계산": 2,
+            "접선 $l$의 방정식 구하기": 2,
+            "접선 $m$의 방정식 구하기": 2,
+            "두 직선의 교점과 $y$절편 구하기": 1,
+            "도형의 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "교점 및 도형의 넓이 계산": 2,
+            "접선 $l$의 방정식 구하기": 2,
+            "접선 $m$의 방정식 구하기": 2,
+            "두 직선의 교점과 $y$절편 구하기": 1,
+            "도형의 넓이 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 63.954622,
+              "step_count": 5,
+              "step_titles": [
+                "접선 l 구하기",
+                "g(x)의 도함수 계산",
+                "접선 m 구하기",
+                "교점 및 y축 교점 찾기",
+                "둘러싸인 도형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.386488,
+              "step_count": 4,
+              "step_titles": [
+                "f(x)의 접선 l 구하기",
+                "g(x)의 접선 m 구하기",
+                "교점 및 영역 분석",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.538827,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 영역 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 63.954622,
+              "step_count": 5,
+              "step_titles": [
+                "접선 l 구하기",
+                "g(x)의 도함수 계산",
+                "접선 m 구하기",
+                "교점 및 y축 교점 찾기",
+                "둘러싸인 도형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.386488,
+              "step_count": 4,
+              "step_titles": [
+                "f(x)의 접선 l 구하기",
+                "g(x)의 접선 m 구하기",
+                "교점 및 영역 분석",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 90.538827,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 영역 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "접선 l 구하기": 2,
+            "g(x)의 도함수 계산": 1,
+            "접선 m 구하기": 2,
+            "교점 및 y축 교점 찾기": 1,
+            "둘러싸인 도형 넓이 계산": 1,
+            "f(x)의 접선 l 구하기": 1,
+            "g(x)의 접선 m 구하기": 1,
+            "교점 및 영역 분석": 1,
+            "넓이 계산": 2,
+            "교점 및 영역 확인": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 2,
+            "g(x)의 도함수 계산": 1,
+            "접선 m 구하기": 2,
+            "교점 및 y축 교점 찾기": 1,
+            "둘러싸인 도형 넓이 계산": 1,
+            "f(x)의 접선 l 구하기": 1,
+            "g(x)의 접선 m 구하기": 1,
+            "교점 및 영역 분석": 1,
+            "넓이 계산": 2,
+            "교점 및 영역 확인": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 78.05784,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.535696,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선 l, m과 y축으로 둘러싸인 도형 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 91.457571,
+              "step_count": 6,
+              "step_titles": [
+                "문제 조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선 l과 m의 y절편 및 교점 구하기",
+                "세 점 A, B, C로 둘러싸인 도형의 넓이",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 78.05784,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.535696,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선 l, m과 y축으로 둘러싸인 도형 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 91.457571,
+              "step_count": 6,
+              "step_titles": [
+                "문제 조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "두 직선 l과 m의 y절편 및 교점 구하기",
+                "세 점 A, B, C로 둘러싸인 도형의 넓이",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 2,
+            "접선 l의 방정식 구하기": 3,
+            "접선 m의 방정식 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 1,
+            "넓이 계산": 3,
+            "두 직선 l, m과 y축으로 둘러싸인 도형 확인": 1,
+            "문제 조건 정리": 1,
+            "두 직선 l과 m의 y절편 및 교점 구하기": 1,
+            "세 점 A, B, C로 둘러싸인 도형의 넓이": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "접선 l의 방정식 구하기": 3,
+            "접선 m의 방정식 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 1,
+            "넓이 계산": 3,
+            "두 직선 l, m과 y축으로 둘러싸인 도형 확인": 1,
+            "문제 조건 정리": 1,
+            "두 직선 l과 m의 y절편 및 교점 구하기": 1,
+            "세 점 A, B, C로 둘러싸인 도형의 넓이": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.213682,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "세 직선의 교점 찾기",
+                "도형의 모양과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.272758,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 $ l $의 기울기와 방정식 구하기",
+                "접선 $ m $의 기울기와 방정식 구하기",
+                "세 직선의 교점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.374498,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "접선 m의 방정식",
+                "세 직선의 교점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 33.213682,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "세 직선의 교점 찾기",
+                "도형의 모양과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.272758,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 $ l $의 기울기와 방정식 구하기",
+                "접선 $ m $의 기울기와 방정식 구하기",
+                "세 직선의 교점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 36.374498,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "접선 m의 방정식",
+                "세 직선의 교점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 1,
+            "세 직선의 교점 찾기": 3,
+            "도형의 모양과 넓이 계산": 1,
+            "접선 $ l $의 기울기와 방정식 구하기": 1,
+            "접선 $ m $의 기울기와 방정식 구하기": 1,
+            "삼각형 넓이 계산": 2,
+            "접선 m의 기울기 계산": 1,
+            "접선 m의 방정식": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 1,
+            "세 직선의 교점 찾기": 3,
+            "도형의 모양과 넓이 계산": 1,
+            "접선 $ l $의 기울기와 방정식 구하기": 1,
+            "접선 $ m $의 기울기와 방정식 구하기": 1,
+            "삼각형 넓이 계산": 2,
+            "접선 m의 기울기 계산": 1,
+            "접선 m의 방정식": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과의 교점 및 두 직선의 교점": 3,
+          "둘러싸인 도형 넓이(삼각형) 계산": 2,
+          "y축과 만드는 도형의 꼭짓점 찾기": 1,
+          "삼각형 넓이 계산": 3,
+          "두 직선과 y축의 교점 찾기": 3,
+          "도형의 넓이 계산": 4,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점 및 도형의 넓이 계산": 2,
+          "접선 $l$의 방정식 구하기": 2,
+          "접선 $m$의 방정식 구하기": 2,
+          "두 직선의 교점과 $y$절편 구하기": 1,
+          "g(x)의 도함수 계산": 1,
+          "교점 및 y축 교점 찾기": 1,
+          "둘러싸인 도형 넓이 계산": 1,
+          "f(x)의 접선 l 구하기": 1,
+          "g(x)의 접선 m 구하기": 1,
+          "교점 및 영역 분석": 1,
+          "넓이 계산": 5,
+          "교점 및 영역 확인": 1,
+          "조건 정리": 5,
+          "접선 l의 방정식 구하기": 3,
+          "접선 m의 방정식 구하기": 3,
+          "두 직선 l, m과 y축으로 둘러싸인 도형 확인": 1,
+          "문제 조건 정리": 1,
+          "두 직선 l과 m의 y절편 및 교점 구하기": 1,
+          "세 점 A, B, C로 둘러싸인 도형의 넓이": 1,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 1,
+          "세 직선의 교점 찾기": 3,
+          "도형의 모양과 넓이 계산": 1,
+          "접선 $ l $의 기울기와 방정식 구하기": 1,
+          "접선 $ m $의 기울기와 방정식 구하기": 1,
+          "접선 m의 기울기 계산": 1,
+          "접선 m의 방정식": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.148252,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.587196,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.51889,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 함께 만드는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.148252,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.587196,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과의 교점 및 두 직선의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.51889,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 함께 만드는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "삼각형 넓이 계산": 3,
+            "y축과 함께 만드는 도형의 꼭짓점 찾기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과의 교점 및 두 직선의 교점": 2,
+            "삼각형 넓이 계산": 3,
+            "y축과 함께 만드는 도형의 꼭짓점 찾기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.927731,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.949931,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 확인",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.416152,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y절편과 교점 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.927731,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.949931,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점 확인",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.416152,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y절편과 교점 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 확인": 2,
+            "넓이 계산": 1,
+            "삼각형 넓이 계산": 1,
+            "y절편과 교점 구하기": 1,
+            "도형의 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선과 y축의 교점 확인": 2,
+            "넓이 계산": 1,
+            "삼각형 넓이 계산": 1,
+            "y절편과 교점 구하기": 1,
+            "도형의 넓이 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.419432,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "세 점의 좌표 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.403923,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.11891,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.419432,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "세 점의 좌표 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 29.403923,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 28.11891,
+              "step_count": 3,
+              "step_titles": [
+                "접선 $l$의 방정식 구하기",
+                "접선 $m$의 방정식 구하기",
+                "교점 및 도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "접선 l의 방정식 구하기": 1,
+            "접선 m의 방정식 구하기": 1,
+            "세 점의 좌표 구하기": 1,
+            "도형의 넓이 계산": 1,
+            "접선 $l$의 방정식 구하기": 2,
+            "접선 $m$의 방정식 구하기": 2,
+            "교점 및 도형의 넓이 계산": 2
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l의 방정식 구하기": 1,
+            "접선 m의 방정식 구하기": 1,
+            "세 점의 좌표 구하기": 1,
+            "도형의 넓이 계산": 1,
+            "접선 $l$의 방정식 구하기": 2,
+            "접선 $m$의 방정식 구하기": 2,
+            "교점 및 도형의 넓이 계산": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 56.580296,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 y축 교차 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 80.240402,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 방정식 구하기",
+                "접선 m 방정식 구하기",
+                "교점 및 y축 교차점 찾기",
+                "도형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 48.999008,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "교점 및 영역 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 56.580296,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 y축 교차 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 80.240402,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 방정식 구하기",
+                "접선 m 방정식 구하기",
+                "교점 및 y축 교차점 찾기",
+                "도형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 48.999008,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "교점 및 영역 확인",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 1,
+            "접선 m 구하기": 1,
+            "교점 및 y축 교차 구하기": 1,
+            "넓이 계산": 2,
+            "접선 l 방정식 구하기": 1,
+            "접선 m 방정식 구하기": 1,
+            "교점 및 y축 교차점 찾기": 1,
+            "도형 넓이 계산": 1,
+            "접선 l의 방정식 구하기": 1,
+            "접선 m의 방정식 구하기": 1,
+            "교점 및 영역 확인": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 1,
+            "접선 m 구하기": 1,
+            "교점 및 y축 교차 구하기": 1,
+            "넓이 계산": 2,
+            "접선 l 방정식 구하기": 1,
+            "접선 m 방정식 구하기": 1,
+            "교점 및 y축 교차점 찾기": 1,
+            "도형 넓이 계산": 1,
+            "접선 l의 방정식 구하기": 1,
+            "접선 m의 방정식 구하기": 1,
+            "교점 및 영역 확인": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.669339,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "y절편과 교점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.887748,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 함수와 점 확인",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "l, m, y축으로 둘러싸인 도형 그리기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 54.879955,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식",
+                "접선 m의 방정식",
+                "교점 및 y절편",
+                "넓이 계산"
+              ],
+              "final_answer": "49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.669339,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "y절편과 교점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.887748,
+              "step_count": 5,
+              "step_titles": [
+                "주어진 함수와 점 확인",
+                "접선 l의 방정식 구하기",
+                "접선 m의 방정식 구하기",
+                "l, m, y축으로 둘러싸인 도형 그리기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 54.879955,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l의 방정식",
+                "접선 m의 방정식",
+                "교점 및 y절편",
+                "넓이 계산"
+              ],
+              "final_answer": "49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 1,
+            "접선 l의 방정식 구하기": 2,
+            "접선 m의 방정식 구하기": 2,
+            "y절편과 교점 찾기": 1,
+            "넓이 계산": 3,
+            "주어진 함수와 점 확인": 1,
+            "l, m, y축으로 둘러싸인 도형 그리기": 1,
+            "접선 l의 방정식": 1,
+            "접선 m의 방정식": 1,
+            "교점 및 y절편": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "접선 l의 방정식 구하기": 2,
+            "접선 m의 방정식 구하기": 2,
+            "y절편과 교점 찾기": 1,
+            "넓이 계산": 3,
+            "주어진 함수와 점 확인": 1,
+            "l, m, y축으로 둘러싸인 도형 그리기": 1,
+            "접선 l의 방정식": 1,
+            "접선 m의 방정식": 1,
+            "교점 및 y절편": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 99.886284,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 직선의 교점 구하기",
+                "둘러싸인 도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 67.982196,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기 및 방정식 구하기",
+                "접선 m의 기울기 및 방정식 구하기",
+                "세 직선의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.865883,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "y축과의 교점 구하기",
+                "두 접선의 교점 구하기",
+                "검토 및 최종 답 도출"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 99.886284,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "두 접선과 y축의 교점 구하기",
+                "두 직선의 교점 구하기",
+                "둘러싸인 도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 67.982196,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기 및 방정식 구하기",
+                "접선 m의 기울기 및 방정식 구하기",
+                "세 직선의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.865883,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "y축과의 교점 구하기",
+                "두 접선의 교점 구하기",
+                "검토 및 최종 답 도출"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.666666666666667,
+          "title_frequency": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 2,
+            "두 접선과 y축의 교점 구하기": 1,
+            "두 직선의 교점 구하기": 1,
+            "둘러싸인 도형의 넓이 계산": 1,
+            "접선 l의 기울기 및 방정식 구하기": 1,
+            "접선 m의 기울기 및 방정식 구하기": 1,
+            "세 직선의 교점 찾기": 1,
+            "도형의 넓이 계산": 1,
+            "y축과의 교점 구하기": 1,
+            "두 접선의 교점 구하기": 1,
+            "검토 및 최종 답 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 2,
+            "두 접선과 y축의 교점 구하기": 1,
+            "두 직선의 교점 구하기": 1,
+            "둘러싸인 도형의 넓이 계산": 1,
+            "접선 l의 기울기 및 방정식 구하기": 1,
+            "접선 m의 기울기 및 방정식 구하기": 1,
+            "세 직선의 교점 찾기": 1,
+            "도형의 넓이 계산": 1,
+            "y축과의 교점 구하기": 1,
+            "두 접선의 교점 구하기": 1,
+            "검토 및 최종 답 도출": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.277777777777778,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 7,
+          "접선 m 구하기": 7,
+          "y축과의 교점 및 두 직선의 교점": 2,
+          "삼각형 넓이 계산": 4,
+          "y축과 함께 만드는 도형의 꼭짓점 찾기": 1,
+          "두 직선과 y축의 교점 확인": 2,
+          "넓이 계산": 6,
+          "y절편과 교점 구하기": 1,
+          "도형의 넓이 계산": 3,
+          "접선 l의 방정식 구하기": 4,
+          "접선 m의 방정식 구하기": 4,
+          "세 점의 좌표 구하기": 1,
+          "접선 $l$의 방정식 구하기": 2,
+          "접선 $m$의 방정식 구하기": 2,
+          "교점 및 도형의 넓이 계산": 2,
+          "교점 및 y축 교차 구하기": 1,
+          "접선 l 방정식 구하기": 1,
+          "접선 m 방정식 구하기": 1,
+          "교점 및 y축 교차점 찾기": 1,
+          "도형 넓이 계산": 1,
+          "교점 및 영역 확인": 1,
+          "조건 정리": 4,
+          "y절편과 교점 찾기": 1,
+          "주어진 함수와 점 확인": 1,
+          "l, m, y축으로 둘러싸인 도형 그리기": 1,
+          "접선 l의 방정식": 1,
+          "접선 m의 방정식": 1,
+          "교점 및 y절편": 1,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 2,
+          "두 접선과 y축의 교점 구하기": 1,
+          "두 직선의 교점 구하기": 1,
+          "둘러싸인 도형의 넓이 계산": 1,
+          "접선 l의 기울기 및 방정식 구하기": 1,
+          "접선 m의 기울기 및 방정식 구하기": 1,
+          "세 직선의 교점 찾기": 1,
+          "y축과의 교점 구하기": 1,
+          "두 접선의 교점 구하기": 1,
+          "검토 및 최종 답 도출": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.521844,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 두 직선이 만드는 도형의 꼭짓점 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.089506,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.621159,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 이루는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.521844,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 두 직선이 만드는 도형의 꼭짓점 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ \\(49\\)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.089506,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기",
+                "넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.621159,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "y축과 이루는 도형의 꼭짓점 찾기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49 (⑤)",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과 두 직선이 만드는 도형의 꼭짓점 구하기": 1,
+            "삼각형 넓이 계산": 2,
+            "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기": 1,
+            "넓이 계산": 1,
+            "y축과 이루는 도형의 꼭짓점 찾기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "y축과 두 직선이 만드는 도형의 꼭짓점 구하기": 1,
+            "삼각형 넓이 계산": 2,
+            "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기": 1,
+            "넓이 계산": 1,
+            "y축과 이루는 도형의 꼭짓점 찾기": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.398748,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선의 교점 및 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.472229,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 도형 파악",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.10608,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.398748,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선의 교점 및 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.472229,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점 및 도형 파악",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.10608,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "두 직선과 y축의 교점",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "⑤ 49\n[/FINAL_ANSWER]",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선의 교점 및 y절편 구하기": 1,
+            "도형의 넓이 계산": 1,
+            "교점 및 도형 파악": 1,
+            "삼각형 넓이 계산": 2,
+            "두 직선과 y축의 교점": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 3,
+            "접선 m 구하기": 3,
+            "두 직선의 교점 및 y절편 구하기": 1,
+            "도형의 넓이 계산": 1,
+            "교점 및 도형 파악": 1,
+            "삼각형 넓이 계산": 2,
+            "두 직선과 y축의 교점": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.622794,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식",
+                "직선 m의 방정식",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.395744,
+              "step_count": 3,
+              "step_titles": [
+                "직선 $l$의 방정식 구하기",
+                "직선 $m$의 방정식 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.274081,
+              "step_count": 4,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "두 직선의 교점 및 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.622794,
+              "step_count": 3,
+              "step_titles": [
+                "직선 l의 방정식",
+                "직선 m의 방정식",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 28.395744,
+              "step_count": 3,
+              "step_titles": [
+                "직선 $l$의 방정식 구하기",
+                "직선 $m$의 방정식 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 32.274081,
+              "step_count": 4,
+              "step_titles": [
+                "직선 l의 방정식 구하기",
+                "직선 m의 방정식 구하기",
+                "두 직선의 교점 및 y절편 구하기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "직선 l의 방정식": 1,
+            "직선 m의 방정식": 1,
+            "도형의 넓이 계산": 3,
+            "직선 $l$의 방정식 구하기": 1,
+            "직선 $m$의 방정식 구하기": 1,
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "두 직선의 교점 및 y절편 구하기": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "직선 l의 방정식": 1,
+            "직선 m의 방정식": 1,
+            "도형의 넓이 계산": 3,
+            "직선 $l$의 방정식 구하기": 1,
+            "직선 $m$의 방정식 구하기": 1,
+            "직선 l의 방정식 구하기": 1,
+            "직선 m의 방정식 구하기": 1,
+            "두 직선의 교점 및 y절편 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 78.950045,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점과 y축 교차점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 82.203772,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "l과 m의 교점 찾기",
+                "y축 교점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.97545,
+              "step_count": 3,
+              "step_titles": [
+                "함수 및 접선 도출",
+                "교점 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 78.950045,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "교점과 y축 교차점 찾기",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 82.203772,
+              "step_count": 4,
+              "step_titles": [
+                "접선 l 구하기",
+                "접선 m 구하기",
+                "l과 m의 교점 찾기",
+                "y축 교점과 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.97545,
+              "step_count": 3,
+              "step_titles": [
+                "함수 및 접선 도출",
+                "교점 계산",
+                "넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "접선 l 구하기": 2,
+            "접선 m 구하기": 2,
+            "교점과 y축 교차점 찾기": 1,
+            "넓이 계산": 2,
+            "l과 m의 교점 찾기": 1,
+            "y축 교점과 넓이 계산": 1,
+            "함수 및 접선 도출": 1,
+            "교점 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "접선 l 구하기": 2,
+            "접선 m 구하기": 2,
+            "교점과 y축 교차점 찾기": 1,
+            "넓이 계산": 2,
+            "l과 m의 교점 찾기": 1,
+            "y축 교점과 넓이 계산": 1,
+            "함수 및 접선 도출": 1,
+            "교점 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.339714,
+              "step_count": 4,
+              "step_titles": [
+                "함수 f(x)의 접선 l 구하기",
+                "함수 g(x)의 접선 m 구하기",
+                "두 직선 l, m과 y축으로 둘러싸인 도형 찾기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.426362,
+              "step_count": 4,
+              "step_titles": [
+                "함수 및 접선 식 구하기",
+                "y 절편과 직선의 교점 구하기",
+                "구하는 넓이의 영역 확인",
+                "삼각형의 넓이 공식 적용"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.703608,
+              "step_count": 6,
+              "step_titles": [
+                "주어진 함수 및 점 정리",
+                "직선 \\( l \\)의 방정식 구하기",
+                "직선 \\( m \\)의 방정식 구하기",
+                "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악",
+                "넓이 계산 방법 결정",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.339714,
+              "step_count": 4,
+              "step_titles": [
+                "함수 f(x)의 접선 l 구하기",
+                "함수 g(x)의 접선 m 구하기",
+                "두 직선 l, m과 y축으로 둘러싸인 도형 찾기",
+                "삼각형의 넓이 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.426362,
+              "step_count": 4,
+              "step_titles": [
+                "함수 및 접선 식 구하기",
+                "y 절편과 직선의 교점 구하기",
+                "구하는 넓이의 영역 확인",
+                "삼각형의 넓이 공식 적용"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.703608,
+              "step_count": 6,
+              "step_titles": [
+                "주어진 함수 및 점 정리",
+                "직선 \\( l \\)의 방정식 구하기",
+                "직선 \\( m \\)의 방정식 구하기",
+                "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악",
+                "넓이 계산 방법 결정",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ 49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "함수 f(x)의 접선 l 구하기": 1,
+            "함수 g(x)의 접선 m 구하기": 1,
+            "두 직선 l, m과 y축으로 둘러싸인 도형 찾기": 1,
+            "삼각형의 넓이 계산": 1,
+            "함수 및 접선 식 구하기": 1,
+            "y 절편과 직선의 교점 구하기": 1,
+            "구하는 넓이의 영역 확인": 1,
+            "삼각형의 넓이 공식 적용": 1,
+            "주어진 함수 및 점 정리": 1,
+            "직선 \\( l \\)의 방정식 구하기": 1,
+            "직선 \\( m \\)의 방정식 구하기": 1,
+            "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악": 1,
+            "넓이 계산 방법 결정": 1,
+            "넓이 적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 1.1547005383792517,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "함수 f(x)의 접선 l 구하기": 1,
+            "함수 g(x)의 접선 m 구하기": 1,
+            "두 직선 l, m과 y축으로 둘러싸인 도형 찾기": 1,
+            "삼각형의 넓이 계산": 1,
+            "함수 및 접선 식 구하기": 1,
+            "y 절편과 직선의 교점 구하기": 1,
+            "구하는 넓이의 영역 확인": 1,
+            "삼각형의 넓이 공식 적용": 1,
+            "주어진 함수 및 점 정리": 1,
+            "직선 \\( l \\)의 방정식 구하기": 1,
+            "직선 \\( m \\)의 방정식 구하기": 1,
+            "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악": 1,
+            "넓이 계산 방법 결정": 1,
+            "넓이 적분 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.263895,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "세 직선의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 152.639179,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "세 직선으로 둘러싸인 도형의 꼭짓점 찾기",
+                "검토 및 최종 답 도출"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 105.548516,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식 구하기",
+                "접선 m의 기울기와 방정식 구하기",
+                "세 직선과 y축으로 둘러싸인 도형 분석",
+                "세 꼭짓점 좌표 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.263895,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기와 방정식",
+                "세 직선의 교점 찾기",
+                "도형의 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 152.639179,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식",
+                "접선 m의 기울기 계산",
+                "세 직선으로 둘러싸인 도형의 꼭짓점 찾기",
+                "검토 및 최종 답 도출"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 105.548516,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "접선 l의 기울기와 방정식 구하기",
+                "접선 m의 기울기와 방정식 구하기",
+                "세 직선과 y축으로 둘러싸인 도형 분석",
+                "세 꼭짓점 좌표 구하기",
+                "삼각형 넓이 계산"
+              ],
+              "final_answer": "49",
+              "is_correct": false,
+              "is_correct_recheck": false,
+              "resumed_from_csv": true,
+              "error": ""
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 1,
+            "세 직선의 교점 찾기": 1,
+            "도형의 넓이 계산": 1,
+            "접선 m의 기울기 계산": 1,
+            "세 직선으로 둘러싸인 도형의 꼭짓점 찾기": 1,
+            "검토 및 최종 답 도출": 1,
+            "접선 l의 기울기와 방정식 구하기": 1,
+            "접선 m의 기울기와 방정식 구하기": 1,
+            "세 직선과 y축으로 둘러싸인 도형 분석": 1,
+            "세 꼭짓점 좌표 구하기": 1,
+            "삼각형 넓이 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "접선 l의 기울기와 방정식": 2,
+            "접선 m의 기울기와 방정식": 1,
+            "세 직선의 교점 찾기": 1,
+            "도형의 넓이 계산": 1,
+            "접선 m의 기울기 계산": 1,
+            "세 직선으로 둘러싸인 도형의 꼭짓점 찾기": 1,
+            "검토 및 최종 답 도출": 1,
+            "접선 l의 기울기와 방정식 구하기": 1,
+            "접선 m의 기울기와 방정식 구하기": 1,
+            "세 직선과 y축으로 둘러싸인 도형 분석": 1,
+            "세 꼭짓점 좌표 구하기": 1,
+            "삼각형 넓이 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.166666666666667,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과 두 직선이 만드는 도형의 꼭짓점 구하기": 1,
+          "삼각형 넓이 계산": 5,
+          "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기": 1,
+          "넓이 계산": 3,
+          "y축과 이루는 도형의 꼭짓점 찾기": 1,
+          "두 직선의 교점 및 y절편 구하기": 2,
+          "도형의 넓이 계산": 5,
+          "교점 및 도형 파악": 1,
+          "두 직선과 y축의 교점": 1,
+          "직선 l의 방정식": 1,
+          "직선 m의 방정식": 1,
+          "직선 $l$의 방정식 구하기": 1,
+          "직선 $m$의 방정식 구하기": 1,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점과 y축 교차점 찾기": 1,
+          "l과 m의 교점 찾기": 1,
+          "y축 교점과 넓이 계산": 1,
+          "함수 및 접선 도출": 1,
+          "교점 계산": 1,
+          "함수 f(x)의 접선 l 구하기": 1,
+          "함수 g(x)의 접선 m 구하기": 1,
+          "두 직선 l, m과 y축으로 둘러싸인 도형 찾기": 1,
+          "삼각형의 넓이 계산": 1,
+          "함수 및 접선 식 구하기": 1,
+          "y 절편과 직선의 교점 구하기": 1,
+          "구하는 넓이의 영역 확인": 1,
+          "삼각형의 넓이 공식 적용": 1,
+          "주어진 함수 및 점 정리": 1,
+          "직선 \\( l \\)의 방정식 구하기": 1,
+          "직선 \\( m \\)의 방정식 구하기": 1,
+          "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악": 1,
+          "넓이 계산 방법 결정": 1,
+          "넓이 적분 계산": 1,
+          "조건 정리": 3,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 1,
+          "세 직선의 교점 찾기": 1,
+          "접선 m의 기울기 계산": 1,
+          "세 직선으로 둘러싸인 도형의 꼭짓점 찾기": 1,
+          "검토 및 최종 답 도출": 1,
+          "접선 l의 기울기와 방정식 구하기": 1,
+          "접선 m의 기울기와 방정식 구하기": 1,
+          "세 직선과 y축으로 둘러싸인 도형 분석": 1,
+          "세 꼭짓점 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.5,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과의 교점 및 두 직선의 교점": 2,
+          "둘러싸인 도형 넓이 계산": 1,
+          "삼각형 넓이 계산": 1,
+          "y축과 이루는 삼각형의 꼭짓점 찾기": 1,
+          "넓이 계산": 4,
+          "두 직선과 y축의 교점 찾기": 3,
+          "도형의 넓이 계산": 6,
+          "접선 l의 방정식 구하기": 5,
+          "접선 m의 방정식 구하기": 5,
+          "두 직선의 교점과 y절편 구하기": 2,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점 및 도형의 넓이 계산": 1,
+          "l과 m의 교점 구하기": 2,
+          "f(x)의 접선 l 구하기": 1,
+          "g(x)의 미분과 접선 m 구하기": 1,
+          "교점과 교차점 찾기": 1,
+          "교점 및 y축 교점 구하기": 1,
+          "조건 정리": 5,
+          "두 직선과 y축으로 둘러싸인 도형의 영역 파악": 1,
+          "삼각형의 넓이 계산": 2,
+          "두 직선과 y축으로 둘러싸인 도형의 범위 확인": 1,
+          "주어진 정보 정리": 1,
+          "l, m, y축의 교점 찾기": 1,
+          "접선 l의 기울기와 방정식": 3,
+          "접선 m의 기울기 계산": 1,
+          "접선 m의 방정식": 1,
+          "두 접선과 y축의 교점 구하기": 3,
+          "두 접선 l과 m의 교점 구하기": 1,
+          "삼각형 넓이 계산 (벡터 또는 공식 사용)": 1,
+          "접선 m의 기울기와 방정식": 2,
+          "삼각형의 꼭짓점과 넓이 계산": 1,
+          "두 접선의 교점 구하기": 1,
+          "도형의 꼭짓점과 넓이 계산": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.388888888888889,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과의 교점 및 두 직선의 교점": 3,
+          "둘러싸인 도형 넓이(삼각형) 계산": 2,
+          "y축과 만드는 도형의 꼭짓점 찾기": 1,
+          "삼각형 넓이 계산": 3,
+          "두 직선과 y축의 교점 찾기": 3,
+          "도형의 넓이 계산": 4,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점 및 도형의 넓이 계산": 2,
+          "접선 $l$의 방정식 구하기": 2,
+          "접선 $m$의 방정식 구하기": 2,
+          "두 직선의 교점과 $y$절편 구하기": 1,
+          "g(x)의 도함수 계산": 1,
+          "교점 및 y축 교점 찾기": 1,
+          "둘러싸인 도형 넓이 계산": 1,
+          "f(x)의 접선 l 구하기": 1,
+          "g(x)의 접선 m 구하기": 1,
+          "교점 및 영역 분석": 1,
+          "넓이 계산": 5,
+          "교점 및 영역 확인": 1,
+          "조건 정리": 5,
+          "접선 l의 방정식 구하기": 3,
+          "접선 m의 방정식 구하기": 3,
+          "두 직선 l, m과 y축으로 둘러싸인 도형 확인": 1,
+          "문제 조건 정리": 1,
+          "두 직선 l과 m의 y절편 및 교점 구하기": 1,
+          "세 점 A, B, C로 둘러싸인 도형의 넓이": 1,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 1,
+          "세 직선의 교점 찾기": 3,
+          "도형의 모양과 넓이 계산": 1,
+          "접선 $ l $의 기울기와 방정식 구하기": 1,
+          "접선 $ m $의 기울기와 방정식 구하기": 1,
+          "접선 m의 기울기 계산": 1,
+          "접선 m의 방정식": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 4.277777777777778,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 7,
+          "접선 m 구하기": 7,
+          "y축과의 교점 및 두 직선의 교점": 2,
+          "삼각형 넓이 계산": 4,
+          "y축과 함께 만드는 도형의 꼭짓점 찾기": 1,
+          "두 직선과 y축의 교점 확인": 2,
+          "넓이 계산": 6,
+          "y절편과 교점 구하기": 1,
+          "도형의 넓이 계산": 3,
+          "접선 l의 방정식 구하기": 4,
+          "접선 m의 방정식 구하기": 4,
+          "세 점의 좌표 구하기": 1,
+          "접선 $l$의 방정식 구하기": 2,
+          "접선 $m$의 방정식 구하기": 2,
+          "교점 및 도형의 넓이 계산": 2,
+          "교점 및 y축 교차 구하기": 1,
+          "접선 l 방정식 구하기": 1,
+          "접선 m 방정식 구하기": 1,
+          "교점 및 y축 교차점 찾기": 1,
+          "도형 넓이 계산": 1,
+          "교점 및 영역 확인": 1,
+          "조건 정리": 4,
+          "y절편과 교점 찾기": 1,
+          "주어진 함수와 점 확인": 1,
+          "l, m, y축으로 둘러싸인 도형 그리기": 1,
+          "접선 l의 방정식": 1,
+          "접선 m의 방정식": 1,
+          "교점 및 y절편": 1,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 2,
+          "두 접선과 y축의 교점 구하기": 1,
+          "두 직선의 교점 구하기": 1,
+          "둘러싸인 도형의 넓이 계산": 1,
+          "접선 l의 기울기 및 방정식 구하기": 1,
+          "접선 m의 기울기 및 방정식 구하기": 1,
+          "세 직선의 교점 찾기": 1,
+          "y축과의 교점 구하기": 1,
+          "두 접선의 교점 구하기": 1,
+          "검토 및 최종 답 도출": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 4.166666666666667,
+        "title_frequency_all_models": {
+          "접선 l 구하기": 8,
+          "접선 m 구하기": 8,
+          "y축과 두 직선이 만드는 도형의 꼭짓점 구하기": 1,
+          "삼각형 넓이 계산": 5,
+          "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기": 1,
+          "넓이 계산": 3,
+          "y축과 이루는 도형의 꼭짓점 찾기": 1,
+          "두 직선의 교점 및 y절편 구하기": 2,
+          "도형의 넓이 계산": 5,
+          "교점 및 도형 파악": 1,
+          "두 직선과 y축의 교점": 1,
+          "직선 l의 방정식": 1,
+          "직선 m의 방정식": 1,
+          "직선 $l$의 방정식 구하기": 1,
+          "직선 $m$의 방정식 구하기": 1,
+          "직선 l의 방정식 구하기": 1,
+          "직선 m의 방정식 구하기": 1,
+          "교점과 y축 교차점 찾기": 1,
+          "l과 m의 교점 찾기": 1,
+          "y축 교점과 넓이 계산": 1,
+          "함수 및 접선 도출": 1,
+          "교점 계산": 1,
+          "함수 f(x)의 접선 l 구하기": 1,
+          "함수 g(x)의 접선 m 구하기": 1,
+          "두 직선 l, m과 y축으로 둘러싸인 도형 찾기": 1,
+          "삼각형의 넓이 계산": 1,
+          "함수 및 접선 식 구하기": 1,
+          "y 절편과 직선의 교점 구하기": 1,
+          "구하는 넓이의 영역 확인": 1,
+          "삼각형의 넓이 공식 적용": 1,
+          "주어진 함수 및 점 정리": 1,
+          "직선 \\( l \\)의 방정식 구하기": 1,
+          "직선 \\( m \\)의 방정식 구하기": 1,
+          "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악": 1,
+          "넓이 계산 방법 결정": 1,
+          "넓이 적분 계산": 1,
+          "조건 정리": 3,
+          "접선 l의 기울기와 방정식": 2,
+          "접선 m의 기울기와 방정식": 1,
+          "세 직선의 교점 찾기": 1,
+          "접선 m의 기울기 계산": 1,
+          "세 직선으로 둘러싸인 도형의 꼭짓점 찾기": 1,
+          "검토 및 최종 답 도출": 1,
+          "접선 l의 기울기와 방정식 구하기": 1,
+          "접선 m의 기울기와 방정식 구하기": 1,
+          "세 직선과 y축으로 둘러싸인 도형 분석": 1,
+          "세 꼭짓점 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.0,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 4.333333333333333,
+      "title_frequency": {
+        "접선 l 구하기": 31,
+        "접선 m 구하기": 31,
+        "y축과의 교점 및 두 직선의 교점": 7,
+        "둘러싸인 도형 넓이 계산": 2,
+        "삼각형 넓이 계산": 13,
+        "y축과 이루는 삼각형의 꼭짓점 찾기": 1,
+        "넓이 계산": 18,
+        "두 직선과 y축의 교점 찾기": 6,
+        "도형의 넓이 계산": 18,
+        "접선 l의 방정식 구하기": 12,
+        "접선 m의 방정식 구하기": 12,
+        "두 직선의 교점과 y절편 구하기": 2,
+        "직선 l의 방정식 구하기": 3,
+        "직선 m의 방정식 구하기": 3,
+        "교점 및 도형의 넓이 계산": 5,
+        "l과 m의 교점 구하기": 2,
+        "f(x)의 접선 l 구하기": 2,
+        "g(x)의 미분과 접선 m 구하기": 1,
+        "교점과 교차점 찾기": 1,
+        "교점 및 y축 교점 구하기": 1,
+        "조건 정리": 17,
+        "두 직선과 y축으로 둘러싸인 도형의 영역 파악": 1,
+        "삼각형의 넓이 계산": 3,
+        "두 직선과 y축으로 둘러싸인 도형의 범위 확인": 1,
+        "주어진 정보 정리": 1,
+        "l, m, y축의 교점 찾기": 1,
+        "접선 l의 기울기와 방정식": 9,
+        "접선 m의 기울기 계산": 3,
+        "접선 m의 방정식": 3,
+        "두 접선과 y축의 교점 구하기": 4,
+        "두 접선 l과 m의 교점 구하기": 1,
+        "삼각형 넓이 계산 (벡터 또는 공식 사용)": 1,
+        "접선 m의 기울기와 방정식": 6,
+        "삼각형의 꼭짓점과 넓이 계산": 1,
+        "두 접선의 교점 구하기": 2,
+        "도형의 꼭짓점과 넓이 계산": 1,
+        "둘러싸인 도형 넓이(삼각형) 계산": 2,
+        "y축과 만드는 도형의 꼭짓점 찾기": 1,
+        "접선 $l$의 방정식 구하기": 4,
+        "접선 $m$의 방정식 구하기": 4,
+        "두 직선의 교점과 $y$절편 구하기": 1,
+        "g(x)의 도함수 계산": 1,
+        "교점 및 y축 교점 찾기": 1,
+        "g(x)의 접선 m 구하기": 1,
+        "교점 및 영역 분석": 1,
+        "교점 및 영역 확인": 2,
+        "두 직선 l, m과 y축으로 둘러싸인 도형 확인": 1,
+        "문제 조건 정리": 1,
+        "두 직선 l과 m의 y절편 및 교점 구하기": 1,
+        "세 점 A, B, C로 둘러싸인 도형의 넓이": 1,
+        "세 직선의 교점 찾기": 5,
+        "도형의 모양과 넓이 계산": 1,
+        "접선 $ l $의 기울기와 방정식 구하기": 1,
+        "접선 $ m $의 기울기와 방정식 구하기": 1,
+        "y축과 함께 만드는 도형의 꼭짓점 찾기": 1,
+        "두 직선과 y축의 교점 확인": 2,
+        "y절편과 교점 구하기": 1,
+        "세 점의 좌표 구하기": 1,
+        "교점 및 y축 교차 구하기": 1,
+        "접선 l 방정식 구하기": 1,
+        "접선 m 방정식 구하기": 1,
+        "교점 및 y축 교차점 찾기": 1,
+        "도형 넓이 계산": 1,
+        "y절편과 교점 찾기": 1,
+        "주어진 함수와 점 확인": 1,
+        "l, m, y축으로 둘러싸인 도형 그리기": 1,
+        "접선 l의 방정식": 1,
+        "교점 및 y절편": 1,
+        "두 직선의 교점 구하기": 1,
+        "둘러싸인 도형의 넓이 계산": 1,
+        "접선 l의 기울기 및 방정식 구하기": 1,
+        "접선 m의 기울기 및 방정식 구하기": 1,
+        "y축과의 교점 구하기": 1,
+        "검토 및 최종 답 도출": 2,
+        "y축과 두 직선이 만드는 도형의 꼭짓점 구하기": 1,
+        "두 직선과 y축이 만드는 삼각형의 꼭짓점 구하기": 1,
+        "y축과 이루는 도형의 꼭짓점 찾기": 1,
+        "두 직선의 교점 및 y절편 구하기": 2,
+        "교점 및 도형 파악": 1,
+        "두 직선과 y축의 교점": 1,
+        "직선 l의 방정식": 1,
+        "직선 m의 방정식": 1,
+        "직선 $l$의 방정식 구하기": 1,
+        "직선 $m$의 방정식 구하기": 1,
+        "교점과 y축 교차점 찾기": 1,
+        "l과 m의 교점 찾기": 1,
+        "y축 교점과 넓이 계산": 1,
+        "함수 및 접선 도출": 1,
+        "교점 계산": 1,
+        "함수 f(x)의 접선 l 구하기": 1,
+        "함수 g(x)의 접선 m 구하기": 1,
+        "두 직선 l, m과 y축으로 둘러싸인 도형 찾기": 1,
+        "함수 및 접선 식 구하기": 1,
+        "y 절편과 직선의 교점 구하기": 1,
+        "구하는 넓이의 영역 확인": 1,
+        "삼각형의 넓이 공식 적용": 1,
+        "주어진 함수 및 점 정리": 1,
+        "직선 \\( l \\)의 방정식 구하기": 1,
+        "직선 \\( m \\)의 방정식 구하기": 1,
+        "\\( l, m \\)과 \\( y \\)축으로 둘러싸인 도형의 형태 파악": 1,
+        "넓이 계산 방법 결정": 1,
+        "넓이 적분 계산": 1,
+        "세 직선으로 둘러싸인 도형의 꼭짓점 찾기": 1,
+        "접선 l의 기울기와 방정식 구하기": 1,
+        "접선 m의 기울기와 방정식 구하기": 1,
+        "세 직선과 y축으로 둘러싸인 도형 분석": 1,
+        "세 꼭짓점 좌표 구하기": 1
+      },
+      "accuracy": 0.0,
+      "n_samples": 72
+    }
+  }
+}

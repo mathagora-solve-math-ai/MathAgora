@@ -1,0 +1,85 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_probalitity_23",
+    "prob_area": "확률과통계",
+    "prob_point": "2",
+    "prob_desc": "23. 5개의 문자 $x,\\ x,\\ y,\\ y,\\ z$를 모두 일렬로 나열하는 경우의 수는? [2점]\n① 10 ② 20 ③ 30 ④ 40 ⑤ 50",
+    "answer": "3"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Identify counting approach",
+        "body": "The letters x, x, y, y, z form a multiset with repeated elements, so the number of distinct permutations is given by the permutation formula for multisets."
+      },
+      {
+        "title": "Compute permutations",
+        "body": "Total permutations of five symbols ignoring repetition is 5! = 120. Divide by 2! for the two x’s and by another 2! for the two y’s: 120 / (2! × 2!) = 120 / 4 = 30."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Use multiset permutation formula",
+        "body": "We are arranging 5 letters with repeats: x, x, y, y, z. The number of distinct permutations is 5! divided by the factorials of identical counts: 5! / (2!·2!)."
+      },
+      {
+        "title": "Compute and choose option",
+        "body": "Compute 5! = 120, and 2!·2! = 4, so 120 / 4 = 30. This matches option ③."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Identify the problem type",
+        "body": "We need to arrange 5 letters: x, x, y, y, z in a row. This is a permutation problem with repeated elements.\n- Letter x appears 2 times\n- Letter y appears 2 times\n- Letter z appears 1 time\n- Total: 5 letters"
+      },
+      {
+        "title": "Apply permutation formula with repetition",
+        "body": "For n objects where there are n₁ identical objects of type 1, n₂ identical objects of type 2, etc., the number of arrangements is:\n\nn! / (n₁! × n₂! × ...)\n\nHere: 5! / (2! × 2! × 1!)\n\nCalculation:\n- 5! = 120\n- 2! = 2\n- 2! = 2\n- 1! = 1\n\nNumber of arrangements = 120 / (2 × 2 × 1) = 120 / 4 = 30"
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Identify total items and repeating characters",
+        "body": "There are a total of 5 characters to arrange: $x, x, y, y, z$. Among them, there are two identical $x$'s, two identical $y$'s, and one distinct $z$. The problem requires finding the number of distinct permutations of these items."
+      },
+      {
+        "title": "Calculate using the permutation formula",
+        "body": "Using the formula for permutations of a multiset $\\frac{n!}{n_1! n_2! \\cdots}$, where $n=5$ is the total number of items, and we divide by the factorials of the counts of identical items ($2!$ for $x$ and $2!$ for $y$):\n\n$$ \\frac{5!}{2! \\times 2! \\times 1!} = \\frac{120}{2 \\times 2 \\times 1} = \\frac{120}{4} = 30 $$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Identify permutation of multiset",
+        "body": "The problem requires finding the number of distinct arrangements of five letters: two identical x's, two identical y's, and one z. This is a multiset permutation problem, where identical items reduce the total count."
+      },
+      {
+        "title": "Apply multiset permutation formula",
+        "body": "The formula for distinct permutations is \\( \frac{n!}{n_1! \\cdot n_2! \\cdot \\ldots \\cdot n_k!} \\), where n=5 (total letters), n_x=2, n_y=2, n_z=1. Thus, \\( \frac{5!}{2! \\cdot 2! \\cdot 1!} \\)."
+      },
+      {
+        "title": "Compute the value",
+        "body": "Calculate 5! = 120. Then, 2! = 2, so denominator is 2 × 2 × 1 = 4. Finally, 120 / 4 = 30."
+      },
+      {
+        "title": "Final Answer",
+        "body": "3"
+      }
+    ]
+  }
+}

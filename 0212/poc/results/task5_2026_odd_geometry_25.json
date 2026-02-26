@@ -1,0 +1,2987 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T05:37:09Z",
+    "ended_at_utc": "2026-02-13T05:55:14Z",
+    "elapsed_seconds": 1085.08,
+    "problem_tag": "2026_odd_geometry_25",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_geometry_25",
+    "label": "2026_odd_geometry_25 (기하, 3점)",
+    "gold_answer": "5"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.301063299179077,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.1498332023620605,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.9881858825683594,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.301063299179077,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.1498332023620605,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 3.9881858825683594,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "대칭이동 좌표 구하기": 3,
+            "거리 공식으로 BC 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 좌표 구하기": 3,
+            "거리 공식으로 BC 길이 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.134723901748657,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.052089691162109,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.853886365890503,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.134723901748657,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.052089691162109,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.853886365890503,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.93142342567444,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.005395650863647,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.04263401031494,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 27.93142342567444,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.005395650863647,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.04263401031494,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B의 좌표 구하기": 3,
+            "점 C의 좌표 구하기": 3,
+            "선분 BC의 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B의 좌표 구하기": 3,
+            "점 C의 좌표 구하기": 3,
+            "선분 BC의 길이 계산": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.98404622077942,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.660256385803223,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 계산",
+                "점 C의 좌표 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.806429147720337,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.98404622077942,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.660256385803223,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 계산",
+                "점 C의 좌표 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.806429147720337,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기": 2,
+            "점 C 구하기": 2,
+            "BC 거리 계산": 2,
+            "점 B의 좌표 계산": 1,
+            "점 C의 좌표 계산": 1,
+            "선분 BC의 길이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기": 2,
+            "점 C 구하기": 2,
+            "BC 거리 계산": 2,
+            "점 B의 좌표 계산": 1,
+            "점 C의 좌표 계산": 1,
+            "선분 BC의 길이 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.867331981658936,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.486366987228394,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 규칙 적용",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.820302486419678,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "B와 C 사이 거리 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 13.867331981658936,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.486366987228394,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 규칙 적용",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.820302486419678,
+              "step_count": 2,
+              "step_titles": [
+                "조건 정리",
+                "B와 C 사이 거리 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "두 점 사이의 거리 계산": 2,
+            "대칭이동 규칙 적용": 1,
+            "B와 C 사이 거리 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "두 점 사이의 거리 계산": 2,
+            "대칭이동 규칙 적용": 1,
+            "B와 C 사이 거리 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.309523582458496,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$ 평면에 대한 대칭)",
+                "점 C 구하기 (원점에 대한 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.47793102264404,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 74.91521739959717,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 BC 계산",
+                "선분 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.309523582458496,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$ 평면에 대한 대칭)",
+                "점 C 구하기 (원점에 대한 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 48.47793102264404,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 74.91521739959717,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "벡터 BC 계산",
+                "선분 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 3,
+            "점 B 구하기 ($yz$ 평면에 대한 대칭)": 1,
+            "점 C 구하기 (원점에 대한 대칭)": 1,
+            "선분 BC의 길이 계산": 1,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "벡터 BC와 거리 계산": 1,
+            "벡터 BC 계산": 1,
+            "선분 길이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "점 B 구하기 ($yz$ 평면에 대한 대칭)": 1,
+            "점 C 구하기 (원점에 대한 대칭)": 1,
+            "선분 BC의 길이 계산": 1,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "벡터 BC와 거리 계산": 1,
+            "벡터 BC 계산": 1,
+            "선분 길이 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "대칭이동 좌표 구하기": 3,
+          "거리 공식으로 BC 길이 계산": 3,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 3,
+          "선분 BC의 길이 계산": 8,
+          "점 B의 좌표 구하기": 4,
+          "점 C의 좌표 구하기": 4,
+          "점 B 구하기": 2,
+          "점 C 구하기": 2,
+          "BC 거리 계산": 2,
+          "점 B의 좌표 계산": 1,
+          "점 C의 좌표 계산": 1,
+          "조건 정리": 5,
+          "두 점 사이의 거리 계산": 2,
+          "대칭이동 규칙 적용": 1,
+          "B와 C 사이 거리 계산": 1,
+          "점 B 구하기 ($yz$ 평면에 대한 대칭)": 1,
+          "점 C 구하기 (원점에 대한 대칭)": 1,
+          "벡터 BC와 거리 계산": 1,
+          "벡터 BC 계산": 1,
+          "선분 길이 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.5267932415008545,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.846529722213745,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.180668354034424,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.5267932415008545,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.846529722213745,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.180668354034424,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "대칭이동 좌표 구하기": 3,
+            "거리 공식으로 BC 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 좌표 구하기": 3,
+            "거리 공식으로 BC 길이 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.2860448360443115,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.136694431304932,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.608676910400391,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.2860448360443115,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.136694431304932,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.608676910400391,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.74441385269165,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.934443950653076,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.891021966934204,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 14.74441385269165,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.934443950653076,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 16.891021966934204,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "점 B와 점 C의 좌표 구하기": 3,
+            "선분 BC의 길이 계산": 3
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "점 B와 점 C의 좌표 구하기": 3,
+            "선분 BC의 길이 계산": 3
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.311428785324097,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.445922374725342,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 계산",
+                "점 C 좌표 계산",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.20550560951233,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 21.311428785324097,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.445922374725342,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 계산",
+                "점 C 좌표 계산",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.20550560951233,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 찾기": 2,
+            "점 C 찾기": 2,
+            "BC 거리 계산": 3,
+            "점 B 좌표 계산": 1,
+            "점 C 좌표 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 찾기": 2,
+            "점 C 찾기": 2,
+            "BC 거리 계산": 3,
+            "점 B 좌표 계산": 1,
+            "점 C 좌표 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.045637845993042,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점 B와 점 C 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.040170907974243,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 구하기",
+                "점 C 좌표 구하기",
+                "선분 BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.45705246925354,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 구하기",
+                "점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 22.045637845993042,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점 B와 점 C 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.040170907974243,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 구하기",
+                "점 C 좌표 구하기",
+                "선분 BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 10.45705246925354,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 좌표 구하기",
+                "점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "점 B와 점 C 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B 좌표 구하기": 2,
+            "점 C 좌표 구하기": 2,
+            "선분 BC 길이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "점 B와 점 C 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B 좌표 구하기": 2,
+            "점 C 좌표 구하기": 2,
+            "선분 BC 길이 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.382643938064575,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "벡터 BC 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.30390739440918,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$-평면에 대한 대칭)",
+                "점 C 구하기 (원점에 대한 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.668241739273071,
+              "step_count": 3,
+              "step_titles": [
+                "대칭점 B 좌표 구하기",
+                "대칭점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.382643938064575,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "벡터 BC 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.30390739440918,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$-평면에 대한 대칭)",
+                "점 C 구하기 (원점에 대한 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.668241739273071,
+              "step_count": 3,
+              "step_titles": [
+                "대칭점 B 좌표 구하기",
+                "대칭점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "조건 정리": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "벡터 BC 계산": 1,
+            "선분 BC의 길이 계산": 3,
+            "점 B 구하기 ($yz$-평면에 대한 대칭)": 1,
+            "점 C 구하기 (원점에 대한 대칭)": 1,
+            "대칭점 B 좌표 구하기": 1,
+            "대칭점 C 좌표 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "벡터 BC 계산": 1,
+            "선분 BC의 길이 계산": 3,
+            "점 B 구하기 ($yz$-평면에 대한 대칭)": 1,
+            "점 C 구하기 (원점에 대한 대칭)": 1,
+            "대칭점 B 좌표 구하기": 1,
+            "대칭점 C 좌표 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "대칭이동 좌표 구하기": 3,
+          "거리 공식으로 BC 길이 계산": 3,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 3,
+          "선분 BC의 길이 계산": 11,
+          "점 B와 점 C의 좌표 구하기": 3,
+          "점 B 찾기": 2,
+          "점 C 찾기": 2,
+          "BC 거리 계산": 3,
+          "점 B 좌표 계산": 1,
+          "점 C 좌표 계산": 1,
+          "조건 정리": 3,
+          "점 B와 점 C 구하기": 1,
+          "점 B 좌표 구하기": 2,
+          "점 C 좌표 구하기": 2,
+          "선분 BC 길이 계산": 1,
+          "점 B 구하기": 1,
+          "점 C 구하기": 1,
+          "벡터 BC 계산": 1,
+          "점 B 구하기 ($yz$-평면에 대한 대칭)": 1,
+          "점 C 구하기 (원점에 대한 대칭)": 1,
+          "대칭점 B 좌표 구하기": 1,
+          "대칭점 C 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.758847951889038,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 후 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.188519477844238,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 결과 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.504229784011841,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 정리",
+                "점 B, C의 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.758847951889038,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 후 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 4.188519477844238,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 결과 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 4.504229784011841,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 정리",
+                "점 B, C의 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ \\(5\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "대칭이동 후 좌표 구하기": 1,
+            "거리 공식으로 BC 길이 계산": 2,
+            "대칭이동 결과 구하기": 1,
+            "대칭이동 규칙 정리": 1,
+            "점 B, C의 좌표 구하기": 1,
+            "거리 BC 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 후 좌표 구하기": 1,
+            "거리 공식으로 BC 길이 계산": 2,
+            "대칭이동 결과 구하기": 1,
+            "대칭이동 규칙 정리": 1,
+            "점 B, C의 좌표 구하기": 1,
+            "거리 BC 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.316117763519287,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.490323066711426,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.134222745895386,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.316117763519287,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.490323066711426,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.134222745895386,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기 (yz평면 대칭)": 3,
+            "점 C 구하기 (원점 대칭)": 3,
+            "선분 BC의 길이 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.14247155189514,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.609462976455688,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.159910917282104,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 34.14247155189514,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 15.609462976455688,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 14.159910917282104,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "점 B와 점 C의 좌표 구하기": 2,
+            "선분 BC의 길이 계산": 3,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "점 B와 점 C의 좌표 구하기": 2,
+            "선분 BC의 길이 계산": 3,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.26468014717102,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.359121084213257,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.33967924118042,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.26468014717102,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 18.359121084213257,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.33967924118042,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기": 3,
+            "점 C 구하기": 3,
+            "BC 길이 계산": 2,
+            "BC 거리 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기": 3,
+            "점 C 구하기": 3,
+            "BC 길이 계산": 2,
+            "BC 거리 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.011460542678833,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 점 구하기",
+                "거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.32847785949707,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 C의 좌표 구하기",
+                "점 B와 C 사이의 거리 계산"
+              ],
+              "final_answer": "5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.709604501724243,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 적용",
+                "점 B와 C의 좌표 확인",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.011460542678833,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 점 구하기",
+                "거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.32847785949707,
+              "step_count": 2,
+              "step_titles": [
+                "점 B와 C의 좌표 구하기",
+                "점 B와 C 사이의 거리 계산"
+              ],
+              "final_answer": "5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.709604501724243,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 적용",
+                "점 B와 C의 좌표 확인",
+                "두 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "대칭이동 점 구하기": 1,
+            "거리 계산": 1,
+            "점 B와 C의 좌표 구하기": 1,
+            "점 B와 C 사이의 거리 계산": 1,
+            "대칭이동 규칙 적용": 1,
+            "점 B와 C의 좌표 확인": 1,
+            "두 점 사이의 거리 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 점 구하기": 1,
+            "거리 계산": 1,
+            "점 B와 C의 좌표 구하기": 1,
+            "점 B와 C 사이의 거리 계산": 1,
+            "대칭이동 규칙 적용": 1,
+            "점 B와 C의 좌표 확인": 1,
+            "두 점 사이의 거리 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.7142014503479,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.260517120361328,
+              "step_count": 3,
+              "step_titles": [
+                "대칭점 B 좌표 구하기",
+                "대칭점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.998741865158081,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$ 평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.7142014503479,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.260517120361328,
+              "step_count": 3,
+              "step_titles": [
+                "대칭점 B 좌표 구하기",
+                "대칭점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.998741865158081,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기 ($yz$ 평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "조건 정리": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "거리 계산": 1,
+            "대칭점 B 좌표 구하기": 1,
+            "대칭점 C 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B 구하기 ($yz$ 평면 대칭)": 1,
+            "점 C 구하기 (원점 대칭)": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "거리 계산": 1,
+            "대칭점 B 좌표 구하기": 1,
+            "대칭점 C 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B 구하기 ($yz$ 평면 대칭)": 1,
+            "점 C 구하기 (원점 대칭)": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "대칭이동 후 좌표 구하기": 1,
+          "거리 공식으로 BC 길이 계산": 2,
+          "대칭이동 결과 구하기": 1,
+          "대칭이동 규칙 정리": 1,
+          "점 B, C의 좌표 구하기": 1,
+          "거리 BC 계산": 1,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 4,
+          "선분 BC의 길이 계산": 8,
+          "점 B와 점 C의 좌표 구하기": 2,
+          "점 B의 좌표 구하기": 1,
+          "점 C의 좌표 구하기": 1,
+          "점 B 구하기": 4,
+          "점 C 구하기": 4,
+          "BC 길이 계산": 2,
+          "BC 거리 계산": 1,
+          "대칭이동 점 구하기": 1,
+          "거리 계산": 2,
+          "점 B와 C의 좌표 구하기": 1,
+          "점 B와 C 사이의 거리 계산": 1,
+          "대칭이동 규칙 적용": 1,
+          "점 B와 C의 좌표 확인": 1,
+          "두 점 사이의 거리 계산": 1,
+          "조건 정리": 2,
+          "대칭점 B 좌표 구하기": 1,
+          "대칭점 C 좌표 구하기": 1,
+          "점 B 구하기 ($yz$ 평면 대칭)": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.994285821914673,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 성질 정리",
+                "점 B, C 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.102124214172363,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 정리",
+                "점 B, C 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.171305418014526,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 4.994285821914673,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 성질 정리",
+                "점 B, C 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 5.102124214172363,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 정리",
+                "점 B, C 좌표 구하기",
+                "거리 BC 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.171305418014526,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동 좌표 구하기",
+                "거리 공식으로 BC 길이 계산"
+              ],
+              "final_answer": "\\(5\\) (⑤)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "대칭이동 성질 정리": 1,
+            "점 B, C 좌표 구하기": 2,
+            "거리 BC 계산": 2,
+            "대칭이동 규칙 정리": 1,
+            "대칭이동 좌표 구하기": 1,
+            "거리 공식으로 BC 길이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 성질 정리": 1,
+            "점 B, C 좌표 구하기": 2,
+            "거리 BC 계산": 2,
+            "대칭이동 규칙 정리": 1,
+            "대칭이동 좌표 구하기": 1,
+            "거리 공식으로 BC 길이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.261889696121216,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 확인",
+                "점 B, C의 좌표 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.6017820835113525,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.018948316574097,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.261889696121216,
+              "step_count": 3,
+              "step_titles": [
+                "대칭이동 규칙 확인",
+                "점 B, C의 좌표 계산",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.6017820835113525,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.018948316574097,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기 (yz평면 대칭)",
+                "점 C 구하기 (원점 대칭)",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "대칭이동 규칙 확인": 1,
+            "점 B, C의 좌표 계산": 1,
+            "선분 BC의 길이 계산": 3,
+            "점 B 구하기 (yz평면 대칭)": 2,
+            "점 C 구하기 (원점 대칭)": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭이동 규칙 확인": 1,
+            "점 B, C의 좌표 계산": 1,
+            "선분 BC의 길이 계산": 3,
+            "점 B 구하기 (yz평면 대칭)": 2,
+            "점 C 구하기 (원점 대칭)": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.996856689453125,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동한 점의 좌표 구하기",
+                "점과 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.297422885894775,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.225968837738037,
+              "step_count": 2,
+              "step_titles": [
+                "점 B, C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.996856689453125,
+              "step_count": 2,
+              "step_titles": [
+                "대칭이동한 점의 좌표 구하기",
+                "점과 점 사이의 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 17.297422885894775,
+              "step_count": 3,
+              "step_titles": [
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.225968837738037,
+              "step_count": 2,
+              "step_titles": [
+                "점 B, C의 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.3333333333333335,
+          "title_frequency": {
+            "대칭이동한 점의 좌표 구하기": 1,
+            "점과 점 사이의 거리 계산": 1,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B, C의 좌표 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 2.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "대칭이동한 점의 좌표 구하기": 1,
+            "점과 점 사이의 거리 계산": 1,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 2,
+            "점 B, C의 좌표 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.258483409881592,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.363935232162476,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.789801836013794,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 17.258483409881592,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 20.363935232162476,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.789801836013794,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 찾기",
+                "점 C 찾기",
+                "BC 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "점 B 구하기": 2,
+            "점 C 구하기": 2,
+            "BC 거리 계산": 2,
+            "BC 길이 계산": 1,
+            "점 B 찾기": 1,
+            "점 C 찾기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "점 B 구하기": 2,
+            "점 C 구하기": 2,
+            "BC 거리 계산": 2,
+            "BC 길이 계산": 1,
+            "점 B 찾기": 1,
+            "점 C 찾기": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.018138647079468,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점 B와 C의 좌표",
+                "선분 BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.356779336929321,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "B와 C 사이 거리 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.231226205825806,
+              "step_count": 3,
+              "step_titles": [
+                "좌표의 대칭이동",
+                "두 점 B와 C의 좌표 비교",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.018138647079468,
+              "step_count": 3,
+              "step_titles": [
+                "조건 정리",
+                "점 B와 C의 좌표",
+                "선분 BC 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.356779336929321,
+              "step_count": 3,
+              "step_titles": [
+                "점 B 구하기",
+                "점 C 구하기",
+                "B와 C 사이 거리 계산"
+              ],
+              "final_answer": "⑤ 5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 23.231226205825806,
+              "step_count": 3,
+              "step_titles": [
+                "좌표의 대칭이동",
+                "두 점 B와 C의 좌표 비교",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "⑤ 5\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "조건 정리": 1,
+            "점 B와 C의 좌표": 1,
+            "선분 BC 길이 계산": 1,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "B와 C 사이 거리 계산": 1,
+            "좌표의 대칭이동": 1,
+            "두 점 B와 C의 좌표 비교": 1,
+            "선분 BC의 길이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 1,
+            "점 B와 C의 좌표": 1,
+            "선분 BC 길이 계산": 1,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1,
+            "B와 C 사이 거리 계산": 1,
+            "좌표의 대칭이동": 1,
+            "두 점 B와 C의 좌표 비교": 1,
+            "선분 BC의 길이 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.894216775894165,
+              "step_count": 3,
+              "step_titles": [
+                "대칭 점 B 좌표 구하기",
+                "대칭 점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.061473846435547,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.239419221878052,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.894216775894165,
+              "step_count": 3,
+              "step_titles": [
+                "대칭 점 B 좌표 구하기",
+                "대칭 점 C 좌표 구하기",
+                "선분 BC의 길이 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 27.061473846435547,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B의 좌표 구하기",
+                "점 C의 좌표 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.239419221878052,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "점 B 구하기",
+                "점 C 구하기",
+                "벡터 BC와 거리 계산"
+              ],
+              "final_answer": "5",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "대칭 점 B 좌표 구하기": 1,
+            "대칭 점 C 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 1,
+            "조건 정리": 2,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "벡터 BC와 거리 계산": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "대칭 점 B 좌표 구하기": 1,
+            "대칭 점 C 좌표 구하기": 1,
+            "선분 BC의 길이 계산": 1,
+            "조건 정리": 2,
+            "점 B의 좌표 구하기": 1,
+            "점 C의 좌표 구하기": 1,
+            "벡터 BC와 거리 계산": 2,
+            "점 B 구하기": 1,
+            "점 C 구하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "대칭이동 성질 정리": 1,
+          "점 B, C 좌표 구하기": 2,
+          "거리 BC 계산": 2,
+          "대칭이동 규칙 정리": 1,
+          "대칭이동 좌표 구하기": 1,
+          "거리 공식으로 BC 길이 계산": 1,
+          "대칭이동 규칙 확인": 1,
+          "점 B, C의 좌표 계산": 1,
+          "선분 BC의 길이 계산": 7,
+          "점 B 구하기 (yz평면 대칭)": 2,
+          "점 C 구하기 (원점 대칭)": 2,
+          "대칭이동한 점의 좌표 구하기": 1,
+          "점과 점 사이의 거리 계산": 1,
+          "점 B의 좌표 구하기": 2,
+          "점 C의 좌표 구하기": 2,
+          "점 B, C의 좌표 구하기": 1,
+          "점 B 구하기": 4,
+          "점 C 구하기": 4,
+          "BC 거리 계산": 2,
+          "BC 길이 계산": 1,
+          "점 B 찾기": 1,
+          "점 C 찾기": 1,
+          "조건 정리": 3,
+          "점 B와 C의 좌표": 1,
+          "선분 BC 길이 계산": 1,
+          "B와 C 사이 거리 계산": 1,
+          "좌표의 대칭이동": 1,
+          "두 점 B와 C의 좌표 비교": 1,
+          "대칭 점 B 좌표 구하기": 1,
+          "대칭 점 C 좌표 구하기": 1,
+          "벡터 BC와 거리 계산": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "대칭이동 좌표 구하기": 3,
+          "거리 공식으로 BC 길이 계산": 3,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 3,
+          "선분 BC의 길이 계산": 8,
+          "점 B의 좌표 구하기": 4,
+          "점 C의 좌표 구하기": 4,
+          "점 B 구하기": 2,
+          "점 C 구하기": 2,
+          "BC 거리 계산": 2,
+          "점 B의 좌표 계산": 1,
+          "점 C의 좌표 계산": 1,
+          "조건 정리": 5,
+          "두 점 사이의 거리 계산": 2,
+          "대칭이동 규칙 적용": 1,
+          "B와 C 사이 거리 계산": 1,
+          "점 B 구하기 ($yz$ 평면에 대한 대칭)": 1,
+          "점 C 구하기 (원점에 대한 대칭)": 1,
+          "벡터 BC와 거리 계산": 1,
+          "벡터 BC 계산": 1,
+          "선분 길이 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 2.8333333333333335,
+        "title_frequency_all_models": {
+          "대칭이동 좌표 구하기": 3,
+          "거리 공식으로 BC 길이 계산": 3,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 3,
+          "선분 BC의 길이 계산": 11,
+          "점 B와 점 C의 좌표 구하기": 3,
+          "점 B 찾기": 2,
+          "점 C 찾기": 2,
+          "BC 거리 계산": 3,
+          "점 B 좌표 계산": 1,
+          "점 C 좌표 계산": 1,
+          "조건 정리": 3,
+          "점 B와 점 C 구하기": 1,
+          "점 B 좌표 구하기": 2,
+          "점 C 좌표 구하기": 2,
+          "선분 BC 길이 계산": 1,
+          "점 B 구하기": 1,
+          "점 C 구하기": 1,
+          "벡터 BC 계산": 1,
+          "점 B 구하기 ($yz$-평면에 대한 대칭)": 1,
+          "점 C 구하기 (원점에 대한 대칭)": 1,
+          "대칭점 B 좌표 구하기": 1,
+          "대칭점 C 좌표 구하기": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 2.7777777777777777,
+        "title_frequency_all_models": {
+          "대칭이동 후 좌표 구하기": 1,
+          "거리 공식으로 BC 길이 계산": 2,
+          "대칭이동 결과 구하기": 1,
+          "대칭이동 규칙 정리": 1,
+          "점 B, C의 좌표 구하기": 1,
+          "거리 BC 계산": 1,
+          "점 B 구하기 (yz평면 대칭)": 3,
+          "점 C 구하기 (원점 대칭)": 4,
+          "선분 BC의 길이 계산": 8,
+          "점 B와 점 C의 좌표 구하기": 2,
+          "점 B의 좌표 구하기": 1,
+          "점 C의 좌표 구하기": 1,
+          "점 B 구하기": 4,
+          "점 C 구하기": 4,
+          "BC 길이 계산": 2,
+          "BC 거리 계산": 1,
+          "대칭이동 점 구하기": 1,
+          "거리 계산": 2,
+          "점 B와 C의 좌표 구하기": 1,
+          "점 B와 C 사이의 거리 계산": 1,
+          "대칭이동 규칙 적용": 1,
+          "점 B와 C의 좌표 확인": 1,
+          "두 점 사이의 거리 계산": 1,
+          "조건 정리": 2,
+          "대칭점 B 좌표 구하기": 1,
+          "대칭점 C 좌표 구하기": 1,
+          "점 B 구하기 ($yz$ 평면 대칭)": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 2.9444444444444446,
+        "title_frequency_all_models": {
+          "대칭이동 성질 정리": 1,
+          "점 B, C 좌표 구하기": 2,
+          "거리 BC 계산": 2,
+          "대칭이동 규칙 정리": 1,
+          "대칭이동 좌표 구하기": 1,
+          "거리 공식으로 BC 길이 계산": 1,
+          "대칭이동 규칙 확인": 1,
+          "점 B, C의 좌표 계산": 1,
+          "선분 BC의 길이 계산": 7,
+          "점 B 구하기 (yz평면 대칭)": 2,
+          "점 C 구하기 (원점 대칭)": 2,
+          "대칭이동한 점의 좌표 구하기": 1,
+          "점과 점 사이의 거리 계산": 1,
+          "점 B의 좌표 구하기": 2,
+          "점 C의 좌표 구하기": 2,
+          "점 B, C의 좌표 구하기": 1,
+          "점 B 구하기": 4,
+          "점 C 구하기": 4,
+          "BC 거리 계산": 2,
+          "BC 길이 계산": 1,
+          "점 B 찾기": 1,
+          "점 C 찾기": 1,
+          "조건 정리": 3,
+          "점 B와 C의 좌표": 1,
+          "선분 BC 길이 계산": 1,
+          "B와 C 사이 거리 계산": 1,
+          "좌표의 대칭이동": 1,
+          "두 점 B와 C의 좌표 비교": 1,
+          "대칭 점 B 좌표 구하기": 1,
+          "대칭 점 C 좌표 구하기": 1,
+          "벡터 BC와 거리 계산": 2
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 2.8333333333333335,
+      "title_frequency": {
+        "대칭이동 좌표 구하기": 7,
+        "거리 공식으로 BC 길이 계산": 9,
+        "점 B 구하기 (yz평면 대칭)": 11,
+        "점 C 구하기 (원점 대칭)": 12,
+        "선분 BC의 길이 계산": 34,
+        "점 B의 좌표 구하기": 7,
+        "점 C의 좌표 구하기": 7,
+        "점 B 구하기": 11,
+        "점 C 구하기": 11,
+        "BC 거리 계산": 8,
+        "점 B의 좌표 계산": 1,
+        "점 C의 좌표 계산": 1,
+        "조건 정리": 13,
+        "두 점 사이의 거리 계산": 3,
+        "대칭이동 규칙 적용": 2,
+        "B와 C 사이 거리 계산": 2,
+        "점 B 구하기 ($yz$ 평면에 대한 대칭)": 1,
+        "점 C 구하기 (원점에 대한 대칭)": 2,
+        "벡터 BC와 거리 계산": 3,
+        "벡터 BC 계산": 2,
+        "선분 길이 계산": 1,
+        "점 B와 점 C의 좌표 구하기": 5,
+        "점 B 찾기": 3,
+        "점 C 찾기": 3,
+        "점 B 좌표 계산": 1,
+        "점 C 좌표 계산": 1,
+        "점 B와 점 C 구하기": 1,
+        "점 B 좌표 구하기": 2,
+        "점 C 좌표 구하기": 2,
+        "선분 BC 길이 계산": 2,
+        "점 B 구하기 ($yz$-평면에 대한 대칭)": 1,
+        "대칭점 B 좌표 구하기": 2,
+        "대칭점 C 좌표 구하기": 2,
+        "대칭이동 후 좌표 구하기": 1,
+        "대칭이동 결과 구하기": 1,
+        "대칭이동 규칙 정리": 2,
+        "점 B, C의 좌표 구하기": 2,
+        "거리 BC 계산": 3,
+        "BC 길이 계산": 3,
+        "대칭이동 점 구하기": 1,
+        "거리 계산": 2,
+        "점 B와 C의 좌표 구하기": 1,
+        "점 B와 C 사이의 거리 계산": 1,
+        "점 B와 C의 좌표 확인": 1,
+        "점 B 구하기 ($yz$ 평면 대칭)": 1,
+        "대칭이동 성질 정리": 1,
+        "점 B, C 좌표 구하기": 2,
+        "대칭이동 규칙 확인": 1,
+        "점 B, C의 좌표 계산": 1,
+        "대칭이동한 점의 좌표 구하기": 1,
+        "점과 점 사이의 거리 계산": 1,
+        "점 B와 C의 좌표": 1,
+        "좌표의 대칭이동": 1,
+        "두 점 B와 C의 좌표 비교": 1,
+        "대칭 점 B 좌표 구하기": 1,
+        "대칭 점 C 좌표 구하기": 1
+      },
+      "accuracy": 0.9027777777777778,
+      "n_samples": 72
+    }
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "n_rows": 3450,
+  "parse_ok_rate": 0.8878260869565218,
+  "correct_rate": 0.7060869565217391,
+  "correct_recheck_rate": 0.7060869565217391,
+  "error_rate": 0.0,
+  "latency_seconds": {
+    "count": 3450,
+    "mean": 43.299059,
+    "median": 25.358798,
+    "p95": 136.550247,
+    "min": 2.484502,
+    "max": 1688.276358
+  },
+  "step_count_stats": {
+    "count": 3450,
+    "mean": 3.089855,
+    "median": 3.0,
+    "p95": 7.0,
+    "min": 0.0,
+    "max": 10.0
+  },
+  "by_model": {
+    "openai/gpt-5-codex": {
+      "n": 690,
+      "parse_ok": 651,
+      "correct": 644,
+      "correct_recheck": 644,
+      "errors": 0,
+      "parse_ok_rate": 0.9434782608695652,
+      "correct_rate": 0.9333333333333333,
+      "correct_recheck_rate": 0.9333333333333333,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 45.451249,
+        "median": 14.375896,
+        "p95": 160.48987,
+        "min": 2.484502,
+        "max": 1688.276358
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 2.498551,
+        "median": 2.0,
+        "p95": 4.0,
+        "min": 0.0,
+        "max": 5.0
+      }
+    },
+    "anthropic/claude-opus-4.5": {
+      "n": 690,
+      "parse_ok": 690,
+      "correct": 556,
+      "correct_recheck": 556,
+      "errors": 0,
+      "parse_ok_rate": 1.0,
+      "correct_rate": 0.8057971014492754,
+      "correct_recheck_rate": 0.8057971014492754,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 13.30801,
+        "median": 10.421969,
+        "p95": 27.327484,
+        "min": 4.200453,
+        "max": 42.105398
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 4.875362,
+        "median": 4.0,
+        "p95": 8.0,
+        "min": 2.0,
+        "max": 10.0
+      }
+    },
+    "google/gemini-3-pro-preview": {
+      "n": 690,
+      "parse_ok": 344,
+      "correct": 344,
+      "correct_recheck": 344,
+      "errors": 0,
+      "parse_ok_rate": 0.4985507246376812,
+      "correct_rate": 0.4985507246376812,
+      "correct_recheck_rate": 0.4985507246376812,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 32.429108,
+        "median": 34.672293,
+        "p95": 46.303385,
+        "min": 9.53629,
+        "max": 130.862054
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 1.728986,
+        "median": 0.0,
+        "p95": 4.0,
+        "min": 0.0,
+        "max": 8.0
+      }
+    },
+    "openai/gpt-5": {
+      "n": 690,
+      "parse_ok": 690,
+      "correct": 678,
+      "correct_recheck": 678,
+      "errors": 0,
+      "parse_ok_rate": 1.0,
+      "correct_rate": 0.9826086956521739,
+      "correct_recheck_rate": 0.9826086956521739,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 65.653439,
+        "median": 34.553979,
+        "p95": 195.009736,
+        "min": 6.438345,
+        "max": 1025.756847
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.157971,
+        "median": 3.0,
+        "p95": 5.0,
+        "min": 1.0,
+        "max": 7.0
+      }
+    },
+    "x-ai/grok-4-fast": {
+      "n": 690,
+      "parse_ok": 688,
+      "correct": 214,
+      "correct_recheck": 214,
+      "errors": 0,
+      "parse_ok_rate": 0.9971014492753624,
+      "correct_rate": 0.3101449275362319,
+      "correct_recheck_rate": 0.3101449275362319,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 59.653488,
+        "median": 47.08201,
+        "p95": 154.880455,
+        "min": 2.823494,
+        "max": 309.53148
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.188406,
+        "median": 3.0,
+        "p95": 5.0,
+        "min": 0.0,
+        "max": 7.0
+      }
+    }
+  },
+  "by_year": {
+    "2022": {
+      "n": 690,
+      "parse_ok": 607,
+      "correct": 479,
+      "correct_recheck": 479,
+      "errors": 0,
+      "parse_ok_rate": 0.8797101449275362,
+      "correct_rate": 0.6942028985507246,
+      "correct_recheck_rate": 0.6942028985507246,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 45.13355,
+        "median": 26.580345,
+        "p95": 147.446968,
+        "min": 2.857079,
+        "max": 997.045569
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.123188,
+        "median": 3.0,
+        "p95": 7.0,
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    "2023": {
+      "n": 690,
+      "parse_ok": 613,
+      "correct": 475,
+      "correct_recheck": 475,
+      "errors": 0,
+      "parse_ok_rate": 0.8884057971014493,
+      "correct_rate": 0.6884057971014492,
+      "correct_recheck_rate": 0.6884057971014492,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 39.004668,
+        "median": 25.021805,
+        "p95": 127.093691,
+        "min": 3.146121,
+        "max": 225.654476
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.137681,
+        "median": 3.0,
+        "p95": 6.0,
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    "2024": {
+      "n": 690,
+      "parse_ok": 606,
+      "correct": 481,
+      "correct_recheck": 481,
+      "errors": 0,
+      "parse_ok_rate": 0.8782608695652174,
+      "correct_rate": 0.6971014492753623,
+      "correct_recheck_rate": 0.6971014492753623,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 46.821591,
+        "median": 26.085919,
+        "p95": 138.925721,
+        "min": 2.484502,
+        "max": 1000.066926
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.013043,
+        "median": 3.0,
+        "p95": 6.0,
+        "min": 0.0,
+        "max": 9.0
+      }
+    },
+    "2025": {
+      "n": 690,
+      "parse_ok": 616,
+      "correct": 503,
+      "correct_recheck": 503,
+      "errors": 0,
+      "parse_ok_rate": 0.8927536231884058,
+      "correct_rate": 0.7289855072463768,
+      "correct_recheck_rate": 0.7289855072463768,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 37.436323,
+        "median": 25.276983,
+        "p95": 119.630469,
+        "min": 2.953692,
+        "max": 310.245588
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.008696,
+        "median": 3.0,
+        "p95": 6.0,
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    "2026": {
+      "n": 690,
+      "parse_ok": 621,
+      "correct": 498,
+      "correct_recheck": 498,
+      "errors": 0,
+      "parse_ok_rate": 0.9,
+      "correct_rate": 0.7217391304347827,
+      "correct_recheck_rate": 0.7217391304347827,
+      "error_rate": 0.0,
+      "latency_seconds": {
+        "count": 690,
+        "mean": 48.099162,
+        "median": 23.735269,
+        "p95": 145.286748,
+        "min": 2.733352,
+        "max": 1688.276358
+      },
+      "step_count_stats": {
+        "count": 690,
+        "mean": 3.166667,
+        "median": 3.0,
+        "p95": 7.0,
+        "min": 0.0,
+        "max": 10.0
+      }
+    }
+  },
+  "meta": {
+    "recorded_at_utc": "2026-02-25T08:27:31Z",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "runs": 3,
+    "concurrency": 1,
+    "max_output_tokens": null,
+    "expected_calls_full": 3450,
+    "pending_calls": 1,
+    "skipped_by_resume": 3449,
+    "prune_failed_before_run": true,
+    "pruned_failed_count": 1,
+    "flat_backup_path": "0212/poc/output/backend_solve_parallel_5y_flat.csv.bak_20260225T072725Z",
+    "raw_backup_path": "0212/poc/output/backend_solve_parallel_5y_raw.jsonl.bak_20260225T072725Z",
+    "success_calls_this_run": 0,
+    "error_calls_this_run": 1,
+    "elapsed_seconds_this_run": 3606.03,
+    "models": [
+      {
+        "modelId": "openai/gpt-5-codex",
+        "displayName": "GPT-5-Codex"
+      },
+      {
+        "modelId": "openai/gpt-5",
+        "displayName": "GPT-5"
+      },
+      {
+        "modelId": "anthropic/claude-opus-4.5",
+        "displayName": "Claude Opus 4.5"
+      },
+      {
+        "modelId": "google/gemini-3-pro-preview",
+        "displayName": "Gemini 3 Pro"
+      },
+      {
+        "modelId": "x-ai/grok-4-fast",
+        "displayName": "Grok 4 Fast"
+      }
+    ],
+    "resume": true,
+    "temperature_policy": {
+      "no_temperature_models": [
+        "openai/gpt-5",
+        "openai/gpt-5-codex"
+      ],
+      "others_temperature": 1.0
+    },
+    "retry_policy": {
+      "max_attempts": 2,
+      "max_retries": 1,
+      "retry_on_exception_only": true,
+      "elapsed_time_seconds_definition": "final_attempt_only"
+    },
+    "last_single_retry_at_utc": "2026-02-25T08:51:48Z",
+    "last_single_retry_target": {
+      "year": "2024",
+      "prob_id": "2024_odd_geometry_28",
+      "model_id": "openai/gpt-5-codex",
+      "run_index": 2,
+      "route": "openrouter",
+      "temperature_sent": "",
+      "max_tokens_sent": "",
+      "max_tokens_policy": "unset"
+    }
+  }
+}

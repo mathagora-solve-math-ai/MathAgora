@@ -1,0 +1,129 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_calculus_27",
+    "prob_area": "미적분",
+    "prob_point": "3",
+    "prob_desc": "27. 실수 $t$에 대하여 원점을 지나고 곡선 $y=\\dfrac{1}{e^x}+e^t$에 접하는 직선의 기울기를 $f(t)$라 하자. $f(a)=-e\\sqrt{e}$를 만족시키는 상수 $a$에 대하여 $f'(a)$의 값은? [3점]\n① $-\\dfrac{1}{3} e\\sqrt{e}$ ② $-\\dfrac{1}{2}e\\sqrt{e}$ ③ $-\\dfrac{2}{3}e\\sqrt{e}$ ④ $-\\dfrac{5}{6}e\\sqrt{e}$ ⑤ $-e\\sqrt{e}$",
+    "answer": "1"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Tangent condition equation",
+        "body": "For the curve y = e^{-x} + e^{t}, a tangent line at x = x(t) has slope m = -e^{-x(t)}. Since the tangent passes through the origin, substituting (0,0) into the tangent line equation yields e^{-x(t)} + e^{t} = -x(t) e^{-x(t)}. Multiplying both sides by e^{x(t)} gives the defining relation g(t, x) = x + e^{t+x} + 1 = 0 that links the tangency abscissa x(t) and the parameter t."
+      },
+      {
+        "title": "Solve for parameter a",
+        "body": "The condition f(a) = -e\\sqrt{e} implies -e^{-x(a)} = -e\\sqrt{e}, so e^{-x(a)} = e^{3/2}, hence x(a) = -3/2. Substituting x = -3/2 into g(t, x) = 0 gives -3/2 + e^{t-3/2} + 1 = 0, so e^{t-3/2} = 1/2 and a = 3/2 - \\ln 2."
+      },
+      {
+        "title": "Differentiate and evaluate f'(a)",
+        "body": "Differentiating g(t, x(t)) = 0 with respect to t yields e^{t+x} + (1 + e^{t+x}) x'(t) = 0, so x'(t) = -e^{t+x} / (1 + e^{t+x}). Then f'(t) = e^{-x(t)} x'(t). At t = a, e^{t+x} = 1/2 and e^{-x} = e^{3/2}, giving x'(a) = -(1/2)/(1+1/2) = -1/3 and thus f'(a) = e^{3/2}(-1/3) = -(1/3) e\\sqrt{e}."
+      },
+      {
+        "title": "Final Answer",
+        "body": "1"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Set tangency conditions",
+        "body": "Let the tangency point be x. For y = e^{-x} + e^t, derivative is y' = -e^{-x}. A line through origin tangent at x must satisfy: (i) slope m = y'(x) = -e^{-x}, (ii) y(x) = m x ⇒ e^{-x} + e^t = m x. Using m = -e^{-x}, we get e^{-x} + e^t = -e^{-x} x ⇒ e^t = -(x+1)e^{-x} (requires x < -1)."
+      },
+      {
+        "title": "Parameterize by x",
+        "body": "Define m(x) = -e^{-x}, t(x) = ln(e^t) = ln( -(x+1)e^{-x} ) = ln( -(x+1) ) - x (valid for x < -1). Then f(t(x)) = m(x)."
+      },
+      {
+        "title": "Differentiate via chain rule",
+        "body": "Compute dm/dx = e^{-x}. Compute dt/dx = d/dx[ln( -(x+1) ) - x] = 1/(x+1) - 1. Thus f'(t) = dm/dt = (dm/dx)/(dt/dx) = e^{-x} / (1/(x+1) - 1)."
+      },
+      {
+        "title": "Find x for given slope",
+        "body": "Given f(a) = -e√e, set m(x) = -e^{-x} = -e√e ⇒ e^{-x} = e√e = e^{3/2} ⇒ x = -3/2."
+      },
+      {
+        "title": "Evaluate f'(a)",
+        "body": "At x = -3/2: e^{-x} = e^{3/2} = e√e, and 1/(x+1) - 1 = 1/(-1/2) - 1 = -2 - 1 = -3. Hence f'(a) = (e√e)/(-3) = -(1/3)e√e."
+      },
+      {
+        "title": "Final Answer",
+        "body": "1"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Set up the tangent line condition",
+        "body": "The curve is $y = e^{-x} + e^t$. Let the tangent point be $(p, e^{-p} + e^t)$.\n\nThe derivative is $y' = -e^{-x}$, so the slope at point $p$ is $-e^{-p}$.\n\nSince the tangent line passes through the origin, we have:\n$$\\frac{e^{-p} + e^t - 0}{p - 0} = -e^{-p}$$\n\nThis gives us: $e^{-p} + e^t = -pe^{-p}$"
+      },
+      {
+        "title": "Express the relationship between p and t",
+        "body": "From $e^{-p} + e^t = -pe^{-p}$:\n$$e^t = -pe^{-p} - e^{-p} = -(p+1)e^{-p}$$\n\nFor this to have a solution (since $e^t > 0$), we need $-(p+1)e^{-p} > 0$, which means $p < -1$.\n\nSo: $e^t = -(p+1)e^{-p}$\n\nThe slope function is: $f(t) = -e^{-p}$"
+      },
+      {
+        "title": "Find p when f(a) = -e√e",
+        "body": "Given $f(a) = -e\\sqrt{e} = -e^{3/2}$\n\nSince $f(t) = -e^{-p}$, we have:\n$$-e^{-p} = -e^{3/2}$$\n$$e^{-p} = e^{3/2}$$\n$$p = -\\frac{3}{2}$$\n\nVerify: $p = -3/2 < -1$ ✓"
+      },
+      {
+        "title": "Differentiate to find f'(t)",
+        "body": "From $e^t = -(p+1)e^{-p}$, differentiate both sides with respect to $t$:\n$$e^t = -(p+1)e^{-p}$$\n\nDifferentiating: $e^t \\cdot 1 = -[p' \\cdot e^{-p} + (p+1) \\cdot (-e^{-p}) \\cdot p']$\n$$e^t = -p'e^{-p} + (p+1)e^{-p}p'$$\n$$e^t = p'e^{-p}[-1 + (p+1)]$$\n$$e^t = p'e^{-p} \\cdot p$$\n$$p' = \\frac{e^t}{pe^{-p}} = \\frac{e^t \\cdot e^p}{p}$$\n\nSince $f(t) = -e^{-p}$:\n$$f'(t) = -e^{-p} \\cdot (-p') = e^{-p} \\cdot p' = e^{-p} \\cdot \\frac{e^t \\cdot e^p}{p} = \\frac{e^t}{p}$$"
+      },
+      {
+        "title": "Calculate f'(a)",
+        "body": "At $p = -3/2$:\n$$e^a = -(p+1)e^{-p} = -(-\\frac{3}{2}+1)e^{3/2} = -(-\\frac{1}{2})e^{3/2} = \\frac{1}{2}e^{3/2}$$\n\nTherefore:\n$$f'(a) = \\frac{e^a}{p} = \\frac{\\frac{1}{2}e^{3/2}}{-\\frac{3}{2}} = \\frac{e^{3/2}}{2} \\cdot (-\\frac{2}{3}) = -\\frac{1}{3}e^{3/2} = -\\frac{1}{3}e\\sqrt{e}$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "1"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Set up tangency equations",
+        "body": "Let the x-coordinate of the point of tangency be $s$. The derivative of the curve $y = e^{-x} + e^t$ with respect to $x$ is $y' = -e^{-x}$. The slope of the tangent line is $f(t) = -e^{-s}$. Since the tangent line passes through the origin $(0,0)$ and the point $(s, e^{-s}+e^t)$, the slope is also given by $\\frac{e^{-s}+e^t - 0}{s - 0}$. Equating the slopes: $-e^{-s} = \\frac{e^{-s}+e^t}{s}$. Simplifying this yields $e^t = -e^{-s}(1+s)$."
+      },
+      {
+        "title": "Find the value of s at t=a",
+        "body": "We are given $f(a) = -e\\sqrt{e} = -e^{3/2}$. Using the slope formula $f(t) = -e^{-s}$, we have $-e^{-s} = -e^{3/2}$, which implies $e^{-s} = e^{3/2}$. Taking the natural logarithm of both sides gives $-s = 3/2$, so $s = -\\frac{3}{2}$ when $t=a$."
+      },
+      {
+        "title": "Calculate e^a",
+        "body": "Substitute $s = -\\frac{3}{2}$ into the relation $e^t = -e^{-s}(1+s)$ derived in Step 0. At $t=a$, we have:\n$e^a = -e^{-(-3/2)}(1 - \\frac{3}{2}) = -e^{3/2}(-\\frac{1}{2}) = \\frac{1}{2}e^{3/2}$."
+      },
+      {
+        "title": "Derive expression for f'(t)",
+        "body": "Since $f(t) = -e^{-s}$, we differentiate with respect to $t$ using the chain rule: $f'(t) = e^{-s} \\frac{ds}{dt}$. To find $\\frac{ds}{dt}$, differentiate the implicit relation $e^t = -e^{-s}(1+s)$ with respect to $t$:\n$e^t = \\frac{d}{ds}[-e^{-s}(1+s)] \\frac{ds}{dt} = [e^{-s}(1+s) - e^{-s}] \\frac{ds}{dt} = s e^{-s} \\frac{ds}{dt}$.\nThus, $\\frac{ds}{dt} = \\frac{e^t}{s e^{-s}}$.\nSubstituting this back into the expression for $f'(t)$, we get $f'(t) = e^{-s} \\left( \\frac{e^t}{s e^{-s}} \\right) = \\frac{e^t}{s}$."
+      },
+      {
+        "title": "Evaluate f'(a)",
+        "body": "Substitute $s = -\\frac{3}{2}$ and $e^a = \\frac{1}{2}e^{3/2}$ into the derived formula $f'(a) = \\frac{e^a}{s}$:\n$f'(a) = \\frac{\\frac{1}{2}e^{3/2}}{-\\frac{3}{2}} = \\frac{1}{2}e^{3/2} \\cdot \\left(-\\frac{2}{3}\\right) = -\\frac{1}{3}e^{3/2} = -\\frac{1}{3}e\\sqrt{e}$."
+      },
+      {
+        "title": "Final Answer",
+        "body": "1"
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Define curve and tangent condition",
+        "body": "The curve is \\( y(x) = e^{-x} + e^t \\). The derivative is \\( y'(x) = -e^{-x} \\). Let the point of tangency be \\( x_0 \\), so slope \\( m = -e^{-x_0} \\). Let \\( k = e^{-x_0} > 0 \\), then \\( m = -k \\) and \\( x_0 = -\\ln k \\). The y-coordinate at \\( x_0 \\) is \\( y(x_0) = k + e^t \\). The tangent line passes through (0,0), so \\( y(x_0) = m x_0 \\), which gives \\( k + e^t = -k (-\\ln k) = k \\ln k \\). Thus, \\( e^t = k(\\ln k - 1) \\). Since \\( f(t) = m = -k \\), \\( k \\) satisfies this equation implicitly."
+      },
+      {
+        "title": "Use given f(a) to find k_a",
+        "body": "Given \\( f(a) = -e\\sqrt{e} = -e^{3/2} \\), so \\( k_a = e^{3/2} \\). Substitute into the equation: \\( e^a = e^{3/2} (\\ln(e^{3/2}) - 1) = e^{3/2} (3/2 - 1) = e^{3/2} \\cdot (1/2) = \\frac{1}{2} e^{3/2} \\)."
+      },
+      {
+        "title": "Differentiate to find f'(t)",
+        "body": "Let \\( g(k) = k(\\ln k - 1) \\), so \\( e^t = g(k) \\) and \\( f(t) = -k \\). Differentiate implicitly: \\( e^t = g'(k) k' \\), where \\( g'(k) = \\ln k \\). Thus, \\( k' = e^t / \\ln k \\) and \\( f'(t) = -k' = -e^t / \\ln k \\)."
+      },
+      {
+        "title": "Evaluate f'(a)",
+        "body": "At \\( t = a \\), \\( k = e^{3/2} \\), so \\( \\ln k = 3/2 \\) and \\( e^a = \\frac{1}{2} e^{3/2} \\). Then \\( f'(a) = - \\frac{(1/2) e^{3/2}}{3/2} = - (1/2) e^{3/2} \\cdot (2/3) = -\\frac{1}{3} e^{3/2} = -\\frac{1}{3} e \\sqrt{e} \\), which matches option ①."
+      },
+      {
+        "title": "Final Answer",
+        "body": "1"
+      }
+    ]
+  }
+}

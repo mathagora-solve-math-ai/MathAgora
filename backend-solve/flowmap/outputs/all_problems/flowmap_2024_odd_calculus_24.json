@@ -1,0 +1,197 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "매개변수 미분 공식 확인",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "매개변수 미분 공식",
+          "content": "매개변수 \\(t\\)로 주어진 곡선에서\n\\[\n\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}\n\\]\n를 사용한다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "매개변수 $t$로 나타내어진 곡선:\n- $x = \\ln(t^3 + 1)$\n- $y = \\sin\\pi t$\n\n$t = 1$일 때 $\\dfrac{dy}{dx}$를 구해야 합니다.\n\n매개변수 미분 공식: $\\dfrac{dy}{dx} = \\dfrac{dy/dt}{dx/dt}$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "매개변수 미분법 공식 확인",
+          "content": "매개변수 $t$로 나타내어진 함수의 미분법을 이용합니다.\n$$\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} \\quad \\left(\\text{단, } \\frac{dx}{dt} \\neq 0\\right)$$"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "dx/dt, dy/dt 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "각각 \\(t\\)에 대해 미분",
+          "content": "\\[\nx=\\ln(t^3+1)\\Rightarrow \\frac{dx}{dt}=\\frac{1}{t^3+1}\\cdot 3t^2=\\frac{3t^2}{t^3+1}\n\\]\n\\[\ny=\\sin(\\pi t)\\Rightarrow \\frac{dy}{dt}=\\pi\\cos(\\pi t)\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "dx/dt 계산",
+          "content": "$x = \\ln(t^3 + 1)$\n\n합성함수 미분법 적용:\n$$\\frac{dx}{dt} = \\frac{1}{t^3 + 1} \\cdot 3t^2 = \\frac{3t^2}{t^3 + 1}$$\n[/STEP]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "dy/dt 계산",
+          "content": "$y = \\sin\\pi t$\n\n합성함수 미분법 적용:\n$$\\frac{dy}{dt} = \\cos\\pi t \\cdot \\pi = \\pi\\cos\\pi t$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "x를 t에 대해 미분",
+          "content": "$x = \\ln(t^3 + 1)$을 $t$에 대하여 미분합니다.\n로그함수의 미분법 $\\frac{d}{dt}\\ln(f(t)) = \\frac{f'(t)}{f(t)}$을 적용하면,\n$$\\frac{dx}{dt} = \\frac{3t^2}{t^3 + 1}$$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "y를 t에 대해 미분",
+          "content": "$y = \\sin\\pi t$를 $t$에 대하여 미분합니다.\n삼각함수의 미분법과 연쇄 법칙을 적용하면,\n$$\\frac{dy}{dt} = \\pi \\cos\\pi t$$"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "dy/dx 식 정리",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "비율로 \\(\\frac{dy}{dx}\\) 구하기",
+          "content": "\\[\n\\frac{dy}{dx}=\\frac{\\pi\\cos(\\pi t)}{\\frac{3t^2}{t^3+1}}\n=\\pi\\cos(\\pi t)\\cdot \\frac{t^3+1}{3t^2}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "dy/dx 계산",
+          "content": "$$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{\\pi\\cos\\pi t}{\\dfrac{3t^2}{t^3 + 1}} = \\frac{\\pi\\cos\\pi t \\cdot (t^3 + 1)}{3t^2}$$\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "t=1 대입 및 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": " \\(t=1\\) 대입",
+          "content": "\\[\n\\cos(\\pi\\cdot 1)=\\cos\\pi=-1,\\quad \\frac{t^3+1}{3t^2}\\Big|_{t=1}=\\frac{1+1}{3\\cdot 1}=\\frac{2}{3}\n\\]\n따라서\n\\[\n\\frac{dy}{dx}\\Big|_{t=1}=\\pi(-1)\\cdot \\frac{2}{3}=-\\frac{2}{3}\\pi\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "t=1 대입",
+          "content": "$t = 1$을 대입:\n\n- $\\cos\\pi(1) = \\cos\\pi = -1$\n- $t^3 + 1 = 1 + 1 = 2$\n- $3t^2 = 3(1)^2 = 3$\n\n$$\\frac{dy}{dx}\\bigg|_{t=1} = \\frac{\\pi \\cdot (-1) \\cdot 2}{3} = \\frac{-2\\pi}{3} = -\\frac{2}{3}\\pi$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "t=1 대입 및 최종 계산",
+          "content": "구해진 도함수에 $t=1$을 대입하여 $\\frac{dy}{dx}$의 값을 구합니다.\n\n1) $t=1$일 때 $\\frac{dx}{dt}$의 값:\n$$\\frac{dx}{dt} = \\frac{3(1)^2}{1^3 + 1} = \\frac{3}{2}$$\n\n2) $t=1$일 때 $\\frac{dy}{dt}$의 값:\n$$\\frac{dy}{dt} = \\pi \\cos\\pi = \\pi \\cdot (-1) = -\\pi$$\n\n3) 최종 $\\frac{dy}{dx}$ 계산:\n$$\\frac{dy}{dx} = \\frac{-\\pi}{\\frac{3}{2}} = -\\frac{2}{3}\\pi$$"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "최종 답 제시",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "\\(-\\dfrac{2}{3}\\pi\\) (②)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "**② $-\\dfrac{2}{3}\\pi$**\n[/FINAL_ANSWER]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "②"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 3,
+      "to_step": 4
+    }
+  ]
+}

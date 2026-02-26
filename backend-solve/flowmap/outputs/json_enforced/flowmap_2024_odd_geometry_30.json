@@ -1,0 +1,203 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "좌표 설정 및 내분점 D, E, F 좌표 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "좌표 설정과 D,E,F 구하기",
+          "content": "정삼각형 한 변 4이므로 좌표를\nA=(0,0), B=(4,0), C=(2,2\\sqrt3) 로 둔다.\n\n내분점 조건(1:3)을 AD:DB=1:3, BE:EC=1:3, CF:FA=1:3로 해석하면\nD = A + (1/4)(B-A) = (1,0)\nE = B + (1/4)(C-B) = (4,0) + (1/4)((2,2\\sqrt3)-(4,0)) = (7/2, \\sqrt3/2)\nF = C + (1/4)(A-C) = (3/4)C = (3/2, 3\\sqrt3/2)."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "좌표계 설정 및 기본 점들의 좌표 계산",
+          "content": "정삼각형 ABC의 좌표를 설정합니다.\n- A = (0, 0)\n- B = (4, 0)\n- C = (2, 2√3)\n\n내분점 계산 (1:3 내분):\n- D는 AB를 1:3으로 내분: D = (1, 0)\n- E는 BC를 1:3으로 내분: E = (4 + (2-4)/4, 0 + 2√3/4) = (7/2, √3/2)\n- F는 CA를 1:3으로 내분: F = (2 + (0-2)/4, 2√3 + (0-2√3)/4) = (3/2, 3√3/2)"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "조건 (나)의 벡터식 정리 및 AX 표현",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "AX 벡터를 P,Q,R로 표현",
+          "content": "조건 (나): \\overrightarrow{AX}=\\overrightarrow{PB}+\\overrightarrow{QC}+\\overrightarrow{RA}.\n각 항을 점좌표로 쓰면\n\\overrightarrow{PB}=B-P, \\overrightarrow{QC}=C-Q, \\overrightarrow{RA}=A-R.\n따라서\n\\overrightarrow{AX} = (B+C+A) - (P+Q+R).\n여기서 A=(0,0)이므로\n\\overrightarrow{AX} = (B+C) - (P+Q+R).\n\n이제 P=D+u, Q=E+v, R=F+w 로 두자.\n조건 (가)에서 |u|=|v|=|w|=1.\n그러면\nP+Q+R = (D+E+F) + (u+v+w)\n이므로\n\\overrightarrow{AX} = (B+C - (D+E+F)) - (u+v+w).\n상수벡터 K := B+C-(D+E+F) 를 계산한다.\nD+E+F = (1+7/2+3/2, 0+\\sqrt3/2+3\\sqrt3/2) = (6, 2\\sqrt3)\nB+C = (4+2, 0+2\\sqrt3) = (6, 2\\sqrt3)\n따라서 K=0, 즉\n\\overrightarrow{AX} = -(u+v+w).\n결론적으로 |AX| 최대화는 |u+v+w| 최대화와 같다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "조건 (나)의 벡터식 정리",
+          "content": "조건 (나): $\\overrightarrow{AX} = \\overrightarrow{PB} + \\overrightarrow{QC} + \\overrightarrow{RA}$\n\n각 벡터를 위치벡터로 표현:\n- $\\overrightarrow{PB} = \\overrightarrow{AB} - \\overrightarrow{AP} = \\vec{b} - \\vec{p}$\n- $\\overrightarrow{QC} = \\overrightarrow{AC} - \\overrightarrow{AQ} = \\vec{c} - \\vec{q}$\n- $\\overrightarrow{RA} = -\\overrightarrow{AR} = -\\vec{r}$\n\n따라서:\n$\\overrightarrow{AX} = (\\vec{b} - \\vec{p}) + (\\vec{c} - \\vec{q}) + (-\\vec{r})$\n$\\overrightarrow{AX} = \\vec{b} + \\vec{c} - (\\vec{p} + \\vec{q} + \\vec{r})$\n\n여기서 $\\vec{b} + \\vec{c} = (4,0) + (2, 2\\sqrt{3}) = (6, 2\\sqrt{3})$"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "P, Q, R의 위치 벡터 표현",
+          "content": "조건 (가)에서 각 점은 중심으로부터 반지름 1인 원 위에 있습니다.\n\n$\\vec{p} = \\overrightarrow{AD} + \\overrightarrow{DP} = (1, 0) + (\\cos\\alpha, \\sin\\alpha)$\n$\\vec{q} = \\overrightarrow{AE} + \\overrightarrow{EQ} = (7/2, \\sqrt{3}/2) + (\\cos\\beta, \\sin\\beta)$\n$\\vec{r} = \\overrightarrow{AF} + \\overrightarrow{FR} = (3/2, 3\\sqrt{3}/2) + (\\cos\\gamma, \\sin\\gamma)$\n\n$\\vec{p} + \\vec{q} + \\vec{r} = (1 + 7/2 + 3/2, 0 + \\sqrt{3}/2 + 3\\sqrt{3}/2) + (\\cos\\alpha + \\cos\\beta + \\cos\\gamma, \\sin\\alpha + \\sin\\beta + \\sin\\gamma)$\n$= (6, 2\\sqrt{3}) + (\\cos\\alpha + \\cos\\beta + \\cos\\gamma, \\sin\\alpha + \\sin\\beta + \\sin\\gamma)$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "벡터 식 변형 및 정리",
+          "content": "주어진 식 $\\overrightarrow{AX} = \\overrightarrow{PB}+\\overrightarrow{QC}+\\overrightarrow{RA}$를 고정된 점 $D, E, F$를 기준으로 분해합니다.\n$\\overrightarrow{PB} = \\overrightarrow{DB} - \\overrightarrow{DP}$, $\\overrightarrow{QC} = \\overrightarrow{EC} - \\overrightarrow{EQ}$, $\\overrightarrow{RA} = \\overrightarrow{FA} - \\overrightarrow{FR}$이므로,\n$\\overrightarrow{AX} = (\\overrightarrow{DB} + \\overrightarrow{EC} + \\overrightarrow{FA}) - (\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR})$입니다.\n이때 $\\overrightarrow{DB} = \\frac{3}{4}\\overrightarrow{AB}$, $\\overrightarrow{EC} = \\frac{3}{4}\\overrightarrow{BC}$, $\\overrightarrow{FA} = \\frac{3}{4}\\overrightarrow{CA}$이고, 세 벡터의 합은 $\\frac{3}{4}(\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CA})=\\vec{0}$이므로,\n$\\overrightarrow{AX} = -(\\overrightarrow{DP} + \\overrightarrow{EQ} + \\overrightarrow{FR})$로 정리됩니다."
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "|AX| 최대 조건 도출 (세 단위벡터 같은 방향)",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "|AX| 최대 조건과 u,v,w",
+          "content": "|u|=|v|=|w|=1인 세 벡터의 합의 크기 최대는 세 벡터가 같은 방향일 때이며, 최대값은 3이다.\n따라서 |AX|가 최대일 때는 u=v=w 인 어떤 단위벡터 t가 된다.\n즉\nP = D + t,\nQ = E + t,\nR = F + t.\n이때 삼각형 PQR은 삼각형 DEF를 평행이동한 것이므로 넓이 S는 DEF의 넓이와 같다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "|AX| 최대화 조건 도출",
+          "content": "$\\overrightarrow{AX} = (6, 2\\sqrt{3}) - (\\vec{p} + \\vec{q} + \\vec{r})$\n$= (6, 2\\sqrt{3}) - (6, 2\\sqrt{3}) - (\\cos\\alpha + \\cos\\beta + \\cos\\gamma, \\sin\\alpha + \\sin\\beta + \\sin\\gamma)$\n$= -(\\cos\\alpha + \\cos\\beta + \\cos\\gamma, \\sin\\alpha + \\sin\\beta + \\sin\\gamma)$\n\n$|\\overrightarrow{AX}|^2 = (\\cos\\alpha + \\cos\\beta + \\cos\\gamma)^2 + (\\sin\\alpha + \\sin\\beta + \\sin\\gamma)^2$\n\n이 값이 최대가 되려면 세 단위벡터가 같은 방향을 가리켜야 합니다.\n즉, $\\alpha = \\beta = \\gamma = \\theta$ (같은 각도)\n\n이때 $|\\overrightarrow{AX}|_{max} = 3$ (세 단위벡터의 합의 최대 크기)"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "벡터 크기가 최대가 되는 조건 확인",
+          "content": "$|\\overrightarrow{DP}| = |\\overrightarrow{EQ}| = |\\overrightarrow{FR}| = 1$이므로, $|\\overrightarrow{AX}|$가 최대가 되기 위해서는 세 벡터 $\\overrightarrow{DP}, \\overrightarrow{EQ}, \\overrightarrow{FR}$가 모두 같은 방향을 향해야 합니다.\n이때의 공통된 단위벡터를 $\\vec{u}$라 하면, $\\overrightarrow{DP} = \\overrightarrow{EQ} = \\overrightarrow{FR} = \\vec{u}$일 때 최댓값을 가집니다."
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "삼각형 PQR과 삼각형 DEF의 합동 관계 파악",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "최대일 때 P, Q, R의 좌표 결정",
+          "content": "$|\\overrightarrow{AX}|$가 최대일 때, 모든 벡터가 같은 방향 $\\theta$를 향합니다.\n\n이때 각 점의 좌표:\n- P = (1 + cos θ, sin θ)\n- Q = (7/2 + cos θ, √3/2 + sin θ)\n- R = (3/2 + cos θ, 3√3/2 + sin θ)\n\n세 점 P, Q, R은 D, E, F를 각각 벡터 (cos θ, sin θ)만큼 평행이동한 것입니다.\n따라서 삼각형 PQR은 삼각형 DEF와 합동입니다."
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "삼각형 PQR와 삼각형 DEF의 관계 파악",
+          "content": "최대 조건인 $\\overrightarrow{DP} = \\overrightarrow{EQ} = \\overrightarrow{FR} = \\vec{u}$를 만족할 때,\n$\\overrightarrow{PQ} = \\overrightarrow{Q} - \\overrightarrow{P} = (\\overrightarrow{E} + \\vec{u}) - (\\overrightarrow{D} + \\vec{u}) = \\overrightarrow{E} - \\overrightarrow{D} = \\overrightarrow{DE}$입니다.\n마찬가지로 $\\overrightarrow{QR} = \\overrightarrow{EF}$, $\\overrightarrow{RP} = \\overrightarrow{FD}$가 성립하므로, 삼각형 $PQR$는 삼각형 $DEF$를 평행이동한 합동인 도형입니다.\n따라서 $S = \\text{Area}(\\triangle PQR) = \\text{Area}(\\triangle DEF)$입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "삼각형 DEF 넓이 S 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "삼각형 DEF 넓이 계산",
+          "content": "좌표\nD=(1,0), E=(7/2, \\sqrt3/2), F=(3/2, 3\\sqrt3/2).\n\n벡터\n\\overrightarrow{DE} = E-D = (5/2, \\sqrt3/2),\n\\overrightarrow{DF} = F-D = (1/2, 3\\sqrt3/2).\n\n넓이\nS = (1/2)|\\det(\\overrightarrow{DE},\\overrightarrow{DF})|\n= (1/2)| (5/2)(3\\sqrt3/2) - (\\sqrt3/2)(1/2) |\n= (1/2)| (15\\sqrt3/4) - (\\sqrt3/4) |\n= (1/2)\\cdot (14\\sqrt3/4)\n= 7\\sqrt3/4.\n\n따라서 16S^2 = 16\\cdot (49\\cdot 3/16)=147."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "삼각형 DEF의 넓이 계산",
+          "content": "D = (1, 0), E = (7/2, √3/2), F = (3/2, 3√3/2)\n\n삼각형 DEF의 넓이 공식:\n$S = \\frac{1}{2}|\\vec{DE} \\times \\vec{DF}|$\n\n$\\vec{DE} = (7/2 - 1, \\sqrt{3}/2 - 0) = (5/2, \\sqrt{3}/2)$\n$\\vec{DF} = (3/2 - 1, 3\\sqrt{3}/2 - 0) = (1/2, 3\\sqrt{3}/2)$\n\n외적의 z성분:\n$\\vec{DE} \\times \\vec{DF} = (5/2)(3\\sqrt{3}/2) - (\\sqrt{3}/2)(1/2)$\n$= 15\\sqrt{3}/4 - \\sqrt{3}/4 = 14\\sqrt{3}/4 = 7\\sqrt{3}/2$\n\n$S = \\frac{1}{2} \\cdot \\frac{7\\sqrt{3}}{2} = \\frac{7\\sqrt{3}}{4}$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "삼각형 DEF의 넓이(S) 계산",
+          "content": "전체 삼각형 $ABC$의 넓이는 $\\frac{\\sqrt{3}}{4} \\times 4^2 = 4\\sqrt{3}$입니다.\n세 귀퉁이의 삼각형 $ADF, BED, CFE$는 모두 합동이며, 예를 들어 $\\triangle ADF$에서 $AD=1, AF=3$이고 $\\angle A = 60^\\circ$입니다.\n$\\text{Area}(\\triangle ADF) = \\frac{1}{2} \\times 1 \\times 3 \\times \\sin 60^\\circ = \\frac{3\\sqrt{3}}{4}$입니다.\n따라서 $S = 4\\sqrt{3} - 3 \\times \\frac{3\\sqrt{3}}{4} = \\frac{16\\sqrt{3} - 9\\sqrt{3}}{4} = \\frac{7\\sqrt{3}}{4}$입니다."
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "16S² 최종 답 계산",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 6,
+          "title": "최종 답 계산",
+          "content": "$S = \\frac{7\\sqrt{3}}{4}$\n\n$S^2 = \\frac{49 \\cdot 3}{16} = \\frac{147}{16}$\n\n$16S^2 = 16 \\cdot \\frac{147}{16} = 147$\n\n따라서 $16S^2 = \\boxed{147}$"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 4,
+          "title": "최종 정답 도출",
+          "content": "구하려는 값은 $16S^2$입니다.\n$S = \\frac{7\\sqrt{3}}{4}$이므로,\n$16S^2 = 16 \\times \\left(\\frac{7\\sqrt{3}}{4}\\right)^2 = 16 \\times \\frac{49 \\times 3}{16} = 147$입니다."
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 5,
+      "to_step": 6
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 3,
+      "to_step": 4
+    }
+  ]
+}

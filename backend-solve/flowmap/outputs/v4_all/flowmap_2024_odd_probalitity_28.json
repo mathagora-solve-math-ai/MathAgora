@@ -1,0 +1,203 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "조건 정리 및 확률 설정",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "시행별 (전체 공 수, 검은 공 수) 정리",
+          "content": "카드에 따른 상자 B로 이동하는 공의 (전체 개수, 검은 공 개수)를 정리하면\n- 1이 나오면: (1, 0)\n- 2 또는 3이 나오면: (2, 1)\n- 4가 나오면: (3, 1)\n\n4번 시행에서 각 결과의 횟수를\n- 1이 나온 횟수: \\(a\\)\n- 2 또는 3이 나온 횟수: \\(b\\)\n- 4가 나온 횟수: \\(c\\)\n라 두면 \\(a+b+c=4\\).\n\n전체 공 수 \\(T\\), 검은 공 수 \\(K\\)는\n\\[\nT=1\\cdot a+2\\cdot b+3\\cdot c,\\qquad K=0\\cdot a+1\\cdot b+1\\cdot c=b+c\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "조건 정리",
+          "content": "각 카드를 뽑았을 때 상자 B에 추가되는 공의 개수를 정리합니다.\n\n| 카드 | 흰 공 | 검은 공 | 총 공 개수 |\n|------|-------|---------|------------|\n| 1 | 1 | 0 | 1 |\n| 2 또는 3 | 1 | 1 | 2 |\n| 4 | 2 | 1 | 3 |\n\n각 카드가 뽑힐 확률:\n- 카드 1: $\\frac{1}{4}$\n- 카드 2 또는 3: $\\frac{2}{4} = \\frac{1}{2}$\n- 카드 4: $\\frac{1}{4}$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "조건 정리 및 확률 설정",
+          "content": "먼저 문제에서 주어진 시행의 규칙을 정리하고, 각 사건이 일어날 확률을 구합니다.\n주머니에서 카드를 한 장 꺼낼 때 나오는 수에 따라 상자 B에 넣는 공의 개수와 종류는 다음과 같습니다.\n\n1.  **카드 1이 나올 때 ($A$ 사건)**\n    *   확률: $\\frac{1}{4}$\n    *   상자 B에 추가되는 공: 흰 공 1개 (총 1개, 검은 공 0개)\n2.  **카드 2 또는 3이 나올 때 ($B$ 사건)**\n    *   확률: $\\frac{2}{4} = \\frac{1}{2}$\n    *   상자 B에 추가되는 공: 흰 공 1개 + 검은 공 1개 (총 2개, 검은 공 1개)\n3.  **카드 4가 나올 때 ($C$ 사건)**\n    *   확률: $\\frac{1}{4}$\n    *   상자 B에 추가되는 공: 흰 공 2개 + 검은 공 1개 (총 3개, 검은 공 1개)"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "총 공 개수가 8이 되는 경우 찾기",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "조건 \\(T=8\\)을 만족하는 (a,b,c) 찾기",
+          "content": "조건 \\(T=8\\)이므로\n\\[\na+2b+3c=8,\\quad a+b+c=4\n\\]\n두 식을 빼면\n\\[\n(a+2b+3c)-(a+b+c)=8-4 \\Rightarrow b+2c=4\n\\]\n이제 \\(b=4-2c\\), 그리고 \\(a=4-b-c=4-(4-2c)-c=c\\).\n\n가능한 \\(c\\)는 \\(b\\ge 0\\)이므로 \\(c=0,1,2\\). 따라서 가능한 경우는\n- \\(c=0\\): \\((a,b,c)=(0,4,0)\\)\n- \\(c=1\\): \\((a,b,c)=(1,2,1)\\)\n- \\(c=2\\): \\((a,b,c)=(2,0,2)\\)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "총 공 개수 조건 분석",
+          "content": "4번 시행 후 총 공 개수가 8개인 경우를 찾습니다.\n\n카드 1을 $a$번, 카드 2 또는 3을 $b$번, 카드 4를 $c$번 뽑았다고 하면:\n- $a + b + c = 4$ (총 시행 횟수)\n- $1 \\cdot a + 2 \\cdot b + 3 \\cdot c = 8$ (총 공 개수)\n\n두 식을 빼면: $b + 2c = 4$\n\n가능한 $(a, b, c)$ 조합:\n- $c = 0$: $b = 4$, $a = 0$ → $(0, 4, 0)$\n- $c = 1$: $b = 2$, $a = 1$ → $(1, 2, 1)$\n- $c = 2$: $b = 0$, $a = 2$ → $(2, 0, 2)$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "총 공의 개수가 8이 되는 경우의 수 분류",
+          "content": "4번의 시행 후 상자 B에 들어 있는 공의 총 개수가 8이 되는 경우를 찾습니다.\n각 사건 $A, B, C$가 일어나는 횟수를 각각 $x, y, z$라 하면 다음 연립방정식을 만족해야 합니다.\n\n1.  시행 횟수: $x + y + z = 4$\n2.  공의 총 개수: $1\\cdot x + 2\\cdot y + 3\\cdot z = 8$\n\n두 번째 식에서 첫 번째 식을 빼면 $y + 2z = 4$를 얻습니다.\n$x, y, z$는 음이 아닌 정수이므로, 가능한 $(x, y, z)$의 순서쌍은 다음과 같습니다.\n\n*   **Case 1 ($z=0$):** $y=4 \\implies x=0$. 즉, $(0, 4, 0)$\n*   **Case 2 ($z=1$):** $y=2 \\implies x=1$. 즉, $(1, 2, 1)$\n*   **Case 3 ($z=2$):** $y=0 \\implies x=2$. 즉, $(2, 0, 2)$"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "검은 공 2개 조건 선별",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 2,
+          "title": "조건 \\(K=2\\)가 되는 경우 선별",
+          "content": "검은 공 수 \\(K=b+c\\). 위 3가지에서 계산하면\n- \\((0,4,0)\\): \\(K=4\\)\n- \\((1,2,1)\\): \\(K=3\\)\n- \\((2,0,2)\\): \\(K=2\\)  ← 원하는 경우\n\n즉, \\(T=8\\)이면서 \\(K=2\\)가 되려면 반드시\n\\[\n(a,b,c)=(2,0,2)\n\\]\n즉 “1이 2번, 4가 2번, (2 또는 3)은 0번” 나와야 한다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "검은 공 2개 조건 분석",
+          "content": "검은 공 개수 = $b \\cdot 1 + c \\cdot 1 = b + c = 2$\n\n각 경우에서 $b + c$ 값:\n- $(0, 4, 0)$: $b + c = 4$ ❌\n- $(1, 2, 1)$: $b + c = 3$ ❌\n- $(2, 0, 2)$: $b + c = 2$ ✓\n\n따라서 **카드 1을 2번, 카드 4를 2번** 뽑아야 합니다.\n[/STEP]"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "각 경우의 확률 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 3,
+          "title": "조건부확률 계산",
+          "content": "각 시행에서 카드 1,2,3,4는 동일확률 \\(1/4\\).\n\n- 사건 \\(E\\): “4번 후 전체 공 수 \\(T=8\\)”\n- 사건 \\(F\\): “4번 후 검은 공 수 \\(K=2\\)”\n\n우리는 \\(P(F\\mid E)=\\dfrac{P(F\\cap E)}{P(E)}\\)를 구한다.\n\n## 1) \\(P(F\\cap E)\\)\n위에서 \\(F\\cap E\\)는 “1이 2번, 4가 2번”과 동치.\n그런 순서의 가짓수는 \\(\\binom{4}{2}=6\\),\n각 순서의 확률은 \\((1/4)^4\\).\n\\[\nP(F\\cap E)=6\\cdot\\left(\\frac14\\right)^4=\\frac{6}{256}\n\\]\n\n## 2) \\(P(E)\\)\n\\(E\\)는 위에서 찾은 3가지 (a,b,c) 경우의 합.\n\n- (0,4,0): 매번 2 또는 3이 나와야 함. 한 번에 확률 \\(2/4=1/2\\).\n  \\[\n  P=\\left(\\frac12\\right)^4=\\frac{1}{16}\n  \\]\n- (1,2,1): 1이 1번, 4가 1번, (2 또는 3)이 2번.\n  순서 가짓수 \\(\\frac{4!}{1!2!1!}=12\\),\n  확률 \\((1/4)\\cdot(1/4)\\cdot(1/2)^2\\).\n  \\[\n  P=12\\cdot\\frac14\\cdot\\frac14\\cdot\\left(\\frac12\\right)^2\n   =12\\cdot\\frac{1}{64}=\\frac{3}{16}\n  \\]\n- (2,0,2): 위에서 계산한 \\(\\frac{6}{256}=\\frac{3}{128}\\).\n\n따라서\n\\[\nP(E)=\\frac{1}{16}+\\frac{3}{16}+\\frac{3}{128}\n=\\frac{4}{16}+\\frac{3}{128}\n=\\frac{1}{4}+\\frac{3}{128}\n=\\frac{32}{128}+\\frac{3}{128}\n=\\frac{35}{128}\n\\]\n\n## 3) 조건부확률\n\\[\nP(F\\mid E)=\\frac{P(F\\cap E)}{P(E)}\n=\\frac{\\frac{3}{128}}{\\frac{35}{128}}\n=\\frac{3}{35}\n\\]"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "확률 계산",
+          "content": "**조건을 만족하는 경우의 확률 (분자):**\n\n카드 1을 2번, 카드 4를 2번 뽑는 경우\n- 배열 수: $\\frac{4!}{2!2!} = 6$\n- 각 배열의 확률: $\\left(\\frac{1}{4}\\right)^2 \\times \\left(\\frac{1}{4}\\right)^2 = \\frac{1}{256}$\n- 확률: $6 \\times \\frac{1}{256} = \\frac{6}{256}$\n\n**총 공 8개인 경우의 확률 (분모):**\n\n① $(0, 4, 0)$: 카드 2 또는 3을 4번\n$$\\left(\\frac{1}{2}\\right)^4 = \\frac{1}{16} = \\frac{16}{256}$$\n\n② $(1, 2, 1)$: 카드 1을 1번, 카드 2 또는 3을 2번, 카드 4를 1번\n$$\\frac{4!}{1!2!1!} \\times \\frac{1}{4} \\times \\left(\\frac{1}{2}\\right)^2 \\times \\frac{1}{4} = 12 \\times \\frac{1}{64} = \\frac{12}{64} = \\frac{48}{256}$$\n\n③ $(2, 0, 2)$: 이미 계산함 = $\\frac{6}{256}$\n\n총합: $\\frac{16 + 48 + 6}{256} = \\frac{70}{256}$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "각 경우의 확률 계산",
+          "content": "위에서 구한 세 가지 경우 각각에 대해 확률을 계산합니다. 독립시행의 확률(다항정리)을 이용합니다.\n\n*   **Case 1: $(0, 4, 0)$**\n    *   확률: $\\frac{4!}{0!4!0!} \\left(\\frac{1}{4}\\right)^0 \\left(\\frac{1}{2}\\right)^4 \\left(\\frac{1}{4}\\right)^0 = 1 \\cdot \\frac{1}{16} = \\frac{1}{16} = \\frac{16}{256}$\n    *   검은 공의 개수($y+z$): $4+0=4$개\n\n*   **Case 2: $(1, 2, 1)$**\n    *   확률: $\\frac{4!}{1!2!1!} \\left(\\frac{1}{4}\\right)^1 \\left(\\frac{1}{2}\\right)^2 \\left(\\frac{1}{4}\\right)^1 = 12 \\cdot \\frac{1}{4} \\cdot \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{12}{64} = \\frac{48}{256}$\n    *   검은 공의 개수($y+z$): $2+1=3$개\n\n*   **Case 3: $(2, 0, 2)$**\n    *   확률: $\\frac{4!}{2!0!2!} \\left(\\frac{1}{4}\\right)^2 \\left(\\frac{1}{2}\\right)^0 \\left(\\frac{1}{4}\\right)^2 = 6 \\cdot \\frac{1}{16} \\cdot 1 \\cdot \\frac{1}{16} = \\frac{6}{256}$\n    *   검은 공의 개수($y+z$): $0+2=2$개"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "조건부 확률 계산",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "조건부 확률 계산",
+          "content": "$$P(\\text{검은 공 2개} | \\text{총 8개}) = \\frac{\\frac{6}{256}}{\\frac{70}{256}} = \\frac{6}{70} = \\frac{3}{35}$$\n[/STEP]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "조건부 확률 계산 및 최종 답안 도출",
+          "content": "문제에서 요구하는 것은 **'공의 총 개수가 8일 때(조건), 검은 공의 개수가 2일 확률'**입니다.\n\n1.  **분모 (공의 총 개수가 8일 확률):**\n    $P(\\text{Total}=8) = (\\text{Case 1}) + (\\text{Case 2}) + (\\text{Case 3})$\n    $= \\frac{16}{256} + \\frac{48}{256} + \\frac{6}{256} = \\frac{70}{256}$\n\n2.  **분자 (공의 총 개수가 8이면서 검은 공이 2개일 확률):**\n    검은 공이 2개인 경우는 **Case 3**입니다.\n    $P(\\text{Total}=8 \\cap \\text{Black}=2) = \\frac{6}{256}$\n\n3.  **조건부 확률:**\n    $\\frac{P(\\text{Total}=8 \\cap \\text{Black}=2)}{P(\\text{Total}=8)} = \\frac{\\frac{6}{256}}{\\frac{70}{256}} = \\frac{6}{70} = \\frac{3}{35}$"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "최종 답안",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "\\(\\displaystyle \\frac{3}{35}\\) (④)"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 5,
+          "title": "Final Answer",
+          "content": "$$\\frac{3}{35}$$\n\n정답: **④**\n[/FINAL_ANSWER]"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 4,
+          "title": "Final Answer",
+          "content": "④ $\\dfrac{3}{35}$"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gpt-5.2",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 4,
+      "to_step": 5
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 3,
+      "to_step": 4
+    }
+  ]
+}

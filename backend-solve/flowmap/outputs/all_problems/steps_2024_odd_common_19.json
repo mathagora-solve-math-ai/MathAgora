@@ -1,0 +1,89 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_common_19",
+    "prob_area": "수학1",
+    "prob_point": "3",
+    "prob_desc": "19. 함수 $f(x)=\\sin\\dfrac{\\pi}{4}x$라 할 때, $0 \\lt x \\lt 16$에서 부등식 $$f(2+x)f(2-x) \\lt \\frac{1}{4}$$을 만족시키는 모든 자연수 $x$의 값의 합을 구하시오. [3점]",
+    "answer": "32"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "식 정리(곱→합)",
+        "body": "\\(f(x)=\\sin\\left(\\frac{\\pi}{4}x\\right)\\) 이므로  \n\\[\nf(2+x)f(2-x)=\\sin\\left(\\frac{\\pi}{4}(2+x)\\right)\\sin\\left(\\frac{\\pi}{4}(2-x)\\right).\n\\]\n곱-합 공식 \\(\\sin A\\sin B=\\frac12(\\cos(A-B)-\\cos(A+B))\\)를 쓰면  \n\\[\nA=\\frac{\\pi}{4}(2+x),\\quad B=\\frac{\\pi}{4}(2-x)\n\\]\n이므로\n\\[\nA-B=\\frac{\\pi}{4}(2+x-2+x)=\\frac{\\pi}{2}x,\\quad\nA+B=\\frac{\\pi}{4}(2+x+2-x)=\\pi.\n\\]\n따라서\n\\[\nf(2+x)f(2-x)=\\frac12\\left(\\cos\\left(\\frac{\\pi}{2}x\\right)-\\cos\\pi\\right)\n=\\frac12\\left(\\cos\\left(\\frac{\\pi}{2}x\\right)+1\\right).\n\\]"
+      },
+      {
+        "title": "부등식 변형",
+        "body": "\\[\n\\frac12\\left(\\cos\\left(\\frac{\\pi}{2}x\\right)+1\\right)<\\frac14\n\\]\n양변에 2를 곱하면\n\\[\n\\cos\\left(\\frac{\\pi}{2}x\\right)+1<\\frac12\n\\]\n\\[\n\\cos\\left(\\frac{\\pi}{2}x\\right)<-\\frac12.\n\\]"
+      },
+      {
+        "title": "자연수 범위 정리",
+        "body": "조건 \\(0<x<16\\)에서 자연수 \\(x\\)는\n\\[\nx\\in\\{1,2,3,\\dots,15\\}.\n\\]"
+      },
+      {
+        "title": "값의 주기성 이용(나머지 분류)",
+        "body": "\\(\\cos\\left(\\frac{\\pi}{2}x\\right)\\)는 \\(x\\)가 정수일 때 다음 4가지 값만 반복합니다.\n\\[\nx\\equiv 0\\pmod 4 \\Rightarrow \\cos\\left(\\frac{\\pi}{2}x\\right)=\\cos(2k\\pi)=1\n\\]\n\\[\nx\\equiv 1\\pmod 4 \\Rightarrow \\cos\\left(\\frac{\\pi}{2}x\\right)=\\cos\\left(\\frac{\\pi}{2}+2k\\pi\\right)=0\n\\]\n\\[\nx\\equiv 2\\pmod 4 \\Rightarrow \\cos\\left(\\frac{\\pi}{2}x\\right)=\\cos(\\pi+2k\\pi)=-1\n\\]\n\\[\nx\\equiv 3\\pmod 4 \\Rightarrow \\cos\\left(\\frac{\\pi}{2}x\\right)=\\cos\\left(\\frac{3\\pi}{2}+2k\\pi\\right)=0\n\\]\n즉 가능한 값은 \\(1,0,-1,0\\) 뿐입니다."
+      },
+      {
+        "title": "부등식 만족하는 x 찾기",
+        "body": "우리는\n\\[\n\\cos\\left(\\frac{\\pi}{2}x\\right)<-\\frac12\n\\]\n를 원합니다. 위 값들 중 \\(-\\frac12\\)보다 작은 것은 \\(-1\\)뿐이므로\n\\[\n\\cos\\left(\\frac{\\pi}{2}x\\right)=-1 \\quad\\Longleftrightarrow\\quad x\\equiv 2\\pmod 4.\n\\]\n\\(1\\le x\\le 15\\)에서 \\(x\\equiv 2\\pmod 4\\)인 자연수는\n\\[\nx=2,6,10,14.\n\\]"
+      },
+      {
+        "title": "합 계산",
+        "body": "\\[\n2+6+10+14=32.\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "\\(32\\)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "함수 정리",
+        "body": "$f(x) = \\sin\\frac{\\pi}{4}x$이므로\n\n$f(2+x) = \\sin\\frac{\\pi}{4}(2+x) = \\sin\\left(\\frac{\\pi}{2} + \\frac{\\pi}{4}x\\right) = \\cos\\frac{\\pi}{4}x$\n\n$f(2-x) = \\sin\\frac{\\pi}{4}(2-x) = \\sin\\left(\\frac{\\pi}{2} - \\frac{\\pi}{4}x\\right) = \\cos\\frac{\\pi}{4}x$"
+      },
+      {
+        "title": "부등식 변환",
+        "body": "$$f(2+x)f(2-x) = \\cos\\frac{\\pi}{4}x \\cdot \\cos\\frac{\\pi}{4}x = \\cos^2\\frac{\\pi}{4}x$$\n\n부등식은:\n$$\\cos^2\\frac{\\pi}{4}x < \\frac{1}{4}$$"
+      },
+      {
+        "title": "부등식 풀이",
+        "body": "$\\cos^2\\frac{\\pi}{4}x < \\frac{1}{4}$에서\n\n$$\\left|\\cos\\frac{\\pi}{4}x\\right| < \\frac{1}{2}$$\n\n$\\theta = \\frac{\\pi}{4}x$로 치환하면, $|\\cos\\theta| < \\frac{1}{2}$\n\n이는 $\\cos\\theta > \\frac{1}{2}$ 또는 $\\cos\\theta < -\\frac{1}{2}$가 **아닌** 구간, 즉:\n$$\\frac{\\pi}{3} < \\theta < \\frac{2\\pi}{3} \\quad \\text{또는} \\quad \\frac{4\\pi}{3} < \\theta < \\frac{5\\pi}{3} \\quad (\\text{주기 } 2\\pi \\text{마다 반복})$$"
+      },
+      {
+        "title": "x 범위로 변환",
+        "body": "$\\theta = \\frac{\\pi}{4}x$이고 $0 < x < 16$이므로 $0 < \\theta < 4\\pi$\n\n**첫 번째 구간:** $\\frac{\\pi}{3} < \\frac{\\pi}{4}x < \\frac{2\\pi}{3}$\n$$\\frac{4}{3} < x < \\frac{8}{3} \\approx 2.67$$\n→ 자연수: $x = 2$\n\n**두 번째 구간:** $\\frac{4\\pi}{3} < \\frac{\\pi}{4}x < \\frac{5\\pi}{3}$\n$$\\frac{16}{3} < x < \\frac{20}{3}$$\n$$5.33... < x < 6.67...$$\n→ 자연수: $x = 6$\n\n**세 번째 구간:** $\\frac{7\\pi}{3} < \\frac{\\pi}{4}x < \\frac{8\\pi}{3}$ (주기 $2\\pi$ 더함)\n$$\\frac{28}{3} < x < \\frac{32}{3}$$\n$$9.33... < x < 10.67...$$\n→ 자연수: $x = 10$\n\n**네 번째 구간:** $\\frac{10\\pi}{3} < \\frac{\\pi}{4}x < \\frac{11\\pi}{3}$\n$$\\frac{40}{3} < x < \\frac{44}{3}$$\n$$13.33... < x < 14.67...$$\n→ 자연수: $x = 14$"
+      },
+      {
+        "title": "자연수 합 계산",
+        "body": "조건을 만족시키는 자연수: $x = 2, 6, 10, 14$\n\n$$2 + 6 + 10 + 14 = 32$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "32"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "식의 정리",
+        "body": "주어진 함수 $f(x)=\\sin\\dfrac{\\pi}{4}x$를 이용하여 부등식의 좌변인 $f(2+x)$와 $f(2-x)$를 정리합니다. 삼각함수의 각 변환 공식 $\\sin(\\frac{\\pi}{2} \\pm \\theta) = \\cos\\theta$를 활용합니다.\n\n$$f(2+x) = \\sin\\left(\\frac{\\pi}{4}(2+x)\\right) = \\sin\\left(\\frac{\\pi}{2} + \\frac{\\pi}{4}x\\right) = \\cos\\left(\\frac{\\pi}{4}x\\right)$$\n$$f(2-x) = \\sin\\left(\\frac{\\pi}{4}(2-x)\\right) = \\sin\\left(\\frac{\\pi}{2} - \\frac{\\pi}{4}x\\right) = \\cos\\left(\\frac{\\pi}{4}x\\right)$$"
+      },
+      {
+        "title": "부등식 변형",
+        "body": "위에서 구한 식을 문제의 부등식 $f(2+x)f(2-x) \\lt \\frac{1}{4}$에 대입하여 정리합니다.\n\n$$\\cos\\left(\\frac{\\pi}{4}x\\right) \\cdot \\cos\\left(\\frac{\\pi}{4}x\\right) \\lt \\frac{1}{4}$$\n$$\\left\\{ \\cos\\left(\\frac{\\pi}{4}x\\right) \\right\\}^2 \\lt \\frac{1}{4}$$\n\n제곱을 풀면 다음과 같은 범위를 얻습니다.\n$$-\\frac{1}{2} \\lt \\cos\\left(\\frac{\\pi}{4}x\\right) \\lt \\frac{1}{2}$$"
+      },
+      {
+        "title": "x의 범위 구하기",
+        "body": "$0 \\lt x \\lt 16$ 범위에서 부등식을 만족하는 $x$의 구간을 구합니다.\n편의상 $\\theta = \\frac{\\pi}{4}x$라 하면, $x$의 범위에 의해 $0 \\lt \\theta \\lt 4\\pi$입니다.\n이 범위에서 $-\\frac{1}{2} \\lt \\cos\\theta \\lt \\frac{1}{2}$를 만족하는 $\\theta$의 범위는 다음과 같습니다.\n\n1. $\\frac{\\pi}{3} \\lt \\theta \\lt \\frac{2\\pi}{3}$\n2. $\\frac{4\\pi}{3} \\lt \\theta \\lt \\frac{5\\pi}{3}$\n3. $\\frac{7\\pi}{3} \\lt \\theta \\lt \\frac{8\\pi}{3}$\n4. $\\frac{10\\pi}{3} \\lt \\theta \\lt \\frac{11\\pi}{3}$\n\n이제 $\\theta = \\frac{\\pi}{4}x$를 대입하여 $x$의 범위를 구합니다 ($x = \\frac{4}{\\pi}\\theta$).\n\n1. $\\frac{4}{3} \\lt x \\lt \\frac{8}{3}$ ($1.33\\dots \\lt x \\lt 2.66\\dots$)\n2. $\\frac{16}{3} \\lt x \\lt \\frac{20}{3}$ ($5.33\\dots \\lt x \\lt 6.66\\dots$)\n3. $\\frac{28}{3} \\lt x \\lt \\frac{32}{3}$ ($9.33\\dots \\lt x \\lt 10.66\\dots$)\n4. $\\frac{40}{3} \\lt x \\lt \\frac{44}{3}$ ($13.33\\dots \\lt x \\lt 14.66\\dots$)"
+      },
+      {
+        "title": "자연수 x의 합 계산",
+        "body": "위의 각 구간에 포함되는 자연수 $x$를 찾습니다.\n\n1. $1.33\\dots \\lt x \\lt 2.66\\dots$ $\\Rightarrow x=2$\n2. $5.33\\dots \\lt x \\lt 6.66\\dots$ $\\Rightarrow x=6$\n3. $9.33\\dots \\lt x \\lt 10.66\\dots$ $\\Rightarrow x=10$\n4. $13.33\\dots \\lt x \\lt 14.66\\dots$ $\\Rightarrow x=14$\n\n따라서 조건을 만족하는 모든 자연수 $x$의 값은 $2, 6, 10, 14$입니다.\n이들의 합을 구합니다.\n$$2 + 6 + 10 + 14 = 32$$"
+      },
+      {
+        "title": "Final Answer",
+        "body": "32"
+      }
+    ]
+  }
+}

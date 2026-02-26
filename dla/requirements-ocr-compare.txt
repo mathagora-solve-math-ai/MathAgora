@@ -1,0 +1,16 @@
+# OCR 비교 노트북 최소 의존성 (샘플 로드 + 시각화)
+pandas>=2.0.0
+Pillow>=9.0.0
+tqdm>=4.60.0
+
+# OCR 모델 실행 시 필요 (설치 후 노트북에서 USE_CACHE=False 로 다시 실행)
+torch
+transformers>=5.0.0
+scipy
+accelerate
+paddlepaddle
+paddleocr[doc-parser]
+mineru-vl-utils[transformers]>=0.1.7,<1
+qwen-vl-utils
+
+# 선택: flash-attn(DeepSeek-OCR/2 전용 venv에서 빌드 필요). dots.ocr는 processor 호환 이슈로 별도 env 권장.

@@ -1,0 +1,136 @@
+{
+  "groups": [
+    {
+      "group_id": 0,
+      "group_name": "f(2+x)f(2-x) 계산 및 삼각함수 정리",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 0,
+          "title": "곱을 삼각함수 항등식으로 정리",
+          "content": "f(x)=sin((π/4)x)이므로\nf(2+x)f(2-x)=sin((π/4)(2+x))·sin((π/4)(2-x)).\n곱-합 공식 sin A sin B = (1/2)[cos(A−B)−cos(A+B)]를 쓰면\nA=(π/4)(2+x), B=(π/4)(2−x).\n그러면 A−B=(π/4)((2+x)-(2-x))=(π/4)(2x)=(π/2)x,\nA+B=(π/4)((2+x)+(2-x))=(π/4)(4)=π.\n따라서\nf(2+x)f(2-x)=(1/2)[cos((π/2)x)−cos(π)]=(1/2)[cos((π/2)x)−(-1)]\n=(1/2)[cos((π/2)x)+1].\n부등식은 (1/2)(cos((π/2)x)+1) < 1/4 로 바뀐다."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 0,
+          "title": "f(2+x)f(2-x) 계산",
+          "content": "f(x) = sin(πx/4)이므로\n\nf(2+x) = sin(π(2+x)/4) = sin(π/2 + πx/4) = cos(πx/4)\n\nf(2-x) = sin(π(2-x)/4) = sin(π/2 - πx/4) = cos(πx/4)\n\n따라서 f(2+x)f(2-x) = cos²(πx/4)"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 0,
+          "title": "함수 대입 및 삼각함수 각변환",
+          "content": "주어진 함수 $f(x)=\\sin\\frac{\\pi}{4}x$를 부등식의 좌변에 대입하여 정리합니다.\n$$f(2+x)f(2-x) = \\sin\\left(\\frac{\\pi}{4}(2+x)\\right)\\sin\\left(\\frac{\\pi}{4}(2-x)\\right)$$\n$$= \\sin\\left(\\frac{\\pi}{2}+\\frac{\\pi}{4}x\\right)\\sin\\left(\\frac{\\pi}{2}-\\frac{\\pi}{4}x\\right)$$\n각변환 공식 $\\sin(\\frac{\\pi}{2}\\pm\\theta) = \\cos\\theta$를 적용하면 다음과 같습니다.\n$$= \\cos\\left(\\frac{\\pi}{4}x\\right)\\cos\\left(\\frac{\\pi}{4}x\\right) = \\cos^2\\left(\\frac{\\pi}{4}x\\right)$$"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "group_name": "부등식 변환 및 코사인 범위 도출",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 1,
+          "title": "부등식 변환",
+          "content": "cos²(πx/4) < 1/4\n\n|cos(πx/4)| < 1/2\n\n-1/2 < cos(πx/4) < 1/2"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 1,
+          "title": "부등식 정리 및 코사인 범위 도출",
+          "content": "문제의 부등식 $f(2+x)f(2-x) < \\frac{1}{4}$에 정리한 식을 대입합니다.\n$$\\cos^2\\left(\\frac{\\pi}{4}x\\right) < \\frac{1}{4}$$\n제곱근을 취하여 코사인 값의 범위를 구합니다.\n$$-\\frac{1}{2} < \\cos\\left(\\frac{\\pi}{4}x\\right) < \\frac{1}{2}$$"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "x의 범위 결정",
+      "steps": [
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 2,
+          "title": "cos θ < 1/2인 범위 찾기",
+          "content": "cos θ < 1/2일 조건: π/3 < θ < 5π/3 (한 주기 내에서)\n\ncos θ > -1/2일 조건: -2π/3 < θ < 2π/3 (한 주기 내에서)\n\n두 조건을 동시에 만족:\nπ/3 < θ < 2π/3 또는 4π/3 < θ < 5π/3\n\n여기서 θ = πx/4이고, 0 < x < 16이므로 0 < θ < 4π"
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 3,
+          "title": "x의 범위 결정",
+          "content": "θ = πx/4에 대해:\n\n첫 번째 구간: π/3 < πx/4 < 2π/3\n→ 4/3 < x < 8/3 (약 1.33 < x < 2.67)\n\n두 번째 구간: 4π/3 < πx/4 < 5π/3\n→ 16/3 < x < 20/3 (약 5.33 < x < 6.67)\n\n세 번째 구간 (다음 주기): π/3 + 2π < πx/4 < 2π/3 + 2π\n→ 7π/3 < πx/4 < 8π/3\n→ 28/3 < x < 32/3 (약 9.33 < x < 10.67)\n\n네 번째 구간: 4π/3 + 2π < πx/4 < 5π/3 + 2π\n→ 10π/3 < πx/4 < 11π/3\n→ 40/3 < x < 44/3 (약 13.33 < x < 14.67)"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 2,
+          "title": "주어진 구간에서 x의 값 구하기",
+          "content": "함수 $y=\\cos(\\frac{\\pi}{4}x)$의 주기는 $\\frac{2\\pi}{\\pi/4}=8$입니다. $0 < x < 16$은 두 주기에 해당합니다.\n\n첫 번째 주기 ($0 < x < 8$)에서 $-\\frac{1}{2} < \\cos(\\frac{\\pi}{4}x) < \\frac{1}{2}$를 만족하는 범위는:\n1) $\\frac{\\pi}{3} < \\frac{\\pi}{4}x < \\frac{2\\pi}{3} \\implies \\frac{4}{3} < x < \\frac{8}{3}$ (자연수 $x=2$)\n2) $\\frac{4\\pi}{3} < \\frac{\\pi}{4}x < \\frac{5\\pi}{3} \\implies \\frac{16}{3} < x < \\frac{20}{3}$ (자연수 $x=6$)\n\n두 번째 주기 ($8 < x < 16$)에서는 위 값에 주기 8을 더하면 됩니다:\n3) $x = 2 + 8 = 10$\n4) $x = 6 + 8 = 14$"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "자연수 해 찾기 및 합 계산",
+      "steps": [
+        {
+          "model": "gpt-5.2",
+          "step_idx": 1,
+          "title": "부등식 해석 및 자연수 x 판별",
+          "content": "\n(1/2)(cos((π/2)x)+1) < 1/4\n⇒ cos((π/2)x)+1 < 1/2\n⇒ cos((π/2)x) < -1/2.\n이제 x는 0<x<16에서 자연수이므로 x∈{1,2,...,15}.\n각 x에 대해 θ=(π/2)x는 π/2 간격으로 증가하므로 cos 값은 주기 4로 반복된다:\n- x=1: cos(π/2)=0\n- x=2: cos(π)=-1\n- x=3: cos(3π/2)=0\n- x=4: cos(2π)=1\n즉 x≡1,3 (mod 4)면 0, x≡2 (mod 4)면 -1, x≡0 (mod 4)면 1.\n조건 cos((π/2)x) < -1/2 를 만족하는 것은 cos=-1인 경우뿐이므로\nx≡2 (mod 4)인 자연수 x가 해이다.\n1~15에서 x≡2 (mod 4)는 x=2,6,10,14.\n합은 2+6+10+14=32."
+        },
+        {
+          "model": "claude-opus-4.5",
+          "step_idx": 4,
+          "title": "자연수 해 찾기 및 합 계산",
+          "content": "각 구간에서 자연수 x 찾기:\n\n• 4/3 < x < 8/3: x = 2\n• 16/3 < x < 20/3: x = 6\n• 28/3 < x < 32/3: x = 10\n• 40/3 < x < 44/3: x = 14\n\n모든 자연수의 합: 2 + 6 + 10 + 14 = 32"
+        },
+        {
+          "model": "gemini-3-pro",
+          "step_idx": 3,
+          "title": "모든 자연수 x의 합 계산",
+          "content": "구해진 자연수 $x$의 값들은 $2, 6, 10, 14$입니다.\n따라서 모든 자연수 $x$의 값의 합은:\n$$2 + 6 + 10 + 14 = 32$$"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "model": "gpt-5.2",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 2,
+      "to_step": 3
+    },
+    {
+      "model": "claude-opus-4.5",
+      "from_step": 3,
+      "to_step": 4
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 0,
+      "to_step": 1
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 1,
+      "to_step": 2
+    },
+    {
+      "model": "gemini-3-pro",
+      "from_step": 2,
+      "to_step": 3
+    }
+  ]
+}

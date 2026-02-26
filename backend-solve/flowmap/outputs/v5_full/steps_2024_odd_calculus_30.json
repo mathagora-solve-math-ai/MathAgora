@@ -1,0 +1,149 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_calculus_30",
+    "prob_area": "미적분",
+    "prob_point": "4",
+    "prob_desc": "30. 실수 전체의 집합에서 미분가능한 함수 $f(x)$의 도함수 $f'(x)$가 $$f'(x) = |\\sin x|\\cos x$$이다. 양수 $a$에 대하여 곡선 $y=f(x)$ 위의 점 $(a, f(a))$에서의 접선의 방정식을 $y=g(x)$라 하자. 함수 $$h(x) = \\int_{0}^{x} \\{ f(t) - g(t) \\}\\, dt$$가 $x=a$에서 극대 또는 극소가 되도록 하는 모든 양수 $a$를 작은 수부터 크기 순으로 나열할 때, $n$번째 수를 $a_n$이라 하자. $\\dfrac{100}{\\pi} \\times (a_6 - a_2)$의 값을 구하시오. [4점]",
+    "answer": "125"
+  },
+  "solutions": {
+    "gpt-5-codex": [
+      {
+        "title": "Extremum condition for h",
+        "body": "With g(x) = f(a) + f'(a)(x-a), we have h(x) = ∫₀ˣ [f(t) - g(t)] dt. Differentiating gives h'(x) = f(x) - g(x) and h''(x) = f'(x) - f'(a). Since h'(a) = 0 automatically, x = a is an extremum of h only if h'(x) changes sign around a, i.e., f(x) - g(x) changes sign around x = a."
+      },
+      {
+        "title": "Consequence for f''(a)",
+        "body": "Near x = a, let F(x) = f(x) - g(x). If f is twice differentiable at a with f''(a) ≠ 0, then F(x) ≈ ½f''(a)(x-a)², which keeps the same sign on both sides of a, so h has no extremum. Therefore, an extremum can occur only when f''(a) = 0 or f'' is undefined at a."
+      },
+      {
+        "title": "Find candidate points",
+        "body": "Since f'(x) = |sin x| cos x, we have:\n• For sin x > 0 (x ∈ (2kπ, (2k+1)π)), f'(x) = sin x cos x and f''(x) = cos 2x.\n• For sin x < 0 (x ∈ ((2k-1)π, 2kπ)), f'(x) = -sin x cos x and f''(x) = -cos 2x.\nThus f'' is zero precisely when cos 2a = 0, i.e., a = π/4 + k·(π/2). At sin a = 0 (a = kπ), f'' is not defined because |sin x| has a kink; these points must also be checked."
+      },
+      {
+        "title": "Verify sign change at candidates",
+        "body": "For a = π/4 + k·(π/2), f''(a) = 0 and the one-sided third derivative is f'''(a) = ±2 sin 2a ≠ 0, hence F(x) ≈ (f'''(a)/6)(x-a)³, which changes sign across a; h has a local extremum there. For a = kπ, f'(a) = 0 and near a the function f'(x) keeps a definite sign (both sides positive when k is even, both negative when k is odd), so F(x) = ∫ₐˣ f'(u) du changes sign across a; h again has a local extremum. No other points satisfy the requirement."
+      },
+      {
+        "title": "Sort positive solutions",
+        "body": "Arrange the positive a: π/4, 3π/4, π, 5π/4, 7π/4, 2π, 9π/4, … Therefore, a₂ = 3π/4 and a₆ = 2π."
+      },
+      {
+        "title": "Compute required value",
+        "body": "a₆ − a₂ = 2π − 3π/4 = 5π/4. Hence (100/π)(a₆ − a₂) = (100/π)(5π/4) = 125."
+      },
+      {
+        "title": "Final Answer",
+        "body": "125"
+      }
+    ],
+    "gpt-5": [
+      {
+        "title": "Reduce to sign change of h′",
+        "body": "Given g(x) is the tangent to y=f(x) at x=a, g(x)=f(a)+f′(a)(x−a). Define h(x)=∫₀ˣ (f(t)−g(t)) dt. Then h′(x)=f(x)−g(x). Always h′(a)=f(a)−g(a)=0. For a to be a local max/min of h, h′ must change sign at x=a. Since h′(x)=f(x)−g(x), this occurs exactly when the tangent at a crosses the graph of f (i.e., f−g changes sign across a)."
+      },
+      {
+        "title": "Crossing ⇔ inflection of f",
+        "body": "If f is strictly convex or strictly concave near a, its graph lies entirely above or below its tangent, so f−g keeps one sign and h has no extremum at a. Thus h has a local extremum at a iff a is an inflection point of f (the curvature changes sign across a). This can occur where f″(a)=0 with sign change, or where f″ is undefined but one-sided signs are opposite."
+      },
+      {
+        "title": "Find all inflection points of f",
+        "body": "We have f′(x)=|sin x| cos x. On intervals where sin x>0 (x∈(2mπ,(2m+1)π)), f′(x)=½ sin 2x, so f″(x)=cos 2x. Where sin x<0 (x∈((2m−1)π,2mπ)), f′(x)=−½ sin 2x, so f″(x)=−cos 2x. Hence: (i) Interior zeros of f″ occur at cos 2x=0 ⇒ x=π/4+k(π/2), at which cos 2x changes sign; sgn(sin x) is constant on each side, so f″ changes sign ⇒ inflection. (ii) At x=nπ, sin x changes sign; near these points cos 2x≈1, so f″ jumps from ±1 to ∓1 across x=nπ, again a sign change ⇒ inflection. Therefore, all positive a with extremum are a∈{π/4+k(π/2) : k∈ℤ, a>0} ∪ {nπ : n∈ℕ}. In ascending order this is precisely the multiples of π/4 excluding those ≡2 (mod 4): a_n=(π/4)·b_n where b_n runs over 1,3,4,5,7,8,9,11,12,13,..."
+      },
+      {
+        "title": "Extract a2, a6 and compute",
+        "body": "From the ordered list: a1=π/4, a2=3π/4, a3=π, a4=5π/4, a5=7π/4, a6=2π. Then a6−a2=2π−3π/4=5π/4. Thus (100/π)(a6−a2)=100·(5/4)=125."
+      },
+      {
+        "title": "Final Answer",
+        "body": "125"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "Analyze the derivative f'(x)",
+        "body": "Given f'(x) = |sin x| cos x\n\nFor x ∈ [0, π]: |sin x| = sin x, so f'(x) = sin x cos x = (1/2)sin 2x\nFor x ∈ [π, 2π]: |sin x| = -sin x, so f'(x) = -sin x cos x = -(1/2)sin 2x\n\nThe pattern repeats with period 2π."
+      },
+      {
+        "title": "Set up h(x) and find h'(x)",
+        "body": "The tangent line at (a, f(a)) is: y = g(x) = f(a) + f'(a)(x - a)\n\nSo f(x) - g(x) = f(x) - f(a) - f'(a)(x - a)\n\nh(x) = ∫₀ˣ {f(t) - g(t)} dt\n\nBy the Fundamental Theorem of Calculus:\nh'(x) = f(x) - g(x) = f(x) - f(a) - f'(a)(x - a)"
+      },
+      {
+        "title": "Conditions for extremum at x = a",
+        "body": "For h(x) to have an extremum at x = a:\n1. h'(a) = 0: f(a) - f(a) - f'(a)(a - a) = 0 ✓ (always satisfied)\n2. h'(x) must change sign at x = a\n\nSince h'(a) = 0 always, we need h''(a) = 0 and examine higher derivatives, OR h'(x) must change sign.\n\nh''(x) = f'(x) - f'(a)\nh''(a) = f'(a) - f'(a) = 0 (always)\n\nh'''(x) = f''(x)\nh'''(a) = f''(a)\n\nFor a local extremum: we need h'(x) to change sign at x = a.\nSince h'(a) = 0 and h''(a) = 0, we examine when f'(x) - f'(a) changes sign at x = a."
+      },
+      {
+        "title": "Determine when f'(x) has local extremum",
+        "body": "For h'(x) = f(x) - f(a) - f'(a)(x-a) to change sign at x = a:\nThe tangent line to f at x = a must cross the curve (not just touch it).\n\nThis happens when f''(a) = 0 AND f'''(a) ≠ 0 (inflection point of f), OR when f'(x) has a local extremum at x = a.\n\nf''(x) = d/dx[|sin x| cos x]\n\nFor x ∈ (0, π): f''(x) = cos 2x · 2 = 2cos 2x = 0 when x = π/4, 3π/4\nFor x ∈ (π, 2π): f''(x) = -2cos 2x = 0 when x = 5π/4, 7π/4\n\nAlso at x = π, 2π, ... where |sin x| has corners."
+      },
+      {
+        "title": "Find where f'(x) has local extrema",
+        "body": "f'(x) = |sin x| cos x\n\nLocal extrema of f'(x) occur where f''(x) = 0 or f''(x) doesn't exist.\n\nIn (0, π): f''(x) = 2cos 2x = 0 at x = π/4, 3π/4\nIn (π, 2π): f''(x) = -2cos 2x = 0 at x = 5π/4, 7π/4\nAt x = π, 2π, 3π,...: f''(x) doesn't exist (corner points of |sin x|)\n\nCheck sign changes of f''(x):\n- At x = π/4: f'' changes + to - (local max of f')\n- At x = 3π/4: f'' changes - to + (local min of f')\n- At x = π: corner point - need to check\n- At x = 5π/4: f'' changes + to - (local max of f')\n- At x = 7π/4: f'' changes - to + (local min of f')\n\nAt these points, f'(x) has local extrema, so tangent crosses curve."
+      },
+      {
+        "title": "List all positive values of a",
+        "body": "The positive values where h(x) has extremum at x = a are where f'(x) has local extrema:\n\na₁ = π/4\na₂ = 3π/4\na₃ = π (corner)\na₄ = 5π/4\na₅ = 7π/4\na₆ = 2π (corner)\n\nContinuing: 9π/4, 11π/4, 3π, ..."
+      },
+      {
+        "title": "Calculate the final answer",
+        "body": "a₆ = 2π\na₂ = 3π/4\n\na₆ - a₂ = 2π - 3π/4 = 8π/4 - 3π/4 = 5π/4\n\n(100/π) × (a₆ - a₂) = (100/π) × (5π/4) = 100 × 5/4 = 125"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "Analyze the derivative f'(x)",
+        "body": "Given $f'(x) = |\\sin x|\\cos x$, we determine its explicit form in intervals of length $\\pi$. Since $\\sin x \\ge 0$ for $x \\in [2k\\pi, (2k+1)\\pi]$ and $\\sin x < 0$ for $x \\in [(2k+1)\\pi, (2k+2)\\pi]$, we have:\n- For $2k\\pi \\le x \\le (2k+1)\\pi$: $f'(x) = \\sin x \\cos x = \\frac{1}{2}\\sin 2x$.\n- For $(2k+1)\\pi \\le x \\le (2k+2)\\pi$: $f'(x) = -\\sin x \\cos x = -\\frac{1}{2}\\sin 2x$."
+      },
+      {
+        "title": "Analyze the condition for extrema of h(x)",
+        "body": "We need $h(x) = \\int_0^x \\{ f(t) - g(t) \\} dt$ to have a local extremum at $x=a$. This requires $h'(x) = f(x) - g(x)$ to change sign at $x=a$. Since $g(x)$ is the tangent to $f(x)$ at $x=a$, $f(x)$ touches $g(x)$ at $a$. For $f(x)-g(x)$ to change sign (cross the tangent), $x=a$ must be an inflection point of $f(x)$ where the concavity changes (e.g., from convex to concave or vice versa)."
+      },
+      {
+        "title": "Find inflection points inside the intervals",
+        "body": "We find where $f''(x)$ changes sign.\n- In $(0, \\pi)$, $f''(x) = (\\frac{1}{2}\\sin 2x)' = \\cos 2x$. Roots are $2x = \\frac{\\pi}{2}, \\frac{3\\pi}{2} \\Rightarrow x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}$. Concavity changes at these points.\n- In $(\\pi, 2\\pi)$, $f''(x) = (-\\frac{1}{2}\\sin 2x)' = -\\cos 2x$. Roots are $2x = \\frac{5\\pi}{2}, \\frac{7\\pi}{2} \\Rightarrow x = \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$. Concavity changes here as well."
+      },
+      {
+        "title": "Check inflection points at boundaries",
+        "body": "We examine $x = \\pi$ (and generally $n\\pi$).\n- As $x \\to \\pi^-$, $f''(x) = \\cos 2x \\to 1 > 0$ (Convex).\n- As $x \\to \\pi^+$, $f''(x) = -\\cos 2x \\to -1 < 0$ (Concave).\nThe concavity changes from convex to concave at $x=\\pi$, so the tangent crosses the curve. $f(x)-g(x)$ changes sign. Thus, $x=\\pi$ is a valid point.\nSimilarly, at $x=2\\pi$, concavity changes from concave ($f'' \\to -1$) to convex ($f'' \\to 1$), so $x=2\\pi$ is valid."
+      },
+      {
+        "title": "List and sort the values of a",
+        "body": "Collecting the positive points $a$ in increasing order:\n1. $a_1 = \\frac{\\pi}{4}$ \n2. $a_2 = \\frac{3\\pi}{4}$ \n3. $a_3 = \\pi$ \n4. $a_4 = \\frac{5\\pi}{4}$ \n5. $a_5 = \\frac{7\\pi}{4}$ \n6. $a_6 = 2\\pi$ \nWe need $a_2$ and $a_6$."
+      },
+      {
+        "title": "Calculate the final value",
+        "body": "We substitute $a_6 = 2\\pi$ and $a_2 = \\frac{3\\pi}{4}$ into the expression:\n$a_6 - a_2 = 2\\pi - \\frac{3\\pi}{4} = \\frac{5\\pi}{4}$.\nThe required value is $\\frac{100}{\\pi} \\times (a_6 - a_2) = \\frac{100}{\\pi} \\times \\frac{5\\pi}{4} = 100 \\times \\frac{5}{4} = 125$."
+      }
+    ],
+    "grok-4-fast": [
+      {
+        "title": "Find f(x) by integrating f'(x)",
+        "body": "Given f'(x) = |sin x| cos x, substitute u = sin x, du = cos x dx, so ∫ |u| du = (1/2) u |u| + C = (1/2) sin x |sin x| + C. Thus, f(x) = (1/2) sin x |sin x| + C. For simplicity, set C = 0 as constants cancel in differences."
+      },
+      {
+        "title": "Define g(x) and h(x)",
+        "body": "The tangent at x = a is g(x) = f(a) + f'(a)(x - a). Then h(x) = ∫_0^x [f(t) - g(t)] dt, so h'(x) = f(x) - g(x)."
+      },
+      {
+        "title": "Determine condition for extremum",
+        "body": "h'(a) = 0 always (tangency). For local max/min, h'(x) must change sign at x = a, i.e., the zero of h'(x) at a has odd multiplicity m ≥ 3. Since m ≥ 2 always, compute derivatives: h'(x) = (1/2) f''(a)(x-a)^2 + (1/6) f'''(a)(x-a)^3 + ⋯. If f''(a) ≠ 0, m=2 even, no extremum. If f''(a)=0 and f'''(a) ≠ 0, m=3 odd, extremum."
+      },
+      {
+        "title": "Compute f''(x) and solve f''(a)=0",
+        "body": "In (2kπ, (2k+1)π), f''(x) = cos 2x. In ((2k+1)π, (2k+2)π), f''(x) = -cos 2x. Set ± cos 2a = 0 ⇒ cos 2a = 0 ⇒ 2a = π/2 + kπ ⇒ a = (2n-1)π/4 for integer n ≥ 1 (positive a)."
+      },
+      {
+        "title": "Verify f'''(a) ≠ 0",
+        "body": "In respective intervals, f'''(x) = -2 sin 2x or +2 sin 2x. At a = (2n-1)π/4, 2a = (2n-1)π/2, sin 2a = (-1)^{n-1}, so |sin 2a| = 1 ≠ 0, hence |f'''(a)| = 2 ≠ 0. Thus, m=3 for all such a."
+      },
+      {
+        "title": "List a_n and compute required value",
+        "body": "a_n = (2n-1)π/4. Then a_2 = 3π/4, a_6 = 11π/4, a_6 - a_2 = 2π. Finally, (100/π) × 2π = 200."
+      },
+      {
+        "title": "Final Answer",
+        "body": "200"
+      }
+    ]
+  }
+}

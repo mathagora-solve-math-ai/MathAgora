@@ -1,0 +1,3504 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-13T03:44:50Z",
+    "ended_at_utc": "2026-02-13T04:22:46Z",
+    "elapsed_seconds": 2276.63,
+    "problem_tag": "2026_odd_calculus_26",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72,
+    "n_api_calls_this_run": 72,
+    "n_resumed_runs_from_flat_csv": 0
+  },
+  "problem": {
+    "id": "2026_odd_calculus_26",
+    "label": "2026_odd_calculus_26 (미적분, 3점)",
+    "gold_answer": "1"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.467549085617065,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.046687841415405,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면(정삼각형) 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 대조"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3+8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.36488676071167,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\) (①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 10.467549085617065,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.046687841415405,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면(정삼각형) 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 대조"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3+8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.36488676071167,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\) (①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분": 3,
+            "밑면과 단면(정삼각형) 넓이 설정": 1,
+            "적분 계산": 2,
+            "부피 정리 및 보기와 대조": 1,
+            "부피 정리 및 보기와 비교": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 1.1547005383792515,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분": 3,
+            "밑면과 단면(정삼각형) 넓이 설정": 1,
+            "적분 계산": 2,
+            "부피 정리 및 보기와 대조": 1,
+            "부피 정리 및 보기와 비교": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.482023239135742,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.527476787567139,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.137968301773071,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.482023239135742,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 12.527476787567139,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 11.137968301773071,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "문제 파악 및 부피 공식 설정": 3,
+            "적분 분리": 3,
+            "부분적분으로 두 번째 적분 계산": 2,
+            "최종 부피 계산": 2,
+            "첫 번째 적분 계산": 1,
+            "두 번째 적분 계산 (부분적분)": 1,
+            "부피 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 파악 및 부피 공식 설정": 3,
+            "적분 분리": 3,
+            "부분적분으로 두 번째 적분 계산": 2,
+            "최종 부피 계산": 2,
+            "첫 번째 적분 계산": 1,
+            "두 번째 적분 계산 (부분적분)": 1,
+            "부피 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.95500373840332,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분 식 세우기",
+                "정적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.104958534240723,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 식 설정",
+                "부분적분법을 이용한 적분 계산",
+                "정적분 값 계산 및 정답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.460399627685547,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 식 설정",
+                "부분적분법을 이용한 적분 계산",
+                "정적분 값 계산 및 정답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 30.95500373840332,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분 식 세우기",
+                "정적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.104958534240723,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 식 설정",
+                "부분적분법을 이용한 적분 계산",
+                "정적분 값 계산 및 정답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.460399627685547,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 식 설정",
+                "부분적분법을 이용한 적분 계산",
+                "정적분 값 계산 및 정답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분 식 세우기": 1,
+            "정적분 계산": 1,
+            "최종 부피 계산": 1,
+            "단면의 넓이와 부피 식 설정": 2,
+            "부분적분법을 이용한 적분 계산": 2,
+            "정적분 값 계산 및 정답 도출": 2
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분 식 세우기": 1,
+            "정적분 계산": 1,
+            "최종 부피 계산": 1,
+            "단면의 넓이와 부피 식 설정": 2,
+            "부분적분법을 이용한 적분 계산": 2,
+            "정적분 값 계산 및 정답 도출": 2
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.4230420589447,
+              "step_count": 3,
+              "step_titles": [
+                "부피 공식 설정",
+                "적분 계산",
+                "부피 값 도출"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.10222935676575,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.139439821243286,
+              "step_count": 4,
+              "step_titles": [
+                "부피 적분 설정",
+                "단면적 공식화",
+                "적분 계산",
+                "부피 최종 계산"
+              ],
+              "final_answer": "① \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 38.4230420589447,
+              "step_count": 3,
+              "step_titles": [
+                "부피 공식 설정",
+                "적분 계산",
+                "부피 값 도출"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 41.10222935676575,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.139439821243286,
+              "step_count": 4,
+              "step_titles": [
+                "부피 적분 설정",
+                "단면적 공식화",
+                "적분 계산",
+                "부피 최종 계산"
+              ],
+              "final_answer": "① \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "부피 공식 설정": 1,
+            "적분 계산": 3,
+            "부피 값 도출": 1,
+            "부피 적분 설정": 2,
+            "정적분 평가 및 부피 계산": 1,
+            "단면적 공식화": 1,
+            "부피 최종 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부피 공식 설정": 1,
+            "적분 계산": 3,
+            "부피 값 도출": 1,
+            "부피 적분 설정": 2,
+            "정적분 평가 및 부피 계산": 1,
+            "단면적 공식화": 1,
+            "부피 최종 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.058005809783936,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "부피 적분식 설정",
+                "적분 계산",
+                "적분 결과 합치기",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 111.84897184371948,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면의 넓이 함수 구하기",
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.32621145248413,
+              "step_count": 6,
+              "step_titles": [
+                "밑면의 넓이 함수 도출",
+                "정삼각형의 넓이 공식 적용",
+                "부피 적분",
+                "적분 계산",
+                "적분값 합치기",
+                "부피 최종식"
+              ],
+              "final_answer": "**\n\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n보기에서 ①번에 해당한다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.058005809783936,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "부피 적분식 설정",
+                "적분 계산",
+                "적분 결과 합치기",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 111.84897184371948,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면의 넓이 함수 구하기",
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.32621145248413,
+              "step_count": 6,
+              "step_titles": [
+                "밑면의 넓이 함수 도출",
+                "정삼각형의 넓이 공식 적용",
+                "부피 적분",
+                "적분 계산",
+                "적분값 합치기",
+                "부피 최종식"
+              ],
+              "final_answer": "**\n\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n보기에서 ①번에 해당한다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "문제 이해 및 조건 정리": 2,
+            "부피 적분식 설정": 1,
+            "적분 계산": 3,
+            "적분 결과 합치기": 1,
+            "부피 계산": 2,
+            "단면의 넓이 함수 구하기": 1,
+            "부피 적분 설정": 1,
+            "밑면의 넓이 함수 도출": 1,
+            "정삼각형의 넓이 공식 적용": 1,
+            "부피 적분": 1,
+            "적분값 합치기": 1,
+            "부피 최종식": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 조건 정리": 2,
+            "부피 적분식 설정": 1,
+            "적분 계산": 3,
+            "적분 결과 합치기": 1,
+            "부피 계산": 2,
+            "단면의 넓이 함수 구하기": 1,
+            "부피 적분 설정": 1,
+            "밑면의 넓이 함수 도출": 1,
+            "정삼각형의 넓이 공식 적용": 1,
+            "부피 적분": 1,
+            "적분값 합치기": 1,
+            "부피 최종식": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.15294814109802,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "전체 적분 합산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.230243682861328,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "단면적 함수 도출",
+                "부피 적분 설정",
+                "적분 계산 (첫 번째 항)",
+                "적분 계산 (두 번째 항)",
+                "전체 적분 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.414578676223755,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "전체 적분 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 48.15294814109802,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "전체 적분 합산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.230243682861328,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "단면적 함수 도출",
+                "부피 적분 설정",
+                "적분 계산 (첫 번째 항)",
+                "적분 계산 (두 번째 항)",
+                "전체 적분 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 56.414578676223755,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "전체 적분 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "부피 적분 설정": 3,
+            "부분적분 계산": 2,
+            "전체 적분 합산": 3,
+            "단면적 함수 도출": 1,
+            "적분 계산 (첫 번째 항)": 1,
+            "적분 계산 (두 번째 항)": 1,
+            "최종 부피 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "부피 적분 설정": 3,
+            "부분적분 계산": 2,
+            "전체 적분 합산": 3,
+            "단면적 함수 도출": 1,
+            "적분 계산 (첫 번째 항)": 1,
+            "적분 계산 (두 번째 항)": 1,
+            "최종 부피 계산": 2
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.166666666666667,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분": 4,
+          "밑면과 단면(정삼각형) 넓이 설정": 1,
+          "적분 계산": 8,
+          "부피 정리 및 보기와 대조": 1,
+          "부피 정리 및 보기와 비교": 1,
+          "문제 파악 및 부피 공식 설정": 3,
+          "적분 분리": 3,
+          "부분적분으로 두 번째 적분 계산": 2,
+          "최종 부피 계산": 5,
+          "첫 번째 적분 계산": 1,
+          "두 번째 적분 계산 (부분적분)": 1,
+          "부피 계산": 3,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분 식 세우기": 1,
+          "정적분 계산": 1,
+          "단면의 넓이와 부피 식 설정": 2,
+          "부분적분법을 이용한 적분 계산": 2,
+          "정적분 값 계산 및 정답 도출": 2,
+          "부피 공식 설정": 1,
+          "부피 값 도출": 1,
+          "부피 적분 설정": 6,
+          "정적분 평가 및 부피 계산": 1,
+          "단면적 공식화": 1,
+          "부피 최종 계산": 1,
+          "문제 이해 및 조건 정리": 2,
+          "부피 적분식 설정": 1,
+          "적분 결과 합치기": 1,
+          "단면의 넓이 함수 구하기": 1,
+          "밑면의 넓이 함수 도출": 1,
+          "정삼각형의 넓이 공식 적용": 1,
+          "적분값 합치기": 1,
+          "부피 최종식": 1,
+          "조건 정리": 3,
+          "부분적분 계산": 2,
+          "전체 적분 합산": 3,
+          "단면적 함수 도출": 1,
+          "적분 계산 (첫 번째 항)": 1,
+          "적분 계산 (두 번째 항)": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.587296962738037,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.699190139770508,
+              "step_count": 4,
+              "step_titles": [
+                "단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.950801610946655,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.587296962738037,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.699190139770508,
+              "step_count": 4,
+              "step_titles": [
+                "단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.950801610946655,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분 계산": 1,
+            "단면 넓이 설정": 1,
+            "부피 적분": 2,
+            "적분 계산": 1,
+            "부피 정리 및 보기와 비교": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 1.1547005383792515,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분 계산": 1,
+            "단면 넓이 설정": 1,
+            "부피 적분": 2,
+            "적분 계산": 1,
+            "부피 정리 및 보기와 비교": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.157154321670532,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.82833480834961,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.521931886672974,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.157154321670532,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 11.82833480834961,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.521931886672974,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "문제 파악 및 부피 공식 설정": 3,
+            "적분 분리": 1,
+            "부분적분으로 두 번째 적분 계산": 1,
+            "최종 부피 계산": 2,
+            "부피 적분식 설정": 2,
+            "첫 번째 적분 계산": 2,
+            "두 번째 적분 계산 (부분적분)": 2,
+            "부피 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 파악 및 부피 공식 설정": 3,
+            "적분 분리": 1,
+            "부분적분으로 두 번째 적분 계산": 1,
+            "최종 부피 계산": 2,
+            "부피 적분식 설정": 2,
+            "첫 번째 적분 계산": 2,
+            "두 번째 적분 계산 (부분적분)": 2,
+            "부피 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.07182812690735,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 넓이 설정",
+                "부피 적분 식 수립",
+                "정적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.25723671913147,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 계산 및 최종 답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.572670459747314,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 부피 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.07182812690735,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 넓이 설정",
+                "부피 적분 식 수립",
+                "정적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.25723671913147,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 계산 및 최종 답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.572670459747314,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 부피 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "단면의 넓이 설정": 1,
+            "부피 적분 식 수립": 1,
+            "정적분 계산": 1,
+            "최종 부피 계산": 1,
+            "단면의 넓이와 부피 적분식 설정": 2,
+            "부분적분법을 이용한 부정적분 계산": 2,
+            "정적분 계산 및 최종 답 도출": 1,
+            "정적분 값 계산 및 최종 부피 도출": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "단면의 넓이 설정": 1,
+            "부피 적분 식 수립": 1,
+            "정적분 계산": 1,
+            "최종 부피 계산": 1,
+            "단면의 넓이와 부피 적분식 설정": 2,
+            "부분적분법을 이용한 부정적분 계산": 2,
+            "정적분 계산 및 최종 답 도출": 1,
+            "정적분 값 계산 및 최종 부피 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 45.14672803878784,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 변 길이와 넓이 구하기",
+                "부피 적분식 세우기",
+                "적분 계산: 부분적분 활용",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.38318347930908,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 접근법",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.47879695892334,
+              "step_count": 4,
+              "step_titles": [
+                "부피 공식 설정",
+                "적분 계산",
+                "정적분 평가",
+                "부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 45.14672803878784,
+              "step_count": 4,
+              "step_titles": [
+                "단면의 변 길이와 넓이 구하기",
+                "부피 적분식 세우기",
+                "적분 계산: 부분적분 활용",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.38318347930908,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 접근법",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 30.47879695892334,
+              "step_count": 4,
+              "step_titles": [
+                "부피 공식 설정",
+                "적분 계산",
+                "정적분 평가",
+                "부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "단면의 변 길이와 넓이 구하기": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산: 부분적분 활용": 1,
+            "정적분 평가 및 부피 계산": 1,
+            "문제 이해 및 접근법": 1,
+            "적분 계산": 2,
+            "부피 계산": 2,
+            "부피 공식 설정": 1,
+            "정적분 평가": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "단면의 변 길이와 넓이 구하기": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산: 부분적분 활용": 1,
+            "정적분 평가 및 부피 계산": 1,
+            "문제 이해 및 접근법": 1,
+            "적분 계산": 2,
+            "부피 계산": 2,
+            "부피 공식 설정": 1,
+            "정적분 평가": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.95619773864746,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면적 구하기",
+                "부피 적분",
+                "적분 계산",
+                "부피 식 정리"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.88430142402649,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면의 넓이 식 구하기",
+                "부피 적분 설정",
+                "적분 계산",
+                "합치기"
+              ],
+              "final_answer": "\\[\n\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.76646089553833,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "단면적 구하기",
+                "부피 적분",
+                "적분 결과 합치기",
+                "보기와 비교",
+                "수정된 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 23.95619773864746,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면적 구하기",
+                "부피 적분",
+                "적분 계산",
+                "부피 식 정리"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.88430142402649,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 조건 정리",
+                "단면의 넓이 식 구하기",
+                "부피 적분 설정",
+                "적분 계산",
+                "합치기"
+              ],
+              "final_answer": "\\[\n\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 40.76646089553833,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "단면적 구하기",
+                "부피 적분",
+                "적분 결과 합치기",
+                "보기와 비교",
+                "수정된 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "문제 이해 및 조건 정리": 2,
+            "단면적 구하기": 2,
+            "부피 적분": 2,
+            "적분 계산": 2,
+            "부피 식 정리": 1,
+            "단면의 넓이 식 구하기": 1,
+            "부피 적분 설정": 1,
+            "합치기": 1,
+            "문제 이해 및 단면적 설정": 1,
+            "적분 결과 합치기": 1,
+            "보기와 비교": 1,
+            "수정된 부피 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 조건 정리": 2,
+            "단면적 구하기": 2,
+            "부피 적분": 2,
+            "적분 계산": 2,
+            "부피 식 정리": 1,
+            "단면의 넓이 식 구하기": 1,
+            "부피 적분 설정": 1,
+            "합치기": 1,
+            "문제 이해 및 단면적 설정": 1,
+            "적분 결과 합치기": 1,
+            "보기와 비교": 1,
+            "수정된 부피 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.55479097366333,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "단면의 성질 분석",
+                "부피 적분식 세우기",
+                "적분 계산 준비",
+                "부분적분 적용",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.87410759925842,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.64627122879028,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형의 넓이 공식 적용",
+                "부피 적분 설정",
+                "적분 계산 준비",
+                "부분적분: $ \\int x \\ln x \\, dx $ 계산",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 25.55479097366333,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "단면의 성질 분석",
+                "부피 적분식 세우기",
+                "적분 계산 준비",
+                "부분적분 적용",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 35.87410759925842,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "부피 적분 설정",
+                "부분적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 46.64627122879028,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형의 넓이 공식 적용",
+                "부피 적분 설정",
+                "적분 계산 준비",
+                "부분적분: $ \\int x \\ln x \\, dx $ 계산",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 6.0,
+          "title_frequency": {
+            "조건 정리": 3,
+            "단면의 성질 분석": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산 준비": 2,
+            "부분적분 적용": 1,
+            "전체 적분 값 합산": 2,
+            "최종 부피 계산": 3,
+            "부피 적분 설정": 2,
+            "부분적분 계산": 1,
+            "정삼각형의 넓이 공식 적용": 1,
+            "부분적분: $ \\int x \\ln x \\, dx $ 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 6.0,
+          "step_std": 1.7320508075688772,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "단면의 성질 분석": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산 준비": 2,
+            "부분적분 적용": 1,
+            "전체 적분 값 합산": 2,
+            "최종 부피 계산": 3,
+            "부피 적분 설정": 2,
+            "부분적분 계산": 1,
+            "정삼각형의 넓이 공식 적용": 1,
+            "부분적분: $ \\int x \\ln x \\, dx $ 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 4.277777777777778,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분 계산": 1,
+          "단면 넓이 설정": 1,
+          "부피 적분": 4,
+          "적분 계산": 5,
+          "부피 정리 및 보기와 비교": 1,
+          "문제 파악 및 부피 공식 설정": 3,
+          "적분 분리": 1,
+          "부분적분으로 두 번째 적분 계산": 1,
+          "최종 부피 계산": 6,
+          "부피 적분식 설정": 2,
+          "첫 번째 적분 계산": 2,
+          "두 번째 적분 계산 (부분적분)": 2,
+          "부피 계산": 3,
+          "단면의 넓이 설정": 1,
+          "부피 적분 식 수립": 1,
+          "정적분 계산": 1,
+          "단면의 넓이와 부피 적분식 설정": 2,
+          "부분적분법을 이용한 부정적분 계산": 2,
+          "정적분 계산 및 최종 답 도출": 1,
+          "정적분 값 계산 및 최종 부피 도출": 1,
+          "단면의 변 길이와 넓이 구하기": 1,
+          "부피 적분식 세우기": 2,
+          "적분 계산: 부분적분 활용": 1,
+          "정적분 평가 및 부피 계산": 1,
+          "문제 이해 및 접근법": 1,
+          "부피 공식 설정": 1,
+          "정적분 평가": 1,
+          "문제 이해 및 조건 정리": 2,
+          "단면적 구하기": 2,
+          "부피 식 정리": 1,
+          "단면의 넓이 식 구하기": 1,
+          "부피 적분 설정": 3,
+          "합치기": 1,
+          "문제 이해 및 단면적 설정": 1,
+          "적분 결과 합치기": 1,
+          "보기와 비교": 1,
+          "수정된 부피 계산": 1,
+          "조건 정리": 3,
+          "단면의 성질 분석": 1,
+          "적분 계산 준비": 2,
+          "부분적분 적용": 1,
+          "전체 적분 값 합산": 2,
+          "부분적분 계산": 1,
+          "정삼각형의 넓이 공식 적용": 1,
+          "부분적분: $ \\int x \\ln x \\, dx $ 계산": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.409199476242065,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.356925964355469,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.776316404342651,
+              "step_count": 2,
+              "step_titles": [
+                "밑면 구간과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.409199476242065,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 9.356925964355469,
+              "step_count": 4,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분",
+                "적분 계산",
+                "부피 정리 및 보기와 비교"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.776316404342651,
+              "step_count": 2,
+              "step_titles": [
+                "밑면 구간과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분": 2,
+            "적분 계산": 1,
+            "부피 정리 및 보기와 비교": 1,
+            "밑면 구간과 단면 넓이 설정": 1,
+            "부피 적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 1.1547005383792515,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "밑면과 단면 넓이 설정": 2,
+            "부피 적분": 2,
+            "적분 계산": 1,
+            "부피 정리 및 보기와 비교": 1,
+            "밑면 구간과 단면 넓이 설정": 1,
+            "부피 적분 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.626172304153442,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 단면적 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.599502563476562,
+              "step_count": 3,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.469908237457275,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.626172304153442,
+              "step_count": 5,
+              "step_titles": [
+                "문제 파악 및 단면적 설정",
+                "부피 적분식 설정",
+                "첫 번째 적분 계산",
+                "두 번째 적분 계산 (부분적분)",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.599502563476562,
+              "step_count": 3,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 13.469908237457275,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "문제 파악 및 단면적 설정": 1,
+            "부피 적분식 설정": 1,
+            "첫 번째 적분 계산": 1,
+            "두 번째 적분 계산 (부분적분)": 1,
+            "최종 부피 계산": 3,
+            "문제 파악 및 부피 공식 설정": 2,
+            "적분 계산": 1,
+            "적분 분리": 1,
+            "부분적분으로 두 번째 적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 파악 및 단면적 설정": 1,
+            "부피 적분식 설정": 1,
+            "첫 번째 적분 계산": 1,
+            "두 번째 적분 계산 (부분적분)": 1,
+            "최종 부피 계산": 3,
+            "문제 파악 및 부피 공식 설정": 2,
+            "적분 계산": 1,
+            "적분 분리": 1,
+            "부분적분으로 두 번째 적분 계산": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.88225317001343,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 구하기",
+                "부분적분법을 이용한 정적분 계산",
+                "최종 부피 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.70116901397705,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분식 계산 (부분적분법)",
+                "최종 답 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.388401746749878,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 세우기",
+                "부피 적분식 설정 및 부분적분",
+                "정적분 계산 및 답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 32.88225317001343,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 구하기",
+                "부분적분법을 이용한 정적분 계산",
+                "최종 부피 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 24.70116901397705,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분식 계산 (부분적분법)",
+                "최종 답 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 29.388401746749878,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 세우기",
+                "부피 적분식 설정 및 부분적분",
+                "정적분 계산 및 답 도출"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "단면의 넓이 식 구하기": 1,
+            "부분적분법을 이용한 정적분 계산": 1,
+            "최종 부피 도출": 1,
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분식 계산 (부분적분법)": 1,
+            "최종 답 도출": 1,
+            "단면의 넓이 식 세우기": 1,
+            "부피 적분식 설정 및 부분적분": 1,
+            "정적분 계산 및 답 도출": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "단면의 넓이 식 구하기": 1,
+            "부분적분법을 이용한 정적분 계산": 1,
+            "최종 부피 도출": 1,
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분식 계산 (부분적분법)": 1,
+            "최종 답 도출": 1,
+            "단면의 넓이 식 세우기": 1,
+            "부피 적분식 설정 및 부분적분": 1,
+            "정적분 계산 및 답 도출": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 52.48408579826355,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.83009958267212,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 값 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.79025721549988,
+              "step_count": 3,
+              "step_titles": [
+                "문제 분석",
+                "적분 계산",
+                "정적분 및 부피 도출"
+              ],
+              "final_answer": "\\(\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 52.48408579826355,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.83009958267212,
+              "step_count": 3,
+              "step_titles": [
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 값 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 44.79025721549988,
+              "step_count": 3,
+              "step_titles": [
+                "문제 분석",
+                "적분 계산",
+                "정적분 및 부피 도출"
+              ],
+              "final_answer": "\\(\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "부피 적분 설정": 2,
+            "적분 계산": 3,
+            "정적분 평가 및 부피 계산": 1,
+            "부피 값 계산": 1,
+            "문제 분석": 1,
+            "정적분 및 부피 도출": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "부피 적분 설정": 2,
+            "적분 계산": 3,
+            "정적분 평가 및 부피 계산": 1,
+            "부피 값 계산": 1,
+            "문제 분석": 1,
+            "정적분 및 부피 도출": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 74.09837007522583,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "부피 적분식 작성",
+                "적분 계산",
+                "정적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.631537437438965,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 구하기",
+                "부피 적분",
+                "적분 계산",
+                "부피 구하기"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 69.27843046188354,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 정리",
+                "단면적 함수 정리",
+                "입체 부피 적분",
+                "적분 계산",
+                "두 적분 합치기",
+                "부피 최종 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①번 선택지)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 74.09837007522583,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "부피 적분식 작성",
+                "적분 계산",
+                "정적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 43.631537437438965,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 구하기",
+                "부피 적분",
+                "적분 계산",
+                "부피 구하기"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 69.27843046188354,
+              "step_count": 6,
+              "step_titles": [
+                "문제 이해 및 정리",
+                "단면적 함수 정리",
+                "입체 부피 적분",
+                "적분 계산",
+                "두 적분 합치기",
+                "부피 최종 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①번 선택지)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "문제 이해 및 단면적 설정": 1,
+            "부피 적분식 작성": 1,
+            "적분 계산": 3,
+            "정적분 계산": 1,
+            "부피 계산": 1,
+            "문제 이해 및 단면적 구하기": 1,
+            "부피 적분": 1,
+            "부피 구하기": 1,
+            "문제 이해 및 정리": 1,
+            "단면적 함수 정리": 1,
+            "입체 부피 적분": 1,
+            "두 적분 합치기": 1,
+            "부피 최종 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 단면적 설정": 1,
+            "부피 적분식 작성": 1,
+            "적분 계산": 3,
+            "정적분 계산": 1,
+            "부피 계산": 1,
+            "문제 이해 및 단면적 구하기": 1,
+            "부피 적분": 1,
+            "부피 구하기": 1,
+            "문제 이해 및 정리": 1,
+            "단면적 함수 정리": 1,
+            "입체 부피 적분": 1,
+            "두 적분 합치기": 1,
+            "부피 최종 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.674787044525146,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "단면 결정",
+                "정삼각형 넓이 공식 적용",
+                "부피 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.621801137924194,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "단면 넓이 식 세우기",
+                "부피 적분식 세우기",
+                "적분 계산 준비",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.898744106292725,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 넓이 공식 적용",
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.674787044525146,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "단면 결정",
+                "정삼각형 넓이 공식 적용",
+                "부피 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.621801137924194,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리",
+                "단면 넓이 식 세우기",
+                "부피 적분식 세우기",
+                "적분 계산 준비",
+                "전체 적분 값 합산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 27.898744106292725,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 넓이 공식 적용",
+                "부피 적분 설정",
+                "적분 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "단면 결정": 1,
+            "정삼각형 넓이 공식 적용": 2,
+            "부피 적분 계산": 1,
+            "최종 부피 계산": 2,
+            "단면 넓이 식 세우기": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산 준비": 1,
+            "전체 적분 값 합산": 1,
+            "부피 적분 설정": 1,
+            "적분 계산": 1,
+            "부피 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "단면 결정": 1,
+            "정삼각형 넓이 공식 적용": 2,
+            "부피 적분 계산": 1,
+            "최종 부피 계산": 2,
+            "단면 넓이 식 세우기": 1,
+            "부피 적분식 세우기": 1,
+            "적분 계산 준비": 1,
+            "전체 적분 값 합산": 1,
+            "부피 적분 설정": 1,
+            "적분 계산": 1,
+            "부피 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.8333333333333335,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분": 3,
+          "적분 계산": 9,
+          "부피 정리 및 보기와 비교": 1,
+          "밑면 구간과 단면 넓이 설정": 1,
+          "부피 적분 계산": 2,
+          "문제 파악 및 단면적 설정": 1,
+          "부피 적분식 설정": 1,
+          "첫 번째 적분 계산": 1,
+          "두 번째 적분 계산 (부분적분)": 1,
+          "최종 부피 계산": 5,
+          "문제 파악 및 부피 공식 설정": 2,
+          "적분 분리": 1,
+          "부분적분으로 두 번째 적분 계산": 1,
+          "단면의 넓이 식 구하기": 1,
+          "부분적분법을 이용한 정적분 계산": 1,
+          "최종 부피 도출": 1,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분식 계산 (부분적분법)": 1,
+          "최종 답 도출": 1,
+          "단면의 넓이 식 세우기": 1,
+          "부피 적분식 설정 및 부분적분": 1,
+          "정적분 계산 및 답 도출": 1,
+          "부피 적분 설정": 3,
+          "정적분 평가 및 부피 계산": 1,
+          "부피 값 계산": 1,
+          "문제 분석": 1,
+          "정적분 및 부피 도출": 1,
+          "문제 이해 및 단면적 설정": 1,
+          "부피 적분식 작성": 1,
+          "정적분 계산": 1,
+          "부피 계산": 2,
+          "문제 이해 및 단면적 구하기": 1,
+          "부피 구하기": 1,
+          "문제 이해 및 정리": 1,
+          "단면적 함수 정리": 1,
+          "입체 부피 적분": 1,
+          "두 적분 합치기": 1,
+          "부피 최종 계산": 1,
+          "조건 정리": 3,
+          "단면 결정": 1,
+          "정삼각형 넓이 공식 적용": 2,
+          "단면 넓이 식 세우기": 1,
+          "부피 적분식 세우기": 1,
+          "적분 계산 준비": 1,
+          "전체 적분 값 합산": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.478274822235107,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.328708410263062,
+              "step_count": 2,
+              "step_titles": [
+                "단면 넓이 식 세우기",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.0475332736969,
+              "step_count": 2,
+              "step_titles": [
+                "단면 넓이 식 세우기",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt3(3+8\\ln2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 11.478274822235107,
+              "step_count": 2,
+              "step_titles": [
+                "밑면과 단면 넓이 설정",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3+8\\ln 2)}{16}}\\quad(\\text{①})\n\\]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 10.328708410263062,
+              "step_count": 2,
+              "step_titles": [
+                "단면 넓이 식 세우기",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 9.0475332736969,
+              "step_count": 2,
+              "step_titles": [
+                "단면 넓이 식 세우기",
+                "부피 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{\\sqrt3(3+8\\ln2)}{16}}\n\\]\n(①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 2.0,
+          "title_frequency": {
+            "밑면과 단면 넓이 설정": 1,
+            "부피 적분 계산": 3,
+            "단면 넓이 식 세우기": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "밑면과 단면 넓이 설정": 1,
+            "부피 적분 계산": 3,
+            "단면 넓이 식 세우기": 2
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.73924732208252,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.52880001068115,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.147697925567627,
+              "step_count": 4,
+              "step_titles": [
+                "문제 분석 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 12.73924732208252,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 42.52880001068115,
+              "step_count": 4,
+              "step_titles": [
+                "문제 파악 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 12.147697925567627,
+              "step_count": 4,
+              "step_titles": [
+                "문제 분석 및 부피 공식 설정",
+                "적분 분리",
+                "부분적분으로 두 번째 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$\n[/FINAL_ANSWER]",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "문제 파악 및 부피 공식 설정": 2,
+            "적분 분리": 3,
+            "부분적분으로 두 번째 적분 계산": 3,
+            "최종 부피 계산": 3,
+            "문제 분석 및 부피 공식 설정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 파악 및 부피 공식 설정": 2,
+            "적분 분리": 3,
+            "부분적분으로 두 번째 적분 계산": 3,
+            "최종 부피 계산": 3,
+            "문제 분석 및 부피 공식 설정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.51711916923523,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 부피 적분 식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 답 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.25090003013611,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분식 계산 (부분적분법)",
+                "최종 답안 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.122753620147705,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분 식 세우기",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 29.51711916923523,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 식 부피 적분 식 설정",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 답 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 30.25090003013611,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이 $S(x)$ 구하기",
+                "부피 적분식 계산 (부분적분법)",
+                "최종 답안 도출"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 25.122753620147705,
+              "step_count": 3,
+              "step_titles": [
+                "단면의 넓이와 부피 적분 식 세우기",
+                "부분적분법을 이용한 부정적분 계산",
+                "정적분 값 계산 및 최종 답 구하기"
+              ],
+              "final_answer": "①",
+              "is_correct": false,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "단면의 넓이 식 부피 적분 식 설정": 1,
+            "부분적분법을 이용한 부정적분 계산": 2,
+            "정적분 값 계산 및 최종 답 도출": 1,
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분식 계산 (부분적분법)": 1,
+            "최종 답안 도출": 1,
+            "단면의 넓이와 부피 적분 식 세우기": 1,
+            "정적분 값 계산 및 최종 답 구하기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "단면의 넓이 식 부피 적분 식 설정": 1,
+            "부분적분법을 이용한 부정적분 계산": 2,
+            "정적분 값 계산 및 최종 답 도출": 1,
+            "단면의 넓이 $S(x)$ 구하기": 1,
+            "부피 적분식 계산 (부분적분법)": 1,
+            "최종 답안 도출": 1,
+            "단면의 넓이와 부피 적분 식 세우기": 1,
+            "정적분 값 계산 및 최종 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.86645460128784,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 부피 적분 설정",
+                "적분 계산: 부분 적분 적용",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.986762285232544,
+              "step_count": 3,
+              "step_titles": [
+                "입체도형 분석 및 부피 공식",
+                "적분 분리 및 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.104028940200806,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 공식",
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\) (①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 39.86645460128784,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 부피 적분 설정",
+                "적분 계산: 부분 적분 적용",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.986762285232544,
+              "step_count": 3,
+              "step_titles": [
+                "입체도형 분석 및 부피 공식",
+                "적분 분리 및 계산",
+                "부피 계산"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 49.104028940200806,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 공식",
+                "부피 적분 설정",
+                "적분 계산",
+                "정적분 평가 및 부피 계산"
+              ],
+              "final_answer": "\\(\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\) (①)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "문제 이해 및 부피 적분 설정": 1,
+            "적분 계산: 부분 적분 적용": 1,
+            "정적분 평가 및 부피 계산": 2,
+            "입체도형 분석 및 부피 공식": 1,
+            "적분 분리 및 계산": 1,
+            "부피 계산": 1,
+            "문제 이해 및 단면적 공식": 1,
+            "부피 적분 설정": 1,
+            "적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 부피 적분 설정": 1,
+            "적분 계산: 부분 적분 적용": 1,
+            "정적분 평가 및 부피 계산": 2,
+            "입체도형 분석 및 부피 공식": 1,
+            "적분 분리 및 계산": 1,
+            "부피 계산": 1,
+            "문제 이해 및 단면적 공식": 1,
+            "부피 적분 설정": 1,
+            "적분 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 87.89758634567261,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "부피 적분식 설정",
+                "적분 계산",
+                "부피 계산 및 정리"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.3110032081604,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해와 단면 넓이",
+                "부피 적분 설정",
+                "적분 계산",
+                "두 적분 합치기",
+                "부피 계산"
+              ],
+              "final_answer": "\\[\n\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\n\\]  \n정답은 ①번이다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 134.61504578590393,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 단면적 구하기",
+                "단면적 함수 정리",
+                "부피 구하기",
+                "적분 계산",
+                "I 값 합치기",
+                "부피 완성"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 87.89758634567261,
+              "step_count": 4,
+              "step_titles": [
+                "문제 이해 및 단면적 설정",
+                "부피 적분식 설정",
+                "적분 계산",
+                "부피 계산 및 정리"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 25.3110032081604,
+              "step_count": 5,
+              "step_titles": [
+                "문제 이해와 단면 넓이",
+                "부피 적분 설정",
+                "적분 계산",
+                "두 적분 합치기",
+                "부피 계산"
+              ],
+              "final_answer": "\\[\n\\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\n\\]  \n정답은 ①번이다.",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 134.61504578590393,
+              "step_count": 6,
+              "step_titles": [
+                "조건 정리 및 단면적 구하기",
+                "단면적 함수 정리",
+                "부피 구하기",
+                "적분 계산",
+                "I 값 합치기",
+                "부피 완성"
+              ],
+              "final_answer": "① \\(\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}\\)",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 5.0,
+          "title_frequency": {
+            "문제 이해 및 단면적 설정": 1,
+            "부피 적분식 설정": 1,
+            "적분 계산": 3,
+            "부피 계산 및 정리": 1,
+            "문제 이해와 단면 넓이": 1,
+            "부피 적분 설정": 1,
+            "두 적분 합치기": 1,
+            "부피 계산": 1,
+            "조건 정리 및 단면적 구하기": 1,
+            "단면적 함수 정리": 1,
+            "부피 구하기": 1,
+            "I 값 합치기": 1,
+            "부피 완성": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 단면적 설정": 1,
+            "부피 적분식 설정": 1,
+            "적분 계산": 3,
+            "부피 계산 및 정리": 1,
+            "문제 이해와 단면 넓이": 1,
+            "부피 적분 설정": 1,
+            "두 적분 합치기": 1,
+            "부피 계산": 1,
+            "조건 정리 및 단면적 구하기": 1,
+            "단면적 함수 정리": 1,
+            "부피 구하기": 1,
+            "I 값 합치기": 1,
+            "부피 완성": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.66407084465027,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 단면의 넓이 공식 적용",
+                "부피 적분 설정 및 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "$\\boxed{\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.4446542263031,
+              "step_count": 5,
+              "step_titles": [
+                "문제 조건 정리",
+                "단면적 표현",
+                "부피 적분식 설정",
+                "각 적분 계산",
+                "적분 총합 및 부피 계산"
+              ],
+              "final_answer": "① $ \\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16} $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.373100757598877,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 넓이 표현",
+                "부피 적분 계산",
+                "각 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.66407084465027,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 단면의 넓이 공식 적용",
+                "부피 적분 설정 및 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "$\\boxed{\\dfrac{\\sqrt{3}(3 + 8\\ln 2)}{16}}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 51.4446542263031,
+              "step_count": 5,
+              "step_titles": [
+                "문제 조건 정리",
+                "단면적 표현",
+                "부피 적분식 설정",
+                "각 적분 계산",
+                "적분 총합 및 부피 계산"
+              ],
+              "final_answer": "① $ \\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16} $",
+              "is_correct": true,
+              "resumed_from_csv": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 26.373100757598877,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "정삼각형 넓이 표현",
+                "부피 적분 계산",
+                "각 적분 계산",
+                "최종 부피 계산"
+              ],
+              "final_answer": "① $\\displaystyle \\frac{\\sqrt{3}(3 + 8\\ln 2)}{16}$",
+              "is_correct": true,
+              "resumed_from_csv": false
+            }
+          ],
+          "avg_step_count": 4.666666666666667,
+          "title_frequency": {
+            "조건 정리": 2,
+            "정삼각형 단면의 넓이 공식 적용": 1,
+            "부피 적분 설정 및 계산": 1,
+            "최종 부피 계산": 2,
+            "문제 조건 정리": 1,
+            "단면적 표현": 1,
+            "부피 적분식 설정": 1,
+            "각 적분 계산": 2,
+            "적분 총합 및 부피 계산": 1,
+            "정삼각형 넓이 표현": 1,
+            "부피 적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.666666666666667,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "정삼각형 단면의 넓이 공식 적용": 1,
+            "부피 적분 설정 및 계산": 1,
+            "최종 부피 계산": 2,
+            "문제 조건 정리": 1,
+            "단면적 표현": 1,
+            "부피 적분식 설정": 1,
+            "각 적분 계산": 2,
+            "적분 총합 및 부피 계산": 1,
+            "정삼각형 넓이 표현": 1,
+            "부피 적분 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.6666666666666665,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 1,
+          "부피 적분 계산": 4,
+          "단면 넓이 식 세우기": 2,
+          "문제 파악 및 부피 공식 설정": 2,
+          "적분 분리": 3,
+          "부분적분으로 두 번째 적분 계산": 3,
+          "최종 부피 계산": 5,
+          "문제 분석 및 부피 공식 설정": 1,
+          "단면의 넓이 식 부피 적분 식 설정": 1,
+          "부분적분법을 이용한 부정적분 계산": 2,
+          "정적분 값 계산 및 최종 답 도출": 1,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분식 계산 (부분적분법)": 1,
+          "최종 답안 도출": 1,
+          "단면의 넓이와 부피 적분 식 세우기": 1,
+          "정적분 값 계산 및 최종 답 구하기": 1,
+          "문제 이해 및 부피 적분 설정": 1,
+          "적분 계산: 부분 적분 적용": 1,
+          "정적분 평가 및 부피 계산": 2,
+          "입체도형 분석 및 부피 공식": 1,
+          "적분 분리 및 계산": 1,
+          "부피 계산": 2,
+          "문제 이해 및 단면적 공식": 1,
+          "부피 적분 설정": 2,
+          "적분 계산": 4,
+          "문제 이해 및 단면적 설정": 1,
+          "부피 적분식 설정": 2,
+          "부피 계산 및 정리": 1,
+          "문제 이해와 단면 넓이": 1,
+          "두 적분 합치기": 1,
+          "조건 정리 및 단면적 구하기": 1,
+          "단면적 함수 정리": 1,
+          "부피 구하기": 1,
+          "I 값 합치기": 1,
+          "부피 완성": 1,
+          "조건 정리": 2,
+          "정삼각형 단면의 넓이 공식 적용": 1,
+          "부피 적분 설정 및 계산": 1,
+          "문제 조건 정리": 1,
+          "단면적 표현": 1,
+          "각 적분 계산": 2,
+          "적분 총합 및 부피 계산": 1,
+          "정삼각형 넓이 표현": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 4.166666666666667,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분": 4,
+          "밑면과 단면(정삼각형) 넓이 설정": 1,
+          "적분 계산": 8,
+          "부피 정리 및 보기와 대조": 1,
+          "부피 정리 및 보기와 비교": 1,
+          "문제 파악 및 부피 공식 설정": 3,
+          "적분 분리": 3,
+          "부분적분으로 두 번째 적분 계산": 2,
+          "최종 부피 계산": 5,
+          "첫 번째 적분 계산": 1,
+          "두 번째 적분 계산 (부분적분)": 1,
+          "부피 계산": 3,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분 식 세우기": 1,
+          "정적분 계산": 1,
+          "단면의 넓이와 부피 식 설정": 2,
+          "부분적분법을 이용한 적분 계산": 2,
+          "정적분 값 계산 및 정답 도출": 2,
+          "부피 공식 설정": 1,
+          "부피 값 도출": 1,
+          "부피 적분 설정": 6,
+          "정적분 평가 및 부피 계산": 1,
+          "단면적 공식화": 1,
+          "부피 최종 계산": 1,
+          "문제 이해 및 조건 정리": 2,
+          "부피 적분식 설정": 1,
+          "적분 결과 합치기": 1,
+          "단면의 넓이 함수 구하기": 1,
+          "밑면의 넓이 함수 도출": 1,
+          "정삼각형의 넓이 공식 적용": 1,
+          "적분값 합치기": 1,
+          "부피 최종식": 1,
+          "조건 정리": 3,
+          "부분적분 계산": 2,
+          "전체 적분 합산": 3,
+          "단면적 함수 도출": 1,
+          "적분 계산 (첫 번째 항)": 1,
+          "적분 계산 (두 번째 항)": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 4.277777777777778,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분 계산": 1,
+          "단면 넓이 설정": 1,
+          "부피 적분": 4,
+          "적분 계산": 5,
+          "부피 정리 및 보기와 비교": 1,
+          "문제 파악 및 부피 공식 설정": 3,
+          "적분 분리": 1,
+          "부분적분으로 두 번째 적분 계산": 1,
+          "최종 부피 계산": 6,
+          "부피 적분식 설정": 2,
+          "첫 번째 적분 계산": 2,
+          "두 번째 적분 계산 (부분적분)": 2,
+          "부피 계산": 3,
+          "단면의 넓이 설정": 1,
+          "부피 적분 식 수립": 1,
+          "정적분 계산": 1,
+          "단면의 넓이와 부피 적분식 설정": 2,
+          "부분적분법을 이용한 부정적분 계산": 2,
+          "정적분 계산 및 최종 답 도출": 1,
+          "정적분 값 계산 및 최종 부피 도출": 1,
+          "단면의 변 길이와 넓이 구하기": 1,
+          "부피 적분식 세우기": 2,
+          "적분 계산: 부분적분 활용": 1,
+          "정적분 평가 및 부피 계산": 1,
+          "문제 이해 및 접근법": 1,
+          "부피 공식 설정": 1,
+          "정적분 평가": 1,
+          "문제 이해 및 조건 정리": 2,
+          "단면적 구하기": 2,
+          "부피 식 정리": 1,
+          "단면의 넓이 식 구하기": 1,
+          "부피 적분 설정": 3,
+          "합치기": 1,
+          "문제 이해 및 단면적 설정": 1,
+          "적분 결과 합치기": 1,
+          "보기와 비교": 1,
+          "수정된 부피 계산": 1,
+          "조건 정리": 3,
+          "단면의 성질 분석": 1,
+          "적분 계산 준비": 2,
+          "부분적분 적용": 1,
+          "전체 적분 값 합산": 2,
+          "부분적분 계산": 1,
+          "정삼각형의 넓이 공식 적용": 1,
+          "부분적분: $ \\int x \\ln x \\, dx $ 계산": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.8333333333333335,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 2,
+          "부피 적분": 3,
+          "적분 계산": 9,
+          "부피 정리 및 보기와 비교": 1,
+          "밑면 구간과 단면 넓이 설정": 1,
+          "부피 적분 계산": 2,
+          "문제 파악 및 단면적 설정": 1,
+          "부피 적분식 설정": 1,
+          "첫 번째 적분 계산": 1,
+          "두 번째 적분 계산 (부분적분)": 1,
+          "최종 부피 계산": 5,
+          "문제 파악 및 부피 공식 설정": 2,
+          "적분 분리": 1,
+          "부분적분으로 두 번째 적분 계산": 1,
+          "단면의 넓이 식 구하기": 1,
+          "부분적분법을 이용한 정적분 계산": 1,
+          "최종 부피 도출": 1,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분식 계산 (부분적분법)": 1,
+          "최종 답 도출": 1,
+          "단면의 넓이 식 세우기": 1,
+          "부피 적분식 설정 및 부분적분": 1,
+          "정적분 계산 및 답 도출": 1,
+          "부피 적분 설정": 3,
+          "정적분 평가 및 부피 계산": 1,
+          "부피 값 계산": 1,
+          "문제 분석": 1,
+          "정적분 및 부피 도출": 1,
+          "문제 이해 및 단면적 설정": 1,
+          "부피 적분식 작성": 1,
+          "정적분 계산": 1,
+          "부피 계산": 2,
+          "문제 이해 및 단면적 구하기": 1,
+          "부피 구하기": 1,
+          "문제 이해 및 정리": 1,
+          "단면적 함수 정리": 1,
+          "입체 부피 적분": 1,
+          "두 적분 합치기": 1,
+          "부피 최종 계산": 1,
+          "조건 정리": 3,
+          "단면 결정": 1,
+          "정삼각형 넓이 공식 적용": 2,
+          "단면 넓이 식 세우기": 1,
+          "부피 적분식 세우기": 1,
+          "적분 계산 준비": 1,
+          "전체 적분 값 합산": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.6666666666666665,
+        "title_frequency_all_models": {
+          "밑면과 단면 넓이 설정": 1,
+          "부피 적분 계산": 4,
+          "단면 넓이 식 세우기": 2,
+          "문제 파악 및 부피 공식 설정": 2,
+          "적분 분리": 3,
+          "부분적분으로 두 번째 적분 계산": 3,
+          "최종 부피 계산": 5,
+          "문제 분석 및 부피 공식 설정": 1,
+          "단면의 넓이 식 부피 적분 식 설정": 1,
+          "부분적분법을 이용한 부정적분 계산": 2,
+          "정적분 값 계산 및 최종 답 도출": 1,
+          "단면의 넓이 $S(x)$ 구하기": 1,
+          "부피 적분식 계산 (부분적분법)": 1,
+          "최종 답안 도출": 1,
+          "단면의 넓이와 부피 적분 식 세우기": 1,
+          "정적분 값 계산 및 최종 답 구하기": 1,
+          "문제 이해 및 부피 적분 설정": 1,
+          "적분 계산: 부분 적분 적용": 1,
+          "정적분 평가 및 부피 계산": 2,
+          "입체도형 분석 및 부피 공식": 1,
+          "적분 분리 및 계산": 1,
+          "부피 계산": 2,
+          "문제 이해 및 단면적 공식": 1,
+          "부피 적분 설정": 2,
+          "적분 계산": 4,
+          "문제 이해 및 단면적 설정": 1,
+          "부피 적분식 설정": 2,
+          "부피 계산 및 정리": 1,
+          "문제 이해와 단면 넓이": 1,
+          "두 적분 합치기": 1,
+          "조건 정리 및 단면적 구하기": 1,
+          "단면적 함수 정리": 1,
+          "부피 구하기": 1,
+          "I 값 합치기": 1,
+          "부피 완성": 1,
+          "조건 정리": 2,
+          "정삼각형 단면의 넓이 공식 적용": 1,
+          "부피 적분 설정 및 계산": 1,
+          "문제 조건 정리": 1,
+          "단면적 표현": 1,
+          "각 적분 계산": 2,
+          "적분 총합 및 부피 계산": 1,
+          "정삼각형 넓이 표현": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.986111111111111,
+      "title_frequency": {
+        "밑면과 단면 넓이 설정": 7,
+        "부피 적분": 11,
+        "밑면과 단면(정삼각형) 넓이 설정": 1,
+        "적분 계산": 26,
+        "부피 정리 및 보기와 대조": 1,
+        "부피 정리 및 보기와 비교": 3,
+        "문제 파악 및 부피 공식 설정": 10,
+        "적분 분리": 8,
+        "부분적분으로 두 번째 적분 계산": 7,
+        "최종 부피 계산": 21,
+        "첫 번째 적분 계산": 4,
+        "두 번째 적분 계산 (부분적분)": 4,
+        "부피 계산": 10,
+        "단면의 넓이 $S(x)$ 구하기": 3,
+        "부피 적분 식 세우기": 1,
+        "정적분 계산": 3,
+        "단면의 넓이와 부피 식 설정": 2,
+        "부분적분법을 이용한 적분 계산": 2,
+        "정적분 값 계산 및 정답 도출": 2,
+        "부피 공식 설정": 2,
+        "부피 값 도출": 1,
+        "부피 적분 설정": 14,
+        "정적분 평가 및 부피 계산": 5,
+        "단면적 공식화": 1,
+        "부피 최종 계산": 2,
+        "문제 이해 및 조건 정리": 4,
+        "부피 적분식 설정": 6,
+        "적분 결과 합치기": 2,
+        "단면의 넓이 함수 구하기": 1,
+        "밑면의 넓이 함수 도출": 1,
+        "정삼각형의 넓이 공식 적용": 2,
+        "적분값 합치기": 1,
+        "부피 최종식": 1,
+        "조건 정리": 11,
+        "부분적분 계산": 3,
+        "전체 적분 합산": 3,
+        "단면적 함수 도출": 1,
+        "적분 계산 (첫 번째 항)": 1,
+        "적분 계산 (두 번째 항)": 1,
+        "부피 적분 계산": 7,
+        "단면 넓이 설정": 1,
+        "단면의 넓이 설정": 1,
+        "부피 적분 식 수립": 1,
+        "단면의 넓이와 부피 적분식 설정": 2,
+        "부분적분법을 이용한 부정적분 계산": 4,
+        "정적분 계산 및 최종 답 도출": 1,
+        "정적분 값 계산 및 최종 부피 도출": 1,
+        "단면의 변 길이와 넓이 구하기": 1,
+        "부피 적분식 세우기": 3,
+        "적분 계산: 부분적분 활용": 1,
+        "문제 이해 및 접근법": 1,
+        "정적분 평가": 1,
+        "단면적 구하기": 2,
+        "부피 식 정리": 1,
+        "단면의 넓이 식 구하기": 2,
+        "합치기": 1,
+        "문제 이해 및 단면적 설정": 3,
+        "보기와 비교": 1,
+        "수정된 부피 계산": 1,
+        "단면의 성질 분석": 1,
+        "적분 계산 준비": 3,
+        "부분적분 적용": 1,
+        "전체 적분 값 합산": 3,
+        "부분적분: $ \\int x \\ln x \\, dx $ 계산": 1,
+        "밑면 구간과 단면 넓이 설정": 1,
+        "문제 파악 및 단면적 설정": 1,
+        "부분적분법을 이용한 정적분 계산": 1,
+        "최종 부피 도출": 1,
+        "부피 적분식 계산 (부분적분법)": 2,
+        "최종 답 도출": 1,
+        "단면의 넓이 식 세우기": 1,
+        "부피 적분식 설정 및 부분적분": 1,
+        "정적분 계산 및 답 도출": 1,
+        "부피 값 계산": 1,
+        "문제 분석": 1,
+        "정적분 및 부피 도출": 1,
+        "부피 적분식 작성": 1,
+        "문제 이해 및 단면적 구하기": 1,
+        "부피 구하기": 2,
+        "문제 이해 및 정리": 1,
+        "단면적 함수 정리": 2,
+        "입체 부피 적분": 1,
+        "두 적분 합치기": 2,
+        "단면 결정": 1,
+        "정삼각형 넓이 공식 적용": 2,
+        "단면 넓이 식 세우기": 3,
+        "문제 분석 및 부피 공식 설정": 1,
+        "단면의 넓이 식 부피 적분 식 설정": 1,
+        "정적분 값 계산 및 최종 답 도출": 1,
+        "최종 답안 도출": 1,
+        "단면의 넓이와 부피 적분 식 세우기": 1,
+        "정적분 값 계산 및 최종 답 구하기": 1,
+        "문제 이해 및 부피 적분 설정": 1,
+        "적분 계산: 부분 적분 적용": 1,
+        "입체도형 분석 및 부피 공식": 1,
+        "적분 분리 및 계산": 1,
+        "문제 이해 및 단면적 공식": 1,
+        "부피 계산 및 정리": 1,
+        "문제 이해와 단면 넓이": 1,
+        "조건 정리 및 단면적 구하기": 1,
+        "I 값 합치기": 1,
+        "부피 완성": 1,
+        "정삼각형 단면의 넓이 공식 적용": 1,
+        "부피 적분 설정 및 계산": 1,
+        "문제 조건 정리": 1,
+        "단면적 표현": 1,
+        "각 적분 계산": 2,
+        "적분 총합 및 부피 계산": 1,
+        "정삼각형 넓이 표현": 1
+      },
+      "accuracy": 0.8888888888888888,
+      "n_samples": 72
+    }
+  }
+}

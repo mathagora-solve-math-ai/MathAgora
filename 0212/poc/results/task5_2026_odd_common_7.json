@@ -1,0 +1,3194 @@
+{
+  "task": "5",
+  "meta": {
+    "started_at_utc": "2026-02-12T20:33:53Z",
+    "ended_at_utc": "2026-02-12T21:16:20Z",
+    "elapsed_seconds": 2546.99,
+    "problem_tag": "2026_odd_common_7",
+    "n_expected_calls": 72,
+    "n_actual_calls": 72
+  },
+  "problem": {
+    "id": "2026_odd_common_7",
+    "label": "2026_odd_common_7 (수학2, 3점)",
+    "gold_answer": "5"
+  },
+  "prompt_version": "v4_flow_titled",
+  "temperatures": [
+    0.0,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "n_runs_per_temperature_model": 3,
+  "models": {
+    "gpt-5.2": "openai/gpt-5.2",
+    "claude-opus-4.5": "anthropic/claude-opus-4.5",
+    "gemini-3-pro": "google/gemini-3-pro-preview",
+    "grok-4": "x-ai/grok-4",
+    "deepseek-v3.2": "deepseek/deepseek-v3.2",
+    "qwen3-235b-a22b-2507": "qwen/qwen3-235b-a22b-2507"
+  },
+  "same_temperature": {
+    "0.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.890097379684448,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.014954566955566,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.607298374176025,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.890097379684448,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.014954566955566,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 5.607298374176025,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점과 구간 설정": 3,
+            "위아래 함수 판별": 3,
+            "정적분으로 넓이 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점과 구간 설정": 3,
+            "위아래 함수 판별": 3,
+            "정적분으로 넓이 계산": 3
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.065386533737183,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.162184476852417,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.200577974319458,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.065386533737183,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.162184476852417,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.200577974319458,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "영역 파악": 3,
+            "위아래 곡선 판별": 3,
+            "넓이 적분 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 파악": 3,
+            "위아래 곡선 판별": 3,
+            "넓이 적분 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.588531255722046,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.920708656311035,
+              "step_count": 2,
+              "step_titles": [
+                "적분 구간 및 피적분함수 결정",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.565688848495483,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 20.588531255722046,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 22.920708656311035,
+              "step_count": 2,
+              "step_titles": [
+                "적분 구간 및 피적분함수 결정",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 22.565688848495483,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점 및 적분 구간 확인": 2,
+            "정적분 식 세우기": 2,
+            "적분 계산": 2,
+            "적분 구간 및 피적분함수 결정": 1,
+            "정적분 계산": 1
+          },
+          "accuracy": 0.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "raw_title_counts": {
+            "교점 및 적분 구간 확인": 2,
+            "정적분 식 세우기": 2,
+            "적분 계산": 2,
+            "적분 구간 및 피적분함수 결정": 1,
+            "정적분 계산": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 88.17441892623901,
+              "step_count": 4,
+              "step_titles": [
+                "영역 식별",
+                "적분 설정",
+                "피적분함수 간단화",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.611228466033936,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 분석 및 영역 확인",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 68.3055031299591,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 분석 및 교점 확인",
+                "영역 식별 및 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 88.17441892623901,
+              "step_count": 4,
+              "step_titles": [
+                "영역 식별",
+                "적분 설정",
+                "피적분함수 간단화",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 55.611228466033936,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 분석 및 영역 확인",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 68.3055031299591,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 분석 및 교점 확인",
+                "영역 식별 및 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.3333333333333335,
+          "title_frequency": {
+            "영역 식별": 1,
+            "적분 설정": 1,
+            "피적분함수 간단화": 1,
+            "적분 계산": 3,
+            "곡선 분석 및 영역 확인": 1,
+            "넓이 적분 설정": 1,
+            "곡선 분석 및 교점 확인": 1,
+            "영역 식별 및 적분 설정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.3333333333333335,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 식별": 1,
+            "적분 설정": 1,
+            "피적분함수 간단화": 1,
+            "적분 계산": 3,
+            "곡선 분석 및 영역 확인": 1,
+            "넓이 적분 설정": 1,
+            "곡선 분석 및 교점 확인": 1,
+            "영역 식별 및 적분 설정": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.400742530822754,
+              "step_count": 3,
+              "step_titles": [
+                "영역 이해 및 적분 구간 설정",
+                "넓이를 정적분으로 표현",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{16}{5}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.826882362365723,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 영역 파악",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.86406588554382,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 영역 파악",
+                "넓이 적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.400742530822754,
+              "step_count": 3,
+              "step_titles": [
+                "영역 이해 및 적분 구간 설정",
+                "넓이를 정적분으로 표현",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\frac{16}{5}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 26.826882362365723,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 영역 파악",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 38.86406588554382,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 영역 파악",
+                "넓이 적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "영역 이해 및 적분 구간 설정": 1,
+            "넓이를 정적분으로 표현": 1,
+            "적분 계산": 3,
+            "그래프와 영역 파악": 2,
+            "넓이 적분 설정": 1,
+            "넓이 적분식 설정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 이해 및 적분 구간 설정": 1,
+            "넓이를 정적분으로 표현": 1,
+            "적분 계산": 3,
+            "그래프와 영역 파악": 2,
+            "넓이 적분 설정": 1,
+            "넓이 적분식 설정": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.703997135162354,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "상대적 위치 확인",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.24624037742615,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 및 대칭성 분석",
+                "적분 구간과 상대 위치 파악",
+                "피적분 함수 정리",
+                "적분 계산",
+                "적분 구간 재정립",
+                "최종 적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 72.09357762336731,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 및 대칭성 분석",
+                "적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 16.703997135162354,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "상대적 위치 확인",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 79.24624037742615,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 및 대칭성 분석",
+                "적분 구간과 상대 위치 파악",
+                "피적분 함수 정리",
+                "적분 계산",
+                "적분 구간 재정립",
+                "최종 적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 72.09357762336731,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 및 대칭성 분석",
+                "적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 구하기": 1,
+            "상대적 위치 확인": 1,
+            "적분 설정": 1,
+            "적분 계산": 3,
+            "교점 및 대칭성 분석": 2,
+            "적분 구간과 상대 위치 파악": 1,
+            "피적분 함수 정리": 1,
+            "적분 구간 재정립": 1,
+            "최종 적분 계산": 1,
+            "적분식 설정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 구하기": 1,
+            "상대적 위치 확인": 1,
+            "적분 설정": 1,
+            "적분 계산": 3,
+            "교점 및 대칭성 분석": 2,
+            "적분 구간과 상대 위치 파악": 1,
+            "피적분 함수 정리": 1,
+            "적분 구간 재정립": 1,
+            "최종 적분 계산": 1,
+            "적분식 설정": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 3,
+          "위아래 함수 판별": 3,
+          "정적분으로 넓이 계산": 3,
+          "영역 파악": 3,
+          "위아래 곡선 판별": 3,
+          "넓이 적분 계산": 3,
+          "교점 및 적분 구간 확인": 2,
+          "정적분 식 세우기": 2,
+          "적분 계산": 11,
+          "적분 구간 및 피적분함수 결정": 1,
+          "정적분 계산": 1,
+          "영역 식별": 1,
+          "적분 설정": 2,
+          "피적분함수 간단화": 1,
+          "곡선 분석 및 영역 확인": 1,
+          "넓이 적분 설정": 2,
+          "곡선 분석 및 교점 확인": 1,
+          "영역 식별 및 적분 설정": 1,
+          "영역 이해 및 적분 구간 설정": 1,
+          "넓이를 정적분으로 표현": 1,
+          "그래프와 영역 파악": 2,
+          "넓이 적분식 설정": 1,
+          "조건 정리": 3,
+          "교점 구하기": 1,
+          "상대적 위치 확인": 1,
+          "교점 및 대칭성 분석": 2,
+          "적분 구간과 상대 위치 파악": 1,
+          "피적분 함수 정리": 1,
+          "적분 구간 재정립": 1,
+          "최종 적분 계산": 1,
+          "적분식 설정": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      }
+    },
+    "0.5": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.536466121673584,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판단",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.311358690261841,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{16}{5}}\\quad(\\text{⑤})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.267960071563721,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 6.536466121673584,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판단",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 7.311358690261841,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{16}{5}}\\quad(\\text{⑤})\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.267960071563721,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점과 구간 설정": 3,
+            "위아래 함수 판단": 1,
+            "정적분으로 넓이 계산": 2,
+            "위아래 곡선 판별": 1,
+            "넓이 적분 계산": 1,
+            "위아래 함수 판별": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점과 구간 설정": 3,
+            "위아래 함수 판단": 1,
+            "정적분으로 넓이 계산": 2,
+            "위아래 곡선 판별": 1,
+            "넓이 적분 계산": 1,
+            "위아래 함수 판별": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.840050458908081,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.9040687084198,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.801832914352417,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 9.840050458908081,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.9040687084198,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 7.801832914352417,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "영역 파악": 3,
+            "위아래 곡선 판별": 3,
+            "넓이 적분 계산": 3
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 파악": 3,
+            "위아래 곡선 판별": 3,
+            "넓이 적분 계산": 3
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.023542881011963,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 파악",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.965927124023438,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산 및 답 구하기"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.939233779907227,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 18.023542881011963,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 파악",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.965927124023438,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산 및 답 구하기"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 20.939233779907227,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점 및 적분 구간 파악": 1,
+            "정적분 식 세우기": 3,
+            "적분 계산": 2,
+            "교점 및 적분 구간 확인": 2,
+            "적분 계산 및 답 구하기": 1
+          },
+          "accuracy": 0.3333333333333333,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 0.3333333333333333,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.0,
+            "upper": 0.8667777662061142
+          },
+          "raw_title_counts": {
+            "교점 및 적분 구간 파악": 1,
+            "정적분 식 세우기": 3,
+            "적분 계산": 2,
+            "교점 및 적분 구간 확인": 2,
+            "적분 계산 및 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 67.86518263816833,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "영역 분석",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 83.23108386993408,
+              "step_count": 4,
+              "step_titles": [
+                "교점 확인",
+                "상하 곡선 구분",
+                "둘러싸인 영역 식별",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 68.33717083930969,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 함수 결정",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 67.86518263816833,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "영역 분석",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 83.23108386993408,
+              "step_count": 4,
+              "step_titles": [
+                "교점 확인",
+                "상하 곡선 구분",
+                "둘러싸인 영역 식별",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 68.33717083930969,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 함수 결정",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "교점 찾기": 2,
+            "영역 분석": 1,
+            "넓이 적분 설정": 2,
+            "적분 계산": 3,
+            "교점 확인": 1,
+            "상하 곡선 구분": 1,
+            "둘러싸인 영역 식별": 1,
+            "상하 함수 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 찾기": 2,
+            "영역 분석": 1,
+            "넓이 적분 설정": 2,
+            "적분 계산": 3,
+            "교점 확인": 1,
+            "상하 곡선 구분": 1,
+            "둘러싸인 영역 식별": 1,
+            "상하 함수 결정": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.35530138015747,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 교점 확인",
+                "어떤 곡선이 위에 있는지 판단",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.828675031661987,
+              "step_count": 4,
+              "step_titles": [
+                "그래프 개형 및 교점 파악",
+                "적분 구간 및 넓이 설정",
+                "피적분함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "\\( \\dfrac{16}{5} \\)  \n정답: ⑤",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.9058997631073,
+              "step_count": 4,
+              "step_titles": [
+                "그래프 개형 및 영역 파악",
+                "교점 구하기",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 15.35530138015747,
+              "step_count": 3,
+              "step_titles": [
+                "그래프와 교점 확인",
+                "어떤 곡선이 위에 있는지 판단",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.828675031661987,
+              "step_count": 4,
+              "step_titles": [
+                "그래프 개형 및 교점 파악",
+                "적분 구간 및 넓이 설정",
+                "피적분함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "\\( \\dfrac{16}{5} \\)  \n정답: ⑤",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 50.9058997631073,
+              "step_count": 4,
+              "step_titles": [
+                "그래프 개형 및 영역 파악",
+                "교점 구하기",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "그래프와 교점 확인": 1,
+            "어떤 곡선이 위에 있는지 판단": 1,
+            "적분 계산": 3,
+            "그래프 개형 및 교점 파악": 1,
+            "적분 구간 및 넓이 설정": 1,
+            "피적분함수 정리": 1,
+            "그래프 개형 및 영역 파악": 1,
+            "교점 구하기": 1,
+            "넓이 적분 설정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "그래프와 교점 확인": 1,
+            "어떤 곡선이 위에 있는지 판단": 1,
+            "적분 계산": 3,
+            "그래프 개형 및 교점 파악": 1,
+            "적분 구간 및 넓이 설정": 1,
+            "피적분함수 정리": 1,
+            "그래프 개형 및 영역 파악": 1,
+            "교점 구하기": 1,
+            "넓이 적분 설정": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.14409351348877,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기",
+                "위치 관계 분석",
+                "대칭성 검토",
+                "적분 범위 결정",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.14991044998169,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 계산",
+                "적분 구간 설정",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 168.89194250106812,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기",
+                "적분 구간 및 상하 함수 결정",
+                "피적분 함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 41.14409351348877,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기",
+                "위치 관계 분석",
+                "대칭성 검토",
+                "적분 범위 결정",
+                "넓이 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 31.14991044998169,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 계산",
+                "적분 구간 설정",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 168.89194250106812,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기",
+                "적분 구간 및 상하 함수 결정",
+                "피적분 함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "교점 찾기": 2,
+            "위치 관계 분석": 1,
+            "대칭성 검토": 1,
+            "적분 범위 결정": 1,
+            "넓이 적분 설정": 1,
+            "적분 계산": 3,
+            "교점 계산": 1,
+            "적분 구간 설정": 1,
+            "적분 구간 및 상하 함수 결정": 1,
+            "피적분 함수 정리": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "교점 찾기": 2,
+            "위치 관계 분석": 1,
+            "대칭성 검토": 1,
+            "적분 범위 결정": 1,
+            "넓이 적분 설정": 1,
+            "적분 계산": 3,
+            "교점 계산": 1,
+            "적분 구간 설정": 1,
+            "적분 구간 및 상하 함수 결정": 1,
+            "피적분 함수 정리": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.6666666666666665,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 3,
+          "위아래 함수 판단": 1,
+          "정적분으로 넓이 계산": 2,
+          "위아래 곡선 판별": 4,
+          "넓이 적분 계산": 4,
+          "위아래 함수 판별": 1,
+          "영역 파악": 3,
+          "교점 및 적분 구간 파악": 1,
+          "정적분 식 세우기": 3,
+          "적분 계산": 11,
+          "교점 및 적분 구간 확인": 2,
+          "적분 계산 및 답 구하기": 1,
+          "교점 찾기": 4,
+          "영역 분석": 1,
+          "넓이 적분 설정": 4,
+          "교점 확인": 1,
+          "상하 곡선 구분": 1,
+          "둘러싸인 영역 식별": 1,
+          "상하 함수 결정": 1,
+          "그래프와 교점 확인": 1,
+          "어떤 곡선이 위에 있는지 판단": 1,
+          "그래프 개형 및 교점 파악": 1,
+          "적분 구간 및 넓이 설정": 1,
+          "피적분함수 정리": 1,
+          "그래프 개형 및 영역 파악": 1,
+          "교점 구하기": 1,
+          "조건 정리": 3,
+          "위치 관계 분석": 1,
+          "대칭성 검토": 1,
+          "적분 범위 결정": 1,
+          "교점 계산": 1,
+          "적분 구간 설정": 1,
+          "적분 구간 및 상하 함수 결정": 1,
+          "피적분 함수 정리": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      }
+    },
+    "0.7": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.014076232910156,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.563323020935059,
+              "step_count": 2,
+              "step_titles": [
+                "교점과 경계 확인",
+                "넓이 적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.838449239730835,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 경계 구간 찾기",
+                "위아래 함수 결정",
+                "적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.014076232910156,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.563323020935059,
+              "step_count": 2,
+              "step_titles": [
+                "교점과 경계 확인",
+                "넓이 적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.838449239730835,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 경계 구간 찾기",
+                "위아래 함수 결정",
+                "적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "교점과 구간 설정": 1,
+            "위아래 함수 판별": 1,
+            "정적분으로 넓이 계산": 1,
+            "교점과 경계 확인": 1,
+            "넓이 적분 설정 및 계산": 1,
+            "교점과 경계 구간 찾기": 1,
+            "위아래 함수 결정": 1,
+            "적분으로 넓이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점과 구간 설정": 1,
+            "위아래 함수 판별": 1,
+            "정적분으로 넓이 계산": 1,
+            "교점과 경계 확인": 1,
+            "넓이 적분 설정 및 계산": 1,
+            "교점과 경계 구간 찾기": 1,
+            "위아래 함수 결정": 1,
+            "적분으로 넓이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.992006778717041,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.47475266456604,
+              "step_count": 3,
+              "step_titles": [
+                "영역 분석",
+                "상하 관계 확인",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.958665370941162,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 7.992006778717041,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 8.47475266456604,
+              "step_count": 3,
+              "step_titles": [
+                "영역 분석",
+                "상하 관계 확인",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.958665370941162,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 판별",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "영역 파악": 2,
+            "위아래 곡선 판별": 2,
+            "넓이 적분": 1,
+            "영역 분석": 1,
+            "상하 관계 확인": 1,
+            "넓이 적분 계산": 2
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 파악": 2,
+            "위아래 곡선 판별": 2,
+            "넓이 적분": 1,
+            "영역 분석": 1,
+            "상하 관계 확인": 1,
+            "넓이 적분 계산": 2
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.2926082611084,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "넓이 구하는 식 세우기",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.748422622680664,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.22682785987854,
+              "step_count": 3,
+              "step_titles": [
+                "그래프 교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산 및 답 구하기"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 19.2926082611084,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "넓이 구하는 식 세우기",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 19.748422622680664,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 18.22682785987854,
+              "step_count": 3,
+              "step_titles": [
+                "그래프 교점 및 적분 구간 확인",
+                "정적분 식 세우기",
+                "적분 계산 및 답 구하기"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점 및 적분 구간 확인": 2,
+            "넓이 구하는 식 세우기": 1,
+            "정적분 계산": 1,
+            "정적분 식 세우기": 2,
+            "적분 계산": 1,
+            "그래프 교점 및 적분 구간 확인": 1,
+            "적분 계산 및 답 구하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점 및 적분 구간 확인": 2,
+            "넓이 구하는 식 세우기": 1,
+            "정적분 계산": 1,
+            "정적분 식 세우기": 2,
+            "적분 계산": 1,
+            "그래프 교점 및 적분 구간 확인": 1,
+            "적분 계산 및 답 구하기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 123.02459406852722,
+              "step_count": 4,
+              "step_titles": [
+                "곡선들의 교점 찾기",
+                "상부 및 하부 함수 확인",
+                "둘러싸인 영역 식별",
+                "넓이 적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 57.36661887168884,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 곡선 확인",
+                "영역 설정",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 103.73568391799927,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "영역 식별",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 123.02459406852722,
+              "step_count": 4,
+              "step_titles": [
+                "곡선들의 교점 찾기",
+                "상부 및 하부 함수 확인",
+                "둘러싸인 영역 식별",
+                "넓이 적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 57.36661887168884,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 곡선 확인",
+                "영역 설정",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 103.73568391799927,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "영역 식별",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "곡선들의 교점 찾기": 1,
+            "상부 및 하부 함수 확인": 1,
+            "둘러싸인 영역 식별": 1,
+            "넓이 적분 설정 및 계산": 1,
+            "교점 찾기": 2,
+            "상하 곡선 확인": 1,
+            "영역 설정": 1,
+            "적분 설정 및 계산": 1,
+            "영역 식별": 1,
+            "적분 설정": 1,
+            "적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "곡선들의 교점 찾기": 1,
+            "상부 및 하부 함수 확인": 1,
+            "둘러싸인 영역 식별": 1,
+            "넓이 적분 설정 및 계산": 1,
+            "교점 찾기": 2,
+            "상하 곡선 확인": 1,
+            "영역 설정": 1,
+            "적분 설정 및 계산": 1,
+            "영역 식별": 1,
+            "적분 설정": 1,
+            "적분 계산": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.956661224365234,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 영역 설정",
+                "넓이 적분식 작성",
+                "적분 계산"
+              ],
+              "final_answer": "\\( \\frac{16}{5} \\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.156709671020508,
+              "step_count": 3,
+              "step_titles": [
+                "두 곡선의 교점 찾기",
+                "위아래 곡선 판단",
+                "넓이 구하기"
+              ],
+              "final_answer": "\\[\n\\frac{16}{5}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.79107427597046,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 그래프 개형",
+                "넓이 구하는 정적분 설정",
+                "정적분 계산"
+              ],
+              "final_answer": "\\( \\frac{16}{5} \\)\n\n⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 26.956661224365234,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 영역 설정",
+                "넓이 적분식 작성",
+                "적분 계산"
+              ],
+              "final_answer": "\\( \\frac{16}{5} \\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 16.156709671020508,
+              "step_count": 3,
+              "step_titles": [
+                "두 곡선의 교점 찾기",
+                "위아래 곡선 판단",
+                "넓이 구하기"
+              ],
+              "final_answer": "\\[\n\\frac{16}{5}\n\\]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 35.79107427597046,
+              "step_count": 3,
+              "step_titles": [
+                "문제 이해 및 그래프 개형",
+                "넓이 구하는 정적분 설정",
+                "정적분 계산"
+              ],
+              "final_answer": "\\( \\frac{16}{5} \\)\n\n⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "문제 이해 및 영역 설정": 1,
+            "넓이 적분식 작성": 1,
+            "적분 계산": 1,
+            "두 곡선의 교점 찾기": 1,
+            "위아래 곡선 판단": 1,
+            "넓이 구하기": 1,
+            "문제 이해 및 그래프 개형": 1,
+            "넓이 구하는 정적분 설정": 1,
+            "정적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "문제 이해 및 영역 설정": 1,
+            "넓이 적분식 작성": 1,
+            "적분 계산": 1,
+            "두 곡선의 교점 찾기": 1,
+            "위아래 곡선 판단": 1,
+            "넓이 구하기": 1,
+            "문제 이해 및 그래프 개형": 1,
+            "넓이 구하는 정적분 설정": 1,
+            "정적분 계산": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.818443536758423,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "상대적 위치 확인",
+                "피적분 함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 104.21849942207336,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "함수값 비교",
+                "적분식 설정",
+                "최종 계산 검토"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 64.04467988014221,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "적분 범위와 상대적 위치 확인",
+                "피적분 함수 정리",
+                "대칭성 활용 및 적분 계산",
+                "교점 찾기",
+                "올바른 적분 범위 재설정",
+                "최종 적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 28.818443536758423,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "상대적 위치 확인",
+                "피적분 함수 정리",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 104.21849942207336,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "함수값 비교",
+                "적분식 설정",
+                "최종 계산 검토"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 64.04467988014221,
+              "step_count": 7,
+              "step_titles": [
+                "조건 정리",
+                "적분 범위와 상대적 위치 확인",
+                "피적분 함수 정리",
+                "대칭성 활용 및 적분 계산",
+                "교점 찾기",
+                "올바른 적분 범위 재설정",
+                "최종 적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 5.333333333333333,
+          "title_frequency": {
+            "조건 정리": 3,
+            "상대적 위치 확인": 1,
+            "피적분 함수 정리": 2,
+            "적분 계산": 1,
+            "교점 구하기": 1,
+            "함수값 비교": 1,
+            "적분식 설정": 1,
+            "최종 계산 검토": 1,
+            "적분 범위와 상대적 위치 확인": 1,
+            "대칭성 활용 및 적분 계산": 1,
+            "교점 찾기": 1,
+            "올바른 적분 범위 재설정": 1,
+            "최종 적분 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 5.333333333333333,
+          "step_std": 1.5275252316519465,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 3,
+            "상대적 위치 확인": 1,
+            "피적분 함수 정리": 2,
+            "적분 계산": 1,
+            "교점 구하기": 1,
+            "함수값 비교": 1,
+            "적분식 설정": 1,
+            "최종 계산 검토": 1,
+            "적분 범위와 상대적 위치 확인": 1,
+            "대칭성 활용 및 적분 계산": 1,
+            "교점 찾기": 1,
+            "올바른 적분 범위 재설정": 1,
+            "최종 적분 계산": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.5,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 1,
+          "위아래 함수 판별": 1,
+          "정적분으로 넓이 계산": 1,
+          "교점과 경계 확인": 1,
+          "넓이 적분 설정 및 계산": 2,
+          "교점과 경계 구간 찾기": 1,
+          "위아래 함수 결정": 1,
+          "적분으로 넓이 계산": 1,
+          "영역 파악": 2,
+          "위아래 곡선 판별": 2,
+          "넓이 적분": 1,
+          "영역 분석": 1,
+          "상하 관계 확인": 1,
+          "넓이 적분 계산": 2,
+          "교점 및 적분 구간 확인": 2,
+          "넓이 구하는 식 세우기": 1,
+          "정적분 계산": 2,
+          "정적분 식 세우기": 2,
+          "적분 계산": 4,
+          "그래프 교점 및 적분 구간 확인": 1,
+          "적분 계산 및 답 구하기": 1,
+          "곡선들의 교점 찾기": 1,
+          "상부 및 하부 함수 확인": 1,
+          "둘러싸인 영역 식별": 1,
+          "교점 찾기": 3,
+          "상하 곡선 확인": 1,
+          "영역 설정": 1,
+          "적분 설정 및 계산": 1,
+          "영역 식별": 1,
+          "적분 설정": 1,
+          "문제 이해 및 영역 설정": 1,
+          "넓이 적분식 작성": 1,
+          "두 곡선의 교점 찾기": 1,
+          "위아래 곡선 판단": 1,
+          "넓이 구하기": 1,
+          "문제 이해 및 그래프 개형": 1,
+          "넓이 구하는 정적분 설정": 1,
+          "조건 정리": 3,
+          "상대적 위치 확인": 1,
+          "피적분 함수 정리": 2,
+          "교점 구하기": 1,
+          "함수값 비교": 1,
+          "적분식 설정": 1,
+          "최종 계산 검토": 1,
+          "적분 범위와 상대적 위치 확인": 1,
+          "대칭성 활용 및 적분 계산": 1,
+          "올바른 적분 범위 재설정": 1,
+          "최종 적분 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      }
+    },
+    "1.0": {
+      "per_model": {
+        "gpt-5.2": {
+          "model_id": "openai/gpt-5.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.451801538467407,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.538985013961792,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 곡선 판단",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.029449939727783,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 경계 구간 찾기",
+                "위아래 함수 판별",
+                "적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.451801538467407,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 함수 판별",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.538985013961792,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 구간 설정",
+                "위아래 곡선 판단",
+                "정적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 6.029449939727783,
+              "step_count": 3,
+              "step_titles": [
+                "교점과 경계 구간 찾기",
+                "위아래 함수 판별",
+                "적분으로 넓이 계산"
+              ],
+              "final_answer": "\\(\\displaystyle \\frac{16}{5}\\) (⑤)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.0,
+          "title_frequency": {
+            "교점과 구간 설정": 2,
+            "위아래 함수 판별": 2,
+            "정적분으로 넓이 계산": 2,
+            "위아래 곡선 판단": 1,
+            "교점과 경계 구간 찾기": 1,
+            "적분으로 넓이 계산": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.0,
+          "step_std": 0.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "교점과 구간 설정": 2,
+            "위아래 함수 판별": 2,
+            "정적분으로 넓이 계산": 2,
+            "위아래 곡선 판단": 1,
+            "교점과 경계 구간 찾기": 1,
+            "적분으로 넓이 계산": 1
+          }
+        },
+        "claude-opus-4.5": {
+          "model_id": "anthropic/claude-opus-4.5",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.567996501922607,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 확인",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.195463418960571,
+              "step_count": 2,
+              "step_titles": [
+                "영역 파악 및 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.531836986541748,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 결정",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 8.567996501922607,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 확인",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 6.195463418960571,
+              "step_count": 2,
+              "step_titles": [
+                "영역 파악 및 적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 8.531836986541748,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "위아래 곡선 결정",
+                "넓이 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$\n[/FINAL_ANSWER]",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "영역 파악": 2,
+            "위아래 곡선 확인": 1,
+            "넓이 적분 계산": 2,
+            "영역 파악 및 적분 설정": 1,
+            "적분 계산": 1,
+            "위아래 곡선 결정": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "영역 파악": 2,
+            "위아래 곡선 확인": 1,
+            "넓이 적분 계산": 2,
+            "영역 파악 및 적분 설정": 1,
+            "적분 계산": 1,
+            "위아래 곡선 결정": 1
+          }
+        },
+        "gemini-3-pro": {
+          "model_id": "google/gemini-3-pro-preview",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.899160385131836,
+              "step_count": 2,
+              "step_titles": [
+                "적분 구간 및 피적분함수 결정",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.170310735702515,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 수립",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.197620630264282,
+              "step_count": 3,
+              "step_titles": [
+                "교점 확인 및 적분 구간 설정",
+                "정적분 식 세우기",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 55.899160385131836,
+              "step_count": 2,
+              "step_titles": [
+                "적분 구간 및 피적분함수 결정",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤",
+              "is_correct": false
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 21.170310735702515,
+              "step_count": 3,
+              "step_titles": [
+                "교점 및 적분 구간 확인",
+                "정적분 식 수립",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 24.197620630264282,
+              "step_count": 3,
+              "step_titles": [
+                "교점 확인 및 적분 구간 설정",
+                "정적분 식 세우기",
+                "정적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 2.6666666666666665,
+          "title_frequency": {
+            "적분 구간 및 피적분함수 결정": 1,
+            "정적분 계산": 2,
+            "교점 및 적분 구간 확인": 1,
+            "정적분 식 수립": 1,
+            "적분 계산": 1,
+            "교점 확인 및 적분 구간 설정": 1,
+            "정적분 식 세우기": 1
+          },
+          "accuracy": 0.6666666666666666,
+          "step_mean": 2.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 0.6666666666666666,
+          "accuracy_std": 0.5773502691896258,
+          "accuracy_ci_95": {
+            "lower": 0.13322223379388565,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "적분 구간 및 피적분함수 결정": 1,
+            "정적분 계산": 2,
+            "교점 및 적분 구간 확인": 1,
+            "정적분 식 수립": 1,
+            "적분 계산": 1,
+            "교점 확인 및 적분 구간 설정": 1,
+            "정적분 식 세우기": 1
+          }
+        },
+        "grok-4": {
+          "model_id": "x-ai/grok-4",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 75.27747011184692,
+              "step_count": 4,
+              "step_titles": [
+                "곡선들의 교점 찾기",
+                "둘러싸인 영역 확인",
+                "적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 83.12338590621948,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 교점 찾기",
+                "상하 함수 결정",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\dfrac{16}{5}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 63.7105655670166,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 함수 확인",
+                "영역 분석",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 75.27747011184692,
+              "step_count": 4,
+              "step_titles": [
+                "곡선들의 교점 찾기",
+                "둘러싸인 영역 확인",
+                "적분식 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 83.12338590621948,
+              "step_count": 3,
+              "step_titles": [
+                "곡선 교점 찾기",
+                "상하 함수 결정",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\dfrac{16}{5}",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 63.7105655670166,
+              "step_count": 4,
+              "step_titles": [
+                "교점 찾기",
+                "상하 함수 확인",
+                "영역 분석",
+                "적분 설정 및 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 3.6666666666666665,
+          "title_frequency": {
+            "곡선들의 교점 찾기": 1,
+            "둘러싸인 영역 확인": 1,
+            "적분식 설정": 1,
+            "적분 계산": 1,
+            "곡선 교점 찾기": 1,
+            "상하 함수 결정": 1,
+            "적분 설정 및 계산": 2,
+            "교점 찾기": 1,
+            "상하 함수 확인": 1,
+            "영역 분석": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 3.6666666666666665,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "곡선들의 교점 찾기": 1,
+            "둘러싸인 영역 확인": 1,
+            "적분식 설정": 1,
+            "적분 계산": 1,
+            "곡선 교점 찾기": 1,
+            "상하 함수 결정": 1,
+            "적분 설정 및 계산": 2,
+            "교점 찾기": 1,
+            "상하 함수 확인": 1,
+            "영역 분석": 1
+          }
+        },
+        "deepseek-v3.2": {
+          "model_id": "deepseek/deepseek-v3.2",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 64.84323787689209,
+              "step_count": 5,
+              "step_titles": [
+                "적분 구간과 곡선 파악",
+                "곡선의 교점 찾기",
+                "적분 구간 결정",
+                "넓이를 정적분으로 표현",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.228262662887573,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{16}{5}}\n\\]\n보기에서 ⑤ \\(\\dfrac{16}{5}\\)에 해당한다.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 80.692556142807,
+              "step_count": 4,
+              "step_titles": [
+                "조건 분석 및 그래프 스케치",
+                "적분 설정",
+                "피적분 함수 단순화",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 64.84323787689209,
+              "step_count": 5,
+              "step_titles": [
+                "적분 구간과 곡선 파악",
+                "곡선의 교점 찾기",
+                "적분 구간 결정",
+                "넓이를 정적분으로 표현",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\( \\dfrac{16}{5} \\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 13.228262662887573,
+              "step_count": 3,
+              "step_titles": [
+                "영역 파악",
+                "적분 설정",
+                "적분 계산"
+              ],
+              "final_answer": "\\[\n\\boxed{\\frac{16}{5}}\n\\]\n보기에서 ⑤ \\(\\dfrac{16}{5}\\)에 해당한다.",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 80.692556142807,
+              "step_count": 4,
+              "step_titles": [
+                "조건 분석 및 그래프 스케치",
+                "적분 설정",
+                "피적분 함수 단순화",
+                "적분 계산"
+              ],
+              "final_answer": "⑤ \\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.0,
+          "title_frequency": {
+            "적분 구간과 곡선 파악": 1,
+            "곡선의 교점 찾기": 1,
+            "적분 구간 결정": 1,
+            "넓이를 정적분으로 표현": 1,
+            "적분 계산": 3,
+            "영역 파악": 1,
+            "적분 설정": 2,
+            "조건 분석 및 그래프 스케치": 1,
+            "피적분 함수 단순화": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.0,
+          "step_std": 1.0,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "적분 구간과 곡선 파악": 1,
+            "곡선의 교점 찾기": 1,
+            "적분 구간 결정": 1,
+            "넓이를 정적분으로 표현": 1,
+            "적분 계산": 3,
+            "영역 파악": 1,
+            "적분 설정": 2,
+            "조건 분석 및 그래프 스케치": 1,
+            "피적분 함수 단순화": 1
+          }
+        },
+        "qwen3-235b-a22b-2507": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 111.11155152320862,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기 및 대칭성 고려",
+                "적분 범위 및 상하 함수 결정",
+                "피적분 함수 정리 및 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.300283432006836,
+              "step_count": 4,
+              "step_titles": [
+                "교점과 영역 확인",
+                "상대적인 위치 파악",
+                "피적분 함수 간단히 하기",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.25482988357544,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "윗곡선과 아랫곡선 비교",
+                "피적분함수 간단히 하기",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "raw_runs": [
+            {
+              "run_idx": 1,
+              "elapsed_s": 111.11155152320862,
+              "step_count": 4,
+              "step_titles": [
+                "조건 정리",
+                "교점 찾기 및 대칭성 고려",
+                "적분 범위 및 상하 함수 결정",
+                "피적분 함수 정리 및 적분 계산"
+              ],
+              "final_answer": "⑤ $\\dfrac{16}{5}$",
+              "is_correct": true
+            },
+            {
+              "run_idx": 2,
+              "elapsed_s": 14.300283432006836,
+              "step_count": 4,
+              "step_titles": [
+                "교점과 영역 확인",
+                "상대적인 위치 파악",
+                "피적분 함수 간단히 하기",
+                "적분 계산"
+              ],
+              "final_answer": "\\(\\dfrac{16}{5}\\)",
+              "is_correct": true
+            },
+            {
+              "run_idx": 3,
+              "elapsed_s": 15.25482988357544,
+              "step_count": 5,
+              "step_titles": [
+                "조건 정리",
+                "교점 구하기",
+                "윗곡선과 아랫곡선 비교",
+                "피적분함수 간단히 하기",
+                "적분 계산"
+              ],
+              "final_answer": "$\\dfrac{16}{5}$",
+              "is_correct": true
+            }
+          ],
+          "avg_step_count": 4.333333333333333,
+          "title_frequency": {
+            "조건 정리": 2,
+            "교점 찾기 및 대칭성 고려": 1,
+            "적분 범위 및 상하 함수 결정": 1,
+            "피적분 함수 정리 및 적분 계산": 1,
+            "교점과 영역 확인": 1,
+            "상대적인 위치 파악": 1,
+            "피적분 함수 간단히 하기": 1,
+            "적분 계산": 2,
+            "교점 구하기": 1,
+            "윗곡선과 아랫곡선 비교": 1,
+            "피적분함수 간단히 하기": 1
+          },
+          "accuracy": 1.0,
+          "step_mean": 4.333333333333333,
+          "step_std": 0.5773502691896258,
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "accuracy_ci_95": {
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "raw_title_counts": {
+            "조건 정리": 2,
+            "교점 찾기 및 대칭성 고려": 1,
+            "적분 범위 및 상하 함수 결정": 1,
+            "피적분 함수 정리 및 적분 계산": 1,
+            "교점과 영역 확인": 1,
+            "상대적인 위치 파악": 1,
+            "피적분 함수 간단히 하기": 1,
+            "적분 계산": 2,
+            "교점 구하기": 1,
+            "윗곡선과 아랫곡선 비교": 1,
+            "피적분함수 간단히 하기": 1
+          }
+        }
+      },
+      "temperature_summary": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 2,
+          "위아래 함수 판별": 2,
+          "정적분으로 넓이 계산": 2,
+          "위아래 곡선 판단": 1,
+          "교점과 경계 구간 찾기": 1,
+          "적분으로 넓이 계산": 1,
+          "영역 파악": 3,
+          "위아래 곡선 확인": 1,
+          "넓이 적분 계산": 2,
+          "영역 파악 및 적분 설정": 1,
+          "적분 계산": 8,
+          "위아래 곡선 결정": 1,
+          "적분 구간 및 피적분함수 결정": 1,
+          "정적분 계산": 2,
+          "교점 및 적분 구간 확인": 1,
+          "정적분 식 수립": 1,
+          "교점 확인 및 적분 구간 설정": 1,
+          "정적분 식 세우기": 1,
+          "곡선들의 교점 찾기": 1,
+          "둘러싸인 영역 확인": 1,
+          "적분식 설정": 1,
+          "곡선 교점 찾기": 1,
+          "상하 함수 결정": 1,
+          "적분 설정 및 계산": 2,
+          "교점 찾기": 1,
+          "상하 함수 확인": 1,
+          "영역 분석": 1,
+          "적분 구간과 곡선 파악": 1,
+          "곡선의 교점 찾기": 1,
+          "적분 구간 결정": 1,
+          "넓이를 정적분으로 표현": 1,
+          "적분 설정": 2,
+          "조건 분석 및 그래프 스케치": 1,
+          "피적분 함수 단순화": 1,
+          "조건 정리": 2,
+          "교점 찾기 및 대칭성 고려": 1,
+          "적분 범위 및 상하 함수 결정": 1,
+          "피적분 함수 정리 및 적분 계산": 1,
+          "교점과 영역 확인": 1,
+          "상대적인 위치 파악": 1,
+          "피적분 함수 간단히 하기": 1,
+          "교점 구하기": 1,
+          "윗곡선과 아랫곡선 비교": 1,
+          "피적분함수 간단히 하기": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    }
+  },
+  "cross_temperature": {
+    "per_temperature": {
+      "0.0": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 3,
+          "위아래 함수 판별": 3,
+          "정적분으로 넓이 계산": 3,
+          "영역 파악": 3,
+          "위아래 곡선 판별": 3,
+          "넓이 적분 계산": 3,
+          "교점 및 적분 구간 확인": 2,
+          "정적분 식 세우기": 2,
+          "적분 계산": 11,
+          "적분 구간 및 피적분함수 결정": 1,
+          "정적분 계산": 1,
+          "영역 식별": 1,
+          "적분 설정": 2,
+          "피적분함수 간단화": 1,
+          "곡선 분석 및 영역 확인": 1,
+          "넓이 적분 설정": 2,
+          "곡선 분석 및 교점 확인": 1,
+          "영역 식별 및 적분 설정": 1,
+          "영역 이해 및 적분 구간 설정": 1,
+          "넓이를 정적분으로 표현": 1,
+          "그래프와 영역 파악": 2,
+          "넓이 적분식 설정": 1,
+          "조건 정리": 3,
+          "교점 구하기": 1,
+          "상대적 위치 확인": 1,
+          "교점 및 대칭성 분석": 2,
+          "적분 구간과 상대 위치 파악": 1,
+          "피적분 함수 정리": 1,
+          "적분 구간 재정립": 1,
+          "최종 적분 계산": 1,
+          "적분식 설정": 1
+        },
+        "accuracy_all_models": 0.8333333333333334,
+        "n_samples": 18
+      },
+      "0.5": {
+        "avg_step_count_all_models": 3.6666666666666665,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 3,
+          "위아래 함수 판단": 1,
+          "정적분으로 넓이 계산": 2,
+          "위아래 곡선 판별": 4,
+          "넓이 적분 계산": 4,
+          "위아래 함수 판별": 1,
+          "영역 파악": 3,
+          "교점 및 적분 구간 파악": 1,
+          "정적분 식 세우기": 3,
+          "적분 계산": 11,
+          "교점 및 적분 구간 확인": 2,
+          "적분 계산 및 답 구하기": 1,
+          "교점 찾기": 4,
+          "영역 분석": 1,
+          "넓이 적분 설정": 4,
+          "교점 확인": 1,
+          "상하 곡선 구분": 1,
+          "둘러싸인 영역 식별": 1,
+          "상하 함수 결정": 1,
+          "그래프와 교점 확인": 1,
+          "어떤 곡선이 위에 있는지 판단": 1,
+          "그래프 개형 및 교점 파악": 1,
+          "적분 구간 및 넓이 설정": 1,
+          "피적분함수 정리": 1,
+          "그래프 개형 및 영역 파악": 1,
+          "교점 구하기": 1,
+          "조건 정리": 3,
+          "위치 관계 분석": 1,
+          "대칭성 검토": 1,
+          "적분 범위 결정": 1,
+          "교점 계산": 1,
+          "적분 구간 설정": 1,
+          "적분 구간 및 상하 함수 결정": 1,
+          "피적분 함수 정리": 1
+        },
+        "accuracy_all_models": 0.8888888888888888,
+        "n_samples": 18
+      },
+      "0.7": {
+        "avg_step_count_all_models": 3.5,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 1,
+          "위아래 함수 판별": 1,
+          "정적분으로 넓이 계산": 1,
+          "교점과 경계 확인": 1,
+          "넓이 적분 설정 및 계산": 2,
+          "교점과 경계 구간 찾기": 1,
+          "위아래 함수 결정": 1,
+          "적분으로 넓이 계산": 1,
+          "영역 파악": 2,
+          "위아래 곡선 판별": 2,
+          "넓이 적분": 1,
+          "영역 분석": 1,
+          "상하 관계 확인": 1,
+          "넓이 적분 계산": 2,
+          "교점 및 적분 구간 확인": 2,
+          "넓이 구하는 식 세우기": 1,
+          "정적분 계산": 2,
+          "정적분 식 세우기": 2,
+          "적분 계산": 4,
+          "그래프 교점 및 적분 구간 확인": 1,
+          "적분 계산 및 답 구하기": 1,
+          "곡선들의 교점 찾기": 1,
+          "상부 및 하부 함수 확인": 1,
+          "둘러싸인 영역 식별": 1,
+          "교점 찾기": 3,
+          "상하 곡선 확인": 1,
+          "영역 설정": 1,
+          "적분 설정 및 계산": 1,
+          "영역 식별": 1,
+          "적분 설정": 1,
+          "문제 이해 및 영역 설정": 1,
+          "넓이 적분식 작성": 1,
+          "두 곡선의 교점 찾기": 1,
+          "위아래 곡선 판단": 1,
+          "넓이 구하기": 1,
+          "문제 이해 및 그래프 개형": 1,
+          "넓이 구하는 정적분 설정": 1,
+          "조건 정리": 3,
+          "상대적 위치 확인": 1,
+          "피적분 함수 정리": 2,
+          "교점 구하기": 1,
+          "함수값 비교": 1,
+          "적분식 설정": 1,
+          "최종 계산 검토": 1,
+          "적분 범위와 상대적 위치 확인": 1,
+          "대칭성 활용 및 적분 계산": 1,
+          "올바른 적분 범위 재설정": 1,
+          "최종 적분 계산": 1
+        },
+        "accuracy_all_models": 1.0,
+        "n_samples": 18
+      },
+      "1.0": {
+        "avg_step_count_all_models": 3.388888888888889,
+        "title_frequency_all_models": {
+          "교점과 구간 설정": 2,
+          "위아래 함수 판별": 2,
+          "정적분으로 넓이 계산": 2,
+          "위아래 곡선 판단": 1,
+          "교점과 경계 구간 찾기": 1,
+          "적분으로 넓이 계산": 1,
+          "영역 파악": 3,
+          "위아래 곡선 확인": 1,
+          "넓이 적분 계산": 2,
+          "영역 파악 및 적분 설정": 1,
+          "적분 계산": 8,
+          "위아래 곡선 결정": 1,
+          "적분 구간 및 피적분함수 결정": 1,
+          "정적분 계산": 2,
+          "교점 및 적분 구간 확인": 1,
+          "정적분 식 수립": 1,
+          "교점 확인 및 적분 구간 설정": 1,
+          "정적분 식 세우기": 1,
+          "곡선들의 교점 찾기": 1,
+          "둘러싸인 영역 확인": 1,
+          "적분식 설정": 1,
+          "곡선 교점 찾기": 1,
+          "상하 함수 결정": 1,
+          "적분 설정 및 계산": 2,
+          "교점 찾기": 1,
+          "상하 함수 확인": 1,
+          "영역 분석": 1,
+          "적분 구간과 곡선 파악": 1,
+          "곡선의 교점 찾기": 1,
+          "적분 구간 결정": 1,
+          "넓이를 정적분으로 표현": 1,
+          "적분 설정": 2,
+          "조건 분석 및 그래프 스케치": 1,
+          "피적분 함수 단순화": 1,
+          "조건 정리": 2,
+          "교점 찾기 및 대칭성 고려": 1,
+          "적분 범위 및 상하 함수 결정": 1,
+          "피적분 함수 정리 및 적분 계산": 1,
+          "교점과 영역 확인": 1,
+          "상대적인 위치 파악": 1,
+          "피적분 함수 간단히 하기": 1,
+          "교점 구하기": 1,
+          "윗곡선과 아랫곡선 비교": 1,
+          "피적분함수 간단히 하기": 1
+        },
+        "accuracy_all_models": 0.9444444444444444,
+        "n_samples": 18
+      }
+    },
+    "overall": {
+      "avg_step_count": 3.486111111111111,
+      "title_frequency": {
+        "교점과 구간 설정": 9,
+        "위아래 함수 판별": 7,
+        "정적분으로 넓이 계산": 8,
+        "영역 파악": 11,
+        "위아래 곡선 판별": 9,
+        "넓이 적분 계산": 11,
+        "교점 및 적분 구간 확인": 7,
+        "정적분 식 세우기": 8,
+        "적분 계산": 34,
+        "적분 구간 및 피적분함수 결정": 2,
+        "정적분 계산": 5,
+        "영역 식별": 2,
+        "적분 설정": 5,
+        "피적분함수 간단화": 1,
+        "곡선 분석 및 영역 확인": 1,
+        "넓이 적분 설정": 6,
+        "곡선 분석 및 교점 확인": 1,
+        "영역 식별 및 적분 설정": 1,
+        "영역 이해 및 적분 구간 설정": 1,
+        "넓이를 정적분으로 표현": 2,
+        "그래프와 영역 파악": 2,
+        "넓이 적분식 설정": 1,
+        "조건 정리": 11,
+        "교점 구하기": 4,
+        "상대적 위치 확인": 2,
+        "교점 및 대칭성 분석": 2,
+        "적분 구간과 상대 위치 파악": 1,
+        "피적분 함수 정리": 4,
+        "적분 구간 재정립": 1,
+        "최종 적분 계산": 2,
+        "적분식 설정": 3,
+        "위아래 함수 판단": 1,
+        "교점 및 적분 구간 파악": 1,
+        "적분 계산 및 답 구하기": 2,
+        "교점 찾기": 8,
+        "영역 분석": 3,
+        "교점 확인": 1,
+        "상하 곡선 구분": 1,
+        "둘러싸인 영역 식별": 2,
+        "상하 함수 결정": 2,
+        "그래프와 교점 확인": 1,
+        "어떤 곡선이 위에 있는지 판단": 1,
+        "그래프 개형 및 교점 파악": 1,
+        "적분 구간 및 넓이 설정": 1,
+        "피적분함수 정리": 1,
+        "그래프 개형 및 영역 파악": 1,
+        "위치 관계 분석": 1,
+        "대칭성 검토": 1,
+        "적분 범위 결정": 1,
+        "교점 계산": 1,
+        "적분 구간 설정": 1,
+        "적분 구간 및 상하 함수 결정": 1,
+        "교점과 경계 확인": 1,
+        "넓이 적분 설정 및 계산": 2,
+        "교점과 경계 구간 찾기": 2,
+        "위아래 함수 결정": 1,
+        "적분으로 넓이 계산": 2,
+        "넓이 적분": 1,
+        "상하 관계 확인": 1,
+        "넓이 구하는 식 세우기": 1,
+        "그래프 교점 및 적분 구간 확인": 1,
+        "곡선들의 교점 찾기": 2,
+        "상부 및 하부 함수 확인": 1,
+        "상하 곡선 확인": 1,
+        "영역 설정": 1,
+        "적분 설정 및 계산": 3,
+        "문제 이해 및 영역 설정": 1,
+        "넓이 적분식 작성": 1,
+        "두 곡선의 교점 찾기": 1,
+        "위아래 곡선 판단": 2,
+        "넓이 구하기": 1,
+        "문제 이해 및 그래프 개형": 1,
+        "넓이 구하는 정적분 설정": 1,
+        "함수값 비교": 1,
+        "최종 계산 검토": 1,
+        "적분 범위와 상대적 위치 확인": 1,
+        "대칭성 활용 및 적분 계산": 1,
+        "올바른 적분 범위 재설정": 1,
+        "위아래 곡선 확인": 1,
+        "영역 파악 및 적분 설정": 1,
+        "위아래 곡선 결정": 1,
+        "정적분 식 수립": 1,
+        "교점 확인 및 적분 구간 설정": 1,
+        "둘러싸인 영역 확인": 1,
+        "곡선 교점 찾기": 1,
+        "상하 함수 확인": 1,
+        "적분 구간과 곡선 파악": 1,
+        "곡선의 교점 찾기": 1,
+        "적분 구간 결정": 1,
+        "조건 분석 및 그래프 스케치": 1,
+        "피적분 함수 단순화": 1,
+        "교점 찾기 및 대칭성 고려": 1,
+        "적분 범위 및 상하 함수 결정": 1,
+        "피적분 함수 정리 및 적분 계산": 1,
+        "교점과 영역 확인": 1,
+        "상대적인 위치 파악": 1,
+        "피적분 함수 간단히 하기": 1,
+        "윗곡선과 아랫곡선 비교": 1,
+        "피적분함수 간단히 하기": 1
+      },
+      "accuracy": 0.9166666666666666,
+      "n_samples": 72
+    }
+  }
+}

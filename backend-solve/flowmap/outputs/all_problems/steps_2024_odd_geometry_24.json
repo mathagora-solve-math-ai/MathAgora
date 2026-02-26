@@ -1,0 +1,73 @@
+{
+  "problem": {
+    "prob_id": "2024_odd_geometry_24",
+    "prob_area": "기하",
+    "prob_point": "3",
+    "prob_desc": "24. 타원 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{6}=1$ 위의 점 $(\\sqrt{3}, -2)$에서의 접선의 기울기는? (단, $a$는 양수이다.) [3점]\n① $\\sqrt{3}$ ② $\\dfrac{\\sqrt{3}}{2}$ ③ $\\dfrac{\\sqrt{3}}{3}$ ④ $\\dfrac{\\sqrt{3}}{4}$ ⑤ $\\dfrac{\\sqrt{3}}{5}$",
+    "answer": "3"
+  },
+  "solutions": {
+    "gpt-5.2": [
+      {
+        "title": "점이 타원 위에 있다는 조건",
+        "body": "점 \\((\\sqrt{3},-2)\\)가 타원 \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{6}=1\\) 위에 있으므로 대입한다.\n\\[\n\\frac{(\\sqrt{3})^2}{a^2}+\\frac{(-2)^2}{6}=1\n\\Rightarrow \\frac{3}{a^2}+\\frac{4}{6}=1\n\\Rightarrow \\frac{3}{a^2}+\\frac{2}{3}=1\n\\]\n\\[\n\\frac{3}{a^2}=\\frac{1}{3}\\Rightarrow a^2=9 \\quad (a>0 \\Rightarrow a=3)\n\\]"
+      },
+      {
+        "title": "암묵적 미분으로 접선 기울기 구하기",
+        "body": "\\[\n\\frac{x^2}{a^2}+\\frac{y^2}{6}=1\n\\]\n양변을 \\(x\\)에 대해 미분하면\n\\[\n\\frac{2x}{a^2}+\\frac{2y}{6}\\frac{dy}{dx}=0\n\\Rightarrow \\frac{2x}{a^2}+\\frac{y}{3}\\frac{dy}{dx}=0\n\\]\n\\[\n\\frac{dy}{dx}=-\\frac{2x}{a^2}\\cdot\\frac{3}{y}=-\\frac{6x}{a^2y}\n\\]"
+      },
+      {
+        "title": "점에서의 기울기 계산",
+        "body": "\\(a^2=9\\), \\((x,y)=(\\sqrt{3},-2)\\)를 대입:\n\\[\n\\frac{dy}{dx}=-\\frac{6\\sqrt{3}}{9\\cdot(-2)}=\\frac{6\\sqrt{3}}{18}=\\frac{\\sqrt{3}}{3}\n\\]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "\\(\\displaystyle \\frac{\\sqrt{3}}{3}\\) (③)"
+      }
+    ],
+    "claude-opus-4.5": [
+      {
+        "title": "조건 정리",
+        "body": "타원 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{6}=1$ 위의 점 $(\\sqrt{3}, -2)$에서의 접선의 기울기를 구해야 합니다.\n\n먼저 점 $(\\sqrt{3}, -2)$가 타원 위의 점이므로, 이를 대입하여 $a$의 값을 구합니다.\n[/STEP]"
+      },
+      {
+        "title": "a값 계산",
+        "body": "점 $(\\sqrt{3}, -2)$를 타원의 방정식에 대입:\n\n$$\\dfrac{(\\sqrt{3})^2}{a^2}+\\dfrac{(-2)^2}{6}=1$$\n\n$$\\dfrac{3}{a^2}+\\dfrac{4}{6}=1$$\n\n$$\\dfrac{3}{a^2}+\\dfrac{2}{3}=1$$\n\n$$\\dfrac{3}{a^2}=1-\\dfrac{2}{3}=\\dfrac{1}{3}$$\n\n$$a^2=9$$\n\n따라서 $a=3$ (양수)\n[/STEP]"
+      },
+      {
+        "title": "타원 방정식 확정",
+        "body": "타원의 방정식은:\n$$\\dfrac{x^2}{9}+\\dfrac{y^2}{6}=1$$\n[/STEP]"
+      },
+      {
+        "title": "음함수 미분법으로 기울기 계산",
+        "body": "타원의 방정식 $\\dfrac{x^2}{9}+\\dfrac{y^2}{6}=1$을 $x$에 대해 미분합니다.\n\n$$\\dfrac{2x}{9}+\\dfrac{2y}{6}\\cdot\\dfrac{dy}{dx}=0$$\n\n$$\\dfrac{2x}{9}+\\dfrac{y}{3}\\cdot\\dfrac{dy}{dx}=0$$\n\n$$\\dfrac{dy}{dx}=-\\dfrac{2x}{9}\\cdot\\dfrac{3}{y}=-\\dfrac{2x}{3y}$$\n[/STEP]"
+      },
+      {
+        "title": "접선의 기울기 계산",
+        "body": "점 $(\\sqrt{3}, -2)$에서의 기울기:\n\n$$\\dfrac{dy}{dx}=-\\dfrac{2\\cdot\\sqrt{3}}{3\\cdot(-2)}=-\\dfrac{2\\sqrt{3}}{-6}=\\dfrac{\\sqrt{3}}{3}$$\n[/STEP]"
+      },
+      {
+        "title": "Final Answer",
+        "body": "③ $\\dfrac{\\sqrt{3}}{3}$\n[/FINAL_ANSWER]"
+      }
+    ],
+    "gemini-3-pro": [
+      {
+        "title": "상수 $a^2$ 값 구하기",
+        "body": "점 $(\\sqrt{3}, -2)$가 타원 $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{6}=1$ 위의 점이므로, 타원의 방정식에 좌표를 대입하여 $a^2$의 값을 구합니다.\n\n$$ \\frac{(\\sqrt{3})^2}{a^2} + \\frac{(-2)^2}{6} = 1 $$\n$$ \\frac{3}{a^2} + \\frac{4}{6} = 1 $$\n$$ \\frac{3}{a^2} + \\frac{2}{3} = 1 $$\n\n이항하여 정리하면,\n$$ \\frac{3}{a^2} = 1 - \\frac{2}{3} = \\frac{1}{3} $$\n따라서 $a^2 = 9$입니다."
+      },
+      {
+        "title": "접선의 방정식 세우기",
+        "body": "타원 $\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ 위의 점 $(x_1, y_1)$에서의 접선의 방정식 공식은 $\\dfrac{x_1 x}{a^2} + \\dfrac{y_1 y}{b^2} = 1$입니다.\n\n여기서 $a^2=9$, $b^2=6$이고 접점은 $(\\sqrt{3}, -2)$이므로 이를 대입합니다.\n$$ \\frac{\\sqrt{3}x}{9} + \\frac{-2y}{6} = 1 $$"
+      },
+      {
+        "title": "접선의 기울기 계산",
+        "body": "구한 접선의 방정식을 $y = mx + n$ 꼴로 정리하여 기울기 $m$을 구합니다.\n\n$$ \\frac{\\sqrt{3}}{9}x - \\frac{1}{3}y = 1 $$\n$$ \\frac{1}{3}y = \\frac{\\sqrt{3}}{9}x - 1 $$\n\n양변에 3을 곱하면,\n$$ y = \\frac{3\\sqrt{3}}{9}x - 3 $$\n$$ y = \\frac{\\sqrt{3}}{3}x - 3 $$\n\n따라서 접선의 기울기는 $\\dfrac{\\sqrt{3}}{3}$입니다."
+      },
+      {
+        "title": "Final Answer",
+        "body": "③"
+      }
+    ]
+  }
+}
