@@ -1,7 +1,6 @@
 # MathAgora
 
-**Live Demo:** You can access the service directly at  
-http://168.188.128.188:20225/
+**Live Demo:** [https://isoft.cnu.ac.kr/csat_acl2026demo/](https://isoft.cnu.ac.kr/csat_acl2026demo/)
 
 ---
 
