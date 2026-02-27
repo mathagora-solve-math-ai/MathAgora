@@ -1,26 +1,29 @@
+---
+
 # MathAgora
 
-**데모 서비스:** [http://168.188.128.188:20225/](http://168.188.128.188:20225/) 에서 바로 이용하실 수 있습니다.
+**Live Demo:** You can access the service directly at  
+http://168.188.128.188:20225/
 
 ---
 
-MathAgora는 수학 시험지·문제지를 업로드하면 **문서 종류(수능/수리·이산 등)를 판별**하고, **문항 영역을 자동으로 검출**한 뒤, 여러 **대규모 언어 모델(LLM)**으로 동시에 풀이를 생성·비교할 수 있는 서비스입니다.
+MathAgora is a platform that allows users to upload math exam sheets or problem sets, automatically **identify the document type** (e.g., CSAT, discrete mathematics, etc.), **detect individual question regions**, and generate and compare solutions from multiple **large language models (LLMs)** simultaneously.
 
-## 주요 기능
+## Key Features
 
-- **이미지 업로드 또는 데이터셋 선택**  
-  워크북·시험지 사진을 올리거나, 연도/페이지를 선택해 미리 준비된 데이터로 체험할 수 있습니다.
+- **Image Upload or Dataset Selection**  
+  Upload a workbook or exam sheet image, or explore preloaded datasets by selecting a specific year and page.
 
-- **문서 분류 및 문항 검출**  
-  업로드된 이미지에서 시험 유형을 식별하고, 각 문항 영역을 찾아 텍스트(OCR)를 추출합니다.
+- **Document Classification & Question Detection**  
+  The system identifies the exam type from the uploaded image, detects individual problem regions, and extracts text via OCR.
 
-- **다중 모델 풀이**  
-  GPT-5-Codex, GPT-5, Claude Opus 4.5, Gemini 3 Pro, Grok 4 Fast 등 여러 모델이 선택한 문항에 대해 동시에 풀이를 스트리밍합니다.
+- **Multi-Model Reasoning**  
+  Multiple models — including GPT-5-Codex, GPT-5, Claude Opus 4.5, Gemini 3 Pro, and Grok 4 Fast — generate solutions simultaneously for the selected problem, with streaming outputs.
 
-- **정렬된 풀이 단계**  
-  각 모델의 전략·단계·최종 답을 구조화해 보여주고, 단계별로 서로 다른 모델의 설명을 정렬해 비교할 수 있습니다.
+- **Aligned Step-by-Step Solutions**  
+  Each model’s strategy, intermediate steps, and final answer are structured and displayed in an aligned format, enabling step-level comparison across models.
 
-- **FlowMap·Aggregation**  
-  풀이 과정을 시각화하거나, 여러 모델 결과를 요약·집계해 볼 수 있습니다.
+- **FlowMap & Aggregation**  
+  Visualize the reasoning process through FlowMap, or summarize and aggregate results across multiple models.
 
-위 데모 주소에서 실제 동작을 확인해 보시면 됩니다.
+You can explore the full functionality through the live demo link above.
