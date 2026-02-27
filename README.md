@@ -1,5 +1,3 @@
----
-
 # MathAgora
 
 **Live Demo:** You can access the service directly at  
