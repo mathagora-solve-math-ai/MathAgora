@@ -29,6 +29,8 @@ OPENAI_DIRECT_PREFIXES = ("openai/",)
 # Models that must NOT receive an explicit temperature parameter
 NO_TEMPERATURE_MODELS = {"openai/gpt-5-codex", "openai/gpt-5"}
 
+max_retries = 3
+
 
 # ---------------------------------------------------------------------------
 # Prompt
@@ -395,6 +397,8 @@ def _call_llm_once(
         )
         if temp is not None:
             kwargs["temperature"] = temp
+        if model_id.startswith("x-ai/"):
+            kwargs["max_tokens"] = 16000
         response = client.chat.completions.create(**kwargs)
 
     choices = getattr(response, "choices", None)
@@ -420,7 +424,7 @@ def _call_llm_once(
 def _call_llm_with_retry(
     model_id: str,
     prompt: str,
-    messages: list[dict[str, Any]],w
+    messages: list[dict[str, Any]],
     base_backoff_s: float = 2.0,
 ) -> str:
     last_error: Exception | None = None

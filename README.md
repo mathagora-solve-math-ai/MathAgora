@@ -61,12 +61,11 @@ Steps from all models are grouped into **Step-Layers** (L1, L2, …) representin
 ### 5. Aggregated Answer
 
 <p align="center">
-  <img src="figs/sat_guide_5.png" alt="Aggregated answer" width="820"/>
+  <img src="figs/sat_guide_5.png" alt="Aggregated answer" width="400"/>
 </p>
 
 The aggregator synthesizes a final answer by analyzing strategy coverage and confidence across all model outputs, producing a rationale grounded in the strongest solutions.
 
----
 
 ## Key Features
 
@@ -86,7 +85,7 @@ The aggregator synthesizes a final answer by analyzing strategy coverage and con
 | GPT-5-Codex | OpenAI | Solver |
 | GPT-5 | OpenAI | Solver |
 | Claude Opus 4.5 | Anthropic (via OpenRouter) | Solver + Step-Network Generator + Aggregator |
-| Gemini 3 Pro | Google (via OpenRouter) | Solver |
+| Gemini 3 Pro | Google (via OpenRouter) | Solver + Aggregator  |
 | Grok 4 Fast | xAI (via OpenRouter) | Solver |
 
 ---
