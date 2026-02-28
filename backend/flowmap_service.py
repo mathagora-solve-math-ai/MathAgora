@@ -13,7 +13,7 @@ OPENROUTER_BASE_URL = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.
 FLOWMAP_GENERATOR_MODEL = "anthropic/claude-opus-4.5"
 
 GENERATOR_PROMPT = """\
-You are an expert at analyzing step-by-step math solutions from multiple LLMs and generating a Flow Map.
+You are an expert at analyzing step-by-step math solutions from multiple LLMs and generating a Step Network.
 
 Given the problem and each model's step-by-step solution, do the following:
 
