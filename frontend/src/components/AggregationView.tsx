@@ -72,7 +72,7 @@ export default function AggregationView({ data, isGenerating, onRegenerate, mode
             <p className="text-xs text-slate-500">Synthesized from all model solutions</p>
           </div>
         </div>
-        <span className="text-xs text-slate-400">Claude Opus 4.5 · aggregation</span>
+        <span className="text-xs text-slate-400">Gemini 3.1 Pro · aggregation</span>
       </div>
 
       {/* ── Rationale ── */}

@@ -11,7 +11,7 @@ from openai import OpenAI
 logger = logging.getLogger(__name__)
 
 OPENROUTER_BASE_URL = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
-AGGREGATION_MODEL = "anthropic/claude-opus-4.5"
+AGGREGATION_MODEL = "google/gemini-3.1-pro-preview"
 
 AGGREGATION_PROMPT_IMAGE = """\
 You are an expert math solver. The problem image is shown above.
@@ -40,9 +40,9 @@ Do NOT copy steps verbatim — reason through it yourself using the image.
 }}
 
 **final_answer rules**:
-- If the problem has multiple-choice options (①②③④⑤ or options 1–5): enter the option number as a string ("1"–"5").
-- If the problem has multiple-choice options labeled with letters (A/B/C/D): enter the option number as a string (A=1, B=2, C=3, D=4), e.g. "3" for option C.
-- If there are no options and a specific value must be computed (short-answer / grid-in): enter the exact numerical answer as a string — may be an integer (e.g. "42"), a decimal (e.g. "0.2"), or a fraction (e.g. "1/3"). Do NOT round or truncate.
+- CSAT multiple-choice (options ①②③④⑤ or 1–5): enter the option number as a string ("1"–"5").
+- SAT multiple-choice (options A/B/C/D): enter the option letter as a string ("A", "B", "C", or "D"). Do NOT convert to numbers.
+- Short-answer / grid-in (no options given): enter the exact numerical answer as a string — may be an integer (e.g. "42"), a decimal (e.g. "0.2"), or a fraction (e.g. "1/3"). Do NOT round or truncate.
 """
 
 AGGREGATION_PROMPT_TEXT = """\
@@ -73,9 +73,9 @@ Do NOT copy steps verbatim — reason through it yourself.
 }}
 
 **final_answer rules**:
-- If the problem has multiple-choice options (①②③④⑤ or options 1–5): enter the option number as a string ("1"–"5").
-- If the problem has multiple-choice options labeled with letters (A/B/C/D): enter the option number as a string (A=1, B=2, C=3, D=4), e.g. "3" for option C.
-- If there are no options and a specific value must be computed (short-answer / grid-in): enter the exact numerical answer as a string — may be an integer (e.g. "42"), a decimal (e.g. "0.2"), or a fraction (e.g. "1/3"). Do NOT round or truncate.
+- CSAT multiple-choice (options ①②③④⑤ or 1–5): enter the option number as a string ("1"–"5").
+- SAT multiple-choice (options A/B/C/D): enter the option letter as a string ("A", "B", "C", or "D"). Do NOT convert to numbers.
+- Short-answer / grid-in (no options given): enter the exact numerical answer as a string — may be an integer (e.g. "42"), a decimal (e.g. "0.2"), or a fraction (e.g. "1/3"). Do NOT round or truncate.
 """
 
 
@@ -114,9 +114,16 @@ def _fix_json_escapes(text: str) -> str:
     return ''.join(result)
 
 
+def _fix_trailing_commas(text: str) -> str:
+    """Remove trailing commas before } or ] (common Gemini quirk)."""
+    return re.sub(r',(\s*[}\]])', r'\1', text)
+
+
 def _extract_json(text: str) -> dict[str, Any]:
+    # Strip markdown fences Gemini sometimes adds despite being told not to
     text = re.sub(r"```(?:json)?\s*", "", text)
     text = re.sub(r"```\s*", "", text)
+    text = text.strip()
 
     def _to_dict(r: Any) -> dict | None:
         if isinstance(r, dict):
@@ -126,31 +133,48 @@ def _extract_json(text: str) -> dict[str, Any]:
         return None
 
     def _try(s: str) -> dict | None:
-        try:
-            return _to_dict(json.loads(s))
-        except json.JSONDecodeError:
-            pass
-        try:
-            return _to_dict(json.loads(_fix_json_escapes(s)))
-        except json.JSONDecodeError:
-            return None
+        for attempt in (s, _fix_trailing_commas(s), _fix_json_escapes(s),
+                        _fix_trailing_commas(_fix_json_escapes(s))):
+            try:
+                return _to_dict(json.loads(attempt))
+            except (json.JSONDecodeError, ValueError):
+                pass
+        return None
 
-    r = _try(text.strip())
+    # Pass 1: try the whole text
+    r = _try(text)
     if r is not None:
         return r
+
+    # Pass 2: extract outermost {...} block (handles leading/trailing prose)
     m = re.search(r'\{[\s\S]*\}', text)
     if m:
         r = _try(m.group())
         if r is not None:
             return r
-    # Fallback: recover final_answer from truncated response via regex
+
+    # Pass 3: recover whatever we can via regex (truncated / badly malformed output)
     m_ans = re.search(r'"final_answer"\s*:\s*"([^"]*)"', text)
-    if m_ans:
-        return {
-            "steps": [], "final_answer": m_ans.group(1),
-            "rationale": "recovered from truncated response", "confidence": "low",
-        }
-    raise ValueError(f"LLM did not return valid JSON:\n{text[:400]}")
+    final_answer = m_ans.group(1) if m_ans else ""
+
+    steps: list[dict[str, Any]] = []
+    for sm in re.finditer(
+        r'"step_idx"\s*:\s*(\d+)[^}]*?"title"\s*:\s*"((?:[^"\\]|\\.)*)"'
+        r'[^}]*?"content"\s*:\s*"((?:[^"\\]|\\.)*)"',
+        text, re.DOTALL,
+    ):
+        steps.append({"step_idx": int(sm.group(1)), "title": sm.group(2), "content": sm.group(3)})
+
+    logger.warning(
+        "JSON parse failed; recovered final_answer=%r steps=%d. Response head: %s",
+        final_answer, len(steps), text[:300],
+    )
+    return {
+        "steps": steps,
+        "final_answer": final_answer,
+        "rationale": "recovered from malformed LLM output",
+        "confidence": "low",
+    }
 
 
 def generate_aggregation(
@@ -203,13 +227,23 @@ def generate_aggregation(
         )
         messages = [{"role": "user", "content": prompt_text}]
 
-    resp = client.chat.completions.create(
+    create_kwargs: dict[str, Any] = dict(
         model=aggregation_model,
         messages=messages,
         temperature=1.0,
         max_tokens=16384,
         response_format={"type": "json_object"},
     )
+    try:
+        resp = client.chat.completions.create(**create_kwargs)
+    except Exception as e:
+        # Some models via OpenRouter reject response_format; retry without it
+        if "response_format" in str(e).lower() or "json_object" in str(e).lower():
+            logger.warning("response_format not supported; retrying without it: %s", e)
+            create_kwargs.pop("response_format")
+            resp = client.chat.completions.create(**create_kwargs)
+        else:
+            raise
     response_text = resp.choices[0].message.content or ""
 
     result = _extract_json(response_text)

@@ -12,7 +12,7 @@ MathAgora is a multi-model math reasoning platform. Upload an exam sheet or sele
   <img src="figs/solve_pipeline.png" alt="MathAgora Solve Pipeline" width="900"/>
 </p>
 
-Each model independently produces a step-by-step solution. A **Step-Network Generator** (Claude Opus 4.5) then groups and aligns these steps into shared *Step-Layers*, constructing a cross-model reasoning network. An **Aggregator** (Claude Opus 4.5) analyzes strategy coverage across models and synthesizes a final answer with rationale and confidence.
+Each model independently produces a step-by-step solution. A **Step-Network Generator** (Claude Opus 4.5) then groups and aligns these steps into shared *Step-Layers*, constructing a cross-model reasoning network. An **Aggregator** (Gemini 3.1 Pro) analyzes strategy coverage across models and synthesizes a final answer with rationale and confidence.
 
 ---
 
@@ -84,8 +84,8 @@ The aggregator synthesizes a final answer by analyzing strategy coverage and con
 |---|---|---|
 | GPT-5-Codex | OpenAI | Solver |
 | GPT-5 | OpenAI | Solver |
-| Claude Opus 4.5 | Anthropic (via OpenRouter) | Solver + Step-Network Generator + Aggregator |
-| Gemini 3.1 Pro | Google (via OpenRouter) | Solver + Aggregator  |
+| Claude Opus 4.5 | Anthropic (via OpenRouter) | Solver + Step-Network Generator |
+| Gemini 3.1 Pro | Google (via OpenRouter) | Solver + Aggregator |
 | Grok 4.3 | xAI (via OpenRouter) | Solver |
 
 ---
