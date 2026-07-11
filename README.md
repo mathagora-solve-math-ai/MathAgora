@@ -51,7 +51,7 @@ Five models stream solutions in parallel. Each solution is parsed into structure
 ### 4. Step-Network
 
 <p align="center">
-  <img src="figs/sat_guide_4.png" alt="Step-Network FlowMap" width="820"/>
+  <img src="figs/sat_guide_4.png?v=20260711-c1ab939" alt="Step-Network FlowMap" width="820"/>
 </p>
 
 Steps from all models are grouped into **Step-Layers** (L1, L2, …) representing shared reasoning stages. The network highlights where models agree, diverge, or take alternative paths.
@@ -61,7 +61,7 @@ Steps from all models are grouped into **Step-Layers** (L1, L2, …) representin
 ### 5. Aggregated Answer
 
 <p align="center">
-  <img src="figs/sat_guide_5.png" alt="Aggregated answer" width="400"/>
+  <img src="figs/sat_guide_5.png?v=20260711-c1ab939" alt="Aggregated answer" width="400"/>
 </p>
 
 The aggregator synthesizes a final answer by analyzing strategy coverage and confidence across all model outputs, producing a rationale grounded in the strongest solutions.
