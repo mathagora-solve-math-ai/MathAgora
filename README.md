@@ -9,7 +9,7 @@ MathAgora is a multi-model math reasoning platform. Upload an exam sheet or sele
 ## Pipeline Overview
 
 <p align="center">
-  <img src="figs/solve_pipeline.png" alt="MathAgora Solve Pipeline" width="900"/>
+  <img src="figs/solve_pipeline.png?v=20260711-d63077e" alt="MathAgora Solve Pipeline" width="900"/>
 </p>
 
 Each model independently produces a step-by-step solution. A **Step-Network Generator** (Claude Opus 4.5) then groups and aligns these steps into shared *Step-Layers*, constructing a cross-model reasoning network. An **Aggregator** (Gemini 3.1 Pro) analyzes strategy coverage across models and synthesizes a final answer with rationale and confidence.
