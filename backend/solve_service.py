@@ -3,10 +3,11 @@
 Solve stream: NDJSON stream of model events/text.
 Supports 5 models and 3 modalities (text, image, image+text).
 
-Prompt / schema synced from run_backend_solve_parallel_5y.py:
-- Single English prompt (V4_PROMPT_SIMPLE) — model self-detects MCQ vs short-answer
-- Unified schema with no prob_type dependency
-- Temperature policy: GPT-5-Codex and GPT-5 do NOT receive explicit temperature
+Prompt / schema synced from experiment_emnlp/run_dla_solve.py:
+- DLA question crops use image-only by default.
+- All models are routed through OpenRouter.
+- final_answer is a string so MCQ labels, decimals, and fractions are preserved.
+- Temperature policy: GPT-5-Codex and GPT-5 do NOT receive explicit temperature.
 """
 from __future__ import annotations
 
@@ -24,10 +25,17 @@ from openai import OpenAI
 WORKSPACE = Path(__file__).resolve().parent.parent
 OPENROUTER_BASE_URL = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
 
-OPENAI_DIRECT_PREFIXES = ("openai/",)
-
 # Models that must NOT receive an explicit temperature parameter
 NO_TEMPERATURE_MODELS = {"openai/gpt-5-codex", "openai/gpt-5"}
+NO_MAX_TOKENS_MODELS_PREFIX = "openai/gpt-"
+DEFAULT_MAX_OUTPUT_TOKENS = int(os.environ.get("SOLVE_MAX_OUTPUT_TOKENS", "8192"))
+MODEL_MAX_TOKENS: dict[str, int] = {
+    "google/gemini-3.1-pro-preview": 32768,
+}
+MODEL_ID_ALIASES: dict[str, str] = {
+    "x-ai/grok-4-fast": "x-ai/grok-4.3",
+    "x-ai/grok-4.1-fast": "x-ai/grok-4.3",
+}
 
 max_retries = 3
 
@@ -68,8 +76,9 @@ Output exactly one JSON object. (No code blocks or extra text.)
 **title** must be concise, within 10 words.
 **content** must contain the concrete solution process for that step.
 **final_answer rules**:
-- If the problem has multiple-choice options (①②③④⑤ or options 1–5), it is multiple-choice: enter the option number as an integer (1–5).
-- If there are no options and a specific value must be computed, it is short-answer: enter an integer between 0 and 999.
+- CSAT multiple-choice (options ①②③④⑤ or numeric options): enter the option number as a string (e.g. "1"–"5").
+- SAT multiple-choice (options A/B/C/D): enter the option letter as a string (e.g. "A", "B", "C", or "D"). Do NOT enter "1"–"4" for SAT multiple-choice. If you reason using option indices, convert 1→A, 2→B, 3→C, 4→D before writing final_answer.
+- Short-answer / grid-in: enter the exact numerical answer as a string. It may be an integer (e.g. "42"), a decimal (e.g. "0.2"), or a fraction (e.g. "1/3"). Do NOT round or truncate.
 """
 
 # ---------------------------------------------------------------------------
@@ -96,8 +105,8 @@ SOLUTION_SCHEMA: dict[str, Any] = {
             },
         },
         "final_answer": {
-            "type": "integer",
-            "description": "Final answer: option number (1–5) for multiple-choice, integer 0–999 for short-answer",
+            "type": "string",
+            "description": "Final answer: CSAT MCQ option number string, SAT MCQ option letter string, or exact value string for short-answer/grid-in",
         },
     },
     "required": ["model_name", "steps", "final_answer"],
@@ -123,8 +132,8 @@ CLAUDE_SOLUTION_SCHEMA: dict[str, Any] = {
             },
         },
         "final_answer": {
-            "type": "integer",
-            "description": "Final answer: option number (1–5) for multiple-choice, integer 0–999 for short-answer",
+            "type": "string",
+            "description": "Final answer string",
         },
     },
     "required": ["model_name", "steps", "final_answer"],
@@ -167,6 +176,45 @@ def _temperature_for_model(model_id: str) -> float | None:
     if model_id in NO_TEMPERATURE_MODELS:
         return None
     return 1.0
+
+
+def _provider_model_id(model_id: str) -> str:
+    return MODEL_ID_ALIASES.get(model_id, model_id)
+
+
+def _infer_document_type(document_type: str | None, problem_id: str | None) -> str | None:
+    value = (document_type or "").strip().lower()
+    if value in {"csat", "sat"}:
+        return value
+    problem_id_value = (problem_id or "").strip().lower()
+    if problem_id_value.startswith("sat_") or problem_id_value.startswith("sat-"):
+        return "sat"
+    if re.match(r"^\d{4}_", problem_id_value):
+        return "csat"
+    return None
+
+
+def _prompt_for_document_type(document_type: str | None) -> str:
+    if document_type == "sat":
+        return (
+            f"{V4_PROMPT_SIMPLE}\n"
+            "Current document type: SAT.\n"
+            "For SAT multiple-choice problems, final_answer must be exactly one uppercase letter: "
+            '"A", "B", "C", or "D". Never output "1", "2", "3", or "4" as final_answer for SAT multiple-choice.\n'
+        )
+    if document_type == "csat":
+        return (
+            f"{V4_PROMPT_SIMPLE}\n"
+            "Current document type: CSAT.\n"
+            'For CSAT multiple-choice problems, final_answer should be the option number string such as "1" through "5".\n'
+        )
+    return V4_PROMPT_SIMPLE
+
+
+def _max_tokens_for_model(model_id: str) -> int | None:
+    if model_id.startswith(NO_MAX_TOKENS_MODELS_PREFIX):
+        return None
+    return MODEL_MAX_TOKENS.get(model_id, DEFAULT_MAX_OUTPUT_TOKENS)
 
 
 def _normalize_content_item_for_chat(item: Any) -> Any:
@@ -285,6 +333,8 @@ def _build_prompt_and_messages(
     problem_text: str | None,
     crop_image_data_url: str | None,
     modality: str | None,
+    document_type: str | None = None,
+    problem_id: str | None = None,
 ) -> tuple[str, list[dict[str, Any]]]:
     """Build (prompt, user_messages) from modality (text | image | image+text).
 
@@ -292,7 +342,7 @@ def _build_prompt_and_messages(
     message list.  No prob_type needed — the model infers MCQ vs short-answer
     from the problem content itself.
     """
-    modality = (modality or "image+text").strip().lower()
+    modality = (modality or os.environ.get("SOLVE_DEFAULT_MODALITY", "image")).strip().lower()
     problem_text = (problem_text or "").strip()
 
     image_payload: tuple[str, str] | None = None
@@ -335,7 +385,8 @@ def _build_prompt_and_messages(
             parts.append({"type": "text", "text": problem_text})
         messages = [{"role": "user", "content": parts}]
 
-    return V4_PROMPT_SIMPLE, messages
+    inferred_document_type = _infer_document_type(document_type, problem_id)
+    return _prompt_for_document_type(inferred_document_type), messages
 
 
 def _call_llm_once(
@@ -343,63 +394,27 @@ def _call_llm_once(
     prompt: str,
     messages: list[dict[str, Any]],
 ) -> str:
-    schema = _schema_for_model(model_id)
-    temp = _temperature_for_model(model_id)
+    provider_model_id = _provider_model_id(model_id)
+    schema = _schema_for_model(provider_model_id)
+    temp = _temperature_for_model(provider_model_id)
+    max_tokens = _max_tokens_for_model(provider_model_id)
 
-    if model_id.startswith(OPENAI_DIRECT_PREFIXES):
-        client = _get_openai_client()
-        native_model = model_id.split("/", 1)[1]
-
-        if native_model == "gpt-5-codex":
-            responses_input = _normalize_messages_for_responses(prompt=prompt, messages=messages)
-            response = client.responses.create(
-                model=native_model,
-                input=responses_input,
-                text={
-                    "format": {
-                        "type": "json_schema",
-                        "name": "model_solution",
-                        "strict": True,
-                        "schema": schema,
-                    }
-                },
-            )
-            content = _extract_text_from_responses_response(response)
-            if not content:
-                raise RuntimeError(f"LLM response content is empty (model={model_id})")
-            return content
-
-        # Other OpenAI models (e.g. gpt-5)
-        chat_messages = [{"role": "system", "content": prompt}, *messages]
-        chat_messages = _normalize_messages_for_chat(chat_messages)
-        kwargs: dict[str, Any] = dict(
-            model=native_model,
-            messages=chat_messages,
-            response_format={
-                "type": "json_schema",
-                "json_schema": {"name": "model_solution", "strict": True, "schema": schema},
-            },
-        )
-        if temp is not None:
-            kwargs["temperature"] = temp
-        response = client.chat.completions.create(**kwargs)
-    else:
-        chat_messages = [{"role": "system", "content": prompt}, *messages]
-        chat_messages = _normalize_messages_for_chat(chat_messages)
-        client = _get_openrouter_client()
-        kwargs = dict(
-            model=model_id,
-            messages=chat_messages,
-            response_format={
-                "type": "json_schema",
-                "json_schema": {"name": "model_solution", "strict": True, "schema": schema},
-            },
-        )
-        if temp is not None:
-            kwargs["temperature"] = temp
-        if model_id.startswith("x-ai/"):
-            kwargs["max_tokens"] = 16000
-        response = client.chat.completions.create(**kwargs)
+    chat_messages = [{"role": "system", "content": prompt}, *messages]
+    chat_messages = _normalize_messages_for_chat(chat_messages)
+    client = _get_openrouter_client()
+    kwargs: dict[str, Any] = {
+        "model": provider_model_id,
+        "messages": chat_messages,
+        "response_format": {
+            "type": "json_schema",
+            "json_schema": {"name": "model_solution", "strict": True, "schema": schema},
+        },
+    }
+    if max_tokens is not None:
+        kwargs["max_tokens"] = max_tokens
+    if temp is not None:
+        kwargs["temperature"] = temp
+    response = client.chat.completions.create(**kwargs)
 
     choices = getattr(response, "choices", None)
     if not choices or choices[0] is None:
@@ -447,8 +462,6 @@ def _call_llm_with_retry(
 
 
 def _required_api_key_for_model(model_id: str) -> str:
-    if model_id.startswith(OPENAI_DIRECT_PREFIXES):
-        return "OPENAI_API_KEY"
     return "OPENROUTER_API_KEY"
 
 
@@ -471,15 +484,17 @@ async def stream_solve_ndjson(
     crop_image_data_url: str | None = None,
     problem_text: str | None = None,
     modality: str | None = None,
+    document_type: str | None = None,
     models: list[dict[str, Any]] | None = None,
 ) -> AsyncIterator[str]:
     """Yield NDJSON lines (one JSON object per line) for the solve stream."""
     model_list = models or []
     logger.info(
-        "Solve stream request: problem_id=%s label=%s modality=%s models=%s",
+        "Solve stream request: problem_id=%s label=%s modality=%s document_type=%s models=%s",
         problem_id,
         problem_label,
         modality,
+        document_type,
         [m.get("modelId") or m.get("model_id") for m in model_list],
     )
 
@@ -518,6 +533,8 @@ async def stream_solve_ndjson(
             problem_text=problem_text,
             crop_image_data_url=crop_image_data_url,
             modality=modality,
+            document_type=document_type,
+            problem_id=problem_id,
         )
         logger.info(
             "Solve prompt/messages prepared (problem_id=%s, modality=%s)",

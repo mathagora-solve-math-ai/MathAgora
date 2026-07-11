@@ -107,23 +107,42 @@ export function cropImageFromPage(
 
 /** Build page_id for backend from dataset year/page (CSAT: year_math_odd_page_N, SAT: sat_math_odd_page_N). */
 function buildPageId(opts: {
+  datasetGroup?: "csat" | "sat";
   datasetYear?: string;
   datasetPage?: string;
+  datasetPageKey?: string;
   documentType?: "csat" | "sat" | null;
 }): string | null {
-  const { datasetYear, datasetPage, documentType } = opts;
-  if (!datasetPage) return null;
-  if (documentType === "sat") return `sat_math_odd_page_${datasetPage}`;
-  if (datasetYear) return `${datasetYear}_math_odd_page_${datasetPage}`;
+  const { datasetGroup, datasetYear, datasetPage, datasetPageKey, documentType } = opts;
+  if (!datasetPage && !datasetPageKey) return null;
+  const group = datasetGroup ?? (documentType === "sat" || datasetYear === "sat" ? "sat" : "csat");
+  if (group === "sat") {
+    const pageKey =
+      datasetPageKey ??
+      (datasetYear && datasetYear !== "sat" && datasetPage && !datasetPage.includes("_")
+        ? `${datasetYear}_${datasetPage}`
+        : datasetPage);
+    return `sat_math_odd_page_${pageKey}`;
+  }
+  if (datasetYear && datasetPage) return `${datasetYear}_math_odd_page_${datasetPage}`;
   return null;
 }
 
 /** dataset 이미지 URL에서 year/page 추론 (예: /data/2026_math_odd/page_001.png → 2026, 001). */
-function inferDatasetMetaFromUrl(url: string): { year: string; page: string } | null {
+function inferDatasetMetaFromUrl(url: string): {
+  group: "csat" | "sat";
+  year: string;
+  page: string;
+  pageKey?: string;
+} | null {
   const m = url.match(/\/data\/(\d{4})_math_odd\/page_(\d+)\.png$/);
-  if (m) return { year: m[1], page: m[2].padStart(3, "0") };
+  if (m) return { group: "csat", year: m[1], page: m[2].padStart(3, "0") };
   const mSat = url.match(/\/data\/sat_math_odd\/page_([^/]+)\.png$/);
-  if (mSat) return { year: "sat", page: mSat[1] };
+  if (mSat) {
+    const pageKey = mSat[1];
+    const [year, ...rest] = pageKey.split("_");
+    return { group: "sat", year, page: rest.join("_") || pageKey, pageKey };
+  }
   return null;
 }
 
@@ -170,8 +189,10 @@ export async function detectProblems(
   opts?: {
     pageId?: string;
     documentType?: "csat" | "sat" | null;
+    datasetGroup?: "csat" | "sat";
     datasetYear?: string;
     datasetPage?: string;
+    datasetPageKey?: string;
   },
 ): Promise<DetectResult> {
   if (DETECT_API_BASE) {
@@ -190,11 +211,12 @@ export async function detectProblems(
         const inferred = inferDatasetMetaFromUrl(imageDataUrl);
         if (inferred)
           pageId =
-            inferred.year === "sat"
-              ? `sat_math_odd_page_${inferred.page}`
+            inferred.group === "sat"
+              ? `sat_math_odd_page_${inferred.pageKey ?? inferred.page}`
               : `${inferred.year}_math_odd_page_${inferred.page}`;
       }
       const isDatasetSample =
+        !!(opts?.datasetGroup && opts?.datasetYear && opts?.datasetPage) ||
         !!(opts?.datasetYear && opts?.datasetPage) ||
         !!pageId?.startsWith("2026_math_odd_page_") ||
         !!pageId?.startsWith("sat_math_odd_page_");

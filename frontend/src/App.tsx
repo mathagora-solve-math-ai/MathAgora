@@ -13,11 +13,17 @@ import {
   type UploadedImage,
 } from "./mockData";
 import { clearDetectCache, clearDetectCacheFor2026, cropImageFromPage, detectProblems, imageUrlToDataUrl } from "./mockApi";
-import { loadDatasetIndex, loadDatasetPage } from "./dataset";
-import type { DatasetIndex } from "./dataset";
+import {
+  getDatasetPages,
+  loadDatasetIndex,
+  loadDatasetPage,
+  resolveDatasetSelection,
+  type DatasetGroupId,
+  type DatasetIndex,
+} from "./dataset";
 import { createLLMStreamClient } from "./llmStreamClient.index";
 import type { ModelId, SolveModality, StreamChunk, SolveRequest } from "./llmStreamClient";
-import { parseStructuredSolution } from "./postprocess";
+import { normalizeFinalAnswer, parseStructuredSolution, type FinalAnswerContext } from "./postprocess";
 import { getSolveCache, getSolveCacheKey, setSolveCache } from "./solveCache";
 
 const MODEL_COLORS = [
@@ -85,16 +91,16 @@ const SOLVE_MODELS: ModelMeta[] = [
     latencyMs: 0,
   },
   {
-    modelId: "google/gemini-3-pro-preview",
-    displayName: "Gemini 3 Pro",
-    version: "google/gemini-3-pro-preview",
+    modelId: "google/gemini-3.1-pro-preview",
+    displayName: "Gemini 3.1 Pro",
+    version: "google/gemini-3.1-pro-preview",
     temperature: 0.0,
     latencyMs: 0,
   },
   {
-    modelId: "x-ai/grok-4-fast",
-    displayName: "Grok 4 Fast",
-    version: "x-ai/grok-4-fast",
+    modelId: "x-ai/grok-4.3",
+    displayName: "Grok 4.3",
+    version: "x-ai/grok-4.3",
     temperature: 0.0,
     latencyMs: 0,
   },
@@ -130,12 +136,11 @@ export default function App() {
   const [uploadedImage, setUploadedImage] = useState<UploadedImage | null>(null);
   const [detections, setDetections] = useState<Detection[]>([]);
   const [documentType, setDocumentType] = useState<"csat" | "sat" | null>(null);
-  /** Document type chosen at upload (CSAT / SAT / etc). Only used when source is "upload". etc → backend "csat". */
-  const [uploadDocumentType, setUploadDocumentType] = useState<"csat" | "sat" | "etc">("etc");
   const [imageSize, setImageSize] = useState({ width: 1, height: 1 });
   const [error, setError] = useState<string | null>(null);
 
   // Dataset controls
+  const [datasetGroup, setDatasetGroup] = useState<DatasetGroupId>("csat");
   const [datasetYear, setDatasetYear] = useState("2025");
   const [datasetPage, setDatasetPage] = useState("015");
   const [datasetIndex, setDatasetIndex] = useState<DatasetIndex | null>(null);
@@ -166,25 +171,46 @@ export default function App() {
   const scrolledForFlowmapRef = useRef(new Set<string>());
   const scrolledForAggRef = useRef(new Set<string>());
 
+  const getFinalAnswerContext = (problemId: string): FinalAnswerContext => {
+    const detection = detections.find((d) => d.id === problemId);
+    return {
+      problemId,
+      documentType,
+      problemText: detection?.text || detection?.label || "",
+    };
+  };
+
+  const normalizeModelResultsForProblem = (
+    results: ModelResult[],
+    problemId: string,
+  ): ModelResult[] => {
+    const context = getFinalAnswerContext(problemId);
+    return results.map((result) => ({
+      ...result,
+      finalAnswer: normalizeFinalAnswer(result.finalAnswer ?? "", context),
+    }));
+  };
+
   // ─── Dataset loading ─────────────────────────────────────────────────────
 
   const loadDatasetSelection = async (
+    group: DatasetGroupId,
     year: string,
     page: string,
     index?: DatasetIndex | null,
   ) => {
     clearDetectCache();
-    if (year === "2026") clearDetectCacheFor2026();
-    const dataset = await loadDatasetPage({ year, page, index: index ?? undefined });
+    if (group === "csat" && year === "2026") clearDetectCacheFor2026();
+    const dataset = await loadDatasetPage({ group, year, page, index: index ?? undefined });
     setUploadedImage({
       dataUrl: dataset.imageUrl,
-      name: `dataset_${dataset.meta.year}_${dataset.meta.set}_page_${dataset.meta.page}.png`,
+      name: `dataset_${dataset.meta.group}_${dataset.meta.year}_${dataset.meta.set}_page_${dataset.meta.pageKey}.png`,
       updatedAt: Date.now(),
       source: "dataset",
       datasetMeta: dataset.meta,
     });
     setDetections(dataset.detections);
-    setDocumentType(dataset.meta.year === "sat" ? "sat" : "csat");
+    setDocumentType(dataset.meta.group);
     if (dataset.imageWidth != null && dataset.imageHeight != null) {
       setImageSize({ width: dataset.imageWidth, height: dataset.imageHeight });
     } else {
@@ -219,16 +245,30 @@ export default function App() {
 
   useEffect(() => {
     let hasStoredImage = false;
+    let preferredGroup: DatasetGroupId = datasetGroup;
+    let preferredYear = datasetYear;
+    let preferredPage = datasetPage;
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
       try {
         const parsed = JSON.parse(stored) as UploadedImage;
         if (parsed?.dataUrl) {
           setUploadedImage(parsed);
-          hasStoredImage = true;
           if (parsed.source === "dataset" && parsed.datasetMeta) {
-            setDatasetYear(parsed.datasetMeta.year);
-            setDatasetPage(parsed.datasetMeta.page);
+            const meta = parsed.datasetMeta;
+            preferredGroup = meta.group ?? (meta.year === "sat" ? "sat" : "csat");
+            preferredYear = meta.year;
+            preferredPage = meta.page;
+            if (preferredGroup === "sat" && preferredYear === "sat" && preferredPage.includes("_")) {
+              const [test, ...rest] = preferredPage.split("_");
+              preferredYear = test;
+              preferredPage = rest.join("_");
+            }
+            setDatasetGroup(preferredGroup);
+            setDatasetYear(preferredYear);
+            setDatasetPage(preferredPage);
+          } else {
+            hasStoredImage = true;
           }
         }
       } catch {
@@ -239,24 +279,12 @@ export default function App() {
     loadDatasetIndex()
       .then((index) => {
         setDatasetIndex(index);
-        const allYears = Object.keys(index.years).sort().reverse();
-        const years = allYears.filter((y) => y !== "2026");
-        const fallbackYear =
-          datasetYear !== "2026" && index.years[datasetYear]
-            ? datasetYear
-            : years[0] ?? allYears[0];
-        const pages = Object.keys(index.years[fallbackYear]?.pages ?? {}).sort();
-        const fallbackPage = index.years[fallbackYear]?.pages?.[datasetPage]
-          ? datasetPage
-          : pages[0];
-        setDatasetYear((prev) =>
-          prev !== "2026" && index.years[prev] ? prev : fallbackYear,
-        );
-        setDatasetPage((prev) =>
-          index.years[fallbackYear]?.pages?.[prev] ? prev : fallbackPage,
-        );
+        const selection = resolveDatasetSelection(index, preferredGroup, preferredYear, preferredPage);
+        setDatasetGroup(selection.group);
+        setDatasetYear(selection.year);
+        setDatasetPage(selection.page);
         if (!hasStoredImage) {
-          return loadDatasetSelection(fallbackYear, fallbackPage, index);
+          return loadDatasetSelection(selection.group, selection.year, selection.page, index);
         }
       })
       .catch(() => {
@@ -316,7 +344,7 @@ export default function App() {
         if (!ps) return;
         const results: ModelResult[] = ps.modelMetas.map((model) => {
           const state = ps.streamStates[model.modelId] ?? { status: "idle", partialText: "" };
-          const parsed = parseStructuredSolution(state.partialText);
+          const parsed = parseStructuredSolution(state.partialText, getFinalAnswerContext(pid));
           return {
             modelId: model.modelId,
             modelName: model.displayName,
@@ -527,13 +555,25 @@ export default function App() {
     reader.readAsDataURL(file);
   };
 
+  const handleDatasetGroupChange = (value: DatasetGroupId) => {
+    const selection = resolveDatasetSelection(datasetIndex, value);
+    setDatasetGroup(selection.group);
+    setDatasetYear(selection.year);
+    setDatasetPage(selection.page);
+    if (datasetIndex) {
+      loadDatasetSelection(selection.group, selection.year, selection.page, datasetIndex).catch(() =>
+        setError("Dataset page could not be loaded."),
+      );
+    }
+  };
+
   const handleDatasetYearChange = (value: string) => {
-    const pages = Object.keys(datasetIndex?.years?.[value]?.pages ?? {}).sort();
+    const pages = getDatasetPages(datasetIndex, datasetGroup, value);
     const nextPage = pages[0] ?? datasetPage;
     setDatasetYear(value);
     setDatasetPage(nextPage);
     if (datasetIndex) {
-      loadDatasetSelection(value, nextPage, datasetIndex).catch(() =>
+      loadDatasetSelection(datasetGroup, value, nextPage, datasetIndex).catch(() =>
         setError("Dataset page could not be loaded."),
       );
     }
@@ -542,7 +582,7 @@ export default function App() {
   const handleDatasetPageChange = (value: string) => {
     setDatasetPage(value);
     if (datasetIndex) {
-      loadDatasetSelection(datasetYear, value, datasetIndex).catch(() =>
+      loadDatasetSelection(datasetGroup, datasetYear, value, datasetIndex).catch(() =>
         setError("Dataset page could not be loaded."),
       );
     }
@@ -559,18 +599,16 @@ export default function App() {
     setActiveTabId(null);
     try {
       // Always use backend detect so UI text is the converted (post-processor) result.
+      const datasetMeta = uploadedImage.source === "dataset" ? uploadedImage.datasetMeta : undefined;
+      const datasetMetaGroup = datasetMeta?.group ?? (datasetMeta?.year === "sat" ? "sat" : "csat");
       const result = await detectProblems(uploadedImage.dataUrl, {
-        datasetYear: uploadedImage.source === "dataset" && uploadedImage.datasetMeta
-          ? uploadedImage.datasetMeta.year
-          : undefined,
-        datasetPage: uploadedImage.source === "dataset" && uploadedImage.datasetMeta
-          ? uploadedImage.datasetMeta.page
-          : undefined,
-        documentType: uploadedImage.source === "dataset" && uploadedImage.datasetMeta
-          ? (uploadedImage.datasetMeta.year === "sat" ? "sat" : "csat")
-          : uploadDocumentType === "sat"
-            ? "sat"
-            : "csat",
+        datasetGroup: datasetMeta ? datasetMetaGroup : undefined,
+        datasetYear: datasetMeta?.year,
+        datasetPage: datasetMeta?.page,
+        datasetPageKey: datasetMeta?.pageKey,
+        documentType: datasetMeta
+          ? datasetMetaGroup
+          : null,
       });
       const list = result.detections?.length ? result.detections : getFallbackDetections();
       setDetections(list);
@@ -723,12 +761,13 @@ export default function App() {
       idsToSolve.forEach((pid) => {
         const cached = cachedByPid.get(pid);
         if (cached) {
+          const structuredResults = normalizeModelResultsForProblem(cached.structuredResults, pid);
           next[pid] = {
             cropDataUrl: "",
             inputModality: cached.modality,
             modelMetas: SOLVE_MODELS,
-            streamStates: streamStatesFromStructuredResults(cached.structuredResults),
-            structuredResults: cached.structuredResults,
+            streamStates: streamStatesFromStructuredResults(structuredResults),
+            structuredResults,
             flowmapData: cached.flowmapData,
             isGeneratingFlowmap: false,
             aggregationData: null,
@@ -834,6 +873,7 @@ export default function App() {
         cropImageDataUrl: cropDataUrl || undefined,
         problemText: (detection.text || detection.label || "").trim(),
         modality: solveModality,
+        documentType,
         models: SOLVE_MODELS.map((m) => ({
           modelId: m.modelId,
           displayName: m.displayName,
@@ -1100,36 +1140,14 @@ export default function App() {
             <ImageUploader
               image={uploadedImage}
               onFileSelected={handleFileSelected}
+              datasetGroup={datasetGroup}
               datasetYear={datasetYear}
               datasetPage={datasetPage}
+              onChangeDatasetGroup={handleDatasetGroupChange}
               onChangeDatasetYear={handleDatasetYearChange}
               onChangeDatasetPage={handleDatasetPageChange}
               datasetIndex={datasetIndex}
             />
-            {/* Document type: only when using upload (not sample) */}
-            {uploadedImage?.source === "upload" ? (
-              <div className="mt-4 flex flex-wrap items-center gap-4">
-                <span className="text-sm font-medium text-slate-700">Document type</span>
-                <div className="flex flex-wrap gap-2">
-                  {(["csat", "sat", "etc"] as const).map((opt) => (
-                    <label
-                      key={opt}
-                      className="flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm transition has-[:checked]:border-amber-500 has-[:checked]:bg-amber-50 has-[:checked]:ring-1 has-[:checked]:ring-amber-500"
-                    >
-                      <input
-                        type="radio"
-                        name="uploadDocumentType"
-                        value={opt}
-                        checked={uploadDocumentType === opt}
-                        onChange={() => setUploadDocumentType(opt)}
-                        className="sr-only"
-                      />
-                      <span className="font-medium">{opt === "etc" ? "etc" : opt.toUpperCase()}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-            ) : null}
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <button
                 className="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/40 disabled:opacity-60"
@@ -1291,6 +1309,9 @@ export default function App() {
                   <ModelOutputView
                     models={activePs.modelMetas}
                     streamStates={activePs.streamStates}
+                    problemId={activeTabId}
+                    documentType={documentType}
+                    problemText={activeProblemText}
                     onStopModel={(modelId) => handleStopModel(activeTabId, modelId as ModelId)}
                     onStopAll={() => handleStopProblem(activeTabId)}
                   />

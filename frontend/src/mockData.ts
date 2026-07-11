@@ -6,9 +6,12 @@ export type UploadedImage = {
     source?: "dataset" | "upload" | "demo";
     sizeBytes?: number;
     datasetMeta?: {
+      group?: "csat" | "sat";
       year: string;
       set: string;
       page: string;
+      pageKey?: string;
+      label?: string;
     };
   };
   
@@ -825,7 +828,6 @@ export type UploadedImage = {
       finalAnswer: "Computed solution (mock).",
     },
   ];
-  
+
   export const getMockResults = (problemId: string): ModelResult[] =>
     MOCK_LLM_RESULTS[problemId] || buildGenericResults(problemId);
-  

@@ -21,8 +21,8 @@ export function getSolveCacheKey(
 ): string {
   const base = `${problemId}_${modality}`;
   if (uploadedImage?.datasetMeta) {
-    const { year, page } = uploadedImage.datasetMeta;
-    return `${base}_${year}_${page}`;
+    const { group, year, page, pageKey } = uploadedImage.datasetMeta;
+    return `${base}_${group ?? "csat"}_${year}_${pageKey ?? page}`;
   }
   return `${base}_${uploadedImage?.updatedAt ?? "upload"}`;
 }

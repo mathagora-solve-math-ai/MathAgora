@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { parseStructuredSolution } from "../postprocess.ts";
+import { parseStructuredSolution, type FinalAnswerContext } from "../postprocess.ts";
 import { MathText } from "./MathText.tsx";
 import { ANSWER_PALETTE } from "../theme/flowmapPalette.ts";
 
@@ -32,6 +32,9 @@ type StreamState = {
 type Props = {
   models: ModelMeta[];
   streamStates: Record<string, StreamState>;
+  problemId?: string | null;
+  documentType?: "csat" | "sat" | null;
+  problemText?: string | null;
   onStopModel: (modelId: string) => void;
   onStopAll: () => void;
 };
@@ -73,6 +76,9 @@ const StepCard = ({
 export default function ModelOutputView({
   models,
   streamStates,
+  problemId,
+  documentType,
+  problemText,
   onStopModel,
   onStopAll,
 }: Props) {
@@ -90,10 +96,11 @@ export default function ModelOutputView({
       </div>
       <div className="overflow-x-auto">
       {(() => {
+        const answerContext: FinalAnswerContext = { problemId, documentType, problemText };
         const STEP_ROW_MIN_H = 72;
         const parsedByModel = models.map((model) => {
           const state = streamStates[model.modelId] ?? { status: "idle" as const, partialText: "" };
-          return { model, state, parsed: parseStructuredSolution(state.partialText) };
+          return { model, state, parsed: parseStructuredSolution(state.partialText, answerContext) };
         });
         const maxSteps = Math.max(1, ...parsedByModel.map(({ parsed }) => parsed.steps.length));
         const stepsBlockMinH = maxSteps * STEP_ROW_MIN_H;

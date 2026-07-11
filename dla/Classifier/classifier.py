@@ -25,6 +25,8 @@ except ImportError:
 HEADER_CROP_RATIO = 0.12  # top 12% of image for heuristic OCR
 KOREAN_RATIO_THRESHOLD = 0.08  # above this → CSAT
 DEFAULT_UNCERTAIN = "csat"  # when heuristic is uncertain
+SAT_ASPECT_RATIO_THRESHOLD = 0.74  # SAT pages are wider than CSAT/A4-like pages.
+CSAT_ASPECT_RATIO_THRESHOLD = 0.72
 
 # CSAT keywords (Korean exam header)
 CSAT_KEYWORDS = [
@@ -79,6 +81,21 @@ def _korean_ratio(text: str) -> float:
         return 0.0
     korean = sum(1 for c in text if _KOREAN_RE.search(c))
     return korean / total
+
+
+def _page_aspect_ratio(image_input: str | Path | "Image.Image") -> float:
+    try:
+        from PIL import Image
+        if isinstance(image_input, (str, Path)):
+            with Image.open(image_input) as img:
+                w, h = img.size
+        else:
+            w, h = image_input.size
+        if h <= 0:
+            return 0.0
+        return float(w) / float(h)
+    except Exception:
+        return 0.0
 
 
 def _run_ocr_on_image(image_path: str) -> str:
@@ -179,6 +196,15 @@ def classify_heuristic(
     if use_cnn_if_uncertain and cnn_model_path:
         label, _ = classify_cnn(image_input, model_path=cnn_model_path)
         return label, 0.6
+
+    # Final cheap fallback: page geometry. SAT practice pages in the current
+    # pipeline are US-letter-like and visibly wider than CSAT/A4-like pages.
+    # This prevents uncertain SAT headers from falling into DEFAULT_UNCERTAIN.
+    aspect = _page_aspect_ratio(image_input)
+    if aspect >= SAT_ASPECT_RATIO_THRESHOLD:
+        return "sat", 0.7
+    if 0 < aspect <= CSAT_ASPECT_RATIO_THRESHOLD:
+        return "csat", 0.7
     return default_if_uncertain, 0.5
 
 

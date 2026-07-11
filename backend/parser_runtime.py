@@ -19,7 +19,6 @@ def _abs_no_resolve(p: Path) -> Path:
 
 
 def _compute_parser_python(workspace: Path) -> Path:
-    dla_dir = workspace / "dla"
     parser_python_env = os.environ.get("DLA_PARSER_PYTHON", "").strip()
     parser_venv_env = os.environ.get("DLA_PARSER_VENV", "").strip()
     if parser_python_env:
@@ -28,11 +27,32 @@ def _compute_parser_python(workspace: Path) -> Path:
             parser_python = _abs_no_resolve(workspace / parser_python)
         return parser_python
     if parser_venv_env:
-        return _abs_no_resolve(dla_dir / parser_venv_env / "bin" / "python")
+        venv_path = Path(parser_venv_env).expanduser()
+        if not venv_path.is_absolute():
+            workspace_relative = workspace / venv_path
+            legacy_dla_relative = workspace / "dla" / venv_path
+            venv_path = workspace_relative if workspace_relative.exists() else legacy_dla_relative
+        return _abs_no_resolve(venv_path / "bin" / "python")
+    # dla_v2 contains cleaned source code but intentionally reuses the original
+    # OCR environments documented in dla_v2/README.md.
+    dla_dir = workspace / "dla"
     deepseek_python = _abs_no_resolve(dla_dir / "venv_deepseek" / "bin" / "python")
     if deepseek_python.exists():
         return deepseek_python
     return _abs_no_resolve(dla_dir / "venv_ocr" / "bin" / "python")
+
+
+def _parser_code_dir(workspace: Path) -> Path:
+    root_env = os.environ.get("DLA_PARSER_ROOT", "").strip()
+    if root_env:
+        root = Path(root_env).expanduser()
+        if not root.is_absolute():
+            root = workspace / root
+        return root
+    v2 = workspace / "dla_v2" / "csat"
+    if v2.exists():
+        return v2
+    return workspace / "dla"
 
 
 def _build_parser_env(parser_python: Path, sat_mode: bool = False) -> dict[str, str]:
@@ -52,6 +72,8 @@ def _build_parser_env(parser_python: Path, sat_mode: bool = False) -> dict[str, 
         "MODEL_NAME",
         "IMAGE_SIZE",
         "BASE_SIZE",
+        "DLA_EXPERIMENT_ROOT",
+        "DLA_DATA_ROOT",
     ):
         if key in os.environ:
             env[key] = os.environ[key]
@@ -64,8 +86,8 @@ def _build_parser_env(parser_python: Path, sat_mode: bool = False) -> dict[str, 
 
 
 def _single_run(workspace: Path, image_path: str, out_dir: str, sat_mode: bool) -> dict:
-    dla_dir = workspace / "dla"
-    parser_script = dla_dir / "run_parser_single.py"
+    parser_dir = _parser_code_dir(workspace)
+    parser_script = parser_dir / "run_parser_single.py"
     parser_python = _compute_parser_python(workspace)
     if not parser_script.exists() or not parser_python.exists():
         raise RuntimeError(f"parser runtime not found: python={parser_python} script={parser_script}")
@@ -79,7 +101,7 @@ def _single_run(workspace: Path, image_path: str, out_dir: str, sat_mode: bool) 
         capture_output=True,
         text=True,
         timeout=int(os.environ.get("DLA_PARSER_TIMEOUT_SEC", "420")),
-        cwd=str(dla_dir),
+        cwd=str(parser_dir),
         env=_build_parser_env(parser_python, sat_mode=sat_mode),
     )
     stdout = proc.stdout or ""
@@ -99,9 +121,9 @@ def _single_run(workspace: Path, image_path: str, out_dir: str, sat_mode: bool) 
 class ParserWorker:
     def __init__(self, workspace: Path):
         self.workspace = workspace
-        self.dla_dir = workspace / "dla"
+        self.parser_dir = _parser_code_dir(workspace)
         self.parser_python = _compute_parser_python(workspace)
-        self.worker_script = self.dla_dir / "run_parser_worker.py"
+        self.worker_script = self.parser_dir / "run_parser_worker.py"
         self.proc: subprocess.Popen | None = None
         self._line_queue: "queue.Queue[str | None]" = queue.Queue()
         self._io_lock = threading.Lock()
@@ -135,7 +157,7 @@ class ParserWorker:
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            cwd=str(self.dla_dir),
+            cwd=str(self.parser_dir),
             env=_build_parser_env(self.parser_python),
             bufsize=1,
         )

@@ -12,8 +12,10 @@ import logging
 import os
 import sys
 import tempfile
+import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # Allow importing DLA modules (run from workspace root)
@@ -55,13 +57,53 @@ from backend.demo_parsing_io import save_demo_parsing
 from backend.flowmap_service import generate_flow_map_json
 from backend.aggregation_service import generate_aggregation
 from backend.parser_runtime import detect_problems as _detect_problems_runtime
+from backend.precomputed_parsing import load_precomputed_detection_payload
 from backend.ocr_text_converter import get_converted_prob_desc, get_raw_ocr_from_infer_log  # noqa: F401 (reserved for future use)
 
-logging.basicConfig(
-    level=os.environ.get("BACKEND_LOG_LEVEL", "INFO"),
-    format="%(asctime)s %(levelname)s [%(name)s] %(message)s",
-)
+_KST = timezone(timedelta(hours=9))
+
+
+class _KSTFormatter(logging.Formatter):
+    """logging.Formatter that renders asctime in KST (UTC+9)."""
+
+    def formatTime(self, record: logging.LogRecord, datefmt: str | None = None) -> str:
+        dt = datetime.fromtimestamp(record.created, tz=_KST)
+        if datefmt:
+            return dt.strftime(datefmt)
+        return dt.strftime("%Y-%m-%d %H:%M:%S KST")
+
+
+_handler = logging.StreamHandler()
+_handler.setFormatter(_KSTFormatter("%(asctime)s %(levelname)s [%(name)s] %(message)s"))
+logging.root.setLevel(os.environ.get("BACKEND_LOG_LEVEL", "INFO"))
+logging.root.handlers = [_handler]
+
 logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# IP geo-lookup (best-effort, cached)
+# ---------------------------------------------------------------------------
+import urllib.request as _urllib_request
+
+_geo_cache: dict[str, str] = {}
+
+
+def _geo_lookup(ip: str) -> str:
+    """Return 'Country/Region' string for ip, or empty string on failure."""
+    if ip in _geo_cache:
+        return _geo_cache[ip]
+    if ip in ("127.0.0.1", "::1"):
+        _geo_cache[ip] = "localhost"
+        return "localhost"
+    try:
+        url = f"http://ip-api.com/json/{ip}?fields=country,regionName&lang=en"
+        with _urllib_request.urlopen(url, timeout=2) as resp:
+            data = json.loads(resp.read())
+        result = "/".join(filter(None, [data.get("country", ""), data.get("regionName", "")]))
+        _geo_cache[ip] = result or "unknown"
+    except Exception:
+        _geo_cache[ip] = "unknown"
+    return _geo_cache[ip]
 
 
 def _parse_cors_origins() -> list[str]:
@@ -94,6 +136,24 @@ def _detect_problems(image_path: str, out_dir: str, sat_mode: bool):
 
 
 app = FastAPI(title="Document Classify & Detect API", version="0.1.0")
+
+
+@app.middleware("http")
+async def _log_requests(request: Request, call_next):
+    # Resolve real IP (handle reverse-proxy X-Forwarded-For)
+    forwarded = request.headers.get("X-Forwarded-For")
+    ip = forwarded.split(",")[0].strip() if forwarded else (request.client.host if request.client else "unknown")
+    geo = _geo_lookup(ip)
+    start = time.perf_counter()
+    response = await call_next(request)
+    elapsed_ms = int((time.perf_counter() - start) * 1000)
+    logger.info(
+        "ACCESS ip=%s geo=%s method=%s path=%s status=%s duration=%dms",
+        ip, geo, request.method, request.url.path, response.status_code, elapsed_ms,
+    )
+    return response
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_parse_cors_origins(),
@@ -118,6 +178,8 @@ class ClassifyResponse(BaseModel):
 class DetectResponse(BaseModel):
     documentType: str  # "csat" | "sat"
     detections: list[dict]  # Detection-like: id, x, y, w, h, label, text?, cropUrl?
+    imageWidth: int | None = None
+    imageHeight: int | None = None
 
 
 class ClassifyJsonBody(BaseModel):
@@ -143,6 +205,7 @@ class SolveStreamRequest(BaseModel):
     cropImageDataUrl: str | None = None  # data URL of the cropped problem image
     problemText: str | None = None
     modality: str | None = None  # image | text | image+text
+    documentType: str | None = None  # optional "csat" | "sat"
     models: list[SolveModelSpec] | None = None
 
 
@@ -398,12 +461,14 @@ def _questions_to_detections(
     json_text_map = _load_2026_page_texts(page_id or "") if page_id else None
 
     def _convert_one(idx: int, q: dict) -> str:
+        if q.get("postcorrection_text") or q.get("text_source") == "postcorrection":
+            return (q.get("postcorrection_text") or q.get("merged_text") or "").strip()
         if json_text_map is not None:
             key = str(idx + 1)
             if key in json_text_map:
                 return (json_text_map.get(key) or "").strip()
 
-        return (q.get("merged_text") or "").strip()
+        return (q.get("postcorrection_text") or q.get("merged_text") or "").strip()
 
     futures = [_CONVERTER_EXECUTOR.submit(_convert_one, idx, q) for idx, q in enumerate(questions)]
     converted_texts = []
@@ -417,7 +482,10 @@ def _questions_to_detections(
     out = []
     for q, converted_text in zip(questions, converted_texts):
         qid = str(q.get("qid", ""))
-        if use_demo_ids and page_id:
+        if q.get("detection_id"):
+            det_id = str(q.get("detection_id"))
+            label = str(q.get("label") or det_id)
+        elif use_demo_ids and page_id:
             det_id = f"{page_id}_{qid}"
             label = det_id
         else:
@@ -531,9 +599,24 @@ async def problems_detect(
             except Exception:
                 document_type = "csat"
 
-        # 2) Run parser (dla/parser.py) on single image; respects CSAT/SAT mode
+        # 2) Prefer offline DLA-v2 style experiment output for known demo pages.
+        #    Fall back to live parser for uploads or pages with no stored result.
         sat_mode = document_type == "sat"
-        payload = _detect_problems(path, out_dir, sat_mode=sat_mode)
+        precomputed_payload = load_precomputed_detection_payload(
+            WORKSPACE,
+            page_id=page_id,
+            document_type=document_type,
+        )
+        if precomputed_payload is not None:
+            payload = precomputed_payload
+            document_type = str(precomputed_payload.get("document_type") or document_type)
+            logger.info(
+                "Detect: using precomputed parsing output page_id=%s source=%s",
+                page_id,
+                precomputed_payload.get("precomputed_source"),
+            )
+        else:
+            payload = _detect_problems(path, out_dir, sat_mode=sat_mode)
 
         W = payload.get("image_width") or 0
         H = payload.get("image_height") or 0
@@ -562,7 +645,12 @@ async def problems_detect(
             use_demo_ids=saved_demo,
             run_id=run_id,
         )
-        return DetectResponse(documentType=document_type, detections=detections)
+        return DetectResponse(
+            documentType=document_type,
+            detections=detections,
+            imageWidth=W or None,
+            imageHeight=H or None,
+        )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     finally:
@@ -648,6 +736,7 @@ async def solve_stream(body: SolveStreamRequest):
             crop_image_data_url=body.cropImageDataUrl,
             problem_text=body.problemText,
             modality=body.modality,
+            document_type=body.documentType,
             models=models,
         ):
             yield line

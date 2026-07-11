@@ -1,12 +1,23 @@
 import { useRef, useState, type ChangeEvent, type DragEvent } from "react";
 import type { UploadedImage } from "../mockData";
-import type { DatasetIndex } from "../dataset";
+import {
+  getDatasetGroupIds,
+  getDatasetGroupLabel,
+  getDatasetPageLabel,
+  getDatasetPages,
+  getDatasetYearLabel,
+  getDatasetYears,
+  type DatasetGroupId,
+  type DatasetIndex,
+} from "../dataset";
 
 type ImageUploaderProps = {
   image: UploadedImage | null;
   onFileSelected: (file: File) => void;
+  datasetGroup: DatasetGroupId;
   datasetYear: string;
   datasetPage: string;
+  onChangeDatasetGroup: (value: DatasetGroupId) => void;
   onChangeDatasetYear: (value: string) => void;
   onChangeDatasetPage: (value: string) => void;
   datasetIndex?: DatasetIndex | null;
@@ -15,8 +26,10 @@ type ImageUploaderProps = {
 export default function ImageUploader({
   image,
   onFileSelected,
+  datasetGroup,
   datasetYear,
   datasetPage,
+  onChangeDatasetGroup,
   onChangeDatasetYear,
   onChangeDatasetPage,
   datasetIndex,
@@ -38,17 +51,23 @@ export default function ImageUploader({
     if (file && file.type.startsWith("image/")) onFileSelected(file);
   };
 
+  const isSample = image?.source !== "upload";
+  const groups = getDatasetGroupIds(datasetIndex, datasetGroup);
+  const years = getDatasetYears(datasetIndex, datasetGroup);
+  const pages = getDatasetPages(datasetIndex, datasetGroup, datasetYear);
+  const sampleLabel =
+    image?.datasetMeta?.label ??
+    `${datasetGroup.toUpperCase()} ${datasetYear} page_${datasetPage}`;
+
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
       <div className="flex flex-col gap-4">
         <h2 className="text-lg font-semibold text-slate-900">Capture or Upload</h2>
 
-        {/* ── Upload / Camera block (same card style as Sample) ── */}
+        {/* Upload / Camera block */}
         <div className="flex flex-col gap-3 rounded-2xl border border-amber-100 bg-white px-4 py-4">
-          {/* Drop zone — filled state when user has uploaded a file */}
           {image?.source === "upload" ? (
             <div className="flex items-center gap-3 rounded-xl border-2 border-amber-300 bg-amber-50/60 px-4 py-3">
-              {/* Thumbnail */}
               <div className="h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-amber-200 bg-white">
                 <img
                   src={image.dataUrl}
@@ -56,7 +75,6 @@ export default function ImageUploader({
                   className="h-full w-full object-contain"
                 />
               </div>
-              {/* Info */}
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold text-slate-800">{image.name}</p>
                 {image.sizeBytes != null && (
@@ -67,7 +85,6 @@ export default function ImageUploader({
                   </p>
                 )}
               </div>
-              {/* Change button */}
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
@@ -121,80 +138,71 @@ export default function ImageUploader({
               />
             </div>
           )}
-
         </div>
 
-        {/* ── Sample block ── */}
+        {/* Sample block */}
         <div className="flex flex-col gap-3 rounded-2xl border border-amber-100 bg-white px-4 py-3">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
             Sample
           </div>
-          {(() => {
-            const isSample = image?.source !== "upload";
-            return (
-              <>
-                <div className="flex flex-wrap gap-2">
-                  {Object.keys(datasetIndex?.years ?? { [datasetYear]: {} })
-                    .filter((year) => year !== "2026")
-                    .sort()
-                    .reverse()
-                    .map((year) => (
-                      <button
-                        key={year}
-                        type="button"
-                        onClick={() => onChangeDatasetYear(year)}
-                        className={`rounded-full border px-4 py-1 text-sm font-semibold transition ${
-                          isSample && year === datasetYear
-                            ? "border-slate-900 bg-slate-900 text-white"
-                            : "border-slate-200 bg-white text-slate-600 hover:border-slate-400"
-                        }`}
-                      >
-                        {year === "sat" ? "SAT" : `csat ${year}`}
-                      </button>
-                    ))}
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {Object.keys(datasetIndex?.years?.[datasetYear]?.pages ?? {}).length ? (
-                    Object.keys(datasetIndex?.years?.[datasetYear]?.pages ?? {}).map((page) => (
-                      <button
-                        key={page}
-                        type="button"
-                        onClick={() => onChangeDatasetPage(page)}
-                        className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
-                          isSample && page === datasetPage
-                            ? "border-amber-400 bg-amber-100 text-amber-900"
-                            : "border-slate-200 bg-white text-slate-600 hover:border-amber-300"
-                        }`}
-                      >
-                        page_{page}
-                      </button>
-                    ))
-                  ) : (
-                    <button
-                      type="button"
-                      className={`rounded-full border px-3 py-1 text-xs font-semibold ${
-                        isSample
-                          ? "border-amber-400 bg-amber-100 text-amber-900"
-                          : "border-slate-200 bg-white text-slate-600"
-                      }`}
-                    >
-                      page_{datasetPage}
-                    </button>
-                  )}
-                </div>
-              </>
-            );
-          })()}
+          <div className="flex flex-wrap gap-2">
+            {groups.map((group) => (
+              <button
+                key={group}
+                type="button"
+                onClick={() => onChangeDatasetGroup(group)}
+                className={`rounded-full border px-4 py-1.5 text-sm font-semibold transition ${
+                  isSample && group === datasetGroup
+                    ? "border-slate-900 bg-slate-900 text-white"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-slate-400"
+                }`}
+              >
+                {getDatasetGroupLabel(datasetIndex, group)}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {(years.length ? years : [datasetYear]).map((year) => (
+              <button
+                key={year}
+                type="button"
+                onClick={() => onChangeDatasetYear(year)}
+                className={`rounded-full border px-3.5 py-1 text-xs font-semibold transition ${
+                  isSample && year === datasetYear
+                    ? "border-slate-700 bg-slate-100 text-slate-900"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-slate-400"
+                }`}
+              >
+                {getDatasetYearLabel(datasetIndex, datasetGroup, year)}
+              </button>
+            ))}
+          </div>
+          <div className="flex max-h-36 flex-wrap gap-2 overflow-y-auto pr-1">
+            {(pages.length ? pages : [datasetPage]).map((page) => (
+              <button
+                key={page}
+                type="button"
+                onClick={() => onChangeDatasetPage(page)}
+                className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
+                  isSample && page === datasetPage
+                    ? "border-amber-400 bg-amber-100 text-amber-900"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-amber-300"
+                }`}
+              >
+                {getDatasetPageLabel(datasetIndex, datasetGroup, datasetYear, page)}
+              </button>
+            ))}
+          </div>
         </div>
 
         {image?.source === "dataset" ? (
           <div className="rounded-2xl border border-dashed border-amber-200 bg-amber-50/40 px-4 py-3 text-xs text-amber-900">
-            {`Sample image loaded from /data (${image?.datasetMeta?.year ?? datasetYear} page_${image?.datasetMeta?.page ?? datasetPage}). Use Detect to show parsed regions.`}
+            {`Sample image loaded from /data (${sampleLabel}). Use Detect to show parsed regions.`}
           </div>
         ) : null}
       </div>
 
-      {/* ── Preview ── */}
+      {/* Preview */}
       <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm">
         <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
           Preview

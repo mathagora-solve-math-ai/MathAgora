@@ -70,7 +70,7 @@ The aggregator synthesizes a final answer by analyzing strategy coverage and con
 ## Key Features
 
 - **Document Detection & OCR** — Detects problem regions from uploaded exam images; extracts text per crop for text-modality solving.
-- **Multi-Model Parallel Solving** — GPT-5-Codex, GPT-5, Claude Opus 4.5, Gemini 3 Pro, and Grok 4 Fast generate solutions concurrently with streaming output.
+- **Multi-Model Parallel Solving** — GPT-5-Codex, GPT-5, Claude Opus 4.5, Gemini 3.1 Pro, and Grok 4.3 generate solutions concurrently with streaming output.
 - **Step-Level Alignment** — Solutions are aligned into a shared Step-Layer structure for cross-model comparison at each reasoning stage.
 - **Step-Network Visualization** — FlowMap view displays the full reasoning network across models, revealing shared strategies and divergence points.
 - **Answer Aggregation** — A dedicated aggregator model synthesizes a final answer with confidence scoring and supporting rationale.
@@ -85,8 +85,8 @@ The aggregator synthesizes a final answer by analyzing strategy coverage and con
 | GPT-5-Codex | OpenAI | Solver |
 | GPT-5 | OpenAI | Solver |
 | Claude Opus 4.5 | Anthropic (via OpenRouter) | Solver + Step-Network Generator + Aggregator |
-| Gemini 3 Pro | Google (via OpenRouter) | Solver + Aggregator  |
-| Grok 4 Fast | xAI (via OpenRouter) | Solver |
+| Gemini 3.1 Pro | Google (via OpenRouter) | Solver + Aggregator  |
+| Grok 4.3 | xAI (via OpenRouter) | Solver |
 
 ---
 

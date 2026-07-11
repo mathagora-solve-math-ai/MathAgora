@@ -11,6 +11,7 @@ export type SolveRequest = {
   cropImageDataUrl?: string;
   problemText: string;
   modality: SolveModality;
+  documentType?: "csat" | "sat" | null;
   models: { modelId: ModelId; displayName: string }[];
 };
 
