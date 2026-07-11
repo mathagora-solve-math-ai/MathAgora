@@ -1,6 +1,6 @@
 # MathAgora
 
-**Live Demo:** [https://isoft.cnu.ac.kr/csat_acl2026demo/](https://isoft.cnu.ac.kr/csat_acl2026demo/)
+**Live Demo:** [https://isoft.cnu.ac.kr/mathagora/](https://isoft.cnu.ac.kr/mathagora/)
 
 MathAgora is a multi-model math reasoning platform. Upload an exam sheet or select a preloaded dataset sample, and MathAgora automatically detects individual problem regions, extracts text via OCR, and generates solutions simultaneously from five large language models — enabling step-level comparison, structured reasoning visualization, and aggregated answer synthesis.
 
