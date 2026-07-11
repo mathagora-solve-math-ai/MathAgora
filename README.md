@@ -41,7 +41,7 @@ Detected problem regions are overlaid on the page image. Select one or more prob
 ### 3. Multi-Model Solving
 
 <p align="center">
-  <img src="figs/sat_guide_3.png" alt="Multi-model solutions" width="820"/>
+  <img src="figs/sat_guide_3.png?v=20260711-renew0" alt="Multi-model solutions" width="820"/>
 </p>
 
 Five models stream solutions in parallel. Each solution is parsed into structured steps with labels, mathematical content, and a final answer — displayed in a unified, aligned format for easy comparison.
