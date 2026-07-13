@@ -58,6 +58,7 @@ from backend.flowmap_service import generate_flow_map_json
 from backend.aggregation_service import generate_aggregation
 from backend.parser_runtime import detect_problems as _detect_problems_runtime
 from backend.precomputed_parsing import load_precomputed_detection_payload
+from backend.known_pages import match_known_page
 from backend.ocr_text_converter import get_converted_prob_desc, get_raw_ocr_from_infer_log  # noqa: F401 (reserved for future use)
 
 _KST = timezone(timedelta(hours=9))
@@ -556,6 +557,7 @@ async def problems_detect(
     run_ocr_per_crop: bool = Form(True),
     body: DetectJsonBody | None = None,
 ):
+    page_id_was_provided = bool(page_id and page_id != "page_2")
     # When frontend sends application/json, Form fields are empty and body is None — parse JSON directly
     if body is None and request.headers.get("content-type", "").strip().lower().startswith("application/json"):
         try:
@@ -567,6 +569,7 @@ async def problems_detect(
                 page_id=raw.get("page_id"),
                 run_ocr_per_crop=raw.get("run_ocr_per_crop"),
             )
+            page_id_was_provided = bool(raw.get("page_id"))
         except Exception as e:
             raise HTTPException(status_code=400, detail=f"Invalid JSON body: {e}")
 
@@ -592,6 +595,21 @@ async def problems_detect(
     path = _save_upload_to_temp(contents)
     out_dir = tempfile.mkdtemp(prefix="detect_")
     try:
+        # If the user uploaded one of our rendered PDF pages directly, use the same
+        # stored page_id that the sample picker uses instead of running live parsing.
+        if not page_id_was_provided:
+            matched_page = match_known_page(WORKSPACE, path)
+            if matched_page is not None:
+                page_id = matched_page.page_id
+                document_type = matched_page.document_type
+                logger.info(
+                    "Detect: upload matched known page page_id=%s exact=%s score=%.4f image=%s",
+                    matched_page.page_id,
+                    matched_page.exact,
+                    matched_page.score,
+                    matched_page.image_path,
+                )
+
         # 1) Classify if document_type not provided
         if not document_type or document_type not in ("csat", "sat"):
             try:

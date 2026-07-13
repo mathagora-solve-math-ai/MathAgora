@@ -32,7 +32,7 @@ const stripAnswerDecorations = (answer: string): string => {
 
 const getSatOptionLabels = (problemText: string): Set<string> => {
   const labels = new Set<string>();
-  const optionRegex = /(?:^|[\s|])([A-D])\s*[\).:]\s*/g;
+  const optionRegex = /(?:^|[\s|])([A-D])\s*[).:]\s*/g;
   for (const match of problemText.matchAll(optionRegex)) {
     labels.add(match[1].toUpperCase());
   }
@@ -42,6 +42,20 @@ const getSatOptionLabels = (problemText: string): Set<string> => {
 const hasSatMultipleChoiceOptions = (problemText: string): boolean => {
   const labels = getSatOptionLabels(problemText);
   return ["A", "B", "C", "D"].every((label) => labels.has(label));
+};
+
+const hasSatChoiceMarkers = (problemText: string): boolean => {
+  const labels = getSatOptionLabels(problemText);
+  return labels.size >= 2;
+};
+
+const isLikelySatMultipleChoice = (problemText: string): boolean => {
+  if (hasSatMultipleChoiceOptions(problemText) || hasSatChoiceMarkers(problemText)) {
+    return true;
+  }
+  return /\bwhich\s+(?:of\s+the\s+following|equation|expression|function|graph|table|statement)\b/i.test(
+    problemText,
+  );
 };
 
 const normalizeOptionValue = (value: string): string =>
@@ -55,7 +69,7 @@ const normalizeOptionValue = (value: string): string =>
 
 const getSatOptionValues = (problemText: string): Map<string, string> => {
   const values = new Map<string, string>();
-  const optionRegex = /(?:^|[\n\r|])\s*([A-D])\s*[\).:]\s*([\s\S]*?)(?=(?:[\n\r|]\s*[A-D]\s*[\).:])|$)/g;
+  const optionRegex = /(?:^|[\n\r|])\s*([A-D])\s*[).:]\s*([\s\S]*?)(?=(?:[\n\r|]\s*[A-D]\s*[).:])|$)/g;
   for (const match of problemText.matchAll(optionRegex)) {
     const label = match[1].toUpperCase();
     const value = normalizeOptionValue(match[2] ?? "");
@@ -72,11 +86,11 @@ export function normalizeFinalAnswer(
   if (!raw || !isSatContext(context)) return raw;
 
   const problemText = context?.problemText ?? "";
-  const hasOptions = hasSatMultipleChoiceOptions(problemText);
-  const choiceLetter = raw.match(/^(?:option|choice|answer)?\s*([A-D])\s*[\).:]?$/i);
+  const hasOptions = isLikelySatMultipleChoice(problemText);
+  const choiceLetter = raw.match(/^(?:option|choice|answer)?\s*([A-D])\s*[).:]?$/i);
   if (choiceLetter) return choiceLetter[1].toUpperCase();
 
-  const choiceIndex = raw.match(/^(?:(?:option|choice|answer)\s*)?([1-4])\s*[\).:]?$/i);
+  const choiceIndex = raw.match(/^(?:(?:option|choice|answer)\s*)?([1-4])\s*[).:]?$/i);
   const explicitlyChoice = /option|choice|answer/i.test(raw);
   if (choiceIndex && (hasOptions || explicitlyChoice)) {
     return SAT_INDEX_TO_LETTER[choiceIndex[1]] ?? raw;

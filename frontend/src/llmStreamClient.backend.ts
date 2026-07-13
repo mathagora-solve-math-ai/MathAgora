@@ -1,14 +1,7 @@
 import type { LLMStreamClient } from "./llmStreamClient";
+import { getApiBase } from "./apiBase";
 
-const SOLVE_API_BASE =
-  typeof import.meta !== "undefined" &&
-  (import.meta as { env?: { VITE_SOLVE_API_URL?: string; VITE_DETECT_API_URL?: string } }).env
-    ? ((import.meta as { env: { VITE_SOLVE_API_URL?: string; VITE_DETECT_API_URL?: string } }).env
-        .VITE_SOLVE_API_URL ??
-        (import.meta as { env: { VITE_SOLVE_API_URL?: string; VITE_DETECT_API_URL?: string } }).env
-          .VITE_DETECT_API_URL ??
-        "")
-    : "";
+const SOLVE_API_BASE = getApiBase("VITE_SOLVE_API_URL", "VITE_DETECT_API_URL");
 
 export const backendStreamClient: LLMStreamClient = {
   async startSolveStream(req, opts) {

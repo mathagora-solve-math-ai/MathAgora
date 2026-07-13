@@ -50,6 +50,7 @@ from backend.flowmap_service import generate_flow_map_json
 from backend.aggregation_service import generate_aggregation
 from backend.parser_runtime import detect_problems as _detect_problems_runtime
 from backend.precomputed_parsing import load_precomputed_detection_payload
+from backend.known_pages import match_known_page
 from backend.ocr_text_converter import (
     clear_all_converter_caches,
     get_converted_prob_desc,
@@ -295,12 +296,26 @@ class Handler(BaseHTTPRequestHandler):
         save_to_demo_parsing = (
             True if body.get("save_to_demo_parsing") is None else bool(body.get("save_to_demo_parsing"))
         )
+        page_id_was_provided = bool(body.get("page_id"))
         page_id = body.get("page_id") or "page_2"
         run_ocr_per_crop = True if body.get("run_ocr_per_crop") is None else bool(body.get("run_ocr_per_crop"))
 
         path = _save_upload_to_temp(_decode_image_base64(image_base64))
         out_dir = tempfile.mkdtemp(prefix="detect_")
         try:
+            if not page_id_was_provided:
+                matched_page = match_known_page(WORKSPACE, path)
+                if matched_page is not None:
+                    page_id = matched_page.page_id
+                    document_type = matched_page.document_type
+                    LOGGER.info(
+                        "Detect: upload matched known page page_id=%s exact=%s score=%.4f image=%s",
+                        matched_page.page_id,
+                        matched_page.exact,
+                        matched_page.score,
+                        matched_page.image_path,
+                    )
+
             if document_type not in ("csat", "sat"):
                 try:
                     document_type, _ = _classify_image(path, confidence_threshold=0.8)

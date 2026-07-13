@@ -8,16 +8,16 @@ const hmrClientPort = process.env.VITE_HMR_CLIENT_PORT
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/csat_acl2026demo/",
+  base: "/mathagora/",
   server: {
     host: "0.0.0.0",
     port: 5173,
     strictPort: true,
     proxy: {
-      "/csat_acl2026demo/api": {
+      "/mathagora/api": {
         target: "http://127.0.0.1:8000",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/csat_acl2026demo/, ""),
+        rewrite: (path) => path.replace(/^\/mathagora/, ""),
       },
     },
     hmr: hmrClientPort

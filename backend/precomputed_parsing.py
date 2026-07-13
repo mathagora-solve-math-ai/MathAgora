@@ -18,6 +18,8 @@ class _PageSpec:
     document_type: str
     subject_key: str
     page: str
+    stored_subject_key: str
+    stored_page_key: str
     root_env: str
     default_root: Path
     fallback_root: Path
@@ -54,6 +56,8 @@ def _parse_page_id(workspace: Path, page_id: str | None, document_type: str | No
             document_type="sat",
             subject_key=f"sat-practice-test-{test_no}-math",
             page=page,
+            stored_subject_key="sat_math_odd",
+            stored_page_key=f"{test_no}_{page}",
             root_env="SAT_PRECOMPUTED_OUTPUT_ROOT",
             default_root=workspace / "dla" / "outputs_parsing_sat" / "output",
             fallback_root=workspace / "dla_v2" / "experiments" / "outputs_parsing_sat" / "output",
@@ -68,6 +72,8 @@ def _parse_page_id(workspace: Path, page_id: str | None, document_type: str | No
             document_type="csat",
             subject_key=f"{year}_math_odd",
             page=page,
+            stored_subject_key=f"{year}_math_odd",
+            stored_page_key=page,
             root_env="CSAT_PRECOMPUTED_OUTPUT_ROOT",
             default_root=workspace / "dla" / "outputs_parsing_csat" / "output",
             fallback_root=workspace / "dla_v2" / "experiments" / "outputs_parsing_csat" / "output",
@@ -205,6 +211,97 @@ def _encode_crop_b64(question: dict[str, Any], root: Path, spec: _PageSpec, qid:
     return base64.b64encode(path.read_bytes()).decode("ascii")
 
 
+def _stored_json_candidates(workspace: Path, spec: _PageSpec) -> list[Path]:
+    rel = (
+        Path("data")
+        / "outputs_parsing"
+        / spec.stored_subject_key
+        / f"page_{spec.stored_page_key}"
+        / f"page_{spec.stored_page_key}.json"
+    )
+    return [
+        workspace / rel,
+        workspace / "frontend" / "public" / rel,
+    ]
+
+
+def _resolve_public_data_path(workspace: Path, value: Any) -> Path | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    path = Path(raw)
+    candidates = [path] if path.is_absolute() else [workspace / path]
+    if raw.startswith("/"):
+        candidates.extend([
+            workspace / raw.lstrip("/"),
+            workspace / "frontend" / "public" / raw.lstrip("/"),
+        ])
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate
+    return None
+
+
+def _encode_stored_crop_b64(workspace: Path, question: dict[str, Any], json_path: Path, qid: str) -> str:
+    crop_path = _resolve_public_data_path(workspace, question.get("crop"))
+    if crop_path is None:
+        qdir = json_path.parent / "questions" / qid
+        matches = sorted(qdir.glob("*.png"))
+        crop_path = matches[-1] if matches else None
+    if crop_path is None or not crop_path.is_file():
+        return ""
+    return base64.b64encode(crop_path.read_bytes()).decode("ascii")
+
+
+def _load_stored_json_payload(workspace: Path, spec: _PageSpec) -> dict[str, Any] | None:
+    for json_path in _stored_json_candidates(workspace, spec):
+        if not json_path.is_file():
+            continue
+
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        questions: list[dict[str, Any]] = []
+        for question in data.get("questions") or []:
+            if not isinstance(question, dict):
+                continue
+            qid = str(question.get("qid") or "").strip()
+            bbox = _parse_bbox(question.get("bbox"))
+            if not qid or bbox is None:
+                continue
+            text = _clean_text(
+                question.get("postcorrection_text")
+                or question.get("merged_text")
+                or question.get("text")
+            )
+            detection_id = _build_detection_id(spec, qid)
+            questions.append(
+                {
+                    "qid": qid,
+                    "detection_id": detection_id,
+                    "label": detection_id,
+                    "bbox": bbox,
+                    "merged_text": text,
+                    "postcorrection_text": text,
+                    "text_source": "postcorrection",
+                    "crop_b64": _encode_stored_crop_b64(workspace, question, json_path, qid),
+                    "source_crop_path": question.get("crop") or "",
+                    "source_postcorrection_text_path": str(json_path),
+                }
+            )
+
+        if questions:
+            return {
+                "document_type": spec.document_type,
+                "image_width": int(data.get("width") or data.get("image_width") or 0),
+                "image_height": int(data.get("height") or data.get("image_height") or 0),
+                "questions": questions,
+                "precomputed_source": str(json_path),
+                "subject_key": spec.subject_key,
+                "page": spec.page,
+            }
+
+    return None
+
+
 def load_precomputed_detection_payload(
     workspace: Path,
     page_id: str | None,
@@ -260,4 +357,4 @@ def load_precomputed_detection_payload(
             "page": spec.page,
         }
 
-    return None
+    return _load_stored_json_payload(workspace, spec)

@@ -4,17 +4,14 @@ import {
   type DetectResult,
   type ModelResult,
 } from "./mockData";
+import { getApiBase } from "./apiBase";
 
 const randomDelay = () => 700 + Math.floor(Math.random() * 500);
 
 /** Backend base URL for detect/classify. When set, detectProblems and classifyDocument call the real API.
  * In dev, defaults to http://localhost:8000 so miniserver (BACKEND_PORT=8000) works without .env. */
 const DETECT_API_BASE = (() => {
-  const env = import.meta.env as Record<string, string | undefined>;
-  const url = env.VITE_DETECT_API_URL?.trim();
-  if (url) return url.replace(/\/$/, "");
-  if (env.DEV) return "http://localhost:8000";
-  return "";
+  return getApiBase("VITE_DETECT_API_URL");
 })();
 
 /** Classify document image as CSAT or SAT (model first, OCR fallback when confidence < 0.8). */
@@ -34,7 +31,8 @@ export async function classifyDocument(
       throw new Error(err || `Classify failed: ${res.status}`);
     }
     const data = await res.json();
-    return { label: data.label ?? "csat", confidence: Number(data.confidence) ?? 0 };
+    const confidence = Number(data.confidence);
+    return { label: data.label ?? "csat", confidence: Number.isFinite(confidence) ? confidence : 0 };
   }
   return new Promise((resolve) => {
     setTimeout(() => resolve({ label: "csat", confidence: 0.9 }), randomDelay());
@@ -173,8 +171,7 @@ export function clearDetectCacheFor2026(): void {
 /** 프론트 Detect 캐시 + 백엔드 converter 캐시 전부 제거. */
 export async function clearAllCaches(): Promise<void> {
   detectResultCache.clear();
-  const base = (import.meta.env as Record<string, string>).VITE_DETECT_API_URL?.trim?.()?.replace(/\/$/, "")
-    || (import.meta.env.DEV ? "http://localhost:8000" : "");
+  const base = getApiBase("VITE_DETECT_API_URL");
   if (base) {
     try {
       await fetch(`${base}/api/cache/clear`, { method: "POST" });

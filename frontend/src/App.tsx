@@ -25,6 +25,7 @@ import { createLLMStreamClient } from "./llmStreamClient.index";
 import type { ModelId, SolveModality, StreamChunk, SolveRequest } from "./llmStreamClient";
 import { normalizeFinalAnswer, parseStructuredSolution, type FinalAnswerContext } from "./postprocess";
 import { getSolveCache, getSolveCacheKey, setSolveCache } from "./solveCache";
+import { getApiBase } from "./apiBase";
 
 const MODEL_COLORS = [
   "#22d3ee",
@@ -36,6 +37,8 @@ const MODEL_COLORS = [
 ];
 
 const STORAGE_KEY = "qanda_upload_v1";
+const MAX_UPLOAD_IMAGE_EDGE = 4200;
+const NORMALIZED_UPLOAD_QUALITY = 0.92;
 
 type Stage = "upload" | "detect" | "solve";
 
@@ -111,6 +114,76 @@ const initStreamStates = (models: ModelMeta[]): Record<ModelId, StreamState> =>
     acc[model.modelId] = { status: "idle", partialText: "" };
     return acc;
   }, {});
+
+const readFileAsDataUrl = (file: File): Promise<string> =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result || ""));
+    reader.onerror = () => reject(new Error("Failed to read image file."));
+    reader.readAsDataURL(file);
+  });
+
+const loadImageElement = (url: string): Promise<HTMLImageElement> =>
+  new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Failed to decode image file."));
+    image.src = url;
+  });
+
+const canvasToDataUrl = (
+  canvas: HTMLCanvasElement,
+  type: string,
+  quality?: number,
+): Promise<string> =>
+  new Promise((resolve) => {
+    canvas.toBlob(
+      (blob) => {
+        if (!blob) {
+          resolve(canvas.toDataURL(type, quality));
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result || canvas.toDataURL(type, quality)));
+        reader.onerror = () => resolve(canvas.toDataURL(type, quality));
+        reader.readAsDataURL(blob);
+      },
+      type,
+      quality,
+    );
+  });
+
+const normalizeUploadImage = async (file: File): Promise<string> => {
+  if (!file.type.startsWith("image/")) return readFileAsDataUrl(file);
+  if (file.type === "image/png" && file.size < 8 * 1024 * 1024) {
+    return readFileAsDataUrl(file);
+  }
+
+  const objectUrl = URL.createObjectURL(file);
+  try {
+    const image = await loadImageElement(objectUrl);
+    const width = image.naturalWidth || image.width;
+    const height = image.naturalHeight || image.height;
+    if (!width || !height) return readFileAsDataUrl(file);
+
+    const scale = Math.min(1, MAX_UPLOAD_IMAGE_EDGE / Math.max(width, height));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.max(1, Math.round(width * scale));
+    canvas.height = Math.max(1, Math.round(height * scale));
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return readFileAsDataUrl(file);
+
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+    return canvasToDataUrl(canvas, "image/jpeg", NORMALIZED_UPLOAD_QUALITY);
+  } catch {
+    return readFileAsDataUrl(file);
+  } finally {
+    URL.revokeObjectURL(objectUrl);
+  }
+};
 
 /** Derive overall status of a problem's solve session for tab indicator. */
 function getProblemStatus(ps: ProblemSolveState): "idle" | "streaming" | "done" | "error" {
@@ -189,6 +262,18 @@ export default function App() {
       ...result,
       finalAnswer: normalizeFinalAnswer(result.finalAnswer ?? "", context),
     }));
+  };
+
+  const normalizeAggregationDataForProblem = (
+    data: AggregationData,
+    problemId: string,
+  ): AggregationData => {
+    if (data.final_answer === null || data.final_answer === undefined) return data;
+    const context = getFinalAnswerContext(problemId);
+    return {
+      ...data,
+      final_answer: normalizeFinalAnswer(String(data.final_answer), context),
+    };
   };
 
   // ─── Dataset loading ─────────────────────────────────────────────────────
@@ -368,11 +453,7 @@ export default function App() {
 
   // ─── Auto-generate flow map when all models are done (no button click) ─────
   useEffect(() => {
-    const base = (
-      (import.meta.env as Record<string, string | undefined>).VITE_SOLVE_API_URL ??
-      (import.meta.env as Record<string, string | undefined>).VITE_DETECT_API_URL ??
-      ""
-    ).replace(/\/$/, "");
+    const base = getApiBase("VITE_SOLVE_API_URL", "VITE_DETECT_API_URL");
 
     Object.keys(solveStates).forEach((problemId) => {
       const ps = solveStates[problemId];
@@ -438,11 +519,7 @@ export default function App() {
 
   // ─── Auto-generate aggregation when flow map is ready ────────────────────
   useEffect(() => {
-    const base = (
-      (import.meta.env as Record<string, string | undefined>).VITE_SOLVE_API_URL ??
-      (import.meta.env as Record<string, string | undefined>).VITE_DETECT_API_URL ??
-      ""
-    ).replace(/\/$/, "");
+    const base = getApiBase("VITE_SOLVE_API_URL", "VITE_DETECT_API_URL");
 
     Object.keys(solveStates).forEach((problemId) => {
       const ps = solveStates[problemId];
@@ -479,9 +556,10 @@ export default function App() {
           return res.json() as Promise<AggregationData>;
         })
         .then((data) => {
+          const normalizedData = normalizeAggregationDataForProblem(data, problemId);
           setSolveStates((prev) => ({
             ...prev,
-            [problemId]: { ...prev[problemId], aggregationData: data, isGeneratingAggregation: false },
+            [problemId]: { ...prev[problemId], aggregationData: normalizedData, isGeneratingAggregation: false },
           }));
         })
         .catch((e) => {
@@ -533,10 +611,11 @@ export default function App() {
   // ─── Handlers ────────────────────────────────────────────────────────────
 
   const handleFileSelected = (file: File) => {
-    const reader = new FileReader();
-    reader.onload = () => {
+    setError(null);
+    void (async () => {
+      const dataUrl = await normalizeUploadImage(file);
       setUploadedImage({
-        dataUrl: String(reader.result || ""),
+        dataUrl,
         name: file.name,
         updatedAt: Date.now(),
         isDemo: false,
@@ -551,8 +630,9 @@ export default function App() {
       setActiveTabId(null);
       setStage("upload");
       setError(null);
-    };
-    reader.readAsDataURL(file);
+    })().catch((e) => {
+      setError(e instanceof Error ? e.message : "Image upload failed.");
+    });
   };
 
   const handleDatasetGroupChange = (value: DatasetGroupId) => {
@@ -976,11 +1056,7 @@ export default function App() {
     const detection = detections.find((d) => d.id === problemId);
     const problemText = detection?.text || detection?.label || "";
 
-    const base = (
-      (import.meta.env as Record<string, string | undefined>).VITE_SOLVE_API_URL ??
-      (import.meta.env as Record<string, string | undefined>).VITE_DETECT_API_URL ??
-      ""
-    ).replace(/\/$/, "");
+    const base = getApiBase("VITE_SOLVE_API_URL", "VITE_DETECT_API_URL");
 
     setSolveStates((prev) => ({
       ...prev,
@@ -1036,11 +1112,7 @@ export default function App() {
     const detection = detections.find((d) => d.id === problemId);
     const problemText = detection?.text || detection?.label || "";
 
-    const base = (
-      (import.meta.env as Record<string, string | undefined>).VITE_SOLVE_API_URL ??
-      (import.meta.env as Record<string, string | undefined>).VITE_DETECT_API_URL ??
-      ""
-    ).replace(/\/$/, "");
+    const base = getApiBase("VITE_SOLVE_API_URL", "VITE_DETECT_API_URL");
 
     setSolveStates((prev) => ({
       ...prev,
@@ -1066,7 +1138,7 @@ export default function App() {
         }),
       });
       if (!res.ok) throw new Error((await res.text()) || `Aggregation failed: ${res.status}`);
-      const data = (await res.json()) as AggregationData;
+      const data = normalizeAggregationDataForProblem((await res.json()) as AggregationData, problemId);
       setSolveStates((prev) => ({
         ...prev,
         [problemId]: { ...prev[problemId], aggregationData: data, isGeneratingAggregation: false },
