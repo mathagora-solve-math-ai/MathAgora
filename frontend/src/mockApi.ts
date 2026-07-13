@@ -14,17 +14,41 @@ const DETECT_API_BASE = (() => {
   return getApiBase("VITE_DETECT_API_URL");
 })();
 
+function dataUrlToBlob(dataUrl: string): Blob {
+  const [header, data = ""] = dataUrl.split(",", 2);
+  const match = header.match(/^data:([^;,]+)?(?:;base64)?$/);
+  const type = match?.[1] || "image/png";
+  if (header.includes(";base64")) {
+    const binary = atob(data);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i += 1) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    return new Blob([bytes], { type });
+  }
+  return new Blob([decodeURIComponent(data)], { type });
+}
+
+async function imageInputToBlob(imageDataUrl: string): Promise<Blob> {
+  if (imageDataUrl.startsWith("data:")) return dataUrlToBlob(imageDataUrl);
+  if (imageDataUrl.startsWith("/") || /^https?:\/\//.test(imageDataUrl)) {
+    const res = await fetch(imageDataUrl);
+    if (!res.ok) throw new Error(`Failed to load image: ${res.status}`);
+    return res.blob();
+  }
+  return dataUrlToBlob(`data:image/png;base64,${imageDataUrl}`);
+}
+
 /** Classify document image as CSAT or SAT (model first, OCR fallback when confidence < 0.8). */
 export async function classifyDocument(
   imageDataUrl: string,
 ): Promise<{ label: "csat" | "sat"; confidence: number }> {
   if (DETECT_API_BASE) {
+    const form = new FormData();
+    form.append("file", await imageInputToBlob(imageDataUrl), "page.png");
     const res = await fetch(`${DETECT_API_BASE}/api/document/classify`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        image_base64: imageDataUrl.startsWith("data:") ? imageDataUrl : `data:image/png;base64,${imageDataUrl}`,
-      }),
+      body: form,
     });
     if (!res.ok) {
       const err = await res.text();
@@ -194,15 +218,6 @@ export async function detectProblems(
 ): Promise<DetectResult> {
   if (DETECT_API_BASE) {
     try {
-      let payloadImage = imageDataUrl;
-      if (!payloadImage.startsWith("data:")) {
-        // Dataset pages are typically URL paths; convert to data URL before backend call.
-        if (payloadImage.startsWith("/") || /^https?:\/\//.test(payloadImage)) {
-          payloadImage = await imageUrlToDataUrl(payloadImage);
-        } else {
-          payloadImage = `data:image/png;base64,${payloadImage}`;
-        }
-      }
       let pageId = opts?.pageId ?? buildPageId(opts ?? {});
       if (!pageId && imageDataUrl && typeof imageDataUrl === "string" && !imageDataUrl.startsWith("data:") && imageDataUrl.length < 3000) {
         const inferred = inferDatasetMetaFromUrl(imageDataUrl);
@@ -217,21 +232,37 @@ export async function detectProblems(
         !!(opts?.datasetYear && opts?.datasetPage) ||
         !!pageId?.startsWith("2026_math_odd_page_") ||
         !!pageId?.startsWith("sat_math_odd_page_");
-      const cacheKey = detectCacheKey(payloadImage, { documentType: opts?.documentType ?? undefined, pageId: pageId ?? undefined });
+      const cacheKey = isDatasetSample && pageId
+        ? `dataset_${opts?.documentType ?? ""}_${pageId}`
+        : detectCacheKey(imageDataUrl, { documentType: opts?.documentType ?? undefined, pageId: pageId ?? undefined });
       const cached = !isDatasetSample ? detectResultCache.get(cacheKey) : undefined;
       if (cached) return cached;
 
-      const res = await fetch(`${DETECT_API_BASE}/api/problems/detect`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          image_base64: payloadImage,
-          document_type: opts?.documentType ?? null,
-          page_id: pageId,
-          save_to_demo_parsing: false,
-          run_ocr_per_crop: true,
-        }),
-      });
+      const res = await (async () => {
+        if (isDatasetSample && pageId) {
+          return fetch(`${DETECT_API_BASE}/api/problems/detect`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              document_type: opts?.documentType ?? null,
+              page_id: pageId,
+              save_to_demo_parsing: false,
+              run_ocr_per_crop: true,
+            }),
+          });
+        }
+
+        const form = new FormData();
+        form.append("file", await imageInputToBlob(imageDataUrl), "upload.png");
+        form.append("document_type", opts?.documentType ?? "");
+        if (pageId) form.append("page_id", pageId);
+        form.append("save_to_demo_parsing", "false");
+        form.append("run_ocr_per_crop", "true");
+        return fetch(`${DETECT_API_BASE}/api/problems/detect`, {
+          method: "POST",
+          body: form,
+        });
+      })();
       if (!res.ok) {
         const err = await res.text();
         throw new Error(err || `Detect failed: ${res.status}`);

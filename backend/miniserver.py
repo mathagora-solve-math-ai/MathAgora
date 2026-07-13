@@ -287,11 +287,6 @@ class Handler(BaseHTTPRequestHandler):
         """Run parser (DLA) on the page image: detect problem regions, crop per question (bbox + crop_b64),
         OCR text per crop, convert to frontend detections (normalized bbox, cropUrl, text)."""
         body = self._read_json()
-        image_base64 = body.get("image_base64")
-        if not image_base64:
-            self._send_json(400, {"detail": "image_base64 is required"})
-            return
-
         document_type = body.get("document_type")
         save_to_demo_parsing = (
             True if body.get("save_to_demo_parsing") is None else bool(body.get("save_to_demo_parsing"))
@@ -299,6 +294,47 @@ class Handler(BaseHTTPRequestHandler):
         page_id_was_provided = bool(body.get("page_id"))
         page_id = body.get("page_id") or "page_2"
         run_ocr_per_crop = True if body.get("run_ocr_per_crop") is None else bool(body.get("run_ocr_per_crop"))
+        image_base64 = body.get("image_base64")
+
+        if page_id_was_provided and not image_base64:
+            precomputed_payload = load_precomputed_detection_payload(
+                WORKSPACE,
+                page_id=page_id,
+                document_type=document_type,
+            )
+            if precomputed_payload is None:
+                self._send_json(404, {"detail": f"No precomputed parsing output for page_id={page_id}"})
+                return
+            document_type = str(precomputed_payload.get("document_type") or document_type or "csat")
+            w = precomputed_payload.get("image_width") or 0
+            h = precomputed_payload.get("image_height") or 0
+            detections = _questions_to_detections(
+                precomputed_payload,
+                w,
+                h,
+                page_id=page_id,
+                use_demo_ids=False,
+                run_id=uuid.uuid4().hex[:16],
+            )
+            LOGGER.info(
+                "Detect: using precomputed parsing output page_id=%s source=%s",
+                page_id,
+                precomputed_payload.get("precomputed_source"),
+            )
+            self._send_json(
+                200,
+                {
+                    "documentType": document_type,
+                    "detections": detections,
+                    "imageWidth": w or None,
+                    "imageHeight": h or None,
+                },
+            )
+            return
+
+        if not image_base64:
+            self._send_json(400, {"detail": "image_base64 is required"})
+            return
 
         path = _save_upload_to_temp(_decode_image_base64(image_base64))
         out_dir = tempfile.mkdtemp(prefix="detect_")

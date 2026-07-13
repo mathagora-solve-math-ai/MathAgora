@@ -188,7 +188,7 @@ class ClassifyJsonBody(BaseModel):
 
 
 class DetectJsonBody(BaseModel):
-    image_base64: str
+    image_base64: str = ""
     document_type: str | None = None  # optional "csat" | "sat"
     save_to_demo_parsing: bool | None = None  # default True when missing
     page_id: str | None = None  # default "page_2"
@@ -574,6 +574,46 @@ async def problems_detect(
             raise HTTPException(status_code=400, detail=f"Invalid JSON body: {e}")
 
     doc_type_param = document_type
+    if body is not None:
+        doc_type_param = doc_type_param or body.document_type
+        save_to_demo_parsing = body.save_to_demo_parsing if body.save_to_demo_parsing is not None else True
+        page_id = body.page_id if body.page_id else f"upload_{uuid.uuid4().hex[:12]}"
+        run_ocr_per_crop = body.run_ocr_per_crop if body.run_ocr_per_crop is not None else True
+
+    # Dataset samples are already parsed by the DLA-v2 experiment pipeline.
+    # Allow the frontend to request them by page_id only; this avoids sending
+    # full page images through the lab-integrated-server JSON body parser.
+    if not file and page_id_was_provided and body is not None and not body.image_base64:
+        precomputed_payload = load_precomputed_detection_payload(
+            WORKSPACE,
+            page_id=page_id,
+            document_type=doc_type_param,
+        )
+        if precomputed_payload is None:
+            raise HTTPException(status_code=404, detail=f"No precomputed parsing output for page_id={page_id}")
+        document_type = str(precomputed_payload.get("document_type") or doc_type_param or "csat")
+        W = precomputed_payload.get("image_width") or 0
+        H = precomputed_payload.get("image_height") or 0
+        detections = _questions_to_detections(
+            precomputed_payload,
+            W,
+            H,
+            page_id=page_id,
+            use_demo_ids=False,
+            run_id=uuid.uuid4().hex[:16],
+        )
+        logger.info(
+            "Detect: using precomputed parsing output page_id=%s source=%s",
+            page_id,
+            precomputed_payload.get("precomputed_source"),
+        )
+        return DetectResponse(
+            documentType=document_type,
+            detections=detections,
+            imageWidth=W or None,
+            imageHeight=H or None,
+        )
+
     if file:
         contents = await file.read()
     elif body:
@@ -586,11 +626,6 @@ async def problems_detect(
         raise HTTPException(status_code=400, detail="Provide either file upload or JSON body with image_base64")
 
     document_type = doc_type_param
-    # When using JSON body, Form fields may be empty — apply options from body explicitly (default True if unset)
-    if body is not None:
-        save_to_demo_parsing = body.save_to_demo_parsing if body.save_to_demo_parsing is not None else True
-        page_id = body.page_id if body.page_id else f"upload_{uuid.uuid4().hex[:12]}"
-        run_ocr_per_crop = body.run_ocr_per_crop if body.run_ocr_per_crop is not None else True
 
     path = _save_upload_to_temp(contents)
     out_dir = tempfile.mkdtemp(prefix="detect_")
